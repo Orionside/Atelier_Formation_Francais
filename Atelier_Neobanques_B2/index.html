@@ -1,0 +1,1384 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex, nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Atelier Néobanques B2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#5B6B7A; --line:#D5DDE4; --line-strong:#B9C5CF;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --focus:#1F5FA8;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --focus:#82B6EB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --focus:#82B6EB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+button{font:inherit; color:inherit; cursor:pointer}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0}
+.brand b{font-family:var(--serif); font-size:17px; font-weight:700; white-space:nowrap}
+.brand span{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.prog{display:flex; align-items:center; gap:9px}
+.prog-track{width:120px; height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.prog-fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+.prog-num{font-family:var(--mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums}
+.btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:7px 13px; border-radius:7px; font-size:13.5px; font-weight:500;
+  transition:background .15s, border-color .15s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--muted)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .btn-primary, :root:not([data-theme="light"]) .btn-primary{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:0 20px; padding-block:26px 64px;
+  display:grid; grid-template-columns:238px minmax(0,1fr); gap:38px; align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:minmax(0,1fr); gap:20px} }
+
+/* ---------- stepper ---------- */
+.rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 74px)}
+@media (max-width:900px){
+  .rail{position:static}
+  .rail-list{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin}
+  .rail-item{flex:0 0 auto; width:auto!important}
+  .rail-item .rl-title{white-space:nowrap}
+  .rail-head{margin-bottom:9px}
+}
+.rail-head{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:12px; padding-left:2px}
+.rail-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+@media (max-width:900px){ .rail-list{flex-direction:row} }
+.rail-item{width:100%}
+.rl{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:9px;
+  padding:8px 11px; color:var(--muted); font-size:13.5px; line-height:1.35;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.rl:hover{border-color:var(--line-strong); background:var(--surface-2); color:var(--ink)}
+.rl[aria-current="true"]{
+  background:var(--accent); border-color:var(--accent); color:#fff;
+  font-weight:500; box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .rl[aria-current="true"],
+:root:not([data-theme="light"]) .rl[aria-current="true"]{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .rl[aria-current="true"]{color:#fff}}
+.rl-num{
+  font-family:var(--mono); font-size:11px; flex:0 0 auto;
+  width:23px; height:23px; display:grid; place-items:center; border-radius:6px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--muted);
+}
+.rl.is-done .rl-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.rl[aria-current="true"] .rl-num,
+.rl[aria-current="true"].is-done .rl-num{
+  background:rgba(255,255,255,.24); border-color:transparent; color:inherit;
+}
+.rl-title{min-width:0}
+.rail-foot{margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+@media (max-width:900px){ .rail-foot{display:none} }
+
+/* ---------- main ---------- */
+main{min-width:0}
+.step{display:flex; flex-direction:column; gap:20px}
+.step-head{border-bottom:1px solid var(--line); padding-bottom:16px;
+  display:flex; flex-direction:column; gap:7px}
+.eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.eyebrow .dot{width:3px;height:3px;border-radius:50%;background:var(--line-strong)}
+.step-head h2{font-size:clamp(22px,4.3vw,29px); line-height:1.2}
+.step-head .lede{color:var(--muted); max-width:62ch}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:18px 19px;
+  display:flex; flex-direction:column; gap:13px}
+.card h3{font-size:17px; line-height:1.3}
+.card > .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:11px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.prose strong{font-weight:600}
+.prose em{color:var(--muted)}
+
+.callout{border-left:3px solid var(--accent); background:var(--surface-2); border-radius:0 9px 9px 0;
+  padding:14px 17px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.callout .ct{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink)}
+
+/* timecode */
+.tc{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:6px;
+  padding:3px 8px; color:var(--ink); text-decoration:none; white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.tc:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tc::before{content:"▶"; font-size:8px; color:var(--accent-ink)}
+
+/* questions */
+.q{display:flex; flex-direction:column; gap:10px; padding-block:4px}
+.q + .q{border-top:1px dashed var(--line); padding-top:16px}
+.q-lbl{display:flex; gap:10px; align-items:baseline}
+.q-n{font-family:var(--mono); font-size:12px; color:var(--accent-ink); flex:0 0 auto; font-weight:500}
+.q-t{font-weight:500; max-width:64ch}
+.q-hint{font-size:13.5px; color:var(--muted); max-width:64ch}
+textarea{
+  width:100%; min-height:82px; resize:vertical; font:inherit; font-size:14.5px;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line);
+  border-radius:8px; padding:10px 12px; line-height:1.55;
+}
+textarea::placeholder{color:var(--muted); opacity:.75}
+textarea:focus{border-color:var(--focus); background:var(--surface)}
+.row{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.reveal{background:var(--surface-2); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:13px 15px; font-size:14.5px; max-width:66ch;
+  display:flex; flex-direction:column; gap:8px}
+.reveal .rt{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.saved{font-family:var(--mono); font-size:11px; color:var(--ok); opacity:0; transition:opacity .3s}
+.saved.on{opacity:1}
+
+/* amorces cliquables */
+.starters{display:flex; flex-wrap:wrap; gap:6px; align-items:center; max-width:68ch}
+.starters-lbl{flex:0 0 100%; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted)}
+.starter{
+  border:1px solid var(--line-strong); background:var(--surface-2); border-radius:20px;
+  padding:5px 13px; font-family:var(--serif); font-style:italic; font-size:13.5px;
+  color:var(--muted); text-align:left; line-height:1.45; max-width:100%;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.starter:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
+
+/* true/false */
+.tf-list{display:flex; flex-direction:column; gap:10px}
+.tf-item{border:1px solid var(--line); border-radius:9px; padding:12px 14px; background:var(--surface-2);
+  display:flex; flex-direction:column; gap:10px}
+.tf-top{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+.tf-txt{flex:1 1 300px; min-width:0; font-size:14.5px}
+.tf-btns{display:flex; gap:6px; flex:0 0 auto}
+.pick{border:1px solid var(--line-strong); background:var(--surface); border-radius:7px;
+  padding:5px 12px; font-size:13px; font-weight:500; min-width:62px}
+.pick[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.tf-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.tf-item.no{border-color:var(--no); background:var(--no-soft)}
+.verdict{font-size:14px; display:flex; gap:8px; align-items:flex-start}
+.verdict .vi{font-family:var(--mono); font-weight:500; flex:0 0 auto}
+.ok .verdict .vi{color:var(--ok)} .no .verdict .vi{color:var(--no)}
+
+/* gaps */
+.gaps{display:flex; flex-direction:column; gap:9px}
+.gap-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  border-bottom:1px dotted var(--line); padding-bottom:9px}
+.gap-row:last-of-type{border-bottom:0; padding-bottom:0}
+.gap-lbl{flex:1 1 240px; min-width:0; font-size:14.5px}
+.gap-in{display:flex; align-items:center; gap:7px; flex:0 0 auto}
+input[type="text"]{
+  font:inherit; font-size:14.5px; font-family:var(--mono); width:118px; text-align:center;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line-strong);
+  border-radius:7px; padding:6px 9px;
+}
+input[type="text"]:focus{border-color:var(--focus); background:var(--surface)}
+input.ok{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+input.no{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.gap-suf{font-size:13.5px; color:var(--muted); font-family:var(--mono)}
+.gap-sol{font-size:13px; color:var(--ok); font-family:var(--mono)}
+
+select{
+  font:inherit; font-size:14px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:7px; padding:6px 9px; max-width:100%;
+}
+select:focus{border-color:var(--focus)}
+select.ok{border-color:var(--ok); background:var(--ok-soft)}
+select.no{border-color:var(--no); background:var(--no-soft)}
+
+/* order */
+.ord-pool{display:flex; gap:8px; flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong); background:var(--surface-2); border-radius:8px;
+  padding:8px 12px; font-size:14px; text-align:left; max-width:100%}
+.chip:hover{border-color:var(--accent)}
+.chip:disabled{opacity:.34; cursor:default}
+.chip .ck{font-family:var(--mono); color:var(--accent-ink); margin-right:7px; font-size:12px}
+.ord-slot{display:flex; gap:8px; flex-wrap:wrap; align-items:center; min-height:40px;
+  border:1px dashed var(--line-strong); border-radius:9px; padding:8px; background:var(--surface-2)}
+.ord-slot .ph{color:var(--muted); font-size:13.5px; padding:4px}
+.seq{display:inline-flex; align-items:center; gap:7px; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:5px 10px; font-size:13.5px}
+.seq .sn{font-family:var(--mono); font-size:11px; color:var(--muted)}
+.ord-slot.ok{border-color:var(--ok); border-style:solid; background:var(--ok-soft)}
+.ord-slot.no{border-color:var(--no); border-style:solid; background:var(--no-soft)}
+
+/* match / classify */
+.mt-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-bottom:10px;
+  border-bottom:1px dotted var(--line)}
+.mt-row:last-of-type{border-bottom:0; padding-bottom:0}
+.mt-left{flex:1 1 230px; font-size:14.5px; min-width:0}
+.cl-item{border:1px solid var(--line); border-radius:9px; background:var(--surface-2);
+  padding:12px 14px; display:flex; flex-direction:column; gap:9px}
+.cl-q{font-size:14.5px}
+.cl-q b{font-weight:600; color:var(--accent-ink)}
+.cl-opts{display:flex; gap:6px; flex-wrap:wrap}
+.cl-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.cl-item.no{border-color:var(--no); background:var(--no-soft)}
+
+/* cards */
+.grp{display:flex; flex-direction:column; gap:10px}
+.grp-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(212px,1fr)); gap:9px}
+.fc{position:relative; border:1px solid var(--line); background:var(--surface-2); border-radius:9px;
+  padding:12px 13px; min-height:78px; text-align:left; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, background .15s}
+.fc:hover{border-color:var(--accent)}
+.fc .term{font-weight:600; font-size:14.5px}
+.fc .def{font-size:13.5px; color:var(--muted); line-height:1.5}
+.fc .tap{font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em}
+.fc.known{border-color:var(--ok); background:var(--ok-soft)}
+.fc-mark{position:absolute; top:8px; right:8px; border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:6px; font-size:11px; padding:2px 7px; line-height:1.5;
+  font-family:var(--mono); color:var(--muted)}
+.fc.known .fc-mark{border-color:var(--ok); color:var(--ok)}
+
+/* clip */
+.clip{border:1px solid var(--line); border-radius:11px; background:var(--surface); padding:17px 18px;
+  display:flex; flex-direction:column; gap:13px}
+.clip-h{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.clip-h h3{font-size:16.5px}
+blockquote{margin:0; padding:12px 16px; background:var(--surface-2); border-left:3px solid var(--line-strong);
+  border-radius:0 8px 8px 0; font-size:15px; font-family:var(--serif); line-height:1.65; max-width:64ch}
+
+/* scale */
+.sc-tbl{width:100%; border-collapse:collapse; font-size:14px}
+.sc-wrap{overflow-x:auto}
+.sc-tbl th{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:500; padding:0 8px 9px; text-align:center}
+.sc-tbl th:first-child{text-align:left}
+.sc-tbl td{border-top:1px solid var(--line); padding:9px 8px; text-align:center}
+.sc-tbl td:first-child{text-align:left; min-width:190px}
+.rad{width:20px; height:20px; border-radius:50%; border:1.5px solid var(--line-strong); background:var(--surface-2); padding:0}
+.rad[aria-pressed="true"]{background:var(--accent); border-color:var(--accent)}
+
+/* nav */
+.stepnav{display:flex; gap:10px; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:6px}
+
+/* modal */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.55); z-index:60; display:grid; place-items:center; padding:20px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; overflow:auto; padding:22px; display:flex; flex-direction:column; gap:14px}
+.modal h3{font-size:19px}
+.modal textarea{min-height:300px; font-family:var(--mono); font-size:12.5px; line-height:1.55}
+
+.storewarn{
+  max-width:1180px; margin:16px auto 0; padding:12px 16px;
+  border:1px solid var(--accent); border-left-width:3px; border-radius:0 9px 9px 0;
+  background:var(--accent-soft); color:var(--ink); font-size:14px; line-height:1.55;
+}
+@media (max-width:1220px){ .storewarn{margin-inline:20px} }
+.hr{height:1px; background:var(--line); border:0; margin:2px 0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <b>Atelier Néobanques</b>
+      <span>B2 · préparation</span>
+    </div>
+    <div class="prog" title="Activités complétées">
+      <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+      <span class="prog-num" id="progNum">0 / 0</span>
+    </div>
+    <button class="btn" id="exportBtn">Exporter mes réponses</button>
+    <button class="btn btn-ghost" id="themeBtn" aria-label="Changer de thème">Thème</button>
+  </div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-head">Parcours · 55 min</div>
+    <ul class="rail-list" id="rail"></ul>
+    <div class="rail-foot">
+      <a class="tc" href="https://youtu.be/tjVnddgwO6Y" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+      <button class="btn btn-ghost small" id="resetBtn">Tout effacer</button>
+    </div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var VIDEO = "https://youtu.be/tjVnddgwO6Y";
+var KEY = "neobanques-b2-v1";
+
+/* ---------------- storage ---------------- */
+var state = {step:0, a:{}, done:{}, known:{}};
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var p = JSON.parse(raw); if(p && typeof p==="object"){
+      state.step = p.step|0; state.a = p.a||{}; state.done = p.done||{}; state.known = p.known||{};
+    }}
+  }catch(e){}
+}
+var STORAGE_OK = (function(){
+  try{ localStorage.setItem(KEY+"-probe","1"); localStorage.removeItem(KEY+"-probe"); return true; }
+  catch(e){ return false; }
+})();
+var saveTimer=null;
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+}
+function saveSoon(){ clearTimeout(saveTimer); saveTimer=setTimeout(save,300); }
+
+/* ---------------- helpers ---------------- */
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=txt; return n; }
+function html(tag, cls, h){ var n=document.createElement(tag); if(cls)n.className=cls; if(h!=null)n.innerHTML=h; return n; }
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return m+":"+(r<10?"0":"")+r; }
+function tcLink(sec, label){
+  var a=el("a","tc",label||mmss(sec));
+  a.href=VIDEO+"?t="+sec; a.target="_blank"; a.rel="noopener";
+  a.title="Ouvrir la vidéo à "+mmss(sec);
+  return a;
+}
+function norm(s){
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[^a-z0-9]/g," ").replace(/\s+/g," ").trim();
+}
+function matches(val, answers){
+  var v = norm(val); if(!v) return false;
+  for(var i=0;i<answers.length;i++){ if(v === norm(answers[i])) return true; }
+  return false;
+}
+
+/* ---------------- content ---------------- */
+var T = {deb:0, p140:100, p245:165, p356:236, p445:285, p614:374, p640:400, p726:446,
+         p755:475, p800:480, p952:592, p1112:672, p1312:792, p1504:904, p1536:936,
+         p1642:1002, p1805:1085, p1855:1135};
+
+var STEPS = [
+{
+ id:"prep", title:"Avant de visionner", time:"10 min",
+ lede:"Vous parlez d'abord, vous regardez ensuite. Répondez à voix haute, puis notez l'essentiel : deux ou trois phrases suffisent.",
+ blocks:[
+  {t:"callout", ct:"Méthode", h:"<p><strong>Premier visionnage sans sous-titres, sans pause, sans dictionnaire.</strong> Vous ne comprendrez pas tout, et c'est normal : personne ne comprend 100 % d'un documentaire en langue étrangère au premier passage. Devinez par le contexte, notez le mot, vérifiez après.</p>"},
+  {t:"card", h3:"Décoder le titre", sub:"« Dans la jungle des néobanques : arnaques, trafics et clients lésés »", blocks:[
+    {t:"open", starters:["« La jungle » évoque pour moi…", "Si je devais le reformuler, je dirais…", "Ce mot me fait penser à l'espagnol…", "À première vue, il s'agit de…"], k:"p1", n:"1", q:"Trois mots à décoder avant de commencer : <em>la jungle</em>, <em>une arnaque</em>, <em>un client lésé</em>. Que vous suggère chacun d'eux ?",
+     hint:"Le verbe de « lésé » est <em>léser</em>. Un client lésé est-il satisfait, trompé, ou endetté ?",
+     model:"« <strong>La jungle</strong> suggère un marché sans règles, où le plus fort gagne et où personne ne surveille — c'est déjà une prise de position du titre. <strong>Une arnaque</strong>, c'est une tromperie destinée à soutirer de l'argent ; en espagnol on dirait <em>una estafa</em>. Et <strong>un client lésé</strong>, c'est un client qui a subi un préjudice, qui a perdu quelque chose du fait d'un tiers — donc trompé, pas endetté. »"},
+    {t:"open", starters:["Je pense notamment à…", "Ce qui les distingue, c'est d'abord…", "Contrairement à une banque traditionnelle,…", "Sur le plan tarifaire,…"], k:"p2", n:"2", q:"Citez trois néobanques que vous connaissez. Qu'est-ce qui les distingue d'une banque traditionnelle ?",
+     model:"« Je pense à Revolut, N26 et Trade Republic. Ce qui les distingue, c'est d'abord l'absence d'agence physique : tout passe par l'application. Ensuite le modèle tarifaire, avec une offre de base souvent gratuite. Et enfin la rapidité d'ouverture : quelques minutes, sans rendez-vous et sans paperasse. »"},
+    {t:"open", starters:["Je suppose qu'on va parler de…", "Je m'attends à ce qu'ils évoquent…", "Il est probable que le reportage insiste sur…", "Je serais surprise qu'ils ne mentionnent pas…"], k:"p3", n:"3", q:"Vous travaillez dans une banque. Que va reprocher un documentaire critique aux néobanques ? <strong>Formulez trois hypothèses avant de regarder.</strong>",
+     hint:"Attention : « je m'attends à ce que » et « il est possible que » appellent le subjonctif.",
+     model:"« Je m'attends à trois angles. D'abord les contrôles d'entrée en relation : je suppose qu'on va montrer qu'on ouvre un compte trop facilement. Ensuite la lutte antiblanchiment : il est probable que le reportage évoque des sanctions de régulateurs. Et enfin le service client, parce que c'est le poste que ces modèles compriment le plus. »"}
+  ]},
+  {t:"card", h3:"Deux questions de positionnement", blocks:[
+    {t:"open", starters:["Dans l'absolu, oui, mais à condition que…", "Ce que j'ai observé sur le terrain, c'est…", "Le risque, c'est que…", "Tout dépend du rythme auquel…"], k:"p4", n:"4", q:"Une entreprise qui grandit très vite peut-elle garder le même niveau d'exigence sur ses processus internes ? Vous avez accompagné des équipes dans plusieurs pays : qu'avez-vous observé ?",
+     model:"« Dans l'absolu, oui, mais à une condition : que les fonctions de contrôle grandissent au même rythme que le business, ce qui n'est presque jamais le cas. Ce que j'ai observé, c'est plutôt un décalage — le déploiement va plus vite que la montée en compétence des équipes locales, et on se retrouve avec un modèle appliqué à la lettre mais pas compris. »"},
+    {t:"open", starters:["Le modèle doit bien se financer quelque part :…", "En réalité, le coût est reporté sur…", "Cela dit, je ne veux pas faire de procès d'intention :…", "Il faut distinguer… de…"], k:"p5", n:"5", q:"Quand une entreprise annonce un service « gratuit », où se situe le coût réel, à votre avis ?",
+     model:"« Le modèle doit bien se financer quelque part : soit sur les commissions, soit sur les options payantes, soit en rognant sur les coûts — typiquement le service client ou les équipes de contrôle. Cela dit, je ne veux pas faire de procès d'intention : le gratuit n'est pas forcément louche. »"}
+  ]}
+ ]
+},
+{
+ id:"lex", title:"Le lexique essentiel", time:"8 min",
+ lede:"Cliquez sur une carte pour révéler la définition. Les définitions sont en français : à votre niveau, passer par l'espagnol vous ralentit plus qu'il ne vous aide. Ne mémorisez pas — familiarisez-vous.",
+ blocks:[
+  {t:"cards", k:"lx", groups:[
+   {name:"La fraude", items:[
+    ["une arnaque","une tromperie destinée à obtenir de l'argent"],
+    ["un escroc","la personne qui organise l'arnaque"],
+    ["l'usurpation d'identité","le fait d'utiliser l'identité de quelqu'un d'autre"],
+    ["un usurpateur","celui qui se fait passer pour un autre"],
+    ["une mule","une personne qui prête son compte bancaire à un fraudeur contre de l'argent"],
+    ["le blanchiment d'argent","l'opération qui donne une origine légale à de l'argent illégal"],
+    ["une société écran","une entreprise sans activité réelle, qui sert à en cacher une autre"],
+    ["servir de couverture","dissimuler une activité derrière une apparence légale"],
+    ["la traçabilité","la possibilité de suivre le parcours de l'argent"]
+   ]},
+   {name:"Le contrôle et la sanction", items:[
+    ["la conformité","l'ensemble des contrôles obligatoires imposés par la réglementation"],
+    ["un régulateur","l'autorité publique qui surveille un secteur"],
+    ["un manquement","le fait de ne pas respecter une obligation"],
+    ["écoper d'une amende","recevoir une sanction financière (registre courant)"],
+    ["être épinglé par","être publiquement mis en cause par"],
+    ["une déclaration de soupçon","le signalement obligatoire d'une opération suspecte aux autorités"],
+    ["être regardant sur","être exigeant, vigilant sur un point"],
+    ["au détriment de","en sacrifiant quelque chose pour obtenir autre chose"]
+   ]},
+   {name:"La relation client dégradée", items:[
+    ["geler des fonds","bloquer l'argent sur un compte, le rendre indisponible"],
+    ["un virement","un transfert d'argent d'un compte à un autre"],
+    ["un RIB","le document qui identifie un compte bancaire"],
+    ["être ciblé à tort","être visé injustement, par erreur"],
+    ["pointer du doigt","dénoncer, mettre en cause"],
+    ["externaliser","confier une activité à un prestataire extérieur"],
+    ["un interlocuteur","la personne à qui on peut s'adresser"],
+    ["faire preuve de patience","être patient (formule administrative)"]
+   ]},
+   {name:"Cinq expressions imagées", items:[
+    ["mais à quel prix ?","avec quelles conséquences négatives ?"],
+    ["le revers de la médaille","le côté négatif d'une situation positive"],
+    ["une technique bien rodée","une méthode parfaitement au point"],
+    ["ça met la puce à l'oreille","ça éveille les soupçons"],
+    ["selon toute vraisemblance","très probablement"]
+   ]}
+  ]},
+  {t:"card", h3:"Micro-exercice d'appropriation", sub:"Complétez avec un terme du glossaire, puis vérifiez.", blocks:[
+   {t:"gaps", k:"lxg", wide:true, fields:[
+    {k:"g1", label:"La banque a reçu une amende parce qu'elle n'avait pas transmis ses … dans les délais.", answers:["declarations de soupcon","declaration de soupcon","ses declarations de soupcon"], sol:"déclarations de soupçon"},
+    {k:"g2", label:"Cette entreprise n'a aucune activité réelle : c'est une … .", answers:["societe ecran","une societe ecran"], sol:"société écran"},
+    {k:"g3", label:"Depuis deux mois, son salaire est … sur son compte.", answers:["gele","bloque"], sol:"gelé (ou bloqué)"},
+    {k:"g4", label:"Le service client n'est plus géré en interne, il a été … .", answers:["externalise","sous traite"], sol:"externalisé"},
+    {k:"g5", label:"Elle a découvert qu'un compte avait été ouvert à son nom : elle est victime d'une … .", answers:["usurpation d identite","usurpation didentite","usurpation"], sol:"usurpation d'identité"}
+   ]}
+  ]}
+ ]
+},
+{
+ id:"glob", title:"1ᵉʳ visionnage — la vue d'ensemble", time:"20 min",
+ lede:"Lisez d'abord les questions, puis lancez la vidéo en entier. Ne revenez jamais en arrière pendant ce premier passage.",
+ blocks:[
+  {t:"play", sec:0, label:"Lancer la vidéo depuis le début", note:"18 min 55 · sans sous-titres, sans pause"},
+  {t:"card", h3:"A. La thèse du documentaire", blocks:[
+   {t:"open", starters:["Le reportage soutient que…", "En une phrase, le problème central, c'est…", "Ce que dénonce le documentaire, c'est…"], k:"g1", n:"1", q:"En une phrase, quel est le problème central dénoncé par ce reportage ?",
+    model:"« Le reportage soutient que la croissance très rapide des néobanques s'est faite au détriment de leurs contrôles internes : elles attirent les fraudeurs faute de vérifications sérieuses, et elles maltraitent leurs clients ordinaires faute d'un service client capable de corriger les erreurs. »"},
+   {t:"open", starters:["D'un côté…, de l'autre…", "Le paradoxe, c'est que…", "Ce sont deux défauts opposés :…", "Autrement dit,…"], k:"g2", n:"2", q:"Le documentaire présente deux types de problèmes presque <strong>contradictoires</strong>. Lesquels ?",
+    hint:"L'un concerne les fraudeurs, l'autre concerne les clients honnêtes.",
+    model:"« D'un côté un <strong>contrôle insuffisant</strong>, qui laisse passer les fraudeurs : usurpations d'identité, mules, sociétés écrans. De l'autre un <strong>contrôle automatisé excessif</strong>, qui bloque des clients parfaitement honnêtes, sans explication et sans interlocuteur. C'est le paradoxe du reportage : trop peu de contrôle sur l'entrée, trop de contrôle aveugle une fois le client à l'intérieur. »"},
+   {t:"open", starters:["Mes hypothèses étaient globalement…", "Ce que je n'avais pas anticipé, c'est…", "Je m'étais trompée sur…", "En revanche, j'avais bien vu que…"], k:"g3", n:"3", q:"Relisez vos trois hypothèses de l'étape 1. Étaient-elles justes ? Qu'est-ce que vous n'aviez pas anticipé ?"}
+  ]},
+  {t:"card", h3:"B. La structure", sub:"Cliquez sur les parties dans leur ordre d'apparition.", blocks:[
+   {t:"order", k:"g4", prompt:"Remettez les cinq grandes parties dans l'ordre du reportage.",
+    items:[
+     {id:"A", label:"Des clients honnêtes dont le compte est bloqué par un algorithme"},
+     {id:"B", label:"Un trafic de médicaments derrière un faux site de cosmétiques"},
+     {id:"C", label:"Des amendes infligées par les régulateurs européens"},
+     {id:"D", label:"L'usurpation d'identité à partir de fausses annonces de logement"},
+     {id:"E", label:"Le recrutement de « mules » sur les réseaux sociaux"}
+    ],
+    solution:["D","E","C","A","B"]},
+   {t:"open", starters:["J'en compte au moins…", "Ils s'appuient notamment sur…", "Et surtout, ils procèdent eux-mêmes à…"], k:"g5", n:"", q:"Combien de <strong>types de sources</strong> différentes les journalistes utilisent-ils ? Citez-en au moins quatre.",
+    model:"« J'en compte au moins six : des victimes qui témoignent ; un rapport officiel d'Europol daté de 2023 ; un vendeur de comptes contacté sur Telegram ; d'anciens salariés d'une néobanque ; des décisions publiées par les régulateurs ; des publications de clients sur les réseaux sociaux. Et surtout, un test réalisé par les journalistes eux-mêmes, qui ouvrent un compte pour vérifier le délai. »"}
+  ]},
+  {t:"card", h3:"C. Les intervenants", sub:"Associez chaque personne à son rôle.", blocks:[
+   {t:"match", k:"g6",
+    options:["victime d'usurpation d'identité","parente d'une victime","vendeur de comptes bancaires","ancien employé d'une néobanque","client dont le salaire est bloqué"],
+    rows:[
+     {left:"Un jeune homme anonyme, au début du reportage", answer:"victime d'usurpation d'identité"},
+     {left:"Une mère qui parle de sa fille", answer:"parente d'une victime"},
+     {left:"Un homme contacté sur Telegram", answer:"vendeur de comptes bancaires"},
+     {left:"Un témoin dont on a modifié la voix", answer:"ancien employé d'une néobanque"},
+     {left:"Romain", answer:"client dont le salaire est bloqué"}
+    ]}
+  ]},
+  {t:"card", h3:"D. Votre ressenti d'écoute", sub:"Cette réponse détermine nos priorités en classe.", blocks:[
+   {t:"open", starters:["Ce qui m'a le plus gênée, c'est…", "J'ai décroché au moment où…", "En revanche, je n'ai eu aucun mal à suivre…", "Le problème n'est pas le vocabulaire, c'est…"], k:"g7", n:"", q:"Quels passages ont été les plus difficiles : la voix du commentaire, les témoignages, les citations écrites à l'écran, ou les conversations téléphoniques ?",
+    hint:"Soyez précise. « L'écoute » est trop vague ; « comprendre quand deux personnes se coupent la parole » est exploitable."}
+  ]}
+ ]
+},
+{
+ id:"da", title:"2ᵉ visionnage — 0:00 → 9:52", time:"12 min",
+ lede:"Cette fois, vous pouvez mettre en pause et revenir en arrière. Sous-titres français autorisés uniquement si vous bloquez.",
+ blocks:[
+  {t:"card", h3:"A. Les chiffres", sub:"", tc:[{sec:T.deb,l:"0:00"},{sec:T.p245,l:"2:45"}], blocks:[
+   {t:"gaps", k:"da1", fields:[
+    {k:"c1", label:"Clients des néobanques en Europe", answers:["160","160 millions"], suf:"millions", sol:"160"},
+    {k:"c2", label:"En France, proportion de clients ayant un compte en ligne", answers:["3","trois","1 sur 3"], suf:"1 sur …", sol:"3"},
+    {k:"c3", label:"En Allemagne, proportion de nouveaux comptes", answers:["2","deux","1 sur 2"], suf:"presque 1 sur …", sol:"2"},
+    {k:"c4", label:"Année du rapport d'Europol cité", answers:["2023"], sol:"2023"}
+   ]}
+  ]},
+  {t:"card", h3:"B. Vrai ou faux", sub:"Une réponse sans justification ne compte pas : la justification est l'exercice.", tc:[{sec:T.p245,l:"2:45"},{sec:T.p614,l:"6:14"}], blocks:[
+   {t:"tf", k:"da2", items:[
+    {q:"Le jeune homme victime d'usurpation avait envoyé lui-même ses documents à une agence immobilière.", a:false,
+     j:"Il avait confié ses documents à un <strong>ami</strong>, pour se porter garant. C'est cet ami qui a répondu à l'annonce."},
+    {q:"Il a découvert la fraude grâce à un fichier officiel des comptes bancaires français.", a:true,
+     j:"Il a demandé l'accès au <strong>FICOBA</strong>, le fichier des comptes bancaires français."},
+    {q:"Le compte ouvert à son nom est resté actif pendant plus d'un an.", a:false,
+     j:"Le compte n'a été actif qu'<strong>un mois</strong>, en février 2024."},
+    {q:"L'argent arrivait sur ce compte et y restait.", a:false,
+     j:"L'argent <strong>transitait</strong> : il arrivait d'un compte et repartait aussitôt vers un autre."},
+    {q:"La banque a accepté de répondre en détail aux questions des journalistes.", a:false,
+     j:"Elle a refusé de répondre, en invoquant le secret professionnel et la protection des données."},
+    {q:"La vérification par selfie existait dans le secteur bien avant que cette banque ne l'adopte.", a:true,
+     j:"Certaines banques l'utilisaient dès <strong>2018</strong> ; cet établissement ne l'a généralisée qu'en <strong>mai 2024</strong>."}
+   ]}
+  ]},
+  {t:"card", h3:"C. Le circuit de l'argent", sub:"Un parcours en trois étapes, conçu pour rendre l'argent difficile à suivre.", tc:[{sec:T.p356,l:"3:56"},{sec:T.p445,l:"4:45"}], blocks:[
+   {t:"order", k:"da3", prompt:"Remettez les trois comptes dans l'ordre du parcours de l'argent.",
+    items:[
+     {id:"M", label:"le compte « Martin » (ouvert chez Ma French Bank)"},
+     {id:"C", label:"le compte « Camille B »"},
+     {id:"V", label:"le compte ouvert avec l'identité volée du jeune homme"}
+    ],
+    solution:["C","V","M"]},
+   {t:"gaps", k:"da4", fields:[
+    {k:"m1", label:"Montant total ayant transité par ce circuit", answers:["1851,50","1851.50","1851 50","1851","1 851,50"], suf:"€", sol:"1 851,50 €"},
+    {k:"m2", label:"Pourquoi faire passer l'argent par plusieurs comptes ? Le commentaire répond en un mot : pour compliquer la…", answers:["tracabilite","la tracabilite"], sol:"traçabilité"}
+   ]}
+  ]},
+  {t:"card", h3:"D. Le système des mules", tc:[{sec:T.p614,l:"6:14"},{sec:T.p755,l:"7:55"}], blocks:[
+   {t:"gaps", k:"da5", fields:[
+    {k:"u1", label:"Le vendeur achète un compte à une personne pour…", answers:["200","200 euros"], suf:"€", sol:"200 €"},
+    {k:"u2", label:"Il le revend entre … €", answers:["500"], suf:"€ et…", sol:"500"},
+    {k:"u3", label:"… et … €", answers:["600"], suf:"€", sol:"600"},
+    {k:"u4", label:"Peine de prison encourue par une mule en France", answers:["5","5 ans","cinq"], suf:"ans", sol:"5 ans"},
+    {k:"u5", label:"Montant de l'amende encourue", answers:["375000","375 000","375.000"], suf:"€", sol:"375 000 €"}
+   ]},
+   {t:"open", starters:["Le critère, c'est…", "Il l'assume sans détour :…", "Autrement dit, on ne cherche pas…, on cherche…"], k:"da6", n:"", q:"Quel critère guide le choix des personnes recrutées ? Le vendeur l'assume explicitement — retrouvez sa phrase.",
+    model:"« Le critère, c'est la <strong>précarité</strong>, et il l'assume sans détour : “Qui voudrait ouvrir un compte et donner son identité si elle n'avait pas besoin d'argent ?” Ce n'est pas un facteur parmi d'autres, c'est le critère de recrutement. On ne cherche pas des complices, on cherche des gens sans marge de manœuvre. »"},
+   {t:"open", starters:["L'écart est vertigineux :… contre…", "Le rapport risque-bénéfice est…", "Ce que j'en retiens, c'est que…"], k:"da7", n:"", q:"Comparez ce que gagne la mule et ce qu'elle risque. Que vous inspire cet écart ?",
+    model:"« L'écart est vertigineux : 200 euros contre 375 000 euros d'amende et cinq ans de prison. Le rapport risque-bénéfice est totalement défavorable à celle qui prend le risque, et totalement favorable à celui qui revend. Ce que j'en retiens, c'est qu'une sanction très lourde qui ne dissuade personne — et le reportage montre bien qu'elle ne dissuade pas — n'est pas une bonne sanction. »"}
+  ]},
+  {t:"card", h3:"E. Le test des journalistes", tc:[{sec:T.p755,l:"7:55"},{sec:T.p952,l:"9:52"}], blocks:[
+   {t:"open", starters:["Il l'écarte pour deux raisons :…", "En clair, il considère que…", "C'est un aveu involontaire :…"], k:"da8", n:"1", q:"Pourquoi l'homme contacté déconseille-t-il une grande banque traditionnelle ? Deux raisons.",
+    model:"« Il l'écarte pour deux raisons très simples, qu'il formule dans un registre familier : elle est trop compliquée et trop sécurisée. Autrement dit, les contrôles y sont sérieux, donc on risque d'avoir des problèmes. C'est un aveu involontaire : le fraudeur lui-même classe les banques par la solidité de leurs contrôles. »"},
+   {t:"gaps", k:"da9", fields:[
+    {k:"t1", label:"Temps qu'il faut aux journalistes pour ouvrir un compte", answers:["10","10 minutes","moins de 10","dix"], suf:"minutes", sol:"moins de 10 minutes"},
+    {k:"t2", label:"Durée minimale que l'autorité de supervision associe aux établissements les plus fiables", answers:["20","20 minutes","vingt"], suf:"minutes", sol:"au minimum 20 minutes"}
+   ]},
+   {t:"open", starters:["Elle soutient que…", "Son argument n'est pas absurde, mais…", "Reste qu'elle n'apporte aucun élément pour…"], k:"da10", n:"3", q:"Que répond la banque quand on l'interroge sur ce délai ? Reformulez sa position avec vos mots.",
+    model:"« Elle soutient que la rapidité ne prouve rien : selon elle, le délai d'obtention du RIB ne constitue pas en soi un indicateur de la solidité du dispositif antifraude. C'est un argument qui n'est pas absurde sur le principe — l'automatisation permet d'aller vite et bien. Reste qu'elle n'apporte aucun chiffre pour l'étayer, face à un régulateur qui, lui, en produit un. »"},
+   {t:"callout", ct:"Écoute fine — question piège", h:"<p>L'homme propose d'envoyer <strong>11 000 €</strong> et annonce une commission de <strong>5 %</strong>. Réécoutez le montant qu'il donne comme étant sa part, puis calculez.</p>"},
+   {t:"gaps", k:"da11", fields:[
+    {k:"x1", label:"5 % de 11 000 €, c'est…", answers:["550","550 euros"], suf:"€", sol:"550 €"}
+   ]},
+   {t:"open", starters:["Le montant annoncé ne correspond pas à…", "Deux explications sont possibles : soit…, soit…", "Dans le doute, je préfère signaler l'écart plutôt que de…"], k:"da12", n:"", q:"Le chiffre que vous entendez correspond-il à ce calcul ? Notez ce que vous entendez, même si cela vous semble incohérent.",
+    model:"« Le montant annoncé ne correspond pas à 5 % de 11 000 €. Deux explications sont possibles : soit il annonce autre chose que sa commission, soit il se trompe. Dans le doute, je note les deux chiffres et je signale l'écart plutôt que de trancher. C'est le bon réflexe professionnel : quand un chiffre ne tombe pas juste, on le signale au lieu de l'arrondir. »"}
+  ]}
+ ]
+},
+{
+ id:"db", title:"2ᵉ visionnage — 9:52 → 18:55", time:"12 min",
+ lede:"La seconde moitié bascule du côté des victimes ordinaires. Le passage sur le service antifraude relève directement de votre métier.",
+ blocks:[
+  {t:"card", h3:"A. Les amendes", sub:"Attention : le motif est différent à chaque fois, et c'est le point intéressant.", tc:[{sec:T.p952,l:"9:52"},{sec:T.p1112,l:"11:12"}], blocks:[
+   {t:"gaps", k:"db1", fields:[
+    {k:"n1", label:"N26 — année de la sanction", answers:["2024"], sol:"2024"},
+    {k:"n2", label:"N26 — montant", answers:["9,2","92","9.2","9,2 millions"], suf:"M€", sol:"9,2 M€"},
+    {k:"r1", label:"Revolut — année", answers:["2022"], sol:"2022"},
+    {k:"r2", label:"Revolut — montant", answers:["3,5","35","3.5"], suf:"M€", sol:"3,5 M€"},
+    {k:"o1", label:"Monzo — année", answers:["2025"], sol:"2025"},
+    {k:"o2", label:"Monzo — montant en livres", answers:["21","21 millions"], suf:"M£", sol:"21 M£ (≈ 24 M€)"}
+   ]},
+   {t:"match", k:"db2",
+    options:["déclarations de soupçon remises systématiquement en retard","transactions suspectes non identifiées","comptes ouverts avec de fausses informations personnelles"],
+    rows:[
+     {left:"Motif de la sanction de N26", answer:"déclarations de soupçon remises systématiquement en retard"},
+     {left:"Motif de la sanction de Revolut", answer:"transactions suspectes non identifiées"},
+     {left:"Motif de la sanction de Monzo", answer:"comptes ouverts avec de fausses informations personnelles"}
+    ]},
+   {t:"open", starters:["Le détail le plus parlant, c'est…", "Ce n'est pas une faille sophistiquée, c'est…", "Cela révèle qu'à ce moment-là,…"], k:"db3", n:"", q:"Quel détail sur les <strong>adresses</strong> utilisées chez Monzo est particulièrement révélateur ? Pourquoi les journalistes l'ont-ils retenu ?",
+    model:"« Des comptes ont pu être ouverts avec des adresses fantaisistes, dont Buckingham Palace et le 10 Downing Street. Ce détail est plus parlant que les montants : il ne s'agit pas d'une faille sophistiquée, mais de l'absence du contrôle le plus élémentaire qui soit. N'importe quel croisement avec une base d'adresses aurait bloqué le dossier. Cela révèle qu'à ce moment-là, l'ouverture de compte était purement déclarative. »"}
+  ]},
+  {t:"card", h3:"B. Les témoignages d'anciens salariés", sub:"Objectifs de productivité contre qualité du travail — un sujet de gestion des personnes.", tc:[{sec:T.p1112,l:"11:12"},{sec:T.p1312,l:"13:12"}], blocks:[
+   {t:"open", starters:["Ils décrivent tous la même chose :…", "Ce qu'ils reprochent, c'est avant tout…", "L'un d'eux dit même avoir…"], k:"db4", n:"1", q:"Que reprochent les anciens salariés à leur ancien employeur ? Citez deux éléments.",
+    model:"« Ils décrivent tous la même chose : des objectifs de productivité excessivement stricts et des délais d'examen trop courts, qui produisent des enquêtes financières de qualité médiocre. L'un d'eux dit même avoir quitté le poste pour cette raison — il évoque ses réserves quant à la qualité des enquêteurs et au délai de traitement des dossiers. »"},
+   {t:"open", starters:["Elle dément en bloc :…", "La formule exacte est…", "Elle ajoute ensuite que…"], k:"db5", n:"2", q:"Que répond la banque ? Relevez la formule exacte par laquelle elle nie l'accusation.",
+    model:"« Elle dément en bloc : “<strong>Il est absolument faux de dire</strong> que nous avons pour objectif d'enquêter sur un nombre de cas de fraude par heure, ou que nous imposons des délais pour les enquêtes.” Puis elle ajoute que les collègues peuvent prendre les pauses dont ils ont besoin. »"},
+   {t:"open", starters:["Elle répond sur…, alors que l'accusation portait sur…", "Elle déplace le sujet :…", "Personne ne l'accusait de…"], k:"db6", n:"3", q:"À quoi la banque répond-elle exactement, et sur quel point précis ne répond-elle pas ?",
+    model:"« Elle répond sur les <strong>pauses</strong>, alors que l'accusation portait sur les <strong>objectifs de dossiers traités</strong>. Personne ne l'accusait d'interdire les pauses : elle déplace donc le sujet. C'est une structure de démenti très reconnaissable — négation absolue, puis contre-exemple rassurant mais hors sujet, puis réaffirmation de conformité réglementaire. »"},
+   {t:"open", starters:["Au total, ils sont au moins…", "Les journalistes précisent avoir également trouvé…", "Le mot « concordants » signifie ici que…"], k:"db7", n:"4", q:"Combien d'anciens salariés confirment cette version au total, et où les journalistes ont-ils trouvé les autres témoignages ?",
+    model:"« Trois anciens salariés au moins : celui du service fraude à la carte bancaire, puis deux autres en 2025. Et les journalistes ajoutent avoir trouvé sur internet d'autres témoignages concordants d'anciens chargés de la lutte antifraude. Le mot “concordants” est important : il signifie que plusieurs sources indépendantes disent la même chose. »"}
+  ]},
+  {t:"card", h3:"C. Algorithmes et service client", tc:[{sec:T.p1312,l:"13:12"},{sec:T.p1504,l:"15:04"}], blocks:[
+   {t:"open", starters:["La promesse, c'est…", "L'effet pervers, c'est…", "En termes de conformité, on parlerait de…"], k:"db8", n:"1", q:"Que promet la technologie mise en avant, et quel effet pervers les clients dénoncent-ils ?",
+    model:"« La promesse, c'est la détection en temps réel : des algorithmes développés en interne qui signalent immédiatement les transactions à haut risque et les habitudes de dépense suspectes. L'effet pervers, c'est le faux positif — il n'y a pas que les voleurs qui sont bloqués. Des clients parfaitement honnêtes voient leur compte suspendu du jour au lendemain, sans aucune explication. »"},
+   {t:"open", starters:["Concrètement, elle a…", "L'entreprise le justifie par…", "…tout en affirmant conserver…"], k:"db9", n:"2", q:"Qu'est-ce qui a changé en 2024 dans le service client de la néobanque allemande, et comment l'entreprise le justifie-t-elle ?",
+    model:"« Elle a fait un grand ménage dans son service client — pour le dire en termes professionnels, elle l'a restructuré. Il existait auparavant un support par langue ; d'après l'ancien employé, il serait désormais sous-traité en Europe de l'Est. L'entreprise confirme l'externalisation et la justifie par des délais de traitement plus courts pour la majorité des demandes, tout en affirmant conserver des spécialistes en interne pour les cas complexes. »"}
+  ]},
+  {t:"card", h3:"D. Le cas de Romain", tc:[{sec:T.p1504,l:"15:04"},{sec:T.p1642,l:"16:42"}], blocks:[
+   {t:"gaps", k:"db10", fields:[
+    {k:"ro1", label:"Mois et année d'ouverture de son compte", answers:["septembre 2025","09 2025","sept 2025"], sol:"septembre 2025"},
+    {k:"ro2", label:"Durée du blocage au moment du tournage", answers:["2","2 mois","plus de 2 mois","deux"], suf:"mois et plus", sol:"plus de 2 mois"}
+   ]},
+   {t:"open", starters:["Il venait de… et voulait…", "Il découvre alors que…", "Son seul interlocuteur, c'est…"], k:"db11", n:"", q:"Que voulait-il faire exactement le jour où il découvre le blocage, et quel est son seul interlocuteur ?",
+    model:"« Il venait de recevoir son salaire et voulait faire un virement à sa conjointe pour payer les factures. Il découvre alors que tout est bloqué : il ne peut ni envoyer, ni recevoir, ni payer — l'argent est gelé sur le compte. Et pour régler ça, il n'a qu'un seul canal, un chat, où on lui répond invariablement qu'on a transmis sa demande et qu'il doit faire preuve de patience. »"},
+   {t:"open", starters:["Il emploie un registre nettement…", "Sa réaction est compréhensible, mais…", "La version professionnelle serait plutôt :…"], k:"db12", n:"", q:"Relevez une phrase qui exprime son exaspération. Dans quel registre de langue se situe-t-elle ?",
+    model:"« Par exemple “c'est mon jus, c'est à moi” ou “allô bande de pitres” — registre <strong>familier</strong>, voire très familier et insultant. Sa réaction est très humaine, mais soyons lucides : insulter un chatbot n'a jamais débloqué un virement. La version efficace serait datée et chiffrée : “Mon compte est bloqué depuis le 12 octobre, soit 62 jours. Sans réponse motivée sous 8 jours, je saisis le médiateur bancaire.” »"}
+  ]},
+  {t:"card", h3:"E. La société écran", tc:[{sec:T.p1642,l:"16:42"},{sec:T.p1855,l:"18:55"}], blocks:[
+   {t:"open", starters:["Ils partent de… et remontent jusqu'à…", "Ce qui leur met la puce à l'oreille, c'est…", "Premier indice :… Deuxième indice :…"], k:"db13", n:"", q:"Comment les journalistes remontent-ils du vendeur de médicaments jusqu'à la société londonienne ? Qu'est-ce qui leur met la puce à l'oreille ?",
+    model:"« Ils partent d'un achat test et récupèrent le RIB du fournisseur. Premier indice : le compte est domicilié dans une néobanque lituanienne et n'est pas au nom du site de médicaments, mais d'une société basée à Londres, Arlong Union Limited. Deuxième indice : à la même adresse est enregistré un site de cosmétiques. Ils tentent une commande et rien ne se passe — aucun débit, aucun envoi, un numéro non attribué, des e-mails sans réponse. Un site qui ne vend rien ne sert qu'à une chose : justifier une activité pour ouvrir un compte. »"},
+   {t:"open", starters:["Le reportage se clôt sur…", "La banque oppose une fin de non-recevoir :…", "Ce qui est accablant, c'est la durée :…"], k:"db14", n:"", q:"Sur quel constat le documentaire se termine-t-il ? En quelle année remonte la première alerte, et combien de temps s'est écoulé depuis ?",
+    model:"« La banque oppose une fin de non-recevoir : elle ne peut ni divulguer ni confirmer aucune information concernant ses clients — même pas un démenti. Et le reportage se clôt sur un constat de durée assez accablant : le service français de lutte contre le blanchiment alertait déjà en <strong>2019</strong> sur les risques posés par les néobanques. Sept ans plus tard, les mêmes préoccupations sont toujours d'actualité. »"}
+  ]},
+  {t:"callout", ct:"Question de synthèse — la première que je vous poserai en classe", h:"<p>Le reportage reproche deux choses <strong>opposées</strong> aux néobanques : trop peu de contrôle d'un côté, trop de contrôle de l'autre. Comment expliquez-vous cette contradiction apparente ?</p>"},
+  {t:"card", blocks:[{t:"open", starters:["Ce n'est contradictoire qu'en apparence, parce que…", "À l'entrée…, une fois le client à l'intérieur…", "Au fond, les deux défauts ont la même cause :…"], k:"db15", n:"", q:"Préparez deux ou trois phrases.",
+    model:"« Ce n'est contradictoire qu'en apparence, parce que ce ne sont pas les mêmes contrôles. À l'entrée, le contrôle est humain, coûteux et lent : c'est celui qu'on a sacrifié pour gagner des clients. Une fois le client à l'intérieur, le contrôle est algorithmique, donc quasi gratuit : c'est celui qu'on a multiplié. Résultat, on filtre mal ceux qu'il faudrait arrêter, et on bloque massivement ceux qu'il ne faudrait pas. Au fond, les deux défauts ont la même cause : on a remplacé un contrôle qui coûte par un contrôle qui ne coûte rien. »"}]}
+ ]
+},
+{
+ id:"ec", title:"Atelier — comprendre les gens qui parlent vite", time:"10 min",
+ lede:"C'est votre objectif prioritaire, et ce documentaire est un terrain idéal : il alterne une voix de commentaire très articulée et des échanges réels, rapides, familiers. Si le commentaire vous paraît facile et les conversations impossibles, ce n'est pas un problème de niveau — ce ne sont pas les mêmes compétences.",
+ blocks:[
+  {t:"callout", ct:"Méthode, pour chaque extrait", h:"<p>Écoutez <strong>3 fois</strong> sans rien lire. Puis lisez la transcription et réécoutez. Enfin, <strong>répétez à voix haute en imitant le débit</strong> — c'est cette dernière étape qui fait progresser la compréhension, pas l'écoute passive.</p>"},
+  {t:"clip", sec:T.p640, title:"Le vendeur de comptes", quote:"C'est simple, on achète des comptes à des gens en situation un peu précaire, on leur fait ouvrir des comptes, on leur donne 200 € pour les revendre entre 500 et 600 €.",
+   focus:"<p><strong>À repérer : la structure causative « faire + infinitif ».</strong> « On leur <strong>fait ouvrir</strong> des comptes » = on les amène à ouvrir des comptes. Très fréquente, et très difficile à saisir à l'oral rapide parce que les deux verbes se prononcent presque collés.</p>",
+   ex:[{k:"e1a", q:"Transformez : « J'ai demandé à mon équipe de revoir le calendrier. »", model:"« J'ai <strong>fait revoir</strong> le calendrier à mon équipe. »"},
+       {k:"e1b", q:"Transformez : « Le manager a demandé à ses collaborateurs de remplir le formulaire. »", model:"« Le manager <strong>a fait remplir</strong> le formulaire à ses collaborateurs. »"}]},
+  {t:"clip", sec:T.p726, title:"Le jeune homme qui propose ses services", quote:"Sur le coup, le mec propose 300 balles, frérot… ça prend 5 minutes, je gagne 300 balles…",
+   focus:"<p><strong>Trois marqueurs du français très familier :</strong> « le mec » (l'homme, le type), « 300 balles » (300 euros), « frérot » (terme d'adresse entre jeunes hommes).</p><p class=\"muted small\">Consigne : vous devez <strong>reconnaître</strong> ces mots, pas les produire. Un cadre qui dit « balles » en réunion produit un effet involontaire.</p>",
+   ex:[{k:"e2a", q:"Comment diriez-vous la même chose en réunion, en parlant de cette personne et de cette somme ?", model:"« Mon interlocuteur me proposait 300 euros. » — on remplace « le mec » par « mon interlocuteur » ou « la personne que j'ai eue au téléphone », et « balles » par « euros ». Pour rapporter le propos : « Il m'a proposé 300 euros pour ouvrir un compte à mon nom. »"}]},
+  {t:"clip", sec:T.p800, title:"L'échange téléphonique", quote:"— C'est quoi le nom de la banque que toi tu utilises ? — Société Générale. — Ils sont compliqués, ils sont trop sécurisés et tout. Donc tu peux avoir des problèmes.",
+   focus:"<p><strong>1. La question orale sans inversion.</strong> « C'est quoi le nom de… ? » au lieu de « Quel est le nom de… ? ». À l'oral, le mot interrogatif part souvent à la fin : « Tu pars quand ? », « Ça coûte combien ? »</p><p><strong>2. La dislocation.</strong> « la banque que <strong>toi tu</strong> utilises ». Le sujet est doublé pour insister. C'est ce qui fait qu'un natif sonne naturel : « <strong>Moi, je</strong> pense que… », « <strong>Ce dossier, il</strong> est bloqué », « <strong>Mon équipe, elle</strong> a déjà validé ». Employez-la : elle est parfaitement acceptable en réunion.</p><p><strong>3. « et tout »</strong> : marqueur de fin d'énumération vague, l'équivalent oral de « etc. ». À comprendre, à ne pas employer en contexte formel.</p>",
+   ex:[{k:"e3a", q:"Transformez ces trois questions formelles en questions orales : « Quand la réunion commence-t-elle ? » · « Quel est le budget prévu ? » · « Pourquoi avez-vous choisi cette option ? »",
+        model:"« La réunion commence quand ? » (ou « Ça commence à quelle heure ? ») · « C'est quoi le budget ? » (ou « Le budget, c'est combien ? ») · « Pourquoi vous avez choisi cette option ? » — sans inversion, l'intonation suffit."},
+       {k:"e3b", q:"Écrivez deux phrases disloquées sur votre travail, sur le modèle « Ce dossier, il est bloqué ».",
+        model:"« Ce projet, il avance bien. » · « Les équipes locales, elles ont déjà été formées. » · « Ce point-là, on le verra en comité. » La dislocation met en avant le thème avant d'en dire quelque chose — c'est un réflexe d'oral natif, pas une faute."}]},
+  {t:"clip", sec:T.p1536, title:"Le témoignage de Romain", quote:"Dès que j'ai reçu mon salaire, je voulais faire un virement à ma conjointe pour payer les factures… et je vois : impossible de faire le virement.",
+   focus:"<p><strong>Le présent de narration.</strong> Romain raconte un événement passé mais bascule au présent (« je vois », « je peux plus ») pour rendre la scène vivante. Extrêmement fréquent dans le récit oral français, y compris au travail : « J'arrive à la réunion, et là je découvre que… »</p><p><strong>La chute du « ne ».</strong> Il dit « je <strong>peux plus</strong> envoyer d'argent », pas « je ne peux plus ». À l'oral spontané, le « ne » disparaît presque toujours. C'est l'une des principales causes d'incompréhension : vous attendez un « ne » qui n'arrive jamais.</p>",
+   ex:[{k:"e4a", q:"Réécoutez tout le passage de Romain. Combien de fois le « ne » est-il omis ? Notez les phrases que vous entendez.",
+        model:"On l'entend notamment dans « je peux plus envoyer d'argent, je peux plus le recevoir, je peux plus payer » — trois omissions consécutives. À l'écrit, ces phrases s'écriraient « je ne peux plus… ». Entraînez votre oreille à traiter « je peux plus » comme un négatif, pas comme un positif."}]},
+  {t:"card", h3:"Bilan de l'atelier", blocks:[
+   {t:"open", starters:["Ce qui m'a le plus gênée, c'est…", "Je perds le fil dès que…", "J'ai du mal à entendre… quand…"], k:"e5", n:"", q:"Quels <strong>deux phénomènes</strong> vous ont le plus gêné la compréhension ? Nous les travaillerons spécifiquement.",
+    hint:"Par exemple : la chute du « ne », les liaisons dans les chiffres, le débit des échanges téléphoniques, les mots familiers."}
+  ]}
+ ]
+},
+{
+ id:"dis", title:"Qui dit quoi ?", time:"5 min",
+ lede:"Un documentaire d'investigation mélange en permanence quatre types d'énoncés qui n'ont pas la même valeur. Les distinguer à l'oreille est exactement ce qu'on attend de vous en comité : dire d'où vient chaque information.",
+ blocks:[
+  {t:"card", h3:"Les quatre types", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li><strong>Fait établi</strong> — indicatif, chiffre précis, source nommée. <em>Vérifiable.</em></li>"+
+     "<li><strong>Témoignage</strong> — « il affirme que », « selon lui », « il nous a raconté ». <em>Une version, pas une preuve.</em></li>"+
+     "<li><strong>Hypothèse du journaliste</strong> — <strong>conditionnel</strong> (« seraient »), « selon toute vraisemblance », « peut-être ». <em>Non confirmé.</em></li>"+
+     "<li><strong>Démenti d'entreprise</strong> — « il est absolument faux de dire que », « nous ne pouvons ni… ni… ». <em>La version officielle.</em></li>"+
+     "</ul></div>"}
+  ]},
+  {t:"card", h3:"À vous de classer", sub:"Le signal linguistique est votre indice principal — il est mis en évidence.", blocks:[
+   {t:"classify", k:"cl1",
+    cats:["Fait établi","Témoignage","Hypothèse","Démenti"],
+    items:[
+     {q:"« Ces banques <b>seraient</b> les préférées des escrocs. »", a:"Hypothèse"},
+     {q:"« En 2024, N26 a reçu une amende de 9,2 millions d'euros. »", a:"Fait établi"},
+     {q:"« Il est <b>absolument faux</b> de dire que nous imposons des délais pour les enquêtes. »", a:"Démenti"},
+     {q:"« Ma fille a répondu à une fausse annonce de location d'appartement. »", a:"Témoignage"},
+     {q:"« <b>Selon toute vraisemblance</b>, ce site en apparence légal a servi de couverture. »", a:"Hypothèse"},
+     {q:"« L'argent provenait donc <b>peut-être</b> de ce crédit frauduleux. »", a:"Hypothèse"},
+     {q:"« Ces banques ne <b>seraient</b> pas toujours très regardantes sur leurs clients. »", a:"Hypothèse"}
+    ]}
+  ]},
+  {t:"card", h3:"Le conditionnel journalistique", sub:"L'outil le plus utile de tout ce documentaire pour votre usage professionnel : faire circuler une information non vérifiée sans l'endosser.", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li>« Le budget <strong>est</strong> revu à la baisse. » → vous vous engagez.<br>« Le budget <strong>serait</strong> revu à la baisse. » → vous rapportez.</li>"+
+     "<li>« Trois personnes <strong>ont</strong> démissionné. » → « Trois personnes <strong>auraient</strong> démissionné. »</li>"+
+     "<li>« La réorganisation <strong>commence</strong> en janvier. » → « La réorganisation <strong>commencerait</strong> en janvier. »</li>"+
+     "</ul></div>"},
+   {t:"open", starters:["D'après ce qui remonte des équipes, … serait…", "… aurait été validé, mais je n'ai pas encore de confirmation écrite.", "Sous réserve de confirmation,…"], k:"dis2", n:"", q:"Formulez deux phrases au conditionnel journalistique sur un sujet de votre environnement professionnel.",
+    model:"« D'après ce qui remonte des équipes locales, le calendrier de déploiement <strong>serait</strong> décalé au second semestre. » · « Le nouveau modèle d'évaluation <strong>aurait</strong> été validé en comité la semaine dernière, mais je n'ai pas encore la confirmation écrite. » Dans les deux cas, le conditionnel dit : je transmets l'information, je ne la garantis pas."}
+  ]}
+ ]
+},
+{
+ id:"met", title:"Et dans votre métier ?", time:"10 min",
+ lede:"Préparez ces trois questions en notes — quelques mots-clés, pas des phrases rédigées. En classe, vous parlerez à partir de ces notes sans les lire. C'est exactement le format d'une prise de parole en comité.",
+ blocks:[
+  {t:"card", h3:"1. Croissance et processus", sub:"Le rapport cité affirme que la croissance s'est faite « au détriment de procédures de conformité adéquate ».", blocks:[
+   {t:"open", starters:["Dans certaines géographies, on a constaté que…", "Le risque, c'est que…", "Ce qui a fait la différence, c'est…", "J'ai vu les deux cas de figure :…"], k:"m1", n:"", q:"Vous avez suivi la mise en œuvre de modèles et de projets dans de nombreuses géographies. Avez-vous observé ce phénomène — un déploiement trop rapide qui fragilise les processus ? Qu'est-ce qui permet de l'éviter ?",
+    hint:"Appuyez-vous sur un cas réel que vous avez suivi. « Le risque, c'est que… » appelle le subjonctif."}
+  ]},
+  {t:"card", h3:"2. Objectifs chiffrés et qualité du travail", sub:"Des salariés décrivent des objectifs qui dégradent leur travail, plusieurs partent, l'employeur dément.", tc:[{sec:T.p1112,l:"11:12"}], blocks:[
+   {t:"open", starters:["Ce qui me frappe, c'est…", "Un turnover élevé sur un même poste, c'est rarement un hasard.", "J'aurais plutôt recommandé de…", "Ce type de communication me paraît contre-productif, parce que…"], k:"m2", n:"", q:"Comment analysez-vous cette situation depuis votre métier ? Que révèlent des départs en série dans une même équipe ? Et que pensez-vous de la réponse publique de l'entreprise ?",
+    hint:"Séparez trois choses : ce que décrivent les salariés, ce que cela révèle, et ce que vous pensez de la réponse publique."}
+  ]},
+  {t:"card", h3:"3. Externalisation et expérience", sub:"Une néobanque a supprimé ses équipes de support par langue. Les clients dénoncent l'absence d'interlocuteur.", tc:[{sec:T.p1312,l:"13:12"}], blocks:[
+   {t:"open", starters:["Tout dépend de…", "La vraie question n'est pas…, c'est…", "À partir du moment où…", "On n'externalise pas son cœur de métier."], k:"m3", n:"", q:"À quelles conditions une externalisation réussit-elle ? Quel est le point de bascule à partir duquel une économie devient une perte ?",
+    hint:"Une réponse nuancée vaut mieux qu'une position tranchée : nommez les conditions plutôt que de trancher."}
+  ]},
+  {t:"callout", ct:"Production orale — 90 secondes", h:"<p>Enregistrez-vous en répondant à <strong>une seule</strong> de ces trois questions, pendant <strong>90 secondes, sans vous arrêter</strong>, même si vous faites des erreurs. Réécoutez-vous une fois.</p>"},
+  {t:"card", blocks:[
+   {t:"open", starters:["Le mot qui m'a manqué, c'est…", "J'ai commencé une phrase par… et je n'ai pas su la finir.", "Je me suis reprise plusieurs fois sur…"], k:"m4", n:"", q:"Après réécoute : quel <strong>mot vous a manqué</strong>, et quelle <strong>phrase avez-vous commencée sans savoir comment la finir</strong> ?",
+    hint:"Ces deux éléments valent une demi-heure de cours. Apportez-les."}
+  ]}
+ ]
+},
+{
+ id:"bil", title:"À apporter en classe", time:"5 min",
+ lede:"Remplissez cette dernière page juste avant le cours. C'est elle qui déterminera nos priorités pendant les 60 minutes.",
+ blocks:[
+  {t:"card", h3:"Mes mots inconnus", sub:"Cinq maximum — ceux qui vous ont vraiment bloquée, pas tous ceux que vous ne connaissiez pas.", blocks:[
+   {t:"open", starters:["… — vers …:… — j'ai compris…, mais je n'en suis pas sûre.", "Je l'ai deviné par le contexte :…"], k:"b1", n:"", q:"Notez le mot, la minute approximative, et ce que vous avez compris du contexte.",
+    hint:"Exemple : « arguer de — vers 5:24 — j'ai compris “dire”, mais je ne suis pas sûre. »"}
+  ]},
+  {t:"card", h3:"Mes passages incompris", sub:"Deux moments précis où vous avez décroché. Nous les réécouterons ensemble.", blocks:[
+   {t:"open", starters:["Vers …:…, j'ai cru comprendre que…", "J'ai complètement décroché à partir de…"], k:"b2", n:"", q:"Indiquez le minutage et ce que vous avez cru comprendre."}
+  ]},
+  {t:"card", h3:"Mon auto-évaluation", blocks:[
+   {t:"scale", k:"b3", cols:["Difficile","Correct","À l'aise"], rows:[
+    "Comprendre la voix du commentaire",
+    "Comprendre les témoignages spontanés",
+    "Comprendre les échanges téléphoniques rapides",
+    "Repérer les chiffres à l'oral",
+    "Distinguer un fait d'une hypothèse",
+    "Reformuler une idée du reportage avec mes mots"
+   ]}
+  ]},
+  {t:"card", h3:"Ce que je veux travailler en priorité", sub:"Une seule chose, et soyez précise.", blocks:[
+   {t:"open", starters:["Ce que je veux travailler en priorité, c'est…", "Concrètement, j'aimerais arriver à…"], k:"b4", n:"", q:"« L'écoute » est trop vague. « Comprendre quand deux personnes se coupent la parole » est exploitable."}
+  ]},
+  {t:"callout", ct:"En classe", h:"<p>Nous n'utiliserons pas cette fiche : nous passerons directement à la discussion. Vous parlerez environ <strong>70 % du temps</strong>. L'objectif n'est pas de restituer le documentaire — vous l'aurez déjà fait ici — mais de <strong>prendre position, objecter et nuancer</strong>.</p><p class='small muted'>Avant de venir, cliquez sur « Exporter mes réponses » en haut de la page et envoyez-moi le texte.</p>"},
+  {t:"export"}
+ ]
+}
+];
+
+/* ---------------- activity registry ---------------- */
+var ACTS = [];
+function reg(k){ if(ACTS.indexOf(k)<0) ACTS.push(k); }
+(function scan(){
+  function walk(bs){
+    bs.forEach(function(b){
+      if(b.t==="open") reg(b.k);
+      else if(b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale") reg(b.k);
+      else if(b.t==="gaps") reg(b.k);
+      else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ reg(x.k); }); }
+      else if(b.t==="card"&&b.blocks) walk(b.blocks);
+    });
+  }
+  STEPS.forEach(function(s){ walk(s.blocks); });
+})();
+
+function isDone(k){
+  var v = state.a[k];
+  if(v==null) return false;
+  if(typeof v === "string") return v.trim().length>2;
+  if(typeof v === "object") return Object.keys(v).length>0;
+  return false;
+}
+function stepDone(s){
+  var ks = stepKeys(s);
+  if(!ks.length) return false;
+  var n=0; ks.forEach(function(k){ if(isDone(k)) n++; });
+  return n >= Math.ceil(ks.length*0.7);
+}
+function stepKeys(s){
+  var out=[];
+  function walk(bs){ bs.forEach(function(b){
+    if(b.t==="open"||b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale"||b.t==="gaps"){ if(b.k) out.push(b.k); }
+    else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ out.push(x.k); }); }
+    else if(b.t==="card"&&b.blocks) walk(b.blocks);
+  });}
+  walk(s.blocks); return out;
+}
+
+/* ---------------- renderers ---------------- */
+function mkReveal(labelText, contentHTML){
+  var wrap = el("div");
+  var btn = el("button","btn btn-ghost small", labelText||"Voir une réponse possible");
+  var box = html("div","reveal","<div class='rt'>Réponse possible — un modèle, pas une correction</div>"+contentHTML);
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? (labelText||"Voir une réponse possible") : "Masquer";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+
+function rOpen(b){
+  var n = el("div","q");
+  var lbl = el("div","q-lbl");
+  if(b.n) lbl.appendChild(el("span","q-n", b.n+"."));
+  lbl.appendChild(html("div","q-t", b.q));
+  n.appendChild(lbl);
+  if(b.hint) n.appendChild(html("div","q-hint", b.hint));
+  var ta = el("textarea");
+  ta.id = "f_"+b.k;
+  ta.placeholder = "Votre réponse…";
+  ta.value = state.a[b.k] || "";
+  var flag = el("span","saved","enregistré");
+  function touched(){
+    state.a[b.k] = ta.value; saveSoon(); flag.classList.add("on");
+    clearTimeout(ta._t); ta._t = setTimeout(function(){ flag.classList.remove("on"); },1200);
+    updateProgress();
+  }
+  ta.addEventListener("input", touched);
+  if(b.starters && b.starters.length){
+    var sw = el("div","starters");
+    sw.appendChild(el("span","starters-lbl","Amorces — cliquez pour insérer"));
+    b.starters.forEach(function(st){
+      var bt = el("button","starter", st); bt.type = "button";
+      bt.setAttribute("aria-label", "Insérer l'amorce : "+st);
+      bt.addEventListener("click", function(){
+        var cur = ta.value;
+        ta.value = (cur && !/\s$/.test(cur) ? cur+" " : cur) + st + " ";
+        ta.focus();
+        try{ ta.setSelectionRange(ta.value.length, ta.value.length); }catch(e){}
+        touched();
+      });
+      sw.appendChild(bt);
+    });
+    n.appendChild(sw);
+  }
+  n.appendChild(ta);
+  var foot = el("div","row");
+  foot.appendChild(flag);
+  n.appendChild(foot);
+  if(b.model) n.appendChild(mkReveal(null, "<div>"+b.model+"</div>"));
+  return n;
+}
+
+function rTf(b){
+  var wrap = el("div","tf-list");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","tf-item");
+    var top = el("div","tf-top");
+    top.appendChild(html("div","tf-txt","<strong style='font-family:var(--mono);font-size:12px;color:var(--muted)'>"+(i+1)+"</strong> &nbsp;"+it.q));
+    var btns = el("div","tf-btns");
+    var verdict = html("div","verdict","");
+    verdict.hidden = true;
+    function apply(val){
+      store[i] = val; saveSoon();
+      bV.setAttribute("aria-pressed", val==="V"?"true":"false");
+      bF.setAttribute("aria-pressed", val==="F"?"true":"false");
+      var right = (val==="V") === it.a;
+      box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+      verdict.hidden = false;
+      verdict.innerHTML = "<span class='vi'>"+(right?"✓ Exact":"✗ Non")+"</span><span>"+it.j+"</span>";
+      updateProgress();
+    }
+    var bV = el("button","pick","Vrai"); bV.type="button"; bV.setAttribute("aria-pressed","false");
+    var bF = el("button","pick","Faux"); bF.type="button"; bF.setAttribute("aria-pressed","false");
+    bV.addEventListener("click", function(){ apply("V"); });
+    bF.addEventListener("click", function(){ apply("F"); });
+    btns.appendChild(bV); btns.appendChild(bF);
+    top.appendChild(btns);
+    box.appendChild(top); box.appendChild(verdict);
+    wrap.appendChild(box);
+    if(store[i]) apply(store[i]);
+  });
+  return wrap;
+}
+
+function rGaps(b){
+  var wrap = el("div","gaps");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var inputs = [];
+  b.fields.forEach(function(f){
+    var row = el("div","gap-row");
+    row.appendChild(html("div","gap-lbl", f.label));
+    var box = el("div","gap-in");
+    var inp = document.createElement("input");
+    inp.type="text"; inp.id = "f_"+b.k+"_"+f.k;
+    inp.value = store[f.k] || "";
+    inp.setAttribute("aria-label", f.label.replace(/<[^>]+>/g,""));
+    inp.addEventListener("input", function(){
+      store[f.k] = inp.value; inp.classList.remove("ok","no"); sol.textContent=""; saveSoon(); updateProgress();
+    });
+    box.appendChild(inp);
+    if(f.suf) box.appendChild(el("span","gap-suf", f.suf));
+    var sol = el("span","gap-sol","");
+    box.appendChild(sol);
+    row.appendChild(box);
+    wrap.appendChild(row);
+    inputs.push({inp:inp, f:f, sol:sol});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    inputs.forEach(function(o){
+      var right = matches(o.inp.value, o.f.answers);
+      o.inp.classList.toggle("ok", right); o.inp.classList.toggle("no", !right);
+      o.sol.textContent = right ? "✓" : ("→ "+o.f.sol);
+      o.sol.style.color = right ? "var(--ok)" : "var(--no)";
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rOrder(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="11px";
+  if(b.prompt) wrap.appendChild(html("div","q-t", b.prompt));
+  var slot = el("div","ord-slot");
+  var pool = el("div","ord-pool");
+  var chosen = (state.a[b.k] && state.a[b.k].seq) ? state.a[b.k].seq.slice() : [];
+  function render(){
+    slot.innerHTML=""; pool.innerHTML="";
+    if(!chosen.length){ slot.appendChild(el("span","ph","Cliquez les éléments dans l'ordre…")); }
+    chosen.forEach(function(id, i){
+      var it = b.items.filter(function(x){return x.id===id;})[0];
+      var s = el("div","seq");
+      s.appendChild(el("span","sn",(i+1)+"."));
+      s.appendChild(el("span",null,it.label));
+      slot.appendChild(s);
+    });
+    b.items.forEach(function(it){
+      var c = el("button","chip"); c.type="button";
+      c.innerHTML = "<span class='ck'>"+it.id+"</span>"+it.label;
+      if(chosen.indexOf(it.id)>=0) c.disabled = true;
+      c.addEventListener("click", function(){
+        chosen.push(it.id);
+        state.a[b.k] = {seq:chosen.slice()}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent="";
+        render(); updateProgress();
+      });
+      pool.appendChild(c);
+    });
+  }
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  var undo = el("button","btn btn-ghost","Recommencer");
+  var msg = el("span","small");
+  check.addEventListener("click", function(){
+    if(chosen.length !== b.solution.length){ msg.textContent="Placez d'abord tous les éléments."; msg.style.color="var(--muted)"; return; }
+    var right = chosen.join("") === b.solution.join("");
+    slot.classList.toggle("ok", right); slot.classList.toggle("no", !right);
+    msg.textContent = right ? "✓ C'est l'ordre du reportage." : ("✗ L'ordre est : "+b.solution.join(" → "));
+    msg.style.color = right ? "var(--ok)" : "var(--no)";
+  });
+  undo.addEventListener("click", function(){
+    chosen = []; state.a[b.k]={seq:[]}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent=""; render(); updateProgress();
+  });
+  bar.appendChild(check); bar.appendChild(undo); bar.appendChild(msg);
+  wrap.appendChild(slot); wrap.appendChild(pool); wrap.appendChild(bar);
+  render();
+  return wrap;
+}
+
+function rMatch(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var sels = [];
+  b.rows.forEach(function(r, i){
+    var row = el("div","mt-row");
+    row.appendChild(html("div","mt-left", r.left));
+    var s = document.createElement("select");
+    s.id = "f_"+b.k+"_"+i;
+    s.setAttribute("aria-label", r.left);
+    var o0 = document.createElement("option"); o0.value=""; o0.textContent="— choisir —"; s.appendChild(o0);
+    b.options.forEach(function(op){
+      var o = document.createElement("option"); o.value=op; o.textContent=op; s.appendChild(o);
+    });
+    s.value = store[i] || "";
+    s.addEventListener("change", function(){ store[i]=s.value; s.classList.remove("ok","no"); saveSoon(); updateProgress(); });
+    row.appendChild(s);
+    wrap.appendChild(row);
+    sels.push({s:s, r:r});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    sels.forEach(function(o){
+      var right = o.s.value === o.r.answer;
+      o.s.classList.toggle("ok", right); o.s.classList.toggle("no", !right);
+      if(!right && o.s.value) o.s.title = "Réponse attendue : "+o.r.answer;
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rClassify(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","cl-item");
+    box.appendChild(html("div","cl-q", it.q));
+    var opts = el("div","cl-opts");
+    var btns = [];
+    function paint(){
+      var v = store[i];
+      btns.forEach(function(x){ x.b.setAttribute("aria-pressed", x.c===v ? "true":"false"); });
+      if(v){
+        var right = v === it.a;
+        box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+        fb.hidden = false;
+        fb.innerHTML = right ? "<span class='vi'>✓ Exact</span>" : "<span class='vi'>✗ Non</span><span>Il s'agit d'un énoncé de type « "+it.a+" ».</span>";
+      }
+    }
+    b.cats.forEach(function(c){
+      var bt = el("button","pick", c); bt.type="button"; bt.setAttribute("aria-pressed","false");
+      bt.style.minWidth="auto";
+      bt.addEventListener("click", function(){ store[i]=c; saveSoon(); paint(); updateProgress(); });
+      opts.appendChild(bt); btns.push({b:bt,c:c});
+    });
+    var fb = html("div","verdict",""); fb.hidden = true;
+    box.appendChild(opts); box.appendChild(fb);
+    wrap.appendChild(box);
+    paint();
+  });
+  return wrap;
+}
+
+function rCards(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="22px";
+  b.groups.forEach(function(g, gi){
+    var grp = el("div","grp");
+    grp.appendChild(el("div","grp-h", g.name));
+    var grid = el("div","cgrid");
+    g.items.forEach(function(pair, ii){
+      var id = gi+"-"+ii;
+      var c = el("button","fc"); c.type="button";
+      var term = el("div","term", pair[0]);
+      var tap = el("div","tap","cliquer pour la définition");
+      var def = el("div","def", pair[1]); def.hidden = true;
+      var mark = el("span","fc-mark","?");
+      c.appendChild(mark); c.appendChild(term); c.appendChild(tap); c.appendChild(def);
+      function paint(){
+        var known = !!state.known[id];
+        c.classList.toggle("known", known);
+        mark.textContent = known ? "su" : "?";
+      }
+      c.addEventListener("click", function(){
+        if(def.hidden){ def.hidden=false; tap.hidden=true; }
+        else { state.known[id] = !state.known[id]; saveSoon(); paint(); }
+      });
+      paint();
+      grid.appendChild(c);
+    });
+    grp.appendChild(grid);
+    wrap.appendChild(grp);
+  });
+  wrap.appendChild(html("div","small muted","<em>Premier clic : la définition. Second clic : marquer la carte comme sue.</em>"));
+  return wrap;
+}
+
+function rClip(b){
+  var box = el("div","clip");
+  var head = el("div","clip-h");
+  head.appendChild(el("h3", null, b.title));
+  head.appendChild(tcLink(b.sec, "vers "+mmss(b.sec)));
+  box.appendChild(head);
+  var bq = el("blockquote"); bq.textContent = "« "+b.quote+" »";
+  box.appendChild(bq);
+  box.appendChild(html("div","prose", b.focus));
+  (b.ex||[]).forEach(function(x){
+    box.appendChild(el("hr","hr"));
+    box.appendChild(rOpen({t:"open", k:x.k, q:x.q, model:x.model}));
+  });
+  return box;
+}
+
+function rScale(b){
+  var wrap = el("div","sc-wrap");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var tbl = el("table","sc-tbl");
+  var thead = el("thead"); var trh = el("tr");
+  trh.appendChild(el("th",null,"Je suis capable de…"));
+  b.cols.forEach(function(c){ trh.appendChild(el("th",null,c)); });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  var tb = el("tbody");
+  b.rows.forEach(function(r, i){
+    var tr = el("tr");
+    tr.appendChild(el("td",null,r));
+    var btns=[];
+    b.cols.forEach(function(c, ci){
+      var td = el("td");
+      var bt = el("button","rad"); bt.type="button";
+      bt.setAttribute("aria-label", r+" : "+c);
+      bt.setAttribute("aria-pressed", store[i]===ci ? "true":"false");
+      bt.addEventListener("click", function(){
+        store[i]=ci; saveSoon();
+        btns.forEach(function(o,oi){ o.setAttribute("aria-pressed", oi===ci ? "true":"false"); });
+        updateProgress();
+      });
+      btns.push(bt); td.appendChild(bt); tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb); wrap.appendChild(tbl);
+  return wrap;
+}
+
+function rPlay(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct","Visionnage"));
+  var row = el("div","row");
+  var a = tcLink(b.sec, b.label);
+  a.style.fontSize="13.5px"; a.style.padding="7px 13px";
+  row.appendChild(a);
+  row.appendChild(el("span","small muted", b.note||""));
+  box.appendChild(row);
+  return box;
+}
+
+function rExport(){
+  var box = el("div","card");
+  box.appendChild(html("h3",null,"Envoyer mes réponses au formateur"));
+  box.appendChild(html("p","sub","Vos réponses sont enregistrées dans ce navigateur. Le bouton ci-dessous rassemble tout dans un texte que vous pouvez copier et m'envoyer par e-mail ou message."));
+  var b = el("button","btn btn-primary","Préparer mon récapitulatif");
+  b.addEventListener("click", openExport);
+  var row = el("div","row"); row.appendChild(b);
+  box.appendChild(row);
+  return box;
+}
+
+function rNote(b){ return html("div","prose", b.h); }
+function rCallout(b){
+  var box = el("div","callout");
+  if(b.ct) box.appendChild(el("div","ct", b.ct));
+  box.appendChild(html("div","prose", b.h));
+  return box;
+}
+
+function renderBlock(b){
+  switch(b.t){
+    case "note": return rNote(b);
+    case "callout": return rCallout(b);
+    case "open": return rOpen(b);
+    case "tf": return rTf(b);
+    case "gaps": return rGaps(b);
+    case "order": return rOrder(b);
+    case "match": return rMatch(b);
+    case "classify": return rClassify(b);
+    case "cards": return rCards(b);
+    case "clip": return rClip(b);
+    case "scale": return rScale(b);
+    case "play": return rPlay(b);
+    case "export": return rExport();
+    case "card": {
+      var c = el("div","card");
+      if(b.h3){
+        var hr = el("div","row");
+        hr.style.justifyContent="space-between";
+        hr.appendChild(el("h3",null,b.h3));
+        if(b.tc){ var g=el("div","row"); b.tc.forEach(function(t){ g.appendChild(tcLink(t.sec,t.l)); }); hr.appendChild(g); }
+        c.appendChild(hr);
+      } else if(b.tc){
+        var g2=el("div","row"); b.tc.forEach(function(t){ g2.appendChild(tcLink(t.sec,t.l)); }); c.appendChild(g2);
+      }
+      if(b.sub) c.appendChild(el("p","sub", b.sub));
+      (b.blocks||[]).forEach(function(x){ c.appendChild(renderBlock(x)); });
+      return c;
+    }
+  }
+  return el("div");
+}
+
+/* ---------------- shell render ---------------- */
+var main = document.getElementById("main");
+var rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  STEPS.forEach(function(s, i){
+    var li = el("li","rail-item");
+    var b = el("button","rl"); b.type="button";
+    b.setAttribute("aria-current", i===state.step ? "true":"false");
+    if(stepDone(s)) b.classList.add("is-done");
+    b.appendChild(el("span","rl-num", String(i+1).padStart(2,"0")));
+    b.appendChild(el("span","rl-title", s.title));
+    b.addEventListener("click", function(){ go(i); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+}
+
+function renderStep(){
+  var s = STEPS[state.step];
+  main.innerHTML="";
+  var sec = el("section","step");
+  var head = el("div","step-head");
+  var eye = el("div","eyebrow");
+  eye.appendChild(el("span",null,"Étape "+String(state.step+1).padStart(2,"0")+" / "+String(STEPS.length).padStart(2,"0")));
+  eye.appendChild(el("span","dot"));
+  eye.appendChild(el("span",null,s.time));
+  head.appendChild(eye);
+  head.appendChild(el("h2",null,s.title));
+  if(s.lede) head.appendChild(el("p","lede", s.lede));
+  sec.appendChild(head);
+  s.blocks.forEach(function(b){ sec.appendChild(renderBlock(b)); });
+
+  var nav = el("div","stepnav");
+  var prev = el("button","btn","← "+(state.step>0 ? STEPS[state.step-1].title : "Début"));
+  prev.disabled = state.step===0;
+  if(prev.disabled){ prev.style.opacity=".4"; prev.style.cursor="default"; }
+  prev.addEventListener("click", function(){ if(state.step>0) go(state.step-1); });
+  var next = el("button","btn btn-primary", (state.step<STEPS.length-1 ? STEPS[state.step+1].title : "Terminé")+" →");
+  next.disabled = state.step===STEPS.length-1;
+  if(next.disabled){ next.style.opacity=".4"; next.style.cursor="default"; }
+  next.addEventListener("click", function(){ if(state.step<STEPS.length-1) go(state.step+1); });
+  nav.appendChild(prev); nav.appendChild(next);
+  sec.appendChild(nav);
+  main.appendChild(sec);
+}
+
+function go(i){
+  state.step = i; save();
+  renderStep(); renderRail();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+var progFill = document.getElementById("progFill");
+var progNum = document.getElementById("progNum");
+function updateProgress(){
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  var pct = ACTS.length ? Math.round(n/ACTS.length*100) : 0;
+  progFill.style.width = pct+"%";
+  progNum.textContent = n+" / "+ACTS.length;
+  renderRail();
+}
+
+/* ---------------- export ---------------- */
+function textOf(k){
+  var v = state.a[k];
+  if(v==null) return "";
+  if(typeof v==="string") return v.trim();
+  return "";
+}
+function buildExport(){
+  var L=[];
+  L.push("ATELIER NÉOBANQUES — préparation autonome B2");
+  L.push("Documentaire ARTE « Dans la jungle des néobanques »");
+  L.push("Exporté le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}));
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  L.push("Avancement : "+n+" activités sur "+ACTS.length);
+  L.push("");
+  STEPS.forEach(function(s, si){
+    var lines=[];
+    function walk(bs){
+      bs.forEach(function(b){
+        if(b.t==="open"){
+          var t = textOf(b.k);
+          if(t) lines.push("• "+b.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+        } else if(b.t==="clip"){
+          (b.ex||[]).forEach(function(x){
+            var t = textOf(x.k);
+            if(t) lines.push("• "+x.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+          });
+        } else if(b.t==="scale"){
+          var st = state.a[b.k]||{};
+          b.rows.forEach(function(r,i){
+            if(st[i]!=null) lines.push("• "+r+" : "+b.cols[st[i]]);
+          });
+        } else if(b.t==="card" && b.blocks){ walk(b.blocks); }
+      });
+    }
+    walk(s.blocks);
+    if(lines.length){
+      L.push("──────────────────────────────");
+      L.push(String(si+1).padStart(2,"0")+". "+s.title.toUpperCase());
+      L.push("");
+      L.push(lines.join("\n\n"));
+      L.push("");
+    }
+  });
+  if(L.length<=5) L.push("(Aucune réponse rédigée pour l'instant.)");
+  return L.join("\n");
+}
+function openExport(){
+  var mask = el("div","mask");
+  var m = el("div","modal");
+  m.setAttribute("role","dialog"); m.setAttribute("aria-modal","true"); m.setAttribute("aria-label","Récapitulatif de mes réponses");
+  m.appendChild(html("h3",null,"Mon récapitulatif"));
+  m.appendChild(html("p","sub","Copiez ce texte et envoyez-le à votre formateur avant le cours."));
+  var ta = el("textarea"); ta.id="exportArea"; ta.value = buildExport(); ta.readOnly = true;
+  m.appendChild(ta);
+  var row = el("div","row");
+  var copy = el("button","btn btn-primary","Copier le texte");
+  var status = el("span","small muted","");
+  copy.addEventListener("click", function(){
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    var done=false;
+    try{ done = document.execCommand("copy"); }catch(e){}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ta.value).then(function(){ status.textContent="Copié ✓"; status.style.color="var(--ok)"; },
+        function(){ if(!done) status.textContent="Sélectionnez le texte puis Ctrl/Cmd + C."; });
+    } else {
+      status.textContent = done ? "Copié ✓" : "Sélectionnez le texte puis Ctrl/Cmd + C.";
+      status.style.color = done ? "var(--ok)" : "var(--muted)";
+    }
+  });
+  var close = el("button","btn","Fermer");
+  function shut(){ mask.remove(); document.removeEventListener("keydown", esc); }
+  function esc(e){ if(e.key==="Escape") shut(); }
+  close.addEventListener("click", shut);
+  mask.addEventListener("click", function(e){ if(e.target===mask) shut(); });
+  document.addEventListener("keydown", esc);
+  row.appendChild(copy); row.appendChild(close); row.appendChild(status);
+  m.appendChild(row);
+  mask.appendChild(m);
+  document.body.appendChild(mask);
+  copy.focus();
+}
+
+/* ---------------- theme ---------------- */
+document.getElementById("themeBtn").addEventListener("click", function(){
+  var r = document.documentElement;
+  var cur = r.getAttribute("data-theme");
+  var sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var nowDark = cur ? cur==="dark" : sysDark;
+  r.setAttribute("data-theme", nowDark ? "light" : "dark");
+  try{ localStorage.setItem(KEY+"-theme", nowDark ? "light":"dark"); }catch(e){}
+});
+(function(){ try{ var t=localStorage.getItem(KEY+"-theme"); if(t) document.documentElement.setAttribute("data-theme",t); }catch(e){} })();
+
+document.getElementById("exportBtn").addEventListener("click", openExport);
+document.getElementById("resetBtn").addEventListener("click", function(){
+  if(!window.confirm("Effacer toutes vos réponses ? Cette action est définitive.")) return;
+  state = {step:0, a:{}, done:{}, known:{}};
+  save(); renderStep(); renderRail(); updateProgress();
+});
+
+/* ---------------- boot ---------------- */
+if(!STORAGE_OK){
+  var warn = html("div","storewarn",
+    "<strong>Ce navigateur n'enregistre pas vos réponses sur cette page.</strong> "+
+    "Vous pouvez travailler normalement, mais <strong>avant de fermer l'onglet</strong>, "+
+    "cliquez sur « Exporter mes réponses » en haut de la page et conservez le texte.");
+  document.body.insertBefore(warn, document.querySelector(".shell"));
+}
+load();
+if(state.step<0 || state.step>=STEPS.length) state.step=0;
+renderStep();
+renderRail();
+updateProgress();
+})();
+</script>
+
+</body></html>

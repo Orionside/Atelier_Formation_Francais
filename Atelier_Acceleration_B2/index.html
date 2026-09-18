@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Atelier de conversation orale FLE B2 (45 min) à partir du documentaire ARTE « Est-il vrai que tout va toujours plus vite ? »">
+<title>Atelier Accélération B2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#5B6B7A; --line:#D5DDE4; --line-strong:#B9C5CF;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --focus:#1F5FA8;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --focus:#82B6EB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --focus:#82B6EB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+button{font:inherit; color:inherit; cursor:pointer}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0}
+.brand b{font-family:var(--serif); font-size:17px; font-weight:700; white-space:nowrap}
+.brand span{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.prog{display:flex; align-items:center; gap:9px}
+.prog-track{width:120px; height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.prog-fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+.prog-num{font-family:var(--mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums}
+.btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:7px 13px; border-radius:7px; font-size:13.5px; font-weight:500;
+  transition:background .15s, border-color .15s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--muted)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .btn-primary, :root:not([data-theme="light"]) .btn-primary{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:0 20px; padding-block:26px 64px;
+  display:grid; grid-template-columns:238px minmax(0,1fr); gap:38px; align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:minmax(0,1fr); gap:20px} }
+
+/* ---------- stepper ---------- */
+.rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 74px)}
+@media (max-width:900px){
+  .rail{position:static}
+  .rail-list{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin}
+  .rail-item{flex:0 0 auto; width:auto!important}
+  .rail-item .rl-title{white-space:nowrap}
+  .rail-head{margin-bottom:9px}
+}
+.rail-head{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:12px; padding-left:2px}
+.rail-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+@media (max-width:900px){ .rail-list{flex-direction:row} }
+.rail-item{width:100%}
+.rl{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:9px;
+  padding:8px 11px; color:var(--muted); font-size:13.5px; line-height:1.35;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.rl:hover{border-color:var(--line-strong); background:var(--surface-2); color:var(--ink)}
+.rl[aria-current="true"]{
+  background:var(--accent); border-color:var(--accent); color:#fff;
+  font-weight:500; box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .rl[aria-current="true"],
+:root:not([data-theme="light"]) .rl[aria-current="true"]{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .rl[aria-current="true"]{color:#fff}}
+.rl-num{
+  font-family:var(--mono); font-size:11px; flex:0 0 auto;
+  width:23px; height:23px; display:grid; place-items:center; border-radius:6px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--muted);
+}
+.rl.is-done .rl-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.rl[aria-current="true"] .rl-num,
+.rl[aria-current="true"].is-done .rl-num{
+  background:rgba(255,255,255,.24); border-color:transparent; color:inherit;
+}
+.rl-title{min-width:0}
+.rail-foot{margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+@media (max-width:900px){ .rail-foot{display:none} }
+
+/* ---------- main ---------- */
+main{min-width:0}
+.step{display:flex; flex-direction:column; gap:20px}
+.step-head{border-bottom:1px solid var(--line); padding-bottom:16px;
+  display:flex; flex-direction:column; gap:7px}
+.eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.eyebrow .dot{width:3px;height:3px;border-radius:50%;background:var(--line-strong)}
+.step-head h2{font-size:clamp(22px,4.3vw,29px); line-height:1.2}
+.step-head .lede{color:var(--muted); max-width:62ch}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:18px 19px;
+  display:flex; flex-direction:column; gap:13px}
+.card h3{font-size:17px; line-height:1.3}
+.card > .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:11px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.prose strong{font-weight:600}
+.prose em{color:var(--muted)}
+
+.callout{border-left:3px solid var(--accent); background:var(--surface-2); border-radius:0 9px 9px 0;
+  padding:14px 17px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.callout .ct{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink)}
+
+/* timecode */
+.tc{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:6px;
+  padding:3px 8px; color:var(--ink); text-decoration:none; white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.tc:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tc::before{content:"▶"; font-size:8px; color:var(--accent-ink)}
+
+/* questions */
+.q{display:flex; flex-direction:column; gap:10px; padding-block:4px}
+.q + .q{border-top:1px dashed var(--line); padding-top:16px}
+.q-lbl{display:flex; gap:10px; align-items:baseline}
+.q-n{font-family:var(--mono); font-size:12px; color:var(--accent-ink); flex:0 0 auto; font-weight:500}
+.q-t{font-weight:500; max-width:64ch}
+.q-hint{font-size:13.5px; color:var(--muted); max-width:64ch}
+textarea{
+  width:100%; min-height:82px; resize:vertical; font:inherit; font-size:14.5px;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line);
+  border-radius:8px; padding:10px 12px; line-height:1.55;
+}
+textarea::placeholder{color:var(--muted); opacity:.75}
+textarea:focus{border-color:var(--focus); background:var(--surface)}
+.row{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.reveal{background:var(--surface-2); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:13px 15px; font-size:14.5px; max-width:66ch;
+  display:flex; flex-direction:column; gap:8px}
+.reveal .rt{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.saved{font-family:var(--mono); font-size:11px; color:var(--ok); opacity:0; transition:opacity .3s}
+.saved.on{opacity:1}
+
+/* amorces cliquables */
+.starters{display:flex; flex-wrap:wrap; gap:6px; align-items:center; max-width:68ch}
+.starters-lbl{flex:0 0 100%; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted)}
+.starter{
+  border:1px solid var(--line-strong); background:var(--surface-2); border-radius:20px;
+  padding:5px 13px; font-family:var(--serif); font-style:italic; font-size:13.5px;
+  color:var(--muted); text-align:left; line-height:1.45; max-width:100%;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.starter:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
+
+/* true/false */
+.tf-list{display:flex; flex-direction:column; gap:10px}
+.tf-item{border:1px solid var(--line); border-radius:9px; padding:12px 14px; background:var(--surface-2);
+  display:flex; flex-direction:column; gap:10px}
+.tf-top{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+.tf-txt{flex:1 1 300px; min-width:0; font-size:14.5px}
+.tf-btns{display:flex; gap:6px; flex:0 0 auto}
+.pick{border:1px solid var(--line-strong); background:var(--surface); border-radius:7px;
+  padding:5px 12px; font-size:13px; font-weight:500; min-width:62px}
+.pick[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.tf-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.tf-item.no{border-color:var(--no); background:var(--no-soft)}
+.verdict{font-size:14px; display:flex; gap:8px; align-items:flex-start}
+.verdict .vi{font-family:var(--mono); font-weight:500; flex:0 0 auto}
+.ok .verdict .vi{color:var(--ok)} .no .verdict .vi{color:var(--no)}
+
+/* gaps */
+.gaps{display:flex; flex-direction:column; gap:9px}
+.gap-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  border-bottom:1px dotted var(--line); padding-bottom:9px}
+.gap-row:last-of-type{border-bottom:0; padding-bottom:0}
+.gap-lbl{flex:1 1 240px; min-width:0; font-size:14.5px}
+.gap-in{display:flex; align-items:center; gap:7px; flex:0 0 auto}
+input[type="text"]{
+  font:inherit; font-size:14.5px; font-family:var(--mono); width:118px; text-align:center;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line-strong);
+  border-radius:7px; padding:6px 9px;
+}
+input[type="text"]:focus{border-color:var(--focus); background:var(--surface)}
+input.ok{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+input.no{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.gap-suf{font-size:13.5px; color:var(--muted); font-family:var(--mono)}
+.gap-sol{font-size:13px; color:var(--ok); font-family:var(--mono)}
+
+select{
+  font:inherit; font-size:14px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:7px; padding:6px 9px; max-width:100%;
+}
+select:focus{border-color:var(--focus)}
+select.ok{border-color:var(--ok); background:var(--ok-soft)}
+select.no{border-color:var(--no); background:var(--no-soft)}
+
+/* order */
+.ord-pool{display:flex; gap:8px; flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong); background:var(--surface-2); border-radius:8px;
+  padding:8px 12px; font-size:14px; text-align:left; max-width:100%}
+.chip:hover{border-color:var(--accent)}
+.chip:disabled{opacity:.34; cursor:default}
+.chip .ck{font-family:var(--mono); color:var(--accent-ink); margin-right:7px; font-size:12px}
+.ord-slot{display:flex; gap:8px; flex-wrap:wrap; align-items:center; min-height:40px;
+  border:1px dashed var(--line-strong); border-radius:9px; padding:8px; background:var(--surface-2)}
+.ord-slot .ph{color:var(--muted); font-size:13.5px; padding:4px}
+.seq{display:inline-flex; align-items:center; gap:7px; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:5px 10px; font-size:13.5px}
+.seq .sn{font-family:var(--mono); font-size:11px; color:var(--muted)}
+.ord-slot.ok{border-color:var(--ok); border-style:solid; background:var(--ok-soft)}
+.ord-slot.no{border-color:var(--no); border-style:solid; background:var(--no-soft)}
+
+/* match / classify */
+.mt-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-bottom:10px;
+  border-bottom:1px dotted var(--line)}
+.mt-row:last-of-type{border-bottom:0; padding-bottom:0}
+.mt-left{flex:1 1 230px; font-size:14.5px; min-width:0}
+.cl-item{border:1px solid var(--line); border-radius:9px; background:var(--surface-2);
+  padding:12px 14px; display:flex; flex-direction:column; gap:9px}
+.cl-q{font-size:14.5px}
+.cl-q b{font-weight:600; color:var(--accent-ink)}
+.cl-opts{display:flex; gap:6px; flex-wrap:wrap}
+.cl-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.cl-item.no{border-color:var(--no); background:var(--no-soft)}
+
+/* cards */
+.grp{display:flex; flex-direction:column; gap:10px}
+.grp-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(212px,1fr)); gap:9px}
+.fc{position:relative; border:1px solid var(--line); background:var(--surface-2); border-radius:9px;
+  padding:12px 13px; min-height:78px; text-align:left; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, background .15s}
+.fc:hover{border-color:var(--accent)}
+.fc .term{font-weight:600; font-size:14.5px}
+.fc .def{font-size:13.5px; color:var(--muted); line-height:1.5}
+.fc .tap{font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em}
+.fc.known{border-color:var(--ok); background:var(--ok-soft)}
+.fc-mark{position:absolute; top:8px; right:8px; border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:6px; font-size:11px; padding:2px 7px; line-height:1.5;
+  font-family:var(--mono); color:var(--muted)}
+.fc.known .fc-mark{border-color:var(--ok); color:var(--ok)}
+
+/* clip */
+.clip{border:1px solid var(--line); border-radius:11px; background:var(--surface); padding:17px 18px;
+  display:flex; flex-direction:column; gap:13px}
+.clip-h{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.clip-h h3{font-size:16.5px}
+blockquote{margin:0; padding:12px 16px; background:var(--surface-2); border-left:3px solid var(--line-strong);
+  border-radius:0 8px 8px 0; font-size:15px; font-family:var(--serif); line-height:1.65; max-width:64ch}
+
+/* scale */
+.sc-tbl{width:100%; border-collapse:collapse; font-size:14px}
+.sc-wrap{overflow-x:auto}
+.sc-tbl th{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:500; padding:0 8px 9px; text-align:center}
+.sc-tbl th:first-child{text-align:left}
+.sc-tbl td{border-top:1px solid var(--line); padding:9px 8px; text-align:center}
+.sc-tbl td:first-child{text-align:left; min-width:190px}
+.rad{width:20px; height:20px; border-radius:50%; border:1.5px solid var(--line-strong); background:var(--surface-2); padding:0}
+.rad[aria-pressed="true"]{background:var(--accent); border-color:var(--accent)}
+
+/* nav */
+.stepnav{display:flex; gap:10px; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:6px}
+
+/* modal */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.55); z-index:60; display:grid; place-items:center; padding:20px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; overflow:auto; padding:22px; display:flex; flex-direction:column; gap:14px}
+.modal h3{font-size:19px}
+.modal textarea{min-height:300px; font-family:var(--mono); font-size:12.5px; line-height:1.55}
+
+.storewarn{
+  max-width:1180px; margin:16px auto 0; padding:12px 16px;
+  border:1px solid var(--accent); border-left-width:3px; border-radius:0 9px 9px 0;
+  background:var(--accent-soft); color:var(--ink); font-size:14px; line-height:1.55;
+}
+@media (max-width:1220px){ .storewarn{margin-inline:20px} }
+.hr{height:1px; background:var(--line); border:0; margin:2px 0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+[hidden]:not([hidden=until-found i]){display:none!important}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <b>Atelier Accélération</b>
+      <span>B2 · conversation</span>
+    </div>
+    <div class="prog" title="Activités complétées">
+      <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+      <span class="prog-num" id="progNum">0 / 0</span>
+    </div>
+    <button class="btn" id="exportBtn">Exporter mes réponses</button>
+    <button class="btn btn-ghost" id="themeBtn" aria-label="Changer de thème">Thème</button>
+  </div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-head">Parcours · 45 min</div>
+    <ul class="rail-list" id="rail"></ul>
+    <div class="rail-foot">
+      <a class="tc" href="https://youtu.be/9cO5bDqQKMM" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+      <button class="btn btn-ghost small" id="resetBtn">Tout effacer</button>
+    </div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var VIDEO = "https://youtu.be/9cO5bDqQKMM";
+var KEY = "acceleration-b2-v2";
+
+/* ---------------- storage ---------------- */
+var state = {step:0, a:{}, done:{}, known:{}};
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var p = JSON.parse(raw); if(p && typeof p==="object"){
+      state.step = p.step|0; state.a = p.a||{}; state.done = p.done||{}; state.known = p.known||{};
+    }}
+  }catch(e){}
+}
+var STORAGE_OK = (function(){
+  try{ localStorage.setItem(KEY+"-probe","1"); localStorage.removeItem(KEY+"-probe"); return true; }
+  catch(e){ return false; }
+})();
+var saveTimer=null;
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+}
+function saveSoon(){ clearTimeout(saveTimer); saveTimer=setTimeout(save,300); }
+
+/* ---------------- helpers ---------------- */
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=txt; return n; }
+function html(tag, cls, h){ var n=document.createElement(tag); if(cls)n.className=cls; if(h!=null)n.innerHTML=h; return n; }
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return m+":"+(r<10?"0":"")+r; }
+function tcLink(sec, label){
+  var a=el("a","tc",label||mmss(sec));
+  a.href=VIDEO+"?t="+sec; a.target="_blank"; a.rel="noopener";
+  a.title="Ouvrir la vidéo à "+mmss(sec);
+  return a;
+}
+function norm(s){
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[^a-z0-9]/g," ").replace(/\s+/g," ").trim();
+}
+function matches(val, answers){
+  var v = norm(val); if(!v) return false;
+  for(var i=0;i<answers.length;i++){ if(v === norm(answers[i])) return true; }
+  return false;
+}
+
+/* ---------------- content ---------------- */
+var SEGS = [{"t":"seg","n":1,"a":0,"b":89,"title":"Le vieux rêve d'aller plus vite","sum":"Depuis toujours, l'être humain cherche à accélérer : la roue (vers 3500 av. J.-C.) en est le symbole. Le film pose sa question centrale : vivons-nous vraiment plus vite, ou est-ce notre rapport au temps qui a changé ? Pourtant, pendant des millénaires, la vitesse de déplacement reste presque constante : 4 à 5 km/h à pied, 5 à 8 km/h à cheval.","obj":["Comprendre la problématique du documentaire et savoir la reformuler sous forme de question.","Exprimer une impression et un ressenti : <em>avoir l'impression de / que</em>.","Manipuler les ordres de grandeur et les chiffres approximatifs à l'oral (<em>environ, voire, entre… et…</em>).","Distinguer le rythme réel (mesurable) du rythme ressenti (subjectif)."],"qs":[{"type":"Compréhension","q":"Quelle est la double question que pose le documentaire dès les premières secondes ?","starters":["Le documentaire se demande si…","Autrement dit,…","Il oppose deux hypothèses :…"],"model":"« Le documentaire se demande si nous vivons réellement plus vite qu'autrefois, ou si c'est simplement notre rapport au temps qui a changé. Autrement dit, il oppose deux hypothèses : soit le monde accélère vraiment, soit c'est notre perception (<em>notre façon de le vivre</em>) qui s'est transformée. »"},{"type":"Débat","q":"D'après vous, le sentiment de « ne pas en faire assez » vient-il du monde extérieur ou de nous-mêmes ?","starters":["À mon sens, c'est un peu des deux :…","Je dirais que c'est surtout…","On se met souvent la pression tout seul…"],"model":"« À mon sens (<em>selon moi</em>), c'est un peu des deux. Le monde extérieur nous impose des délais de plus en plus serrés, c'est indéniable. Mais on se met aussi la pression tout seul (<em>on s'impose nous-mêmes une pression</em>) : on veut tout faire, tout voir, tout lire. Je dirais que l'environnement allume la mèche, et que nous, on entretient le feu. »"},{"type":"Réflexion","q":"La roue « fait encore tourner notre monde ». Quelle invention, selon vous, a le plus accéléré votre propre vie professionnelle ?","starters":["Sans hésiter, je citerais…","Ce qui a tout changé pour moi, c'est…","Avant…, alors que maintenant…"],"model":"« Sans hésiter, je citerais le smartphone. Ce qui a tout changé, ce n'est pas la vitesse de l'outil, c'est qu'il nous suit partout (<em>il est toujours avec nous</em>). Avant, le travail restait au bureau ; maintenant, il tient dans la poche. On gagne en réactivité, mais on perd la frontière entre vie pro et vie perso. »"}],"tour":[["courir après le temps","manquer de temps en permanence","Depuis la réorganisation, toute l'équipe court après le temps."],["ne pas en faire assez","avoir l'impression d'être insuffisant","J'ai toujours le sentiment de ne pas en faire assez."],["faire tourner le monde","faire fonctionner la société","Ce sont les PME qui font tourner l'économie."],["voire","et même (sert à renchérir)","Le projet prendra six mois, voire un an."]],"gram":{"t":"L'interrogation soutenue ou orale","h":"<p>Le film utilise l'inversion, qui appartient au registre soutenu : « <em>Vivons-nous</em> réellement plus vite ? ». En réunion, trois niveaux coexistent :</p><p>Soutenu : <em>Avons-nous</em> le temps ? · Courant : <em>Est-ce qu'on a</em> le temps ? · Oral familier : <em>On a le temps ?</em></p><p>À retenir : l'inversion avec <em>il</em> ou <em>elle</em> ajoute un <strong>-t-</strong> quand le verbe finit par une voyelle : <em>A-t-il validé ? Va-t-elle venir ?</em></p>"}},{"t":"seg","n":2,"a":89,"b":188,"title":"Le choc du chemin de fer","sum":"En 1804, la locomotive à vapeur fait tout basculer : dans les années 1830, on atteint 30 km/h. Les voyageurs voient le paysage se transformer en un flou de couleurs et ont des nausées ; des études affirment même que le cerveau ne supporterait pas plus de 15 à 30 km/h. Le sociologue Hartmut Rosa rappelle que le choc fut culturel et physique. En 1843, Heinrich Heine écrit que le chemin de fer « anéantit l'espace ».","obj":["Raconter un événement historique en alternant imparfait (décor, habitudes) et passé composé (événement).","Décrire une sensation physique et une réaction émotionnelle face à la nouveauté.","Comprendre une métaphore littéraire (l'espace anéanti) et la reformuler simplement.","Faire le parallèle entre une innovation passée et une innovation actuelle."],"qs":[{"type":"Compréhension","q":"Comment les premiers voyageurs réagissaient-ils à la vitesse du train, et comment ont-ils fini par s'y habituer ?","starters":["Au début, les voyageurs…","Ils avaient la nausée parce que…","Ils ont fini par comprendre qu'il fallait…"],"model":"« Au début, les voyageurs étaient carrément malades (<em>vraiment malades</em>) : en regardant par la fenêtre, ils voyaient le paysage se décomposer en un flou de couleurs, ce qui leur donnait la nausée. Des scientifiques affirmaient même que le cerveau ne supporterait pas plus de 30 km/h. Ils ont fini par comprendre qu'il fallait regarder au loin, et le corps s'est adapté. »"},{"type":"Débat","q":"Les scientifiques de l'époque disaient que le cerveau « ne supportait pas » la vitesse. Aujourd'hui, on dit la même chose des écrans et de l'IA. Est-ce la même peur ?","starters":["C'est tentant de faire le parallèle, mais…","D'un côté…, de l'autre…","La différence, c'est que…"],"model":"« C'est tentant de faire le parallèle (<em>de comparer les deux situations</em>), et il y a un point commun : chaque nouveauté provoque une panique morale. Mais la différence, c'est qu'avec le train, le corps a fini par s'adapter en quelques années. Avec les écrans, on a des études sérieuses qui montrent des effets sur l'attention. Donc je ne mettrais pas tout dans le même sac (<em>je ne confondrais pas tout</em>). »"},{"type":"Réflexion","q":"Heine écrit : « l'espace est anéanti et il ne nous reste plus que le temps ». Qu'est-ce que cela signifie pour vous, qui travaillez avec des équipes à distance ?","starters":["Pour moi, cette phrase veut dire que…","Dans mon quotidien, ça se traduit par…","Paradoxalement,…"],"model":"« Pour moi, cette phrase veut dire que la distance ne compte plus : ce qui compte, c'est le temps disponible. Dans mon quotidien, ça se traduit par des réunions avec Paris, Madrid ou l'Inde dans la même matinée, sans bouger de ma chaise. Paradoxalement, la distance a disparu, mais c'est l'agenda qui est devenu la vraie contrainte : on ne se bat plus contre les kilomètres, on se bat contre les créneaux (<em>les plages horaires</em>). »"}],"tour":[["tout bascule","tout change brusquement","Tout a basculé le jour où on est passé au télétravail."],["une véritable révolution","un changement radical","Le passage au cloud a été une véritable révolution pour nous."],["regarder au loin / prendre du recul","regarder à distance / analyser avec distance","Il faut prendre du recul avant de décider."],["pour ainsi dire","en quelque sorte (atténue une image)","Le projet est, pour ainsi dire, à l'arrêt."],["s'en trouver bouleversé","être profondément transformé par cela","Nos méthodes de travail s'en sont trouvées bouleversées."]],"gram":{"t":"Imparfait ou passé composé ?","h":"<p><strong>Imparfait</strong> = le décor, la situation, l'habitude : « Les voyageurs <em>étaient</em> assis, ils <em>regardaient</em> par la fenêtre. »</p><p><strong>Passé composé</strong> = l'événement, l'action ponctuelle ou le bilan : « Au début, le choc <em>a été</em> immense. » « On <em>a appris</em> qu'il fallait regarder au loin. »</p><p>Réflexe pour un hispanophone : c'est proche de l'opposition <em>imperfecto / pretérito</em>. Mais à l'oral, le français n'utilise pas le passé simple : <em>fue</em> se dit « <em>a été</em> », jamais « fut » en réunion.</p>"}},{"t":"seg","n":3,"a":188,"b":287,"title":"Plus vite, toujours plus vite… et les premières résistances","sum":"Les trains passent à 80, puis 160 et 200 km/h ; les trains à sustentation magnétique dépassent les 500 km/h et l'avion à réaction atteint 900 km/h. Selon la logique de Heine, le monde aurait rétréci à un soixantième de sa taille. L'accélération touche aussi la production : le métier à tisser mécanique fait passer la production de quelques centaines de mètres à 10 000 mètres par an. En Angleterre (1811-1813), des ouvriers détruisent les machines : c'est le luddisme. Mais l'accélération finit toujours par l'emporter.","obj":["Exprimer une progression chiffrée (<em>grimper à, atteindre, dépasser, faire bondir</em>).","Comprendre et expliquer un mouvement social historique (le luddisme) et ses motivations.","Exprimer la crainte et la résistance au changement dans un contexte professionnel.","Utiliser les connecteurs de cause et de conséquence."],"qs":[{"type":"Compréhension","q":"Pourquoi les ouvriers anglais ont-ils détruit les machines entre 1811 et 1813 ?","starters":["Ils l'ont fait parce qu'ils craignaient…","Le métier à tisser mécanique avait fait bondir…","C'est ce qu'on appelle…"],"model":"« Ils l'ont fait parce qu'ils craignaient pour leur salaire et leurs moyens de subsistance (<em>ce qui leur permettait de vivre</em>). Le métier à tisser mécanique avait fait bondir la production : une machine produisait environ 10 000 mètres de tissu, contre quelques centaines de mètres par an pour un tisserand. C'est ce qu'on appelle le luddisme, d'après un leader imaginaire, Ned Ludd. »"},{"type":"Débat","q":"Le film affirme que « l'accélération finit toujours par l'emporter ». Êtes-vous d'accord ? Peut-on citer une innovation qui a été rejetée ?","starters":["Globalement, je suis d'accord, mais…","Il y a quand même des contre-exemples :…","Toujours, c'est un peu fort :…"],"model":"« Globalement, je suis d'accord, mais « toujours », c'est un peu fort (<em>c'est exagéré</em>). Il y a quand même des contre-exemples : le Concorde allait deux fois plus vite que les avions classiques, et il a été abandonné en 2003, parce qu'il coûtait trop cher et polluait trop. Donc je dirais que l'accélération l'emporte quand elle est rentable, pas simplement parce qu'elle est possible. »"},{"type":"Réflexion","q":"Dans votre entreprise, avez-vous observé une forme de « luddisme » face à un nouvel outil ou à une transformation ? Comment la résistance a-t-elle été gérée ?","starters":["Oui, j'ai vécu ça au moment de…","Les équipes ont traîné des pieds parce que…","Ce qui a permis de débloquer la situation, c'est…"],"model":"« Oui, j'ai vécu ça au moment du déploiement d'un nouvel outil de gestion. Certaines équipes ont traîné des pieds (<em>ont avancé lentement, sans enthousiasme</em>), parce qu'elles avaient peur que l'outil serve à contrôler leur travail. Ce qui a permis de débloquer la situation, c'est d'impliquer les utilisateurs dès le départ et de montrer concrètement ce qu'ils y gagnaient. »"}],"tour":[["grimper à / faire bondir","augmenter fortement / faire augmenter brutalement","Les coûts ont grimpé à 2 millions. L'IA a fait bondir la productivité."],["se heurter à","rencontrer un obstacle","Le projet s'est heurté à une forte résistance en interne."],["en fin de compte","finalement, au bout du compte","En fin de compte, la direction a validé le budget."],["finir par l'emporter","gagner au final","Le bon sens a fini par l'emporter."],["traîner des pieds","faire quelque chose sans enthousiasme, lentement","Certains services traînent des pieds pour adopter le nouvel outil."]],"gram":{"t":"Exprimer la cause","h":"<p><strong>grâce à</strong> + nom : cause positive · « grâce à des locomotives plus puissantes »</p><p><strong>à cause de</strong> + nom : cause négative · « à cause de la nouvelle machine »</p><p><strong>craignant pour</strong> + nom (participe présent) : cause, registre écrit ou soutenu · « craignant pour leur salaire, ils ont détruit les machines » = <em>comme ils craignaient pour leur salaire…</em></p><p><strong>Piège :</strong> ne dites pas « grâce à la crise, on a perdu des clients ». <em>Grâce à</em> est toujours positif ; ici, il faut <em>à cause de</em> ou <em>en raison de</em> (neutre, plus formel).</p>"}},{"t":"seg","n":4,"a":287,"b":367,"title":"Du scepticisme à l'accélération, et la prédiction de Keynes","sum":"Chaque innovation suit le même schéma : d'abord le scepticisme (« l'ordinateur, c'est non »), puis l'accélération s'impose. L'histoire de la modernité est une histoire parallèle : d'un côté, le temps gagné ; de l'autre, le sentiment de courir après le temps. En 1930, Keynes prédit que ses petits-enfants ne travailleraient qu'environ 15 heures par semaine. L'histoire lui a donné tort. Explication : les taux de croissance dépassent les taux d'accélération.","obj":["Décrire un processus en étapes (<em>d'abord… puis… quelques années plus tard…</em>).","Formuler une déduction logique au conditionnel (<em>nous devrions donc pouvoir…</em>).","Comprendre et reformuler une thèse abstraite : croissance et accélération.","Évaluer une prédiction passée et en tirer une leçon."],"qs":[{"type":"Compréhension","q":"Qu'avait prédit Keynes en 1930, et pourquoi s'est-il trompé selon le film ?","starters":["Keynes avait prédit que…","L'histoire lui a donné tort, parce que…","La formule qui explique ça, c'est…"],"model":"« Keynes avait prédit que, grâce aux gains de productivité, ses petits-enfants ne travailleraient qu'une quinzaine d'heures par semaine. L'histoire lui a donné tort (<em>a montré qu'il avait tort</em>). La formule qui explique ça, c'est que les taux de croissance dépassent les taux d'accélération : on va plus vite, mais on en fait tellement plus que le temps gagné est englouti (<em>absorbé, avalé</em>). »"},{"type":"Débat","q":"Aujourd'hui, certains prédisent que l'intelligence artificielle nous libérera du temps. Est-ce qu'on risque de refaire l'erreur de Keynes ?","starters":["J'ai bien peur que…","Tout dépend de ce qu'on fera du temps gagné :…","Si on raisonne comme Keynes, on pourrait penser que… Or…"],"model":"« J'ai bien peur que oui. Si on raisonne comme Keynes, on pourrait penser que l'IA va nous faire travailler moins. Or, dans la pratique, quand on gagne une heure, on nous demande tout de suite d'en faire plus : plus de rapports, plus de projets, plus de réunions. Tout dépend de ce qu'on fera du temps gagné : soit on le réinvestit dans la qualité, soit il sera avalé par le volume. »"},{"type":"Réflexion","q":"Pensez à un outil qui vous a fait gagner du temps au travail. Qu'avez-vous fait, concrètement, de ce temps gagné ?","starters":["Pour être honnête, ce temps a été…","Au lieu de…, j'ai fini par…","Avec le recul, je me rends compte que…"],"model":"« Pour être franc, ce temps a été immédiatement réabsorbé. Les outils de visioconférence m'ont fait gagner des heures de déplacement, mais au lieu de souffler, j'ai fini par caser (<em>placer, insérer</em>) trois réunions de plus dans la journée. Avec le recul, je me rends compte que je n'ai pas gagné du temps : j'ai gagné de la capacité, et je l'ai remplie. »"}],"tour":[["pas question de","c'est exclu, c'est hors de question","Pas question de lancer le projet sans validation."],["ça n'a pas duré (très longtemps)","ça s'est arrêté vite","Le télétravail à 100 % ? Ça n'a pas duré."],["donner tort à quelqu'un","montrer qu'il s'est trompé","Les résultats du trimestre lui ont donné tort."],["pour autant","malgré cela (en début ou milieu de phrase)","Cela signifie-t-il pour autant que nos vies sont plus rapides ?"],["s'imposer","finir par être accepté par tous","Le télétravail s'est imposé en quelques mois."]],"gram":{"t":"Le conditionnel de déduction : devoir au conditionnel","h":"<p>« Nous mettons moins de temps à nous déplacer. Nous <strong>devrions donc pouvoir</strong> vivre de manière plus sereine. »</p><p><em>Devrions</em> exprime ce qui serait logique, mais qui ne se réalise pas. C'est très utile en réunion pour souligner un décalage entre la théorie et la réalité :</p><p><em>Avec ce nouvel outil, on <strong>devrait</strong> gagner deux jours par mois… mais pour l'instant, ce n'est pas le cas.</em><br><em>Le prestataire <strong>aurait dû</strong> livrer lundi.</em> (reproche au passé)</p>"}},{"t":"seg","n":5,"a":367,"b":451,"title":"L'employée d'hôtel et l'erreur de Keynes","sum":"Exemple : une employée d'hôtel va trois fois plus vite en voiture qu'à pied. Mais la voiture a aussi réorganisé les villes : les citadins partent vers la périphérie et la distance domicile-travail est multipliée par 5, voire 7. Résultat : le trajet prend plus de temps qu'avant. Même logique pour la production : Keynes prévoyait une prospérité multipliée par 4 à 8 au XXe siècle, elle l'a été par 17. Ce qu'il n'avait pas vu venir, c'est l'avènement du consumérisme.","obj":["Suivre et reformuler un raisonnement par l'exemple (cause, effet indirect, résultat).","Maîtriser les comparaisons multiplicatives (<em>trois fois plus vite, multiplié par cinq</em>).","Parler de mobilité, de trajets domicile-travail et d'urbanisme.","Identifier un effet pervers (ou effet rebond) et l'appliquer à son domaine."],"qs":[{"type":"Compréhension","q":"Expliquez avec vos mots pourquoi l'employée d'hôtel met plus de temps qu'avant, alors qu'elle va trois fois plus vite.","starters":["Certes, en voiture, elle va…, mais…","Comme la voiture a permis de…, les gens se sont…","Du coup, la distance…"],"model":"« Certes, en voiture, elle va trois fois plus vite qu'à pied, mais la voiture a changé la ville elle-même. Comme elle permettait d'habiter plus loin, les gens se sont installés en périphérie. Du coup, la distance entre le domicile et le lieu de travail a été multipliée par cinq, voire par sept. Au final, le gain de vitesse est plus que compensé (<em>annulé et même dépassé</em>) par l'allongement du trajet. »"},{"type":"Débat","q":"Le télétravail est-il la réponse à ce paradoxe, ou crée-t-il un nouvel effet pervers ?","starters":["Sur le papier, le télétravail règle le problème, puisque…","Mais on a vu apparaître un effet pervers :…","À mon avis, la clé, c'est…"],"model":"« Sur le papier (<em>en théorie</em>), le télétravail règle le problème, puisqu'on supprime le trajet. Mais on a vu apparaître exactement le même effet pervers que dans le film : comme on peut travailler de n'importe où, certains sont partis vivre très loin des villes, et le jour où il faut revenir au bureau, le trajet est interminable. Et surtout, le temps gagné sur le trajet a souvent été rempli par… des visios. À mon avis, la clé, c'est de décider consciemment de ce qu'on fait de ce temps. »"},{"type":"Réflexion","q":"Keynes « n'avait pas vu venir » le consumérisme. Dans votre secteur, quelle transformation personne n'avait vue venir ?","starters":["Personne n'avait vu venir…","On pensait que…, alors qu'en réalité…","Ça a pris tout le monde de court."],"model":"« Dans le secteur automobile, personne n'avait vu venir la place du logiciel. On pensait que la valeur d'une voiture resterait dans le moteur et la carrosserie, alors qu'en réalité, elle se déplace vers le logiciel et les services connectés. Ça a pris tout le monde de court (<em>ça a surpris tout le monde</em>), et aujourd'hui, les constructeurs doivent se réinventer à marche forcée (<em>très vite, sous la contrainte</em>). »"}],"tour":[["prenons un exemple concret","illustrons avec un cas réel","Prenons un exemple concret : le projet de l'an dernier."],["ne cesser de + infinitif","continuer sans arrêt à","Les demandes ne cessent d'augmenter."],["c'est là que réside…","c'est précisément là que se trouve…","C'est là que réside toute la difficulté."],["ne pas voir venir","ne pas anticiper","Personne n'a vu venir la crise des semi-conducteurs."],["un effet pervers / un effet rebond","une conséquence négative inattendue","Le nouvel outil a eu un effet pervers : plus de mails qu'avant."]],"gram":{"t":"Comparer avec des multiplicateurs","h":"<p><strong>trois fois plus</strong> + adjectif ou adverbe : « elle va <em>trois fois plus vite</em> ».</p><p><strong>être multiplié par</strong> + chiffre : « la distance <em>a été multipliée par 5</em> ».</p><p><strong>deux fois moins</strong> : pour une diminution. On dit « <em>deux fois moins cher</em> », et non « deux fois plus bon marché ».</p><p><strong>plus que compensé</strong> : « le gain de vitesse est <em>plus que compensé</em> par la distance ».</p><p><strong>Piège :</strong> « le double » et « la moitié » sont des noms : <em>le budget a <strong>doublé</strong></em> / <em>on a perdu <strong>la moitié</strong> des clients</em>.</p>"}},{"t":"seg","n":6,"a":451,"b":530,"title":"10 000 objets et une hâte « inventée »","sum":"Vers 1900, un foyer comptait environ 400 objets, contre près de 10 000 aujourd'hui. Nous voyageons, communiquons et produisons plus vite, mais nous faisons aussi beaucoup plus de tout, et nous passons plus de temps à consommer. Le manque de temps ne tiendrait-il qu'à nous et à notre rapport aux technologies ? Un proverbe turc dit : « La hâte est une invention du diable ». Pour la philosophe Marianne Gronemeyer, cela signifie que la hâte est une notion inventée.","obj":["Exprimer la restriction avec <em>ne… que</em> et la quantité avec <em>davantage</em>.","Discuter de la consommation et du rapport aux objets.","Comprendre un proverbe et l'interpréter avec prudence.","Formuler une hypothèse sur une responsabilité (individuelle ou collective)."],"qs":[{"type":"Compréhension","q":"Quels chiffres le film donne-t-il sur les objets d'un foyer, et quelle conclusion en tire-t-il sur notre manque de temps ?","starters":["Vers 1900, un foyer ne comptait que…","Aujourd'hui, on en possède près de…","La conclusion, c'est que…"],"model":"« Vers 1900, un foyer ne comptait qu'environ 400 objets ; aujourd'hui, on en possède près de 10 000. La conclusion, c'est que même si on fait tout plus vite, on fait aussi beaucoup plus de choses : on voyage davantage, on communique davantage, et on passe davantage de temps à consommer. Donc on perd d'un côté ce qu'on gagne de l'autre. »"},{"type":"Débat","q":"Le manque de temps « ne tient-il qu'à nous » ? Est-ce une responsabilité individuelle ou un problème d'organisation collective ?","starters":["Je ne crois pas qu'on puisse tout mettre sur le dos de…","C'est trop facile de dire que…","La responsabilité est partagée :…"],"model":"« Je ne crois pas qu'on puisse tout mettre sur le dos des individus (<em>tout reprocher aux individus</em>). C'est trop facile de dire aux salariés « apprenez à gérer votre temps » quand l'organisation leur impose quinze réunions par semaine. La responsabilité est partagée : l'entreprise fixe le cadre, et chacun reste libre de ses choix à l'intérieur de ce cadre. »"},{"type":"Réflexion","q":"« La hâte est une invention du diable. » Y a-t-il un proverbe espagnol équivalent ? Et vous, dans quelles situations la hâte vous a-t-elle joué des tours ?","starters":["En espagnol, on dit…, ce qui correspond à peu près à…","Il m'est arrivé de…","Depuis, je me méfie de…"],"model":"« En espagnol, on dit « vísteme despacio, que tengo prisa », ce qui correspond à peu près au français « hâte-toi lentement » ou « rien ne sert de courir, il faut partir à point ». Il m'est arrivé d'envoyer un mail important trop vite, avec la mauvaise pièce jointe, à tout un comité de direction. La hâte m'a joué un sale tour (<em>m'a causé un problème</em>) ! Depuis, je me méfie de ma propre précipitation. »"}],"tour":[["ne tenir qu'à","dépendre uniquement de","La réussite du projet ne tient qu'à nous."],["mettre sur le dos de","rendre responsable, accuser","On ne peut pas tout mettre sur le dos du prestataire."],["cela me donne à réfléchir","cela me fait réfléchir","Votre remarque me donne à réfléchir."],["jouer des tours","causer des problèmes inattendus","La fatigue peut nous jouer des tours."],["rien ne sert de courir, il faut partir à point","mieux vaut anticiper que se précipiter","Rien ne sert de courir : lançons le chantier dès maintenant."]],"gram":{"t":"La restriction ne… que et la quantité davantage","h":"<p><strong>ne + verbe + que</strong> = seulement : « Un foyer <em>ne comptait qu'</em>environ 400 objets. » Le <em>que</em> se place juste avant l'élément limité.</p><p>Attention, ce n'est pas une négation : <em>je n'ai que dix minutes</em> = j'ai dix minutes, pas plus.</p><p><strong>davantage</strong> = plus, mais en fin de groupe verbal : « Nous communiquons <em>davantage</em>. » On ne dit pas « davantage vite » : avec un adjectif ou un adverbe, on garde <em>plus</em> (<em>plus vite</em>).</p>"}},{"t":"seg","n":7,"a":530,"b":639,"title":"La peste noire : la vie devient une parenthèse","sum":"En 1347, la peste noire arrive de la mer Noire et tue en quelques années 30 à 50 % de la population. Les médecins n'ont ni explication ni remède, et la cohésion sociale s'effondre. Au Moyen Âge, la vie terrestre était une épreuve avant le royaume éternel ; avec la peste, cette vision vacille. Memento mori : la mort n'est plus une délivrance mais un adversaire. La vie devient une parenthèse, prise en étau entre la naissance et la mort, et chroniquement trop courte. De cette raréfaction du temps naît l'idée d'accélération.","obj":["Comprendre un raisonnement historique et philosophique abstrait et le résumer simplement.","Utiliser la voix passive et le verbe <em>devoir</em> pour exprimer une probabilité au passé (<em>cela a dû être…</em>).","Exprimer un lien entre une vision du monde et un comportement.","Réagir avec tact à un sujet grave (la mort, les crises)."],"qs":[{"type":"Compréhension","q":"Selon Marianne Gronemeyer, en quoi la peste noire a-t-elle changé notre rapport au temps ?","starters":["Avant la peste, on voyait la vie comme…","Avec la peste, cette vision a vacillé :…","Du coup, la vie est devenue…"],"model":"« Avant la peste, on voyait la vie terrestre comme une simple épreuve avant l'éternité : on avait tout le temps, puisque la vraie vie venait après. Avec la peste, cette vision a vacillé (<em>a été ébranlée, est devenue fragile</em>) : la mort est devenue un ennemi auquel personne n'échappe. Du coup, la vie est devenue une parenthèse trop courte, et c'est de ce manque de temps qu'est née l'envie d'accélérer. »"},{"type":"Débat","q":"La pandémie de Covid-19 a-t-elle eu, selon vous, un effet comparable sur notre rapport au temps : l'envie de « profiter » davantage ?","starters":["Dans une certaine mesure, oui :…","Mais l'effet a été plus nuancé :…","On a vu les deux tendances à la fois :…"],"model":"« Dans une certaine mesure, oui. Beaucoup de gens ont remis en question leurs priorités : certains ont changé de métier, d'autres ont quitté les grandes villes. Mais l'effet a été plus nuancé qu'avec la peste : on a vu les deux tendances à la fois. D'un côté, l'envie de ralentir ; de l'autre, une frénésie de rattrapage (<em>une envie de compenser le temps perdu</em>) dès la fin des confinements : voyages, sorties, projets. »"},{"type":"Réflexion","q":"« Une parenthèse chroniquement trop courte » : ressentez-vous parfois votre vie de cette façon ? Qu'est-ce que vous auriez peur de manquer ?","starters":["Il m'arrive de ressentir ça quand…","Ce que j'aurais le plus peur de manquer, c'est…","En même temps, je relativise :…"],"model":"« Il m'arrive de ressentir ça quand je vois les années défiler (<em>passer très vite</em>) sans que j'aie réalisé certains projets personnels. Ce que j'aurais le plus peur de manquer, ce sont les moments avec mes proches, pas une promotion. En même temps, je relativise : c'est justement cette conscience du temps limité qui m'aide à fixer des priorités. »"}],"tour":[["à une vitesse fulgurante","extrêmement rapidement","L'information s'est propagée à une vitesse fulgurante."],["être abandonné à son sort","être laissé seul, sans aide","Les petites filiales ont été abandonnées à leur sort."],["vaciller","devenir instable, fragile","La confiance des clients commence à vaciller."],["pris en étau entre","coincé entre deux contraintes","Le manager est pris en étau entre la direction et son équipe."],["nul ne peut","personne ne peut (registre soutenu)","Nul ne peut prévoir l'évolution du marché."]],"gram":{"t":"Devoir pour exprimer une probabilité au passé","h":"<p>« Cela <strong>a dû être</strong> une époque de désespoir absolu. » Ici, <em>devoir</em> n'exprime pas une obligation, mais une <strong>supposition très probable</strong> (= c'était sûrement…).</p><p>En réunion : <em>Le mail <strong>a dû partir</strong> dans les spams.</em> · <em>Il <strong>a dû</strong> se tromper de salle.</em> · <em>Elle <strong>doit être</strong> en réunion</em> (probabilité au présent).</p><p>En espagnol : <em>debió de ser</em>. Le français n'ajoute pas de <em>de</em> : « il a dû <s>de</s> partir ».</p>"}},{"t":"seg","n":8,"a":639,"b":752,"title":"Newton, la vapeur et la grande promesse","sum":"L'accélération obéit à un calcul simple : il faudrait vivre plus vite pour profiter davantage de ce que le monde fait miroiter. Elle trouve son origine dans la révolution scientifique : avec les lois de Newton (1687), le temps devient une variable de calcul. La machine à vapeur marque le début de l'ère industrielle. La grande promesse de la modernité : vivre à toute allure pour mourir vieux et comblé, sans avoir l'impression d'être passé à côté de quelque chose. Question finale : est-ce un hasard européen, ou la technologie mène-t-elle partout à un rythme effréné ?","obj":["Exprimer une nécessité et un but (<em>il faudrait + infinitif, pour + infinitif</em>).","Comprendre et discuter la notion de promesse de la modernité.","Utiliser l'expression <em>passer à côté de</em> dans un contexte personnel et professionnel.","Formuler une question ouverte qui prépare une comparaison culturelle."],"qs":[{"type":"Compréhension","q":"Quelle est la « grande promesse » de la modernisation technologique décrite dans ce passage ?","starters":["La promesse, c'était de pouvoir…","L'idée, c'est que si on vit plus vite,…","En résumé,…"],"model":"« La promesse, c'était de pouvoir vivre une vie à toute allure (<em>très rapide</em>), remplie d'expériences, pour mourir vieux et comblé, sans avoir peur d'être passé à côté de quelque chose. L'idée, c'est que si on vit plus vite, on vit plus de choses. En résumé, la vitesse devait compenser la brièveté de la vie. »"},{"type":"Débat","q":"Vivre plus vite pour « en tirer le maximum » : est-ce une bonne stratégie de vie, ou un piège ?","starters":["Sur le principe, ça se tient, mais…","Le piège, c'est que…","Je dirais plutôt qu'il vaut mieux…"],"model":"« Sur le principe, ça se tient (<em>c'est logique</em>) : si le temps est limité, autant en profiter au maximum. Le piège, c'est qu'à force d'accumuler les expériences, on n'en vit vraiment aucune. On enchaîne les voyages, les séries, les projets, mais on n'a pas le temps de les digérer. Je dirais plutôt qu'il vaut mieux vivre moins de choses, mais plus intensément. »"},{"type":"Réflexion","q":"Avec la physique de Newton, le temps devient « une simple variable de calcul ». Dans vos projets, le temps est-il seulement une variable (délais, jalons, KPI) ? Qu'est-ce que cette vision oublie ?","starters":["Dans la gestion de projet, on traite le temps comme…","Ce que cette vision oublie, c'est…","Par exemple, un planning ne dit rien de…"],"model":"« Dans la gestion de projet, on traite effectivement le temps comme une ressource à optimiser : des jalons, des sprints, des délais. Ce que cette vision oublie, c'est le temps humain : le temps de comprendre, de faire confiance, de mûrir une décision. Par exemple, un planning ne dit rien du temps qu'il faut à une équipe pour adhérer à un changement (<em>pour l'accepter vraiment</em>). »"}],"tour":[["faire miroiter","présenter quelque chose de séduisant pour attirer","On nous a fait miroiter une promotion."],["en tirer le maximum","en profiter au maximum","Il faut en tirer le maximum tant que le budget est là."],["à toute allure","très vite","Il a lu le rapport à toute allure."],["passer à côté de","manquer, ne pas saisir","On est passé à côté d'une belle opportunité."],["être en mesure de","pouvoir, avoir la capacité de","Nous serons en mesure de livrer fin juin."]],"gram":{"t":"Il faudrait + infinitif / pour + infinitif","h":"<p>« <strong>Il faudrait</strong> accélérer le rythme de la vie <strong>pour</strong> profiter davantage. »</p><p><em>Il faudrait</em> (conditionnel) adoucit l'obligation : c'est une suggestion, parfaite en réunion. Comparez : <em>Il faut revoir le budget</em> (direct) / <em>Il faudrait revoir le budget</em> (diplomatique).</p><p><strong>pour + infinitif</strong> quand le sujet est le même ; <strong>pour que + subjonctif</strong> quand il change : <em>Je vous envoie le document <strong>pour que</strong> vous le <strong>relisiez</strong>.</em></p>"}},{"t":"seg","n":9,"a":752,"b":855,"title":"Huit saisons au rythme des rennes","sum":"Chez les Samis, peuple autochtone du nord de l'Europe, c'est le cycle du troupeau qui décide de ce qu'il faut faire et à quel moment. Le calendrier sâme compte huit saisons, liées à l'élevage des rennes. Le temps ne se mesure pas en jours ou en heures : il suit la nature et les migrations. Au pré-printemps, on accompagne les troupeaux vers le nord ; au printemps, avec la fonte des neiges, on installe le campement d'été ; en juillet-août, on répare les clôtures et on remplit les congélateurs de poisson et de baies.","obj":["Décrire un mode de vie et un calendrier de travail (<em>c'est… qui décide</em>, <em>se mesurer en</em>).","Comparer deux conceptions du temps : le temps cyclique (nature) et le temps de l'horloge.","Utiliser la mise en relief <em>c'est… qui / c'est… que</em>.","Relier ces conceptions aux cycles d'une entreprise (saisonnalité, clôtures, budgets)."],"qs":[{"type":"Compréhension","q":"Comment les Samis mesurent-ils le temps, et qu'est-ce qui détermine leurs activités ?","starters":["Pour eux, le temps ne se mesure pas en…, mais…","C'est… qui décide de…","Par exemple, en été,…"],"model":"« Pour eux, le temps ne se mesure pas en jours ou en heures, mais il suit les changements de la nature et les déplacements des rennes. C'est le cycle du troupeau qui décide de ce qu'il faut faire et à quel moment. Leur calendrier compte huit saisons. Par exemple, en plein été, ils réparent les clôtures et en profitent pour faire des réserves de poisson et de baies. »"},{"type":"Débat","q":"Un temps rythmé par la nature plutôt que par l'horloge : est-ce un modèle enviable, ou une vision romantique d'une vie en réalité très dure ?","starters":["Il faut se garder d'idéaliser :…","Cela dit, il y a quelque chose d'enviable dans…","Ce qui me parle, c'est…"],"model":"« Il faut se garder d'idéaliser (<em>faire attention à ne pas embellir la réalité</em>) : les conditions de vie au cercle polaire sont extrêmes, et le travail est physiquement épuisant. Cela dit, il y a quelque chose d'enviable dans le fait de savoir exactement pourquoi on fait les choses et à quel moment. Ce qui me parle, c'est ce lien direct entre l'effort et le sens. »"},{"type":"Réflexion","q":"Votre entreprise a-t-elle, elle aussi, ses « saisons » ? Décrivez le calendrier de votre année professionnelle.","starters":["Chez nous, l'année est rythmée par…","Le temps fort, c'est…","En revanche, … est une période plus calme, où l'on…"],"model":"« Chez nous, l'année est rythmée par les clôtures trimestrielles et le cycle budgétaire. Le temps fort (<em>le moment le plus intense</em>), c'est l'automne, quand on prépare les budgets de l'année suivante : tout le monde est sur le pont (<em>mobilisé</em>). En revanche, août est une période plus calme, où l'on en profite pour traiter les sujets de fond. En quelque sorte, nous aussi, nous avons nos huit saisons ! »"}],"tour":[["c'est… qui décide","c'est cet élément qui détermine","C'est le client qui décide du calendrier."],["s'aligner sur","suivre, s'adapter à","Nous nous alignons sur le calendrier du groupe."],["en profiter pour","utiliser l'occasion pour","On en profite pour faire le point."],["être sur le pont","être mobilisé, au travail","En fin d'année, toute l'équipe est sur le pont."],["un temps fort","un moment intense et important","Le salon est le temps fort de notre année."]],"gram":{"t":"La mise en relief : c'est… qui / c'est… que","h":"<p>« <strong>C'est</strong> le cycle du troupeau <strong>qui</strong> décide. » Cette structure met l'accent sur un élément. C'est l'une des marques les plus fréquentes du français oral naturel.</p><p><strong>c'est… qui</strong> met en valeur le sujet : <em>C'est le directeur qui a tranché.</em></p><p><strong>c'est… que</strong> met en valeur un complément : <em>C'est en septembre que le projet démarre.</em> · <em>C'est pour cette raison que je propose…</em></p><p>Plus naturel en réunion que « Le directeur a tranché », quand on veut corriger ou insister.</p>"}},{"t":"seg","n":10,"a":855,"b":943,"title":"Motoneiges, GPS… et e-mails le soir","sum":"Les Samis ne restent pas à l'écart de la technologie. Du temps de la grand-mère, on se déplaçait à ski, et les troupeaux, toujours accompagnés, étaient plus dociles. Aujourd'hui, les motoneiges permettent de parcourir de longues distances en un rien de temps, et chaque matin, l'éleveuse vérifie par GPS où sont ses bêtes. C'est pratique, mais le progrès a aussi apporté un surcroît de travail : dehors avec le troupeau, tout est calme et elle se sent détendue ; le soir, dans la caravane, elle ouvre ses e-mails et le travail administratif commence.","obj":["Comparer le passé et le présent (<em>à l'époque où…, aujourd'hui…</em>).","Exprimer la nuance entre avantages et inconvénients (<em>ne… pas que</em>, <em>certes… mais</em>).","Décrire un état émotionnel (calme, détente, charge mentale).","Parler de la frontière entre temps de travail et temps personnel."],"qs":[{"type":"Compréhension","q":"Qu'est-ce qui a changé entre l'époque de la grand-mère et aujourd'hui, et quel est le revers de la médaille ?","starters":["À l'époque de sa grand-mère,…","Aujourd'hui, grâce à…,…","Le revers de la médaille, c'est que…"],"model":"« À l'époque de sa grand-mère, on se déplaçait à ski et on restait tout le temps près des troupeaux, qui étaient plus dociles. Aujourd'hui, grâce aux motoneiges et au GPS, elle parcourt de longues distances en un rien de temps et sait chaque matin où sont ses bêtes. Le revers de la médaille (<em>l'inconvénient</em>), c'est le surcroît de travail administratif : le soir, les e-mails l'attendent. »"},{"type":"Débat","q":"Le progrès technique fait-il gagner du temps, ou déplace-t-il simplement le travail ailleurs ?","starters":["Je dirais qu'il le déplace plus qu'il ne le supprime :…","Le terrain est plus rapide, mais…","Tout le travail invisible…"],"model":"« Je dirais qu'il le déplace plus qu'il ne le supprime. Sur le terrain, l'éleveuse gagne un temps fou (<em>énormément de temps</em>). Mais tout ce temps est récupéré par le travail invisible : les formulaires, les déclarations, les mails. Au bureau, c'est pareil : on automatise une tâche, mais il faut ensuite documenter, reporter et justifier. »"},{"type":"Réflexion","q":"Dehors, avec les rennes, elle se sent « tout simplement détendue ». Où et quand vous sentez-vous vraiment déconnecté ?","starters":["Le seul moment où je décroche vraiment, c'est…","Je me rends compte que…","J'essaie de m'imposer…"],"model":"« Le seul moment où je décroche vraiment (<em>je ne pense plus au travail</em>), c'est quand je fais du sport ou quand je marche en montagne, le téléphone au fond du sac. Je me rends compte que ce n'est jamais au bureau ni à la maison, parce que les notifications me rattrapent partout. J'essaie de m'imposer une règle : pas de mails pro après 20 heures. »"}],"tour":[["en un rien de temps","très rapidement","Le problème a été réglé en un rien de temps."],["le revers de la médaille","l'aspect négatif d'une chose positive","Le télétravail, c'est génial, mais le revers de la médaille, c'est l'isolement."],["se rendre compte que","prendre conscience que","Je me suis rendu compte qu'on avait oublié un livrable."],["un surcroît de travail","du travail en plus","La migration a entraîné un surcroît de travail pour le support."],["décrocher","se déconnecter mentalement du travail","En vacances, j'ai du mal à décrocher."]],"gram":{"t":"Ne… pas que = pas seulement","h":"<p>« Le progrès technique <strong>n'a pas apporté que</strong> des avantages. » = il n'a pas apporté <em>seulement</em> des avantages, il a aussi apporté des inconvénients.</p><p>Ne confondez pas : <em>Il <strong>n'a apporté que</strong> des avantages</em> (uniquement des avantages) / <em>Il <strong>n'a pas apporté que</strong> des avantages</em> (pas uniquement).</p><p>À l'oral : <em>Ce projet, ce n'est pas que de la technique, c'est aussi de l'humain.</em></p><p>Et <strong>dès que</strong> + indicatif : « <em>dès que</em> je me réveille, je vérifie… » (= au moment même où). Jamais de subjonctif après <em>dès que</em>.</p>"}},{"t":"seg","n":11,"a":943,"b":1060,"title":"Le grand paradoxe de la boîte de réception","sum":"Personne n'échappe au grand paradoxe des technologies de communication : plus elles nous facilitent la vie, plus elles nous permettent de compliquer celle des autres. Il y a un déséquilibre total entre l'effort de l'expéditeur et la charge du destinataire. Gloria Mark (université de Californie) a désactivé la messagerie d'une entreprise pendant une semaine en 2012 : le stress a considérablement baissé. Comme le train a bouleversé le rapport entre temps et espace, la numérisation a redéfini le rapport entre information et espace. Des années 1950 au papier, on passe aux ordinateurs dans les années 1980, puis à Internet et aux espaces partagés : l'information devient instantanée.","obj":["Maîtriser la structure corrélative <em>plus… plus</em>.","Expliquer les résultats d'une étude (<em>nous avons mené une étude, résultat :…</em>).","Parler de la charge mentale liée aux e-mails et proposer des règles de fonctionnement.","Exprimer un déséquilibre et une asymétrie (<em>entre… et…</em>)."],"qs":[{"type":"Compréhension","q":"Quel est le « grand paradoxe » des technologies de communication, et qu'a montré l'expérience de Gloria Mark en 2012 ?","starters":["Le paradoxe, c'est que plus…, plus…","Il y a un déséquilibre entre… et…","Son équipe a désactivé…, et le résultat a été…"],"model":"« Le paradoxe, c'est que plus ces outils nous facilitent la vie, plus ils nous permettent de compliquer celle des autres. Envoyer un mail prend dix secondes à l'expéditeur, mais crée une tâche pour le destinataire : il y a un déséquilibre total entre les deux. En 2012, l'équipe de Gloria Mark a coupé la messagerie d'une entreprise pendant une semaine, et le résultat a été clair : le niveau de stress a nettement baissé (<em>a beaucoup diminué</em>). »"},{"type":"Débat","q":"Faudrait-il, comme en France avec le « droit à la déconnexion », encadrer l'usage des e-mails en entreprise ? Ou est-ce à chacun de s'organiser ?","starters":["Je suis plutôt favorable à…, à condition que…","Une loi ne suffit pas si…","Ce qui marche le mieux, d'après mon expérience, c'est…"],"model":"« Je suis plutôt favorable à un cadre, à condition qu'il soit appliqué dans les faits. En France, le droit à la déconnexion existe dans la loi depuis 2017, mais une loi ne suffit pas si les managers continuent d'envoyer des mails à 23 heures. Ce qui marche le mieux, d'après mon expérience, ce sont des règles d'équipe simples : pas de mail le soir, une réponse sous 24 heures et non sous une heure, et un appel quand c'est vraiment urgent. »"},{"type":"Réflexion","q":"Quand vous envoyez un e-mail, pensez-vous à la « charge » que vous imposez au destinataire ? Quelles bonnes pratiques pourriez-vous adopter ?","starters":["À vrai dire, je n'y pensais pas jusqu'ici…","Désormais, je pourrais…","Par exemple, avant d'envoyer, je me demande si…"],"model":"« À vrai dire, je n'y pensais pas vraiment. Désormais, je pourrais limiter les destinataires en copie, qu'on met souvent par réflexe, pour se couvrir (<em>pour se protéger</em>). Par exemple, avant d'envoyer, je me demande si un message instantané, un coup de fil (<em>un appel</em>) ou même rien du tout ne ferait pas l'affaire (<em>ne suffirait pas</em>). »"}],"tour":[["savoir pertinemment","savoir parfaitement, sans aucun doute","Il sait pertinemment que le délai est intenable."],["mettre en copie","ajouter un destinataire en CC","Pensez à mettre le chef de projet en copie."],["se couvrir","se protéger en gardant une trace","On met toute la hiérarchie en copie pour se couvrir."],["faire l'affaire","convenir, suffire","Un simple message fera l'affaire."],["mener une étude","réaliser une étude","Nous avons mené une étude auprès de 200 collaborateurs."]],"gram":{"t":"Plus…, plus… / que ce soit… ou…","h":"<p><strong>Plus</strong> elles nous facilitent la vie, <strong>plus</strong> elles nous permettent de compliquer celle des autres.</p><p>Pas d'article ni de <em>que</em> : on ne dit pas « <s>le plus</s>… <s>le plus</s> » (erreur fréquente chez les hispanophones, calquée sur <em>cuanto más… más</em>). Variantes : <em>plus… moins</em>, <em>moins… plus</em>, <em>plus on attend, plus ça coûte cher</em>.</p><p><strong>Que ce soit… ou…</strong> (+ subjonctif figé) = peu importe : « <em>Que ce soit</em> en Finlande, dans l'espace <em>ou</em> au fond des océans, personne n'y échappe. »</p>"}},{"t":"seg","n":12,"a":1060,"b":1160,"title":"47 secondes d'attention","sum":"Grâce à Internet, on condense toujours plus de travail en une journée. Mais les technologies numériques augmentent aussi le stress et affectent la concentration. En 2004, Gloria Mark mesure, chronomètre en main, le temps d'attention d'employés de bureau : 2 minutes 30 en moyenne sur un même écran. En 2019, la moyenne est tombée à 47 secondes, soit une chute de deux tiers. Et on ne peut pas rejeter la faute sur les seules notifications : les gens s'interrompent eux-mêmes aussi souvent qu'ils sont dérangés. Nous sommes conditionnés à ce rythme d'interruption constante.","obj":["Rapporter les résultats d'une étude avec précision (chiffres, évolution, pourcentages).","Exprimer une baisse (<em>chuter de, tomber à, s'effondrer</em>) et une comparaison d'égalité (<em>aussi souvent que</em>).","Distinguer interruption externe et interruption interne, et analyser ses propres habitudes.","Proposer des stratégies de concentration dans un cadre professionnel."],"qs":[{"type":"Compréhension","q":"Comment a évolué le temps d'attention entre 2004 et 2019, et pourquoi ne peut-on pas tout mettre sur le compte des notifications ?","starters":["En 2004, les gens restaient concentrés…","En 2019, la moyenne est tombée à…","Mais les notifications ne sont pas seules en cause :…"],"model":"« En 2004, les employés restaient concentrés en moyenne deux minutes et demie sur un même écran. En 2019, la moyenne est tombée à 47 secondes : elle a chuté de deux tiers. Mais les notifications ne sont pas seules en cause (<em>pas les seules responsables</em>) : l'étude montre que les gens s'interrompent eux-mêmes aussi souvent qu'ils sont dérangés par l'extérieur. Et quand les interruptions externes baissent, les internes augmentent. On est conditionnés à zapper. »"},{"type":"Débat","q":"Le multitâche est-il une compétence professionnelle, ou une illusion qui nuit à la qualité du travail ?","starters":["On le présente souvent comme une qualité, mais…","Les études montrent plutôt que…","À la rigueur, pour des tâches simples,…, mais pour…"],"model":"« On le présente souvent comme une qualité dans les offres d'emploi, mais je pense que c'est une illusion. Les études montrent plutôt qu'on ne fait pas deux choses à la fois : on passe très vite de l'une à l'autre, et chaque changement coûte de l'énergie. À la rigueur (<em>au pire, éventuellement</em>), pour des tâches simples, ça passe ; mais pour analyser un dossier complexe, il faut du temps d'attention continu. »"},{"type":"Réflexion","q":"Combien de fois pensez-vous vous interrompre vous-même par heure ? Quelle stratégie concrète pourriez-vous tester dès la semaine prochaine ?","starters":["Si je suis honnête avec moi-même,…","Je me surprends souvent à…","Je pourrais tester…"],"model":"« Si je suis honnête avec moi-même, je dirais une dizaine de fois par heure. Je me surprends souvent à ouvrir ma messagerie sans raison, juste par réflexe, dès qu'une tâche devient difficile. Je pourrais tester des plages de concentration : deux fois une heure et demie par jour, notifications coupées, avec un créneau bloqué dans mon agenda. »"}],"tour":[["chronomètre en main","en mesurant le temps très précisément","Elle a suivi les réunions chronomètre en main."],["sur le coup","au moment même, sur le moment","Sur le coup, je n'ai pas compris sa remarque."],["s'effondrer / chuter de","baisser brutalement","Les ventes ont chuté de 20 %."],["rejeter la faute sur","accuser quelqu'un ou quelque chose d'autre","Inutile de rejeter la faute sur l'outil."],["être trop réducteur","simplifier à l'excès","Dire que c'est un problème technique, c'est trop réducteur."]],"gram":{"t":"Aussi souvent que et les verbes pronominaux réfléchis","h":"<p><strong>Comparaison d'égalité</strong> : <em>aussi</em> + adjectif ou adverbe + <em>que</em> · <em>autant de</em> + nom + <em>que</em> · verbe + <em>autant que</em>.</p><p>« Les gens <em>s'interrompent eux-mêmes <strong>aussi souvent qu'</strong>ils sont dérangés</em>. » · « Il y a <em><strong>autant d'</strong>interruptions internes <strong>qu'</strong>externes</em>. »</p><p><strong>s'interrompre eux-mêmes</strong> : le pronom tonique renforcé (<em>moi-même, eux-mêmes</em>) insiste sur le fait que l'action vient du sujet. En réunion : <em>J'ai vérifié moi-même les chiffres.</em></p>"}},{"t":"seg","n":13,"a":1160,"b":1258,"title":"100 000 mots par jour et la pente glissante","sum":"Dans l'échange d'information aussi, l'accélération ne suit plus la croissance : nous traitons plus de 100 000 mots par jour, soit l'équivalent de plus de 400 pages de lettres manuscrites. L'information étant produite à un rythme effréné, on ressent la pression d'en consommer toujours plus et toujours plus vite. Chez les adolescents, 3 à 4 heures de smartphone par jour ; une utilisation intensive est liée à une baisse du bien-être, à plus d'anxiété et à une moins bonne estime de soi, surtout à cause de la comparaison sociale. Pour Hartmut Rosa, cette logique est dictée par la peur de ne plus suivre : c'est le « syndrome de la pente glissante ».","obj":["Comprendre et expliquer une métaphore conceptuelle (la pente glissante).","Exprimer la difficulté (<em>avoir du mal à</em>) et la progression (<em>de plus en plus</em>).","Discuter d'un sujet de société (jeunes et écrans) en distinguant corrélation et cause.","Exprimer une peur ou une inquiétude professionnelle (<em>la peur de + infinitif</em>)."],"qs":[{"type":"Compréhension","q":"Qu'est-ce que le « syndrome de la pente glissante » selon Hartmut Rosa ?","starters":["Il le compare à…","Autrement dit, on doit…","Et ce qui est dicté par la peur, c'est…"],"model":"« Il le compare à une pente enneigée qui se déroberait (<em>glisserait, disparaîtrait</em>) sans cesse sous nos pieds. Autrement dit, on doit courir de plus en plus vite simplement pour rester au même endroit, pour rester à la page (<em>à jour</em>). Selon lui, cette logique est dictée par la peur fondamentale de ne plus pouvoir suivre le rythme, d'être complètement dépassé. »"},{"type":"Débat","q":"Faut-il limiter l'usage du smartphone chez les adolescents, par exemple en l'interdisant à l'école ?","starters":["Je suis assez partagé :…","D'un côté…, mais de l'autre…","Plutôt que d'interdire, je miserais sur…"],"model":"« Je suis assez partagé. D'un côté, les études citées sont préoccupantes : anxiété, estime de soi, comparaison sociale permanente. En France, le téléphone est déjà interdit au collège. Mais de l'autre, interdire ne suffit pas si les adultes donnent le mauvais exemple. Plutôt que d'interdire seulement, je miserais sur (<em>je parierais sur, je privilégierais</em>) l'éducation au numérique, en montrant comment fonctionnent les algorithmes. »"},{"type":"Réflexion","q":"Avez-vous déjà ressenti cette peur d'être « dépassé » dans votre métier, par exemple face à l'intelligence artificielle ? Comment la gérez-vous ?","starters":["Oui, clairement, surtout depuis…","J'ai parfois l'impression d'avoir un train de retard…","Ce qui m'aide, c'est de…"],"model":"« Oui, clairement, surtout depuis l'arrivée de l'IA générative. J'ai parfois l'impression d'avoir un train de retard (<em>d'être en retard sur les autres</em>) : chaque semaine, il y a un nouvel outil. Ce qui m'aide, c'est de faire le tri : je ne cherche pas à tout suivre, je choisis deux ou trois sujets vraiment utiles pour mon poste, et j'accepte de laisser passer le reste. »"}],"tour":[["rester à la page","rester informé, à jour","Pour rester à la page, je lis une newsletter par semaine."],["être dépassé","ne plus arriver à suivre","Avec tous ces changements, je me sens un peu dépassé."],["se dérober sous les pieds","disparaître, ne plus offrir d'appui","J'ai eu l'impression que le sol se dérobait sous mes pieds."],["avoir un train de retard","être en retard sur une évolution","Sur l'IA, on a clairement un train de retard."],["faire le tri","sélectionner l'essentiel","Il faut faire le tri dans les priorités."]],"gram":{"t":"Avoir du mal à + infinitif / de plus en plus","h":"<p>« Pourquoi <strong>avons-nous tant de mal à</strong> poser cet appareil ? » <em>Avoir du mal à</em> = avoir des difficultés à. Préposition <strong>à</strong>, et non <em>de</em> : <em>J'ai du mal <strong>à</strong> me concentrer.</em></p><p><strong>de plus en plus</strong> / <strong>de moins en moins</strong> : « courir <em>de plus en plus vite</em> ». Avec un nom : <em>de plus en plus <strong>de</strong> réunions</em>.</p><p><strong>se déroberait</strong> : le conditionnel dans « une pente qui <em>se déroberait</em> » sert à décrire une situation imaginaire (une comparaison).</p>"}},{"t":"seg","n":14,"a":1258,"b":1341,"title":"Joignable en permanence","sum":"Notre monde en accélération, combiné à notre disponibilité permanente, impose une pression énorme, jusqu'au cercle polaire. L'éleveuse est tour à tour éleveuse, conseillère et presque juriste : l'État encadre l'élevage avec des quotas, des règles et des zones de pâturage, et les Samis n'échappent pas à la bureaucratie. Autrefois, on consultait sa boîte aux lettres de temps en temps et on lisait parfois un courrier administratif trois mois plus tard. Aujourd'hui, l'administration sait qu'on est joignable en permanence. Et l'éleveuse reconnaît : « c'est aussi de ma faute », car elle a laissé ces technologies envahir sa vie privée.","obj":["Exprimer la responsabilité et l'autocritique (<em>c'est de ma faute, j'ai laissé…</em>).","Utiliser <em>laisser</em> + infinitif (et le distinguer de <em>faire</em> + infinitif).","Décrire la multiplicité des rôles professionnels (<em>tour à tour, à la fois</em>).","Discuter de la frontière entre vie professionnelle et vie privée."],"qs":[{"type":"Compréhension","q":"Qu'est-ce qui a changé dans la relation de l'éleveuse avec l'administration, et pourquoi dit-elle que c'est « aussi de sa faute » ?","starters":["Autrefois, elle ne consultait sa boîte aux lettres que…","Aujourd'hui, l'administration sait que…","Elle reconnaît que c'est aussi de sa faute, parce qu'elle a laissé…"],"model":"« Autrefois, elle ne consultait sa boîte aux lettres que de temps en temps, et elle pouvait lire un courrier administratif trois mois plus tard. Aujourd'hui, l'administration sait qu'elle est joignable en permanence grâce au smartphone, donc elle attend des réponses rapides. Elle reconnaît que c'est aussi de sa faute, parce qu'elle a laissé ces technologies envahir sa vie privée : elle fait son mea culpa (<em>elle reconnaît sa part de responsabilité</em>). »"},{"type":"Débat","q":"Être joignable en permanence : est-ce une exigence de l'employeur, ou une habitude que nous avons prise nous-mêmes ?","starters":["C'est un cercle vicieux :…","Personne ne l'exige par écrit, mais…","À partir du moment où on répond…, on crée…"],"model":"« C'est un cercle vicieux. Personne ne l'exige noir sur blanc (<em>par écrit, officiellement</em>), mais à partir du moment où on répond à un mail à 22 heures, on crée une attente : la prochaine fois, on nous en voudra de ne pas répondre. Donc l'habitude devient une norme implicite. Pour en sortir, il faut que les managers montrent l'exemple. »"},{"type":"Réflexion","q":"Dans votre poste, combien de « casquettes » portez-vous ? Laquelle vous prend le plus de temps sans être vraiment votre métier ?","starters":["Je porte plusieurs casquettes :…","Je suis tour à tour…","Celle qui me prend le plus de temps, c'est…, alors que…"],"model":"« Je porte plusieurs casquettes (<em>j'ai plusieurs rôles</em>) : je suis tour à tour chef de projet, interlocuteur technique, négociateur avec les prestataires et parfois presque juriste quand il faut relire des contrats. Celle qui me prend le plus de temps, c'est le reporting administratif, alors que ce n'est pas du tout là que j'apporte le plus de valeur. »"}],"tour":[["être joignable","pouvoir être contacté","Je serai joignable sur mon portable jusqu'à 18 heures."],["ne pas échapper à","subir aussi, ne pas pouvoir éviter","Aucun service n'échappe aux réductions de budget."],["porter plusieurs casquettes","avoir plusieurs rôles","Dans une petite structure, on porte plusieurs casquettes."],["noir sur blanc","par écrit, de manière explicite","Je voudrais que ce soit écrit noir sur blanc dans le contrat."],["un cercle vicieux","une situation où chaque cause aggrave l'effet","Retards, stress, erreurs, puis nouveaux retards : c'est un cercle vicieux."]],"gram":{"t":"Laisser + infinitif / faire + infinitif","h":"<p>« J'<strong>ai laissé</strong> ces technologies <strong>envahir</strong> ma vie privée. » <em>Laisser + infinitif</em> = ne pas empêcher (on subit, on permet).</p><p><em>Faire + infinitif</em> = provoquer, commander : <em>J'ai <strong>fait installer</strong> une nouvelle application</em> (j'ai demandé à quelqu'un de l'installer).</p><p>En réunion : <em>Laissez-moi finir.</em> · <em>On ne peut pas laisser passer une erreur pareille.</em> · <em>Je vais faire valider le budget par la direction.</em></p><p>Et <strong>c'est de ma faute</strong> (oral courant) ou <strong>c'est ma faute</strong> (plus correct) : les deux s'entendent.</p>"}},{"t":"seg","n":15,"a":1341,"b":1445,"title":"Ne pas ralentir, mais entrer en résonance","sum":"Comment redescendre de la pente glissante ? Pour Hartmut Rosa, ralentir serait une erreur : personne ne veut d'urgentistes ou de pompiers lents, et une mauvaise connexion n'a jamais amélioré la vie de personne. L'accélération est néfaste quand elle mène à l'aliénation, quand on n'arrive plus à assimiler les choses. La solution n'est pas de mieux gérer son temps, mais d'entrer dans un échange vivant avec le monde : la résonance, c'est s'ouvrir aux choses, accepter qu'elles nous touchent et nous transforment, et sentir qu'on peut agir sur le monde. On ne peut pas être pleinement présent à la fois dans le monde numérique et dans le monde réel : il faut apprivoiser le numérique, comme nos ancêtres ont apprivoisé le train.","obj":["Comprendre et reformuler une thèse nuancée (ni pour ni contre l'accélération).","Utiliser <em>il s'agit de</em> + infinitif et <em>l'idée n'est pas de… mais de…</em>.","Définir un concept abstrait (la résonance) avec ses propres mots et un exemple.","Argumenter en rejetant une solution simpliste (<em>ce serait une erreur de croire que…</em>)."],"qs":[{"type":"Compréhension","q":"Pourquoi Hartmut Rosa pense-t-il que ralentir n'est pas la bonne réponse ? Et qu'appelle-t-il la « résonance » ?","starters":["Pour lui, ralentir serait une erreur, parce que…","L'accélération ne devient un problème que quand…","La résonance, c'est…"],"model":"« Pour lui, ralentir serait une erreur, parce que la vitesse est souvent une bonne chose : personne ne veut d'un pompier lent ou d'une mauvaise connexion. L'accélération ne devient un problème que quand elle mène à l'aliénation, quand on n'arrive plus à assimiler (<em>à intégrer, à digérer</em>) ce qu'on vit. La résonance, c'est l'inverse : s'ouvrir aux choses, qu'il s'agisse d'une discussion, d'un paysage ou d'un livre, se laisser toucher et transformer par elles, et sentir qu'on peut agir en retour. »"},{"type":"Débat","q":"Rosa affirme que « changer notre gestion du temps » ne résoudra pas le problème. Les formations en gestion du temps sont-elles donc inutiles ?","starters":["Inutiles, c'est un grand mot, mais…","Elles traitent le symptôme, pas la cause :…","Ce qui manque, c'est…"],"model":"« Inutiles, c'est un grand mot (<em>c'est exagéré</em>), mais je comprends son idée. Elles traitent le symptôme, pas la cause : on apprend à caser plus de tâches dans une journée, ce qui revient à courir plus vite sur la pente. Ce qui manque, c'est la question de fond : pourquoi est-ce que je fais tout ça, et qu'est-ce qui a vraiment du sens ? Une bonne formation devrait aider à faire moins, pas à faire plus. »"},{"type":"Réflexion","q":"Dans votre travail, quel moment récent a été un moment de « résonance » : un échange qui vous a vraiment touché ou transformé ?","starters":["Ça me fait penser à…","Ce qui a fait la différence, c'est que…","J'en suis ressorti avec…"],"model":"« Ça me fait penser à un atelier avec des utilisateurs, le mois dernier. Au lieu de présenter un PowerPoint, on les a simplement écoutés raconter leurs difficultés. Ce qui a fait la différence, c'est qu'on était tous vraiment présents : pas d'ordinateur ouvert, pas de téléphone. J'en suis ressorti avec une vision complètement différente du projet, et l'envie de le faire avancer. »"}],"tour":[["c'est une erreur de croire que","il est faux de penser que","C'est une erreur de croire que l'outil réglera tout."],["un défi de taille","un défi très important","Intégrer les deux équipes est un défi de taille."],["être pleinement présent","être totalement attentif, ici et maintenant","En réunion, j'essaie d'être pleinement présent."],["subir","supporter sans pouvoir agir","On ne veut plus subir les décisions, on veut y participer."],["apprivoiser","apprendre à maîtriser","Il nous a fallu six mois pour apprivoiser le nouvel ERP."]],"gram":{"t":"Il s'agit de… / L'idée n'est pas de…, mais de…","h":"<p>« <strong>Il s'agit de</strong> repenser notre rapport à la technologie. » <em>Il s'agit de</em> + infinitif = ce qu'il faut faire, c'est… Le sujet est toujours <em>il</em> impersonnel : on ne dit pas « <s>la réunion s'agit de</s> », mais « <em>dans cette réunion, il s'agit de…</em> » ou « <em>la réunion porte sur…</em> ».</p><p>« <strong>L'idée n'est pas de</strong> la subir, <strong>mais de</strong> la considérer comme un outil. » C'est une structure idéale pour recadrer une discussion : <em>L'idée n'est pas de chercher un coupable, mais de trouver une solution.</em></p>"}},{"t":"seg","n":16,"a":1445,"b":1516,"title":"Qu'allons-nous chercher là-haut ?","sum":"L'idée que la consommation nous libère et nous offre une table richement dressée n'est qu'une illusion : on se retrouve face à la peur de passer à côté de sa vie, avec le sentiment que la vraie vie est ailleurs et qu'on est toujours au mauvais endroit. L'accélération a grandement amélioré notre quotidien, mais elle a aussi apporté l'aliénation. La prochaine fois que nous aurons l'impression de gravir une pente glissante, il vaudra peut-être la peine de faire une pause pour nous demander ce que nous allons chercher là-haut. Pour l'éleveuse, l'élevage de rennes apporte la liberté : ne plus avoir les yeux fixés sur l'horloge.","obj":["Synthétiser le message global du documentaire en une ou deux minutes.","Utiliser l'inversion du sujet après <em>peut-être</em> et l'expression <em>valoir la peine de</em>.","Parler de la peur de manquer quelque chose (FOMO) avec des expressions natives.","Conclure une discussion : tirer un enseignement personnel et formuler une résolution concrète."],"qs":[{"type":"Compréhension","q":"Quelle est la conclusion du documentaire ? Résumez-la en deux ou trois phrases.","starters":["En définitive, le documentaire montre que…","Il ne s'agit pas de rejeter…, mais de…","La question finale, c'est…"],"model":"« En définitive (<em>pour conclure</em>), le documentaire montre que l'accélération a grandement amélioré notre quotidien, mais qu'elle nous a aussi éloignés de nous-mêmes : c'est l'aliénation. Il ne s'agit pas de rejeter le progrès, mais de se demander où il nous mène. La question finale, c'est : quand on grimpe cette pente glissante, qu'est-ce qu'on va chercher là-haut ? »"},{"type":"Débat","q":"La « peur de passer à côté de sa vie », ce qu'on appelle en anglais FOMO, est-elle aggravée par les réseaux sociaux ou existait-elle déjà avant ?","starters":["Elle ne date pas d'hier :…","Mais les réseaux sociaux l'ont décuplée, parce que…","Ce qui a changé, c'est…"],"model":"« Elle ne date pas d'hier (<em>elle est ancienne</em>) : le documentaire la fait remonter à la peste noire ! Mais les réseaux sociaux l'ont décuplée (<em>multipliée par dix, considérablement amplifiée</em>), parce qu'on voit en permanence la vie des autres, ou plutôt la meilleure version de leur vie. Ce qui a changé, c'est l'échelle : avant, on se comparait à ses voisins ; aujourd'hui, on se compare au monde entier. »"},{"type":"Réflexion","q":"« Qu'allons-nous chercher là-haut ? » Si vous faites une pause aujourd'hui : qu'est-ce que vous cherchez vraiment, au travail et dans la vie ? Et quelle petite décision concrète pourriez-vous prendre ?","starters":["Si je prends un peu de recul,…","Ce que je cherche vraiment, c'est…","Concrètement, je vais essayer de…"],"model":"« Si je prends un peu de recul, je me rends compte que je cours souvent après la reconnaissance et la performance. Mais ce que je cherche vraiment, c'est le sentiment d'être utile et d'avoir du temps pour les gens qui comptent. Concrètement, je vais essayer de lever le pied (<em>ralentir, en faire moins</em>) le vendredi après-midi : pas de nouvelles réunions, juste le temps de faire le point sur la semaine. »"}],"tour":[["passer à côté de sa vie","ne pas vivre pleinement ce qui compte","J'ai eu peur de passer à côté de ma vie en travaillant trop."],["ça ne date pas d'hier","c'est ancien, ce n'est pas nouveau","Ce problème de coordination ne date pas d'hier."],["valoir la peine de","être utile, mériter l'effort","Ça vaut la peine de revoir le processus."],["lever le pied","ralentir, réduire son rythme","Après le lancement, l'équipe va pouvoir lever le pied."],["avoir les yeux rivés sur","regarder fixement, en permanence","Il a les yeux rivés sur les indicateurs."]],"gram":{"t":"L'inversion après peut-être","h":"<p>« <strong>Peut-être vaudra-t-il</strong> la peine de faire une pause. » Quand <em>peut-être</em> est en tête de phrase, le français soutenu inverse le sujet (avec le <em>-t-</em> euphonique).</p><p>Trois façons de dire la même chose :</p><p>Soutenu : <em>Peut-être faudrait-il revoir le calendrier.</em><br>Courant : <em>Peut-être qu'il faudrait revoir le calendrier.</em><br>Simple : <em>Il faudrait peut-être revoir le calendrier.</em></p><p>En réunion, la version courante ou simple est parfaite. La version soutenue fait très bonne impression à l'écrit.</p>"}}];
+
+/* exercices d'écoute propres à chaque segment (chiffres ou vrai/faux) */
+var EX = {
+ 1:{t:"gaps", fields:[
+   {k:"a", label:"Invention de la roue : vers … avant notre ère", answers:["3500"], sol:"3500"},
+   {k:"b", label:"Vitesse moyenne à pied : environ 4 à …", answers:["5"], suf:"km/h", sol:"5 km/h"},
+   {k:"c", label:"À cheval, sur des routes bien aménagées : jusqu'à", answers:["10","dix"], suf:"km/h", sol:"10 km/h"}]},
+ 2:{t:"gaps", fields:[
+   {k:"a", label:"Année de la locomotive à vapeur", answers:["1804"], sol:"1804"},
+   {k:"b", label:"Vitesses de pointe dans les années 1830", answers:["30","trente"], suf:"km/h", sol:"30 km/h"},
+   {k:"c", label:"Année de l'essai de Heine sur la ligne Paris-Rouen", answers:["1843"], sol:"1843"}]},
+ 3:{t:"gaps", fields:[
+   {k:"a", label:"Trains à sustentation magnétique : plus de", answers:["500"], suf:"km/h", sol:"500 km/h"},
+   {k:"b", label:"Avion à réaction : jusqu'à", answers:["900"], suf:"km/h", sol:"900 km/h"},
+   {k:"c", label:"Production d'une machine à tisser (début du XIXe siècle)", answers:["10000","10 000","dix mille"], suf:"mètres", sol:"environ 10 000 m"},
+   {k:"d", label:"Années de la révolte des ouvriers anglais : 1811 → …", answers:["1813"], sol:"1813"}]},
+ 4:{t:"gaps", fields:[
+   {k:"a", label:"Année de la prédiction de Keynes", answers:["1930"], sol:"1930"},
+   {k:"b", label:"Heures de travail par semaine qu'il prévoyait pour ses petits-enfants (environ)", answers:["15","quinze"], suf:"h", sol:"environ 15 h"}]},
+ 5:{t:"gaps", fields:[
+   {k:"a", label:"En voiture, l'employée va … fois plus vite", answers:["3","trois"], sol:"3"},
+   {k:"b", label:"Distance domicile-travail : multipliée par 5, voire par", answers:["7","sept"], sol:"7"},
+   {k:"c", label:"Prospérité réelle au XXe siècle : multipliée par", answers:["17","dix-sept","dix sept"], sol:"17"}]},
+ 6:{t:"gaps", fields:[
+   {k:"a", label:"Objets dans un foyer moyen vers 1900", answers:["400"], sol:"400"},
+   {k:"b", label:"Objets aujourd'hui (près de)", answers:["10000","10 000","dix mille"], sol:"10 000"}]},
+ 7:{t:"gaps", fields:[
+   {k:"a", label:"Année de la peste noire", answers:["1347"], sol:"1347"},
+   {k:"b", label:"Part de la population tuée : de 30 à", answers:["50","50 %"], suf:"%", sol:"50 %"}]},
+ 8:{t:"gaps", fields:[
+   {k:"a", label:"Année où Newton publie ses lois du mouvement", answers:["1687"], sol:"1687"}]},
+ 9:{t:"gaps", fields:[
+   {k:"a", label:"Nombre de saisons du calendrier sâme", answers:["8","huit"], sol:"8"},
+   {k:"b", label:"Mois de la haute saison estivale : juillet et…", answers:["aout","août"], sol:"août"}]},
+ 10:{t:"tf", items:[
+   {q:"À l'époque de sa grand-mère, on se déplaçait déjà en motoneige.", a:false, j:"On se déplaçait <strong>à ski</strong> en hiver."},
+   {q:"Les troupeaux étaient plus dociles parce que des humains restaient toujours près d'eux.", a:true, j:"C'est exactement ce qu'elle explique."},
+   {q:"Chaque matin, elle vérifie par GPS où se trouvent ses bêtes.", a:true, j:"« Dès que je me réveille, je vérifie par GPS… »"},
+   {q:"Selon elle, la technologie n'a apporté que des avantages.", a:false, j:"Elle a aussi généré un <strong>surcroît de travail</strong> : les e-mails et l'administratif, le soir."}]},
+ 11:{t:"gaps", fields:[
+   {k:"a", label:"Années d'études de Gloria Mark : plus de", answers:["25","vingt-cinq"], suf:"ans", sol:"25 ans"},
+   {k:"b", label:"Année de l'expérience sans messagerie", answers:["2012"], sol:"2012"},
+   {k:"c", label:"Durée de la coupure de la messagerie", answers:["1 semaine","une semaine","semaine","1"], sol:"une semaine"}]},
+ 12:{t:"gaps", fields:[
+   {k:"a", label:"Temps d'attention moyen en 2004", answers:["2 min 30","2,5","2 minutes et demie","2 minutes 30","2.5"], suf:"min", sol:"2 min 30"},
+   {k:"b", label:"Temps d'attention moyen en 2019", answers:["47"], suf:"secondes", sol:"47 s"},
+   {k:"c", label:"La baisse est de… (fraction)", answers:["2/3","deux tiers","2 tiers"], sol:"deux tiers"}]},
+ 13:{t:"gaps", fields:[
+   {k:"a", label:"Mots traités par jour (plus de)", answers:["100000","100 000","cent mille"], sol:"100 000"},
+   {k:"b", label:"Équivalent en pages de lettres manuscrites (plus de)", answers:["400"], sol:"400"},
+   {k:"c", label:"Heures de smartphone par jour chez les ados : de 3 à", answers:["4","quatre"], suf:"h", sol:"4 h"}]},
+ 14:{t:"tf", items:[
+   {q:"L'État impose aux éleveurs des quotas d'animaux et des zones de pâturage.", a:true, j:"Le droit traditionnel est aujourd'hui encadré par l'État."},
+   {q:"Autrefois, elle lisait les courriers administratifs le jour même.", a:false, j:"On ne les lisait parfois que <strong>trois mois plus tard</strong>."},
+   {q:"Elle rejette toute la responsabilité sur l'administration.", a:false, j:"Elle reconnaît que c'est <strong>aussi de sa faute</strong>."}]},
+ 15:{t:"tf", items:[
+   {q:"Pour Hartmut Rosa, la solution consiste à ralentir.", a:false, j:"Il pense au contraire que ce serait <strong>une erreur</strong>."},
+   {q:"L'accélération devient néfaste quand elle mène à l'aliénation.", a:true, j:"« … quand on n'arrive plus à assimiler les choses. »"},
+   {q:"On peut être pleinement présent à la fois dans le monde numérique et dans le monde réel.", a:false, j:"Le film affirme que c'est <strong>impossible</strong>."}]},
+ 16:{t:"tf", items:[
+   {q:"Pour le documentaire, la consommation nous libère.", a:false, j:"C'est présenté comme <strong>une illusion</strong>."},
+   {q:"L'accélération a amélioré notre quotidien, mais elle a aussi apporté l'aliénation.", a:true, j:"C'est la conclusion nuancée du film."},
+   {q:"L'élevage lui apporte la liberté de ne plus avoir les yeux fixés sur l'horloge.", a:true, j:"Ce sont les derniers mots du documentaire."}]}
+};
+
+var LETTERS = "ABCDEFGH";
+function segCard(s, idx){
+  var blocks = [];
+  blocks.push({t:"note", h:"<div class='prose'><p><em>En bref.</em> "+s.sum+"</p></div>"});
+  blocks.push({t:"callout", ct:"Objectifs pédagogiques du segment", h:"<ul style='margin:0;padding-left:18px'>"+s.obj.map(function(o){return "<li>"+o+"</li>";}).join("")+"</ul>"});
+  var ex = EX[s.n];
+  if(ex){
+    if(ex.t==="gaps") blocks.push({t:"gaps", k:"x"+s.n, fields:ex.fields});
+    else blocks.push({t:"tf", k:"x"+s.n, items:ex.items});
+  }
+  s.qs.forEach(function(q, i){
+    blocks.push({t:"open", k:"s"+s.n+"_"+i, n:String(i+1), starters:q.starters,
+      q:"<strong>"+q.type+".</strong> "+q.q, hint:q.hint, model:q.model});
+  });
+  blocks.push({t:"callout", ct:"Focus langue — tournures et constructions clés",
+    h:"<ul style='margin:0;padding-left:18px'>"+s.tour.map(function(t){
+        return "<li><strong>"+t[0]+"</strong> ("+t[1]+") — <em>« "+t[2]+" »</em></li>";}).join("")+"</ul>"+
+      "<p><strong>Construction clé : "+s.gram.t+"</strong></p>"+s.gram.h});
+  return {t:"card", h3:LETTERS[idx]+". Segment "+s.n+" — "+s.title,
+    sub:(ex ? (ex.t==="gaps" ? "Repérez d'abord les chiffres, puis passez aux trois questions." : "Vrai ou faux, puis les trois questions.") : ""),
+    tc:[{sec:s.a, l:mmss(s.a)},{sec:s.b, l:mmss(s.b)}], blocks:blocks};
+}
+
+var STEPS = [
+{
+ id:"prep", title:"Avant de visionner", time:"5 min",
+ lede:"Vous parlez d'abord, vous regardez ensuite. Répondez à voix haute, puis notez l'essentiel : deux ou trois phrases suffisent.",
+ blocks:[
+  {t:"callout", ct:"Méthode", h:"<p><strong>Premier visionnage sans sous-titres, sans pause, sans dictionnaire.</strong> Vous ne comprendrez pas tout, et c'est normal. Devinez par le contexte, notez le mot, vérifiez après. En séance, les trois questions de chaque segment forment une réserve : on en traite une ou deux par segment, selon vos centres d'intérêt.</p>"},
+  {t:"card", h3:"Objectifs de la séance", sub:"Conversation orale de 45 minutes · niveau B2", blocks:[
+   {t:"note", h:"<div class='prose'>"+
+    "<p><strong>Objectif général.</strong> Tenir une discussion argumentée sur l'accélération du rythme de vie et de travail : restituer les idées du documentaire, prendre position, nuancer et relier le sujet à votre expérience, avec des tournures directement réutilisables en réunion.</p>"+
+    "<ul>"+
+    "<li><strong>Communicatifs</strong> : résumer un raisonnement ; expliquer une cause et une conséquence ; comparer des chiffres ; défendre un avis, concéder, nuancer ; illustrer par une expérience vécue.</li>"+
+    "<li><strong>Linguistiques</strong> : lexique du temps, du progrès, du travail et de l'attention ; imparfait et passé composé, conditionnel de déduction, <em>ne… que</em>, <em>plus… plus</em>, <em>que ce soit… ou</em>, <em>faire</em> et <em>laisser</em> + infinitif, <em>il s'agit de</em>, inversion après <em>peut-être</em>.</li>"+
+    "<li><strong>Professionnels</strong> : prendre la parole, reformuler, marquer un désaccord avec tact ; distinguer un fait, une analyse d'expert et une opinion.</li>"+
+    "<li><strong>Andragogiques</strong> : partir de votre expérience (e-mails, réunions, disponibilité) ; analyser vos propres habitudes ; comparer les rapports au temps en Espagne, en France et chez les Samis.</li>"+
+    "</ul></div>"}
+  ]},
+  {t:"card", h3:"Questions d'ouverture", sub:"« Est-il vrai que tout va toujours plus vite ? »", blocks:[
+   {t:"open", k:"p1", n:"1", starters:["Spontanément, j'aurais tendance à dire que…","J'ai l'impression que…","Ça dépend de quoi on parle :…"],
+    q:"Le titre pose une question. Spontanément, qu'est-ce que vous répondriez, et pourquoi ?",
+    hint:"« J'aurais tendance à dire que… » permet de donner un avis sans être catégorique.",
+    model:"« Spontanément, j'aurais tendance à dire oui (<em>je dirais plutôt oui</em>). Au travail, tout doit être fait pour hier (<em>tout est urgent</em>) : on attend une réponse à un e-mail dans l'heure, les projets s'enchaînent et on n'a jamais le temps de souffler (<em>de faire une pause</em>). Cela dit, je me demande si c'est vraiment le monde qui accélère, ou si c'est nous qui en faisons trop. »"},
+   {t:"open", k:"p2", n:"2", starters:["C'est surtout le… que je cours après le temps.","Typiquement, quand…","J'ai souvent la tête dans le guidon quand…"],
+    q:"Dans votre semaine de travail, à quel moment avez-vous le plus l'impression de <strong>courir après le temps</strong> ?",
+    model:"« C'est surtout le lundi matin et les veilles de comité. Typiquement, j'enchaîne les réunions (<em>j'ai des réunions l'une après l'autre</em>) et entre deux visios, je dois traiter une cinquantaine de mails. J'ai la tête dans le guidon (<em>je suis tellement absorbé par l'urgence que je ne prends plus de recul</em>), et le soir je me rends compte que je n'ai pas avancé sur les sujets de fond. »"},
+   {t:"open", k:"p3", n:"3", starters:["Il ne faut pas tomber dans les clichés, mais…","En Espagne, on a plutôt tendance à…, alors qu'en France…","Ce qui m'a frappé, c'est que…"],
+    q:"En Espagne et en France, a-t-on le même rapport au temps ? Pensez aux horaires, aux repas, à la ponctualité, aux réunions.",
+    hint:"Attention : « je me demande <strong>si</strong> c'est vrai », et non « je me demande que… ».",
+    model:"« Il ne faut pas tomber dans les clichés (<em>les stéréotypes</em>), mais j'ai remarqué quelques différences. En Espagne, on déjeune et on dîne plus tard, et la journée paraît plus étirée. En France, la pause déjeuner reste sacrée (<em>on ne la sacrifie pas</em>), mais les réunions commencent souvent en retard et durent plus longtemps que prévu. Au fond, dans les deux pays, on se plaint de la même chose : de ne jamais avoir assez de temps. »"}
+  ]},
+  {t:"callout", ct:"Note au formateur — transcription automatique", h:"<p>La transcription YouTube contient des erreurs de reconnaissance. Formes correctes : <strong>Hartmut Rosa</strong>, <strong>Heinrich Heine</strong>, <strong>John Maynard Keynes</strong>, <strong>Marianne Gronemeyer</strong>, <strong>Gloria Mark</strong>, <strong>memento mori</strong>, <strong>les tilleuls</strong>, <strong>les motoneiges</strong>, <strong>les baies</strong>, <strong>le Finnmark</strong>. Vers 5:50, la phrase coupée renvoie à la semaine d'<strong>environ 15 heures</strong> prédite par Keynes.</p>"}
+ ]
+},
+{
+ id:"lex", title:"Le lexique essentiel", time:"3 min",
+ lede:"Cliquez sur une carte pour révéler la définition. Les définitions sont en français : à votre niveau, passer par l'espagnol vous ralentit plus qu'il ne vous aide. Ne mémorisez pas — familiarisez-vous.",
+ blocks:[
+  {t:"cards", k:"lx", groups:[
+   {name:"Le temps et la vitesse", items:[
+    ["courir après le temps","avoir toujours l'impression de manquer de temps"],
+    ["un rythme effréné","un rythme très rapide, qu'on ne contrôle plus"],
+    ["à toute allure","très vite, à toute vitesse"],
+    ["en un rien de temps","très rapidement, presque instantanément"],
+    ["tout bascule","tout change brutalement"],
+    ["la hâte","le fait de se dépêcher, la précipitation"]
+   ]},
+   {name:"Le progrès et ses effets", items:[
+    ["bouleverser","transformer profondément"],
+    ["se heurter à une résistance","rencontrer une opposition"],
+    ["finir par l'emporter","gagner à la fin"],
+    ["l'avènement de","l'arrivée, l'apparition de"],
+    ["un surcroît de travail","une quantité de travail supplémentaire"],
+    ["apprivoiser","apprendre à maîtriser quelque chose de nouveau"]
+   ]},
+   {name:"Le travail et l'attention", items:[
+    ["être joignable","pouvoir être contacté"],
+    ["l'expéditeur / le destinataire","celui qui envoie / celui qui reçoit"],
+    ["le temps d'attention","le temps passé concentré sur une même tâche"],
+    ["être dérangé","être interrompu par quelqu'un ou quelque chose"],
+    ["rester à la page","rester informé, à jour"],
+    ["être dépassé","ne plus arriver à suivre"]
+   ]},
+   {name:"Cinq concepts du film", items:[
+    ["l'accélération sociale","l'idée que la société moderne va toujours plus vite (Hartmut Rosa)"],
+    ["la pente glissante","une pente qui se dérobe : on court pour ne pas tomber"],
+    ["l'aliénation","le fait de devenir étranger à sa propre vie"],
+    ["la résonance","une relation vivante avec le monde, qui nous touche et nous transforme"],
+    ["passer à côté de","manquer quelque chose d'important"]
+   ]}
+  ]},
+  {t:"card", h3:"Micro-exercice d'appropriation", sub:"Complétez avec un terme du glossaire, puis vérifiez.", blocks:[
+   {t:"gaps", k:"lxg", fields:[
+    {k:"g1", label:"Depuis la réorganisation, toute l'équipe court après le … .", answers:["temps","le temps"], sol:"temps"},
+    {k:"g2", label:"Avec ses 80 mails par jour, il se sent complètement … .", answers:["depasse","deborde"], sol:"dépassé"},
+    {k:"g3", label:"Pour rester à la …, je lis une newsletter par semaine.", answers:["page","la page"], sol:"page"},
+    {k:"g4", label:"Le nouvel outil a entraîné un … de travail pour le support.", answers:["surcroit","un surcroit"], sol:"surcroît"},
+    {k:"g5", label:"Je serai … sur mon portable jusqu'à 18 heures.", answers:["joignable"], sol:"joignable"}
+   ]}
+  ]}
+ ]
+},
+{
+ id:"glob", title:"1ᵉʳ visionnage — la vue d'ensemble", time:"avant la séance",
+ lede:"Idéalement avant la séance. Lisez d'abord les questions, puis lancez la vidéo en entier. Ne revenez jamais en arrière pendant ce premier passage.",
+ blocks:[
+  {t:"play", sec:0, label:"Lancer la vidéo depuis le début", note:"25 min 16 · sans sous-titres, sans pause"},
+  {t:"card", h3:"A. La thèse du documentaire", blocks:[
+   {t:"open", starters:["Le documentaire soutient que…","En une phrase, le paradoxe central, c'est…","Autrement dit,…"], k:"g1", n:"1", q:"En une phrase, quel est le <strong>paradoxe central</strong> du documentaire ?",
+    model:"« Le documentaire soutient que nous n'avons jamais gagné autant de temps grâce au progrès technique, et que pourtant nous n'en avons jamais autant manqué, parce que nous faisons toujours plus de choses : la croissance va plus vite que l'accélération. »"},
+   {t:"open", starters:["Il ne propose pas de…, mais plutôt de…","Selon Hartmut Rosa, la solution n'est pas…","Au fond, il s'agit de…"], k:"g2", n:"2", q:"Quelle réponse le film propose-t-il ? Ralentir, ou autre chose ?",
+    hint:"Pensez au mot-clé de Hartmut Rosa vers 23:00.",
+    model:"« Il ne propose pas de ralentir à tout prix — Hartmut Rosa dit que ce serait une erreur. Il propose plutôt de retrouver la <strong>résonance</strong> : une relation vivante avec le monde, et un usage plus conscient du numérique. Au fond, il s'agit de se demander ce qu'on va chercher en courant si vite. »"}
+  ]},
+  {t:"card", h3:"B. La structure", sub:"Cliquez sur les parties dans leur ordre d'apparition.", blocks:[
+   {t:"order", k:"g3", prompt:"Remettez les six grandes parties dans l'ordre du documentaire.",
+    items:[
+     {id:"A", label:"Les Samis et leurs huit saisons"},
+     {id:"B", label:"La peste noire et la naissance de la hâte"},
+     {id:"C", label:"Du train à vapeur aux machines à tisser"},
+     {id:"D", label:"La résonance comme réponse"},
+     {id:"E", label:"Le paradoxe du temps gagné et l'erreur de Keynes"},
+     {id:"F", label:"Les e-mails et l'effondrement de l'attention"}
+    ],
+    solution:["C","E","B","A","F","D"]}
+  ]},
+  {t:"card", h3:"C. Les intervenants", sub:"Associez chaque personne à son rôle.", blocks:[
+   {t:"match", k:"g4",
+    options:["sociologue, théoricien de l'accélération","poète qui décrit le chemin de fer","économiste qui prédit la semaine courte","philosophe qui étudie les racines de la hâte","chercheuse qui mesure le temps d'attention","éleveuse de rennes"],
+    rows:[
+     {left:"Hartmut Rosa", answer:"sociologue, théoricien de l'accélération"},
+     {left:"Heinrich Heine", answer:"poète qui décrit le chemin de fer"},
+     {left:"John Maynard Keynes", answer:"économiste qui prédit la semaine courte"},
+     {left:"Marianne Gronemeyer", answer:"philosophe qui étudie les racines de la hâte"},
+     {left:"Gloria Mark", answer:"chercheuse qui mesure le temps d'attention"},
+     {left:"La femme sâme interviewée", answer:"éleveuse de rennes"}
+    ]}
+  ]},
+  {t:"card", h3:"D. Votre ressenti d'écoute", sub:"Cette réponse détermine nos priorités en classe.", blocks:[
+   {t:"open", starters:["Ce qui m'a le plus gêné, c'est…","J'ai décroché au moment où…","En revanche, je n'ai eu aucun mal à suivre…"], k:"g5", n:"", q:"Quels passages ont été les plus difficiles : la voix du commentaire, les interviews d'experts traduites, ou le témoignage de l'éleveuse ?",
+    hint:"Soyez précis. « L'écoute » est trop vague ; « suivre les chiffres quand ils s'enchaînent » est exploitable."}
+  ]}
+ ]
+},
+{
+ id:"da", title:"2ᵉ visionnage — 0:00 → 12:32", time:"12 min",
+ lede:"Segments 1 à 8. Pour chacun : le thème, les objectifs, un repérage rapide, puis trois questions — compréhension, débat, réflexion — et un focus langue. Pauses et sous-titres français autorisés.",
+ blocks: SEGS.slice(0,8).map(segCard)
+},
+{
+ id:"db", title:"2ᵉ visionnage — 12:32 → 25:16", time:"12 min",
+ lede:"Segments 9 à 16. La seconde moitié part au cercle polaire, puis revient au bureau : e-mails, attention, disponibilité permanente. C'est la partie la plus proche de votre quotidien professionnel.",
+ blocks: SEGS.slice(8,16).map(segCard).concat([
+  {t:"callout", ct:"Question de synthèse — la première que je vous poserai en classe", h:"<p>Nous gagnons du temps partout, et pourtant nous en manquons. Comment expliquez-vous ce paradoxe, avec vos mots et un exemple tiré de votre travail ?</p>"},
+  {t:"card", blocks:[{t:"open", starters:["Ce n'est paradoxal qu'en apparence, parce que…","Chaque fois qu'on gagne du temps, on…","Chez nous, par exemple,…"], k:"db15", n:"", q:"Préparez deux ou trois phrases.",
+    model:"« Ce n'est paradoxal qu'en apparence, parce que le temps gagné ne reste jamais libre : chaque fois qu'on gagne du temps, on le remplit avec plus de tâches, plus de déplacements, plus d'informations. Chez nous, par exemple, la visio a supprimé les déplacements… et on a ajouté trois réunions par jour. Au fond, ce n'est pas la vitesse qui nous manque, c'est la capacité à dire non. »"}]}
+ ])
+},
+{
+ id:"ec", title:"Atelier — les phrases clés à l'oral", time:"3 min",
+ lede:"Quatre phrases du documentaire qui contiennent des structures très fréquentes en réunion. Réécoutez-les, puis réemployez-les sur votre propre travail.",
+ blocks:[
+  {t:"callout", ct:"Méthode, pour chaque extrait", h:"<p>Écoutez <strong>3 fois</strong> sans rien lire. Puis lisez la phrase et réécoutez. Enfin, <strong>répétez à voix haute en imitant le rythme et l'intonation</strong> — c'est cette dernière étape qui fait progresser la fluidité.</p>"},
+  {t:"clip", sec:943, title:"Le grand paradoxe", quote:"Plus elles nous facilitent la vie, plus elles nous permettent de compliquer celle des autres.",
+   focus:"<p><strong>La corrélation « plus…, plus… ».</strong> Pas d'article, pas de <em>que</em> : on ne dit pas « <s>le plus</s>… <s>le plus</s> », calque de <em>cuanto más… más</em>. Variantes : <em>plus… moins</em>, <em>moins… plus</em>.</p>",
+   ex:[{k:"e1a", q:"Faites une phrase avec « plus…, plus… » sur les réunions dans votre entreprise.", model:"« <strong>Plus</strong> on invite de monde en réunion, <strong>moins</strong> on prend de décisions. » · « <strong>Plus</strong> on attend pour trancher, <strong>plus</strong> ça coûte cher. »"}]},
+  {t:"clip", sec:893, title:"Le réflexe du matin", quote:"Chaque matin, dès que je me réveille, je vérifie par GPS où se trouvent mes bêtes.",
+   focus:"<p><strong>1. « dès que » + indicatif</strong> : au moment même où. Jamais de subjonctif : <em>dès que je <strong>reçois</strong> le fichier</em>. Au futur : <em>dès que j'<strong>aurai</strong> les chiffres, je vous les envoie</em>.</p><p><strong>2. L'interrogation indirecte avec inversion</strong> : « où <strong>se trouvent</strong> mes bêtes ». Après <em>où, quand, comment</em>, le français aime placer le verbe avant un sujet nominal : <em>je ne sais pas quand arrive le livrable</em>.</p>",
+   ex:[{k:"e2a", q:"Décrivez votre propre réflexe du matin avec « dès que ».", model:"« <strong>Dès que</strong> j'ouvre mon ordinateur, je vérifie les incidents de la nuit, et <strong>dès que</strong> j'ai un moment, je trie mes mails par priorité. »"}]},
+  {t:"clip", sec:1347, title:"Rosa écarte le ralentissement", quote:"Si l'accélération est le problème, alors la réponse devrait être le ralentissement. Mais je pense que c'est une erreur.",
+   focus:"<p><strong>Un schéma d'argumentation très efficace en réunion</strong> : on pose le raisonnement évident (<em>si… alors… devrait…</em>), puis on le réfute (<em>mais je pense que c'est une erreur</em>). Le conditionnel « devrait » présente la conclusion comme logique, mais pas forcément juste.</p>",
+   ex:[{k:"e3a", q:"Reproduisez ce schéma sur un sujet professionnel : un raisonnement évident, puis votre objection.", model:"« <strong>Si</strong> le projet est en retard, <strong>alors</strong> la solution <strong>devrait être</strong> d'ajouter des ressources. <strong>Mais je pense que c'est une erreur</strong> : ajouter des gens en fin de projet, ça ralentit tout le monde, le temps de les former. »"}]},
+  {t:"clip", sec:1487, title:"La question finale", quote:"Peut-être vaudra-t-il la peine de faire une pause pour nous demander : qu'allons-nous chercher là-haut ?",
+   focus:"<p><strong>L'inversion après « peut-être »</strong>, registre soutenu. À l'oral courant : <em>peut-être <strong>qu'</strong>il faudra…</em> ; version simple : <em>il faudra <strong>peut-être</strong>…</em>. Et <strong>valoir la peine de</strong> + infinitif = mériter l'effort.</p>",
+   ex:[{k:"e4a", q:"Formulez la même suggestion à trois niveaux (soutenu, courant, simple) : revoir le calendrier du projet.", model:"« <strong>Peut-être faudrait-il</strong> revoir le calendrier. » · « <strong>Peut-être qu'il faudrait</strong> revoir le calendrier. » · « Il faudrait <strong>peut-être</strong> revoir le calendrier. » En réunion, les deux dernières sont parfaites ; la première fait très bonne impression à l'écrit."}]},
+  {t:"card", h3:"Bilan de l'atelier", blocks:[
+   {t:"open", starters:["La structure que je veux vraiment m'approprier, c'est…","J'ai encore du mal avec…"], k:"e5", n:"", q:"Laquelle de ces quatre structures voulez-vous employer dès votre prochaine réunion ?"}
+  ]}
+ ]
+},
+{
+ id:"dis", title:"Qui dit quoi ?", time:"2 min",
+ lede:"Un documentaire mélange en permanence des énoncés qui n'ont pas la même valeur. Les distinguer à l'oreille est exactement ce qu'on attend de vous en réunion : dire d'où vient chaque information.",
+ blocks:[
+  {t:"card", h3:"Les quatre types", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li><strong>Fait établi</strong> — chiffre précis, date, étude nommée. <em>Vérifiable.</em></li>"+
+     "<li><strong>Témoignage</strong> — « je », expérience vécue. <em>Une version personnelle.</em></li>"+
+     "<li><strong>Analyse d'expert</strong> — un concept, une explication générale (« c'est ce que j'appelle… »). <em>Une interprétation argumentée.</em></li>"+
+     "<li><strong>Hypothèse</strong> — conditionnel (« on croirait », « vaudrait »), « peut-être ». <em>Non affirmé.</em></li>"+
+     "</ul></div>"}
+  ]},
+  {t:"card", h3:"À vous de classer", sub:"Le signal linguistique est votre indice principal — il est mis en évidence.", blocks:[
+   {t:"classify", k:"cl1",
+    cats:["Fait établi","Témoignage","Analyse d'expert","Hypothèse"],
+    items:[
+     {q:"« Vers <b>1900</b>, un foyer moyen comptait environ 400 objets. »", a:"Fait établi"},
+     {q:"« Notre peur fondamentale, c'est de ne plus pouvoir suivre le rythme. <b>C'est ce que j'appelle</b> le syndrome de la pente glissante. »", a:"Analyse d'expert"},
+     {q:"« Quand <b>je</b> suis dehors avec mon troupeau, <b>je</b> me rends compte que tout est calme. »", a:"Témoignage"},
+     {q:"« On <b>croirait</b> presque que notre manque chronique de temps ne tient qu'à nous. »", a:"Hypothèse"},
+     {q:"« En <b>2019</b>, la moyenne est tombée à <b>47 secondes</b>. »", a:"Fait établi"},
+     {q:"« L'accélération est néfaste quand elle mène à l'aliénation. »", a:"Analyse d'expert"},
+     {q:"« Et quelque part, c'est aussi de <b>ma</b> faute. »", a:"Témoignage"},
+     {q:"« <b>Peut-être vaudra-t-il</b> la peine de faire une pause. »", a:"Hypothèse"}
+    ]}
+  ]},
+  {t:"card", h3:"Nuancer sa pensée", sub:"L'outil le plus utile de ce documentaire pour votre usage professionnel : avancer une idée sans l'imposer.", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li>« Le problème <strong>vient</strong> de nous. » → vous affirmez.<br>« On <strong>croirait presque</strong> que le problème vient de nous. » → vous suggérez.</li>"+
+     "<li>« Il <strong>faut</strong> revoir le process. » → « Il <strong>faudrait</strong> peut-être revoir le process. »</li>"+
+     "<li>« Cet outil <strong>fait</strong> gagner du temps. » → « Cet outil <strong>devrait</strong> nous faire gagner du temps. »</li>"+
+     "</ul></div>"},
+   {t:"open", starters:["On croirait presque que…","Il faudrait peut-être…","Ce nouvel outil devrait…, mais…"], k:"dis2", n:"", q:"Formulez deux phrases nuancées sur un sujet de votre environnement professionnel.",
+    model:"« <strong>On croirait presque</strong> que les réunions servent surtout à préparer d'autres réunions. » · « <strong>Il faudrait peut-être</strong> fixer une règle commune sur les mails du soir. » Dans les deux cas, vous avancez une idée critique sans mettre vos interlocuteurs sur la défensive."}
+  ]}
+ ]
+},
+{
+ id:"met", title:"Et dans votre métier ?", time:"2 min",
+ lede:"Préparez ces trois questions en notes — quelques mots-clés, pas des phrases rédigées. En classe, vous parlerez à partir de ces notes sans les lire. C'est exactement le format d'une prise de parole en réunion.",
+ blocks:[
+  {t:"card", h3:"1. Joignable en permanence", sub:"L'éleveuse sâme constate que l'administration sait qu'elle est joignable à tout moment.", tc:[{sec:1258,l:"20:58"}], blocks:[
+   {t:"open", starters:["Dans mon équipe, la règle implicite, c'est…","Personne ne l'exige noir sur blanc, mais…","Ce qui changerait les choses, ce serait…"], k:"m1", n:"", q:"Dans votre entreprise, quelles sont les règles, écrites ou implicites, sur la disponibilité le soir et le week-end ? Que faudrait-il changer ?",
+    hint:"Distinguez ce qui est écrit et ce qui est implicite. « Il faudrait que » appelle le subjonctif."}
+  ]},
+  {t:"card", h3:"2. L'attention en miettes", sub:"47 secondes d'attention en moyenne, et autant d'interruptions internes qu'externes.", tc:[{sec:1060,l:"17:40"}], blocks:[
+   {t:"open", starters:["Si je suis honnête avec moi-même,…","Ce qui m'interrompt le plus, c'est…","Je pourrais tester…"], k:"m2", n:"", q:"Qu'est-ce qui fragmente le plus votre attention au travail ? Quelle règle pourriez-vous proposer à votre équipe ?",
+    hint:"Séparez trois choses : ce qui vous interrompt de l'extérieur, ce qui vient de vous, et la règle que vous proposez."}
+  ]},
+  {t:"card", h3:"3. Le temps gagné par l'IA", sub:"Keynes pensait que le progrès nous ferait travailler 15 heures par semaine.", tc:[{sec:287,l:"4:47"}], blocks:[
+   {t:"open", starters:["Tout dépend de…","La vraie question n'est pas…, c'est…","J'ai bien peur que…"], k:"m3", n:"", q:"L'intelligence artificielle va-t-elle nous libérer du temps, ou refaire l'erreur de Keynes ? Que faudrait-il pour que le temps gagné soit vraiment utile ?",
+    hint:"Une réponse nuancée vaut mieux qu'une position tranchée : nommez les conditions."}
+  ]},
+  {t:"callout", ct:"Production orale — 90 secondes", h:"<p>Enregistrez-vous en répondant à <strong>une seule</strong> de ces trois questions, pendant <strong>90 secondes, sans vous arrêter</strong>, même si vous faites des erreurs. Réécoutez-vous une fois.</p>"},
+  {t:"card", blocks:[
+   {t:"open", starters:["Le mot qui m'a manqué, c'est…","J'ai commencé une phrase par… et je n'ai pas su la finir.","Je me suis repris plusieurs fois sur…"], k:"m4", n:"", q:"Après réécoute : quel <strong>mot vous a manqué</strong>, et quelle <strong>phrase avez-vous commencée sans savoir comment la finir</strong> ?",
+    hint:"Ces deux éléments valent une demi-heure de cours. Notez-les."}
+  ]}
+ ]
+},
+{
+ id:"bil", title:"Bilan de la séance", time:"1 min",
+ lede:"À remplir en fin de séance. C'est ce bilan qui déterminera nos priorités pour la prochaine fois.",
+ blocks:[
+  {t:"card", h3:"Mes trois expressions", sub:"Trois tournures de la séance, chacune dans une phrase sur votre travail.", blocks:[
+   {t:"open", starters:["1. Cette semaine, j'ai eu la tête dans le guidon quand…","2. Pour rester à la page, je…","3. L'idée n'est pas de…, mais de…"], k:"b1", n:"", q:"Mes trois expressions à réemployer cette semaine :",
+    model:"« 1. Cette semaine, j'ai eu la tête dans le guidon à cause de la clôture trimestrielle. 2. Pour rester à la page sur l'IA, je fais le tri et je ne suis que deux sources fiables. 3. L'idée n'est pas de répondre plus vite aux mails, mais d'en envoyer moins. »"}
+  ]},
+  {t:"card", h3:"Mes passages incompris", sub:"Deux moments précis où vous avez décroché. Nous les réécouterons ensemble.", blocks:[
+   {t:"open", starters:["Vers …:…, j'ai cru comprendre que…","J'ai complètement décroché à partir de…"], k:"b2", n:"", q:"Indiquez le minutage et ce que vous avez cru comprendre."}
+  ]},
+  {t:"card", h3:"Mon auto-évaluation", blocks:[
+   {t:"scale", k:"b3", cols:["Difficile","Correct","À l'aise"], rows:[
+    "Résumer une idée du documentaire avec mes mots",
+    "Donner mon avis et le nuancer",
+    "Comparer des chiffres à l'oral",
+    "Utiliser « plus… plus » et « ne… que »",
+    "Distinguer un fait d'une analyse ou d'une hypothèse",
+    "Réemployer des expressions idiomatiques"
+   ]}
+  ]},
+  {t:"card", h3:"Ce que je veux travailler en priorité", sub:"Une seule chose, et soyez précis.", blocks:[
+   {t:"open", starters:["Ce que je veux travailler en priorité, c'est…","Concrètement, j'aimerais arriver à…"], k:"b4", n:"", q:"« L'oral » est trop vague. « Enchaîner deux arguments sans chercher mes mots » est exploitable."}
+  ]},
+  {t:"callout", ct:"Après la séance", h:"<p>L'objectif n'était pas de restituer le documentaire, mais de <strong>prendre position, objecter et nuancer</strong>. Réemployez vos trois expressions dès votre prochaine réunion.</p><p class='small muted'>Cliquez sur « Exporter mes réponses » en haut de la page pour garder une trace de votre travail.</p>"},
+  {t:"export"}
+ ]
+}
+];
+/* ---------------- activity registry ---------------- */
+var ACTS = [];
+function reg(k){ if(ACTS.indexOf(k)<0) ACTS.push(k); }
+(function scan(){
+  function walk(bs){
+    bs.forEach(function(b){
+      if(b.t==="open") reg(b.k);
+      else if(b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale") reg(b.k);
+      else if(b.t==="gaps") reg(b.k);
+      else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ reg(x.k); }); }
+      else if(b.t==="card"&&b.blocks) walk(b.blocks);
+    });
+  }
+  STEPS.forEach(function(s){ walk(s.blocks); });
+})();
+
+function isDone(k){
+  var v = state.a[k];
+  if(v==null) return false;
+  if(typeof v === "string") return v.trim().length>2;
+  if(typeof v === "object") return Object.keys(v).length>0;
+  return false;
+}
+function stepDone(s){
+  var ks = stepKeys(s);
+  if(!ks.length) return false;
+  var n=0; ks.forEach(function(k){ if(isDone(k)) n++; });
+  return n >= Math.ceil(ks.length*0.7);
+}
+function stepKeys(s){
+  var out=[];
+  function walk(bs){ bs.forEach(function(b){
+    if(b.t==="open"||b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale"||b.t==="gaps"){ if(b.k) out.push(b.k); }
+    else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ out.push(x.k); }); }
+    else if(b.t==="card"&&b.blocks) walk(b.blocks);
+  });}
+  walk(s.blocks); return out;
+}
+
+/* ---------------- renderers ---------------- */
+function mkReveal(labelText, contentHTML){
+  var wrap = el("div");
+  var btn = el("button","btn btn-ghost small", labelText||"Voir une réponse possible");
+  var box = html("div","reveal","<div class='rt'>Réponse possible — un modèle, pas une correction</div>"+contentHTML);
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? (labelText||"Voir une réponse possible") : "Masquer";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+
+function rOpen(b){
+  var n = el("div","q");
+  var lbl = el("div","q-lbl");
+  if(b.n) lbl.appendChild(el("span","q-n", b.n+"."));
+  lbl.appendChild(html("div","q-t", b.q));
+  n.appendChild(lbl);
+  if(b.hint) n.appendChild(html("div","q-hint", b.hint));
+  var ta = el("textarea");
+  ta.id = "f_"+b.k;
+  ta.placeholder = "Votre réponse…";
+  ta.value = state.a[b.k] || "";
+  var flag = el("span","saved","enregistré");
+  function touched(){
+    state.a[b.k] = ta.value; saveSoon(); flag.classList.add("on");
+    clearTimeout(ta._t); ta._t = setTimeout(function(){ flag.classList.remove("on"); },1200);
+    updateProgress();
+  }
+  ta.addEventListener("input", touched);
+  if(b.starters && b.starters.length){
+    var sw = el("div","starters");
+    sw.appendChild(el("span","starters-lbl","Amorces — cliquez pour insérer"));
+    b.starters.forEach(function(st){
+      var bt = el("button","starter", st); bt.type = "button";
+      bt.setAttribute("aria-label", "Insérer l'amorce : "+st);
+      bt.addEventListener("click", function(){
+        var cur = ta.value;
+        ta.value = (cur && !/\s$/.test(cur) ? cur+" " : cur) + st + " ";
+        ta.focus();
+        try{ ta.setSelectionRange(ta.value.length, ta.value.length); }catch(e){}
+        touched();
+      });
+      sw.appendChild(bt);
+    });
+    n.appendChild(sw);
+  }
+  n.appendChild(ta);
+  var foot = el("div","row");
+  foot.appendChild(flag);
+  n.appendChild(foot);
+  if(b.model) n.appendChild(mkReveal(null, "<div>"+b.model+"</div>"));
+  return n;
+}
+
+function rTf(b){
+  var wrap = el("div","tf-list");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","tf-item");
+    var top = el("div","tf-top");
+    top.appendChild(html("div","tf-txt","<strong style='font-family:var(--mono);font-size:12px;color:var(--muted)'>"+(i+1)+"</strong> &nbsp;"+it.q));
+    var btns = el("div","tf-btns");
+    var verdict = html("div","verdict","");
+    verdict.hidden = true;
+    function apply(val){
+      store[i] = val; saveSoon();
+      bV.setAttribute("aria-pressed", val==="V"?"true":"false");
+      bF.setAttribute("aria-pressed", val==="F"?"true":"false");
+      var right = (val==="V") === it.a;
+      box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+      verdict.hidden = false;
+      verdict.innerHTML = "<span class='vi'>"+(right?"✓ Exact":"✗ Non")+"</span><span>"+it.j+"</span>";
+      updateProgress();
+    }
+    var bV = el("button","pick","Vrai"); bV.type="button"; bV.setAttribute("aria-pressed","false");
+    var bF = el("button","pick","Faux"); bF.type="button"; bF.setAttribute("aria-pressed","false");
+    bV.addEventListener("click", function(){ apply("V"); });
+    bF.addEventListener("click", function(){ apply("F"); });
+    btns.appendChild(bV); btns.appendChild(bF);
+    top.appendChild(btns);
+    box.appendChild(top); box.appendChild(verdict);
+    wrap.appendChild(box);
+    if(store[i]) apply(store[i]);
+  });
+  return wrap;
+}
+
+function rGaps(b){
+  var wrap = el("div","gaps");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var inputs = [];
+  b.fields.forEach(function(f){
+    var row = el("div","gap-row");
+    row.appendChild(html("div","gap-lbl", f.label));
+    var box = el("div","gap-in");
+    var inp = document.createElement("input");
+    inp.type="text"; inp.id = "f_"+b.k+"_"+f.k;
+    inp.value = store[f.k] || "";
+    inp.setAttribute("aria-label", f.label.replace(/<[^>]+>/g,""));
+    inp.addEventListener("input", function(){
+      store[f.k] = inp.value; inp.classList.remove("ok","no"); sol.textContent=""; saveSoon(); updateProgress();
+    });
+    box.appendChild(inp);
+    if(f.suf) box.appendChild(el("span","gap-suf", f.suf));
+    var sol = el("span","gap-sol","");
+    box.appendChild(sol);
+    row.appendChild(box);
+    wrap.appendChild(row);
+    inputs.push({inp:inp, f:f, sol:sol});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    inputs.forEach(function(o){
+      var right = matches(o.inp.value, o.f.answers);
+      o.inp.classList.toggle("ok", right); o.inp.classList.toggle("no", !right);
+      o.sol.textContent = right ? "✓" : ("→ "+o.f.sol);
+      o.sol.style.color = right ? "var(--ok)" : "var(--no)";
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rOrder(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="11px";
+  if(b.prompt) wrap.appendChild(html("div","q-t", b.prompt));
+  var slot = el("div","ord-slot");
+  var pool = el("div","ord-pool");
+  var chosen = (state.a[b.k] && state.a[b.k].seq) ? state.a[b.k].seq.slice() : [];
+  function render(){
+    slot.innerHTML=""; pool.innerHTML="";
+    if(!chosen.length){ slot.appendChild(el("span","ph","Cliquez les éléments dans l'ordre…")); }
+    chosen.forEach(function(id, i){
+      var it = b.items.filter(function(x){return x.id===id;})[0];
+      var s = el("div","seq");
+      s.appendChild(el("span","sn",(i+1)+"."));
+      s.appendChild(el("span",null,it.label));
+      slot.appendChild(s);
+    });
+    b.items.forEach(function(it){
+      var c = el("button","chip"); c.type="button";
+      c.innerHTML = "<span class='ck'>"+it.id+"</span>"+it.label;
+      if(chosen.indexOf(it.id)>=0) c.disabled = true;
+      c.addEventListener("click", function(){
+        chosen.push(it.id);
+        state.a[b.k] = {seq:chosen.slice()}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent="";
+        render(); updateProgress();
+      });
+      pool.appendChild(c);
+    });
+  }
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  var undo = el("button","btn btn-ghost","Recommencer");
+  var msg = el("span","small");
+  check.addEventListener("click", function(){
+    if(chosen.length !== b.solution.length){ msg.textContent="Placez d'abord tous les éléments."; msg.style.color="var(--muted)"; return; }
+    var right = chosen.join("") === b.solution.join("");
+    slot.classList.toggle("ok", right); slot.classList.toggle("no", !right);
+    msg.textContent = right ? "✓ C'est l'ordre du reportage." : ("✗ L'ordre est : "+b.solution.join(" → "));
+    msg.style.color = right ? "var(--ok)" : "var(--no)";
+  });
+  undo.addEventListener("click", function(){
+    chosen = []; state.a[b.k]={seq:[]}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent=""; render(); updateProgress();
+  });
+  bar.appendChild(check); bar.appendChild(undo); bar.appendChild(msg);
+  wrap.appendChild(slot); wrap.appendChild(pool); wrap.appendChild(bar);
+  render();
+  return wrap;
+}
+
+function rMatch(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var sels = [];
+  b.rows.forEach(function(r, i){
+    var row = el("div","mt-row");
+    row.appendChild(html("div","mt-left", r.left));
+    var s = document.createElement("select");
+    s.id = "f_"+b.k+"_"+i;
+    s.setAttribute("aria-label", r.left);
+    var o0 = document.createElement("option"); o0.value=""; o0.textContent="— choisir —"; s.appendChild(o0);
+    b.options.forEach(function(op){
+      var o = document.createElement("option"); o.value=op; o.textContent=op; s.appendChild(o);
+    });
+    s.value = store[i] || "";
+    s.addEventListener("change", function(){ store[i]=s.value; s.classList.remove("ok","no"); saveSoon(); updateProgress(); });
+    row.appendChild(s);
+    wrap.appendChild(row);
+    sels.push({s:s, r:r});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    sels.forEach(function(o){
+      var right = o.s.value === o.r.answer;
+      o.s.classList.toggle("ok", right); o.s.classList.toggle("no", !right);
+      if(!right && o.s.value) o.s.title = "Réponse attendue : "+o.r.answer;
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rClassify(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","cl-item");
+    box.appendChild(html("div","cl-q", it.q));
+    var opts = el("div","cl-opts");
+    var btns = [];
+    function paint(){
+      var v = store[i];
+      btns.forEach(function(x){ x.b.setAttribute("aria-pressed", x.c===v ? "true":"false"); });
+      if(v){
+        var right = v === it.a;
+        box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+        fb.hidden = false;
+        fb.innerHTML = right ? "<span class='vi'>✓ Exact</span>" : "<span class='vi'>✗ Non</span><span>Il s'agit d'un énoncé de type « "+it.a+" ».</span>";
+      }
+    }
+    b.cats.forEach(function(c){
+      var bt = el("button","pick", c); bt.type="button"; bt.setAttribute("aria-pressed","false");
+      bt.style.minWidth="auto";
+      bt.addEventListener("click", function(){ store[i]=c; saveSoon(); paint(); updateProgress(); });
+      opts.appendChild(bt); btns.push({b:bt,c:c});
+    });
+    var fb = html("div","verdict",""); fb.hidden = true;
+    box.appendChild(opts); box.appendChild(fb);
+    wrap.appendChild(box);
+    paint();
+  });
+  return wrap;
+}
+
+function rCards(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="22px";
+  b.groups.forEach(function(g, gi){
+    var grp = el("div","grp");
+    grp.appendChild(el("div","grp-h", g.name));
+    var grid = el("div","cgrid");
+    g.items.forEach(function(pair, ii){
+      var id = gi+"-"+ii;
+      var c = el("button","fc"); c.type="button";
+      var term = el("div","term", pair[0]);
+      var tap = el("div","tap","cliquer pour la définition");
+      var def = el("div","def", pair[1]); def.hidden = true;
+      var mark = el("span","fc-mark","?");
+      c.appendChild(mark); c.appendChild(term); c.appendChild(tap); c.appendChild(def);
+      function paint(){
+        var known = !!state.known[id];
+        c.classList.toggle("known", known);
+        mark.textContent = known ? "su" : "?";
+      }
+      c.addEventListener("click", function(){
+        if(def.hidden){ def.hidden=false; tap.hidden=true; }
+        else { state.known[id] = !state.known[id]; saveSoon(); paint(); }
+      });
+      paint();
+      grid.appendChild(c);
+    });
+    grp.appendChild(grid);
+    wrap.appendChild(grp);
+  });
+  wrap.appendChild(html("div","small muted","<em>Premier clic : la définition. Second clic : marquer la carte comme sue.</em>"));
+  return wrap;
+}
+
+function rClip(b){
+  var box = el("div","clip");
+  var head = el("div","clip-h");
+  head.appendChild(el("h3", null, b.title));
+  head.appendChild(tcLink(b.sec, "vers "+mmss(b.sec)));
+  box.appendChild(head);
+  var bq = el("blockquote"); bq.textContent = "« "+b.quote+" »";
+  box.appendChild(bq);
+  box.appendChild(html("div","prose", b.focus));
+  (b.ex||[]).forEach(function(x){
+    box.appendChild(el("hr","hr"));
+    box.appendChild(rOpen({t:"open", k:x.k, q:x.q, model:x.model}));
+  });
+  return box;
+}
+
+function rScale(b){
+  var wrap = el("div","sc-wrap");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var tbl = el("table","sc-tbl");
+  var thead = el("thead"); var trh = el("tr");
+  trh.appendChild(el("th",null,"Je suis capable de…"));
+  b.cols.forEach(function(c){ trh.appendChild(el("th",null,c)); });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  var tb = el("tbody");
+  b.rows.forEach(function(r, i){
+    var tr = el("tr");
+    tr.appendChild(el("td",null,r));
+    var btns=[];
+    b.cols.forEach(function(c, ci){
+      var td = el("td");
+      var bt = el("button","rad"); bt.type="button";
+      bt.setAttribute("aria-label", r+" : "+c);
+      bt.setAttribute("aria-pressed", store[i]===ci ? "true":"false");
+      bt.addEventListener("click", function(){
+        store[i]=ci; saveSoon();
+        btns.forEach(function(o,oi){ o.setAttribute("aria-pressed", oi===ci ? "true":"false"); });
+        updateProgress();
+      });
+      btns.push(bt); td.appendChild(bt); tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb); wrap.appendChild(tbl);
+  return wrap;
+}
+
+function rPlay(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct","Visionnage"));
+  var row = el("div","row");
+  var a = tcLink(b.sec, b.label);
+  a.style.fontSize="13.5px"; a.style.padding="7px 13px";
+  row.appendChild(a);
+  row.appendChild(el("span","small muted", b.note||""));
+  box.appendChild(row);
+  return box;
+}
+
+function rExport(){
+  var box = el("div","card");
+  box.appendChild(html("h3",null,"Envoyer mes réponses au formateur"));
+  box.appendChild(html("p","sub","Vos réponses sont enregistrées dans ce navigateur. Le bouton ci-dessous rassemble tout dans un texte que vous pouvez copier et m'envoyer par e-mail ou message."));
+  var b = el("button","btn btn-primary","Préparer mon récapitulatif");
+  b.addEventListener("click", openExport);
+  var row = el("div","row"); row.appendChild(b);
+  box.appendChild(row);
+  return box;
+}
+
+function rNote(b){ return html("div","prose", b.h); }
+function rCallout(b){
+  var box = el("div","callout");
+  if(b.ct) box.appendChild(el("div","ct", b.ct));
+  box.appendChild(html("div","prose", b.h));
+  return box;
+}
+
+function renderBlock(b){
+  switch(b.t){
+    case "note": return rNote(b);
+    case "callout": return rCallout(b);
+    case "open": return rOpen(b);
+    case "tf": return rTf(b);
+    case "gaps": return rGaps(b);
+    case "order": return rOrder(b);
+    case "match": return rMatch(b);
+    case "classify": return rClassify(b);
+    case "cards": return rCards(b);
+    case "clip": return rClip(b);
+    case "scale": return rScale(b);
+    case "play": return rPlay(b);
+    case "export": return rExport();
+    case "card": {
+      var c = el("div","card");
+      if(b.h3){
+        var hr = el("div","row");
+        hr.style.justifyContent="space-between";
+        hr.appendChild(el("h3",null,b.h3));
+        if(b.tc){ var g=el("div","row"); b.tc.forEach(function(t){ g.appendChild(tcLink(t.sec,t.l)); }); hr.appendChild(g); }
+        c.appendChild(hr);
+      } else if(b.tc){
+        var g2=el("div","row"); b.tc.forEach(function(t){ g2.appendChild(tcLink(t.sec,t.l)); }); c.appendChild(g2);
+      }
+      if(b.sub) c.appendChild(el("p","sub", b.sub));
+      (b.blocks||[]).forEach(function(x){ c.appendChild(renderBlock(x)); });
+      return c;
+    }
+  }
+  return el("div");
+}
+
+/* ---------------- shell render ---------------- */
+var main = document.getElementById("main");
+var rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  STEPS.forEach(function(s, i){
+    var li = el("li","rail-item");
+    var b = el("button","rl"); b.type="button";
+    b.setAttribute("aria-current", i===state.step ? "true":"false");
+    if(stepDone(s)) b.classList.add("is-done");
+    b.appendChild(el("span","rl-num", String(i+1).padStart(2,"0")));
+    b.appendChild(el("span","rl-title", s.title));
+    b.addEventListener("click", function(){ go(i); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+}
+
+function renderStep(){
+  var s = STEPS[state.step];
+  main.innerHTML="";
+  var sec = el("section","step");
+  var head = el("div","step-head");
+  var eye = el("div","eyebrow");
+  eye.appendChild(el("span",null,"Étape "+String(state.step+1).padStart(2,"0")+" / "+String(STEPS.length).padStart(2,"0")));
+  eye.appendChild(el("span","dot"));
+  eye.appendChild(el("span",null,s.time));
+  head.appendChild(eye);
+  head.appendChild(el("h2",null,s.title));
+  if(s.lede) head.appendChild(el("p","lede", s.lede));
+  sec.appendChild(head);
+  s.blocks.forEach(function(b){ sec.appendChild(renderBlock(b)); });
+
+  var nav = el("div","stepnav");
+  var prev = el("button","btn","← "+(state.step>0 ? STEPS[state.step-1].title : "Début"));
+  prev.disabled = state.step===0;
+  if(prev.disabled){ prev.style.opacity=".4"; prev.style.cursor="default"; }
+  prev.addEventListener("click", function(){ if(state.step>0) go(state.step-1); });
+  var next = el("button","btn btn-primary", (state.step<STEPS.length-1 ? STEPS[state.step+1].title : "Terminé")+" →");
+  next.disabled = state.step===STEPS.length-1;
+  if(next.disabled){ next.style.opacity=".4"; next.style.cursor="default"; }
+  next.addEventListener("click", function(){ if(state.step<STEPS.length-1) go(state.step+1); });
+  nav.appendChild(prev); nav.appendChild(next);
+  sec.appendChild(nav);
+  main.appendChild(sec);
+}
+
+function go(i){
+  state.step = i; save();
+  renderStep(); renderRail();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+var progFill = document.getElementById("progFill");
+var progNum = document.getElementById("progNum");
+function updateProgress(){
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  var pct = ACTS.length ? Math.round(n/ACTS.length*100) : 0;
+  progFill.style.width = pct+"%";
+  progNum.textContent = n+" / "+ACTS.length;
+  renderRail();
+}
+
+/* ---------------- export ---------------- */
+function textOf(k){
+  var v = state.a[k];
+  if(v==null) return "";
+  if(typeof v==="string") return v.trim();
+  return "";
+}
+function buildExport(){
+  var L=[];
+  L.push("ATELIER ACCÉLÉRATION — conversation orale B2 (45 min)");
+  L.push("Documentaire ARTE « Est-il vrai que tout va toujours plus vite ? »");
+  L.push("Exporté le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}));
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  L.push("Avancement : "+n+" activités sur "+ACTS.length);
+  L.push("");
+  STEPS.forEach(function(s, si){
+    var lines=[];
+    function walk(bs){
+      bs.forEach(function(b){
+        if(b.t==="open"){
+          var t = textOf(b.k);
+          if(t) lines.push("• "+b.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+        } else if(b.t==="clip"){
+          (b.ex||[]).forEach(function(x){
+            var t = textOf(x.k);
+            if(t) lines.push("• "+x.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+          });
+        } else if(b.t==="scale"){
+          var st = state.a[b.k]||{};
+          b.rows.forEach(function(r,i){
+            if(st[i]!=null) lines.push("• "+r+" : "+b.cols[st[i]]);
+          });
+        } else if(b.t==="card" && b.blocks){ walk(b.blocks); }
+      });
+    }
+    walk(s.blocks);
+    if(lines.length){
+      L.push("──────────────────────────────");
+      L.push(String(si+1).padStart(2,"0")+". "+s.title.toUpperCase());
+      L.push("");
+      L.push(lines.join("\n\n"));
+      L.push("");
+    }
+  });
+  if(L.length<=5) L.push("(Aucune réponse rédigée pour l'instant.)");
+  return L.join("\n");
+}
+function openExport(){
+  var mask = el("div","mask");
+  var m = el("div","modal");
+  m.setAttribute("role","dialog"); m.setAttribute("aria-modal","true"); m.setAttribute("aria-label","Récapitulatif de mes réponses");
+  m.appendChild(html("h3",null,"Mon récapitulatif"));
+  m.appendChild(html("p","sub","Copiez ce texte et envoyez-le à votre formateur avant le cours."));
+  var ta = el("textarea"); ta.id="exportArea"; ta.value = buildExport(); ta.readOnly = true;
+  m.appendChild(ta);
+  var row = el("div","row");
+  var copy = el("button","btn btn-primary","Copier le texte");
+  var status = el("span","small muted","");
+  copy.addEventListener("click", function(){
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    var done=false;
+    try{ done = document.execCommand("copy"); }catch(e){}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ta.value).then(function(){ status.textContent="Copié ✓"; status.style.color="var(--ok)"; },
+        function(){ if(!done) status.textContent="Sélectionnez le texte puis Ctrl/Cmd + C."; });
+    } else {
+      status.textContent = done ? "Copié ✓" : "Sélectionnez le texte puis Ctrl/Cmd + C.";
+      status.style.color = done ? "var(--ok)" : "var(--muted)";
+    }
+  });
+  var close = el("button","btn","Fermer");
+  function shut(){ mask.remove(); document.removeEventListener("keydown", esc); }
+  function esc(e){ if(e.key==="Escape") shut(); }
+  close.addEventListener("click", shut);
+  mask.addEventListener("click", function(e){ if(e.target===mask) shut(); });
+  document.addEventListener("keydown", esc);
+  row.appendChild(copy); row.appendChild(close); row.appendChild(status);
+  m.appendChild(row);
+  mask.appendChild(m);
+  document.body.appendChild(mask);
+  copy.focus();
+}
+
+/* ---------------- theme ---------------- */
+document.getElementById("themeBtn").addEventListener("click", function(){
+  var r = document.documentElement;
+  var cur = r.getAttribute("data-theme");
+  var sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var nowDark = cur ? cur==="dark" : sysDark;
+  r.setAttribute("data-theme", nowDark ? "light" : "dark");
+  try{ localStorage.setItem(KEY+"-theme", nowDark ? "light":"dark"); }catch(e){}
+});
+(function(){ var t=null; try{ t=localStorage.getItem(KEY+"-theme"); }catch(e){} document.documentElement.setAttribute("data-theme", t==="light" ? "light" : "dark"); })();
+
+document.getElementById("exportBtn").addEventListener("click", openExport);
+document.getElementById("resetBtn").addEventListener("click", function(){
+  if(!window.confirm("Effacer toutes vos réponses ? Cette action est définitive.")) return;
+  state = {step:0, a:{}, done:{}, known:{}};
+  save(); renderStep(); renderRail(); updateProgress();
+});
+
+/* ---------------- boot ---------------- */
+if(!STORAGE_OK){
+  var warn = html("div","storewarn",
+    "<strong>Ce navigateur n'enregistre pas vos réponses sur cette page.</strong> "+
+    "Vous pouvez travailler normalement, mais <strong>avant de fermer l'onglet</strong>, "+
+    "cliquez sur « Exporter mes réponses » en haut de la page et conservez le texte.");
+  document.body.insertBefore(warn, document.querySelector(".shell"));
+}
+load();
+if(state.step<0 || state.step>=STEPS.length) state.step=0;
+renderStep();
+renderRail();
+updateProgress();
+})();
+</script>
+</body>
+</html>
