@@ -1,0 +1,1443 @@
+<!doctype html><html lang="fr"><head><meta charset=utf8><meta name="robots" content="noindex, nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Atelier Plug &amp; Charge B2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#5B6B7A; --line:#D5DDE4; --line-strong:#B9C5CF;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --focus:#1F5FA8;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --focus:#82B6EB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --focus:#82B6EB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+button{font:inherit; color:inherit; cursor:pointer}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0}
+.brand b{font-family:var(--serif); font-size:17px; font-weight:700; white-space:nowrap}
+.brand span{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.prog{display:flex; align-items:center; gap:9px}
+.prog-track{width:120px; height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.prog-fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+.prog-num{font-family:var(--mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums}
+.btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:7px 13px; border-radius:7px; font-size:13.5px; font-weight:500;
+  transition:background .15s, border-color .15s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--muted)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .btn-primary, :root:not([data-theme="light"]) .btn-primary{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:0 20px; padding-block:26px 64px;
+  display:grid; grid-template-columns:238px minmax(0,1fr); gap:38px; align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:minmax(0,1fr); gap:20px} }
+
+/* ---------- stepper ---------- */
+.rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 74px)}
+@media (max-width:900px){
+  .rail{position:static}
+  .rail-list{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin}
+  .rail-item{flex:0 0 auto; width:auto!important}
+  .rail-item .rl-title{white-space:nowrap}
+  .rail-head{margin-bottom:9px}
+}
+.rail-head{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:12px; padding-left:2px}
+.rail-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+@media (max-width:900px){ .rail-list{flex-direction:row} }
+.rail-item{width:100%}
+.rl{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:9px;
+  padding:8px 11px; color:var(--muted); font-size:13.5px; line-height:1.35;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.rl:hover{border-color:var(--line-strong); background:var(--surface-2); color:var(--ink)}
+.rl[aria-current="true"]{
+  background:var(--accent); border-color:var(--accent); color:#fff;
+  font-weight:500; box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .rl[aria-current="true"],
+:root:not([data-theme="light"]) .rl[aria-current="true"]{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .rl[aria-current="true"]{color:#fff}}
+.rl-num{
+  font-family:var(--mono); font-size:11px; flex:0 0 auto;
+  width:23px; height:23px; display:grid; place-items:center; border-radius:6px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--muted);
+}
+.rl.is-done .rl-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.rl[aria-current="true"] .rl-num,
+.rl[aria-current="true"].is-done .rl-num{
+  background:rgba(255,255,255,.24); border-color:transparent; color:inherit;
+}
+.rl-title{min-width:0}
+.rail-foot{margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+@media (max-width:900px){ .rail-foot{display:none} }
+
+/* ---------- main ---------- */
+main{min-width:0}
+.step{display:flex; flex-direction:column; gap:20px}
+.step-head{border-bottom:1px solid var(--line); padding-bottom:16px;
+  display:flex; flex-direction:column; gap:7px}
+.eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.eyebrow .dot{width:3px;height:3px;border-radius:50%;background:var(--line-strong)}
+.step-head h2{font-size:clamp(22px,4.3vw,29px); line-height:1.2}
+.step-head .lede{color:var(--muted); max-width:62ch}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:18px 19px;
+  display:flex; flex-direction:column; gap:13px}
+.card h3{font-size:17px; line-height:1.3}
+.card > .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:11px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.prose strong{font-weight:600}
+.prose em{color:var(--muted)}
+
+.callout{border-left:3px solid var(--accent); background:var(--surface-2); border-radius:0 9px 9px 0;
+  padding:14px 17px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.callout .ct{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink)}
+
+/* timecode */
+.tc{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:6px;
+  padding:3px 8px; color:var(--ink); text-decoration:none; white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.tc:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tc::before{content:"▶"; font-size:8px; color:var(--accent-ink)}
+
+/* questions */
+.q{display:flex; flex-direction:column; gap:10px; padding-block:4px}
+.q + .q{border-top:1px dashed var(--line); padding-top:16px}
+.q-lbl{display:flex; gap:10px; align-items:baseline}
+.q-n{font-family:var(--mono); font-size:12px; color:var(--accent-ink); flex:0 0 auto; font-weight:500}
+.q-t{font-weight:500; max-width:64ch}
+.q-hint{font-size:13.5px; color:var(--muted); max-width:64ch}
+textarea{
+  width:100%; min-height:82px; resize:vertical; font:inherit; font-size:14.5px;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line);
+  border-radius:8px; padding:10px 12px; line-height:1.55;
+}
+textarea::placeholder{color:var(--muted); opacity:.75}
+textarea:focus{border-color:var(--focus); background:var(--surface)}
+.row{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.reveal{background:var(--surface-2); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:13px 15px; font-size:14.5px; max-width:66ch;
+  display:flex; flex-direction:column; gap:8px}
+.reveal .rt{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.saved{font-family:var(--mono); font-size:11px; color:var(--ok); opacity:0; transition:opacity .3s}
+.saved.on{opacity:1}
+
+/* amorces cliquables */
+.starters{display:flex; flex-wrap:wrap; gap:6px; align-items:center; max-width:68ch}
+.starters-lbl{flex:0 0 100%; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted)}
+.starter{
+  border:1px solid var(--line-strong); background:var(--surface-2); border-radius:20px;
+  padding:5px 13px; font-family:var(--serif); font-style:italic; font-size:13.5px;
+  color:var(--muted); text-align:left; line-height:1.45; max-width:100%;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.starter:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
+
+/* true/false */
+.tf-list{display:flex; flex-direction:column; gap:10px}
+.tf-item{border:1px solid var(--line); border-radius:9px; padding:12px 14px; background:var(--surface-2);
+  display:flex; flex-direction:column; gap:10px}
+.tf-top{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+.tf-txt{flex:1 1 300px; min-width:0; font-size:14.5px}
+.tf-btns{display:flex; gap:6px; flex:0 0 auto}
+.pick{border:1px solid var(--line-strong); background:var(--surface); border-radius:7px;
+  padding:5px 12px; font-size:13px; font-weight:500; min-width:62px}
+.pick[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.tf-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.tf-item.no{border-color:var(--no); background:var(--no-soft)}
+.verdict{font-size:14px; display:flex; gap:8px; align-items:flex-start}
+.verdict .vi{font-family:var(--mono); font-weight:500; flex:0 0 auto}
+.ok .verdict .vi{color:var(--ok)} .no .verdict .vi{color:var(--no)}
+
+/* gaps */
+.gaps{display:flex; flex-direction:column; gap:9px}
+.gap-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  border-bottom:1px dotted var(--line); padding-bottom:9px}
+.gap-row:last-of-type{border-bottom:0; padding-bottom:0}
+.gap-lbl{flex:1 1 240px; min-width:0; font-size:14.5px}
+.gap-in{display:flex; align-items:center; gap:7px; flex:0 0 auto}
+input[type="text"]{
+  font:inherit; font-size:14.5px; font-family:var(--mono); width:118px; text-align:center;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line-strong);
+  border-radius:7px; padding:6px 9px;
+}
+input[type="text"]:focus{border-color:var(--focus); background:var(--surface)}
+input.ok{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+input.no{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.gap-suf{font-size:13.5px; color:var(--muted); font-family:var(--mono)}
+.gap-sol{font-size:13px; color:var(--ok); font-family:var(--mono)}
+
+select{
+  font:inherit; font-size:14px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:7px; padding:6px 9px; max-width:100%;
+}
+select:focus{border-color:var(--focus)}
+select.ok{border-color:var(--ok); background:var(--ok-soft)}
+select.no{border-color:var(--no); background:var(--no-soft)}
+
+/* order */
+.ord-pool{display:flex; gap:8px; flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong); background:var(--surface-2); border-radius:8px;
+  padding:8px 12px; font-size:14px; text-align:left; max-width:100%}
+.chip:hover{border-color:var(--accent)}
+.chip:disabled{opacity:.34; cursor:default}
+.chip .ck{font-family:var(--mono); color:var(--accent-ink); margin-right:7px; font-size:12px}
+.ord-slot{display:flex; gap:8px; flex-wrap:wrap; align-items:center; min-height:40px;
+  border:1px dashed var(--line-strong); border-radius:9px; padding:8px; background:var(--surface-2)}
+.ord-slot .ph{color:var(--muted); font-size:13.5px; padding:4px}
+.seq{display:inline-flex; align-items:center; gap:7px; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:5px 10px; font-size:13.5px}
+.seq .sn{font-family:var(--mono); font-size:11px; color:var(--muted)}
+.ord-slot.ok{border-color:var(--ok); border-style:solid; background:var(--ok-soft)}
+.ord-slot.no{border-color:var(--no); border-style:solid; background:var(--no-soft)}
+
+/* match / classify */
+.mt-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-bottom:10px;
+  border-bottom:1px dotted var(--line)}
+.mt-row:last-of-type{border-bottom:0; padding-bottom:0}
+.mt-left{flex:1 1 230px; font-size:14.5px; min-width:0}
+.cl-item{border:1px solid var(--line); border-radius:9px; background:var(--surface-2);
+  padding:12px 14px; display:flex; flex-direction:column; gap:9px}
+.cl-q{font-size:14.5px}
+.cl-q b{font-weight:600; color:var(--accent-ink)}
+.cl-opts{display:flex; gap:6px; flex-wrap:wrap}
+.cl-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.cl-item.no{border-color:var(--no); background:var(--no-soft)}
+
+/* cards */
+.grp{display:flex; flex-direction:column; gap:10px}
+.grp-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(212px,1fr)); gap:9px}
+.fc{position:relative; border:1px solid var(--line); background:var(--surface-2); border-radius:9px;
+  padding:12px 13px; min-height:78px; text-align:left; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, background .15s}
+.fc:hover{border-color:var(--accent)}
+.fc .term{font-weight:600; font-size:14.5px}
+.fc .def{font-size:13.5px; color:var(--muted); line-height:1.5}
+.fc .tap{font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em}
+.fc.known{border-color:var(--ok); background:var(--ok-soft)}
+.fc-mark{position:absolute; top:8px; right:8px; border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:6px; font-size:11px; padding:2px 7px; line-height:1.5;
+  font-family:var(--mono); color:var(--muted)}
+.fc.known .fc-mark{border-color:var(--ok); color:var(--ok)}
+
+/* clip */
+.clip{border:1px solid var(--line); border-radius:11px; background:var(--surface); padding:17px 18px;
+  display:flex; flex-direction:column; gap:13px}
+.clip-h{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.clip-h h3{font-size:16.5px}
+blockquote{margin:0; padding:12px 16px; background:var(--surface-2); border-left:3px solid var(--line-strong);
+  border-radius:0 8px 8px 0; font-size:15px; font-family:var(--serif); line-height:1.65; max-width:64ch}
+
+/* scale */
+.sc-tbl{width:100%; border-collapse:collapse; font-size:14px}
+.sc-wrap{overflow-x:auto}
+.sc-tbl th{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:500; padding:0 8px 9px; text-align:center}
+.sc-tbl th:first-child{text-align:left}
+.sc-tbl td{border-top:1px solid var(--line); padding:9px 8px; text-align:center}
+.sc-tbl td:first-child{text-align:left; min-width:190px}
+.rad{width:20px; height:20px; border-radius:50%; border:1.5px solid var(--line-strong); background:var(--surface-2); padding:0}
+.rad[aria-pressed="true"]{background:var(--accent); border-color:var(--accent)}
+
+/* nav */
+.stepnav{display:flex; gap:10px; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:6px}
+
+/* modal */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.55); z-index:60; display:grid; place-items:center; padding:20px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; overflow:auto; padding:22px; display:flex; flex-direction:column; gap:14px}
+.modal h3{font-size:19px}
+.modal textarea{min-height:300px; font-family:var(--mono); font-size:12.5px; line-height:1.55}
+
+.storewarn{
+  max-width:1180px; margin:16px auto 0; padding:12px 16px;
+  border:1px solid var(--accent); border-left-width:3px; border-radius:0 9px 9px 0;
+  background:var(--accent-soft); color:var(--ink); font-size:14px; line-height:1.55;
+}
+@media (max-width:1220px){ .storewarn{margin-inline:20px} }
+.hr{height:1px; background:var(--line); border:0; margin:2px 0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+[hidden]:not([hidden=until-found i]){display:none!important}
+</style>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <b>Atelier Plug &amp; Charge</b>
+      <span>B2 · mobilité électrique</span>
+    </div>
+    <div class="prog" title="Activités complétées">
+      <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+      <span class="prog-num" id="progNum">0 / 0</span>
+    </div>
+    <button class="btn" id="exportBtn">Exporter mes réponses</button>
+    <button class="btn btn-ghost" id="themeBtn" aria-label="Changer de thème">Thème</button>
+  </div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-head">Parcours · en autonomie</div>
+    <ul class="rail-list" id="rail"></ul>
+    <div class="rail-foot">
+      <a class="tc" href="https://youtu.be/AzsqYl61jqA" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+      <button class="btn btn-ghost small" id="resetBtn">Tout effacer</button>
+    </div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var VIDEO = "https://youtu.be/AzsqYl61jqA";
+var KEY = "plugcharge-b2-v1";
+
+/* ---------------- storage ---------------- */
+var state = {step:0, a:{}, done:{}, known:{}};
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var p = JSON.parse(raw); if(p && typeof p==="object"){
+      state.step = p.step|0; state.a = p.a||{}; state.done = p.done||{}; state.known = p.known||{};
+    }}
+  }catch(e){}
+}
+var STORAGE_OK = (function(){
+  try{ localStorage.setItem(KEY+"-probe","1"); localStorage.removeItem(KEY+"-probe"); return true; }
+  catch(e){ return false; }
+})();
+var saveTimer=null;
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+}
+function saveSoon(){ clearTimeout(saveTimer); saveTimer=setTimeout(save,300); }
+
+/* ---------------- helpers ---------------- */
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=txt; return n; }
+function html(tag, cls, h){ var n=document.createElement(tag); if(cls)n.className=cls; if(h!=null)n.innerHTML=h; return n; }
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return m+":"+(r<10?"0":"")+r; }
+function tcLink(sec, label){
+  var a=el("a","tc",label||mmss(sec));
+  a.href=VIDEO+"?t="+sec; a.target="_blank"; a.rel="noopener";
+  a.title="Ouvrir la vidéo à "+mmss(sec);
+  return a;
+}
+function norm(s){
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[^a-z0-9]/g," ").replace(/\s+/g," ").trim();
+}
+function matches(val, answers){
+  var v = norm(val); if(!v) return false;
+  for(var i=0;i<answers.length;i++){ if(v === norm(answers[i])) return true; }
+  return false;
+}
+
+/* ---------------- content ---------------- */
+/* ---------------- content ---------------- */
+var SEGS = [
+{"t":"seg","n":1,"a":0,"b":40,"title":"L'accroche : différent, pas plus compliqué",
+ "sum":"La vidéo est ouvertement financée par Chargemap. Pierre, d'Automobile Propre, pose le principe directeur : la voiture électrique n'est pas plus compliquée que la thermique, elle est simplement différente. Certains concepts paraissent complexes à première vue, mais « il suffit de la bonne personne pour nous expliquer avec des mots simples ». Il présente son invité, directeur technique de Chargemap, et annonce le mot du jour : le Plug & Charge.",
+ "obj":["Repérer la structure d'une interview technique : accroche, présentation de l'invité, question d'ouverture.","Nuancer une comparaison : opposer « plus compliqué » et « différent ».","Reconnaître le registre oral d'un média spécialisé : chute du <em>ne</em>, ironie, familiarité.","Annoncer un sujet et passer la parole à un expert."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelle distinction Pierre établit-il entre la voiture électrique et la voiture thermique ?","starters":["Il refuse de dire que…","Selon lui, la différence n'est pas une question de…","Autrement dit,…"],"model":"« Il refuse de dire que l'électrique est plus compliqué. Selon lui, la différence n'est pas une question de difficulté mais de nature : c'est <em>différent</em>, pas plus compliqué. Autrement dit, les concepts ne sont obscurs que tant que personne ne les a expliqués avec des mots simples. »"},
+  {"type":"Débat","q":"« Il suffit de la bonne personne pour nous expliquer avec des mots simples. » Dans votre secteur, qui joue ce rôle de traducteur entre la technique et le client ?","starters":["Chez nous, ce rôle revient plutôt à…","Le problème, c'est que les ingénieurs…","Personnellement, je me retrouve souvent à…"],"model":"« Chez nous, ce rôle revient souvent aux équipes commerciales, mais elles simplifient parfois trop. Le problème, c'est que les ingénieurs parlent en protocoles et en puissances, alors que le client veut savoir combien de temps et combien ça coûte. Personnellement, je me retrouve souvent au milieu : je dois traduire la technique en argument compréhensible pour une collectivité. »"},
+  {"type":"Réflexion","q":"Reprenez la formule pour Repsol. Face à un interlocuteur français, qu'est-ce qui est « différent » et non « plus compliqué » chez vous ?","starters":["Ce qui surprend les gens, ce n'est pas…, c'est…","Ce n'est pas plus compliqué, c'est juste que…","Là où ça change vraiment, c'est…"],"model":"« Ce qui surprend les gens, ce n'est pas la technologie, c'est qu'un pétrolier opère un réseau de recharge. Ce n'est pas plus compliqué qu'une station-service classique, c'est juste que le modèle économique change : on ne vend plus un volume, on vend un temps et une disponibilité. Là où ça change vraiment, c'est le raccordement au réseau électrique. »"}],
+ "tour":[
+  ["c'est pas plus compliqué, c'est juste différent","nuancer une comparaison au lieu de la trancher","Le marché français n'est pas plus difficile, il est juste différent."],
+  ["à première vue","au premier abord, avant d'y regarder de près","À première vue, le dossier semble simple."],
+  ["il suffit de + infinitif","c'est la seule condition nécessaire","Il suffit d'un retard de raccordement pour décaler tout le projet."],
+  ["excusez du peu","formule ironique qui souligne l'importance de ce qu'on vient de dire","Trois ans de travaux et deux ministères, excusez du peu."],
+  ["le mot du jour","le terme que l'on va expliquer","Le mot du jour, c'est l'interopérabilité."]],
+ "gram":{"t":"La chute du <em>ne</em> à l'oral","h":"<p>Pierre dit : « c'<strong>est pas</strong> forcément plus compliqué ». À l'oral courant, le <em>ne</em> de la négation disparaît presque toujours.</p><p>Oral : <em>c'est pas simple</em> · <em>j'ai pas compris</em> · <em>ça marche pas</em><br>Écrit et oral soigné : <em>ce n'est pas simple</em> · <em>je n'ai pas compris</em></p><p><strong>Pour vous.</strong> Ne l'imitez pas en réunion : gardez le <em>ne</em>. Mais vous devez l'entendre, sinon vous manquerez la moitié des négations dans une conversation rapide.</p>"}},
+
+{"t":"seg","n":2,"a":40,"b":78,"title":"La définition : un protocole, un identifiant, une autorisation",
+ "sum":"Le Plug & Charge, ou d'un point de vue technique la norme ISO 15118, est un protocole de communication entre le véhicule et la borne. L'identifiant Chargemap est installé dans le véhicule. Au branchement, la borne récupère cet identifiant, demande l'autorisation de charge à l'opérateur de mobilité, et si tout est en ordre, la charge démarre sans passer de badge. L'expérience est plus fluide et, selon l'invité, plus sûre.",
+ "obj":["Restituer une définition technique en trois phrases, sans la traduire mot à mot.","Employer les outils de reformulation : <em>ou plutôt</em>, <em>d'un point de vue technique</em>, <em>l'idée, c'est que</em>.","Maîtriser le lexique de l'identification et de l'autorisation.","Exprimer un bénéfice client sans tomber dans l'argumentaire publicitaire."],
+ "qs":[
+  {"type":"Compréhension","q":"Décrivez ce qui se passe entre le moment où le câble est branché et le moment où la charge démarre.","starters":["Au branchement, la borne…","Elle transmet ensuite…","Si l'autorisation est accordée,…"],"model":"« Au branchement, la borne récupère l'identifiant stocké dans le véhicule. Elle transmet ensuite une demande d'autorisation à l'opérateur de mobilité, ici Chargemap. Si l'autorisation est accordée, la charge démarre toute seule : l'utilisateur n'a rien à faire, pas de badge, pas d'application à ouvrir. »"},
+  {"type":"Débat","q":"L'invité présente la suppression du badge comme un gain de sécurité. Sur quoi porte réellement ce gain, à votre avis ?","starters":["Il faudrait préciser de quelle sécurité on parle :…","Le badge est un support physique, donc…","Cela dit, déplacer l'identifiant dans le véhicule crée aussi…"],"model":"« Il faudrait préciser de quelle sécurité on parle. Le badge est un support physique : il se perd, il se clone, et n'importe qui peut l'utiliser. Un certificat installé dans le véhicule est chiffré et lié à la voiture, donc c'est plus robuste. Cela dit, déplacer l'identifiant dans le véhicule crée aussi une dépendance au constructeur, et une nouvelle surface d'attaque. »"},
+  {"type":"Réflexion","q":"Décrivez en français le parcours actuel d'un client qui recharge sur une borne Repsol : qu'est-ce qui déclenche aujourd'hui l'autorisation de charge ?","starters":["Aujourd'hui, chez nous, le client…","L'autorisation passe par…","Le point de friction, c'est encore…"],"model":"« Aujourd'hui, chez nous, le client passe le plus souvent par notre application ou par un badge d'itinérance. L'autorisation passe par notre back-office, qui vérifie le contrat et débloque la borne. Le point de friction, c'est encore le temps de réponse : quand le réseau est lent, le client reste plusieurs dizaines de secondes devant une borne qui ne démarre pas, et c'est là qu'il appelle le support. »"}],
+ "tour":[
+  ["ou plutôt","introduit une correction ou une précision","C'est un retard, ou plutôt un décalage de calendrier."],
+  ["d'un point de vue technique / d'un point de vue sécurité","cadre le registre de l'analyse","D'un point de vue réglementaire, le dossier est complet."],
+  ["l'idée, finalement, c'est que","annonce la reformulation simple d'un point complexe","L'idée, finalement, c'est de facturer l'usage et non l'équipement."],
+  ["récupérer un identifiant","lire et capter une donnée d'identification","La borne récupère l'identifiant du véhicule."],
+  ["sans avoir besoin de + infinitif","sans qu'il soit nécessaire de","On lance la charge sans avoir besoin de badge."]],
+ "gram":{"t":"La condition réelle : <em>si</em> + présent, présent","h":"<p>« <strong>Si</strong> tout <strong>est</strong> OK, la charge <strong>démarre</strong>. » Condition réalisable, deux présents. Jamais de futur ni de conditionnel après <em>si</em> dans ce cas.</p><p>Trois variantes utiles en réunion :<br><em><strong>Si</strong> le dossier est complet, on lance les travaux.</em> (condition)<br><em><strong>Une fois que</strong> le dossier est validé, on lance les travaux.</em> (succession)<br><em><strong>Dès que</strong> j'ai l'accord, je vous préviens.</em> (immédiateté)</p><p><strong>Piège hispanophone :</strong> en espagnol, <em>si</em> peut être suivi du subjonctif imparfait. En français, jamais de subjonctif après <em>si</em>.</p>"}},
+
+{"t":"seg","n":3,"a":78,"b":145,"title":"L'usine à gaz : la complexité derrière la simplicité",
+ "sum":"Pierre s'étonne : la voiture parle à la borne, qui parle à l'opérateur, qui répond à la voiture — avec des bornes, des réseaux, des marques et des modèles différents. « Ça me semble être une usine à gaz. » L'invité confirme : il faut que toutes les étoiles s'alignent. Trois conditions cumulatives : un véhicule compatible (ici une BMW i5), un opérateur de recharge compatible et certifié, et un opérateur de mobilité compatible. Cette complexité, Chargemap la masque à l'utilisateur.",
+ "obj":["Comprendre et réemployer deux images fortes : <em>une usine à gaz</em>, <em>toutes les étoiles s'alignent</em>.","Exprimer une chaîne de conditions cumulatives avec le subjonctif après <em>il faut que</em>.","Décrire une architecture technique à trois acteurs.","Exprimer l'étonnement et la mise en doute sans agressivité."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelles sont les trois conditions à réunir pour que le Plug & Charge fonctionne ?","starters":["Il faut trois compatibilités simultanées :…","D'abord…, ensuite…, et enfin…","Si l'une des trois manque,…"],"model":"« Il faut trois compatibilités simultanées. D'abord, que le véhicule soit compatible — dans la démonstration, c'est une BMW i5. Ensuite, que l'opérateur de bornes soit compatible et certifié. Et enfin, que l'opérateur de mobilité, ici Chargemap, le soit aussi. Si l'une des trois manque, ça ne marche pas, et l'utilisateur ne sait même pas pourquoi. »"},
+  {"type":"Débat","q":"Cette « usine à gaz » est-elle un problème pour l'utilisateur, ou seulement pour les opérateurs ?","starters":["En théorie, l'utilisateur ne devrait jamais…","Sauf que dans la pratique,…","La vraie difficulté se déplace vers…"],"model":"« En théorie, l'utilisateur ne devrait jamais voir cette complexité : c'est justement le travail de l'opérateur de mobilité de l'absorber. Sauf que dans la pratique, quand ça échoue, l'utilisateur se retrouve devant une borne muette, sans savoir laquelle des trois conditions a lâché. La vraie difficulté se déplace donc vers le diagnostic et le support client. »"},
+  {"type":"Réflexion","q":"Décrivez en français la chaîne d'acteurs mobilisée quand un client recharge sur une borne Repsol avec le badge d'un autre opérateur.","starters":["Dans ce cas, il y a au moins trois acteurs :…","Le badge appartient à…, la borne à…","Entre les deux, il y a un accord d'itinérance qui…"],"model":"« Dans ce cas, il y a au moins trois acteurs. Le badge appartient à un opérateur de mobilité, la borne nous appartient, et entre les deux il y a un accord d'itinérance qui permet au badge d'être reconnu. Notre système vérifie que l'opérateur est bien notre partenaire, accorde l'autorisation, puis lui refacture la session. Le client, lui, ne voit qu'un badge et une borne. »"}],
+ "tour":[
+  ["une usine à gaz","un système inutilement compliqué, difficile à maîtriser","Le process de validation interne est devenu une usine à gaz."],
+  ["il faut que toutes les étoiles s'alignent","toutes les conditions doivent être réunies en même temps","Pour tenir la date, il faut que toutes les étoiles s'alignent."],
+  ["à quel point c'est un challenge","registre oral : question sans inversion ni <em>est-ce que</em>","À quel point c'est bloquant pour vous ?"],
+  ["dans la pratique / en réalité","introduit ce qui se passe vraiment, par opposition à la théorie","Sur le papier oui ; dans la pratique, beaucoup moins."],
+  ["être compatible et certifié","répondre à la norme et l'avoir fait valider officiellement","Nos bornes sont compatibles, mais pas encore certifiées."]],
+ "gram":{"t":"Le subjonctif après <em>il faut que</em>","h":"<p>« Il faut que le véhicule <strong>soit</strong> compatible, il faut que l'opérateur <strong>soit</strong> certifié. »</p><p>Trois formes à automatiser : <em>qu'il <strong>soit</strong></em> (être) · <em>qu'il <strong>ait</strong></em> (avoir) · <em>qu'il <strong>puisse</strong></em> (pouvoir) · <em>qu'il <strong>fasse</strong></em> (faire).</p><p><strong>Le raccourci utile.</strong> Quand le sujet ne change pas, employez l'infinitif et évitez le subjonctif : <em>il faut <strong>valider</strong> le dossier</em> plutôt que <em>il faut que nous validions le dossier</em>.</p><p><strong>Piège hispanophone :</strong> <em>hay que</em> se traduit par <em>il faut</em> + infinitif, <em>hace falta que</em> par <em>il faut que</em> + subjonctif. Ne dites jamais « il faut que le véhicule est compatible ».</p>"}},
+
+{"t":"seg","n":4,"a":135,"b":195,"title":"L'activation : le numéro VIN, une seule fois",
+ "sum":"En pratique, l'utilisateur ouvre l'application Chargemap, lance le menu Plug & Charge et saisit le numéro VIN que le constructeur lui a remis à la livraison. Chargemap transmet alors au constructeur les identifiants du compte, qui s'installent dans le véhicule. Au branchement, la borne les lit et les retransmet pour demander l'autorisation. Pierre vérifie : cette manipulation se fait une seule fois, au tout début.",
+ "obj":["Décrire une procédure étape par étape à l'oral.","Exprimer l'unicité et la restriction avec <em>ne… que</em> et <em>une seule fois</em>.","Vérifier sa compréhension en reformulant : <em>on est bien d'accord que…</em>.","Rédiger oralement une consigne claire pour un client."],
+ "qs":[
+  {"type":"Compréhension","q":"Reconstituez la procédure d'activation en quatre étapes.","starters":["Première étape :…","Ensuite,…","Puis…, et enfin…"],"model":"« Première étape : ouvrir l'application Chargemap et lancer le menu Plug & Charge. Ensuite, saisir le numéro VIN remis par le constructeur à la livraison du véhicule. Puis Chargemap transmet les identifiants du compte au constructeur, qui les installe dans la voiture. Et enfin, au premier branchement, la borne lit ces informations et demande l'autorisation. »"},
+  {"type":"Débat","q":"L'activation passe obligatoirement par le constructeur. Est-ce un point de friction ou une garantie ?","starters":["C'est à double tranchant :…","D'un côté…, de l'autre…","Ce qui me gêne, c'est la dépendance à…"],"model":"« C'est à double tranchant. D'un côté, le constructeur garantit l'identité du véhicule, ce qui sécurise la chaîne. De l'autre, il devient un passage obligé : si son système est lent ou s'il ne joue pas le jeu, l'utilisateur reste bloqué. Ce qui me gêne, c'est la dépendance à un acteur qui n'a pas forcément intérêt à ouvrir son écosystème. »"},
+  {"type":"Réflexion","q":"Formulez à voix haute la consigne que vous donneriez à un client francophone pour activer ce service. Quatre phrases maximum.","starters":["Vous ouvrez l'application, puis…","Vous n'aurez à le faire qu'une seule fois.","Ensuite, il vous suffira de brancher."],"model":"« Vous ouvrez l'application et vous sélectionnez le menu Plug & Charge. Vous saisissez le numéro VIN, celui que le concessionnaire vous a remis avec les papiers du véhicule. Vous n'aurez à le faire qu'une seule fois. Ensuite, il vous suffira de brancher : la charge démarre toute seule et la facture arrive sur votre compte. »"}],
+ "tour":[
+  ["il suffit de / il suffira de + infinitif","une seule action est nécessaire","Il suffira de nous envoyer le justificatif."],
+  ["on est bien d'accord que","vérifie que l'interlocuteur confirme","On est bien d'accord que la livraison est prévue en mars ?"],
+  ["au tout début","tout au commencement","On l'avait signalé au tout début du projet."],
+  ["et terminé","registre oral : et c'est fini","Vous signez et terminé."],
+  ["la finalité, c'est que","le but recherché est que","La finalité, c'est que le client n'ait rien à faire."]],
+  "gram":{"t":"<em>ne… que</em> : la restriction","h":"<p>L'invité dit : « Il suffira de faire cette opération <strong>qu'</strong>une seule fois. » À l'oral, le <em>ne</em> tombe. À l'écrit et en réunion : « Il <strong>ne</strong> suffira de la faire <strong>qu'</strong>une seule fois. »</p><p><em>ne… que</em> = <strong>seulement</strong>. Ce n'est pas une négation : <em>je n'ai que dix minutes</em> signifie <em>j'ai dix minutes</em>.</p><p>Le <em>que</em> se place juste avant l'élément limité :<br><em>Nous <strong>n'</strong>équipons <strong>que</strong> les stations d'autoroute.</em> (pas les autres sites)<br><em>Nous <strong>n'</strong>équipons les stations d'autoroute <strong>qu'</strong>en courant continu.</em> (pas en alternatif)</p>"}},
+
+{"t":"seg","n":5,"a":196,"b":264,"title":"Tesla : protocole propriétaire contre écosystème ouvert",
+ "sum":"Pierre objecte que Tesla le fait depuis des années. Réponse : Tesla utilise des protocoles propriétaires, qui ne fonctionnent que sur son propre réseau et ses propres véhicules. L'objectif du Plug & Charge est au contraire de généraliser le principe à l'ensemble de l'écosystème : tous les constructeurs, tous les opérateurs. Concrètement, passer d'une borne Allego à une borne Ionity, avec n'importe quel véhicule.",
+ "obj":["Opposer deux modèles — propriétaire et ouvert — et défendre une position.","Employer <em>n'importe quel</em>, <em>l'ensemble de</em>, <em>potentiellement</em>.","Atténuer une affirmation quand on ne maîtrise pas le sujet.","Analyser l'interopérabilité du point de vue d'un opérateur, et non du client."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelle est la différence de principe entre la solution Tesla et le Plug & Charge ?","starters":["Tesla fonctionne en circuit fermé :…","Le Plug & Charge vise au contraire…","En résumé, on oppose un système propriétaire à…"],"model":"« Tesla fonctionne en circuit fermé : ses protocoles sont propriétaires, donc la simplicité ne vaut que sur ses propres bornes et ses propres voitures. Le Plug & Charge vise au contraire une norme commune à l'ensemble de l'écosystème. En résumé, on oppose un système propriétaire, efficace mais cloisonné, à une norme ouverte, plus lente à déployer mais universelle. »"},
+  {"type":"Débat","q":"Un modèle fermé offre souvent une meilleure expérience au départ. L'ouverture vaut-elle vraiment le détour ?","starters":["À court terme, le modèle fermé gagne, parce que…","Mais sur la durée,…","Le vrai test, ce sera…"],"model":"« À court terme, le modèle fermé gagne, parce qu'un seul acteur maîtrise toute la chaîne et peut garantir que ça marche. Mais sur la durée, aucun opérateur ne couvrira seul tout un continent, et le client ne veut pas dix applications. Le vrai test, ce sera la qualité de l'expérience ouverte : si elle reste inférieure, les normes n'y changeront rien. »"},
+  {"type":"Réflexion","q":"Pour Repsol, à la fois opérateur de bornes et vendeur d'énergie, l'interopérabilité totale est-elle une opportunité ou une menace ? Préparez une réponse nuancée, que vous pourriez tenir en public.","starters":["Je dirais que c'est surtout une opportunité, à une condition :…","Ce que nous y gagnons, c'est…; ce que nous y perdons,…","Sur ce point précis, je préfère rester prudente :…"],"model":"« Je dirais que c'est surtout une opportunité, à une condition : que la différenciation se déplace vers la qualité de service. Ce que nous y gagnons, c'est du volume, puisque n'importe quel client peut utiliser nos bornes. Ce que nous y perdons, c'est une partie de la relation directe avec l'utilisateur. Sur les aspects commerciaux, je préfère rester prudente, mais sur le principe, une norme ouverte nous arrange : notre force, c'est le maillage. »"}],
+ "tour":[
+  ["un protocole propriétaire","fermé, réservé à une seule marque — <strong>faux ami</strong> : rien à voir avec le propriétaire d'un bien","Ils utilisent un format propriétaire, impossible à lire ailleurs."],
+  ["n'importe quel / n'importe quelle","sans distinction, quel qu'il soit","Le badge fonctionne sur n'importe quelle borne du réseau."],
+  ["l'ensemble de","la totalité de","L'ensemble des opérateurs sera concerné."],
+  ["entre guillemets","signale qu'on emploie un mot avec réserve","Ça limite, entre guillemets, l'intérêt de la solution."],
+  ["je ne connais pas les détails techniques, mais","formule de réserve : on avance sans s'engager","Je ne connais pas les détails du dossier, mais le principe est clair."]],
+ "gram":{"t":"Les formules de réserve : avancer sans s'engager","h":"<p>L'invité dit : « <strong>Je ne connais pas les détails techniques</strong> chez Tesla, <strong>mais</strong> ce n'est pas une solution qui permet… ». Il donne quand même son avis, tout en se protégeant. C'est exactement la compétence dont vous aurez besoin le 30 septembre.</p><p>Quatre niveaux, du plus souple au plus ferme :</p><p><em>Je ne connais pas les détails, mais…</em> (réserve légère, on répond quand même)<br><em>Je préfère ne pas m'avancer là-dessus.</em> (on décline poliment)<br><em>C'est une question pour nos équipes de communication.</em> (on renvoie)<br><em>Je ne suis pas en mesure de le commenter.</em> (on ferme)</p><p><strong>À éviter :</strong> « je ne peux pas répondre » sonne bloquant et un peu agressif en français.</p>"}},
+
+{"t":"seg","n":6,"a":264,"b":305,"title":"Plug & Charge n'est pas Autocharge",
+ "sum":"Le vocabulaire flotte : on entend <em>plug and charge</em>, <em>autocharge</em>, <em>auto recharge</em>. Ce n'est pas tout à fait la même chose. Le Plug & Charge est « la version officielle, plus sécurisée », mais elle exige un véhicule compatible, ce qui exclut les modèles anciens. Pour ces véhicules-là, on utilise plutôt l'Autocharge, qui récupère d'autres informations, d'une autre façon, pour les rattacher au compte.",
+ "obj":["Distinguer deux termes techniques proches et expliquer la différence sans jargon.","Corriger avec nuance : <em>non, c'est pas tout à fait la même chose</em>.","Employer <em>plutôt</em> pour exprimer un choix par défaut.","Relier une notion de la vidéo à une décision réelle de son entreprise."],
+ "qs":[
+  {"type":"Compréhension","q":"En quoi l'Autocharge diffère-t-il du Plug & Charge ?","starters":["Le Plug & Charge est la version officielle, donc…","L'Autocharge, lui, s'adresse à…","La différence porte sur…"],"model":"« Le Plug & Charge est la version officielle et normalisée, donc la plus sûre, mais elle suppose un véhicule compatible. L'Autocharge, lui, s'adresse aux véhicules qui ne le sont pas, notamment les plus anciens. La différence porte sur la nature des informations lues dans le véhicule et sur la façon de les récupérer : l'Autocharge s'appuie sur un identifiant technique, sans le cadre de sécurité de la norme. »"},
+  {"type":"Débat","q":"Deux solutions coexistent sous des noms très proches. Est-ce gênant pour le client ?","starters":["Pour le client final, honnêtement,…","Le risque, c'est surtout…","Ce qui compte, c'est moins le nom que…"],"model":"« Pour le client final, honnêtement, la distinction n'a aucun intérêt : il veut brancher et partir. Le risque, c'est surtout la déception : on lui promet que ça marche tout seul, et un jour ça ne marche pas, parce qu'il est sur la mauvaise technologie. Ce qui compte, c'est moins le nom que la clarté du message : dire ce qui fonctionne, où, et avec quelle voiture. »"},
+  {"type":"Réflexion","q":"D'après l'Anuario AEDIVE, l'Autocharge représente déjà 11 % de l'énergie délivrée sur les points Repsol concernés. Expliquez en français pourquoi Repsol a misé sur l'Autocharge, et ce que le passage au Plug & Charge changerait.","starters":["Nous avons misé sur l'Autocharge parce que…","Le parc roulant espagnol est encore…","Le passage au Plug & Charge supposerait…"],"model":"« Nous avons misé sur l'Autocharge parce qu'elle fonctionne avec le parc existant, sans attendre que les constructeurs s'équipent. Le parc roulant espagnol est encore jeune sur l'électrique, mais tous les modèles ne sont pas compatibles avec la norme. Résultat : l'Autocharge représente déjà environ 11 % de l'énergie délivrée sur ces points. Le passage au Plug & Charge supposerait une certification de nos bornes et une montée en charge côté constructeurs — c'est l'étape suivante, pas une alternative. »"}],
+ "tour":[
+  ["c'est pas tout à fait la même chose","corrige sans contredire frontalement","Ce n'est pas tout à fait la même chose qu'un retard de livraison."],
+  ["on va dire","atténuateur oral : approximativement","C'est, on va dire, un compromis acceptable."],
+  ["plutôt","de préférence, par défaut","Sur ces sites, on installera plutôt de la recharge lente."],
+  ["cela dit","concession : introduit une réserve","Cela dit, le calendrier reste tenable."],
+  ["rattacher X à Y","relier un élément à un compte, à un dossier","Il faut rattacher la session au bon contrat."]],
+ "gram":{"t":"Les atténuateurs de l'oral français","h":"<p>Le français professionnel est très atténué. Affirmer sans nuance passe pour de l'arrogance. Quatre outils apparaissent dans ce segment :</p><p><em><strong>on va dire</strong></em> — signale une approximation assumée : <em>c'est, on va dire, une solution de transition.</em><br><em><strong>pas tout à fait</strong></em> — corrige en douceur : <em>ce n'est pas tout à fait exact.</em><br><em><strong>plutôt</strong></em> — préférence non imposée : <em>je verrais plutôt une solution mixte.</em><br><em><strong>cela dit</strong></em> — concède avant d'objecter : <em>cela dit, le coût reste élevé.</em></p><p><strong>Effet recherché :</strong> vous dites la même chose, mais vous laissez à l'autre la place de ne pas être d'accord.</p>"}},
+
+{"t":"seg","n":7,"a":305,"b":409,"title":"La démonstration et l'échéance réglementaire",
+ "sum":"Démonstration sur une borne Allego compatible, avec la BMW i5 : application, menu, VIN, branchement — c'est fini. « Ça a l'air dix fois plus compliqué dans les coulisses pour que ce soit dix fois plus simple pour les utilisateurs. » Sur l'horizon : une réglementation européenne — l'AFIR — imposera le Plug & Charge aux nouvelles bornes à partir de 2026. Une quarantaine de constructeurs sont déjà compatibles, et l'invité table sur une généralisation à l'horizon 2026-2027.",
+ "obj":["Comprendre une échéance réglementaire et la restituer avec précision.","Employer <em>imposer à quelqu'un de faire</em>, <em>à partir de</em>, <em>à l'horizon</em>.","Formuler une prévision prudente au conditionnel.","Commenter une obligation réglementaire sans engager son entreprise."],
+ "qs":[
+  {"type":"Compréhension","q":"Que prévoit la réglementation européenne citée, et à partir de quand ?","starters":["Le règlement impose aux opérateurs de…","Cela concerne uniquement…","L'invité en déduit que…"],"model":"« Le règlement impose aux opérateurs de bornes de recharge de proposer le Plug & Charge. Cela concerne uniquement les nouvelles bornes installées à partir de 2026, pas le parc existant. L'invité en déduit que les constructeurs suivront, puisque l'infrastructure le permettra, et il table sur une généralisation à l'horizon 2026-2027. »"},
+  {"type":"Débat","q":"L'obligation réglementaire est-elle le bon levier pour généraliser une norme technique ?","starters":["Sans contrainte, rien ne bouge, parce que…","Le risque de la contrainte, c'est…","Le bon dosage, ce serait…"],"model":"« Sans contrainte, rien ne bouge, parce que le premier qui investit paie pour les autres. Le risque de la contrainte, c'est qu'elle fige une norme au moment où la technologie évolue encore, et qu'elle pèse surtout sur les petits opérateurs. Le bon dosage, ce serait d'imposer le résultat — que ça marche partout — plutôt qu'une technologie précise. »"},
+  {"type":"Réflexion","q":"« Dix fois plus compliqué dans les coulisses pour que ce soit dix fois plus simple pour l'utilisateur. » Trouvez un exemple équivalent dans votre activité et racontez-le en 60 secondes.","starters":["L'exemple le plus parlant, c'est…","Le client voit…; ce qu'il ne voit pas, c'est…","Entre les deux, il y a…"],"model":"« L'exemple le plus parlant, c'est l'ouverture d'un point de recharge en station. Le client voit une borne qui s'allume un matin. Ce qu'il ne voit pas, c'est trois à quatre semaines de travaux, mais surtout jusqu'à dix-huit mois de démarches : licence municipale, autorisation de la direction des routes, légalisation régionale, raccordement au réseau. Entre les deux, il y a des dizaines de dossiers. »"}],
+ "tour":[
+  ["dans les coulisses","côté technique, invisible pour l'utilisateur","Dans les coulisses, trois équipes ont travaillé six mois."],
+  ["à quel horizon / à l'horizon 2027","à quelle échéance","À l'horizon 2027, le parc aura doublé."],
+  ["on peut raisonnablement penser que","prévision prudente et argumentée","On peut raisonnablement penser que les délais vont se réduire."],
+  ["s'y mettre","commencer à le faire, s'y engager","Les constructeurs vont finir par s'y mettre."],
+  ["imposer à quelqu'un de faire quelque chose","obliger — attention à la construction","Le règlement impose aux opérateurs d'afficher le prix au kWh."]],
+ "gram":{"t":"Prévoir sans affirmer : le conditionnel et les verrous","h":"<p>L'invité ne dit jamais « ce sera généralisé en 2027 ». Il dit : « <strong>on peut raisonnablement penser que</strong>… », « <strong>je pense que</strong> ça va bien se développer », « <strong>ça devrait</strong> fonctionner ».</p><p><strong>Ça devrait fonctionner</strong> = c'est très probable, mais je ne le garantis pas. C'est le conditionnel d'atténuation, indispensable en clientèle : vous annoncez sans promettre.</p><p>Échelle d'engagement, du plus fort au plus faible :<br><em>Ça fonctionnera.</em> → <em>Ça devrait fonctionner.</em> → <em>Ça pourrait fonctionner.</em> → <em>En principe, ça fonctionne.</em></p><p><strong>Construction à retenir :</strong> <em>imposer <strong>à</strong> quelqu'un <strong>de</strong> faire</em>. On n'impose pas quelqu'un de faire, et on n'impose pas quelqu'un à faire.</p>"}}
+];
+
+/* exercices d'écoute propres à chaque segment */
+var EX = {
+ 1:{t:"tf", items:[
+   {q:"La vidéo est financée par Chargemap et le dit explicitement.", a:true, j:"Première phrase : « avec le <strong>soutien</strong> de Chargemap »."},
+   {q:"Pierre affirme que la voiture électrique est plus compliquée que la thermique.", a:false, j:"Il dit exactement le contraire : « c'est pas plus compliqué, c'est juste <strong>différent</strong> »."},
+   {q:"L'invité est le directeur technique de Chargemap.", a:true, j:"Présenté comme tel, avec un « excusez du peu » ironique."}]},
+ 2:{t:"gaps", fields:[
+   {k:"a", label:"Nom technique de la norme : ISO …", answers:["15118","15 118","1518"], sol:"15118 — la transcription automatique écrit « 1518 »"},
+   {k:"b", label:"Le Plug & Charge est un protocole de …", answers:["communication"], sol:"communication"},
+   {k:"c", label:"Ce que la borne demande à l'opérateur : l'… de charge", answers:["autorisation","l autorisation"], sol:"autorisation"}]},
+ 3:{t:"gaps", fields:[
+   {k:"a", label:"Nombre de conditions à réunir simultanément", answers:["3","trois"], sol:"3"},
+   {k:"b", label:"Marque du véhicule de démonstration", answers:["bmw"], sol:"BMW"},
+   {k:"c", label:"Modèle du véhicule de démonstration", answers:["i5","i 5"], sol:"i5"}]},
+ 4:{t:"gaps", fields:[
+   {k:"a", label:"Numéro à saisir dans l'application : le numéro …", answers:["vin"], sol:"VIN — la transcription écrit « vine »"},
+   {k:"b", label:"Nombre de fois où l'on fait l'opération", answers:["1","une","une seule","une seule fois"], sol:"une seule fois"},
+   {k:"c", label:"Qui remet ce numéro à l'acheteur ?", answers:["le constructeur","constructeur"], sol:"le constructeur"}]},
+ 5:{t:"tf", items:[
+   {q:"Tesla utilise des protocoles propriétaires.", a:true, j:"C'est le mot exact employé par l'invité."},
+   {q:"La solution Tesla fonctionne sur les réseaux concurrents.", a:false, j:"Elle reste limitée « au réseau Tesla et aux véhicules Tesla »."},
+   {q:"Deux réseaux de bornes sont cités en exemple : Allego et Ionity.", a:true, j:"La transcription écrit « alleo » pour <strong>Allego</strong>."},
+   {q:"L'objectif du Plug & Charge est de rester réservé à quelques constructeurs.", a:false, j:"Au contraire : « globaliser, généraliser sur l'ensemble de l'écosystème »."}]},
+ 6:{t:"tf", items:[
+   {q:"Plug & Charge et Autocharge désignent exactement la même chose.", a:false, j:"« Non, c'est pas tout à fait la même chose. »"},
+   {q:"Le Plug & Charge est présenté comme la version officielle et plus sécurisée.", a:true, j:"Ce sont les termes employés."},
+   {q:"L'Autocharge s'adresse surtout aux véhicules non compatibles, souvent plus anciens.", a:true, j:"« Les anciens véhicules ne sont pas forcément compatibles. »"},
+   {q:"L'Autocharge lit les mêmes informations, de la même façon.", a:false, j:"« D'une autre façon et d'autres types d'infos. »"}]},
+ 7:{t:"gaps", fields:[
+   {k:"a", label:"Année à partir de laquelle la réglementation s'applique aux nouvelles bornes", answers:["2026"], sol:"2026"},
+   {k:"b", label:"Nombre approximatif de constructeurs déjà compatibles", answers:["40","quarantaine","une quarantaine","quarante"], sol:"une quarantaine"},
+   {k:"c", label:"Horizon de généralisation annoncé : 2026 - …", answers:["2027"], sol:"2027"},
+   {k:"d", label:"Nom du réseau de bornes de la démonstration", answers:["allego","alleo"], sol:"Allego"}]}
+};
+
+var LETTERS = "ABCDEFGH";
+function segCard(s, idx){
+  var blocks = [];
+  blocks.push({t:"note", h:"<div class='prose'><p><em>En bref.</em> "+s.sum+"</p></div>"});
+  blocks.push({t:"callout", ct:"Objectifs pédagogiques du segment", h:"<ul style='margin:0;padding-left:18px'>"+s.obj.map(function(o){return "<li>"+o+"</li>";}).join("")+"</ul>"});
+  var ex = EX[s.n];
+  if(ex){
+    if(ex.t==="gaps") blocks.push({t:"gaps", k:"x"+s.n, fields:ex.fields});
+    else blocks.push({t:"tf", k:"x"+s.n, items:ex.items});
+  }
+  s.qs.forEach(function(q, i){
+    blocks.push({t:"open", k:"s"+s.n+"_"+i, n:String(i+1), starters:q.starters,
+      q:"<strong>"+q.type+".</strong> "+q.q, hint:q.hint, model:q.model});
+  });
+  blocks.push({t:"callout", ct:"Focus langue — tournures et constructions clés",
+    h:"<ul style='margin:0;padding-left:18px'>"+s.tour.map(function(t){
+        return "<li><strong>"+t[0]+"</strong> ("+t[1]+") — <em>« "+t[2]+" »</em></li>";}).join("")+"</ul>"+
+      "<p><strong>Construction clé : "+s.gram.t+"</strong></p>"+s.gram.h});
+  return {t:"card", h3:LETTERS[idx]+". Segment "+s.n+" — "+s.title,
+    sub:(ex ? (ex.t==="gaps" ? "Repérez d'abord les chiffres, puis passez aux trois questions." : "Vrai ou faux, puis les trois questions.") : ""),
+    tc:[{sec:s.a, l:mmss(s.a)},{sec:s.b, l:mmss(s.b)}], blocks:blocks};
+}
+
+var STEPS = [
+{
+ id:"prep", title:"Avant de visionner", time:"5 min",
+ lede:"Vous parlez d'abord, vous regardez ensuite. Répondez à voix haute, puis notez l'essentiel : deux ou trois phrases suffisent. Tout est enregistré dans votre navigateur.",
+ blocks:[
+  {t:"callout", ct:"Méthode", h:"<p><strong>Premier visionnage sans sous-titres, sans pause, sans dictionnaire.</strong> La vidéo dure 6 min 49 : c'est court, mais dense et rapide. Vous ne comprendrez pas tout au premier passage, et c'est normal. Devinez par le contexte, notez le mot, vérifiez ensuite. Les trois questions de chaque segment sont une réserve : nous n'en traiterons qu'une ou deux par segment en classe.</p>"},
+  {t:"card", h3:"Pourquoi cette vidéo précisément", sub:"Support de préparation autonome · niveau B2 · avant votre déplacement à Paris", blocks:[
+   {t:"note", h:"<div class='prose'>"+
+    "<p><strong>Trois raisons.</strong></p>"+
+    "<ul>"+
+    "<li>C'est <strong>exactement votre métier</strong>, en français, à vitesse réelle. Vous connaîssez le fond : toute votre attention peut donc aller à la langue.</li>"+
+    "<li>C'est une vidéo <strong>Chargemap</strong>. Si l'hypothèse sur l'organisateur du 30 septembre se confirme, ce sont les mots et les arguments de vos interlocuteurs que vous entendez ici.</li>"+
+    "<li>Elle traite de l'<strong>Autocharge</strong>, que Repsol a déployé et qui représente déjà environ 11 % de l'énergie délivrée sur les points concernés. Vous avez donc quelque chose de substantiel à dire sur le sujet.</li>"+
+    "</ul>"+
+    "<p><strong>Objectifs.</strong></p>"+
+    "<ul>"+
+    "<li><strong>Communicatifs</strong> : expliquer un mécanisme technique simplement ; décrire une procédure ; opposer deux modèles ; nuancer et se protéger ; commenter une réglementation sans engager son entreprise.</li>"+
+    "<li><strong>Linguistiques</strong> : lexique de la recharge et de l'interopérabilité ; subjonctif après <em>il faut que</em> ; <em>ne… que</em> ; <em>si</em> + présent ; conditionnel d'atténuation ; atténuateurs de l'oral ; formules de réserve.</li>"+
+    "<li><strong>Professionnels</strong> : distinguer un fait vérifiable d'un argument commercial ; répondre à une question technique délicate ; parler de vos propres chiffres en français.</li>"+
+    "</ul></div>"}
+  ]},
+  {t:"card", h3:"Questions d'ouverture", sub:"Avant de lancer la vidéo. Répondez de mémoire, sans chercher.", blocks:[
+   {t:"open", k:"p1", n:"1", starters:["Aujourd'hui, chez nous, le client…","Concrètement, il doit d'abord…","Ensuite, la borne…"],
+    q:"Expliquez en français, avec vos mots, ce qui se passe quand un client branche sa voiture sur une de vos bornes.",
+    hint:"Ne cherchez pas le mot exact : contournez. C'est précisément la compétence qu'on travaille.",
+    model:"« Aujourd'hui, chez nous, le client s'identifie d'abord, en général avec notre application ou avec un badge. Concrètement, il doit ouvrir l'appli, sélectionner la borne et lancer la session. Ensuite, la borne vérifie auprès de notre système que le compte est valide, puis elle débloque la prise et la charge démarre. »"},
+   {t:"open", k:"p2", n:"2", starters:["Je dirais qu'on en est à…","Pour l'instant, nous avons surtout misé sur…","C'est un sujet sur lequel je préfère rester prudente, mais…"],
+    q:"Le 30 septembre, à Paris. Quelqu'un vous demande : « Et vous, chez Repsol, vous en êtes où sur le Plug & Charge ? » Qu'est-ce que vous répondez ?",
+    hint:"Préparez une réponse de 20 secondes. C'est une question qu'on vous posera.",
+    model:"« Pour l'instant, nous avons surtout misé sur l'Autocharge, parce qu'elle fonctionne avec le parc existant : elle représente déjà autour de 11 % de l'énergie délivrée sur les points concernés. Le Plug & Charge, c'est l'étape suivante, et le calendrier réglementaire va l'imposer sur les nouvelles bornes. Sur nos échéances précises, je préfère ne pas m'avancer. »"},
+   {t:"open", k:"p3", n:"3", starters:["Les mots qui me manquent le plus, ce sont…","En espagnol je dis…, mais en français je bloque.","Je n'ai jamais eu à dire en français…"],
+    q:"Quels mots techniques de votre métier vous manquent encore en français ? Faites la liste maintenant, avant de regarder.",
+    hint:"Cette liste est le point de départ de notre prochaine séance. Soyez précise."}
+  ]},
+  {t:"callout", ct:"Note au formateur — transcription automatique", h:"<p>La transcription YouTube contient des erreurs de reconnaissance à corriger avant la classe. Formes correctes : <strong>ISO 15118</strong> (et non « 1518 »), le numéro <strong>VIN</strong> (et non « vine »), le réseau <strong>Allego</strong> (et non « alleo »), le règlement <strong>AFIR</strong> (et non « la FIR »), <strong>opérateurs de bornes de recharge</strong> (et non « opérateurs de bande de recharge »). Le prénom du directeur technique est rendu tantôt « Aan », tantôt « Akan », tantôt « Can » : <strong>à vérifier avant de le citer nommément</strong>.</p>"}
+ ]
+},
+{
+ id:"lex", title:"Le lexique essentiel", time:"5 min",
+ lede:"Cliquez sur une carte pour révéler la définition. Les définitions sont en français : à votre niveau, passer par l'espagnol vous ralentit plus qu'il ne vous aide. Ne mémorisez pas — familiarisez-vous.",
+ blocks:[
+  {t:"cards", k:"lx", groups:[
+   {name:"Les acteurs de la chaîne", items:[
+    ["un opérateur de bornes de recharge","l'entreprise qui installe et exploite les bornes"],
+    ["un opérateur de mobilité","l'entreprise qui fournit le badge ou l'application et facture la session"],
+    ["un constructeur automobile","le fabricant du véhicule"],
+    ["un réseau de recharge","l'ensemble des bornes exploitées par un même opérateur"],
+    ["l'écosystème","l'ensemble des acteurs d'un secteur et leurs relations"],
+    ["un accord d'itinérance","l'accord qui permet au badge d'un opérateur d'ouvrir les bornes d'un autre"]
+   ]},
+   {name:"Le geste de recharge", items:[
+    ["brancher / le branchement","connecter le câble / l'action de le connecter"],
+    ["une borne","l'équipement physique installé sur la voirie ou en station"],
+    ["un point de charge","la prise d'une borne ; une borne peut en compter plusieurs"],
+    ["passer son badge","présenter sa carte devant le lecteur de la borne"],
+    ["la charge démarre","la recharge commence effectivement"],
+    ["une borne compatible","une borne qui accepte la technologie concernée"]
+   ]},
+   {name:"La norme et la règle", items:[
+    ["un protocole de communication","la langue commune entre deux machines"],
+    ["un protocole propriétaire","fermé, réservé à une seule marque"],
+    ["une norme ouverte","utilisable par tous les acteurs du secteur"],
+    ["être certifié","avoir obtenu une validation officielle"],
+    ["l'autorisation de charge","le feu vert donné avant que la charge ne démarre"],
+    ["imposer à quelqu'un de faire","obliger quelqu'un à faire — noter la double construction"]
+   ]},
+   {name:"Six expressions orales du dialogue", items:[
+    ["une usine à gaz","un système inutilement compliqué"],
+    ["il faut que toutes les étoiles s'alignent","toutes les conditions doivent être réunies en même temps"],
+    ["dans les coulisses","côté technique, invisible pour l'utilisateur"],
+    ["entre guillemets","signale qu'on emploie un mot avec réserve"],
+    ["on va dire","atténue ce qu'on vient de dire"],
+    ["excusez du peu","souligne avec ironie l'importance de ce qu'on vient d'annoncer"]
+   ]}
+  ]},
+  {t:"card", h3:"Micro-exercice d'appropriation", sub:"Complétez avec un terme du glossaire, puis vérifiez.", blocks:[
+   {t:"gaps", k:"lxg", fields:[
+    {k:"g1", label:"Notre process de validation interne est devenu une véritable … à gaz.", answers:["usine","une usine"], sol:"usine"},
+    {k:"g2", label:"Pour tenir la date, il faut que toutes les … s'alignent.", answers:["etoiles","les etoiles"], sol:"étoiles"},
+    {k:"g3", label:"Le règlement … aux opérateurs d'équiper les nouvelles bornes.", answers:["impose"], sol:"impose"},
+    {k:"g4", label:"Avant de démarrer, la borne demande une … de charge.", answers:["autorisation"], sol:"autorisation"},
+    {k:"g5", label:"Tesla s'appuie sur un protocole … , réservé à ses propres véhicules.", answers:["proprietaire"], sol:"propriétaire"},
+    {k:"g6", label:"Le client ne voit rien de tout ça : ça se passe dans les … .", answers:["coulisses","les coulisses"], sol:"coulisses"}
+   ]}
+  ]},
+  {t:"callout", ct:"Transfert espagnol → français — les quatre pièges du jour", h:"<ul style='margin:0;padding-left:18px'><li><em>cargador</em> → une <strong>borne</strong>, et non « un chargeur » (qui désigne l'électronique embarquée).</li><li><em>punto de recarga</em> → un <strong>point de charge</strong>, ou un <strong>point de recharge ouvert au public</strong> dans les chiffres officiels.</li><li><em>propietario</em> → <strong>faux ami</strong> : un protocole <em>propriétaire</em> n'a rien à voir avec un propriétaire de bien.</li><li><em>itinerancia / roaming</em> → <strong>l'itinérance</strong> : en français professionnel, le mot français l'emporte sur l'anglais.</li></ul>"}
+ ]
+},
+{
+ id:"glob", title:"1ᵉʳ visionnage — la vue d'ensemble", time:"7 min",
+ lede:"Lisez d'abord les questions, puis lancez la vidéo en entier. Ne revenez jamais en arrière pendant ce premier passage : le but est de suivre le fil, pas de tout comprendre.",
+ blocks:[
+  {t:"play", sec:0, label:"Lancer la vidéo depuis le début", note:"6 min 49 · sans sous-titres, sans pause"},
+  {t:"card", h3:"A. L'idée centrale", blocks:[
+   {t:"open", k:"g1", n:"1", starters:["En une phrase, le Plug & Charge permet de…","L'idée, c'est de remplacer… par…","Autrement dit,…"],
+    q:"En une phrase, qu'est-ce que le Plug & Charge permet de faire ?",
+    model:"« En une phrase, le Plug & Charge permet de lancer une recharge simplement en branchant le câble, sans badge ni application : le véhicule s'identifie tout seul auprès de la borne, qui demande l'autorisation à l'opérateur de mobilité. L'idée, c'est de remplacer un geste d'identification par une reconnaissance automatique. »"},
+   {t:"open", k:"g2", n:"2", starters:["Le paradoxe de la vidéo, c'est que…","Plus c'est simple devant, plus…","C'est résumé par la phrase :…"],
+    q:"Quel paradoxe Pierre formule-t-il à la fin de la démonstration ?",
+    hint:"La phrase se trouve autour de 5:49.",
+    model:"« Le paradoxe, c'est que la simplicité visible coûte très cher en complexité invisible. Plus l'expérience est fluide pour l'utilisateur, plus l'architecture technique derrière est lourde. C'est résumé par la phrase : « dix fois plus compliqué dans les coulisses pour que ce soit dix fois plus simple pour les utilisateurs ». »"}
+  ]},
+  {t:"card", h3:"B. La structure de l'entretien", sub:"Cliquez sur les parties dans leur ordre d'apparition.", blocks:[
+   {t:"order", k:"g3", prompt:"Remettez les six moments dans l'ordre de la vidéo.",
+    items:[
+     {id:"A", label:"La différence avec Tesla"},
+     {id:"B", label:"La définition du Plug & Charge"},
+     {id:"C", label:"L'activation avec le numéro VIN"},
+     {id:"D", label:"La démonstration sur la borne"},
+     {id:"E", label:"Plug & Charge ou Autocharge ?"},
+     {id:"F", label:"La complexité technique à trois acteurs"}
+    ],
+    solution:["B","F","C","A","E","D"]}
+  ]},
+  {t:"card", h3:"C. Les noms cités", sub:"Associez chaque nom à son rôle dans la vidéo.", blocks:[
+   {t:"match", k:"g4",
+    options:["la norme technique du Plug & Charge","l'opérateur de mobilité qui présente la solution","le réseau de bornes de la démonstration","le constructeur du véhicule d'essai","la solution pour les véhicules non compatibles","le règlement européen qui rend la norme obligatoire"],
+    rows:[
+     {left:"ISO 15118", answer:"la norme technique du Plug & Charge"},
+     {left:"Chargemap", answer:"l'opérateur de mobilité qui présente la solution"},
+     {left:"Allego", answer:"le réseau de bornes de la démonstration"},
+     {left:"BMW", answer:"le constructeur du véhicule d'essai"},
+     {left:"l'Autocharge", answer:"la solution pour les véhicules non compatibles"},
+     {left:"l'AFIR", answer:"le règlement européen qui rend la norme obligatoire"}
+    ]}
+  ]},
+  {t:"card", h3:"D. Votre ressenti d'écoute", sub:"Cette réponse détermine nos priorités en classe.", blocks:[
+   {t:"open", k:"g5", n:"", starters:["Ce qui m'a le plus gênée, c'est…","J'ai décroché au moment où…","En revanche, je n'ai eu aucun mal à suivre…"],
+    q:"Qu'est-ce qui a été le plus difficile : le débit de Pierre, les explications techniques de l'invité, les mots anglais insérés dans le français ?",
+    hint:"Soyez précise. « L'écoute » est trop vague ; « les phrases où il enchaîne trois conditions » est exploitable."}
+  ]}
+ ]
+},
+{
+ id:"seg", title:"2ᵉ visionnage — les sept segments", time:"15 min",
+ lede:"Pour chaque segment : le contenu en bref, les objectifs, un repérage rapide, puis trois questions — compréhension, débat, réflexion — et un focus langue. Pauses et sous-titres français autorisés.",
+ blocks: SEGS.map(segCard).concat([
+  {t:"callout", ct:"Question de synthèse — la première que je vous poserai en classe", h:"<p>Expliquez-moi le Plug & Charge comme si j'étais un élu local qui n'y connaît rien, en une minute, sans employer le mot « protocole ».</p>"},
+  {t:"card", blocks:[{t:"open", k:"sy1", n:"", starters:["Imaginez que votre voiture ait une carte d'identité…","Aujourd'hui, il faut sortir un badge ; demain,…","Pour vous, concrètement, ça veut dire que…"],
+    q:"Préparez trois ou quatre phrases, sans jargon.",
+    model:"« Imaginez que votre voiture ait une carte d'identité intégrée. Aujourd'hui, quand vous arrivez à une borne, vous devez sortir un badge ou ouvrir une application. Demain, vous branchez simplement le câble : la borne reconnaît la voiture, vérifie auprès de votre fournisseur que vous avez bien un contrat, et la charge démarre. Pour vos administrés, concrètement, ça veut dire une borne qu'on utilise comme une prise, sans rien sortir de sa poche. »"}]}
+ ])
+},
+{
+ id:"ec", title:"Atelier — les phrases clés à l'oral", time:"6 min",
+ lede:"Quatre phrases de la vidéo qui contiennent des structures très fréquentes en réunion. Réécoutez-les, puis réemployez-les sur votre propre travail.",
+ blocks:[
+  {t:"callout", ct:"Méthode, pour chaque extrait", h:"<p>Écoutez <strong>3 fois</strong> sans rien lire. Puis lisez la phrase et réécoutez. Enfin, <strong>répétez à voix haute en imitant le rythme et l'intonation</strong> — c'est cette dernière étape qui fait la différence, et c'est celle qu'on saute toujours.</p>"},
+  {t:"clip", sec:45, title:"La définition en parallèle", quote:"C'est un nouveau protocole de communication entre, d'un côté, le véhicule, et, de l'autre, les bornes.",
+   focus:"<p><strong>« d'un côté…, de l'autre… »</strong> met deux éléments en parallèle et structure instantanément une explication. Très utile pour poser une architecture, une négociation ou un arbitrage.</p><p>Variantes : <em>d'une part…, d'autre part…</em> (plus formel) · <em>entre X et Y</em> · <em>au milieu, il y a…</em></p>",
+   ex:[{k:"e1a", q:"Décrivez avec cette structure la relation entre deux acteurs de votre écosystème.", model:"« C'est un accord d'itinérance entre, <strong>d'un côté</strong>, l'opérateur qui détient le client, et <strong>de l'autre</strong>, celui qui exploite la borne. Au milieu, il y a une plateforme qui fait passer les autorisations et répartit les recettes. »"}]},
+  {t:"clip", sec:118, title:"Les conditions cumulatives", quote:"Il faut que toutes les étoiles s'alignent pour que ça fonctionne.",
+   focus:"<p>Deux subjonctifs dans une seule phrase : <strong>il faut que</strong> + subjonctif, et <strong>pour que</strong> + subjonctif. C'est la construction la plus rentable de la vidéo, parce qu'elle sert à poser des conditions dans n'importe quelle réunion.</p><p><em>Pour que le dossier <strong>passe</strong>, il faut que la collectivité <strong>ait</strong> délibéré et que le raccordement <strong>soit</strong> validé.</em></p><p><strong>Attention :</strong> <em>pour que</em> + subjonctif, mais <em>pour</em> + infinitif quand le sujet est le même : <em>pour obtenir l'autorisation, nous devons…</em></p>",
+   ex:[{k:"e2a", q:"Énoncez trois conditions cumulatives d'un de vos projets, avec « il faut que » et « pour que ».", model:"« <strong>Pour que</strong> la borne soit opérationnelle en mars, il faut que la licence municipale <strong>soit</strong> délivrée en janvier, que le distributeur <strong>ait</strong> confirmé la puissance disponible, et que l'installateur <strong>puisse</strong> intervenir sur la semaine prévue. »"}]},
+  {t:"clip", sec:189, title:"Une seule fois, et c'est tout", quote:"Il suffira de faire cette opération qu'une seule fois, et ensuite, arriver sur une borne compatible, brancher, et ça devrait fonctionner.",
+   focus:"<p>Trois outils en une phrase. <strong>Il suffira de</strong> + infinitif : une seule action est nécessaire. <strong>ne… que</strong> : la restriction — ici, le <em>ne</em> tombe à l'oral, mais vous le gardez en réunion. <strong>ça devrait fonctionner</strong> : le conditionnel d'atténuation, qui annonce sans promettre.</p><p>C'est le trio exact d'une réponse commerciale prudente : <em>il suffit de…, une seule fois, et normalement ça fonctionne</em>.</p>",
+   ex:[{k:"e3a", q:"Répondez à un client qui demande si une démarche est compliquée, en employant les trois outils.", model:"« Il <strong>suffit de</strong> nous transmettre le justificatif une fois, au moment de l'ouverture du compte. Vous <strong>n'</strong>aurez à le faire <strong>qu'</strong>une seule fois. Ensuite, toutes vos sessions seront rattachées automatiquement, et <strong>ça devrait</strong> se faire sans aucune intervention de votre part. »"}]},
+  {t:"clip", sec:368, title:"L'obligation réglementaire", quote:"Il y a une réglementation européenne qui va imposer aux opérateurs de bornes de recharge d'avoir le Plug & Charge sur leurs bornes à partir de 2026.",
+   focus:"<p><strong>imposer à quelqu'un de faire quelque chose.</strong> La construction est double et fautive dans 80 % des cas chez les hispanophones. On n'impose pas <s>quelqu'un de faire</s>, ni <s>quelqu'un à faire</s>.</p><p>Même schéma : <em>demander <strong>à</strong> quelqu'un <strong>de</strong> faire</em> · <em>permettre <strong>à</strong> quelqu'un <strong>de</strong> faire</em> · <em>interdire <strong>à</strong> quelqu'un <strong>de</strong> faire</em> · <em>proposer <strong>à</strong> quelqu'un <strong>de</strong> faire</em>.</p><p>Et pour les échéances : <em><strong>à partir de</strong> 2026</em> (début) · <em><strong>d'ici</strong> 2027</em> (avant cette date) · <em><strong>à l'horizon</strong> 2027</em> (approximatif).</p>",
+   ex:[{k:"e4a", q:"Formulez une obligation réglementaire espagnole avec cette construction, et datez-la.", model:"« La réglementation <strong>impose aux</strong> opérateurs <strong>de</strong> déclarer leurs points de recharge dans un registre national. Elle <strong>leur interdit de</strong> facturer sans afficher le prix au kWh, et elle s'applique <strong>à partir de</strong> l'an prochain. »"}]},
+  {t:"card", h3:"Bilan de l'atelier", blocks:[
+   {t:"open", k:"e5", n:"", starters:["La structure que je veux vraiment m'approprier, c'est…","J'ai encore du mal avec…"],
+    q:"Laquelle de ces quatre structures voulez-vous employer dès votre prochaine réunion ?"}
+  ]}
+ ]
+},
+{
+ id:"dis", title:"Fait, argument commercial ou hypothèse ?", time:"5 min",
+ lede:"Cette vidéo est financée par Chargemap et le dit dès la première seconde. Elle mêle donc en permanence des faits vérifiables, des arguments de vente et des prévisions. Les distinguer à l'oreille, en français, est exactement ce qu'on attendra de vous le 30 septembre.",
+ blocks:[
+  {t:"card", h3:"Les quatre types", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li><strong>Fait vérifiable</strong> — un nom de norme, une date, un chiffre. <em>On peut le contrôler.</em></li>"+
+     "<li><strong>Argument commercial</strong> — un bénéfice présenté comme évident, souvent avec un comparatif (<em>beaucoup plus fluide</em>). <em>Vrai peut-être, mais orienté.</em></li>"+
+     "<li><strong>Analyse technique</strong> — une explication de fonctionnement, des conditions. <em>Neutre, descriptif.</em></li>"+
+     "<li><strong>Hypothèse ou prévision</strong> — <em>on peut raisonnablement penser</em>, <em>je pense que</em>, <em>ça devrait</em>. <em>Non garanti.</em></li>"+
+     "</ul></div>"}
+  ]},
+  {t:"card", h3:"À vous de classer", sub:"Le signal linguistique est votre indice principal — il est mis en évidence.", blocks:[
+   {t:"classify", k:"cl1",
+    cats:["Fait vérifiable","Argument commercial","Analyse technique","Hypothèse ou prévision"],
+    items:[
+     {q:"« Cette vidéo vous est présentée avec le <b>soutien</b> de Chargemap. »", a:"Argument commercial"},
+     {q:"« D'un point de vue technique, <b>ISO 15118</b>. »", a:"Fait vérifiable"},
+     {q:"« C'est une expérience <b>beaucoup plus fluide</b> de recharge. »", a:"Argument commercial"},
+     {q:"« Il faut que le véhicule <b>soit</b> compatible, que l'opérateur <b>soit</b> certifié, et que l'opérateur de mobilité le <b>soit</b> aussi. »", a:"Analyse technique"},
+     {q:"« Une réglementation européenne va imposer le Plug & Charge sur les nouvelles bornes <b>à partir de 2026</b>. »", a:"Fait vérifiable"},
+     {q:"« <b>On peut raisonnablement penser</b> que les constructeurs vont aussi s'y mettre. »", a:"Hypothèse ou prévision"},
+     {q:"« <b>Je ne connais pas les détails techniques</b> chez Tesla, mais… »", a:"Hypothèse ou prévision"},
+     {q:"« Aujourd'hui, on en a à peu près une <b>quarantaine</b> de fabricants compatibles. »", a:"Fait vérifiable"},
+     {q:"« L'Autocharge récupère d'autres infos du véhicule, <b>d'une autre façon</b>, pour les rattacher au compte. »", a:"Analyse technique"},
+     {q:"« <b>Votre compagnon de route préféré</b> pour voyager sereinement en voiture électrique. »", a:"Argument commercial"}
+    ]}
+  ]},
+  {t:"card", h3:"Pourquoi cet exercice compte pour vous", sub:"Ce n'est pas un exercice de méfiance, c'est un exercice de positionnement.", blocks:[
+   {t:"note", h:"<div class='prose'><p>Le 30 septembre, vous serez dans une salle où des acteurs présentent leurs solutions. Vous devrez, en français et en temps réel, séparer ce qui est établi de ce qui est promis — et le dire sans vexer personne. Trois formules suffisent :</p>"+
+     "<ul>"+
+     "<li>« Sur le principe, c'est clair. En revanche, <strong>à quelle échéance</strong> exactement ? »</li>"+
+     "<li>« Vous avez des <strong>chiffres</strong> là-dessus, ou c'est encore une projection ? »</li>"+
+     "<li>« Je comprends l'intérêt. Concrètement, <strong>qu'est-ce que ça suppose</strong> de notre côté ? »</li>"+
+     "</ul></div>"},
+   {t:"open", k:"dis2", n:"", starters:["Sur le principe, c'est clair. En revanche,…","Vous avez des chiffres là-dessus, ou…","Concrètement, qu'est-ce que ça suppose de notre côté ?"],
+    q:"Formulez deux questions que vous poseriez à un intervenant après une présentation comme celle-ci.",
+    model:"« Sur le principe, c'est clair. En revanche, à quelle échéance vos bornes seront-elles effectivement certifiées, et sur quelle part du parc ? » · « Je comprends l'intérêt. Concrètement, qu'est-ce que ça suppose de notre côté, en termes de certification et de délais ? » Dans les deux cas, vous montrez que vous suivez, et vous ramenez la conversation sur du vérifiable. »"}
+  ]}
+ ]
+},
+{
+ id:"met", title:"Et dans votre métier ?", time:"5 min",
+ lede:"Préparez ces trois questions en notes — quelques mots-clés, pas des phrases rédigées. En classe, vous parlerez à partir de ces notes sans les lire. C'est exactement le format d'une prise de parole en réunion.",
+ blocks:[
+  {t:"card", h3:"1. L'Autocharge chez Repsol", sub:"L'Anuario AEDIVE indique que l'Autocharge représente déjà environ 11 % de l'énergie délivrée sur les points concernés.", tc:[{sec:264,l:"4:24"}], blocks:[
+   {t:"open", k:"m1", n:"", starters:["Nous avons fait ce choix parce que…","L'avantage immédiat, c'est…","La limite, en revanche,…"],
+    q:"Pourquoi Repsol a-t-il misé sur l'Autocharge plutôt que d'attendre le Plug & Charge ? Et que changerait le passage à la norme ?",
+    hint:"Deux minutes de préparation. C'est le sujet sur lequel vous êtes la plus légitime de la salle."}
+  ]},
+  {t:"card", h3:"2. L'échéance 2026 et les délais réels", sub:"Le règlement impose la norme aux nouvelles bornes dès 2026. L'Anuario rappelle qu'une mise en service peut demander jusqu'à dix-huit mois.", tc:[{sec:368,l:"6:08"}], blocks:[
+   {t:"open", k:"m2", n:"", starters:["Sur le papier, l'échéance est claire :…","Sauf qu'en Espagne, le vrai délai, c'est…","Ce décalage signifie que…"],
+    q:"Quel décalage voyez-vous entre le calendrier réglementaire et les délais administratifs réels ? Comment le formuleriez-vous en public, sans accuser personne ?",
+    hint:"C'est la position officielle de Repsol dans l'Anuario : minimiser les barrières administratives. Vous pouvez donc la tenir."}
+  ]},
+  {t:"card", h3:"3. Interopérabilité : opportunité ou menace ?", sub:"Le Plug & Charge vise « l'ensemble de l'écosystème » : n'importe quel véhicule sur n'importe quelle borne.", tc:[{sec:206,l:"3:26"}], blocks:[
+   {t:"open", k:"m3", n:"", starters:["Je dirais que c'est surtout une opportunité, à une condition :…","Ce que nous y gagnons, c'est…; ce que nous y perdons,…","Sur ce point, je préfère rester prudente :…"],
+    q:"Pour un opérateur comme Repsol, l'interopérabilité totale est-elle une opportunité ou une menace ? Préparez une réponse nuancée, tenable en public.",
+    hint:"Une réponse tranchée serait une faute professionnelle. Nommez les conditions, pas les verdicts."}
+  ]},
+  {t:"callout", ct:"Production orale — 90 secondes", h:"<p>Enregistrez-vous en répondant à <strong>une seule</strong> de ces trois questions, pendant <strong>90 secondes, sans vous arrêter</strong>, même si vous faites des erreurs. Réécoutez-vous une fois, puis répondez à la question ci-dessous. Envoyez-moi l'enregistrement avant la séance.</p>"},
+  {t:"card", blocks:[
+   {t:"open", k:"m4", n:"", starters:["Le mot qui m'a manqué, c'est…","J'ai commencé une phrase par… et je n'ai pas su la finir.","Je me suis reprise plusieurs fois sur…"],
+    q:"Après réécoute : quel <strong>mot vous a manqué</strong>, et quelle <strong>phrase avez-vous abandonnée</strong> en cours de route ?",
+    hint:"Ces deux éléments valent une demi-heure de cours. Notez-les précisément."}
+  ]}
+ ]
+},
+{
+ id:"bil", title:"Bilan", time:"3 min",
+ lede:"À remplir après votre travail en autonomie. C'est ce bilan qui déterminera nos priorités en classe.",
+ blocks:[
+  {t:"card", h3:"Mes trois expressions", sub:"Trois tournures de la vidéo, chacune dans une phrase sur votre travail.", blocks:[
+   {t:"open", k:"b1", n:"", starters:["1. Une usine à gaz :…","2. Il faut que… pour que…","3. Ça devrait…"],
+    q:"Mes trois expressions à réemployer cette semaine :",
+    model:"« 1. Notre circuit de validation des implantations est devenu une usine à gaz. 2. Pour que la borne ouvre en mars, il faut que la licence soit délivrée avant février. 3. Avec le nouveau process, ça devrait se régler en trois semaines — mais je ne m'avance pas. »"}
+  ]},
+  {t:"card", h3:"Mes passages incompris", sub:"Deux moments précis où vous avez décroché. Nous les réécouterons ensemble.", blocks:[
+   {t:"open", k:"b2", n:"", starters:["Vers …:…, j'ai cru comprendre que…","J'ai complètement décroché à partir de…"],
+    q:"Indiquez le minutage et ce que vous avez cru comprendre."}
+  ]},
+  {t:"card", h3:"Mon auto-évaluation", blocks:[
+   {t:"scale", k:"b3", cols:["Difficile","Correct","À l'aise"], rows:[
+    "Expliquer le Plug & Charge en une phrase, sans jargon",
+    "Décrire une procédure étape par étape",
+    "Employer le subjonctif après « il faut que » et « pour que »",
+    "Atténuer une affirmation (« on va dire », « ça devrait »)",
+    "Employer une formule de réserve sans paraître fermée",
+    "Distinguer un fait d'un argument commercial",
+    "Parler de mon réseau et de mes chiffres en français"
+   ]}
+  ]},
+  {t:"card", h3:"Ce que je veux travailler en priorité", sub:"Une seule chose, et soyez précise.", blocks:[
+   {t:"open", k:"b4", n:"", starters:["Ce que je veux travailler en priorité, c'est…","Concrètement, j'aimerais arriver à…"],
+    q:"« L'oral » est trop vague. « Répondre à une question technique sans chercher mes mots pendant cinq secondes » est exploitable."}
+  ]},
+  {t:"callout", ct:"Avant Paris", h:"<p>L'objectif n'était pas de retenir la vidéo, mais de <strong>pouvoir en parler</strong> : expliquer, nuancer, et répondre sans vous engager au-delà de ce que vous pouvez dire. Relisez vos réponses aux trois questions du métier la veille du 30 septembre.</p><p class='small muted'>Cliquez sur « Exporter mes réponses » pour récupérer l'ensemble de votre travail et me l'envoyer.</p>"},
+  {t:"export"}
+ ]
+}
+];
+/* ---------------- activity registry ---------------- */
+var ACTS = [];
+function reg(k){ if(ACTS.indexOf(k)<0) ACTS.push(k); }
+(function scan(){
+  function walk(bs){
+    bs.forEach(function(b){
+      if(b.t==="open") reg(b.k);
+      else if(b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale") reg(b.k);
+      else if(b.t==="gaps") reg(b.k);
+      else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ reg(x.k); }); }
+      else if(b.t==="card"&&b.blocks) walk(b.blocks);
+    });
+  }
+  STEPS.forEach(function(s){ walk(s.blocks); });
+})();
+
+function isDone(k){
+  var v = state.a[k];
+  if(v==null) return false;
+  if(typeof v === "string") return v.trim().length>2;
+  if(typeof v === "object") return Object.keys(v).length>0;
+  return false;
+}
+function stepDone(s){
+  var ks = stepKeys(s);
+  if(!ks.length) return false;
+  var n=0; ks.forEach(function(k){ if(isDone(k)) n++; });
+  return n >= Math.ceil(ks.length*0.7);
+}
+function stepKeys(s){
+  var out=[];
+  function walk(bs){ bs.forEach(function(b){
+    if(b.t==="open"||b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale"||b.t==="gaps"){ if(b.k) out.push(b.k); }
+    else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ out.push(x.k); }); }
+    else if(b.t==="card"&&b.blocks) walk(b.blocks);
+  });}
+  walk(s.blocks); return out;
+}
+
+/* ---------------- renderers ---------------- */
+function mkReveal(labelText, contentHTML){
+  var wrap = el("div");
+  var btn = el("button","btn btn-ghost small", labelText||"Voir une réponse possible");
+  var box = html("div","reveal","<div class='rt'>Réponse possible — un modèle, pas une correction</div>"+contentHTML);
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? (labelText||"Voir une réponse possible") : "Masquer";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+
+function rOpen(b){
+  var n = el("div","q");
+  var lbl = el("div","q-lbl");
+  if(b.n) lbl.appendChild(el("span","q-n", b.n+"."));
+  lbl.appendChild(html("div","q-t", b.q));
+  n.appendChild(lbl);
+  if(b.hint) n.appendChild(html("div","q-hint", b.hint));
+  var ta = el("textarea");
+  ta.id = "f_"+b.k;
+  ta.placeholder = "Votre réponse…";
+  ta.value = state.a[b.k] || "";
+  var flag = el("span","saved","enregistré");
+  function touched(){
+    state.a[b.k] = ta.value; saveSoon(); flag.classList.add("on");
+    clearTimeout(ta._t); ta._t = setTimeout(function(){ flag.classList.remove("on"); },1200);
+    updateProgress();
+  }
+  ta.addEventListener("input", touched);
+  if(b.starters && b.starters.length){
+    var sw = el("div","starters");
+    sw.appendChild(el("span","starters-lbl","Amorces — cliquez pour insérer"));
+    b.starters.forEach(function(st){
+      var bt = el("button","starter", st); bt.type = "button";
+      bt.setAttribute("aria-label", "Insérer l'amorce : "+st);
+      bt.addEventListener("click", function(){
+        var cur = ta.value;
+        ta.value = (cur && !/\s$/.test(cur) ? cur+" " : cur) + st + " ";
+        ta.focus();
+        try{ ta.setSelectionRange(ta.value.length, ta.value.length); }catch(e){}
+        touched();
+      });
+      sw.appendChild(bt);
+    });
+    n.appendChild(sw);
+  }
+  n.appendChild(ta);
+  var foot = el("div","row");
+  foot.appendChild(flag);
+  n.appendChild(foot);
+  if(b.model) n.appendChild(mkReveal(null, "<div>"+b.model+"</div>"));
+  return n;
+}
+
+function rTf(b){
+  var wrap = el("div","tf-list");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","tf-item");
+    var top = el("div","tf-top");
+    top.appendChild(html("div","tf-txt","<strong style='font-family:var(--mono);font-size:12px;color:var(--muted)'>"+(i+1)+"</strong> &nbsp;"+it.q));
+    var btns = el("div","tf-btns");
+    var verdict = html("div","verdict","");
+    verdict.hidden = true;
+    function apply(val){
+      store[i] = val; saveSoon();
+      bV.setAttribute("aria-pressed", val==="V"?"true":"false");
+      bF.setAttribute("aria-pressed", val==="F"?"true":"false");
+      var right = (val==="V") === it.a;
+      box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+      verdict.hidden = false;
+      verdict.innerHTML = "<span class='vi'>"+(right?"✓ Exact":"✗ Non")+"</span><span>"+it.j+"</span>";
+      updateProgress();
+    }
+    var bV = el("button","pick","Vrai"); bV.type="button"; bV.setAttribute("aria-pressed","false");
+    var bF = el("button","pick","Faux"); bF.type="button"; bF.setAttribute("aria-pressed","false");
+    bV.addEventListener("click", function(){ apply("V"); });
+    bF.addEventListener("click", function(){ apply("F"); });
+    btns.appendChild(bV); btns.appendChild(bF);
+    top.appendChild(btns);
+    box.appendChild(top); box.appendChild(verdict);
+    wrap.appendChild(box);
+    if(store[i]) apply(store[i]);
+  });
+  return wrap;
+}
+
+function rGaps(b){
+  var wrap = el("div","gaps");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var inputs = [];
+  b.fields.forEach(function(f){
+    var row = el("div","gap-row");
+    row.appendChild(html("div","gap-lbl", f.label));
+    var box = el("div","gap-in");
+    var inp = document.createElement("input");
+    inp.type="text"; inp.id = "f_"+b.k+"_"+f.k;
+    inp.value = store[f.k] || "";
+    inp.setAttribute("aria-label", f.label.replace(/<[^>]+>/g,""));
+    inp.addEventListener("input", function(){
+      store[f.k] = inp.value; inp.classList.remove("ok","no"); sol.textContent=""; saveSoon(); updateProgress();
+    });
+    box.appendChild(inp);
+    if(f.suf) box.appendChild(el("span","gap-suf", f.suf));
+    var sol = el("span","gap-sol","");
+    box.appendChild(sol);
+    row.appendChild(box);
+    wrap.appendChild(row);
+    inputs.push({inp:inp, f:f, sol:sol});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    inputs.forEach(function(o){
+      var right = matches(o.inp.value, o.f.answers);
+      o.inp.classList.toggle("ok", right); o.inp.classList.toggle("no", !right);
+      o.sol.textContent = right ? "✓" : ("→ "+o.f.sol);
+      o.sol.style.color = right ? "var(--ok)" : "var(--no)";
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rOrder(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="11px";
+  if(b.prompt) wrap.appendChild(html("div","q-t", b.prompt));
+  var slot = el("div","ord-slot");
+  var pool = el("div","ord-pool");
+  var chosen = (state.a[b.k] && state.a[b.k].seq) ? state.a[b.k].seq.slice() : [];
+  function render(){
+    slot.innerHTML=""; pool.innerHTML="";
+    if(!chosen.length){ slot.appendChild(el("span","ph","Cliquez les éléments dans l'ordre…")); }
+    chosen.forEach(function(id, i){
+      var it = b.items.filter(function(x){return x.id===id;})[0];
+      var s = el("div","seq");
+      s.appendChild(el("span","sn",(i+1)+"."));
+      s.appendChild(el("span",null,it.label));
+      slot.appendChild(s);
+    });
+    b.items.forEach(function(it){
+      var c = el("button","chip"); c.type="button";
+      c.innerHTML = "<span class='ck'>"+it.id+"</span>"+it.label;
+      if(chosen.indexOf(it.id)>=0) c.disabled = true;
+      c.addEventListener("click", function(){
+        chosen.push(it.id);
+        state.a[b.k] = {seq:chosen.slice()}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent="";
+        render(); updateProgress();
+      });
+      pool.appendChild(c);
+    });
+  }
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  var undo = el("button","btn btn-ghost","Recommencer");
+  var msg = el("span","small");
+  check.addEventListener("click", function(){
+    if(chosen.length !== b.solution.length){ msg.textContent="Placez d'abord tous les éléments."; msg.style.color="var(--muted)"; return; }
+    var right = chosen.join("") === b.solution.join("");
+    slot.classList.toggle("ok", right); slot.classList.toggle("no", !right);
+    msg.textContent = right ? "✓ C'est l'ordre du reportage." : ("✗ L'ordre est : "+b.solution.join(" → "));
+    msg.style.color = right ? "var(--ok)" : "var(--no)";
+  });
+  undo.addEventListener("click", function(){
+    chosen = []; state.a[b.k]={seq:[]}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent=""; render(); updateProgress();
+  });
+  bar.appendChild(check); bar.appendChild(undo); bar.appendChild(msg);
+  wrap.appendChild(slot); wrap.appendChild(pool); wrap.appendChild(bar);
+  render();
+  return wrap;
+}
+
+function rMatch(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var sels = [];
+  b.rows.forEach(function(r, i){
+    var row = el("div","mt-row");
+    row.appendChild(html("div","mt-left", r.left));
+    var s = document.createElement("select");
+    s.id = "f_"+b.k+"_"+i;
+    s.setAttribute("aria-label", r.left);
+    var o0 = document.createElement("option"); o0.value=""; o0.textContent="— choisir —"; s.appendChild(o0);
+    b.options.forEach(function(op){
+      var o = document.createElement("option"); o.value=op; o.textContent=op; s.appendChild(o);
+    });
+    s.value = store[i] || "";
+    s.addEventListener("change", function(){ store[i]=s.value; s.classList.remove("ok","no"); saveSoon(); updateProgress(); });
+    row.appendChild(s);
+    wrap.appendChild(row);
+    sels.push({s:s, r:r});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    sels.forEach(function(o){
+      var right = o.s.value === o.r.answer;
+      o.s.classList.toggle("ok", right); o.s.classList.toggle("no", !right);
+      if(!right && o.s.value) o.s.title = "Réponse attendue : "+o.r.answer;
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rClassify(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","cl-item");
+    box.appendChild(html("div","cl-q", it.q));
+    var opts = el("div","cl-opts");
+    var btns = [];
+    function paint(){
+      var v = store[i];
+      btns.forEach(function(x){ x.b.setAttribute("aria-pressed", x.c===v ? "true":"false"); });
+      if(v){
+        var right = v === it.a;
+        box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+        fb.hidden = false;
+        fb.innerHTML = right ? "<span class='vi'>✓ Exact</span>" : "<span class='vi'>✗ Non</span><span>Il s'agit d'un énoncé de type « "+it.a+" ».</span>";
+      }
+    }
+    b.cats.forEach(function(c){
+      var bt = el("button","pick", c); bt.type="button"; bt.setAttribute("aria-pressed","false");
+      bt.style.minWidth="auto";
+      bt.addEventListener("click", function(){ store[i]=c; saveSoon(); paint(); updateProgress(); });
+      opts.appendChild(bt); btns.push({b:bt,c:c});
+    });
+    var fb = html("div","verdict",""); fb.hidden = true;
+    box.appendChild(opts); box.appendChild(fb);
+    wrap.appendChild(box);
+    paint();
+  });
+  return wrap;
+}
+
+function rCards(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="22px";
+  b.groups.forEach(function(g, gi){
+    var grp = el("div","grp");
+    grp.appendChild(el("div","grp-h", g.name));
+    var grid = el("div","cgrid");
+    g.items.forEach(function(pair, ii){
+      var id = gi+"-"+ii;
+      var c = el("button","fc"); c.type="button";
+      var term = el("div","term", pair[0]);
+      var tap = el("div","tap","cliquer pour la définition");
+      var def = el("div","def", pair[1]); def.hidden = true;
+      var mark = el("span","fc-mark","?");
+      c.appendChild(mark); c.appendChild(term); c.appendChild(tap); c.appendChild(def);
+      function paint(){
+        var known = !!state.known[id];
+        c.classList.toggle("known", known);
+        mark.textContent = known ? "su" : "?";
+      }
+      c.addEventListener("click", function(){
+        if(def.hidden){ def.hidden=false; tap.hidden=true; }
+        else { state.known[id] = !state.known[id]; saveSoon(); paint(); }
+      });
+      paint();
+      grid.appendChild(c);
+    });
+    grp.appendChild(grid);
+    wrap.appendChild(grp);
+  });
+  wrap.appendChild(html("div","small muted","<em>Premier clic : la définition. Second clic : marquer la carte comme sue.</em>"));
+  return wrap;
+}
+
+function rClip(b){
+  var box = el("div","clip");
+  var head = el("div","clip-h");
+  head.appendChild(el("h3", null, b.title));
+  head.appendChild(tcLink(b.sec, "vers "+mmss(b.sec)));
+  box.appendChild(head);
+  var bq = el("blockquote"); bq.textContent = "« "+b.quote+" »";
+  box.appendChild(bq);
+  box.appendChild(html("div","prose", b.focus));
+  (b.ex||[]).forEach(function(x){
+    box.appendChild(el("hr","hr"));
+    box.appendChild(rOpen({t:"open", k:x.k, q:x.q, model:x.model}));
+  });
+  return box;
+}
+
+function rScale(b){
+  var wrap = el("div","sc-wrap");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var tbl = el("table","sc-tbl");
+  var thead = el("thead"); var trh = el("tr");
+  trh.appendChild(el("th",null,"Je suis capable de…"));
+  b.cols.forEach(function(c){ trh.appendChild(el("th",null,c)); });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  var tb = el("tbody");
+  b.rows.forEach(function(r, i){
+    var tr = el("tr");
+    tr.appendChild(el("td",null,r));
+    var btns=[];
+    b.cols.forEach(function(c, ci){
+      var td = el("td");
+      var bt = el("button","rad"); bt.type="button";
+      bt.setAttribute("aria-label", r+" : "+c);
+      bt.setAttribute("aria-pressed", store[i]===ci ? "true":"false");
+      bt.addEventListener("click", function(){
+        store[i]=ci; saveSoon();
+        btns.forEach(function(o,oi){ o.setAttribute("aria-pressed", oi===ci ? "true":"false"); });
+        updateProgress();
+      });
+      btns.push(bt); td.appendChild(bt); tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb); wrap.appendChild(tbl);
+  return wrap;
+}
+
+function rPlay(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct","Visionnage"));
+  var row = el("div","row");
+  var a = tcLink(b.sec, b.label);
+  a.style.fontSize="13.5px"; a.style.padding="7px 13px";
+  row.appendChild(a);
+  row.appendChild(el("span","small muted", b.note||""));
+  box.appendChild(row);
+  return box;
+}
+
+function rExport(){
+  var box = el("div","card");
+  box.appendChild(html("h3",null,"Envoyer mes réponses au formateur"));
+  box.appendChild(html("p","sub","Vos réponses sont enregistrées dans ce navigateur. Le bouton ci-dessous rassemble tout dans un texte que vous pouvez copier et m'envoyer par e-mail ou message."));
+  var b = el("button","btn btn-primary","Préparer mon récapitulatif");
+  b.addEventListener("click", openExport);
+  var row = el("div","row"); row.appendChild(b);
+  box.appendChild(row);
+  return box;
+}
+
+function rNote(b){ return html("div","prose", b.h); }
+function rCallout(b){
+  var box = el("div","callout");
+  if(b.ct) box.appendChild(el("div","ct", b.ct));
+  box.appendChild(html("div","prose", b.h));
+  return box;
+}
+
+function renderBlock(b){
+  switch(b.t){
+    case "note": return rNote(b);
+    case "callout": return rCallout(b);
+    case "open": return rOpen(b);
+    case "tf": return rTf(b);
+    case "gaps": return rGaps(b);
+    case "order": return rOrder(b);
+    case "match": return rMatch(b);
+    case "classify": return rClassify(b);
+    case "cards": return rCards(b);
+    case "clip": return rClip(b);
+    case "scale": return rScale(b);
+    case "play": return rPlay(b);
+    case "export": return rExport();
+    case "card": {
+      var c = el("div","card");
+      if(b.h3){
+        var hr = el("div","row");
+        hr.style.justifyContent="space-between";
+        hr.appendChild(el("h3",null,b.h3));
+        if(b.tc){ var g=el("div","row"); b.tc.forEach(function(t){ g.appendChild(tcLink(t.sec,t.l)); }); hr.appendChild(g); }
+        c.appendChild(hr);
+      } else if(b.tc){
+        var g2=el("div","row"); b.tc.forEach(function(t){ g2.appendChild(tcLink(t.sec,t.l)); }); c.appendChild(g2);
+      }
+      if(b.sub) c.appendChild(el("p","sub", b.sub));
+      (b.blocks||[]).forEach(function(x){ c.appendChild(renderBlock(x)); });
+      return c;
+    }
+  }
+  return el("div");
+}
+
+/* ---------------- shell render ---------------- */
+var main = document.getElementById("main");
+var rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  STEPS.forEach(function(s, i){
+    var li = el("li","rail-item");
+    var b = el("button","rl"); b.type="button";
+    b.setAttribute("aria-current", i===state.step ? "true":"false");
+    if(stepDone(s)) b.classList.add("is-done");
+    b.appendChild(el("span","rl-num", String(i+1).padStart(2,"0")));
+    b.appendChild(el("span","rl-title", s.title));
+    b.addEventListener("click", function(){ go(i); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+}
+
+function renderStep(){
+  var s = STEPS[state.step];
+  main.innerHTML="";
+  var sec = el("section","step");
+  var head = el("div","step-head");
+  var eye = el("div","eyebrow");
+  eye.appendChild(el("span",null,"Étape "+String(state.step+1).padStart(2,"0")+" / "+String(STEPS.length).padStart(2,"0")));
+  eye.appendChild(el("span","dot"));
+  eye.appendChild(el("span",null,s.time));
+  head.appendChild(eye);
+  head.appendChild(el("h2",null,s.title));
+  if(s.lede) head.appendChild(el("p","lede", s.lede));
+  sec.appendChild(head);
+  s.blocks.forEach(function(b){ sec.appendChild(renderBlock(b)); });
+
+  var nav = el("div","stepnav");
+  var prev = el("button","btn","← "+(state.step>0 ? STEPS[state.step-1].title : "Début"));
+  prev.disabled = state.step===0;
+  if(prev.disabled){ prev.style.opacity=".4"; prev.style.cursor="default"; }
+  prev.addEventListener("click", function(){ if(state.step>0) go(state.step-1); });
+  var next = el("button","btn btn-primary", (state.step<STEPS.length-1 ? STEPS[state.step+1].title : "Terminé")+" →");
+  next.disabled = state.step===STEPS.length-1;
+  if(next.disabled){ next.style.opacity=".4"; next.style.cursor="default"; }
+  next.addEventListener("click", function(){ if(state.step<STEPS.length-1) go(state.step+1); });
+  nav.appendChild(prev); nav.appendChild(next);
+  sec.appendChild(nav);
+  main.appendChild(sec);
+}
+
+function go(i){
+  state.step = i; save();
+  renderStep(); renderRail();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+var progFill = document.getElementById("progFill");
+var progNum = document.getElementById("progNum");
+function updateProgress(){
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  var pct = ACTS.length ? Math.round(n/ACTS.length*100) : 0;
+  progFill.style.width = pct+"%";
+  progNum.textContent = n+" / "+ACTS.length;
+  renderRail();
+}
+
+/* ---------------- export ---------------- */
+function textOf(k){
+  var v = state.a[k];
+  if(v==null) return "";
+  if(typeof v==="string") return v.trim();
+  return "";
+}
+function buildExport(){
+  var L=[];
+  L.push("ATELIER ACCÉLÉRATION — conversation orale B2 (45 min)");
+  L.push("Documentaire ARTE « Est-il vrai que tout va toujours plus vite ? »");
+  L.push("Exporté le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}));
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  L.push("Avancement : "+n+" activités sur "+ACTS.length);
+  L.push("");
+  STEPS.forEach(function(s, si){
+    var lines=[];
+    function walk(bs){
+      bs.forEach(function(b){
+        if(b.t==="open"){
+          var t = textOf(b.k);
+          if(t) lines.push("• "+b.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+        } else if(b.t==="clip"){
+          (b.ex||[]).forEach(function(x){
+            var t = textOf(x.k);
+            if(t) lines.push("• "+x.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+          });
+        } else if(b.t==="scale"){
+          var st = state.a[b.k]||{};
+          b.rows.forEach(function(r,i){
+            if(st[i]!=null) lines.push("• "+r+" : "+b.cols[st[i]]);
+          });
+        } else if(b.t==="card" && b.blocks){ walk(b.blocks); }
+      });
+    }
+    walk(s.blocks);
+    if(lines.length){
+      L.push("──────────────────────────────");
+      L.push(String(si+1).padStart(2,"0")+". "+s.title.toUpperCase());
+      L.push("");
+      L.push(lines.join("\n\n"));
+      L.push("");
+    }
+  });
+  if(L.length<=5) L.push("(Aucune réponse rédigée pour l'instant.)");
+  return L.join("\n");
+}
+function openExport(){
+  var mask = el("div","mask");
+  var m = el("div","modal");
+  m.setAttribute("role","dialog"); m.setAttribute("aria-modal","true"); m.setAttribute("aria-label","Récapitulatif de mes réponses");
+  m.appendChild(html("h3",null,"Mon récapitulatif"));
+  m.appendChild(html("p","sub","Copiez ce texte et envoyez-le à votre formateur avant le cours."));
+  var ta = el("textarea"); ta.id="exportArea"; ta.value = buildExport(); ta.readOnly = true;
+  m.appendChild(ta);
+  var row = el("div","row");
+  var copy = el("button","btn btn-primary","Copier le texte");
+  var status = el("span","small muted","");
+  copy.addEventListener("click", function(){
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    var done=false;
+    try{ done = document.execCommand("copy"); }catch(e){}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ta.value).then(function(){ status.textContent="Copié ✓"; status.style.color="var(--ok)"; },
+        function(){ if(!done) status.textContent="Sélectionnez le texte puis Ctrl/Cmd + C."; });
+    } else {
+      status.textContent = done ? "Copié ✓" : "Sélectionnez le texte puis Ctrl/Cmd + C.";
+      status.style.color = done ? "var(--ok)" : "var(--muted)";
+    }
+  });
+  var close = el("button","btn","Fermer");
+  function shut(){ mask.remove(); document.removeEventListener("keydown", esc); }
+  function esc(e){ if(e.key==="Escape") shut(); }
+  close.addEventListener("click", shut);
+  mask.addEventListener("click", function(e){ if(e.target===mask) shut(); });
+  document.addEventListener("keydown", esc);
+  row.appendChild(copy); row.appendChild(close); row.appendChild(status);
+  m.appendChild(row);
+  mask.appendChild(m);
+  document.body.appendChild(mask);
+  copy.focus();
+}
+
+/* ---------------- theme ---------------- */
+document.getElementById("themeBtn").addEventListener("click", function(){
+  var r = document.documentElement;
+  var cur = r.getAttribute("data-theme");
+  var sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var nowDark = cur ? cur==="dark" : sysDark;
+  r.setAttribute("data-theme", nowDark ? "light" : "dark");
+  try{ localStorage.setItem(KEY+"-theme", nowDark ? "light":"dark"); }catch(e){}
+});
+(function(){ var t=null; try{ t=localStorage.getItem(KEY+"-theme"); }catch(e){} document.documentElement.setAttribute("data-theme", t==="light" ? "light" : "dark"); })();
+
+document.getElementById("exportBtn").addEventListener("click", openExport);
+document.getElementById("resetBtn").addEventListener("click", function(){
+  if(!window.confirm("Effacer toutes vos réponses ? Cette action est définitive.")) return;
+  state = {step:0, a:{}, done:{}, known:{}};
+  save(); renderStep(); renderRail(); updateProgress();
+});
+
+/* ---------------- boot ---------------- */
+if(!STORAGE_OK){
+  var warn = html("div","storewarn",
+    "<strong>Ce navigateur n'enregistre pas vos réponses sur cette page.</strong> "+
+    "Vous pouvez travailler normalement, mais <strong>avant de fermer l'onglet</strong>, "+
+    "cliquez sur « Exporter mes réponses » en haut de la page et conservez le texte.");
+  document.body.insertBefore(warn, document.querySelector(".shell"));
+}
+load();
+if(state.step<0 || state.step>=STEPS.length) state.step=0;
+renderStep();
+renderRail();
+updateProgress();
+})();
+</script>
+
+</body></html>
