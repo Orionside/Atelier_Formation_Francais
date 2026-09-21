@@ -1,0 +1,1534 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex, nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Atelier Immobilier B1+</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#5B6B7A; --line:#D5DDE4; --line-strong:#B9C5CF;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --focus:#1F5FA8;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --focus:#82B6EB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --focus:#82B6EB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+button{font:inherit; color:inherit; cursor:pointer}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0}
+.brand b{font-family:var(--serif); font-size:17px; font-weight:700; white-space:nowrap}
+.brand span{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.prog{display:flex; align-items:center; gap:9px}
+.prog-track{width:120px; height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.prog-fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+.prog-num{font-family:var(--mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums}
+.btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:7px 13px; border-radius:7px; font-size:13.5px; font-weight:500;
+  transition:background .15s, border-color .15s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--muted)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .btn-primary, :root:not([data-theme="light"]) .btn-primary{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:0 20px; padding-block:26px 64px;
+  display:grid; grid-template-columns:238px minmax(0,1fr); gap:38px; align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:minmax(0,1fr); gap:20px} }
+
+/* ---------- stepper ---------- */
+.rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 74px)}
+@media (max-width:900px){
+  .rail{position:static}
+  .rail-list{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin}
+  .rail-item{flex:0 0 auto; width:auto!important}
+  .rail-item .rl-title{white-space:nowrap}
+  .rail-head{margin-bottom:9px}
+}
+.rail-head{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:12px; padding-left:2px}
+.rail-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+@media (max-width:900px){ .rail-list{flex-direction:row} }
+.rail-item{width:100%}
+.rl{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:9px;
+  padding:8px 11px; color:var(--muted); font-size:13.5px; line-height:1.35;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.rl:hover{border-color:var(--line-strong); background:var(--surface-2); color:var(--ink)}
+.rl[aria-current="true"]{
+  background:var(--accent); border-color:var(--accent); color:#fff;
+  font-weight:500; box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .rl[aria-current="true"],
+:root:not([data-theme="light"]) .rl[aria-current="true"]{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .rl[aria-current="true"]{color:#fff}}
+.rl-num{
+  font-family:var(--mono); font-size:11px; flex:0 0 auto;
+  width:23px; height:23px; display:grid; place-items:center; border-radius:6px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--muted);
+}
+.rl.is-done .rl-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.rl[aria-current="true"] .rl-num,
+.rl[aria-current="true"].is-done .rl-num{
+  background:rgba(255,255,255,.24); border-color:transparent; color:inherit;
+}
+.rl-title{min-width:0}
+.rail-foot{margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+@media (max-width:900px){ .rail-foot{display:none} }
+
+/* ---------- main ---------- */
+main{min-width:0}
+.step{display:flex; flex-direction:column; gap:20px}
+.step-head{border-bottom:1px solid var(--line); padding-bottom:16px;
+  display:flex; flex-direction:column; gap:7px}
+.eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.eyebrow .dot{width:3px;height:3px;border-radius:50%;background:var(--line-strong)}
+.step-head h2{font-size:clamp(22px,4.3vw,29px); line-height:1.2}
+.step-head .lede{color:var(--muted); max-width:62ch}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:18px 19px;
+  display:flex; flex-direction:column; gap:13px}
+.card h3{font-size:17px; line-height:1.3}
+.card > .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:11px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.prose strong{font-weight:600}
+.prose em{color:var(--muted)}
+
+.callout{border-left:3px solid var(--accent); background:var(--surface-2); border-radius:0 9px 9px 0;
+  padding:14px 17px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.callout .ct{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink)}
+
+/* timecode */
+.tc{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:6px;
+  padding:3px 8px; color:var(--ink); text-decoration:none; white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.tc:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tc::before{content:"▶"; font-size:8px; color:var(--accent-ink)}
+
+/* questions */
+.q{display:flex; flex-direction:column; gap:10px; padding-block:4px}
+.q + .q{border-top:1px dashed var(--line); padding-top:16px}
+.q-lbl{display:flex; gap:10px; align-items:baseline}
+.q-n{font-family:var(--mono); font-size:12px; color:var(--accent-ink); flex:0 0 auto; font-weight:500}
+.q-t{font-weight:500; max-width:64ch}
+.q-hint{font-size:13.5px; color:var(--muted); max-width:64ch}
+textarea{
+  width:100%; min-height:82px; resize:vertical; font:inherit; font-size:14.5px;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line);
+  border-radius:8px; padding:10px 12px; line-height:1.55;
+}
+textarea::placeholder{color:var(--muted); opacity:.75}
+textarea:focus{border-color:var(--focus); background:var(--surface)}
+.row{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.reveal{background:var(--surface-2); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:13px 15px; font-size:14.5px; max-width:66ch;
+  display:flex; flex-direction:column; gap:8px}
+.reveal .rt{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.saved{font-family:var(--mono); font-size:11px; color:var(--ok); opacity:0; transition:opacity .3s}
+.saved.on{opacity:1}
+
+/* amorces cliquables */
+.starters{display:flex; flex-wrap:wrap; gap:6px; align-items:center; max-width:68ch}
+.starters-lbl{flex:0 0 100%; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted)}
+.starter{
+  border:1px solid var(--line-strong); background:var(--surface-2); border-radius:20px;
+  padding:5px 13px; font-family:var(--serif); font-style:italic; font-size:13.5px;
+  color:var(--muted); text-align:left; line-height:1.45; max-width:100%;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.starter:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
+
+/* true/false */
+.tf-list{display:flex; flex-direction:column; gap:10px}
+.tf-item{border:1px solid var(--line); border-radius:9px; padding:12px 14px; background:var(--surface-2);
+  display:flex; flex-direction:column; gap:10px}
+.tf-top{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+.tf-txt{flex:1 1 300px; min-width:0; font-size:14.5px}
+.tf-btns{display:flex; gap:6px; flex:0 0 auto}
+.pick{border:1px solid var(--line-strong); background:var(--surface); border-radius:7px;
+  padding:5px 12px; font-size:13px; font-weight:500; min-width:62px}
+.pick[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.tf-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.tf-item.no{border-color:var(--no); background:var(--no-soft)}
+.verdict{font-size:14px; display:flex; gap:8px; align-items:flex-start}
+.verdict .vi{font-family:var(--mono); font-weight:500; flex:0 0 auto}
+.ok .verdict .vi{color:var(--ok)} .no .verdict .vi{color:var(--no)}
+
+/* gaps */
+.gaps{display:flex; flex-direction:column; gap:9px}
+.gap-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  border-bottom:1px dotted var(--line); padding-bottom:9px}
+.gap-row:last-of-type{border-bottom:0; padding-bottom:0}
+.gap-lbl{flex:1 1 240px; min-width:0; font-size:14.5px}
+.gap-in{display:flex; align-items:center; gap:7px; flex:0 0 auto}
+input[type="text"]{
+  font:inherit; font-size:14.5px; font-family:var(--mono); width:118px; text-align:center;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line-strong);
+  border-radius:7px; padding:6px 9px;
+}
+input[type="text"]:focus{border-color:var(--focus); background:var(--surface)}
+input.ok{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+input.no{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.gap-suf{font-size:13.5px; color:var(--muted); font-family:var(--mono)}
+.gap-sol{font-size:13px; color:var(--ok); font-family:var(--mono)}
+
+select{
+  font:inherit; font-size:14px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:7px; padding:6px 9px; max-width:100%;
+}
+select:focus{border-color:var(--focus)}
+select.ok{border-color:var(--ok); background:var(--ok-soft)}
+select.no{border-color:var(--no); background:var(--no-soft)}
+
+/* order */
+.ord-pool{display:flex; gap:8px; flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong); background:var(--surface-2); border-radius:8px;
+  padding:8px 12px; font-size:14px; text-align:left; max-width:100%}
+.chip:hover{border-color:var(--accent)}
+.chip:disabled{opacity:.34; cursor:default}
+.chip .ck{font-family:var(--mono); color:var(--accent-ink); margin-right:7px; font-size:12px}
+.ord-slot{display:flex; gap:8px; flex-wrap:wrap; align-items:center; min-height:40px;
+  border:1px dashed var(--line-strong); border-radius:9px; padding:8px; background:var(--surface-2)}
+.ord-slot .ph{color:var(--muted); font-size:13.5px; padding:4px}
+.seq{display:inline-flex; align-items:center; gap:7px; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:5px 10px; font-size:13.5px}
+.seq .sn{font-family:var(--mono); font-size:11px; color:var(--muted)}
+.ord-slot.ok{border-color:var(--ok); border-style:solid; background:var(--ok-soft)}
+.ord-slot.no{border-color:var(--no); border-style:solid; background:var(--no-soft)}
+
+/* match / classify */
+.mt-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-bottom:10px;
+  border-bottom:1px dotted var(--line)}
+.mt-row:last-of-type{border-bottom:0; padding-bottom:0}
+.mt-left{flex:1 1 230px; font-size:14.5px; min-width:0}
+.cl-item{border:1px solid var(--line); border-radius:9px; background:var(--surface-2);
+  padding:12px 14px; display:flex; flex-direction:column; gap:9px}
+.cl-q{font-size:14.5px}
+.cl-q b{font-weight:600; color:var(--accent-ink)}
+.cl-opts{display:flex; gap:6px; flex-wrap:wrap}
+.cl-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.cl-item.no{border-color:var(--no); background:var(--no-soft)}
+
+/* cards */
+.grp{display:flex; flex-direction:column; gap:10px}
+.grp-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(212px,1fr)); gap:9px}
+.fc{position:relative; border:1px solid var(--line); background:var(--surface-2); border-radius:9px;
+  padding:12px 13px; min-height:78px; text-align:left; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, background .15s}
+.fc:hover{border-color:var(--accent)}
+.fc .term{font-weight:600; font-size:14.5px}
+.fc .def{font-size:13.5px; color:var(--muted); line-height:1.5}
+.fc .tap{font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em}
+.fc.known{border-color:var(--ok); background:var(--ok-soft)}
+.fc-mark{position:absolute; top:8px; right:8px; border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:6px; font-size:11px; padding:2px 7px; line-height:1.5;
+  font-family:var(--mono); color:var(--muted)}
+.fc.known .fc-mark{border-color:var(--ok); color:var(--ok)}
+
+/* clip */
+.clip{border:1px solid var(--line); border-radius:11px; background:var(--surface); padding:17px 18px;
+  display:flex; flex-direction:column; gap:13px}
+.clip-h{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.clip-h h3{font-size:16.5px}
+blockquote{margin:0; padding:12px 16px; background:var(--surface-2); border-left:3px solid var(--line-strong);
+  border-radius:0 8px 8px 0; font-size:15px; font-family:var(--serif); line-height:1.65; max-width:64ch}
+
+/* scale */
+.sc-tbl{width:100%; border-collapse:collapse; font-size:14px}
+.sc-wrap{overflow-x:auto}
+.sc-tbl th{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:500; padding:0 8px 9px; text-align:center}
+.sc-tbl th:first-child{text-align:left}
+.sc-tbl td{border-top:1px solid var(--line); padding:9px 8px; text-align:center}
+.sc-tbl td:first-child{text-align:left; min-width:190px}
+.rad{width:20px; height:20px; border-radius:50%; border:1.5px solid var(--line-strong); background:var(--surface-2); padding:0}
+.rad[aria-pressed="true"]{background:var(--accent); border-color:var(--accent)}
+
+/* nav */
+.stepnav{display:flex; gap:10px; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:6px}
+
+/* modal */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.55); z-index:60; display:grid; place-items:center; padding:20px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; overflow:auto; padding:22px; display:flex; flex-direction:column; gap:14px}
+.modal h3{font-size:19px}
+.modal textarea{min-height:300px; font-family:var(--mono); font-size:12.5px; line-height:1.55}
+
+.storewarn{
+  max-width:1180px; margin:16px auto 0; padding:12px 16px;
+  border:1px solid var(--accent); border-left-width:3px; border-radius:0 9px 9px 0;
+  background:var(--accent-soft); color:var(--ink); font-size:14px; line-height:1.55;
+}
+@media (max-width:1220px){ .storewarn{margin-inline:20px} }
+.hr{height:1px; background:var(--line); border:0; margin:2px 0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+[hidden]:not([hidden=until-found i]){display:none!important}
+</style>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <b>Atelier Immobilier</b>
+      <span>B1+ · logement &amp; financement</span>
+    </div>
+    <div class="prog" title="Activités complétées">
+      <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+      <span class="prog-num" id="progNum">0 / 0</span>
+    </div>
+    <button class="btn" id="exportBtn">Exporter mes réponses</button>
+    <button class="btn btn-ghost" id="themeBtn" aria-label="Changer de thème">Thème</button>
+  </div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-head">Parcours · en autonomie</div>
+    <ul class="rail-list" id="rail"></ul>
+    <div class="rail-foot">
+      <a class="tc" href="https://youtu.be/9HJ4rc_Gxmw" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+      <button class="btn btn-ghost small" id="resetBtn">Tout effacer</button>
+    </div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var VIDEO = "https://youtu.be/9HJ4rc_Gxmw";
+var KEY = "maison-individuelle-b1plus-v1";
+
+/* ---------------- storage ---------------- */
+var state = {step:0, a:{}, done:{}, known:{}};
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var p = JSON.parse(raw); if(p && typeof p==="object"){
+      state.step = p.step|0; state.a = p.a||{}; state.done = p.done||{}; state.known = p.known||{};
+    }}
+  }catch(e){}
+}
+var STORAGE_OK = (function(){
+  try{ localStorage.setItem(KEY+"-probe","1"); localStorage.removeItem(KEY+"-probe"); return true; }
+  catch(e){ return false; }
+})();
+var saveTimer=null;
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+}
+function saveSoon(){ clearTimeout(saveTimer); saveTimer=setTimeout(save,300); }
+
+/* ---------------- helpers ---------------- */
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=txt; return n; }
+function html(tag, cls, h){ var n=document.createElement(tag); if(cls)n.className=cls; if(h!=null)n.innerHTML=h; return n; }
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return m+":"+(r<10?"0":"")+r; }
+function tcLink(sec, label){
+  var a=el("a","tc",label||mmss(sec));
+  a.href=VIDEO+"?t="+sec; a.target="_blank"; a.rel="noopener";
+  a.title="Ouvrir la vidéo à "+mmss(sec);
+  return a;
+}
+function norm(s){
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[^a-z0-9]/g," ").replace(/\s+/g," ").trim();
+}
+function matches(val, answers){
+  var v = norm(val); if(!v) return false;
+  for(var i=0;i<answers.length;i++){ if(v === norm(answers[i])) return true; }
+  return false;
+}
+
+/* ---------------- content ---------------- */
+var SEGS = [
+{"t":"seg","n":1,"a":0,"b":76,"title":"Le rêve de la maison face à la crise",
+ "sum":"Trois Français sur quatre veulent vivre dans une maison (chiffre 2023), et ce rêve va de pair avec celui de devenir propriétaire. Mais depuis début 2022, le pouvoir d'achat immobilier a baissé de 10 % ; pour un intervenant, c'est la crise la plus profonde depuis 30 ans. S'ajoutent des problèmes de fond : le coût écologique de la construction, des lois plus contraignantes, des aides à l'accession restreintes. Deux questions sont posées : peut-on encore devenir propriétaire ? La maison avec jardin est-elle compatible avec l'écologie ?",
+ "obj":["Repérer la structure d'une introduction de reportage : constat, crise, questions.","Comprendre une proportion (<em>trois sur quatre</em>) et une évolution en pourcentage.","Découvrir <em>aller de pair avec</em> et le lexique de base : propriétaire, pouvoir d'achat immobilier, aides à l'accession."],
+ "qs":[
+  {"type":"Compréhension","q":"Quel est le rêve de la majorité des Français, et pourquoi semble-t-il aujourd'hui difficile à réaliser ?","starters":["La majorité des Français rêve de…","Ce rêve va de pair avec…","Le problème, c'est que depuis début 2022…"],"model":"« La majorité des Français rêve de vivre dans une maison : c'est le cas de trois Français sur quatre. Ce rêve va de pair avec celui de devenir propriétaire. Le problème, c'est que depuis début 2022, le pouvoir d'achat immobilier a baissé de 10 %. En plus, il y a des problèmes de fond : le coût écologique, des lois plus strictes et moins d'aides pour les maisons. »"},
+  {"type":"Reformulation","q":"Le reportage mesure le pouvoir d'achat immobilier « en mètres carrés perdus ». Expliquez cette idée avec vos mots.","starters":["Autrement dit,…","Concrètement, avec le même budget,…","C'est une façon très parlante de…"],"model":"« Autrement dit, on ne mesure pas le pouvoir d'achat en euros, mais en surface. Concrètement, avec le même budget, on achète moins de mètres carrés qu'avant. C'est une façon très parlante <em>(= facile à comprendre)</em> de mesurer la crise : tout le monde comprend tout de suite. »"},
+  {"type":"Préparer la classe","q":"Et vous : maison avec jardin ou appartement en ville ? Donnez votre préférence et une raison.","hint":"Deux ou trois phrases suffisent : nous en parlerons en classe.","starters":["Personnellement, je préfère…","Ce qui compte le plus pour moi, c'est…","Mais si j'avais des enfants,…"],"model":"« Personnellement, je préfère un appartement en ville : tout est à portée de main et je n'ai pas besoin de voiture. Mais si j'avais des enfants, je me poserais sérieusement la question. »"}],
+ "tour":[
+  ["aller de pair avec","être lié à","Chez nous, la croissance va de pair avec la hausse des coûts."],
+  ["trois… sur quatre","une proportion, sans pourcentage","Trois clients sur quatre renouvellent leur contrat."],
+  ["baisser de 10 %","une variation : <em>de</em> + pourcentage","Le pouvoir d'achat immobilier a baissé de 10 %."],
+  ["être hors de portée","être inaccessible","Un trois-pièces à Paris est hors de portée pour beaucoup de jeunes cadres."]],
+ "gram":{"t":"<em>depuis</em>, <em>il y a</em>, <em>pendant</em>","h":"<p>« <strong>Depuis</strong> 30 ans, on n'a pas vu une crise aussi profonde. » → une durée qui continue jusqu'à aujourd'hui.</p><p><strong>Il y a</strong> 30 ans = un moment du passé. <strong>Pendant</strong> 30 ans = une durée terminée.</p><p><strong>Piège hispanophone :</strong> <em>desde hace</em> → <strong>depuis</strong> ; <em>hace</em> → <strong>il y a</strong>. « Je suis arrivé chez Idealista <strong>il y a</strong> cinq ans ; j'y travaille <strong>depuis</strong> cinq ans. »</p>"}},
+
+{"t":"seg","n":2,"a":76,"b":136,"title":"Maison individuelle et famille nucléaire",
+ "sum":"La France compte plus de 20 millions de maisons individuelles sur 37 millions de logements. La sociologue Anne Lambert (INED) nuance : ce sont surtout les familles avec enfants qui sont attachées à la maison. Le modèle de la famille nucléaire et celui de la maison individuelle se sont renforcés ensemble dans les années 60-70. Avant, on vivait plus souvent avec les grands-parents ou dans un habitat dense. Le modèle pavillonnaire se développe alors, nourri de l'imaginaire américain.",
+ "obj":["Comprendre la nuance apportée par une experte : pas « les Français », mais surtout les familles avec enfants.","Repérer l'imparfait des habitudes passées (<em>avant, on vivait…</em>).","Comprendre deux mots-clés de toute la vidéo : <em>pavillon</em> et <em>pavillonnaire</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Selon la sociologue, qui est vraiment attaché à la maison individuelle ? Et depuis quand ?","starters":["Elle apporte une nuance :…","Ce ne sont pas les Français en général, ce sont…","Avant les années 60-70, on vivait…"],"model":"« Elle apporte une nuance : ce ne sont pas les Français en général, ce sont surtout les familles avec enfants. Le lien entre la famille nucléaire et la maison individuelle s'est renforcé dans les années 60-70. Avant, on vivait plus souvent avec les grands-parents, ou dans des logements plus denses. »"},
+  {"type":"Reformulation","q":"Qu'est-ce qu'un pavillon ? Et une zone pavillonnaire ? Expliquez avec des mots simples.","starters":["Un pavillon, c'est…","Une zone pavillonnaire, c'est…","En espagnol, on parlerait de…"],"model":"« Un pavillon, c'est une maison individuelle, en général avec un petit jardin, souvent en périphérie d'une ville. Une zone pavillonnaire, c'est un quartier composé presque uniquement de ce type de maisons. En espagnol, on parlerait d'une <em>urbanización</em> de <em>chalets</em>. »"},
+  {"type":"Préparer la classe","q":"En Espagne, vit-on plutôt en maison ou en appartement ? Pourquoi, à votre avis ?","starters":["En Espagne, la plupart des gens vivent…","Je pense que ça s'explique par…","En France, j'ai l'impression que…"],"model":"« En Espagne, la plupart des gens vivent en appartement, surtout dans les grandes villes. Je pense que ça s'explique par une culture de la ville et de la vie de quartier. En France, j'ai l'impression que la maison est davantage associée à la famille. »"}],
+ "tour":[
+  ["ce n'est pas X, c'est plutôt Y","nuancer une généralisation","Ce n'est pas tout le marché, c'est plutôt le haut de gamme."],
+  ["sous le même toit","dans le même logement","Trois générations vivent sous le même toit."],
+  ["un habitat dense","des logements serrés, en ville","Madrid a un habitat beaucoup plus dense que la banlieue parisienne."],
+  ["nourri de…","inspiré par","Un modèle nourri de l'imaginaire américain."]],
+ "gram":{"t":"Imparfait des habitudes, passé composé du changement","h":"<p>« <strong>Avant</strong>, on <strong>vivait</strong> avec les grands-parents. » → imparfait : une habitude, une situation qui dure.</p><p>« Dans les années 60-70, le modèle pavillonnaire <strong>s'est développé</strong>. » → passé composé : le changement.</p><p>En réunion : « <strong>Avant</strong>, nous <strong>clôturions</strong> les comptes en dix jours ; en 2024, nous <strong>sommes passés</strong> à cinq. »</p>"}},
+
+{"t":"seg","n":3,"a":136,"b":229,"title":"« Un pays de propriétaires » : l'État et le crédit",
+ "sum":"Croissance démographique, essor de la classe moyenne : les politiques du logement soutiennent la maison. Une archive annonce que, pour la première fois, on construira plus de logements individuels que collectifs. Des dispositifs comme le PEL ou les APL aident à acheter. Surtout, le crédit immobilier aux particuliers se développe : avant la guerre, il fallait attendre d'hériter ; la maison devient un bien de grande consommation, comme la voiture. Jusqu'au début des années 2000, les gouvernements soutiennent ce modèle. 80 % des propriétaires habitent une maison, et être propriétaire est la preuve d'un emploi stable et bien payé.",
+ "obj":["Comprendre le rôle de l'État et du crédit dans le développement du pavillon.","Repérer l'expression d'un tournant : <em>avant, on devait… ; la maison devient…</em>","Découvrir <em>au même titre que</em>, <em>s'adosser à</em> et les sigles PEL et APL."],
+ "qs":[
+  {"type":"Compréhension","q":"Qu'est-ce qui a permis à la classe moyenne de devenir propriétaire ?","starters":["D'abord, le contexte :…","Ensuite, l'État…","Mais le vrai tournant, c'est…"],"model":"« D'abord, le contexte : la population augmente et la classe moyenne se développe. Ensuite, l'État soutient la maison avec des aides comme le PEL ou les APL. Mais le vrai tournant, c'est le crédit immobilier : avant la guerre, il fallait attendre d'hériter ; ensuite, on peut emprunter pour acheter. »"},
+  {"type":"Reformulation","q":"La maison devient « un bien de grande consommation au même titre que la voiture ». Qu'est-ce que cela signifie ?","starters":["Cela signifie que…","Avant, acheter une maison, c'était…","Grâce au crédit,…"],"model":"« Cela signifie que la maison n'est plus réservée à une minorité. Avant, acheter une maison, c'était exceptionnel : il fallait hériter. Grâce au crédit, ça devient un achat courant, comme une voiture, qu'on paie petit à petit. »"},
+  {"type":"Préparer la classe","q":"En tant que financier : quel lien faites-vous entre emploi stable, crédit et propriété ?","starters":["Le lien est direct :…","Une banque regarde d'abord…","C'est pour ça que…"],"model":"« Le lien est direct : sans emploi stable, pas de crédit, et sans crédit, pas de propriété. Une banque regarde d'abord la stabilité des revenus, puis le taux d'endettement et l'apport. C'est pour ça que les jeunes en CDD ont plus de mal à acheter. »"}],
+ "tour":[
+  ["le vrai tournant, c'est…","le vrai changement","Le vrai tournant, c'est l'arrivée du crédit immobilier."],
+  ["au même titre que","comme, de la même manière que","La maison devient un bien de consommation au même titre que la voiture."],
+  ["s'adosser à / reposer sur","s'appuyer sur","Notre croissance repose sur les annonces des professionnels."],
+  ["faire de X un Y","transformer X en Y","Faire de la France un pays de propriétaires."]],
+ "gram":{"t":"<em>devoir</em> à l'imparfait : l'obligation dans le passé","h":"<p>« Avant la guerre, on <strong>devait</strong> attendre d'hériter de ses parents. » → une obligation habituelle dans le passé.</p><p>Construction avec <em>de</em> : <strong>hériter de</strong> ses parents, <strong>hériter d'</strong>une maison.</p><p><strong>Sigles :</strong> le <strong>PEL</strong> (plan d'épargne logement) · les <strong>APL</strong> (aides personnalisées au logement).</p>"}},
+
+{"t":"seg","n":4,"a":229,"b":309,"title":"Taux, capacité d'emprunt et mètres carrés perdus",
+ "sum":"Corinne Jolly (PAP) : les taux sont passés d'environ 1,5 % début 2022 à 4,5 %, et les acheteurs ont perdu 25 à 30 % de leur capacité d'emprunt. La cause : l'envolée des matières premières et la guerre en Ukraine nourrissent l'inflation ; pour la freiner, la BCE relève ses taux directeurs, et les banques répercutent la hausse sur les particuliers. Avec 1 300 € par mois sur 20 ans : 107 m² à Saint-Étienne, 70 m² à Strasbourg, 36 m² à Nice. Les prix n'ont pas assez baissé : en moyenne, 38 m² de moins qu'en 2019.",
+ "obj":["Suivre une chaîne de causes économiques : inflation → BCE → banques → acheteurs.","Repérer et noter des chiffres entendus à débit rapide.","Découvrir <em>boucler un budget</em>, <em>répercuter sur</em>, <em>juguler l'inflation</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Pourquoi les acheteurs ont-ils perdu 25 à 30 % de leur capacité d'emprunt ?","starters":["Tout part de l'inflation :…","Pour la freiner, la BCE…","Résultat :…"],"model":"« Tout part de l'inflation : avec la guerre en Ukraine et la hausse des matières premières, les prix ont augmenté. Pour la freiner, la BCE a relevé ses taux directeurs, et les banques ont répercuté cette hausse sur les particuliers. Résultat : on est passé d'environ 1,5 % à 4,5 %, et avec la même mensualité, on emprunte beaucoup moins. »"},
+  {"type":"Reformulation","q":"Expliquez simplement ce que sont les « taux directeurs » de la BCE.","starters":["Ce sont les taux auxquels…","Quand ils augmentent,…","Autrement dit,…"],"model":"« Ce sont les taux auxquels la Banque centrale européenne prête de l'argent aux banques. Quand ils augmentent, l'argent coûte plus cher aux banques, qui augmentent à leur tour le taux des crédits. Autrement dit, c'est le point de départ de toute la chaîne. »"},
+  {"type":"Préparer la classe","q":"Avec 1 300 € par mois sur 20 ans, on achète 36 m² à Nice. Et à Madrid ? Et à Paris, où vous allez vous installer ?","hint":"Un ordre de grandeur suffit, sans chercher le chiffre exact.","starters":["À Madrid, avec ce budget,…","À Paris, c'est encore pire :…","Pour moi, en arrivant à Paris,…"],"model":"« À Madrid, avec ce budget, on n'aurait pas grand-chose dans le centre. À Paris, c'est encore pire : un studio, une vingtaine de mètres carrés au mieux. Pour moi, en arrivant à Paris, louer me semble plus raisonnable dans un premier temps. »"}],
+ "tour":[
+  ["passer de X à Y","décrire une évolution chiffrée","Les taux sont passés de 1,5 % à 4,5 %."],
+  ["boucler un budget","réussir à financer un projet","Beaucoup de ménages n'arrivent plus à boucler leur budget."],
+  ["répercuter une hausse sur…","la reporter sur le client","Les banques ont répercuté la hausse sur les particuliers."],
+  ["juguler l'inflation","la freiner, la contenir","La BCE a relevé ses taux pour juguler l'inflation."],
+  ["du coup / résultat :","la conséquence, à l'oral","Du coup, les acheteurs ont perdu un quart de leur capacité d'emprunt."]],
+ "gram":{"t":"<em>emprunter</em> et <em>prêter</em>","h":"<p>La banque <strong>prête</strong> ; le ménage <strong>emprunte</strong>. On dit : « emprunter <strong>à</strong> la banque » (<em>pedir prestado al banco</em>).</p><p><strong>La</strong> BCE : féminin (la Banque centrale européenne). <strong>Les</strong> taux : masculin.</p><p><strong>Prononciation :</strong> 1,5 % → « un virgule cinq pour cent » ; 4,5 % → souvent « quatre et demi pour cent » à l'oral.</p>"}},
+
+{"t":"seg","n":5,"a":309,"b":394,"title":"Des aides recentrées : Pinel et PTZ",
+ "sum":"Les aides à l'achat se limitent de plus en plus à l'habitat collectif. Le dispositif Pinel est supprimé et peu de choses sont créées : on reproche à l'immobilier d'être « sous perfusion », ce qui ferait monter les prix. Le PTZ (prêt à taux zéro, créé en 1995, accordé selon les revenus, le type de logement et le lieu) est recentré au 1er janvier 2024 sur les appartements neufs en zone tendue, et sur l'ancien avec travaux ailleurs. Il ne sert plus à faire construire sa maison, alors que c'était le cas de la moitié des PTZ. Depuis 2017, l'État soutient l'habitat collectif aux dépens du pavillon. <strong>Mise à jour :</strong> depuis le 1er avril 2025, le PTZ est de nouveau ouvert aux maisons neuves sur tout le territoire, jusqu'à fin 2027.",
+ "obj":["Comprendre le fonctionnement d'un dispositif public : critères, conditions, public visé.","Découvrir <em>être sous perfusion</em>, <em>couper court à</em>, <em>aux dépens de</em>.","Repérer le passif qui présente une règle : <em>il est octroyé…, il a été mis en place…</em>"],
+ "qs":[
+  {"type":"Compréhension","q":"Qu'est-ce que le PTZ, et qu'est-ce qui a changé au 1er janvier 2024 ?","starters":["Le PTZ, c'est…","Il est accordé en fonction de…","Autrement dit,…"],"model":"« Le PTZ, c'est un prêt à taux zéro, donc un crédit sans intérêts, créé en 1995. Il est accordé en fonction des revenus, du type de logement et du lieu. Au 1er janvier 2024, il a été recentré sur les appartements neufs en zone tendue. Autrement dit, on ne pouvait plus l'utiliser pour faire construire sa maison. »"},
+  {"type":"Reformulation","q":"Que veut dire l'expression « être sous perfusion » ? Et une « zone tendue » ?","starters":["Au sens propre, être sous perfusion, c'est…","Ici, ça veut dire que…","Une zone tendue, c'est…"],"model":"« Au sens propre, être sous perfusion, c'est recevoir un traitement à l'hôpital par intraveineuse. Ici, ça veut dire que le secteur ne survit que grâce aux aides publiques. Une zone tendue, c'est une zone où la demande de logements est beaucoup plus forte que l'offre. »"},
+  {"type":"Préparer la classe","q":"Selon vous, les aides publiques font-elles monter les prix ? Une phrase pour, une phrase contre.","starters":["D'un côté,…","De l'autre,…","Personnellement, je pense que…"],"model":"« D'un côté, si on aide les acheteurs sans augmenter l'offre, une partie de l'aide finit dans les prix. De l'autre, supprimer les aides en pleine crise peut bloquer tout le marché. Personnellement, je pense qu'il faut des aides ciblées et stables. »"}],
+ "tour":[
+  ["être octroyé en fonction de…","être accordé selon des critères","Le PTZ est octroyé en fonction des revenus."],
+  ["sous condition de…","à condition de","Il est réservé à l'ancien, sous condition de rénovation."],
+  ["autrement dit","en d'autres termes","Autrement dit, le PTZ ne sert plus à faire construire sa maison."],
+  ["être sous perfusion","ne survivre que grâce à une aide","Ce secteur est sous perfusion d'argent public."],
+  ["aux dépens de","au détriment de (avec un <em>s</em>)","L'État soutient le collectif aux dépens du pavillon."]],
+ "gram":{"t":"Le passif pour présenter une règle","h":"<p>« Le PTZ <strong>est octroyé</strong> en fonction des revenus. » · « Il <strong>a été mis en place</strong> en 1995. » · « Le dispositif <strong>a été supprimé</strong>. »</p><p>En réunion, le passif présente une décision de façon neutre, sans désigner de responsable : « Le budget <strong>a été revu</strong> à la baisse. »</p>"}},
+
+{"t":"seg","n":6,"a":394,"b":446,"title":"Le pavillon dans le viseur des pouvoirs publics",
+ "sum":"En 2021, la ministre du Logement Emmanuelle Wargon crée la polémique : selon elle, le modèle du pavillon avec jardin « n'est plus soutenable » et mène « à une impasse ». Elle revient ensuite sur ses propos, mais la phrase résume l'orientation du gouvernement. Pour le président d'une fédération de constructeurs de maisons, les pouvoirs publics mènent une campagne contre la maison individuelle et en font « le réceptacle de tous les maux ». Selon lui, la crise des gilets jaunes était avant tout un problème de pouvoir d'achat.",
+ "obj":["Identifier deux points de vue opposés : une ministre et le représentant d'un secteur.","Repérer le vocabulaire de la polémique : <em>faire polémique, revenir sur ses propos</em>.","Rapporter les propos de quelqu'un au discours indirect."],
+ "qs":[
+  {"type":"Compréhension","q":"Qu'a déclaré la ministre du Logement en 2021, et comment réagit le représentant des constructeurs ?","starters":["La ministre a déclaré que…","Ça a fait polémique, et…","Le représentant des constructeurs, lui,…"],"model":"« La ministre a déclaré que le modèle du pavillon avec jardin n'était plus soutenable et qu'il menait à une impasse. Ça a fait polémique, et elle est revenue sur ses propos. Le représentant des constructeurs, lui, estime que les pouvoirs publics rendent la maison responsable de tous les problèmes. »"},
+  {"type":"Reformulation","q":"Mettez au discours indirect : « Le modèle n'est plus soutenable. Il nous mène à une impasse. » Commencez par « Elle a déclaré que… ».","starters":["Elle a déclaré que…","… et qu'il…"],"model":"« Elle a déclaré que le modèle n'<strong>était</strong> plus soutenable et qu'il nous <strong>menait</strong> à une impasse. » Le présent devient imparfait, parce que le verbe introducteur est au passé."},
+  {"type":"Préparer la classe","q":"À votre avis, la phrase de la ministre était-elle maladroite, ou simplement honnête ?","starters":["Sur le fond,…","Mais sur la forme,…","À mon avis,…"],"model":"« Sur le fond, l'argument écologique se défend. Mais sur la forme, c'était maladroit : les gens ont entendu un jugement sur leur vie. À mon avis, il faut d'abord proposer une alternative avant de critiquer un modèle. »"}],
+ "tour":[
+  ["faire polémique","provoquer un débat très vif","Cette déclaration a fait polémique."],
+  ["revenir sur ses propos","nuancer ou retirer ce qu'on a dit","Le ministre est revenu sur ses propos le lendemain."],
+  ["une petite phrase","une déclaration courte qui fait scandale","Une petite phrase peut faire oublier tout un projet."],
+  ["faire de X le réceptacle de tous les maux","rendre X responsable de tout","On fait de la maison le réceptacle de tous les maux."]],
+ "gram":{"t":"Le discours rapporté","h":"<p>« Le modèle n'<strong>est</strong> plus soutenable. » → Elle <strong>a déclaré</strong> que le modèle n'<strong>était</strong> plus soutenable.</p><p>Verbe introducteur au passé → le présent devient imparfait. Verbe au présent (<em>il estime que</em>) → aucun changement.</p><p>Verbes utiles : <em>déclarer, affirmer, estimer, reconnaître, souligner, dénoncer</em>.</p>"}},
+
+{"t":"seg","n":7,"a":446,"b":498,"title":"Le coût caché de la vie en pavillon",
+ "sum":"La crise des gilets jaunes a mis sur le devant de la scène les difficultés des habitants de zones pavillonnaires excentrées : ils doivent prendre la voiture pour tout, car l'école, le travail et le médecin sont loin. On parle même de « crise identitaire ». En plus, les dépenses s'accumulent : les salaires de la classe moyenne stagnent, alors que les frais annexes augmentent, surtout le chauffage, car les pavillons des années 60-70 sont mal isolés. S'y ajoute un coût environnemental.",
+ "obj":["Comprendre la description d'un problème concret du quotidien.","Repérer l'opposition entre deux évolutions : <em>alors que, parallèlement</em>.","Raisonner en coût total : prix d'achat + coûts d'usage."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelles difficultés rencontrent les habitants des zones pavillonnaires éloignées ?","starters":["D'abord, ils dépendent…","Ensuite, les dépenses…","Le chauffage, en particulier,…"],"model":"« D'abord, ils dépendent complètement de leur voiture : l'école, le travail, le médecin, tout est loin. Ensuite, les dépenses s'accumulent : les salaires stagnent, alors que les frais annexes augmentent. Le chauffage, en particulier, coûte cher, parce que beaucoup de pavillons des années 60-70 sont mal isolés. »"},
+  {"type":"Reformulation","q":"Que sont les « frais annexes » d'un logement ? Donnez trois exemples.","starters":["Ce sont les dépenses qui…","Par exemple,…","Pour un pavillon éloigné, il faut ajouter…"],"model":"« Ce sont les dépenses qui s'ajoutent au prix du logement ou au remboursement du crédit. Par exemple, le chauffage, l'électricité, l'assurance, l'entretien. Pour un pavillon éloigné, il faut ajouter la voiture et le carburant. »"},
+  {"type":"Préparer la classe","q":"Une maison moins chère mais loin de tout : bonne affaire ou mauvais calcul ?","starters":["Sur le papier,…","Mais si on fait le calcul complet,…","Moi, je raisonnerais en…"],"model":"« Sur le papier, c'est une bonne affaire : le prix au mètre carré est plus bas. Mais si on fait le calcul complet — voitures, carburant, chauffage, temps perdu — ce n'est pas si évident. Moi, je raisonnerais en coût total. »"}],
+ "tour":[
+  ["mettre sur le devant de la scène","rendre très visible","La crise a mis ce problème sur le devant de la scène."],
+  ["à la moindre occasion","pour la plus petite chose","Ils prennent la voiture à la moindre occasion."],
+  ["peser sur","avoir un poids important sur","Le coût de l'énergie pèse sur le budget des ménages."],
+  ["avoir tendance à","évoluer plutôt dans ce sens","Les salaires ont tendance à stagner."]],
+ "gram":{"t":"Le pronom tonique d'opposition","h":"<p>« Les salaires stagnent ; les frais annexes, <strong>eux</strong>, augmentent. »</p><p>Le pronom (<em>lui, elle, eux, elles</em>) souligne le contraste. Très naturel à l'oral, parfait pour commenter des résultats : « Le chiffre d'affaires progresse ; les marges, <strong>elles</strong>, reculent. »</p>"}},
+
+{"t":"seg","n":8,"a":498,"b":568,"title":"Artificialisation, ZAN et foncier",
+ "sum":"Construire des maisons et les routes pour les relier, c'est occuper des espaces naturels ou agricoles. Entre 2009 et 2019, 68 % des terres artificialisées l'ont été pour l'habitat. La loi Climat et Résilience fixe l'objectif « zéro artificialisation nette » (ZAN) d'ici 2050 : chaque espace artificialisé devra être compensé par un espace équivalent rendu à la nature. Beaucoup d'élus l'appliquent déjà : des terrains constructibles deviennent non constructibles, le foncier se raréfie et le prix des terrains augmente, ce qui pèse sur les ventes des constructeurs.",
+ "obj":["Comprendre un objectif réglementaire et son mécanisme : la compensation.","Découvrir les notions d'<em>artificialisation</em> et de <em>foncier</em>.","Relier une contrainte écologique à un effet sur les prix."],
+ "qs":[
+  {"type":"Compréhension","q":"Qu'est-ce que le ZAN, et quelles sont ses conséquences pour les constructeurs de maisons ?","starters":["Le ZAN, c'est…","Le principe :…","Du coup,…"],"model":"« Le ZAN, c'est l'objectif « zéro artificialisation nette » d'ici 2050. Le principe : chaque terrain bétonné devra être compensé par une surface équivalente rendue à la nature. Beaucoup d'élus l'appliquent déjà. Du coup, les terrains constructibles se raréfient, ils coûtent plus cher, et les maisons neuves aussi. »"},
+  {"type":"Reformulation","q":"Expliquez avec vos mots : « artificialiser un sol » et « le foncier ».","starters":["Artificialiser un sol, c'est…","Le foncier, c'est…","En espagnol, on dirait…"],"model":"« Artificialiser un sol, c'est transformer un espace naturel ou agricole en surface construite : maisons, routes, parkings. Le foncier, c'est l'ensemble des terrains, surtout ceux sur lesquels on peut construire. En espagnol, on dirait <em>el suelo</em>. »"},
+  {"type":"Préparer la classe","q":"Quand une règle rend les terrains plus rares, qui gagne et qui perd ?","starters":["Quand l'offre se réduit,…","Les gagnants, ce sont…","Les perdants, ce sont…"],"model":"« Quand l'offre se réduit et que la demande reste la même, les prix montent. Les gagnants, ce sont ceux qui possèdent déjà des terrains ou des maisons. Les perdants, ce sont les primo-accédants et les constructeurs. »"}],
+ "tour":[
+  ["fixer un objectif d'ici + date","donner un horizon","La loi fixe un objectif de zéro artificialisation nette d'ici 2050."],
+  ["être déjà en marche","avoir déjà commencé","La raréfaction du foncier est déjà en marche."],
+  ["rendre à la nature","renaturer","Chaque espace artificialisé devra être compensé par un espace rendu à la nature."],
+  ["peser sur les ventes","les freiner","La hausse du prix des terrains pèse sur les ventes."]],
+ "gram":{"t":"Le futur pour une règle ou une obligation","h":"<p>« Chaque espace artificialisé <strong>devra</strong> être compensé. » → le futur de <em>devoir</em> exprime une obligation à venir.</p><p>En réunion : « Les notes de frais <strong>devront</strong> être validées avant le 5 du mois. »</p><p><strong>Piège hispanophone :</strong> <em>el suelo</em> (sens immobilier) → <strong>le foncier</strong>, <strong>un terrain</strong> ; <em>suelo urbanizable</em> → <strong>un terrain constructible</strong>.</p>"}},
+
+{"t":"seg","n":9,"a":568,"b":641,"title":"Le neuf, la crise dans la crise",
+ "sum":"La crise du logement neuf touche maisons et appartements : la Fédération française du bâtiment prévoit alors 150 000 suppressions d'emplois d'ici 2025. Les causes : baisse du pouvoir d'achat, recentrage du PTZ, raréfaction du foncier, et hausse d'environ 20 % des coûts de construction (inflation et nouvelle réglementation). La RE2020, en vigueur depuis le 1er janvier 2022, ajoute à elle seule 8 à 10 % pour une maison : sobriété énergétique, matériaux comme le bois ou le liège préférés au béton ou à l'acier, meilleure isolation contre les canicules.",
+ "obj":["Comprendre une accumulation de causes : <em>s'ajouter à, une couche supplémentaire</em>.","Repérer des fourchettes et des surcoûts (<em>de l'ordre de, 8 à 10 %</em>).","Découvrir le vocabulaire de la réglementation : <em>entrer en vigueur, être tenu de</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Pourquoi parle-t-on de « crise dans la crise » pour le logement neuf ?","starters":["Parce que le neuf cumule…","En plus,…","C'est une couche supplémentaire :…"],"model":"« Parce que le neuf cumule tous les problèmes : pouvoir d'achat en baisse, PTZ recentré, terrains plus rares. En plus, les coûts de construction ont augmenté d'environ 20 %. C'est une couche supplémentaire : la RE2020 ajoute à elle seule 8 à 10 % pour une maison. »"},
+  {"type":"Reformulation","q":"Qu'est-ce que la RE2020 impose aux constructions neuves ? Citez deux exigences.","starters":["La RE2020, c'est…","Elle impose…","Par exemple,…"],"model":"« La RE2020, c'est la réglementation environnementale entrée en vigueur en 2022. Elle impose des objectifs de sobriété énergétique. Par exemple, on privilégie le bois ou le liège plutôt que le béton ou l'acier, et les maisons doivent être mieux isolées contre les canicules. »"},
+  {"type":"Préparer la classe","q":"Un surcoût de 8 à 10 % aujourd'hui pour des économies d'énergie demain : est-ce un bon investissement ?","starters":["Tout dépend de l'horizon :…","À court terme,…","À long terme,…"],"model":"« Tout dépend de l'horizon. À court terme, c'est un frein : les maisons coûtent plus cher. À long terme, une maison bien isolée consomme moins, donc le surcoût peut être rentabilisé. »"}],
+ "tour":[
+  ["s'ajouter à","venir en plus de","À l'inflation s'ajoute la nouvelle réglementation."],
+  ["une couche supplémentaire","un problème de plus","La RE2020, c'est une couche supplémentaire."],
+  ["de l'ordre de","environ","Une hausse de l'ordre de 20 %."],
+  ["à elle seule","toute seule","La RE2020 ajoute, à elle seule, 8 à 10 %."]],
+ "gram":{"t":"<em>entrer en vigueur</em> et <em>être tenu de</em>","h":"<p>« La RE2020 <strong>est entrée en vigueur</strong> le 1er janvier 2022. » → elle s'applique à partir de cette date.</p><p>« Les nouvelles constructions <strong>sont tenues d'être</strong> mieux isolées. » → elles ont l'obligation de l'être.</p><p>En réunion : « Nous <strong>sommes tenus de</strong> publier les comptes avant le 30 avril. »</p>"}},
+
+{"t":"seg","n":10,"a":641,"b":687,"title":"Combien de logements faut-il vraiment ?",
+ "sum":"En 2023, environ 373 000 logements ont été autorisés à la construction, un quart de moins que l'année précédente, bien en deçà des 500 000 par an jugés nécessaires par les constructeurs. Mais chiffrer les besoins est compliqué : la vraie question, c'est où les gens veulent habiter. Si tout le monde retournait vivre dans le Limousin, on n'aurait pas besoin de construire beaucoup. La France compterait environ 3 millions de logements vacants. La crise ouvre un autre chantier colossal : l'aménagement du territoire.",
+ "obj":["Comprendre un paradoxe : on manque de logements, mais des millions sont vides.","Repérer l'hypothèse irréelle : <em>si + imparfait → conditionnel</em>.","Préparer une conclusion et une ouverture, au format d'une intervention en comité."],
+ "qs":[
+  {"type":"Compréhension","q":"Comment le reportage explique-t-il le paradoxe entre manque de logements et logements vides ?","starters":["En 2023, on a autorisé…","Mais le problème n'est pas seulement…","D'où l'enjeu de…"],"model":"« En 2023, on a autorisé environ 373 000 logements, alors que les constructeurs estiment qu'il en faudrait 500 000 par an. Mais le problème n'est pas seulement le nombre, c'est l'endroit : on manque de logements là où les gens veulent vivre, et il y a des logements vides ailleurs. D'où l'enjeu de l'aménagement du territoire. »"},
+  {"type":"Reformulation","q":"Transformez en hypothèse : « Tout le monde retourne vivre dans le Limousin → on n'a pas besoin de construire. »","starters":["Si tout le monde…","… il n'y aurait pas…"],"model":"« Si tout le monde <strong>retournait</strong> vivre dans le Limousin, il n'y <strong>aurait</strong> pas besoin de construire beaucoup de logements. » <em>Si</em> + imparfait, puis conditionnel — jamais de conditionnel après <em>si</em>."},
+  {"type":"Préparer la classe","q":"Préparez trois idées-clés pour résumer la vidéo en deux minutes devant un comité.","hint":"Des mots-clés suffisent : en classe, vous parlerez à partir de ces notes, sans les lire.","starters":["Premièrement,…","Deuxièmement,…","Troisièmement,…","Ma conclusion, c'est que…"],"model":"« Premièrement, la demande est toujours là : trois Français sur quatre rêvent d'une maison. Deuxièmement, l'accès s'est dégradé : taux, aides, foncier, coûts de construction. Troisièmement, le modèle est remis en question pour des raisons écologiques. Ma conclusion : le marché va se transformer, pas disparaître. »"}],
+ "tour":[
+  ["en deçà de","en dessous de","Le résultat est en deçà de nos prévisions."],
+  ["un chantier colossal","un projet immense","L'aménagement du territoire est un chantier colossal."],
+  ["ouvrir la voie à","rendre possible","La crise ouvre la voie à un autre débat."],
+  ["c'est très compliqué de chiffrer…","nuancer une estimation","C'est très compliqué de chiffrer l'impact exact."]],
+ "gram":{"t":"L'hypothèse irréelle : <em>si</em> + imparfait → conditionnel","h":"<p>« <strong>Si</strong> tout le monde <strong>retournait</strong> vivre dans le Limousin, il n'y <strong>aurait</strong> pas besoin de construire. »</p><p><strong>Règle absolue :</strong> jamais de conditionnel après <em>si</em>. On ne dit pas « si tout le monde retournerait ».</p><p>En réunion : « <strong>Si</strong> les taux <strong>baissaient</strong> d'un point, la demande <strong>repartirait</strong> très vite. »</p>"}}
+];
+
+/* exercices d'écoute propres à chaque segment */
+var EX = {
+ 1:{t:"tf", items:[
+   {q:"En 2023, trois Français sur quatre voulaient vivre dans une maison.", a:true, j:"Chiffre donné dès le début : « trois Français sur quatre »."},
+   {q:"Depuis début 2022, le pouvoir d'achat immobilier a baissé de 30 %.", a:false, j:"Il a baissé de <strong>10 %</strong>, mesuré en mètres carrés perdus."},
+   {q:"Selon un intervenant, c'est la crise la plus profonde depuis 30 ans.", a:true, j:"« Depuis 30 ans, on n'a pas vu une crise aussi profonde. »"},
+   {q:"Les aides à l'accession pour les maisons ont été renforcées.", a:false, j:"Au contraire : elles sont <strong>restreintes</strong>."}]},
+ 2:{t:"gaps", fields:[
+   {k:"a", label:"Nombre de maisons individuelles en France (plus de … millions)", answers:["20","vingt"], sol:"plus de 20 millions"},
+   {k:"b", label:"Nombre total de logements en France (en millions)", answers:["37","trente sept"], sol:"37 millions"},
+   {k:"c", label:"Année de la première enquête sur le logement", answers:["1945"], sol:"1945"},
+   {k:"d", label:"Sigle de l'institut où travaille la sociologue Anne Lambert", answers:["ined","l ined"], sol:"INED"},
+   {k:"e", label:"Le modèle pavillonnaire se développe dans les années …", answers:["60 70","60 et 70","1960 1970","annees 60 70","les annees 60 70","soixante soixante dix"], sol:"60-70"}]},
+ 3:{t:"tf", items:[
+   {q:"Selon une archive, on allait construire pour la première fois plus de logements individuels que collectifs.", a:true, j:"« Pour la première fois, le nombre de logements individuels construits dépassera le nombre de logements collectifs. »"},
+   {q:"Avant la guerre, on achetait facilement sa maison à crédit.", a:false, j:"Au contraire : on devait souvent <strong>attendre d'hériter</strong> d'une maison ou d'un terrain."},
+   {q:"Les gouvernements successifs ont soutenu ce modèle jusqu'au début des années 2000.", a:true, j:"C'est dit tel quel, juste avant l'archive « un pays de propriétaires »."},
+   {q:"Environ la moitié des propriétaires habitent une maison.", a:false, j:"C'est <strong>80 %</strong> des propriétaires."}]},
+ 4:{t:"gaps", fields:[
+   {k:"a", label:"Taux d'intérêt début 2022 (en %)", answers:["1,5","1.5","un virgule cinq"], sol:"environ 1,5 %"},
+   {k:"b", label:"Taux au moment du reportage (en %)", answers:["4,5","4.5","quatre et demi","4 et demi"], sol:"4,5 %"},
+   {k:"c", label:"Perte de capacité d'emprunt, fourchette basse (en %)", answers:["25","vingt cinq"], sol:"25 à 30 %"},
+   {k:"d", label:"Mensualité de l'exemple (en euros)", answers:["1300","1 300","mille trois cents"], sol:"1 300 €"},
+   {k:"e", label:"Surface achetable à Nice (en m²)", answers:["36","trente six"], sol:"36 m²"},
+   {k:"f", label:"Surface perdue en moyenne par rapport à 2019 (en m²)", answers:["38","trente huit"], sol:"38 m²"}]},
+ 5:{t:"tf", items:[
+   {q:"Le dispositif Pinel a été supprimé.", a:true, j:"« Il y a des dispositifs qui sont supprimés, comme le dispositif Pinel. »"},
+   {q:"Le PTZ a été créé en 1995.", a:true, j:"Un crédit gratuit « mis en place en 1995 »."},
+   {q:"Depuis le 1er janvier 2024, le PTZ est réservé aux maisons neuves en zone rurale.", a:false, j:"Il est recentré sur les <strong>appartements neufs en zone tendue</strong>."},
+   {q:"Avant la réforme, la moitié des PTZ servaient à construire une maison neuve.", a:true, j:"« 50 % des PTZ ont été octroyés pour la construction d'une maison neuve. »"}]},
+ 6:{t:"tf", items:[
+   {q:"La polémique vient d'une déclaration de la ministre du Logement en 2021.", a:true, j:"Elle « avait créé la polémique » en 2021."},
+   {q:"La ministre a maintenu ses propos sans jamais les nuancer.", a:false, j:"Elle est <strong>revenue sur ses propos</strong>."},
+   {q:"Pour le représentant des constructeurs, la crise des gilets jaunes était surtout un problème de pouvoir d'achat.", a:true, j:"« La thématique des gilets jaunes, c'était un problème de pouvoir d'achat. »"}]},
+ 7:{t:"tf", items:[
+   {q:"Les habitants des zones pavillonnaires éloignées doivent prendre leur voiture à la moindre occasion.", a:true, j:"Le reportage le dit presque mot pour mot."},
+   {q:"Les salaires de la classe moyenne augmentent plus vite que les frais annexes.", a:false, j:"Les salaires <strong>stagnent</strong>, alors que les frais annexes augmentent."},
+   {q:"Le chauffage est la dépense citée en particulier.", a:true, j:"« En particulier, effectivement, le chauffage. »"},
+   {q:"Les pavillons des années 60-70 sont en général bien isolés.", a:false, j:"Ils sont souvent <strong>mal isolés</strong> : forte déperdition d'énergie."}]},
+ 8:{t:"gaps", fields:[
+   {k:"a", label:"Part des terres artificialisées utilisées pour l'habitat entre 2009 et 2019 (en %)", answers:["68","soixante huit"], sol:"68 %"},
+   {k:"b", label:"Sigle de l'objectif « zéro artificialisation nette »", answers:["zan","le zan"], sol:"ZAN"},
+   {k:"c", label:"Horizon de cet objectif (année)", answers:["2050"], sol:"2050"},
+   {k:"d", label:"Nom de la loi : loi Climat et …", answers:["resilience"], sol:"Résilience"}]},
+ 9:{t:"gaps", fields:[
+   {k:"a", label:"Suppressions d'emplois prévues d'ici 2025", answers:["150000","150 000","cent cinquante mille"], sol:"150 000"},
+   {k:"b", label:"Hausse des coûts de construction (en %)", answers:["20","vingt"], sol:"de l'ordre de 20 %"},
+   {k:"c", label:"Surcoût de la RE2020 pour une maison, fourchette haute (en %)", answers:["10","dix"], sol:"8 à 10 %"},
+   {k:"d", label:"Année d'entrée en vigueur de la RE2020", answers:["2022"], sol:"1er janvier 2022"},
+   {k:"e", label:"Un matériau préféré au béton ou à l'acier", answers:["bois","le bois","liege","le liege"], sol:"le bois ou le liège"}]},
+ 10:{t:"gaps", fields:[
+   {k:"a", label:"Logements autorisés à la construction en 2023 (environ)", answers:["373100","373 100","373000","373 000"], sol:"373 100"},
+   {k:"b", label:"Besoins annuels estimés par les constructeurs", answers:["500000","500 000","cinq cent mille"], sol:"500 000"},
+   {k:"c", label:"Logements vacants en France (en millions)", answers:["3","trois"], sol:"environ 3 millions"},
+   {k:"d", label:"La région citée, où il y a des logements vides", answers:["limousin","le limousin"], sol:"le Limousin"},
+   {k:"e", label:"Le chantier colossal : l'aménagement du …", answers:["territoire"], sol:"territoire"}]}
+};
+
+var LETTERS = "ABCDEFGHIJ";
+function segCard(s, idx){
+  var blocks = [];
+  blocks.push({t:"callout", ct:"Objectifs pédagogiques du segment", h:"<ul style='margin:0;padding-left:18px'>"+s.obj.map(function(o){return "<li>"+o+"</li>";}).join("")+"</ul>"});
+  var ex = EX[s.n];
+  if(ex){
+    if(ex.t==="gaps") blocks.push({t:"gaps", k:"x"+s.n, fields:ex.fields});
+    else blocks.push({t:"tf", k:"x"+s.n, items:ex.items});
+  }
+  blocks.push({t:"reveal", label:"Vérifier avec le résumé du segment", rt:"Résumé — à lire après l'écoute, pas avant", h:"<p>"+s.sum+"</p>"});
+  s.qs.forEach(function(q, i){
+    blocks.push({t:"open", k:"s"+s.n+"_"+i, n:String(i+1), starters:q.starters,
+      q:"<strong>"+q.type+".</strong> "+q.q, hint:q.hint, model:q.model});
+  });
+  blocks.push({t:"callout", ct:"Focus langue — tournures et constructions clés",
+    h:"<ul style='margin:0;padding-left:18px'>"+s.tour.map(function(t){
+        return "<li><strong>"+t[0]+"</strong> ("+t[1]+") — <em>« "+t[2]+" »</em></li>";}).join("")+"</ul>"+
+      "<p><strong>Construction clé : "+s.gram.t+"</strong></p>"+s.gram.h});
+  return {t:"card", h3:LETTERS[idx]+". Segment "+s.n+" — "+s.title,
+    sub:(ex ? (ex.t==="gaps" ? "Écoutez le segment et repérez les chiffres et les mots-clés. Vérifiez avec le résumé, puis passez aux trois questions." : "Écoutez le segment : vrai ou faux ? Vérifiez avec le résumé, puis passez aux trois questions.") : ""),
+    tc:[{sec:s.a, l:mmss(s.a)},{sec:s.b, l:mmss(s.b)}], blocks:blocks};
+}
+
+
+var STEPS = [
+{
+ id:"prep", title:"Avant de visionner", time:"6 min",
+ lede:"Vous parlez d'abord, vous regardez ensuite. Répondez à voix haute, puis notez l'essentiel : deux ou trois phrases suffisent. Tout est enregistré dans votre navigateur.",
+ blocks:[
+  {t:"callout", ct:"Méthode", h:"<p><strong>Premier visionnage sans sous-titres, sans pause, sans dictionnaire.</strong> La vidéo dure environ 11 min 30. Le débit est celui d'un reportage français : rapide, avec plusieurs voix — un narrateur, une sociologue, une cheffe d'entreprise, une ministre, des archives — et beaucoup de chiffres. Vous ne comprendrez pas tout, et ce n'est pas le but. Le but est de <strong>suivre le fil</strong>. Vous reviendrez ensuite segment par segment, avec pauses et sous-titres.</p><p><strong>Rythme conseillé :</strong> deux sessions de 30 à 40 minutes plutôt qu'une seule. Étapes 1 à 3 le premier jour, étapes 4 à 8 le second.</p>"},
+  {t:"card", h3:"Pourquoi cette vidéo précisément", sub:"Support de préparation autonome · niveau B1+ · avant notre séance de conversation", blocks:[
+   {t:"note", h:"<div class='prose'>"+
+    "<p><strong>Trois raisons.</strong></p>"+
+    "<ul>"+
+    "<li>C'est <strong>votre secteur</strong> : l'immobilier, le crédit, les taux, les aides publiques. Vous connaissez déjà le fond ; toute votre attention peut donc aller à la langue.</li>"+
+    "<li>C'est un <strong>reportage à débit natif, avec plusieurs voix</strong> qui se succèdent. Exactement ce qu'il faut pour vous habituer à comprendre des Français qui parlent vite entre eux.</li>"+
+    "<li>C'est aussi <strong>votre futur quotidien</strong> : vous allez vous installer à Paris. Taux, surface, prix au mètre carré, louer ou acheter : ces questions seront bientôt les vôtres.</li>"+
+    "</ul>"+
+    "<p><strong>Objectifs de ce travail en autonomie.</strong></p>"+
+    "<ul>"+
+    "<li><strong>Compréhension</strong> : suivre le fil d'un reportage rapide ; repérer les chiffres, les sigles et les points de vue.</li>"+
+    "<li><strong>Lexique</strong> : activer le vocabulaire du logement, du financement et des politiques publiques.</li>"+
+    "<li><strong>Langue</strong> : repérer quelques structures très fréquentes à l'oral — <em>du coup</em>, <em>alors que</em>, <em>autrement dit</em>, <em>si + imparfait</em>.</li>"+
+    "<li><strong>Préparation</strong> : arriver en classe avec des idées et des mots, pour parler 70 % du temps.</li>"+
+    "</ul></div>"}
+  ]},
+  {t:"card", h3:"Questions d'ouverture", sub:"Avant de lancer la vidéo. Répondez de mémoire, sans chercher.", blocks:[
+   {t:"open", k:"p1", n:"1", starters:["Si j'avais le choix, je préférerais…","Ce qui compte le plus pour moi, c'est…","Mais si j'avais des enfants,…"],
+    q:"Si vous aviez le choix, vous préféreriez vivre dans une maison avec jardin ou dans un appartement en ville ? Pourquoi ?",
+    hint:"Parlez une minute à voix haute, puis écrivez deux phrases. On cherche la fluidité, pas la perfection.",
+    model:"« Si j'avais le choix, aujourd'hui, je préférerais un appartement en ville : tout est à portée de main <em>(= tout est proche)</em> et je n'ai pas besoin de voiture. Mais si j'avais des enfants, je me poserais sérieusement la question : un jardin, plus d'espace, plus de calme… Bref, la maison, c'est un rêve qui a un prix. »"},
+   {t:"open", k:"p2", n:"2", starters:["Quand les taux montent,…","Concrètement, avec le même salaire,…","Du coup,…"],
+    q:"Quand les taux d'intérêt montent, qu'est-ce qui change pour quelqu'un qui veut acheter un logement ? Expliquez-le comme à un collègue.",
+    hint:"C'est votre terrain : expliquez simplement, en trois ou quatre phrases enchaînées.",
+    model:"« Quand les taux montent, le crédit coûte plus cher. Concrètement, avec le même salaire et la même mensualité, on peut emprunter moins. Du coup, soit on achète plus petit, soit on achète plus loin, soit on attend. »"},
+   {t:"open", k:"p3", n:"3", starters:["Les mots qui me manquent le plus, ce sont…","En espagnol je dis…, mais en français je bloque.","Je ne sais pas comment dire…"],
+    q:"Quels mots de l'immobilier et du crédit vous manquent encore en français ? Faites la liste maintenant, avant de regarder.",
+    hint:"Cette liste est le point de départ de notre séance. Soyez précis."}
+  ]},
+  {t:"callout", ct:"À savoir — la vidéo date de début 2024", h:"<p>Réflexe de financier : toujours vérifier la date d'un chiffre avant de le citer en réunion. Trois points ont changé depuis la vidéo :</p><ul style='margin:0;padding-left:18px'><li><strong>Taux</strong> : environ 4,5 % dans la vidéo ; autour de 3,40 % sur 20 ans en moyenne en août 2026.</li><li><strong>PTZ</strong> : recentré sur les appartements en 2024 ; de nouveau ouvert aux maisons neuves, sur tout le territoire, depuis le 1er avril 2025 et jusqu'à fin 2027.</li><li><strong>ZAN</strong> : objectif 2050 maintenu ; un assouplissement est en discussion au Parlement.</li></ul>"},
+  {t:"callout", ct:"Note — la transcription automatique de la vidéo", h:"<p>Les sous-titres générés par YouTube déforment plusieurs noms. Formes correctes : <strong>Anne Lambert</strong>, sociologue à l'<strong>INED</strong> ; <strong>Corinne Jolly</strong>, PDG de <strong>De Particulier à Particulier (PAP)</strong> ; <strong>Emmanuelle Wargon</strong>, ancienne ministre du Logement ; <strong>la RE2020</strong> ; <strong>le ZAN</strong> ; <strong>le Limousin</strong>.</p>"}
+ ]
+},
+{
+ id:"lex", title:"Le lexique essentiel", time:"7 min",
+ lede:"Cliquez sur une carte pour révéler la définition. Les définitions sont en français : à votre niveau, passer par l'espagnol vous ralentit plus qu'il ne vous aide. Ne mémorisez pas — familiarisez-vous, vous retrouverez ces mots dans la vidéo.",
+ blocks:[
+  {t:"cards", k:"lx", groups:[
+   {name:"Le logement", items:[
+    ["une maison individuelle","une maison pour une seule famille, séparée des autres"],
+    ["un pavillon","une maison individuelle avec jardin, souvent en périphérie (adjectif : pavillonnaire)"],
+    ["le logement collectif","les appartements, dans un immeuble"],
+    ["le neuf / l'ancien","les logements qui viennent d'être construits / déjà habités"],
+    ["un propriétaire / un locataire","celui qui possède / celui qui loue"],
+    ["l'accession à la propriété","le fait de devenir propriétaire"],
+    ["un logement vacant","un logement vide, inoccupé"],
+    ["un terrain constructible","un terrain sur lequel on a le droit de construire"]
+   ]},
+   {name:"Le financement", items:[
+    ["le taux d'intérêt","le prix de l'argent emprunté, en pourcentage"],
+    ["les taux directeurs","les taux auxquels la BCE prête aux banques"],
+    ["la capacité d'emprunt","la somme maximale qu'un ménage peut emprunter"],
+    ["une mensualité","la somme remboursée chaque mois"],
+    ["emprunter / prêter","le ménage emprunte, la banque prête"],
+    ["l'apport (personnel)","l'argent qu'on apporte soi-même, sans crédit"],
+    ["le pouvoir d'achat immobilier","ce qu'on peut acheter avec son budget — ici, en mètres carrés"],
+    ["un ménage","un foyer : les personnes qui vivent dans le même logement"]
+   ]},
+   {name:"Politiques publiques et réglementation", items:[
+    ["un dispositif","un ensemble de mesures publiques : aide, prêt, réduction d'impôt"],
+    ["le PTZ","le prêt à taux zéro : un crédit sans intérêts pour devenir propriétaire"],
+    ["une zone tendue","une zone où la demande de logements dépasse fortement l'offre"],
+    ["les APL / le PEL","les aides au logement / le plan d'épargne logement"],
+    ["la RE2020","la réglementation environnementale des constructions neuves"],
+    ["artificialiser un sol","transformer un espace naturel ou agricole en surface construite"],
+    ["le ZAN","zéro artificialisation nette : l'objectif fixé pour 2050"],
+    ["le foncier","l'ensemble des terrains, surtout ceux où l'on peut construire"],
+    ["l'aménagement du territoire","l'organisation de la répartition des activités et de la population"]
+   ]},
+   {name:"Huit images du français courant", items:[
+    ["aller de pair avec","être lié à"],
+    ["boucler un budget","réussir à financer un projet"],
+    ["être sous perfusion","ne survivre que grâce à une aide extérieure"],
+    ["couper court à","arrêter net"],
+    ["faire polémique","provoquer un débat très vif"],
+    ["revenir sur ses propos","nuancer ou retirer ce qu'on a dit"],
+    ["mettre sur le devant de la scène","rendre très visible"],
+    ["en deçà de","en dessous de"]
+   ]}
+  ]},
+  {t:"card", h3:"Micro-exercice d'appropriation", sub:"Complétez avec un terme du glossaire, puis vérifiez.", blocks:[
+   {t:"gaps", k:"lxg", fields:[
+    {k:"g1", label:"Avec la hausse des taux, beaucoup de ménages n'arrivent plus à … leur budget.", answers:["boucler"], sol:"boucler"},
+    {k:"g2", label:"La banque … de l'argent ; le ménage l'emprunte.", answers:["prete"], sol:"prête"},
+    {k:"g3", label:"Le PTZ est recentré sur les zones …, là où l'on manque de logements.", answers:["tendues"], sol:"tendues"},
+    {k:"g4", label:"Chaque mois, il rembourse une … de 1 300 euros.", answers:["mensualite"], sol:"mensualité"},
+    {k:"g5", label:"Ce secteur ne survit que grâce aux aides : il est sous … .", answers:["perfusion"], sol:"perfusion"},
+    {k:"g6", label:"Le nombre de logements autorisés est bien en … des besoins.", answers:["deca"], sol:"deçà"},
+    {k:"g7", label:"Un logement vide, inoccupé, est un logement … .", answers:["vacant"], sol:"vacant"}
+   ]}
+  ]},
+  {t:"callout", ct:"Transfert espagnol → français — six pièges du jour", h:"<ul style='margin:0;padding-left:18px'><li><em>la hipoteca</em> → <strong>le prêt immobilier</strong>, <strong>le crédit immobilier</strong>. En français, <em>une hypothèque</em> est la garantie prise par la banque sur le bien, pas le prêt lui-même.</li><li><em>el piso</em> → <strong>un appartement</strong> ; <em>el chalet</em>, <em>la vivienda unifamiliar</em> → <strong>une maison individuelle</strong>, <strong>un pavillon</strong>.</li><li><em>la entrada</em> (pour acheter) → <strong>l'apport</strong>.</li><li><em>el suelo</em> (sens immobilier) → <strong>le foncier</strong>, <strong>un terrain</strong>.</li><li><em>el BCE</em> → <strong>la BCE</strong> : féminin, comme <em>la</em> Banque.</li><li><em>pedir prestado al banco</em> → <strong>emprunter à la banque</strong> ; la banque <strong>prête</strong>.</li></ul>"}
+ ]
+},
+{
+ id:"glob", title:"1ᵉʳ visionnage — la vue d'ensemble", time:"15 min",
+ lede:"Lisez d'abord les questions, puis lancez la vidéo en entier. Ne revenez jamais en arrière pendant ce premier passage : le but est de suivre le fil, pas de tout comprendre.",
+ blocks:[
+  {t:"play", sec:0, label:"Lancer la vidéo depuis le début", note:"environ 11 min 30 · sans sous-titres, sans pause"},
+  {t:"card", h3:"A. L'idée centrale", blocks:[
+   {t:"open", k:"g1", n:"1", starters:["Pour résumer, la maison reste…","Mais aujourd'hui,…","Et en plus,…"],
+    q:"En deux ou trois phrases : pourquoi la maison individuelle est-elle devenue un rêve difficile à atteindre ?",
+    model:"« Pour résumer, la maison reste le rêve de la majorité des Français. Mais aujourd'hui, la hausse des taux a fait baisser la capacité d'emprunt, et les aides pour les maisons ont été réduites. Et en plus, le modèle est critiqué pour des raisons écologiques : les terrains deviennent rares et chers. »"},
+   {t:"open", k:"g2", n:"2", starters:["Un problème conjoncturel, c'est par exemple…","Un problème structurel, c'est…","La différence, c'est que…"],
+    q:"Le reportage distingue des problèmes liés au moment (<em>conjoncturels</em>) et des problèmes de fond (<em>structurels</em>). Donnez un exemple de chaque.",
+    hint:"Indice : l'un peut disparaître si les taux baissent, l'autre non.",
+    model:"« Un problème conjoncturel, c'est par exemple la hausse des taux : elle peut s'inverser. Un problème structurel, c'est l'objectif ZAN ou la RE2020 : ce sont des règles faites pour durer. La différence, c'est que le premier dépend du cycle économique, le second d'un choix politique. »"}
+  ]},
+  {t:"card", h3:"B. La structure du reportage", sub:"Cliquez sur les moments dans leur ordre d'apparition.", blocks:[
+   {t:"order", k:"g3", prompt:"Remettez les six moments dans l'ordre de la vidéo.",
+    items:[
+     {id:"A", label:"L'État et le crédit font de la France un pays de propriétaires"},
+     {id:"B", label:"La hausse des taux fait perdre des mètres carrés aux acheteurs"},
+     {id:"C", label:"Le PTZ est recentré sur les appartements neufs"},
+     {id:"D", label:"La maison, modèle de la famille nucléaire des années 60-70"},
+     {id:"E", label:"L'artificialisation des sols et l'objectif ZAN"},
+     {id:"F", label:"Les logements autorisés, loin des besoins"}
+    ],
+    solution:["D","A","B","C","E","F"]}
+  ]},
+  {t:"card", h3:"C. Les noms et les chiffres cités", sub:"Associez chaque élément à ce qu'il désigne dans la vidéo.", blocks:[
+   {t:"match", k:"g4",
+    options:["sociologue spécialiste du logement","PDG du site De Particulier à Particulier","ancienne ministre du Logement, à l'origine d'une polémique","un crédit sans intérêts créé en 1995","la réglementation environnementale entrée en vigueur en 2022","le nombre estimé de logements vacants en France","la surface perdue en moyenne par un ménage depuis 2019"],
+    rows:[
+     {left:"Anne Lambert", answer:"sociologue spécialiste du logement"},
+     {left:"Corinne Jolly", answer:"PDG du site De Particulier à Particulier"},
+     {left:"Emmanuelle Wargon", answer:"ancienne ministre du Logement, à l'origine d'une polémique"},
+     {left:"le PTZ", answer:"un crédit sans intérêts créé en 1995"},
+     {left:"la RE2020", answer:"la réglementation environnementale entrée en vigueur en 2022"},
+     {left:"3 millions", answer:"le nombre estimé de logements vacants en France"},
+     {left:"38 m²", answer:"la surface perdue en moyenne par un ménage depuis 2019"}
+    ]}
+  ]},
+  {t:"card", h3:"D. Votre ressenti d'écoute", sub:"Cette réponse détermine nos priorités en classe.", blocks:[
+   {t:"open", k:"g5", n:"", starters:["Ce qui m'a le plus gêné, c'est…","J'ai décroché au moment où…","En revanche, j'ai bien suivi…"],
+    q:"Qu'est-ce qui a été le plus difficile : le débit, le changement de voix (narrateur, experts, archives), les chiffres, ou les sigles (PTZ, APL, ZAN, RE2020) ?",
+    hint:"Soyez précis. « L'écoute » est trop vague ; « les passages où deux chiffres se suivent sans pause » est exploitable."}
+  ]}
+ ]
+},
+{
+ id:"seg", title:"2ᵉ visionnage — les dix segments", time:"25 min",
+ lede:"Pour chaque segment : les objectifs, un repérage rapide, le résumé pour vérifier, puis trois questions — compréhension, reformulation, préparation de la classe — et un focus langue. Pauses et sous-titres autorisés à partir d'ici.",
+ blocks: SEGS.map(segCard).concat([
+  {t:"callout", ct:"Question de synthèse — la première que je vous poserai en classe", h:"<p>Expliquez-moi en une minute, sans lire, pourquoi il est devenu plus difficile d'acheter une maison en France. Trois causes, une conséquence.</p>"},
+  {t:"card", blocks:[{t:"open", k:"sy1", n:"", starters:["Il y a trois grandes raisons.","D'abord,…","Ensuite,…","Enfin,…","Résultat :…"],
+    q:"Préparez quatre ou cinq phrases, avec des connecteurs.",
+    model:"« Il y a trois grandes raisons. D'abord, la hausse des taux : les acheteurs ont perdu 25 à 30 % de leur capacité d'emprunt. Ensuite, les aides ont été recentrées sur les appartements. Enfin, le modèle du pavillon est critiqué pour des raisons écologiques, et les terrains deviennent rares et chers. Résultat : la maison reste un rêve, mais un rêve de moins en moins accessible. »"}
+  ]}
+ ])
+},
+{
+ id:"ec", title:"Atelier — les phrases clés à l'oral", time:"8 min",
+ lede:"Quatre phrases de la vidéo qui contiennent des structures très fréquentes en réunion. Réécoutez-les, puis réemployez-les sur votre propre travail.",
+ blocks:[
+  {t:"callout", ct:"Méthode, pour chaque extrait", h:"<p>Écoutez <strong>3 fois</strong> sans rien lire. Puis lisez la phrase et réécoutez. Enfin, <strong>répétez à voix haute en imitant le rythme</strong> — pas seulement les mots : les enchaînements, les pauses, la voix qui descend en fin de phrase. C'est ce travail d'imitation qui rend l'oral fluide.</p>"},
+  {t:"clip", sec:245, title:"Enchaîner à l'oral : du coup, donc, évidemment", quote:"Du coup, les acheteurs ont perdu 25 à 30 % de leur capacité d'emprunt, donc évidemment c'est beaucoup plus difficile aujourd'hui de boucler un budget pour acheter.",
+   focus:"<p>Trois petits mots font tout le naturel de cette phrase : <strong>du coup</strong> (la conséquence, à l'oral), <strong>donc</strong> (la conclusion), <strong>évidemment</strong> (ce qui va de soi). C'est ainsi que parlent les natifs : des idées reliées, pas des phrases isolées.</p><p>Entre collègues, <em>du coup</em> est parfait. Devant un comité, préférez <strong>par conséquent</strong> ou <strong>résultat :</strong>.</p>",
+   ex:[{k:"e1a", q:"Construisez une phrase du même type sur un chiffre de votre travail.", model:"« Les coûts de financement ont augmenté de deux points. Du coup, les marges ont reculé, donc évidemment, il va falloir revoir le budget de l'année prochaine. »"}]},
+  {t:"clip", sec:368, title:"Reformuler une règle : autrement dit + passif", quote:"Autrement dit, le PTZ ne peut plus être obtenu pour faire construire sa maison.",
+   focus:"<p><strong>Autrement dit</strong> annonce une reformulation plus simple de ce qui précède : c'est le mot du pédagogue, idéal pour s'assurer que tout le monde a compris en réunion.</p><p><strong>ne peut plus être obtenu</strong> : un passif avec <em>pouvoir</em>. La règle est présentée de façon neutre, sans dire qui l'a décidée.</p>",
+   ex:[{k:"e2a", q:"Reformulez une règle de votre entreprise avec « autrement dit » et un passif.", model:"« Toute dépense de plus de 5 000 euros doit être validée par la direction financière. Autrement dit, aucun engagement de ce montant ne peut être signé sans notre accord. »"}]},
+  {t:"clip", sec:472, title:"Opposer deux évolutions : alors que… eux", quote:"Les salaires des classes moyennes ont tendance à stagner, alors que parallèlement le coût de l'habitat pavillonnaire, les frais annexes, eux, augmentent.",
+   focus:"<p>Trois outils dans une seule phrase : <strong>avoir tendance à</strong> (une évolution générale, dite avec prudence), <strong>alors que</strong> (l'opposition), et le pronom <strong>eux</strong> qui souligne le contraste.</p><p>C'est la structure idéale pour commenter un tableau de bord : deux courbes qui vont en sens inverse.</p>",
+   ex:[{k:"e3a", q:"Commentez deux indicateurs qui évoluent en sens inverse, avec « alors que » et un pronom d'opposition.", model:"« Le chiffre d'affaires a tendance à progresser, alors que les marges, elles, stagnent. »"}]},
+  {t:"clip", sec:662, title:"L'hypothèse irréelle", quote:"Si tout le monde retournait vivre dans le Limousin, il n'y aurait pas besoin de construire beaucoup de logements, parce qu'il y a des logements vides là-bas.",
+   focus:"<p><strong>Si + imparfait → conditionnel</strong> : une hypothèse qu'on sait peu probable, pour faire comprendre un raisonnement. Jamais de conditionnel après <em>si</em>.</p><p>Remarquez aussi <strong>parce qu'il y a…</strong> : l'hypothèse est suivie de sa justification. Hypothèse + justification, c'est un argument complet.</p>",
+   ex:[{k:"e4a", q:"Formulez une hypothèse irréelle sur votre marché, avec sa justification.", model:"« Si les taux baissaient d'un point, la demande repartirait très vite, parce que beaucoup d'acheteurs attendent simplement de meilleures conditions. »"}]},
+  {t:"card", h3:"Bilan de l'atelier", blocks:[
+   {t:"open", k:"e5", n:"", starters:["La structure que je veux vraiment m'approprier, c'est…","J'ai encore du mal avec…"],
+    q:"Laquelle de ces quatre structures voulez-vous employer dès votre prochaine réunion ?"}
+  ]}
+ ]
+},
+{
+ id:"dis", title:"Fait, analyse, opinion ou discours politique ?", time:"6 min",
+ lede:"Ce reportage mêle des faits vérifiables, des explications, des opinions d'intervenants et des déclarations politiques. Les distinguer à l'oreille, c'est exactement ce qu'on attend d'un financier en réunion : savoir d'où vient une affirmation et ce qu'elle vaut.",
+ blocks:[
+  {t:"card", h3:"Les quatre types", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li><strong>Fait vérifiable</strong> — une date, un chiffre, un nom. <em>On peut le contrôler.</em></li>"+
+     "<li><strong>Explication / analyse</strong> — un mécanisme, une chaîne de causes. <em>Argumenté, mais discutable.</em></li>"+
+     "<li><strong>Opinion d'un intervenant</strong> — un jugement, une image forte. <em>Un point de vue, souvent celui d'une partie intéressée.</em></li>"+
+     "<li><strong>Discours politique</strong> — une ambition, une orientation, une petite phrase. <em>Une intention, pas un résultat.</em></li>"+
+     "</ul></div>"}
+  ]},
+  {t:"card", h3:"À vous de classer", sub:"Le signal linguistique est votre indice principal — il est mis en évidence.", blocks:[
+   {t:"classify", k:"cl1",
+    cats:["Fait vérifiable","Explication / analyse","Opinion d'un intervenant","Discours politique"],
+    items:[
+     {q:"« En 2023, <b>373 100 logements</b> ont été autorisés à la construction. »", a:"Fait vérifiable"},
+     {q:"« Le modèle à l'ancienne du pavillon avec jardin <b>n'est plus soutenable</b>. »", a:"Discours politique"},
+     {q:"« On fait de la maison <b>le réceptacle de tous les maux</b>. »", a:"Opinion d'un intervenant"},
+     {q:"« Le PTZ a été mis en place <b>en 1995</b>. »", a:"Fait vérifiable"},
+     {q:"« Pour juguler l'inflation, la BCE a remonté ses taux ; <b>les banques ont répercuté</b> ces augmentations sur les particuliers. »", a:"Explication / analyse"},
+     {q:"« <b>Mon ambition</b>, ce serait de faire de la France un pays de propriétaires. »", a:"Discours politique"},
+     {q:"« C'est très compliqué de chiffrer les besoins : <b>le problème, c'est où les gens veulent habiter</b>. »", a:"Explication / analyse"},
+     {q:"« <b>Depuis 30 ans, on n'a pas vu</b> une crise aussi profonde. »", a:"Opinion d'un intervenant"},
+     {q:"« Entre 2009 et 2019, <b>68 %</b> des terres artificialisées l'ont été pour l'habitat. »", a:"Fait vérifiable"},
+     {q:"« Les salaires <b>ont tendance à stagner</b>, alors que les frais annexes augmentent. »", a:"Explication / analyse"}
+    ]}
+  ]},
+  {t:"card", h3:"Pourquoi cet exercice compte pour vous", sub:"Ce n'est pas un exercice de méfiance, c'est un exercice de positionnement.", blocks:[
+   {t:"note", h:"<div class='prose'><p>En réunion, on vous présentera des chiffres, des analyses et des opinions, souvent mélangés. Votre valeur ajoutée de financier : demander, en français et sans agressivité, d'où vient un chiffre et s'il est encore à jour. Trois questions à connaître par cœur :</p>"+
+     "<ul>"+
+     "<li>« Ce chiffre, <strong>il date de quand</strong> ? »</li>"+
+     "<li>« C'est une <strong>donnée</strong> ou une <strong>estimation</strong> ? »</li>"+
+     "<li>« <strong>D'où vient</strong> ce chiffre, exactement ? »</li>"+
+     "</ul></div>"},
+   {t:"open", k:"dis2", n:"", starters:["Ce chiffre, il date de quand ?","C'est une donnée ou une estimation ?","Est-ce que c'est encore vrai aujourd'hui ?"],
+    q:"La vidéo date de début 2024. Formulez deux questions que vous poseriez avant de citer ses chiffres en réunion aujourd'hui.",
+    model:"« Ce taux de 4,5 %, il date de quand ? Aujourd'hui, on serait plutôt autour de 3,4 % sur 20 ans. » · « Le PTZ est-il toujours fermé aux maisons neuves ? Il me semble qu'il a été rouvert en 2025. »"}
+  ]}
+ ]
+},
+{
+ id:"met", title:"Et dans votre métier ?", time:"7 min",
+ lede:"Préparez ces questions en notes — quelques mots-clés, pas des phrases rédigées. En classe, vous parlerez à partir de ces notes sans les lire. C'est exactement le format d'une intervention en comité.",
+ blocks:[
+  {t:"card", h3:"1. Les taux et votre marché", sub:"Quand les taux montent, tout l'écosystème immobilier le ressent.", tc:[{sec:229, l:"3:49"}], blocks:[
+   {t:"open", k:"m1", n:"", starters:["Quand les taux montent, on observe…","Sur le marché espagnol,…","À l'inverse, quand ils baissent,…"],
+    q:"Quand les taux d'intérêt montent, qu'est-ce que vous observez sur le marché immobilier espagnol ? Et quand ils baissent ?",
+    hint:"Deux minutes. Parlez de tendances générales, sans données confidentielles."}
+  ]},
+  {t:"card", h3:"2. Paris : louer ou acheter ?", sub:"Vous vous installez bientôt à Paris.", tc:[{sec:282, l:"4:42"}], blocks:[
+   {t:"open", k:"m2", n:"", starters:["Le premier critère, pour moi, c'est…","Ensuite, il faut regarder…","Dans un premier temps, je pense que…"],
+    q:"Louer ou acheter à Paris : quels critères financiers appliquez-vous à votre propre situation ?",
+    hint:"Hiérarchisez vos critères : durée prévue, apport, taux, prix au mètre carré, frais de notaire… C'est ce qui distingue une réponse d'expert d'une simple opinion."}
+  ]},
+  {t:"card", h3:"3. Présenter devant un comité", sub:"Un de vos objectifs : faire une présentation devant un comité, en français.", tc:[{sec:641, l:"10:41"}], blocks:[
+   {t:"open", k:"m3", n:"", starters:["Je vais structurer mon intervention en trois points.","D'abord,…","Ensuite,…","Enfin,…","Pour conclure,…"],
+    q:"Préparez le plan d'une intervention de deux minutes : « La maison individuelle en France : un marché sous pression ». Trois parties et une conclusion.",
+    hint:"Des mots-clés, pas des phrases rédigées. En classe, vous parlerez à partir de ces notes."}
+  ]},
+  {t:"callout", ct:"Production orale — 2 minutes, format comité", h:"<p>Enregistrez-vous avec votre téléphone : <strong>deux minutes</strong>, sans vous arrêter, pour répondre à la question de la vidéo — <em>la maison individuelle est-elle encore un rêve accessible ?</em> Appuyez-vous sur votre plan. Réécoutez-vous une fois.</p><p>Visez la continuité, pas la perfection. Si un mot vous manque, contournez-le en français (« c'est la chose qui… ») plutôt que de passer à l'anglais.</p>"},
+  {t:"card", blocks:[
+   {t:"open", k:"m4", n:"", starters:["Le mot qui m'a manqué, c'est…","J'ai commencé une phrase par… et je n'ai pas su la finir.","Je me suis repris plusieurs fois sur…"],
+    q:"Après réécoute : quel <strong>mot vous a manqué</strong>, et quelle <strong>phrase avez-vous abandonnée</strong> en cours de route ?",
+    hint:"Ces deux éléments valent une demi-heure de cours. Notez-les précisément."}
+  ]}
+ ]
+},
+{
+ id:"bil", title:"Bilan", time:"4 min",
+ lede:"À remplir après votre travail en autonomie. C'est ce bilan qui déterminera nos priorités en classe.",
+ blocks:[
+  {t:"card", h3:"Mes trois expressions", sub:"Trois tournures de la vidéo, chacune dans une phrase sur votre travail.", blocks:[
+   {t:"open", k:"b1", n:"", starters:["1. … va de pair avec …","2. … alors que …, eux, …","3. Si …, …"],
+    q:"Mes trois expressions à réemployer cette semaine :",
+    model:"« 1. Chez nous, la croissance des ventes va de pair avec la hausse des coûts. 2. Le chiffre d'affaires progresse, alors que les marges, elles, stagnent. 3. Si les taux baissaient d'un point, la demande repartirait très vite. »"}
+  ]},
+  {t:"card", h3:"Mes passages incompris", sub:"Deux moments précis où vous avez décroché. Nous les réécouterons ensemble.", blocks:[
+   {t:"open", k:"b2", n:"", starters:["Vers …:…, j'ai cru comprendre que…","J'ai complètement décroché à partir de…"],
+    q:"Indiquez le minutage et ce que vous avez cru comprendre."}
+  ]},
+  {t:"card", h3:"Mon auto-évaluation", blocks:[
+   {t:"scale", k:"b3", cols:["Difficile","Correct","À l'aise"], rows:[
+    "Suivre un reportage à débit natif avec plusieurs voix (narrateur, experts, archives)",
+    "Comprendre les chiffres et les sigles à l'oral (PTZ, BCE, ZAN, RE2020)",
+    "Expliquer une chaîne de causes avec les bons connecteurs",
+    "Présenter des chiffres sans les lire",
+    "Donner mon avis et le nuancer sans passer par l'anglais",
+    "Parler deux minutes en continu, comme devant un comité"
+   ]}
+  ]},
+  {t:"card", h3:"Ce que je veux travailler en priorité", sub:"Une seule chose, et soyez précis.", blocks:[
+   {t:"open", k:"b4", n:"", starters:["Ce que je veux travailler en priorité, c'est…","Concrètement, j'aimerais arriver à…"],
+    q:"« L'oral » est trop vague. « Enchaîner deux idées sans chercher mes mots pendant cinq secondes » est exploitable."}
+  ]},
+  {t:"callout", ct:"Avant notre séance", h:"<p>L'objectif n'était pas de tout retenir, mais de <strong>pouvoir en parler</strong> : expliquer une cause, présenter un chiffre, donner un avis et le nuancer. En classe, nous partirons directement de vos réponses — vous parlerez environ 70 % du temps. Pensez à m'envoyer votre récapitulatif (bouton ci-dessous) avant le cours.</p>"},
+  {t:"export"}
+ ]
+}
+];
+
+/* ---------------- activity registry ---------------- */
+var ACTS = [];
+function reg(k){ if(ACTS.indexOf(k)<0) ACTS.push(k); }
+(function scan(){
+  function walk(bs){
+    bs.forEach(function(b){
+      if(b.t==="open") reg(b.k);
+      else if(b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale") reg(b.k);
+      else if(b.t==="gaps") reg(b.k);
+      else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ reg(x.k); }); }
+      else if(b.t==="card"&&b.blocks) walk(b.blocks);
+    });
+  }
+  STEPS.forEach(function(s){ walk(s.blocks); });
+})();
+
+function isDone(k){
+  var v = state.a[k];
+  if(v==null) return false;
+  if(typeof v === "string") return v.trim().length>2;
+  if(typeof v === "object") return Object.keys(v).length>0;
+  return false;
+}
+function stepDone(s){
+  var ks = stepKeys(s);
+  if(!ks.length) return false;
+  var n=0; ks.forEach(function(k){ if(isDone(k)) n++; });
+  return n >= Math.ceil(ks.length*0.7);
+}
+function stepKeys(s){
+  var out=[];
+  function walk(bs){ bs.forEach(function(b){
+    if(b.t==="open"||b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale"||b.t==="gaps"){ if(b.k) out.push(b.k); }
+    else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ out.push(x.k); }); }
+    else if(b.t==="card"&&b.blocks) walk(b.blocks);
+  });}
+  walk(s.blocks); return out;
+}
+
+/* ---------------- renderers ---------------- */
+function mkReveal(labelText, contentHTML){
+  var wrap = el("div");
+  var btn = el("button","btn btn-ghost small", labelText||"Voir une réponse possible");
+  var box = html("div","reveal","<div class='rt'>Réponse possible — un modèle, pas une correction</div>"+contentHTML);
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? (labelText||"Voir une réponse possible") : "Masquer";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+
+function rOpen(b){
+  var n = el("div","q");
+  var lbl = el("div","q-lbl");
+  if(b.n) lbl.appendChild(el("span","q-n", b.n+"."));
+  lbl.appendChild(html("div","q-t", b.q));
+  n.appendChild(lbl);
+  if(b.hint) n.appendChild(html("div","q-hint", b.hint));
+  var ta = el("textarea");
+  ta.id = "f_"+b.k;
+  ta.placeholder = "Votre réponse…";
+  ta.value = state.a[b.k] || "";
+  var flag = el("span","saved","enregistré");
+  function touched(){
+    state.a[b.k] = ta.value; saveSoon(); flag.classList.add("on");
+    clearTimeout(ta._t); ta._t = setTimeout(function(){ flag.classList.remove("on"); },1200);
+    updateProgress();
+  }
+  ta.addEventListener("input", touched);
+  if(b.starters && b.starters.length){
+    var sw = el("div","starters");
+    sw.appendChild(el("span","starters-lbl","Amorces — cliquez pour insérer"));
+    b.starters.forEach(function(st){
+      var bt = el("button","starter", st); bt.type = "button";
+      bt.setAttribute("aria-label", "Insérer l'amorce : "+st);
+      bt.addEventListener("click", function(){
+        var cur = ta.value;
+        ta.value = (cur && !/\s$/.test(cur) ? cur+" " : cur) + st + " ";
+        ta.focus();
+        try{ ta.setSelectionRange(ta.value.length, ta.value.length); }catch(e){}
+        touched();
+      });
+      sw.appendChild(bt);
+    });
+    n.appendChild(sw);
+  }
+  n.appendChild(ta);
+  var foot = el("div","row");
+  foot.appendChild(flag);
+  n.appendChild(foot);
+  if(b.model) n.appendChild(mkReveal(null, "<div>"+b.model+"</div>"));
+  return n;
+}
+
+function rTf(b){
+  var wrap = el("div","tf-list");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","tf-item");
+    var top = el("div","tf-top");
+    top.appendChild(html("div","tf-txt","<strong style='font-family:var(--mono);font-size:12px;color:var(--muted)'>"+(i+1)+"</strong> &nbsp;"+it.q));
+    var btns = el("div","tf-btns");
+    var verdict = html("div","verdict","");
+    verdict.hidden = true;
+    function apply(val){
+      store[i] = val; saveSoon();
+      bV.setAttribute("aria-pressed", val==="V"?"true":"false");
+      bF.setAttribute("aria-pressed", val==="F"?"true":"false");
+      var right = (val==="V") === it.a;
+      box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+      verdict.hidden = false;
+      verdict.innerHTML = "<span class='vi'>"+(right?"✓ Exact":"✗ Non")+"</span><span>"+it.j+"</span>";
+      updateProgress();
+    }
+    var bV = el("button","pick","Vrai"); bV.type="button"; bV.setAttribute("aria-pressed","false");
+    var bF = el("button","pick","Faux"); bF.type="button"; bF.setAttribute("aria-pressed","false");
+    bV.addEventListener("click", function(){ apply("V"); });
+    bF.addEventListener("click", function(){ apply("F"); });
+    btns.appendChild(bV); btns.appendChild(bF);
+    top.appendChild(btns);
+    box.appendChild(top); box.appendChild(verdict);
+    wrap.appendChild(box);
+    if(store[i]) apply(store[i]);
+  });
+  return wrap;
+}
+
+function rGaps(b){
+  var wrap = el("div","gaps");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var inputs = [];
+  b.fields.forEach(function(f){
+    var row = el("div","gap-row");
+    row.appendChild(html("div","gap-lbl", f.label));
+    var box = el("div","gap-in");
+    var inp = document.createElement("input");
+    inp.type="text"; inp.id = "f_"+b.k+"_"+f.k;
+    inp.value = store[f.k] || "";
+    inp.setAttribute("aria-label", f.label.replace(/<[^>]+>/g,""));
+    inp.addEventListener("input", function(){
+      store[f.k] = inp.value; inp.classList.remove("ok","no"); sol.textContent=""; saveSoon(); updateProgress();
+    });
+    box.appendChild(inp);
+    if(f.suf) box.appendChild(el("span","gap-suf", f.suf));
+    var sol = el("span","gap-sol","");
+    box.appendChild(sol);
+    row.appendChild(box);
+    wrap.appendChild(row);
+    inputs.push({inp:inp, f:f, sol:sol});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    inputs.forEach(function(o){
+      var right = matches(o.inp.value, o.f.answers);
+      o.inp.classList.toggle("ok", right); o.inp.classList.toggle("no", !right);
+      o.sol.textContent = right ? "✓" : ("→ "+o.f.sol);
+      o.sol.style.color = right ? "var(--ok)" : "var(--no)";
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rOrder(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="11px";
+  if(b.prompt) wrap.appendChild(html("div","q-t", b.prompt));
+  var slot = el("div","ord-slot");
+  var pool = el("div","ord-pool");
+  var chosen = (state.a[b.k] && state.a[b.k].seq) ? state.a[b.k].seq.slice() : [];
+  function render(){
+    slot.innerHTML=""; pool.innerHTML="";
+    if(!chosen.length){ slot.appendChild(el("span","ph","Cliquez les éléments dans l'ordre…")); }
+    chosen.forEach(function(id, i){
+      var it = b.items.filter(function(x){return x.id===id;})[0];
+      var s = el("div","seq");
+      s.appendChild(el("span","sn",(i+1)+"."));
+      s.appendChild(el("span",null,it.label));
+      slot.appendChild(s);
+    });
+    b.items.forEach(function(it){
+      var c = el("button","chip"); c.type="button";
+      c.innerHTML = "<span class='ck'>"+it.id+"</span>"+it.label;
+      if(chosen.indexOf(it.id)>=0) c.disabled = true;
+      c.addEventListener("click", function(){
+        chosen.push(it.id);
+        state.a[b.k] = {seq:chosen.slice()}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent="";
+        render(); updateProgress();
+      });
+      pool.appendChild(c);
+    });
+  }
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  var undo = el("button","btn btn-ghost","Recommencer");
+  var msg = el("span","small");
+  check.addEventListener("click", function(){
+    if(chosen.length !== b.solution.length){ msg.textContent="Placez d'abord tous les éléments."; msg.style.color="var(--muted)"; return; }
+    var right = chosen.join("") === b.solution.join("");
+    slot.classList.toggle("ok", right); slot.classList.toggle("no", !right);
+    msg.textContent = right ? "✓ C'est l'ordre du reportage." : ("✗ L'ordre est : "+b.solution.join(" → "));
+    msg.style.color = right ? "var(--ok)" : "var(--no)";
+  });
+  undo.addEventListener("click", function(){
+    chosen = []; state.a[b.k]={seq:[]}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent=""; render(); updateProgress();
+  });
+  bar.appendChild(check); bar.appendChild(undo); bar.appendChild(msg);
+  wrap.appendChild(slot); wrap.appendChild(pool); wrap.appendChild(bar);
+  render();
+  return wrap;
+}
+
+function rMatch(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var sels = [];
+  b.rows.forEach(function(r, i){
+    var row = el("div","mt-row");
+    row.appendChild(html("div","mt-left", r.left));
+    var s = document.createElement("select");
+    s.id = "f_"+b.k+"_"+i;
+    s.setAttribute("aria-label", r.left);
+    var o0 = document.createElement("option"); o0.value=""; o0.textContent="— choisir —"; s.appendChild(o0);
+    b.options.forEach(function(op){
+      var o = document.createElement("option"); o.value=op; o.textContent=op; s.appendChild(o);
+    });
+    s.value = store[i] || "";
+    s.addEventListener("change", function(){ store[i]=s.value; s.classList.remove("ok","no"); saveSoon(); updateProgress(); });
+    row.appendChild(s);
+    wrap.appendChild(row);
+    sels.push({s:s, r:r});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    sels.forEach(function(o){
+      var right = o.s.value === o.r.answer;
+      o.s.classList.toggle("ok", right); o.s.classList.toggle("no", !right);
+      if(!right && o.s.value) o.s.title = "Réponse attendue : "+o.r.answer;
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rClassify(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","cl-item");
+    box.appendChild(html("div","cl-q", it.q));
+    var opts = el("div","cl-opts");
+    var btns = [];
+    function paint(){
+      var v = store[i];
+      btns.forEach(function(x){ x.b.setAttribute("aria-pressed", x.c===v ? "true":"false"); });
+      if(v){
+        var right = v === it.a;
+        box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+        fb.hidden = false;
+        fb.innerHTML = right ? "<span class='vi'>✓ Exact</span>" : "<span class='vi'>✗ Non</span><span>Il s'agit d'un énoncé de type « "+it.a+" ».</span>";
+      }
+    }
+    b.cats.forEach(function(c){
+      var bt = el("button","pick", c); bt.type="button"; bt.setAttribute("aria-pressed","false");
+      bt.style.minWidth="auto";
+      bt.addEventListener("click", function(){ store[i]=c; saveSoon(); paint(); updateProgress(); });
+      opts.appendChild(bt); btns.push({b:bt,c:c});
+    });
+    var fb = html("div","verdict",""); fb.hidden = true;
+    box.appendChild(opts); box.appendChild(fb);
+    wrap.appendChild(box);
+    paint();
+  });
+  return wrap;
+}
+
+function rCards(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="22px";
+  b.groups.forEach(function(g, gi){
+    var grp = el("div","grp");
+    grp.appendChild(el("div","grp-h", g.name));
+    var grid = el("div","cgrid");
+    g.items.forEach(function(pair, ii){
+      var id = gi+"-"+ii;
+      var c = el("button","fc"); c.type="button";
+      var term = el("div","term", pair[0]);
+      var tap = el("div","tap","cliquer pour la définition");
+      var def = el("div","def", pair[1]); def.hidden = true;
+      var mark = el("span","fc-mark","?");
+      c.appendChild(mark); c.appendChild(term); c.appendChild(tap); c.appendChild(def);
+      function paint(){
+        var known = !!state.known[id];
+        c.classList.toggle("known", known);
+        mark.textContent = known ? "su" : "?";
+      }
+      c.addEventListener("click", function(){
+        if(def.hidden){ def.hidden=false; tap.hidden=true; }
+        else { state.known[id] = !state.known[id]; saveSoon(); paint(); }
+      });
+      paint();
+      grid.appendChild(c);
+    });
+    grp.appendChild(grid);
+    wrap.appendChild(grp);
+  });
+  wrap.appendChild(html("div","small muted","<em>Premier clic : la définition. Second clic : marquer la carte comme sue.</em>"));
+  return wrap;
+}
+
+function rClip(b){
+  var box = el("div","clip");
+  var head = el("div","clip-h");
+  head.appendChild(el("h3", null, b.title));
+  head.appendChild(tcLink(b.sec, "vers "+mmss(b.sec)));
+  box.appendChild(head);
+  var bq = el("blockquote"); bq.textContent = "« "+b.quote+" »";
+  box.appendChild(bq);
+  box.appendChild(html("div","prose", b.focus));
+  (b.ex||[]).forEach(function(x){
+    box.appendChild(el("hr","hr"));
+    box.appendChild(rOpen({t:"open", k:x.k, q:x.q, model:x.model}));
+  });
+  return box;
+}
+
+function rScale(b){
+  var wrap = el("div","sc-wrap");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var tbl = el("table","sc-tbl");
+  var thead = el("thead"); var trh = el("tr");
+  trh.appendChild(el("th",null,"Je suis capable de…"));
+  b.cols.forEach(function(c){ trh.appendChild(el("th",null,c)); });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  var tb = el("tbody");
+  b.rows.forEach(function(r, i){
+    var tr = el("tr");
+    tr.appendChild(el("td",null,r));
+    var btns=[];
+    b.cols.forEach(function(c, ci){
+      var td = el("td");
+      var bt = el("button","rad"); bt.type="button";
+      bt.setAttribute("aria-label", r+" : "+c);
+      bt.setAttribute("aria-pressed", store[i]===ci ? "true":"false");
+      bt.addEventListener("click", function(){
+        store[i]=ci; saveSoon();
+        btns.forEach(function(o,oi){ o.setAttribute("aria-pressed", oi===ci ? "true":"false"); });
+        updateProgress();
+      });
+      btns.push(bt); td.appendChild(bt); tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb); wrap.appendChild(tbl);
+  return wrap;
+}
+
+function rPlay(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct","Visionnage"));
+  var row = el("div","row");
+  var a = tcLink(b.sec, b.label);
+  a.style.fontSize="13.5px"; a.style.padding="7px 13px";
+  row.appendChild(a);
+  row.appendChild(el("span","small muted", b.note||""));
+  box.appendChild(row);
+  return box;
+}
+
+function rExport(){
+  var box = el("div","card");
+  box.appendChild(html("h3",null,"Envoyer mes réponses au formateur"));
+  box.appendChild(html("p","sub","Vos réponses sont enregistrées dans ce navigateur. Le bouton ci-dessous rassemble tout dans un texte que vous pouvez copier et m'envoyer par e-mail ou message."));
+  var b = el("button","btn btn-primary","Préparer mon récapitulatif");
+  b.addEventListener("click", openExport);
+  var row = el("div","row"); row.appendChild(b);
+  box.appendChild(row);
+  return box;
+}
+
+function rNote(b){ return html("div","prose", b.h); }
+function rRevealNote(b){
+  var wrap = el("div");
+  var lbl = b.label||"Afficher";
+  var btn = el("button","btn btn-ghost small", lbl); btn.type="button";
+  var box = html("div","reveal","<div class='rt'>"+(b.rt||"")+"</div><div class='prose'>"+b.h+"</div>");
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? lbl : "Masquer le résumé";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+function rCallout(b){
+  var box = el("div","callout");
+  if(b.ct) box.appendChild(el("div","ct", b.ct));
+  box.appendChild(html("div","prose", b.h));
+  return box;
+}
+
+function renderBlock(b){
+  switch(b.t){
+    case "note": return rNote(b);
+    case "reveal": return rRevealNote(b);
+    case "callout": return rCallout(b);
+    case "open": return rOpen(b);
+    case "tf": return rTf(b);
+    case "gaps": return rGaps(b);
+    case "order": return rOrder(b);
+    case "match": return rMatch(b);
+    case "classify": return rClassify(b);
+    case "cards": return rCards(b);
+    case "clip": return rClip(b);
+    case "scale": return rScale(b);
+    case "play": return rPlay(b);
+    case "export": return rExport();
+    case "card": {
+      var c = el("div","card");
+      if(b.h3){
+        var hr = el("div","row");
+        hr.style.justifyContent="space-between";
+        hr.appendChild(el("h3",null,b.h3));
+        if(b.tc){ var g=el("div","row"); b.tc.forEach(function(t){ g.appendChild(tcLink(t.sec,t.l)); }); hr.appendChild(g); }
+        c.appendChild(hr);
+      } else if(b.tc){
+        var g2=el("div","row"); b.tc.forEach(function(t){ g2.appendChild(tcLink(t.sec,t.l)); }); c.appendChild(g2);
+      }
+      if(b.sub) c.appendChild(el("p","sub", b.sub));
+      (b.blocks||[]).forEach(function(x){ c.appendChild(renderBlock(x)); });
+      return c;
+    }
+  }
+  return el("div");
+}
+
+/* ---------------- shell render ---------------- */
+var main = document.getElementById("main");
+var rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  STEPS.forEach(function(s, i){
+    var li = el("li","rail-item");
+    var b = el("button","rl"); b.type="button";
+    b.setAttribute("aria-current", i===state.step ? "true":"false");
+    if(stepDone(s)) b.classList.add("is-done");
+    b.appendChild(el("span","rl-num", String(i+1).padStart(2,"0")));
+    b.appendChild(el("span","rl-title", s.title));
+    b.addEventListener("click", function(){ go(i); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+}
+
+function renderStep(){
+  var s = STEPS[state.step];
+  main.innerHTML="";
+  var sec = el("section","step");
+  var head = el("div","step-head");
+  var eye = el("div","eyebrow");
+  eye.appendChild(el("span",null,"Étape "+String(state.step+1).padStart(2,"0")+" / "+String(STEPS.length).padStart(2,"0")));
+  eye.appendChild(el("span","dot"));
+  eye.appendChild(el("span",null,s.time));
+  head.appendChild(eye);
+  head.appendChild(el("h2",null,s.title));
+  if(s.lede) head.appendChild(el("p","lede", s.lede));
+  sec.appendChild(head);
+  s.blocks.forEach(function(b){ sec.appendChild(renderBlock(b)); });
+
+  var nav = el("div","stepnav");
+  var prev = el("button","btn","← "+(state.step>0 ? STEPS[state.step-1].title : "Début"));
+  prev.disabled = state.step===0;
+  if(prev.disabled){ prev.style.opacity=".4"; prev.style.cursor="default"; }
+  prev.addEventListener("click", function(){ if(state.step>0) go(state.step-1); });
+  var next = el("button","btn btn-primary", (state.step<STEPS.length-1 ? STEPS[state.step+1].title : "Terminé")+" →");
+  next.disabled = state.step===STEPS.length-1;
+  if(next.disabled){ next.style.opacity=".4"; next.style.cursor="default"; }
+  next.addEventListener("click", function(){ if(state.step<STEPS.length-1) go(state.step+1); });
+  nav.appendChild(prev); nav.appendChild(next);
+  sec.appendChild(nav);
+  main.appendChild(sec);
+}
+
+function go(i){
+  state.step = i; save();
+  renderStep(); renderRail();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+var progFill = document.getElementById("progFill");
+var progNum = document.getElementById("progNum");
+function updateProgress(){
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  var pct = ACTS.length ? Math.round(n/ACTS.length*100) : 0;
+  progFill.style.width = pct+"%";
+  progNum.textContent = n+" / "+ACTS.length;
+  renderRail();
+}
+
+/* ---------------- export ---------------- */
+function textOf(k){
+  var v = state.a[k];
+  if(v==null) return "";
+  if(typeof v==="string") return v.trim();
+  return "";
+}
+function buildExport(){
+  var L=[];
+  L.push("ATELIER IMMOBILIER — préparation autonome B1+");
+  L.push("Vidéo : « Immobilier : la maison individuelle est-elle encore un rêve accessible ? »");
+  L.push("Exporté le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}));
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  L.push("Avancement : "+n+" activités sur "+ACTS.length);
+  L.push("");
+  STEPS.forEach(function(s, si){
+    var lines=[];
+    function walk(bs){
+      bs.forEach(function(b){
+        if(b.t==="open"){
+          var t = textOf(b.k);
+          if(t) lines.push("• "+b.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+        } else if(b.t==="clip"){
+          (b.ex||[]).forEach(function(x){
+            var t = textOf(x.k);
+            if(t) lines.push("• "+x.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+          });
+        } else if(b.t==="scale"){
+          var st = state.a[b.k]||{};
+          b.rows.forEach(function(r,i){
+            if(st[i]!=null) lines.push("• "+r+" : "+b.cols[st[i]]);
+          });
+        } else if(b.t==="card" && b.blocks){ walk(b.blocks); }
+      });
+    }
+    walk(s.blocks);
+    if(lines.length){
+      L.push("──────────────────────────────");
+      L.push(String(si+1).padStart(2,"0")+". "+s.title.toUpperCase());
+      L.push("");
+      L.push(lines.join("\n\n"));
+      L.push("");
+    }
+  });
+  if(L.length<=5) L.push("(Aucune réponse rédigée pour l'instant.)");
+  return L.join("\n");
+}
+function openExport(){
+  var mask = el("div","mask");
+  var m = el("div","modal");
+  m.setAttribute("role","dialog"); m.setAttribute("aria-modal","true"); m.setAttribute("aria-label","Récapitulatif de mes réponses");
+  m.appendChild(html("h3",null,"Mon récapitulatif"));
+  m.appendChild(html("p","sub","Copiez ce texte et envoyez-le à votre formateur avant le cours."));
+  var ta = el("textarea"); ta.id="exportArea"; ta.value = buildExport(); ta.readOnly = true;
+  m.appendChild(ta);
+  var row = el("div","row");
+  var copy = el("button","btn btn-primary","Copier le texte");
+  var status = el("span","small muted","");
+  copy.addEventListener("click", function(){
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    var done=false;
+    try{ done = document.execCommand("copy"); }catch(e){}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ta.value).then(function(){ status.textContent="Copié ✓"; status.style.color="var(--ok)"; },
+        function(){ if(!done) status.textContent="Sélectionnez le texte puis Ctrl/Cmd + C."; });
+    } else {
+      status.textContent = done ? "Copié ✓" : "Sélectionnez le texte puis Ctrl/Cmd + C.";
+      status.style.color = done ? "var(--ok)" : "var(--muted)";
+    }
+  });
+  var close = el("button","btn","Fermer");
+  function shut(){ mask.remove(); document.removeEventListener("keydown", esc); }
+  function esc(e){ if(e.key==="Escape") shut(); }
+  close.addEventListener("click", shut);
+  mask.addEventListener("click", function(e){ if(e.target===mask) shut(); });
+  document.addEventListener("keydown", esc);
+  row.appendChild(copy); row.appendChild(close); row.appendChild(status);
+  m.appendChild(row);
+  mask.appendChild(m);
+  document.body.appendChild(mask);
+  copy.focus();
+}
+
+/* ---------------- theme ---------------- */
+document.getElementById("themeBtn").addEventListener("click", function(){
+  var r = document.documentElement;
+  var cur = r.getAttribute("data-theme");
+  var sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var nowDark = cur ? cur==="dark" : sysDark;
+  r.setAttribute("data-theme", nowDark ? "light" : "dark");
+  try{ localStorage.setItem(KEY+"-theme", nowDark ? "light":"dark"); }catch(e){}
+});
+(function(){ var t=null; try{ t=localStorage.getItem(KEY+"-theme"); }catch(e){} document.documentElement.setAttribute("data-theme", t==="light" ? "light" : "dark"); })();
+
+document.getElementById("exportBtn").addEventListener("click", openExport);
+document.getElementById("resetBtn").addEventListener("click", function(){
+  if(!window.confirm("Effacer toutes vos réponses ? Cette action est définitive.")) return;
+  state = {step:0, a:{}, done:{}, known:{}};
+  save(); renderStep(); renderRail(); updateProgress();
+});
+
+/* ---------------- boot ---------------- */
+if(!STORAGE_OK){
+  var warn = html("div","storewarn",
+    "<strong>Ce navigateur n'enregistre pas vos réponses sur cette page.</strong> "+
+    "Vous pouvez travailler normalement, mais <strong>avant de fermer l'onglet</strong>, "+
+    "cliquez sur « Exporter mes réponses » en haut de la page et conservez le texte.");
+  document.body.insertBefore(warn, document.querySelector(".shell"));
+}
+load();
+if(state.step<0 || state.step>=STEPS.length) state.step=0;
+renderStep();
+renderRail();
+updateProgress();
+})();
+</script>
+
+
+
+</body></html>
