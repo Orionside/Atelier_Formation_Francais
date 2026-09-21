@@ -11,6 +11,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Néobanques | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Neobanques_B2/ |
 | Accélération | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2/ |
 | Banque — ouvrir un compte bancaire | B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Compte_Bancaire_B1/ |
+| Mobilité électrique — Plug & Charge | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Plug_Charge_B2/ |
 
 ## Notes
 
