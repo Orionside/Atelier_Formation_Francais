@@ -10,6 +10,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Immobilier — la maison individuelle | B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Maison_Individuelle_B1/ |
 | Néobanques | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Neobanques_B2/ |
 | Accélération | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2/ |
+| Banque — ouvrir un compte bancaire | B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Compte_Bancaire_B1/ |
 
 ## Notes
 
