@@ -1,0 +1,1523 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex, nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Atelier Compte bancaire B1+</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#5B6B7A; --line:#D5DDE4; --line-strong:#B9C5CF;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --focus:#1F5FA8;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --focus:#82B6EB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --focus:#82B6EB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+button{font:inherit; color:inherit; cursor:pointer}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0}
+.brand b{font-family:var(--serif); font-size:17px; font-weight:700; white-space:nowrap}
+.brand span{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.prog{display:flex; align-items:center; gap:9px}
+.prog-track{width:120px; height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.prog-fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+.prog-num{font-family:var(--mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums}
+.btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:7px 13px; border-radius:7px; font-size:13.5px; font-weight:500;
+  transition:background .15s, border-color .15s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--muted)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .btn-primary, :root:not([data-theme="light"]) .btn-primary{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:0 20px; padding-block:26px 64px;
+  display:grid; grid-template-columns:238px minmax(0,1fr); gap:38px; align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:minmax(0,1fr); gap:20px} }
+
+/* ---------- stepper ---------- */
+.rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 74px)}
+@media (max-width:900px){
+  .rail{position:static}
+  .rail-list{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin}
+  .rail-item{flex:0 0 auto; width:auto!important}
+  .rail-item .rl-title{white-space:nowrap}
+  .rail-head{margin-bottom:9px}
+}
+.rail-head{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:12px; padding-left:2px}
+.rail-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+@media (max-width:900px){ .rail-list{flex-direction:row} }
+.rail-item{width:100%}
+.rl{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:9px;
+  padding:8px 11px; color:var(--muted); font-size:13.5px; line-height:1.35;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.rl:hover{border-color:var(--line-strong); background:var(--surface-2); color:var(--ink)}
+.rl[aria-current="true"]{
+  background:var(--accent); border-color:var(--accent); color:#fff;
+  font-weight:500; box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .rl[aria-current="true"],
+:root:not([data-theme="light"]) .rl[aria-current="true"]{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .rl[aria-current="true"]{color:#fff}}
+.rl-num{
+  font-family:var(--mono); font-size:11px; flex:0 0 auto;
+  width:23px; height:23px; display:grid; place-items:center; border-radius:6px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--muted);
+}
+.rl.is-done .rl-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.rl[aria-current="true"] .rl-num,
+.rl[aria-current="true"].is-done .rl-num{
+  background:rgba(255,255,255,.24); border-color:transparent; color:inherit;
+}
+.rl-title{min-width:0}
+.rail-foot{margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+@media (max-width:900px){ .rail-foot{display:none} }
+
+/* ---------- main ---------- */
+main{min-width:0}
+.step{display:flex; flex-direction:column; gap:20px}
+.step-head{border-bottom:1px solid var(--line); padding-bottom:16px;
+  display:flex; flex-direction:column; gap:7px}
+.eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.eyebrow .dot{width:3px;height:3px;border-radius:50%;background:var(--line-strong)}
+.step-head h2{font-size:clamp(22px,4.3vw,29px); line-height:1.2}
+.step-head .lede{color:var(--muted); max-width:62ch}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:18px 19px;
+  display:flex; flex-direction:column; gap:13px}
+.card h3{font-size:17px; line-height:1.3}
+.card > .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:11px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.prose strong{font-weight:600}
+.prose em{color:var(--muted)}
+
+.callout{border-left:3px solid var(--accent); background:var(--surface-2); border-radius:0 9px 9px 0;
+  padding:14px 17px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.callout .ct{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink)}
+
+/* timecode */
+.tc{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:6px;
+  padding:3px 8px; color:var(--ink); text-decoration:none; white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.tc:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tc::before{content:"▶"; font-size:8px; color:var(--accent-ink)}
+
+/* questions */
+.q{display:flex; flex-direction:column; gap:10px; padding-block:4px}
+.q + .q{border-top:1px dashed var(--line); padding-top:16px}
+.q-lbl{display:flex; gap:10px; align-items:baseline}
+.q-n{font-family:var(--mono); font-size:12px; color:var(--accent-ink); flex:0 0 auto; font-weight:500}
+.q-t{font-weight:500; max-width:64ch}
+.q-hint{font-size:13.5px; color:var(--muted); max-width:64ch}
+textarea{
+  width:100%; min-height:82px; resize:vertical; font:inherit; font-size:14.5px;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line);
+  border-radius:8px; padding:10px 12px; line-height:1.55;
+}
+textarea::placeholder{color:var(--muted); opacity:.75}
+textarea:focus{border-color:var(--focus); background:var(--surface)}
+.row{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.reveal{background:var(--surface-2); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:13px 15px; font-size:14.5px; max-width:66ch;
+  display:flex; flex-direction:column; gap:8px}
+.reveal .rt{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.saved{font-family:var(--mono); font-size:11px; color:var(--ok); opacity:0; transition:opacity .3s}
+.saved.on{opacity:1}
+
+/* amorces cliquables */
+.starters{display:flex; flex-wrap:wrap; gap:6px; align-items:center; max-width:68ch}
+.starters-lbl{flex:0 0 100%; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted)}
+.starter{
+  border:1px solid var(--line-strong); background:var(--surface-2); border-radius:20px;
+  padding:5px 13px; font-family:var(--serif); font-style:italic; font-size:13.5px;
+  color:var(--muted); text-align:left; line-height:1.45; max-width:100%;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.starter:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
+
+/* true/false */
+.tf-list{display:flex; flex-direction:column; gap:10px}
+.tf-item{border:1px solid var(--line); border-radius:9px; padding:12px 14px; background:var(--surface-2);
+  display:flex; flex-direction:column; gap:10px}
+.tf-top{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+.tf-txt{flex:1 1 300px; min-width:0; font-size:14.5px}
+.tf-btns{display:flex; gap:6px; flex:0 0 auto}
+.pick{border:1px solid var(--line-strong); background:var(--surface); border-radius:7px;
+  padding:5px 12px; font-size:13px; font-weight:500; min-width:62px}
+.pick[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.tf-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.tf-item.no{border-color:var(--no); background:var(--no-soft)}
+.verdict{font-size:14px; display:flex; gap:8px; align-items:flex-start}
+.verdict .vi{font-family:var(--mono); font-weight:500; flex:0 0 auto}
+.ok .verdict .vi{color:var(--ok)} .no .verdict .vi{color:var(--no)}
+
+/* gaps */
+.gaps{display:flex; flex-direction:column; gap:9px}
+.gap-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  border-bottom:1px dotted var(--line); padding-bottom:9px}
+.gap-row:last-of-type{border-bottom:0; padding-bottom:0}
+.gap-lbl{flex:1 1 240px; min-width:0; font-size:14.5px}
+.gap-in{display:flex; align-items:center; gap:7px; flex:0 0 auto}
+input[type="text"]{
+  font:inherit; font-size:14.5px; font-family:var(--mono); width:118px; text-align:center;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line-strong);
+  border-radius:7px; padding:6px 9px;
+}
+input[type="text"]:focus{border-color:var(--focus); background:var(--surface)}
+input.ok{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+input.no{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.gap-suf{font-size:13.5px; color:var(--muted); font-family:var(--mono)}
+.gap-sol{font-size:13px; color:var(--ok); font-family:var(--mono)}
+
+select{
+  font:inherit; font-size:14px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:7px; padding:6px 9px; max-width:100%;
+}
+select:focus{border-color:var(--focus)}
+select.ok{border-color:var(--ok); background:var(--ok-soft)}
+select.no{border-color:var(--no); background:var(--no-soft)}
+
+/* order */
+.ord-pool{display:flex; gap:8px; flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong); background:var(--surface-2); border-radius:8px;
+  padding:8px 12px; font-size:14px; text-align:left; max-width:100%}
+.chip:hover{border-color:var(--accent)}
+.chip:disabled{opacity:.34; cursor:default}
+.chip .ck{font-family:var(--mono); color:var(--accent-ink); margin-right:7px; font-size:12px}
+.ord-slot{display:flex; gap:8px; flex-wrap:wrap; align-items:center; min-height:40px;
+  border:1px dashed var(--line-strong); border-radius:9px; padding:8px; background:var(--surface-2)}
+.ord-slot .ph{color:var(--muted); font-size:13.5px; padding:4px}
+.seq{display:inline-flex; align-items:center; gap:7px; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:5px 10px; font-size:13.5px}
+.seq .sn{font-family:var(--mono); font-size:11px; color:var(--muted)}
+.ord-slot.ok{border-color:var(--ok); border-style:solid; background:var(--ok-soft)}
+.ord-slot.no{border-color:var(--no); border-style:solid; background:var(--no-soft)}
+
+/* match / classify */
+.mt-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-bottom:10px;
+  border-bottom:1px dotted var(--line)}
+.mt-row:last-of-type{border-bottom:0; padding-bottom:0}
+.mt-left{flex:1 1 230px; font-size:14.5px; min-width:0}
+.cl-item{border:1px solid var(--line); border-radius:9px; background:var(--surface-2);
+  padding:12px 14px; display:flex; flex-direction:column; gap:9px}
+.cl-q{font-size:14.5px}
+.cl-q b{font-weight:600; color:var(--accent-ink)}
+.cl-opts{display:flex; gap:6px; flex-wrap:wrap}
+.cl-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.cl-item.no{border-color:var(--no); background:var(--no-soft)}
+
+/* cards */
+.grp{display:flex; flex-direction:column; gap:10px}
+.grp-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(212px,1fr)); gap:9px}
+.fc{position:relative; border:1px solid var(--line); background:var(--surface-2); border-radius:9px;
+  padding:12px 13px; min-height:78px; text-align:left; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, background .15s}
+.fc:hover{border-color:var(--accent)}
+.fc .term{font-weight:600; font-size:14.5px}
+.fc .def{font-size:13.5px; color:var(--muted); line-height:1.5}
+.fc .tap{font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em}
+.fc.known{border-color:var(--ok); background:var(--ok-soft)}
+.fc-mark{position:absolute; top:8px; right:8px; border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:6px; font-size:11px; padding:2px 7px; line-height:1.5;
+  font-family:var(--mono); color:var(--muted)}
+.fc.known .fc-mark{border-color:var(--ok); color:var(--ok)}
+
+/* clip */
+.clip{border:1px solid var(--line); border-radius:11px; background:var(--surface); padding:17px 18px;
+  display:flex; flex-direction:column; gap:13px}
+.clip-h{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.clip-h h3{font-size:16.5px}
+blockquote{margin:0; padding:12px 16px; background:var(--surface-2); border-left:3px solid var(--line-strong);
+  border-radius:0 8px 8px 0; font-size:15px; font-family:var(--serif); line-height:1.65; max-width:64ch}
+
+/* scale */
+.sc-tbl{width:100%; border-collapse:collapse; font-size:14px}
+.sc-wrap{overflow-x:auto}
+.sc-tbl th{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:500; padding:0 8px 9px; text-align:center}
+.sc-tbl th:first-child{text-align:left}
+.sc-tbl td{border-top:1px solid var(--line); padding:9px 8px; text-align:center}
+.sc-tbl td:first-child{text-align:left; min-width:190px}
+.rad{width:20px; height:20px; border-radius:50%; border:1.5px solid var(--line-strong); background:var(--surface-2); padding:0}
+.rad[aria-pressed="true"]{background:var(--accent); border-color:var(--accent)}
+
+/* nav */
+.stepnav{display:flex; gap:10px; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:6px}
+
+/* modal */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.55); z-index:60; display:grid; place-items:center; padding:20px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; overflow:auto; padding:22px; display:flex; flex-direction:column; gap:14px}
+.modal h3{font-size:19px}
+.modal textarea{min-height:300px; font-family:var(--mono); font-size:12.5px; line-height:1.55}
+
+.storewarn{
+  max-width:1180px; margin:16px auto 0; padding:12px 16px;
+  border:1px solid var(--accent); border-left-width:3px; border-radius:0 9px 9px 0;
+  background:var(--accent-soft); color:var(--ink); font-size:14px; line-height:1.55;
+}
+@media (max-width:1220px){ .storewarn{margin-inline:20px} }
+.hr{height:1px; background:var(--line); border:0; margin:2px 0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+[hidden]:not([hidden=until-found i]){display:none!important}
+</style>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <b>Atelier Compte bancaire</b>
+      <span>B1+ · banque &amp; démarches</span>
+    </div>
+    <div class="prog" title="Activités complétées">
+      <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+      <span class="prog-num" id="progNum">0 / 0</span>
+    </div>
+    <button class="btn" id="exportBtn">Exporter mes réponses</button>
+    <button class="btn btn-ghost" id="themeBtn" aria-label="Changer de thème">Thème</button>
+  </div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-head">Parcours · en autonomie</div>
+    <ul class="rail-list" id="rail"></ul>
+    <div class="rail-foot">
+      <a class="tc" href="https://youtu.be/IGjqmLp_9O0" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+      <button class="btn btn-ghost small" id="resetBtn">Tout effacer</button>
+    </div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var VIDEO = "https://youtu.be/IGjqmLp_9O0";
+var KEY = "compte-bancaire-b1plus-v1";
+
+/* ---------------- storage ---------------- */
+var state = {step:0, a:{}, done:{}, known:{}};
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var p = JSON.parse(raw); if(p && typeof p==="object"){
+      state.step = p.step|0; state.a = p.a||{}; state.done = p.done||{}; state.known = p.known||{};
+    }}
+  }catch(e){}
+}
+var STORAGE_OK = (function(){
+  try{ localStorage.setItem(KEY+"-probe","1"); localStorage.removeItem(KEY+"-probe"); return true; }
+  catch(e){ return false; }
+})();
+var saveTimer=null;
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+}
+function saveSoon(){ clearTimeout(saveTimer); saveTimer=setTimeout(save,300); }
+
+/* ---------------- helpers ---------------- */
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=txt; return n; }
+function html(tag, cls, h){ var n=document.createElement(tag); if(cls)n.className=cls; if(h!=null)n.innerHTML=h; return n; }
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return m+":"+(r<10?"0":"")+r; }
+function tcLink(sec, label){
+  var a=el("a","tc",label||mmss(sec));
+  a.href=VIDEO+"?t="+sec; a.target="_blank"; a.rel="noopener";
+  a.title="Ouvrir la vidéo à "+mmss(sec);
+  return a;
+}
+function norm(s){
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[^a-z0-9]/g," ").replace(/\s+/g," ").trim();
+}
+function matches(val, answers){
+  var v = norm(val); if(!v) return false;
+  for(var i=0;i<answers.length;i++){ if(v === norm(answers[i])) return true; }
+  return false;
+}
+
+/* ---------------- content ---------------- */
+var SEGS = [
+{"t":"seg","n":1,"a":0,"b":51,"title":"Qui a le droit d'ouvrir un compte ?",
+ "sum":"Le vidéaste annonce le sujet : ouvrir un compte dans une <strong>banque traditionnelle</strong>, en se rendant directement <strong>en agence</strong>. Il ne parle pas des banques en ligne (ce sera peut-être une autre vidéo). Étape 1 : toute personne qui <strong>réside</strong> en France a le droit d'ouvrir un compte, qu'elle soit salariée, étudiante, étrangère vivant en France, ou même mineure. Dans ce dernier cas, ce sont les <strong>responsables légaux</strong> (en général les parents) qui ouvrent le compte au nom de l'enfant et le gèrent jusqu'à sa majorité.",
+ "obj":["Distinguer <em>banque traditionnelle</em>, <em>banque en ligne</em> et <em>agence</em>.","Comprendre la structure <em>que vous soyez… ou…</em> (peu importe la situation).","Découvrir le lexique de base : <em>résider</em>, <em>les responsables légaux</em>, <em>la majorité</em>, <em>au nom de</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"De quel type de banque parle la vidéo, et qui a le droit d'ouvrir un compte en France ?","starters":["La vidéo porte sur…","En principe, toute personne qui…","Pour un mineur, ce sont…"],"model":"« La vidéo porte sur les banques traditionnelles, celles où l'on se rend en agence, et pas sur les banques en ligne. En principe, toute personne qui réside en France a le droit d'ouvrir un compte : salarié, étudiant ou étranger. Pour un mineur, ce sont les responsables légaux, en général les parents, qui ouvrent le compte à son nom et qui le gèrent jusqu'à sa majorité. »"},
+  {"type":"Reformulation","q":"« Que vous soyez salarié, étudiant ou étranger… » : qu'exprime cette structure ? Reformulez avec vos mots.","starters":["Cela veut dire que…","Peu importe…","Autrement dit,…"],"model":"« Cela veut dire que la situation de la personne ne change rien. Peu importe que vous soyez salarié, étudiant ou étranger : vous avez le même droit. Autrement dit, <em>quelle que soit votre situation</em> <em>(= dans tous les cas)</em>, vous pouvez ouvrir un compte. »"},
+  {"type":"Préparer la classe","q":"En Espagne, vous êtes plutôt client d'une banque traditionnelle ou d'une banque en ligne ? Pourquoi ?","hint":"Deux ou trois phrases suffisent : nous en parlerons en classe.","starters":["Personnellement, je suis client de…","Ce que j'apprécie, c'est…","En revanche,…"],"model":"« Personnellement, j'ai un compte dans une banque traditionnelle, mais je fais presque tout en ligne. Ce que j'apprécie, c'est d'avoir un conseiller en cas de problème. En revanche, pour les opérations courantes, je ne mets presque jamais les pieds en agence <em>(= je n'y vais presque jamais)</em>. »"}],
+ "tour":[
+  ["se rendre en agence","aller à l'agence, plus soutenu que <em>aller</em>","Pour signer, il faudra vous rendre en agence."],
+  ["que vous soyez X ou Y","peu importe votre situation","Que le client soit en France ou en Espagne, la procédure est la même."],
+  ["au nom de","pour le compte de, en tant que titulaire","Le compte est ouvert au nom de la société."],
+  ["avoir le droit de + infinitif","être autorisé à","Tout résident a le droit d'ouvrir un compte."]],
+ "gram":{"t":"<em>que</em> + subjonctif : « que vous soyez… ou… »","h":"<p>« <strong>Que vous soyez</strong> salarié, étudiant ou étranger, vous avez le droit d'ouvrir un compte. » → une concession : toutes les situations mènent au même résultat.</p><p>Verbes fréquents : <em>que vous soyez</em> (être), <em>que vous ayez</em> (avoir), <em>que ce soit</em>.</p><p>En réunion : « <strong>Que ce soit</strong> pour un client ou pour un fournisseur, toute facture doit être validée avant paiement. »</p>"}},
+
+{"t":"seg","n":2,"a":51,"b":107,"title":"Les quatre motifs de refus",
+ "sum":"Tout le monde a le droit d'ouvrir un compte, mais la banque est « dans son droit » de refuser dans quatre situations : 1) le <strong>surendettement</strong> : les factures et les dettes à rembourser sont supérieures aux revenus, on ne peut plus faire face ; 2) l'<strong>interdiction bancaire</strong> : être inscrit (« fiché ») au <strong>FCC</strong> (Fichier central des chèques) ou au <strong>FICP</strong> (Fichier des incidents de remboursement des crédits aux particuliers — la vidéo dit « FCP ») ; 3) un <strong>dossier mal rempli</strong> — « l'administration française demande toujours des tonnes de papiers » ; 4) ne pas correspondre aux <strong>critères de sélection</strong> de la banque, par exemple des revenus mensuels trop faibles.",
+ "obj":["Suivre une énumération de quatre motifs à l'oral.","Comprendre le lexique du risque bancaire : <em>surendetté</em>, <em>interdit bancaire</em>, <em>être fiché</em>, <em>faire face</em>.","Repérer l'hypothèse réelle : <em>si</em> + présent → futur."],
+ "qs":[
+  {"type":"Compréhension","q":"Dans quelles situations une banque peut-elle refuser d'ouvrir un compte ?","starters":["Le vidéaste cite quatre cas.","D'abord,… Ensuite,…","Enfin, la banque peut simplement…"],"model":"« Le vidéaste cite quatre cas. D'abord, si la personne est surendettée, c'est-à-dire si ses dettes dépassent ses revenus. Ensuite, si elle est interdite bancaire, donc fichée au FCC ou au FICP. Troisièmement, si le dossier est mal rempli. Enfin, la banque peut simplement estimer que le client ne correspond pas à ses critères, par exemple parce que ses revenus sont trop faibles. »"},
+  {"type":"Reformulation","q":"Expliquez avec des mots simples : « être surendetté » et « être interdit bancaire ».","starters":["Être surendetté, c'est…","Être interdit bancaire, c'est…","La différence, c'est que…"],"model":"« Être surendetté, c'est avoir plus de dettes que de revenus : on ne peut plus faire face à ses paiements. Être interdit bancaire, c'est être inscrit dans un fichier de la Banque de France, par exemple après un chèque sans provision. La différence, c'est que le premier est une situation financière, le second une sanction enregistrée dans un fichier. »"},
+  {"type":"Préparer la classe","q":"En tant que financier : trouvez-vous normal qu'une banque puisse refuser un client ? Une phrase pour, une phrase contre.","starters":["D'un côté,…","De l'autre,…","Heureusement,…"],"model":"« D'un côté, une banque gère un risque : elle a le droit de choisir ses clients. De l'autre, sans compte bancaire, on ne peut ni recevoir un salaire ni payer un loyer. Heureusement, en France, il existe le <strong>droit au compte</strong> : en cas de refus, la Banque de France peut désigner une banque obligée d'ouvrir un compte. »"}],
+ "tour":[
+  ["être (tout à fait) dans son droit","avoir légalement raison d'agir ainsi","La banque est tout à fait dans son droit de vous refuser."],
+  ["faire face à","réussir à payer, à assumer","L'entreprise ne peut plus faire face à ses échéances."],
+  ["être fiché","être inscrit dans un fichier officiel","Un client fiché au FICP aura du mal à obtenir un crédit."],
+  ["des tonnes de papiers","familier : énormément de documents","L'administration demande toujours des tonnes de papiers."],
+  ["correspondre aux critères","remplir les conditions","Ce fournisseur ne correspond pas à nos critères."]],
+ "gram":{"t":"L'hypothèse réelle : <em>si</em> + présent → futur","h":"<p>« La banque <strong>sera</strong> dans son droit de vous refuser <strong>si</strong> vous <strong>êtes</strong> surendetté. » → une condition possible, une conséquence certaine.</p><p>Attention : <strong>avoir le droit de</strong> (être autorisé) ≠ <strong>être dans son droit</strong> (avoir raison selon la loi).</p><p>En réunion : « <strong>Si</strong> le fournisseur n'<strong>envoie</strong> pas la facture avant le 25, nous la <strong>paierons</strong> le mois prochain. »</p>"}},
+
+{"t":"seg","n":3,"a":107,"b":173,"title":"Les trois pièces obligatoires",
+ "sum":"Chaque banque exige des <strong>pièces justificatives</strong> légalement obligatoires, mais elle peut en demander davantage. 1) Une <strong>pièce d'identité en cours de validité</strong> : passeport, carte d'identité, ou titre de séjour à jour pour une personne étrangère. 2) Un <strong>justificatif de domicile</strong> de moins de trois mois (ou six mois selon la banque) : facture d'électricité, de gaz, ou de forfait de téléphone portable — le vidéaste recommande la facture de portable, « plus simple et plus rapide ». 3) Votre <strong>signature</strong> sur une feuille : elle servira, par exemple, de confirmation quand vous rédigerez un chèque.",
+ "obj":["Comprendre le lexique des justificatifs : <em>pièce d'identité</em>, <em>justificatif de domicile</em>, <em>titre de séjour</em>, <em>forfait</em>.","Repérer une énumération : <em>en premier, en deuxième, en troisième</em>.","Comprendre les précisions de validité : <em>en cours de validité</em>, <em>à jour</em>, <em>de moins de trois mois</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelles sont les trois pièces obligatoires, et quelles précisions donne le vidéaste pour chacune ?","starters":["En premier, il faut…","En deuxième,…","En troisième,…"],"model":"« En premier, il faut une pièce d'identité en cours de validité : passeport, carte d'identité ou titre de séjour à jour. En deuxième, un justificatif de domicile de moins de trois mois, par exemple une facture d'électricité ou de portable. En troisième, sa signature sur une feuille, qui servira par exemple de confirmation pour les chèques. »"},
+  {"type":"Reformulation","q":"Qu'est-ce qu'un justificatif de domicile, et pourquoi la banque en demande-t-elle un ?","starters":["C'est un document qui prouve…","La banque en a besoin pour…","En espagnol, on parlerait de…"],"model":"« C'est un document récent qui prouve l'adresse où l'on habite, par exemple une facture à son nom. La banque en a besoin pour vérifier l'identité du client et savoir où lui envoyer son courrier et sa carte. En espagnol, on parlerait d'un <em>justificante de domicilio</em> ou d'un <em>certificado de empadronamiento</em>. »"},
+  {"type":"Préparer la classe","q":"Vous arrivez à Paris en novembre : quel justificatif de domicile pourrez-vous fournir les premières semaines ?","hint":"Réfléchissez concrètement : aurez-vous déjà une facture à votre nom ?","starters":["Au début, je n'aurai sans doute pas…","Je pourrais fournir…","Il faudra que je vérifie…"],"model":"« Au début, je n'aurai sans doute pas encore de facture à mon nom. Je pourrais fournir mon bail, ou une attestation d'hébergement si je suis hébergé chez quelqu'un. Il faudra que je vérifie auprès de la banque ce qu'elle accepte. Pour l'identité, en tant que citoyen européen, ma carte d'identité espagnole ou mon passeport suffiront. »"}],
+ "tour":[
+  ["en cours de validité","valide, pas expiré","Votre passeport doit être en cours de validité."],
+  ["de moins de trois mois","daté d'il y a moins de trois mois","Un Kbis de moins de trois mois est exigé."],
+  ["fournir un justificatif","présenter une preuve écrite","Merci de fournir un justificatif pour chaque note de frais."],
+  ["à jour","actualisé, valable aujourd'hui","Nos coordonnées bancaires sont-elles à jour chez ce fournisseur ?"]],
+ "gram":{"t":"<em>servir de</em> + nom / <em>servir à</em> + infinitif","h":"<p>« Votre signature <strong>servira de</strong> confirmation. » → être utilisé comme.</p><p>« Ce document <strong>sert à</strong> prouver votre adresse. » → avoir pour fonction de.</p><p>En réunion : « Ce tableau <strong>sert à</strong> suivre les impayés ; il <strong>sert</strong> aussi <strong>de</strong> base pour les relances. »</p>"}},
+
+{"t":"seg","n":4,"a":173,"b":220,"title":"Les pièces non obligatoires",
+ "sum":"Toutes les banques ne les réclament pas, mais le vidéaste « préfère vous avertir quand même ». 1) Une <strong>deuxième pièce d'identité</strong> : « certaines banques ne rigolent pas » avec les nouveaux clients. 2) Une photocopie des derniers <strong>bulletins de salaire</strong>, voire (« carrément ») le dernier <strong>avis d'imposition</strong> — lien avec les conditions de revenus évoquées plus tôt. 3) Un <strong>RIB</strong> d'une autre banque : c'est le cas des banques en ligne, qui demandent souvent que vous ayez déjà un compte dans une banque traditionnelle.",
+ "obj":["Comprendre la négation partielle : <em>toutes les banques ne… pas</em>.","Repérer le registre familier d'un vidéaste : <em>ne pas rigoler</em>, <em>carrément</em>.","Découvrir le lexique : <em>bulletin de salaire</em>, <em>avis d'imposition</em>, <em>RIB</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Quels documents supplémentaires certaines banques peuvent-elles demander ?","starters":["Certaines banques demandent…","Elles peuvent aussi exiger…","Enfin, les banques en ligne…"],"model":"« Certaines banques demandent une deuxième pièce d'identité. Elles peuvent aussi exiger les derniers bulletins de salaire, voire le dernier avis d'imposition, pour vérifier les revenus. Enfin, les banques en ligne demandent souvent un RIB d'une autre banque, parce qu'il faut déjà avoir un compte ailleurs. »"},
+  {"type":"Reformulation","q":"« Toutes les banques ne réclament pas ces documents. » Est-ce que cela veut dire qu'aucune banque ne les réclame ?","starters":["Non, cela veut dire que…","Si on voulait dire « aucune »,…"],"model":"« Non, cela veut dire que <strong>certaines</strong> banques les réclament, mais pas toutes. Si on voulait dire qu'aucune ne les réclame, on dirait : « <strong>Aucune</strong> banque ne réclame ces documents. » »"},
+  {"type":"Préparer la classe","q":"Pourquoi une banque en ligne demande-t-elle un RIB d'une autre banque ? Formulez une hypothèse de financier.","starters":["À mon avis, c'est une question de…","Le premier virement permet de…","C'est lié à la lutte contre…"],"model":"« À mon avis, c'est une question de sécurité. Comme il n'y a pas de rendez-vous physique, le premier virement depuis un compte déjà ouvert à votre nom permet de confirmer votre identité. C'est lié à la lutte contre la fraude et le blanchiment d'argent. »"}],
+ "tour":[
+  ["ne pas rigoler avec","familier : être très strict sur","Notre auditeur ne rigole pas avec les justificatifs."],
+  ["carrément","familier : même, voire","Ils peuvent demander carrément le dernier avis d'imposition."],
+  ["je préfère vous avertir quand même","je vous préviens, par précaution","Ce n'est pas certain, mais je préfère vous avertir quand même."],
+  ["répondre aux conditions","remplir les conditions exigées","Ce client ne répond pas aux conditions de revenus."]],
+ "gram":{"t":"La négation partielle : <em>tous… ne… pas</em>","h":"<p>« <strong>Toutes</strong> les banques <strong>ne</strong> réclament <strong>pas</strong> ces documents. » = certaines seulement.</p><p>≠ « <strong>Aucune</strong> banque <strong>ne</strong> réclame ces documents. » = zéro.</p><p>En réunion : « <strong>Tous</strong> les fournisseurs <strong>n'ont pas</strong> encore envoyé leur facture » → il en manque quelques-unes.</p>"}},
+
+{"t":"seg","n":5,"a":220,"b":258,"title":"Le compte joint et une parenthèse",
+ "sum":"Pour ouvrir un <strong>compte joint</strong>, votre partenaire doit apporter les mêmes pièces le jour J : sa pièce d'identité, son justificatif de domicile (« la facture de téléphone mobile, pour rappel ») et sa <strong>signature manuscrite</strong>. Le vidéaste ouvre ensuite une « petite parenthèse » : il propose de télécharger gratuitement quatre bonus pour apprendre à gérer son argent, sous la vidéo. « Fin de la parenthèse. »",
+ "obj":["Distinguer <em>compte individuel</em> et <em>compte joint</em>.","Repérer des formules utiles en réunion : <em>le jour J</em>, <em>à savoir</em>, <em>pour rappel</em>, <em>j'ouvre une parenthèse</em>.","Repérer un passage d'autopromotion dans une vidéo informative."],
+ "qs":[
+  {"type":"Compréhension","q":"Que doit apporter le partenaire pour un compte joint ? Et de quoi parle la « parenthèse » ?","starters":["Le partenaire doit apporter…","À savoir :…","Ensuite, le vidéaste fait une parenthèse sur…"],"model":"« Le partenaire doit apporter exactement les mêmes pièces, à savoir sa pièce d'identité, son justificatif de domicile et sa signature manuscrite. Ensuite, le vidéaste fait une parenthèse sur ses bonus gratuits pour apprendre à gérer son argent : c'est de l'autopromotion. »"},
+  {"type":"Reformulation","q":"« J'ouvre une petite parenthèse… fin de la parenthèse. » Quand peut-on utiliser cette formule en réunion ?","starters":["On l'utilise quand…","Par exemple :…"],"model":"« On l'utilise quand on veut dire quelque chose qui n'est pas directement lié au sujet, sans perdre le fil. Par exemple : « J'ouvre une petite parenthèse : l'audit aura lieu en mars. Je ferme la parenthèse et je reviens aux chiffres du trimestre. » »"},
+  {"type":"Préparer la classe","q":"Dans une entreprise, qui peut faire des virements ou signer sur le compte bancaire ? Comment est-ce organisé, en général ?","hint":"Restez général, sans détail confidentiel.","starters":["En général, c'est…","Au-delà d'un certain montant,…","On parle de…"],"model":"« En général, c'est le représentant légal qui a tous les pouvoirs, et il délègue une partie à la direction financière. Au-delà d'un certain montant, il faut souvent une double signature, pour limiter le risque de fraude. On parle de <strong>délégation de pouvoirs</strong> ou de <strong>procuration</strong>. »"}],
+ "tour":[
+  ["le jour J","le jour prévu, le grand jour","Le jour J, apportez l'original de chaque document."],
+  ["à savoir","c'est-à-dire, introduit une liste","Trois pièces sont exigées, à savoir…"],
+  ["pour rappel","je vous rappelle que","Pour rappel, la clôture est fixée au 5 du mois."],
+  ["j'ouvre une parenthèse / je ferme la parenthèse","je fais une digression / je reviens au sujet","J'ouvre une parenthèse : le fournisseur a changé de banque."]],
+ "gram":{"t":"Les possessifs <em>son</em>, <em>sa</em>, <em>ses</em>","h":"<p>« <strong>sa</strong> pièce d'identité, <strong>son</strong> justificatif, <strong>sa</strong> signature » → le possessif s'accorde avec l'<strong>objet</strong>, pas avec la personne.</p><p><strong>Piège hispanophone :</strong> <em>su</em> → <strong>son</strong> ou <strong>sa</strong>. Devant une voyelle, on dit <strong>son</strong> même au féminin : <strong>son</strong> adresse, <strong>son</strong> attestation.</p>"}},
+
+{"t":"seg","n":6,"a":258,"b":307,"title":"Le formulaire : en agence ou en ligne ?",
+ "sum":"Une fois tous les justificatifs réunis, pour un compte individuel ou joint, il faut remplir un <strong>formulaire d'ouverture</strong>. « Deux solutions s'offrent à vous » : <strong>soit</strong> vous vous rendez directement en agence avec vos justificatifs, <strong>soit</strong> vous remplissez le formulaire en ligne, sur le site de votre future banque traditionnelle. La vidéo détaille la procédure en agence ; « pour ne pas que la vidéo soit trop longue », la procédure en ligne fera l'objet d'une autre vidéo.",
+ "obj":["Présenter deux options avec <em>soit… soit…</em>.","Comprendre <em>deux solutions s'offrent à vous</em> et <em>que ce soit pour… ou pour…</em>.","Repérer une tournure familière (<em>pour ne pas que</em>) et sa version soignée."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelles sont les deux façons de remplir le formulaire d'ouverture ?","starters":["Deux solutions s'offrent à nous :…","soit…, soit…","Dans la vidéo, il détaille…"],"model":"« Deux solutions s'offrent à nous : soit on se rend directement en agence avec ses justificatifs, soit on remplit le formulaire en ligne sur le site de la banque. Dans la vidéo, il détaille seulement la procédure en agence. »"},
+  {"type":"Reformulation","q":"Reformulez : « que ce soit pour un compte individuel ou un compte joint ».","starters":["Dans les deux cas,…","Peu importe…"],"model":"« Dans les deux cas, qu'il s'agisse d'un compte individuel ou d'un compte joint, la démarche est la même. » On peut aussi dire : « <em>aussi bien</em> pour un compte individuel <em>que</em> pour un compte joint »."},
+  {"type":"Préparer la classe","q":"Pour vous, en arrivant à Paris : agence ou formulaire en ligne ? Pourquoi ?","starters":["Je choisirais plutôt…","D'abord parce que…","Et puis…"],"model":"« Je choisirais plutôt l'agence, au moins pour la première fois. D'abord parce que ma situation est un peu particulière : je viens d'arriver et je n'ai pas encore toutes les factures françaises. Et puis, c'est une bonne occasion de pratiquer mon français avec un conseiller ! »"}],
+ "tour":[
+  ["deux solutions s'offrent à vous","vous avez deux options","Deux solutions s'offrent à nous : relancer le client ou provisionner la créance."],
+  ["soit… soit…","l'un ou l'autre","Soit on paie à 30 jours, soit on obtient un escompte."],
+  ["que ce soit pour X ou pour Y","dans les deux cas","Que ce soit pour les achats ou pour les ventes, la règle est la même."],
+  ["faire l'objet de","être le sujet de","Ce point fera l'objet d'une réunion spécifique."]],
+ "gram":{"t":"<em>pour ne pas que</em> (oral) → <em>pour éviter que</em> / <em>afin de ne pas</em>","h":"<p>« <strong>Pour ne pas que</strong> la vidéo soit trop longue » : très courant à l'oral, mais critiqué à l'écrit.</p><p>Version soignée, pour une réunion ou un e-mail : « <strong>Pour éviter que</strong> la vidéo <strong>soit</strong> trop longue » ou « <strong>Afin de ne pas</strong> allonger la vidéo ».</p><p>Toutes ces formes (sauf <em>afin de</em> + infinitif) sont suivies du <strong>subjonctif</strong>.</p>"}},
+
+{"t":"seg","n":7,"a":307,"b":363,"title":"En agence : rendez-vous et choix de l'offre",
+ "sum":"Les étapes en agence : 1) <strong>prendre rendez-vous</strong> par téléphone, par mail ou via un formulaire en ligne (les informations sont à l'agence ou sur le site). 2) Le jour du rendez-vous, donner ses informations personnelles : nom, prénom, adresse… Puis choisir parmi les <strong>offres bancaires</strong> celle qui « colle le mieux » à sa situation personnelle et à ses besoins. Le vidéaste ne peut pas guider davantage : chaque banque a ses propres offres, il faut donc poser des questions à « la personne en face de vous ». Une fois l'offre choisie, le banquier demande de signer une <strong>convention de compte</strong>.",
+ "obj":["Suivre une procédure décrite étape par étape.","Comprendre <em>coller à</em> (familier) et ses équivalents soignés.","Repérer <em>une fois que</em> + futur antérieur → futur."],
+ "qs":[
+  {"type":"Compréhension","q":"Que se passe-t-il pendant le rendez-vous en agence ?","starters":["D'abord, on prend rendez-vous…","Pendant le rendez-vous,…","Une fois l'offre choisie,…"],"model":"« D'abord, on prend rendez-vous par téléphone, par mail ou en ligne. Pendant le rendez-vous, on donne ses informations personnelles, puis on choisit l'offre qui correspond le mieux à sa situation et à ses besoins. Une fois l'offre choisie, le banquier demande de signer la convention de compte. »"},
+  {"type":"Reformulation","q":"« L'offre qui colle le mieux à votre situation » : reformulez de façon plus soignée, pour une réunion.","starters":["On pourrait dire :…","ou encore :…"],"model":"« On pourrait dire : l'offre qui <strong>correspond le mieux</strong> à votre situation, ou encore : l'offre <strong>la plus adaptée</strong> à vos besoins. » <em>Coller à</em> est naturel entre collègues, un peu familier devant un comité."},
+  {"type":"Préparer la classe","q":"Quelles trois questions poseriez-vous au conseiller pour choisir votre offre ?","hint":"Pensez à votre situation : salaire en France, famille ou comptes en Espagne, voyages.","starters":["Quels sont les frais de…","Est-ce que les virements vers…","Quel est le plafond de…"],"model":"« Quels sont les frais de tenue de compte et la cotisation annuelle de la carte ? Est-ce que les virements vers l'Espagne sont gratuits ? Quel est le plafond de paiement et de retrait de la carte ? »"}],
+ "tour":[
+  ["prendre rendez-vous","fixer un rendez-vous","J'ai pris rendez-vous avec le conseiller jeudi à 10 h."],
+  ["coller à","familier : correspondre à","Cette offre colle parfaitement à nos besoins."],
+  ["la personne en face de vous","votre interlocuteur","Posez vos questions à la personne en face de vous."],
+  ["je ne peux pas vous guider plus que ça","familier : pas davantage","Sur ce point, je ne peux pas vous en dire plus que ça."]],
+ "gram":{"t":"<em>une fois que</em> + futur antérieur → futur","h":"<p>« <strong>Une fois que</strong> vous <strong>aurez choisi</strong> votre offre, le banquier vous <strong>demandera</strong> de signer. » → l'action 1 sera terminée avant l'action 2.</p><p>Forme courte : « <strong>Une fois</strong> l'offre <strong>choisie</strong>, … »</p><p>En réunion : « <strong>Une fois que</strong> nous <strong>aurons reçu</strong> la facture, nous <strong>lancerons</strong> le paiement. »</p>"}},
+
+{"t":"seg","n":8,"a":363,"b":399,"title":"La convention de compte",
+ "sum":"« Pour vous la faire très simple », la <strong>convention de compte</strong> est le document qui réunit la totalité des <strong>engagements</strong> entre la banque et le client : par exemple les conditions de <strong>procuration</strong>, les services proposés et leurs <strong>tarifs</strong>, la procédure en cas d'<strong>incident de paiement</strong>, etc. On signe ce document et on remet tous les justificatifs préparés à l'étape 2.",
+ "obj":["Comprendre la définition d'un document contractuel.","Découvrir le lexique du contrat : <em>engagements</em>, <em>tarifs</em>, <em>procuration</em>, <em>incident de paiement</em>.","Savoir définir un document : <em>c'est le document qui… / dans lequel…</em>"],
+ "qs":[
+  {"type":"Compréhension","q":"Qu'est-ce qu'une convention de compte, et que contient-elle ?","starters":["C'est le document qui…","On y trouve, par exemple,…","On la signe et…"],"model":"« C'est le document qui réunit tous les engagements entre la banque et le client. On y trouve, par exemple, les conditions de procuration, les services et leurs tarifs, et la procédure en cas d'incident de paiement. On la signe et on remet en même temps tous ses justificatifs. »"},
+  {"type":"Reformulation","q":"Expliquez avec vos mots : « une procuration » et « un incident de paiement ».","starters":["Une procuration, c'est…","Un incident de paiement, c'est quand…"],"model":"« Une procuration, c'est une autorisation donnée à une autre personne pour utiliser votre compte en votre nom. Un incident de paiement, c'est quand un paiement ne peut pas être effectué, par exemple un prélèvement rejeté ou un chèque sans provision. »"},
+  {"type":"Préparer la classe","q":"Dans votre métier, quel document joue le même rôle avec un fournisseur ou un client ?","starters":["Chez nous, l'équivalent, ce serait…","C'est là que figurent…","En cas de litige,…"],"model":"« Chez nous, l'équivalent, ce serait le contrat-cadre ou les conditions générales de vente. C'est là que figurent les prix, les délais de paiement et les pénalités de retard. En cas de litige, c'est le premier document qu'on ressort. »"}],
+ "tour":[
+  ["pour vous la faire (très) simple","familier : pour simplifier","Pour vous la faire simple, on a deux mois de retard."],
+  ["réunir la totalité de","rassembler l'ensemble de","Ce dossier réunit la totalité des pièces demandées."],
+  ["en cas de + nom","si… se produit","En cas de retard de paiement, des pénalités s'appliquent."],
+  ["les engagements entre X et Y","les obligations réciproques","Le contrat fixe les engagements entre le client et nous."]],
+ "gram":{"t":"Définir : <em>c'est le document qui… / dans lequel… / où…</em>","h":"<p>« La convention, <strong>c'est le document qui</strong> réunit les engagements. » → <em>qui</em> = sujet.</p><p>« <strong>C'est le document dans lequel</strong> figurent les tarifs. » → après une préposition, <em>lequel / laquelle</em>.</p><p>En réunion : « Le contrat-cadre, c'est le document <strong>qui</strong> fixe les délais de paiement ; c'est <strong>là que</strong> figurent les pénalités de retard. »</p>"}},
+
+{"t":"seg","n":9,"a":399,"b":447,"title":"Premier versement, carte et délais",
+ "sum":"3) Pendant le rendez-vous, la banque demande un <strong>premier versement</strong> sur le nouveau compte courant : en général, <strong>10 ou 20 euros</strong> suffisent. 4) « Il ne vous reste plus qu'à » attendre l'ouverture effective du compte et l'arrivée de la <strong>carte bancaire</strong>, dans votre boîte aux lettres ou directement en agence : en général entre <strong>une et deux semaines</strong>, « grand maximum ». Fin de la vidéo : liens vers d'autres vidéos (remplir un chèque en sept étapes, présentation du vidéaste) et appel à « mettre un petit like ».",
+ "obj":["Repérer des montants et des délais à l'oral.","Comprendre <em>il ne vous reste plus qu'à</em> et <em>grand maximum</em>.","Repérer <em>attendre que</em> + subjonctif."],
+ "qs":[
+  {"type":"Compréhension","q":"Quelles sont les deux dernières étapes, et quels chiffres donne le vidéaste ?","starters":["En troisième, la banque demande…","Ensuite, il ne reste plus qu'à…","Le délai est de…"],"model":"« En troisième, la banque demande un premier versement : en général, 10 ou 20 euros suffisent. Ensuite, il ne reste plus qu'à attendre que le compte soit ouvert et que la carte arrive, par courrier ou en agence. Le délai est d'une à deux semaines, grand maximum. »"},
+  {"type":"Reformulation","q":"« Il ne vous reste plus qu'à attendre » : proposez deux autres formulations.","starters":["Il suffit maintenant de…","La seule chose à faire,…"],"model":"« Il suffit maintenant d'attendre. » · « La seule chose qu'il vous reste à faire, c'est attendre. » <em>Ne… plus que</em> = seulement, désormais."},
+  {"type":"Préparer la classe","q":"Vous arrivez à Paris en novembre et votre premier salaire sera versé fin novembre. Quel calendrier prévoyez-vous pour votre compte ?","starters":["Dès la première semaine,…","Ensuite, je transmettrai…","Pour ne pas prendre de retard,…"],"model":"« Dès la première semaine, je prendrai rendez-vous dans une agence près de chez moi ou du bureau. Ensuite, je transmettrai mon RIB au service RH pour que mon salaire soit versé sur le bon compte. Pour éviter tout retard, je garderai mon compte espagnol actif les premiers mois. »"}],
+ "tour":[
+  ["réaliser / effectuer un versement","déposer de l'argent sur un compte","Il faut effectuer un premier versement de 20 euros."],
+  ["il ne vous reste plus qu'à","il suffit maintenant de","Il ne nous reste plus qu'à valider le budget."],
+  ["grand maximum","familier : au maximum","Vous recevrez la carte en deux semaines, grand maximum."],
+  ["dans votre boîte aux lettres","par courrier postal","La carte arrive dans votre boîte aux lettres."]],
+ "gram":{"t":"<em>attendre que</em> + subjonctif","h":"<p>« Il vous reste à attendre <strong>que</strong> votre compte <strong>soit</strong> ouvert et <strong>que</strong> votre carte <strong>arrive</strong>. »</p><p>Après <em>attendre que</em>, toujours le subjonctif. Si le sujet est le même : <em>attendre de</em> + infinitif (« J'attends <strong>de recevoir</strong> la facture »).</p><p>En réunion : « Nous attendons <strong>que</strong> le client <strong>ait</strong> signé le bon de commande. »</p>"}}
+];
+
+/* exercices d'écoute propres à chaque segment */
+var EX = {
+ 1:{t:"tf", items:[
+   {q:"La vidéo explique comment ouvrir un compte dans une banque en ligne.", a:false, j:"Elle porte sur une <strong>banque traditionnelle</strong>, en agence. La banque en ligne serait l'objet d'une autre vidéo."},
+   {q:"Un étranger qui vit en France a le droit d'ouvrir un compte.", a:true, j:"« Que vous soyez salarié, étudiant, étranger vivant en France… »"},
+   {q:"Un mineur ne peut pas avoir de compte bancaire.", a:false, j:"Il peut : ce sont ses <strong>responsables légaux</strong> qui l'ouvrent à son nom."},
+   {q:"Les parents gèrent le compte du mineur jusqu'à sa majorité.", a:true, j:"« …qui le gèrent jusqu'à atteindre votre majorité. »"}]},
+ 2:{t:"gaps", fields:[
+   {k:"a", label:"Nombre de motifs de refus cités", answers:["4","quatre"], sol:"4"},
+   {k:"b", label:"Sigle du Fichier central des chèques", answers:["fcc","le fcc"], sol:"FCC"},
+   {k:"c", label:"Quand les dettes dépassent les revenus, on est …", answers:["surendette","surendettes","surendettee"], sol:"surendetté"},
+   {k:"d", label:"Motif administratif : vous avez mal rempli votre …", answers:["dossier"], sol:"dossier"},
+   {k:"e", label:"Exemple de critère : des revenus du mois trop …", answers:["faibles","bas"], sol:"faibles"}]},
+ 3:{t:"tf", items:[
+   {q:"Les banques peuvent demander plus de documents que les pièces obligatoires.", a:true, j:"« …mais elles peuvent vous demander beaucoup plus d'informations. »"},
+   {q:"Un titre de séjour périmé est accepté.", a:false, j:"Il doit être <strong>à jour</strong>, en cours de validité."},
+   {q:"Le justificatif de domicile doit dater de moins de trois mois (ou six mois selon la banque).", a:true, j:"« …un justificatif de domicile de moins de trois mois ou six mois. »"},
+   {q:"Le vidéaste recommande la facture d'électricité.", a:false, j:"Il recommande la facture de <strong>forfait portable</strong> : « plus simple et plus rapide »."}]},
+ 4:{t:"gaps", fields:[
+   {k:"a", label:"Une photocopie de vos derniers … de salaire", answers:["bulletins","bulletin"], sol:"bulletins"},
+   {k:"b", label:"Ou carrément le dernier avis d'…", answers:["imposition"], sol:"imposition"},
+   {k:"c", label:"Sigle du document demandé d'une autre banque", answers:["rib","un rib","le rib"], sol:"RIB"},
+   {k:"d", label:"Ce sont souvent les banques en … qui le demandent", answers:["ligne"], sol:"ligne"}]},
+ 5:{t:"tf", items:[
+   {q:"Pour un compte joint, seul le premier titulaire fournit des justificatifs.", a:false, j:"Le partenaire apporte <strong>les mêmes pièces</strong> le jour J."},
+   {q:"Le partenaire doit fournir une signature manuscrite.", a:true, j:"« …ainsi que sa signature manuscrite. »"},
+   {q:"Les bonus proposés dans la parenthèse sont payants.", a:false, j:"Ils sont à télécharger <strong>gratuitement</strong>."},
+   {q:"La parenthèse porte sur la gestion de l'argent.", a:true, j:"« …apprendre à gérer votre argent pour le mettre au service de vos projets. »"}]},
+ 6:{t:"gaps", fields:[
+   {k:"a", label:"Nombre de solutions pour remplir le formulaire", answers:["2","deux"], sol:"2"},
+   {k:"b", label:"Première solution : se rendre directement en …", answers:["agence"], sol:"agence"},
+   {k:"c", label:"Seconde solution : remplir le formulaire en …", answers:["ligne"], sol:"ligne"},
+   {k:"d", label:"Il ne veut pas que la vidéo soit trop …", answers:["longue"], sol:"longue"}]},
+ 7:{t:"tf", items:[
+   {q:"On peut prendre rendez-vous par téléphone, par mail ou via un formulaire en ligne.", a:true, j:"Les trois moyens sont cités."},
+   {q:"Le vidéaste recommande une offre bancaire précise.", a:false, j:"Chaque banque a ses offres : il conseille de <strong>poser des questions</strong> au conseiller."},
+   {q:"On choisit l'offre selon sa situation personnelle et ses besoins actuels.", a:true, j:"« …qui colle le mieux à votre situation personnelle ainsi qu'à vos besoins actuels. »"},
+   {q:"On signe la convention de compte avant de choisir l'offre.", a:false, j:"Au contraire : « <strong>une fois</strong> que vous aurez choisi votre offre »."}]},
+ 8:{t:"gaps", fields:[
+   {k:"a", label:"La convention réunit la totalité des … entre la banque et vous", answers:["engagements"], sol:"engagements"},
+   {k:"b", label:"Les conditions de …", answers:["procuration","procurations"], sol:"procuration"},
+   {k:"c", label:"Les services proposés et leurs …", answers:["tarifs","prix"], sol:"tarifs"},
+   {k:"d", label:"La procédure en cas d'… de paiement", answers:["incident","incidents"], sol:"incident"}]},
+ 9:{t:"gaps", fields:[
+   {k:"a", label:"Premier versement, fourchette basse (en euros)", answers:["10","dix"], sol:"10 €"},
+   {k:"b", label:"Premier versement, fourchette haute (en euros)", answers:["20","vingt"], sol:"20 €"},
+   {k:"c", label:"Délai maximum pour recevoir la carte (en semaines)", answers:["2","deux"], sol:"deux semaines, grand maximum"},
+   {k:"d", label:"Nombre d'étapes pour remplir un chèque (autre vidéo)", answers:["7","sept"], sol:"7"}]}
+};
+
+
+var LETTERS = "ABCDEFGHIJ";
+function segCard(s, idx){
+  var blocks = [];
+  blocks.push({t:"callout", ct:"Objectifs pédagogiques du segment", h:"<ul style='margin:0;padding-left:18px'>"+s.obj.map(function(o){return "<li>"+o+"</li>";}).join("")+"</ul>"});
+  var ex = EX[s.n];
+  if(ex){
+    if(ex.t==="gaps") blocks.push({t:"gaps", k:"x"+s.n, fields:ex.fields});
+    else blocks.push({t:"tf", k:"x"+s.n, items:ex.items});
+  }
+  blocks.push({t:"reveal", label:"Vérifier avec le résumé du segment", rt:"Résumé — à lire après l'écoute, pas avant", h:"<p>"+s.sum+"</p>"});
+  s.qs.forEach(function(q, i){
+    blocks.push({t:"open", k:"s"+s.n+"_"+i, n:String(i+1), starters:q.starters,
+      q:"<strong>"+q.type+".</strong> "+q.q, hint:q.hint, model:q.model});
+  });
+  blocks.push({t:"callout", ct:"Focus langue — tournures et constructions clés",
+    h:"<ul style='margin:0;padding-left:18px'>"+s.tour.map(function(t){
+        return "<li><strong>"+t[0]+"</strong> ("+t[1]+") — <em>« "+t[2]+" »</em></li>";}).join("")+"</ul>"+
+      "<p><strong>Construction clé : "+s.gram.t+"</strong></p>"+s.gram.h});
+  return {t:"card", h3:LETTERS[idx]+". Segment "+s.n+" — "+s.title,
+    sub:(ex ? (ex.t==="gaps" ? "Écoutez le segment et repérez les chiffres et les mots-clés. Vérifiez avec le résumé, puis passez aux trois questions." : "Écoutez le segment : vrai ou faux ? Vérifiez avec le résumé, puis passez aux trois questions.") : ""),
+    tc:[{sec:s.a, l:mmss(s.a)},{sec:s.b, l:mmss(s.b)}], blocks:blocks};
+}
+
+
+var STEPS = [
+{
+ id:"prep", title:"Avant de visionner", time:"6 min",
+ lede:"Vous parlez d'abord, vous regardez ensuite. Répondez à voix haute, puis notez l'essentiel : deux ou trois phrases suffisent. Tout est enregistré dans votre navigateur.",
+ blocks:[
+  {t:"callout", ct:"Méthode", h:"<p><strong>Premier visionnage sans sous-titres, sans pause, sans dictionnaire.</strong> La vidéo dure environ 7 min 30. Une seule voix, celle d'un vidéaste (<em>youtubeur</em>) : débit rapide, registre familier, phrases enchaînées sans pause. Vous ne comprendrez pas tout, et ce n'est pas le but. Le but est de <strong>suivre le fil</strong> de la procédure. Vous reviendrez ensuite segment par segment, avec pauses et sous-titres.</p><p><strong>Rythme conseillé :</strong> deux sessions de 30 minutes plutôt qu'une seule. Étapes 1 à 3 le premier jour, étapes 4 à 8 le second.</p>"},
+  {t:"card", h3:"Pourquoi cette vidéo précisément", sub:"Support de préparation autonome · niveau B1+ · avant notre séance de conversation", blocks:[
+   {t:"note", h:"<div class='prose'>"+
+    "<p><strong>Trois raisons.</strong></p>"+
+    "<ul>"+
+    "<li>C'est <strong>une démarche que vous allez faire dans quelques semaines</strong> : en arrivant à Paris, ouvrir un compte sera l'une de vos premières priorités, pour recevoir votre salaire et payer votre loyer.</li>"+
+    "<li>C'est <strong>votre domaine</strong> : justificatifs, conditions, contrat, tarifs, incidents de paiement. Vous connaissez déjà la logique ; votre attention peut aller à la langue.</li>"+
+    "<li>C'est <strong>du français parlé authentique</strong> : un natif qui parle vite, avec des tournures familières (<em>carrément</em>, <em>ça colle</em>, <em>grand maximum</em>). Exactement ce que vous entendrez entre collègues.</li>"+
+    "</ul>"+
+    "<p><strong>Objectifs de ce travail en autonomie.</strong></p>"+
+    "<ul>"+
+    "<li><strong>Compréhension</strong> : suivre une procédure expliquée à l'oral ; repérer les étapes, les documents, les chiffres et les délais.</li>"+
+    "<li><strong>Lexique</strong> : activer le vocabulaire de la banque, des justificatifs et du contrat — et découvrir celui du <strong>compte professionnel</strong>.</li>"+
+    "<li><strong>Langue</strong> : repérer des structures très fréquentes à l'oral — <em>soit… soit…</em>, <em>que vous soyez…</em>, <em>une fois que…</em>, <em>il ne vous reste plus qu'à…</em></li>"+
+    "<li><strong>Préparation</strong> : arriver en classe avec des idées et des mots, pour parler 70 % du temps.</li>"+
+    "</ul></div>"}
+  ]},
+  {t:"card", h3:"Questions d'ouverture", sub:"Avant de lancer la vidéo. Répondez de mémoire, sans chercher.", blocks:[
+   {t:"open", k:"p1", n:"1", starters:["La dernière fois que j'ai ouvert un compte,…","Il fallait fournir…","Ce qui m'a pris le plus de temps, c'est…"],
+    q:"Racontez la dernière fois que vous avez ouvert un compte bancaire, en Espagne ou ailleurs. Quels documents vous a-t-on demandés ?",
+    hint:"Parlez une minute à voix haute, puis écrivez deux phrases. On cherche la fluidité, pas la perfection.",
+    model:"« La dernière fois que j'ai ouvert un compte, c'était il y a quelques années, en ligne. Il fallait fournir mon DNI, un justificatif de domicile et un justificatif de revenus. Ce qui m'a pris le plus de temps, c'est la vérification d'identité par vidéo. Au final, tout s'est fait en deux ou trois jours. »"},
+   {t:"open", k:"p2", n:"2", starters:["Je pense qu'en France, ce sera…","J'ai entendu dire que…","Ce qui m'inquiète un peu, c'est…"],
+    q:"Selon vous, ouvrir un compte en France, ce sera plus simple ou plus compliqué qu'en Espagne ? Pourquoi ?",
+    hint:"Donnez votre intuition, même sans certitude : nous vérifierons ensemble.",
+    model:"« Je pense qu'en France, ce sera un peu plus compliqué : on dit souvent que l'administration française adore les papiers. Ce qui m'inquiète un peu, c'est le justificatif de domicile, parce qu'en arrivant je n'aurai pas encore de factures à mon nom. »"},
+   {t:"open", k:"p3", n:"3", starters:["Les mots qui me manquent le plus, ce sont…","En espagnol je dis…, mais en français je bloque.","Je ne sais pas comment dire…"],
+    q:"Quels mots de la banque vous manquent encore en français ? Faites la liste maintenant, avant de regarder.",
+    hint:"Cette liste est le point de départ de notre séance. Soyez précis."}
+  ]},
+  {t:"callout", ct:"À savoir — ce que la vidéo ne dit pas", h:"<p>Réflexe de financier : une vidéo de youtubeur n'est pas une source officielle. Trois compléments utiles :</p><ul style='margin:0;padding-left:18px'><li><strong>Le droit au compte</strong> : en cas de refus, vous pouvez saisir la <strong>Banque de France</strong>, qui désigne une banque obligée de vous ouvrir un compte avec des services de base. Ce droit existe aussi pour les <strong>professionnels</strong> et les entreprises.</li><li><strong>Citoyen de l'UE</strong> : vous n'avez pas besoin de titre de séjour ; votre carte d'identité espagnole ou votre passeport suffisent.</li><li><strong>Compte professionnel</strong> (pour une société) : on demande d'autres pièces — les <strong>statuts</strong>, un <strong>extrait Kbis</strong> récent, la pièce d'identité du <strong>représentant légal</strong>, un justificatif de l'adresse du siège et la liste des <strong>bénéficiaires effectifs</strong>. À la création, c'est aussi sur ce compte qu'on dépose le <strong>capital social</strong>.</li></ul>"},
+  {t:"callout", ct:"Note — la transcription automatique de la vidéo", h:"<p>Les sous-titres générés par YouTube déforment plusieurs mots. Formes correctes : <strong>le FICP</strong> (et non « FCP ») ; « vous avez mal rempli votre <strong>dossier</strong> » ; « votre <strong>banque</strong> » ; « dans une <strong>banque traditionnelle</strong> » ; « si vous voulez <strong>que je fasse</strong> une vidéo… » ; « <strong>dites-le-moi en commentaire</strong> » ; « mettre un petit <strong>like</strong> ».</p>"}
+ ]
+},
+{
+ id:"lex", title:"Le lexique essentiel", time:"7 min",
+ lede:"Cliquez sur une carte pour révéler la définition. Les définitions sont en français : à votre niveau, passer par l'espagnol vous ralentit plus qu'il ne vous aide. Ne mémorisez pas — familiarisez-vous, vous retrouverez ces mots dans la vidéo.",
+ blocks:[
+  {t:"cards", k:"lx", groups:[
+   {name:"Ouvrir un compte", items:[
+    ["une banque traditionnelle","une banque avec des agences physiques (≠ une banque en ligne)"],
+    ["une agence","le point de vente local d'une banque"],
+    ["un compte courant","le compte de tous les jours : salaire, paiements, virements"],
+    ["un compte individuel / joint","à un seul titulaire / à deux titulaires, souvent un couple"],
+    ["le titulaire","la personne au nom de qui le compte est ouvert"],
+    ["un conseiller (bancaire)","l'employé de la banque qui suit votre dossier"],
+    ["un premier versement","le premier dépôt d'argent, à l'ouverture"],
+    ["la carte bancaire","la carte de paiement et de retrait (abrév. : la CB)"]
+   ]},
+   {name:"Les justificatifs", items:[
+    ["une pièce justificative","un document qui prouve une information"],
+    ["une pièce d'identité","carte d'identité, passeport, titre de séjour"],
+    ["en cours de validité","valide, pas expiré"],
+    ["un justificatif de domicile","un document récent qui prouve votre adresse"],
+    ["un forfait (portable)","un abonnement de téléphone mobile"],
+    ["un bulletin de salaire","le document mensuel qui détaille votre salaire (aussi : fiche de paie)"],
+    ["un avis d'imposition","le document de l'administration fiscale qui indique votre impôt"],
+    ["un RIB","le relevé d'identité bancaire : vos coordonnées bancaires (IBAN, BIC)"]
+   ]},
+   {name:"Le contrat et les risques", items:[
+    ["la convention de compte","le contrat qui fixe les engagements entre la banque et le client"],
+    ["une procuration","l'autorisation donnée à quelqu'un d'agir sur votre compte"],
+    ["les tarifs / les frais bancaires","le prix des services de la banque"],
+    ["un incident de paiement","un paiement qui ne passe pas : prélèvement rejeté, chèque sans provision"],
+    ["être surendetté","avoir plus de dettes que de revenus"],
+    ["être interdit bancaire","ne plus pouvoir émettre de chèques, être fiché à la Banque de France"],
+    ["le FCC / le FICP","les fichiers des incidents de chèques / de remboursement de crédits"],
+    ["le droit au compte","la procédure de la Banque de France en cas de refus d'ouverture"]
+   ]},
+   {name:"Le compte professionnel", items:[
+    ["un compte professionnel","le compte d'une entreprise, séparé des comptes personnels"],
+    ["les statuts","le document juridique qui crée la société et fixe ses règles"],
+    ["un extrait Kbis","la « carte d'identité » officielle d'une société immatriculée"],
+    ["le représentant légal","la personne qui peut engager la société (gérant, président)"],
+    ["les bénéficiaires effectifs","les personnes qui contrôlent réellement la société"],
+    ["le dépôt de capital","l'argent des associés versé sur le compte à la création"],
+    ["un pouvoir de signature","le droit de signer ou de valider des paiements pour l'entreprise"],
+    ["un prélèvement / un virement","la banque prend l'argent à la demande d'un tiers / vous envoyez l'argent"]
+   ]},
+   {name:"Huit tournures du français courant", items:[
+    ["être dans son droit","avoir légalement raison d'agir ainsi"],
+    ["faire face à","réussir à payer, à assumer"],
+    ["des tonnes de papiers","familier : énormément de documents"],
+    ["ne pas rigoler avec","familier : être très strict sur"],
+    ["le jour J","le jour prévu, le grand jour"],
+    ["coller à","familier : correspondre à"],
+    ["il ne vous reste plus qu'à","il suffit maintenant de"],
+    ["grand maximum","familier : au maximum"]
+   ]}
+  ]},
+  {t:"card", h3:"Micro-exercice d'appropriation", sub:"Complétez avec un terme du glossaire, puis vérifiez.", blocks:[
+   {t:"gaps", k:"lxg", fields:[
+    {k:"g1", label:"Pour recevoir mon salaire, je dois donner mon … au service RH.", answers:["rib"], sol:"RIB"},
+    {k:"g2", label:"Mon passeport doit être en cours de … .", answers:["validite"], sol:"validité"},
+    {k:"g3", label:"La convention de compte fixe les … entre la banque et le client.", answers:["engagements"], sol:"engagements"},
+    {k:"g4", label:"Pour un couple, on peut ouvrir un compte … .", answers:["joint"], sol:"joint"},
+    {k:"g5", label:"Un prélèvement rejeté, c'est un … de paiement.", answers:["incident"], sol:"incident"},
+    {k:"g6", label:"Pour ouvrir le compte d'une société, la banque demande un extrait … récent.", answers:["kbis"], sol:"Kbis"},
+    {k:"g7", label:"Ses dettes dépassent ses revenus : il est … .", answers:["surendette"], sol:"surendetté"}
+   ]}
+  ]},
+  {t:"callout", ct:"Transfert espagnol → français — sept pièges du jour", h:"<ul style='margin:0;padding-left:18px'><li><em>la cuenta corriente</em> → <strong>le compte courant</strong> ; <em>la cuenta de ahorro</em> → <strong>le livret d'épargne</strong>.</li><li><em>el certificado de titularidad</em> → <strong>le RIB</strong>. On dit « envoyer son RIB », jamais « son IBAN » seul dans le langage courant.</li><li><em>la nómina</em> → <strong>le bulletin de salaire</strong>, <strong>la fiche de paie</strong> ; <em>domiciliar la nómina</em> → <strong>faire virer son salaire</strong> sur un compte.</li><li><em>la declaración de la renta</em> → <strong>la déclaration de revenus</strong> ; le document reçu ensuite, c'est <strong>l'avis d'imposition</strong>.</li><li><em>las comisiones</em> → <strong>les frais bancaires</strong> ; <em>la comisión de mantenimiento</em> → <strong>les frais de tenue de compte</strong>.</li><li><em>el autorizado</em> → <strong>le mandataire</strong>, la personne qui a une <strong>procuration</strong>.</li><li><em>la sucursal / la oficina</em> → <strong>l'agence</strong>. <em>Un bureau</em> ne désigne pas une agence bancaire.</li></ul>"}
+ ]
+},
+{
+ id:"glob", title:"1ᵉʳ visionnage — la vue d'ensemble", time:"12 min",
+ lede:"Lisez d'abord les questions, puis lancez la vidéo en entier. Ne revenez jamais en arrière pendant ce premier passage : le but est de suivre le fil, pas de tout comprendre.",
+ blocks:[
+  {t:"play", sec:0, label:"Lancer la vidéo depuis le début", note:"environ 7 min 30 · sans sous-titres, sans pause"},
+  {t:"card", h3:"A. L'idée centrale", blocks:[
+   {t:"open", k:"g1", n:"1", starters:["Pour résumer, il faut d'abord…","Ensuite,…","Enfin,…"],
+    q:"En trois ou quatre phrases : quelles sont les grandes étapes pour ouvrir un compte en agence ?",
+    model:"« Pour résumer, il faut d'abord vérifier qu'on remplit les conditions et préparer ses justificatifs : pièce d'identité, justificatif de domicile, signature. Ensuite, on prend rendez-vous en agence, on choisit une offre et on signe la convention de compte. Enfin, on fait un petit premier versement et on attend la carte, une à deux semaines. »"},
+   {t:"open", k:"g2", n:"2", starters:["Les pièces obligatoires, ce sont…","Les autres, en revanche,…","La différence, c'est que…"],
+    q:"Le vidéaste distingue les pièces <em>obligatoires</em> et les pièces <em>non obligatoires</em>. Donnez un exemple de chaque et expliquez la différence.",
+    hint:"Indice : les unes sont exigées par la loi, les autres dépendent de la politique de chaque banque.",
+    model:"« Les pièces obligatoires, ce sont par exemple la pièce d'identité ou le justificatif de domicile : toutes les banques les demandent. Les autres, en revanche, comme les bulletins de salaire, dépendent de chaque banque. La différence, c'est que les premières sont imposées par la loi, les secondes par la politique commerciale ou le niveau de risque de la banque. »"}
+  ]},
+  {t:"card", h3:"B. La structure de la vidéo", sub:"Cliquez sur les moments dans leur ordre d'apparition.", blocks:[
+   {t:"order", k:"g3", prompt:"Remettez les six moments dans l'ordre de la vidéo.",
+    items:[
+     {id:"A", label:"La signature de la convention de compte"},
+     {id:"B", label:"Les situations dans lesquelles la banque peut refuser"},
+     {id:"C", label:"Les pièces à fournir pour un compte joint"},
+     {id:"D", label:"Le premier versement et l'attente de la carte"},
+     {id:"E", label:"Les trois pièces obligatoires"},
+     {id:"F", label:"La prise de rendez-vous et le choix de l'offre"}
+    ],
+    solution:["B","E","C","F","A","D"]}
+  ]},
+  {t:"card", h3:"C. Les sigles et les chiffres cités", sub:"Associez chaque élément à ce qu'il désigne dans la vidéo.", blocks:[
+   {t:"match", k:"g4",
+    options:["le fichier des incidents de chèques","le fichier des incidents de remboursement de crédits","le document qui donne vos coordonnées bancaires","le contrat qui réunit les engagements banque-client","l'ancienneté maximale habituelle d'un justificatif de domicile","le montant habituel du premier versement","le délai habituel pour recevoir la carte"],
+    rows:[
+     {left:"le FCC", answer:"le fichier des incidents de chèques"},
+     {left:"le FICP", answer:"le fichier des incidents de remboursement de crédits"},
+     {left:"le RIB", answer:"le document qui donne vos coordonnées bancaires"},
+     {left:"la convention de compte", answer:"le contrat qui réunit les engagements banque-client"},
+     {left:"trois mois", answer:"l'ancienneté maximale habituelle d'un justificatif de domicile"},
+     {left:"10 ou 20 euros", answer:"le montant habituel du premier versement"},
+     {left:"une à deux semaines", answer:"le délai habituel pour recevoir la carte"}
+    ]}
+  ]},
+  {t:"card", h3:"D. Votre ressenti d'écoute", sub:"Cette réponse détermine nos priorités en classe.", blocks:[
+   {t:"open", k:"g5", n:"", starters:["Ce qui m'a le plus gêné, c'est…","J'ai décroché au moment où…","En revanche, j'ai bien suivi…"],
+    q:"Qu'est-ce qui a été le plus difficile : le débit, les mots familiers, les enchaînements sans pause, ou les sigles (FCC, FICP, RIB) ?",
+    hint:"Soyez précis. « L'écoute » est trop vague ; « les passages où il enchaîne trois idées sans respirer » est exploitable."}
+  ]}
+ ]
+},
+{
+ id:"seg", title:"2ᵉ visionnage — les neuf segments", time:"25 min",
+ lede:"Pour chaque segment : les objectifs, un repérage rapide, le résumé pour vérifier, puis trois questions — compréhension, reformulation, préparation de la classe — et un focus langue. Pauses et sous-titres autorisés à partir d'ici.",
+ blocks: SEGS.map(segCard).concat([
+  {t:"callout", ct:"Question de synthèse — la première que je vous poserai en classe", h:"<p>Un collègue espagnol arrive à Paris le mois prochain. Expliquez-lui en une minute, sans lire, comment ouvrir un compte en agence : les documents, les étapes, le délai.</p>"},
+  {t:"card", blocks:[{t:"open", k:"sy1", n:"", starters:["C'est assez simple, tu vas voir.","D'abord,…","Ensuite,…","Une fois que…","Il ne te restera plus qu'à…"],
+    q:"Préparez quatre ou cinq phrases, avec des connecteurs. Vous pouvez tutoyer votre collègue.",
+    model:"« C'est assez simple, tu vas voir. D'abord, prépare ta carte d'identité, un justificatif de domicile de moins de trois mois et, si possible, tes derniers bulletins de salaire. Ensuite, prends rendez-vous dans une agence, par téléphone ou en ligne. Une fois que tu auras choisi ton offre, tu signeras la convention de compte et tu feras un petit versement, dix ou vingt euros. Il ne te restera plus qu'à attendre ta carte : une à deux semaines, grand maximum. »"}
+  ]}
+ ])
+},
+{
+ id:"ec", title:"Atelier — les phrases clés à l'oral", time:"8 min",
+ lede:"Quatre phrases de la vidéo qui contiennent des structures très fréquentes en réunion. Réécoutez-les, puis réemployez-les sur votre propre travail.",
+ blocks:[
+  {t:"callout", ct:"Méthode, pour chaque extrait", h:"<p>Écoutez <strong>3 fois</strong> sans rien lire. Puis lisez la phrase et réécoutez. Enfin, <strong>répétez à voix haute en imitant le rythme</strong> — pas seulement les mots : les enchaînements, les pauses, la voix qui descend en fin de phrase. C'est ce travail d'imitation qui rend l'oral fluide.</p>"},
+  {t:"clip", sec:56, title:"Annoncer une limite : être dans son droit + si", quote:"Tout le monde a le droit d'ouvrir un compte bancaire en France, mais la banque sera tout à fait dans son droit de vous refuser si vous êtes dans l'une des situations suivantes.",
+   focus:"<p>Une structure en deux temps, très utile pour nuancer une règle : <strong>principe général</strong> (<em>tout le monde a le droit de…</em>), puis <strong>mais</strong> + <strong>exception</strong>.</p><p><strong>être tout à fait dans son droit</strong> : avoir parfaitement raison selon la loi. <strong>dans l'une des situations suivantes</strong> : la formule idéale pour annoncer une liste.</p>",
+   ex:[{k:"e1a", q:"Construisez une phrase du même type sur une règle de votre service.", model:"« En principe, tout fournisseur est payé à 60 jours, mais nous sommes tout à fait dans notre droit de suspendre le paiement si la facture est incomplète. »"}]},
+  {t:"clip", sec:175, title:"Prévenir avec tact : toutes… ne… pas + quand même", quote:"Je précise à nouveau que toutes les banques ne réclament pas les documents qui vont suivre, mais je préfère vous avertir quand même.",
+   focus:"<p><strong>Je précise à nouveau que…</strong> : répéter une information importante, poliment. <strong>toutes les banques ne réclament pas</strong> : négation partielle, certaines seulement.</p><p><strong>je préfère vous avertir quand même</strong> : prévenir par précaution, sans dramatiser. Excellent en réunion pour signaler un risque possible.</p>",
+   ex:[{k:"e2a", q:"Signalez un risque possible dans votre travail, avec « toutes / tous… ne… pas » et « je préfère vous avertir quand même ».", model:"« Tous les clients ne paient pas en retard, bien sûr, mais je préfère vous avertir quand même : deux gros comptes ont déjà dépassé l'échéance ce mois-ci. »"}]},
+  {t:"clip", sec:273, title:"Présenter deux options : soit… soit…", quote:"Vous avez deux solutions qui s'offrent à vous : soit vous vous rendez directement en agence avec vos justificatifs, soit vous allez sur le site de votre future banque et vous remplissez le formulaire en ligne.",
+   focus:"<p><strong>deux solutions s'offrent à vous</strong> : on annonce le nombre d'options avant de les détailler. Votre auditoire sait où vous allez.</p><p><strong>soit… soit…</strong> : deux options parallèles, construites de la même manière. C'est la structure classique d'une recommandation en comité.</p>",
+   ex:[{k:"e3a", q:"Présentez deux options à votre direction sur un sujet financier, avec « deux solutions s'offrent à nous : soit…, soit… ».", model:"« Deux solutions s'offrent à nous : soit nous renégocions les délais de paiement avec ce fournisseur, soit nous cherchons une alternative d'ici la fin du trimestre. »"}]},
+  {t:"clip", sec:363, title:"Définir simplement : c'est le document qui…", quote:"Pour vous la faire très simple, une convention de compte bancaire, c'est le document qui réunit la totalité des engagements entre la banque et vous.",
+   focus:"<p><strong>Pour vous la faire (très) simple</strong> : annonce une explication simplifiée ; familier mais très courant, même au bureau. Version soignée : <em>pour simplifier</em>, <em>en deux mots</em>.</p><p><strong>X, c'est le document qui…</strong> : on détache le mot à définir, puis on le reprend avec <em>c'est</em>. C'est la définition « à la française », parfaite à l'oral.</p>",
+   ex:[{k:"e4a", q:"Définissez un document de votre métier de la même manière.", model:"« Pour vous la faire simple, le rapprochement bancaire, c'est le document qui compare nos écritures comptables avec le relevé de la banque, pour vérifier qu'il n'y a pas d'écart. »"}]},
+  {t:"card", h3:"Bilan de l'atelier", blocks:[
+   {t:"open", k:"e5", n:"", starters:["La structure que je veux vraiment m'approprier, c'est…","J'ai encore du mal avec…"],
+    q:"Laquelle de ces quatre structures voulez-vous employer dès votre prochaine réunion ?"}
+  ]}
+ ]
+},
+{
+ id:"dis", title:"Règle, pratique, conseil ou publicité ?", time:"6 min",
+ lede:"Cette vidéo mêle des règles légales, des pratiques propres à certaines banques, des conseils personnels du vidéaste et de l'autopromotion. Les distinguer à l'oreille, c'est exactement ce qu'on attend d'un financier : savoir ce qui est obligatoire, ce qui est variable, et ce qui est simplement un avis.",
+ blocks:[
+  {t:"card", h3:"Les quatre types", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li><strong>Règle légale</strong> — ce qui s'applique à tous. <em>On peut le vérifier sur un site officiel.</em></li>"+
+     "<li><strong>Pratique de certaines banques</strong> — ce qui varie d'une banque à l'autre. <em>Signal : « certaines », « généralement », « peuvent ».</em></li>"+
+     "<li><strong>Conseil du vidéaste</strong> — une recommandation personnelle. <em>Signal : « je vous recommande », « posez des questions ».</em></li>"+
+     "<li><strong>Autopromotion</strong> — le vidéaste fait la publicité de sa chaîne ou de ses produits. <em>Utile à repérer, sans intérêt pour la démarche.</em></li>"+
+     "</ul></div>"}
+  ]},
+  {t:"card", h3:"À vous de classer", sub:"Le signal linguistique est votre indice principal — il est mis en évidence.", blocks:[
+   {t:"classify", k:"cl1",
+    cats:["Règle légale","Pratique de certaines banques","Conseil du vidéaste","Autopromotion"],
+    items:[
+     {q:"« Si vous résidez sur le territoire français, <b>vous avez le droit</b> d'ouvrir un compte bancaire. »", a:"Règle légale"},
+     {q:"« <b>Je vous recommande</b> la facture de votre forfait portable, c'est plus simple et plus rapide. »", a:"Conseil du vidéaste"},
+     {q:"« <b>Certaines banques peuvent</b> vous demander une photocopie de vos derniers bulletins de salaire. »", a:"Pratique de certaines banques"},
+     {q:"« Vous pouvez <b>télécharger gratuitement vos quatre bonus offerts</b>. »", a:"Autopromotion"},
+     {q:"« Si vous êtes mineur, ce sont <b>les responsables légaux</b> qui ouvrent votre compte. »", a:"Règle légale"},
+     {q:"« Les banques en ligne <b>demandent généralement</b> que vous soyez déjà dans une banque traditionnelle. »", a:"Pratique de certaines banques"},
+     {q:"« <b>Posez des questions</b> directement à la personne en face de vous. »", a:"Conseil du vidéaste"},
+     {q:"« <b>N'hésitez pas à mettre un petit like</b> à cette vidéo. »", a:"Autopromotion"},
+     {q:"« Vous devez fournir une pièce d'identité <b>en cours de validité</b>. »", a:"Règle légale"},
+     {q:"« <b>Généralement</b>, 10 ou 20 euros suffisent pour ouvrir votre compte. »", a:"Pratique de certaines banques"}
+    ]}
+  ]},
+  {t:"card", h3:"Pourquoi cet exercice compte pour vous", sub:"Ce n'est pas un exercice de méfiance, c'est un exercice de positionnement.", blocks:[
+   {t:"note", h:"<div class='prose'><p>Face à un conseiller bancaire, un fournisseur ou un prestataire, votre valeur ajoutée de financier est de distinguer <strong>l'obligatoire du négociable</strong>. Trois questions à connaître par cœur :</p>"+
+     "<ul>"+
+     "<li>« C'est une <strong>obligation légale</strong> ou une <strong>exigence de votre banque</strong> ? »</li>"+
+     "<li>« Est-ce que ces frais sont <strong>négociables</strong> ? »</li>"+
+     "<li>« Vous pourriez me l'<strong>envoyer par écrit</strong>, s'il vous plaît ? »</li>"+
+     "</ul></div>"},
+   {t:"open", k:"dis2", n:"", starters:["C'est une obligation légale ou…","Est-ce que ces frais sont négociables ?","Vous pourriez me confirmer par écrit…"],
+    q:"Le conseiller vous demande votre dernier avis d'imposition espagnol et des frais de tenue de compte de 8 € par mois. Formulez deux questions polies pour savoir ce qui est obligatoire et ce qui est négociable.",
+    model:"« Pardon, l'avis d'imposition, c'est une obligation légale ou une exigence de votre banque ? Je viens d'arriver en France, je n'ai qu'un avis espagnol. » · « Et concernant les frais de tenue de compte, est-ce qu'ils sont négociables, par exemple si mon salaire est versé chez vous ? »"}
+  ]}
+ ]
+},
+{
+ id:"met", title:"Et dans votre métier ?", time:"7 min",
+ lede:"Préparez ces questions en notes — quelques mots-clés, pas des phrases rédigées. En classe, vous parlerez à partir de ces notes sans les lire. C'est exactement le format d'une intervention en réunion.",
+ blocks:[
+  {t:"card", h3:"1. Le compte professionnel d'une entreprise", sub:"Ce que la vidéo explique pour un particulier existe aussi pour une société, avec d'autres pièces.", tc:[{sec:107, l:"1:47"}], blocks:[
+   {t:"open", k:"m1", n:"", starters:["Pour une société, la banque demande…","La différence avec un particulier, c'est que…","Elle doit aussi vérifier…"],
+    q:"Quelles pièces une banque demande-t-elle, à votre avis, pour ouvrir le compte d'une société en France ? En quoi est-ce différent d'un compte personnel ?",
+    hint:"Appuyez-vous sur la carte « Le compte professionnel » du lexique. Deux minutes."}
+  ]},
+  {t:"card", h3:"2. Votre installation à Paris", sub:"En novembre, ce sera votre tour.", tc:[{sec:307, l:"5:07"}], blocks:[
+   {t:"open", k:"m2", n:"", starters:["Ma priorité, ce sera…","Le point délicat, c'est…","Pour anticiper, je vais…"],
+    q:"Préparez votre plan d'action pour ouvrir votre compte à Paris : documents, calendrier, points délicats.",
+    hint:"Hiérarchisez : qu'est-ce qui doit être prêt avant votre départ de Madrid ?"}
+  ]},
+  {t:"card", h3:"3. Le rendez-vous avec le conseiller", sub:"Préparez vos questions comme pour une négociation.", tc:[{sec:330, l:"5:30"}], blocks:[
+   {t:"open", k:"m3", n:"", starters:["Premièrement, j'aimerais savoir…","Ensuite, est-ce que…","Enfin, pourriez-vous…"],
+    q:"Rédigez cinq questions à poser au conseiller : frais, carte, virements vers l'Espagne, délais, procuration…",
+    hint:"Utilisez le conditionnel de politesse : <em>pourriez-vous</em>, <em>j'aimerais savoir</em>, <em>serait-il possible de</em>."}
+  ]},
+  {t:"callout", ct:"Production orale — 2 minutes, format réunion", h:"<p>Enregistrez-vous avec votre téléphone : <strong>deux minutes</strong>, sans vous arrêter. Situation : vous présentez à l'équipe d'Idealista Paris <em>la procédure d'ouverture d'un compte bancaire pour un collaborateur qui arrive de l'étranger</em>. Étapes, documents, délais, conseils. Réécoutez-vous une fois.</p><p>Visez la continuité, pas la perfection. Si un mot vous manque, contournez-le en français (« c'est le document qui… ») plutôt que de passer à l'anglais.</p>"},
+  {t:"card", blocks:[
+   {t:"open", k:"m4", n:"", starters:["Le mot qui m'a manqué, c'est…","J'ai commencé une phrase par… et je n'ai pas su la finir.","Je me suis repris plusieurs fois sur…"],
+    q:"Après réécoute : quel <strong>mot vous a manqué</strong>, et quelle <strong>phrase avez-vous abandonnée</strong> en cours de route ?",
+    hint:"Ces deux éléments valent une demi-heure de cours. Notez-les précisément."}
+  ]}
+ ]
+},
+{
+ id:"bil", title:"Bilan", time:"4 min",
+ lede:"À remplir après votre travail en autonomie. C'est ce bilan qui déterminera nos priorités en classe.",
+ blocks:[
+  {t:"card", h3:"Mes trois expressions", sub:"Trois tournures de la vidéo, chacune dans une phrase sur votre travail.", blocks:[
+   {t:"open", k:"b1", n:"", starters:["1. Deux solutions s'offrent à nous : soit…, soit…","2. Une fois que…, …","3. Il ne nous reste plus qu'à…"],
+    q:"Mes trois expressions à réemployer cette semaine :",
+    model:"« 1. Deux solutions s'offrent à nous : soit on relance le client, soit on passe par le recouvrement. 2. Une fois que nous aurons reçu le bon de commande, nous émettrons la facture. 3. Il ne nous reste plus qu'à valider le budget avec la direction. »"}
+  ]},
+  {t:"card", h3:"Mes passages incompris", sub:"Deux moments précis où vous avez décroché. Nous les réécouterons ensemble.", blocks:[
+   {t:"open", k:"b2", n:"", starters:["Vers …:…, j'ai cru comprendre que…","J'ai complètement décroché à partir de…"],
+    q:"Indiquez le minutage et ce que vous avez cru comprendre."}
+  ]},
+  {t:"card", h3:"Mon auto-évaluation", blocks:[
+   {t:"scale", k:"b3", cols:["Difficile","Correct","À l'aise"], rows:[
+    "Suivre un natif qui parle vite, avec un registre familier",
+    "Comprendre les sigles et les chiffres à l'oral (FCC, FICP, RIB, délais)",
+    "Expliquer une procédure étape par étape avec les bons connecteurs",
+    "Poser des questions précises et polies à un conseiller",
+    "Distinguer à l'oreille l'obligatoire, le variable et le simple conseil",
+    "Parler deux minutes en continu, comme en réunion"
+   ]}
+  ]},
+  {t:"card", h3:"Ce que je veux travailler en priorité", sub:"Une seule chose, et soyez précis.", blocks:[
+   {t:"open", k:"b4", n:"", starters:["Ce que je veux travailler en priorité, c'est…","Concrètement, j'aimerais arriver à…"],
+    q:"« L'oral » est trop vague. « Poser une question à un conseiller sans préparer ma phrase dans ma tête » est exploitable."}
+  ]},
+  {t:"callout", ct:"Avant notre séance", h:"<p>L'objectif n'était pas de tout retenir, mais de <strong>pouvoir en parler</strong> : expliquer une procédure, citer les bons documents, poser des questions précises et donner un avis. En classe, nous partirons directement de vos réponses — vous parlerez environ 70 % du temps. Pensez à m'envoyer votre récapitulatif (bouton ci-dessous) avant le cours.</p>"},
+  {t:"export"}
+ ]
+}
+];
+
+
+/* ---------------- activity registry ---------------- */
+var ACTS = [];
+function reg(k){ if(ACTS.indexOf(k)<0) ACTS.push(k); }
+(function scan(){
+  function walk(bs){
+    bs.forEach(function(b){
+      if(b.t==="open") reg(b.k);
+      else if(b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale") reg(b.k);
+      else if(b.t==="gaps") reg(b.k);
+      else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ reg(x.k); }); }
+      else if(b.t==="card"&&b.blocks) walk(b.blocks);
+    });
+  }
+  STEPS.forEach(function(s){ walk(s.blocks); });
+})();
+
+function isDone(k){
+  var v = state.a[k];
+  if(v==null) return false;
+  if(typeof v === "string") return v.trim().length>2;
+  if(typeof v === "object") return Object.keys(v).length>0;
+  return false;
+}
+function stepDone(s){
+  var ks = stepKeys(s);
+  if(!ks.length) return false;
+  var n=0; ks.forEach(function(k){ if(isDone(k)) n++; });
+  return n >= Math.ceil(ks.length*0.7);
+}
+function stepKeys(s){
+  var out=[];
+  function walk(bs){ bs.forEach(function(b){
+    if(b.t==="open"||b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale"||b.t==="gaps"){ if(b.k) out.push(b.k); }
+    else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ out.push(x.k); }); }
+    else if(b.t==="card"&&b.blocks) walk(b.blocks);
+  });}
+  walk(s.blocks); return out;
+}
+
+/* ---------------- renderers ---------------- */
+function mkReveal(labelText, contentHTML){
+  var wrap = el("div");
+  var btn = el("button","btn btn-ghost small", labelText||"Voir une réponse possible");
+  var box = html("div","reveal","<div class='rt'>Réponse possible — un modèle, pas une correction</div>"+contentHTML);
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? (labelText||"Voir une réponse possible") : "Masquer";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+
+function rOpen(b){
+  var n = el("div","q");
+  var lbl = el("div","q-lbl");
+  if(b.n) lbl.appendChild(el("span","q-n", b.n+"."));
+  lbl.appendChild(html("div","q-t", b.q));
+  n.appendChild(lbl);
+  if(b.hint) n.appendChild(html("div","q-hint", b.hint));
+  var ta = el("textarea");
+  ta.id = "f_"+b.k;
+  ta.placeholder = "Votre réponse…";
+  ta.value = state.a[b.k] || "";
+  var flag = el("span","saved","enregistré");
+  function touched(){
+    state.a[b.k] = ta.value; saveSoon(); flag.classList.add("on");
+    clearTimeout(ta._t); ta._t = setTimeout(function(){ flag.classList.remove("on"); },1200);
+    updateProgress();
+  }
+  ta.addEventListener("input", touched);
+  if(b.starters && b.starters.length){
+    var sw = el("div","starters");
+    sw.appendChild(el("span","starters-lbl","Amorces — cliquez pour insérer"));
+    b.starters.forEach(function(st){
+      var bt = el("button","starter", st); bt.type = "button";
+      bt.setAttribute("aria-label", "Insérer l'amorce : "+st);
+      bt.addEventListener("click", function(){
+        var cur = ta.value;
+        ta.value = (cur && !/\s$/.test(cur) ? cur+" " : cur) + st + " ";
+        ta.focus();
+        try{ ta.setSelectionRange(ta.value.length, ta.value.length); }catch(e){}
+        touched();
+      });
+      sw.appendChild(bt);
+    });
+    n.appendChild(sw);
+  }
+  n.appendChild(ta);
+  var foot = el("div","row");
+  foot.appendChild(flag);
+  n.appendChild(foot);
+  if(b.model) n.appendChild(mkReveal(null, "<div>"+b.model+"</div>"));
+  return n;
+}
+
+function rTf(b){
+  var wrap = el("div","tf-list");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","tf-item");
+    var top = el("div","tf-top");
+    top.appendChild(html("div","tf-txt","<strong style='font-family:var(--mono);font-size:12px;color:var(--muted)'>"+(i+1)+"</strong> &nbsp;"+it.q));
+    var btns = el("div","tf-btns");
+    var verdict = html("div","verdict","");
+    verdict.hidden = true;
+    function apply(val){
+      store[i] = val; saveSoon();
+      bV.setAttribute("aria-pressed", val==="V"?"true":"false");
+      bF.setAttribute("aria-pressed", val==="F"?"true":"false");
+      var right = (val==="V") === it.a;
+      box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+      verdict.hidden = false;
+      verdict.innerHTML = "<span class='vi'>"+(right?"✓ Exact":"✗ Non")+"</span><span>"+it.j+"</span>";
+      updateProgress();
+    }
+    var bV = el("button","pick","Vrai"); bV.type="button"; bV.setAttribute("aria-pressed","false");
+    var bF = el("button","pick","Faux"); bF.type="button"; bF.setAttribute("aria-pressed","false");
+    bV.addEventListener("click", function(){ apply("V"); });
+    bF.addEventListener("click", function(){ apply("F"); });
+    btns.appendChild(bV); btns.appendChild(bF);
+    top.appendChild(btns);
+    box.appendChild(top); box.appendChild(verdict);
+    wrap.appendChild(box);
+    if(store[i]) apply(store[i]);
+  });
+  return wrap;
+}
+
+function rGaps(b){
+  var wrap = el("div","gaps");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var inputs = [];
+  b.fields.forEach(function(f){
+    var row = el("div","gap-row");
+    row.appendChild(html("div","gap-lbl", f.label));
+    var box = el("div","gap-in");
+    var inp = document.createElement("input");
+    inp.type="text"; inp.id = "f_"+b.k+"_"+f.k;
+    inp.value = store[f.k] || "";
+    inp.setAttribute("aria-label", f.label.replace(/<[^>]+>/g,""));
+    inp.addEventListener("input", function(){
+      store[f.k] = inp.value; inp.classList.remove("ok","no"); sol.textContent=""; saveSoon(); updateProgress();
+    });
+    box.appendChild(inp);
+    if(f.suf) box.appendChild(el("span","gap-suf", f.suf));
+    var sol = el("span","gap-sol","");
+    box.appendChild(sol);
+    row.appendChild(box);
+    wrap.appendChild(row);
+    inputs.push({inp:inp, f:f, sol:sol});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    inputs.forEach(function(o){
+      var right = matches(o.inp.value, o.f.answers);
+      o.inp.classList.toggle("ok", right); o.inp.classList.toggle("no", !right);
+      o.sol.textContent = right ? "✓" : ("→ "+o.f.sol);
+      o.sol.style.color = right ? "var(--ok)" : "var(--no)";
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rOrder(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="11px";
+  if(b.prompt) wrap.appendChild(html("div","q-t", b.prompt));
+  var slot = el("div","ord-slot");
+  var pool = el("div","ord-pool");
+  var chosen = (state.a[b.k] && state.a[b.k].seq) ? state.a[b.k].seq.slice() : [];
+  function render(){
+    slot.innerHTML=""; pool.innerHTML="";
+    if(!chosen.length){ slot.appendChild(el("span","ph","Cliquez les éléments dans l'ordre…")); }
+    chosen.forEach(function(id, i){
+      var it = b.items.filter(function(x){return x.id===id;})[0];
+      var s = el("div","seq");
+      s.appendChild(el("span","sn",(i+1)+"."));
+      s.appendChild(el("span",null,it.label));
+      slot.appendChild(s);
+    });
+    b.items.forEach(function(it){
+      var c = el("button","chip"); c.type="button";
+      c.innerHTML = "<span class='ck'>"+it.id+"</span>"+it.label;
+      if(chosen.indexOf(it.id)>=0) c.disabled = true;
+      c.addEventListener("click", function(){
+        chosen.push(it.id);
+        state.a[b.k] = {seq:chosen.slice()}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent="";
+        render(); updateProgress();
+      });
+      pool.appendChild(c);
+    });
+  }
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  var undo = el("button","btn btn-ghost","Recommencer");
+  var msg = el("span","small");
+  check.addEventListener("click", function(){
+    if(chosen.length !== b.solution.length){ msg.textContent="Placez d'abord tous les éléments."; msg.style.color="var(--muted)"; return; }
+    var right = chosen.join("") === b.solution.join("");
+    slot.classList.toggle("ok", right); slot.classList.toggle("no", !right);
+    msg.textContent = right ? "✓ C'est l'ordre du reportage." : ("✗ L'ordre est : "+b.solution.join(" → "));
+    msg.style.color = right ? "var(--ok)" : "var(--no)";
+  });
+  undo.addEventListener("click", function(){
+    chosen = []; state.a[b.k]={seq:[]}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent=""; render(); updateProgress();
+  });
+  bar.appendChild(check); bar.appendChild(undo); bar.appendChild(msg);
+  wrap.appendChild(slot); wrap.appendChild(pool); wrap.appendChild(bar);
+  render();
+  return wrap;
+}
+
+function rMatch(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var sels = [];
+  b.rows.forEach(function(r, i){
+    var row = el("div","mt-row");
+    row.appendChild(html("div","mt-left", r.left));
+    var s = document.createElement("select");
+    s.id = "f_"+b.k+"_"+i;
+    s.setAttribute("aria-label", r.left);
+    var o0 = document.createElement("option"); o0.value=""; o0.textContent="— choisir —"; s.appendChild(o0);
+    b.options.forEach(function(op){
+      var o = document.createElement("option"); o.value=op; o.textContent=op; s.appendChild(o);
+    });
+    s.value = store[i] || "";
+    s.addEventListener("change", function(){ store[i]=s.value; s.classList.remove("ok","no"); saveSoon(); updateProgress(); });
+    row.appendChild(s);
+    wrap.appendChild(row);
+    sels.push({s:s, r:r});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    sels.forEach(function(o){
+      var right = o.s.value === o.r.answer;
+      o.s.classList.toggle("ok", right); o.s.classList.toggle("no", !right);
+      if(!right && o.s.value) o.s.title = "Réponse attendue : "+o.r.answer;
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rClassify(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","cl-item");
+    box.appendChild(html("div","cl-q", it.q));
+    var opts = el("div","cl-opts");
+    var btns = [];
+    function paint(){
+      var v = store[i];
+      btns.forEach(function(x){ x.b.setAttribute("aria-pressed", x.c===v ? "true":"false"); });
+      if(v){
+        var right = v === it.a;
+        box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+        fb.hidden = false;
+        fb.innerHTML = right ? "<span class='vi'>✓ Exact</span>" : "<span class='vi'>✗ Non</span><span>Il s'agit d'un énoncé de type « "+it.a+" ».</span>";
+      }
+    }
+    b.cats.forEach(function(c){
+      var bt = el("button","pick", c); bt.type="button"; bt.setAttribute("aria-pressed","false");
+      bt.style.minWidth="auto";
+      bt.addEventListener("click", function(){ store[i]=c; saveSoon(); paint(); updateProgress(); });
+      opts.appendChild(bt); btns.push({b:bt,c:c});
+    });
+    var fb = html("div","verdict",""); fb.hidden = true;
+    box.appendChild(opts); box.appendChild(fb);
+    wrap.appendChild(box);
+    paint();
+  });
+  return wrap;
+}
+
+function rCards(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="22px";
+  b.groups.forEach(function(g, gi){
+    var grp = el("div","grp");
+    grp.appendChild(el("div","grp-h", g.name));
+    var grid = el("div","cgrid");
+    g.items.forEach(function(pair, ii){
+      var id = gi+"-"+ii;
+      var c = el("button","fc"); c.type="button";
+      var term = el("div","term", pair[0]);
+      var tap = el("div","tap","cliquer pour la définition");
+      var def = el("div","def", pair[1]); def.hidden = true;
+      var mark = el("span","fc-mark","?");
+      c.appendChild(mark); c.appendChild(term); c.appendChild(tap); c.appendChild(def);
+      function paint(){
+        var known = !!state.known[id];
+        c.classList.toggle("known", known);
+        mark.textContent = known ? "su" : "?";
+      }
+      c.addEventListener("click", function(){
+        if(def.hidden){ def.hidden=false; tap.hidden=true; }
+        else { state.known[id] = !state.known[id]; saveSoon(); paint(); }
+      });
+      paint();
+      grid.appendChild(c);
+    });
+    grp.appendChild(grid);
+    wrap.appendChild(grp);
+  });
+  wrap.appendChild(html("div","small muted","<em>Premier clic : la définition. Second clic : marquer la carte comme sue.</em>"));
+  return wrap;
+}
+
+function rClip(b){
+  var box = el("div","clip");
+  var head = el("div","clip-h");
+  head.appendChild(el("h3", null, b.title));
+  head.appendChild(tcLink(b.sec, "vers "+mmss(b.sec)));
+  box.appendChild(head);
+  var bq = el("blockquote"); bq.textContent = "« "+b.quote+" »";
+  box.appendChild(bq);
+  box.appendChild(html("div","prose", b.focus));
+  (b.ex||[]).forEach(function(x){
+    box.appendChild(el("hr","hr"));
+    box.appendChild(rOpen({t:"open", k:x.k, q:x.q, model:x.model}));
+  });
+  return box;
+}
+
+function rScale(b){
+  var wrap = el("div","sc-wrap");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var tbl = el("table","sc-tbl");
+  var thead = el("thead"); var trh = el("tr");
+  trh.appendChild(el("th",null,"Je suis capable de…"));
+  b.cols.forEach(function(c){ trh.appendChild(el("th",null,c)); });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  var tb = el("tbody");
+  b.rows.forEach(function(r, i){
+    var tr = el("tr");
+    tr.appendChild(el("td",null,r));
+    var btns=[];
+    b.cols.forEach(function(c, ci){
+      var td = el("td");
+      var bt = el("button","rad"); bt.type="button";
+      bt.setAttribute("aria-label", r+" : "+c);
+      bt.setAttribute("aria-pressed", store[i]===ci ? "true":"false");
+      bt.addEventListener("click", function(){
+        store[i]=ci; saveSoon();
+        btns.forEach(function(o,oi){ o.setAttribute("aria-pressed", oi===ci ? "true":"false"); });
+        updateProgress();
+      });
+      btns.push(bt); td.appendChild(bt); tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb); wrap.appendChild(tbl);
+  return wrap;
+}
+
+function rPlay(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct","Visionnage"));
+  var row = el("div","row");
+  var a = tcLink(b.sec, b.label);
+  a.style.fontSize="13.5px"; a.style.padding="7px 13px";
+  row.appendChild(a);
+  row.appendChild(el("span","small muted", b.note||""));
+  box.appendChild(row);
+  return box;
+}
+
+function rExport(){
+  var box = el("div","card");
+  box.appendChild(html("h3",null,"Envoyer mes réponses au formateur"));
+  box.appendChild(html("p","sub","Vos réponses sont enregistrées dans ce navigateur. Le bouton ci-dessous rassemble tout dans un texte que vous pouvez copier et m'envoyer par e-mail ou message."));
+  var b = el("button","btn btn-primary","Préparer mon récapitulatif");
+  b.addEventListener("click", openExport);
+  var row = el("div","row"); row.appendChild(b);
+  box.appendChild(row);
+  return box;
+}
+
+function rNote(b){ return html("div","prose", b.h); }
+function rRevealNote(b){
+  var wrap = el("div");
+  var lbl = b.label||"Afficher";
+  var btn = el("button","btn btn-ghost small", lbl); btn.type="button";
+  var box = html("div","reveal","<div class='rt'>"+(b.rt||"")+"</div><div class='prose'>"+b.h+"</div>");
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? lbl : "Masquer le résumé";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+function rCallout(b){
+  var box = el("div","callout");
+  if(b.ct) box.appendChild(el("div","ct", b.ct));
+  box.appendChild(html("div","prose", b.h));
+  return box;
+}
+
+function renderBlock(b){
+  switch(b.t){
+    case "note": return rNote(b);
+    case "reveal": return rRevealNote(b);
+    case "callout": return rCallout(b);
+    case "open": return rOpen(b);
+    case "tf": return rTf(b);
+    case "gaps": return rGaps(b);
+    case "order": return rOrder(b);
+    case "match": return rMatch(b);
+    case "classify": return rClassify(b);
+    case "cards": return rCards(b);
+    case "clip": return rClip(b);
+    case "scale": return rScale(b);
+    case "play": return rPlay(b);
+    case "export": return rExport();
+    case "card": {
+      var c = el("div","card");
+      if(b.h3){
+        var hr = el("div","row");
+        hr.style.justifyContent="space-between";
+        hr.appendChild(el("h3",null,b.h3));
+        if(b.tc){ var g=el("div","row"); b.tc.forEach(function(t){ g.appendChild(tcLink(t.sec,t.l)); }); hr.appendChild(g); }
+        c.appendChild(hr);
+      } else if(b.tc){
+        var g2=el("div","row"); b.tc.forEach(function(t){ g2.appendChild(tcLink(t.sec,t.l)); }); c.appendChild(g2);
+      }
+      if(b.sub) c.appendChild(el("p","sub", b.sub));
+      (b.blocks||[]).forEach(function(x){ c.appendChild(renderBlock(x)); });
+      return c;
+    }
+  }
+  return el("div");
+}
+
+/* ---------------- shell render ---------------- */
+var main = document.getElementById("main");
+var rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  STEPS.forEach(function(s, i){
+    var li = el("li","rail-item");
+    var b = el("button","rl"); b.type="button";
+    b.setAttribute("aria-current", i===state.step ? "true":"false");
+    if(stepDone(s)) b.classList.add("is-done");
+    b.appendChild(el("span","rl-num", String(i+1).padStart(2,"0")));
+    b.appendChild(el("span","rl-title", s.title));
+    b.addEventListener("click", function(){ go(i); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+}
+
+function renderStep(){
+  var s = STEPS[state.step];
+  main.innerHTML="";
+  var sec = el("section","step");
+  var head = el("div","step-head");
+  var eye = el("div","eyebrow");
+  eye.appendChild(el("span",null,"Étape "+String(state.step+1).padStart(2,"0")+" / "+String(STEPS.length).padStart(2,"0")));
+  eye.appendChild(el("span","dot"));
+  eye.appendChild(el("span",null,s.time));
+  head.appendChild(eye);
+  head.appendChild(el("h2",null,s.title));
+  if(s.lede) head.appendChild(el("p","lede", s.lede));
+  sec.appendChild(head);
+  s.blocks.forEach(function(b){ sec.appendChild(renderBlock(b)); });
+
+  var nav = el("div","stepnav");
+  var prev = el("button","btn","← "+(state.step>0 ? STEPS[state.step-1].title : "Début"));
+  prev.disabled = state.step===0;
+  if(prev.disabled){ prev.style.opacity=".4"; prev.style.cursor="default"; }
+  prev.addEventListener("click", function(){ if(state.step>0) go(state.step-1); });
+  var next = el("button","btn btn-primary", (state.step<STEPS.length-1 ? STEPS[state.step+1].title : "Terminé")+" →");
+  next.disabled = state.step===STEPS.length-1;
+  if(next.disabled){ next.style.opacity=".4"; next.style.cursor="default"; }
+  next.addEventListener("click", function(){ if(state.step<STEPS.length-1) go(state.step+1); });
+  nav.appendChild(prev); nav.appendChild(next);
+  sec.appendChild(nav);
+  main.appendChild(sec);
+}
+
+function go(i){
+  state.step = i; save();
+  renderStep(); renderRail();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+var progFill = document.getElementById("progFill");
+var progNum = document.getElementById("progNum");
+function updateProgress(){
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  var pct = ACTS.length ? Math.round(n/ACTS.length*100) : 0;
+  progFill.style.width = pct+"%";
+  progNum.textContent = n+" / "+ACTS.length;
+  renderRail();
+}
+
+/* ---------------- export ---------------- */
+function textOf(k){
+  var v = state.a[k];
+  if(v==null) return "";
+  if(typeof v==="string") return v.trim();
+  return "";
+}
+function buildExport(){
+  var L=[];
+  L.push("ATELIER COMPTE BANCAIRE — préparation autonome B1+");
+  L.push("Vidéo : « Comment ouvrir un compte bancaire »");
+  L.push("Exporté le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}));
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  L.push("Avancement : "+n+" activités sur "+ACTS.length);
+  L.push("");
+  STEPS.forEach(function(s, si){
+    var lines=[];
+    function walk(bs){
+      bs.forEach(function(b){
+        if(b.t==="open"){
+          var t = textOf(b.k);
+          if(t) lines.push("• "+b.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+        } else if(b.t==="clip"){
+          (b.ex||[]).forEach(function(x){
+            var t = textOf(x.k);
+            if(t) lines.push("• "+x.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+          });
+        } else if(b.t==="scale"){
+          var st = state.a[b.k]||{};
+          b.rows.forEach(function(r,i){
+            if(st[i]!=null) lines.push("• "+r+" : "+b.cols[st[i]]);
+          });
+        } else if(b.t==="card" && b.blocks){ walk(b.blocks); }
+      });
+    }
+    walk(s.blocks);
+    if(lines.length){
+      L.push("──────────────────────────────");
+      L.push(String(si+1).padStart(2,"0")+". "+s.title.toUpperCase());
+      L.push("");
+      L.push(lines.join("\n\n"));
+      L.push("");
+    }
+  });
+  if(L.length<=5) L.push("(Aucune réponse rédigée pour l'instant.)");
+  return L.join("\n");
+}
+function openExport(){
+  var mask = el("div","mask");
+  var m = el("div","modal");
+  m.setAttribute("role","dialog"); m.setAttribute("aria-modal","true"); m.setAttribute("aria-label","Récapitulatif de mes réponses");
+  m.appendChild(html("h3",null,"Mon récapitulatif"));
+  m.appendChild(html("p","sub","Copiez ce texte et envoyez-le à votre formateur avant le cours."));
+  var ta = el("textarea"); ta.id="exportArea"; ta.value = buildExport(); ta.readOnly = true;
+  m.appendChild(ta);
+  var row = el("div","row");
+  var copy = el("button","btn btn-primary","Copier le texte");
+  var status = el("span","small muted","");
+  copy.addEventListener("click", function(){
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    var done=false;
+    try{ done = document.execCommand("copy"); }catch(e){}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ta.value).then(function(){ status.textContent="Copié ✓"; status.style.color="var(--ok)"; },
+        function(){ if(!done) status.textContent="Sélectionnez le texte puis Ctrl/Cmd + C."; });
+    } else {
+      status.textContent = done ? "Copié ✓" : "Sélectionnez le texte puis Ctrl/Cmd + C.";
+      status.style.color = done ? "var(--ok)" : "var(--muted)";
+    }
+  });
+  var close = el("button","btn","Fermer");
+  function shut(){ mask.remove(); document.removeEventListener("keydown", esc); }
+  function esc(e){ if(e.key==="Escape") shut(); }
+  close.addEventListener("click", shut);
+  mask.addEventListener("click", function(e){ if(e.target===mask) shut(); });
+  document.addEventListener("keydown", esc);
+  row.appendChild(copy); row.appendChild(close); row.appendChild(status);
+  m.appendChild(row);
+  mask.appendChild(m);
+  document.body.appendChild(mask);
+  copy.focus();
+}
+
+/* ---------------- theme ---------------- */
+document.getElementById("themeBtn").addEventListener("click", function(){
+  var r = document.documentElement;
+  var cur = r.getAttribute("data-theme");
+  var sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var nowDark = cur ? cur==="dark" : sysDark;
+  r.setAttribute("data-theme", nowDark ? "light" : "dark");
+  try{ localStorage.setItem(KEY+"-theme", nowDark ? "light":"dark"); }catch(e){}
+});
+(function(){ var t=null; try{ t=localStorage.getItem(KEY+"-theme"); }catch(e){} document.documentElement.setAttribute("data-theme", t==="light" ? "light" : "dark"); })();
+
+document.getElementById("exportBtn").addEventListener("click", openExport);
+document.getElementById("resetBtn").addEventListener("click", function(){
+  if(!window.confirm("Effacer toutes vos réponses ? Cette action est définitive.")) return;
+  state = {step:0, a:{}, done:{}, known:{}};
+  save(); renderStep(); renderRail(); updateProgress();
+});
+
+/* ---------------- boot ---------------- */
+if(!STORAGE_OK){
+  var warn = html("div","storewarn",
+    "<strong>Ce navigateur n'enregistre pas vos réponses sur cette page.</strong> "+
+    "Vous pouvez travailler normalement, mais <strong>avant de fermer l'onglet</strong>, "+
+    "cliquez sur « Exporter mes réponses » en haut de la page et conservez le texte.");
+  document.body.insertBefore(warn, document.querySelector(".shell"));
+}
+load();
+if(state.step<0 || state.step>=STEPS.length) state.step=0;
+renderStep();
+renderRail();
+updateProgress();
+})();
+</script>
+
+
+
+
+</body></html>
