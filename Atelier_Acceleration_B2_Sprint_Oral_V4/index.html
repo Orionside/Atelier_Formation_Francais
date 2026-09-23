@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Sprint oral B2 de 60 minutes : écoute ciblée, prosodie, répétition 3/2/1 et transfert professionnel.">
+  <title>Accélération · Sprint oral B2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#atelier">Aller à l’atelier</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#mission" aria-label="Revenir à la mission">
+        <span class="brand__mark" aria-hidden="true">A/60</span>
+        <span><strong>Accélération</strong><small>Sprint oral · B2</small></span>
+      </a>
+      <div class="session-status" aria-label="Progression de la séance">
+        <span id="progressLabel">0 étape sur 8</span>
+        <span class="progress-track"><span id="progressBar"></span></span>
+      </div>
+      <button class="button button--quiet" id="exportButton" type="button">Exporter le bilan</button>
+    </div>
+  </header>
+
+  <main id="atelier">
+    <section class="hero" id="mission">
+      <div class="hero__copy">
+        <p class="eyebrow">Une séance · une compétence immédiatement transférable</p>
+        <h1>Expliquer un paradoxe.<br><em>Convaincre sans suraffirmer.</em></h1>
+        <p class="hero__lede">En 60 minutes, préparez une intervention de 90 secondes : montrer comment un outil censé faire gagner du temps peut augmenter la charge, nuancer une donnée et proposer une règle d’équipe.</p>
+        <div class="mission-proof" aria-label="Critères de réussite">
+          <span>1 position nette</span><span>1 donnée prudente</span><span>1 objection traitée</span><span>1 action proposée</span>
+        </div>
+      </div>
+
+      <aside class="start-card" aria-labelledby="profil-title">
+        <p class="card-kicker">Avant de commencer</p>
+        <h2 id="profil-title">Votre terrain professionnel</h2>
+        <div class="role-picker" id="rolePicker" role="group" aria-label="Choisir un profil">
+          <button type="button" data-role="direction" aria-pressed="false">Direction</button>
+          <button type="button" data-role="juridique" aria-pressed="false">Droit</button>
+          <button type="button" data-role="clinique" aria-pressed="false">Essais cliniques</button>
+        </div>
+        <p class="role-preview" id="rolePreview">Choisissez un profil : les consignes et objections s’adapteront à votre métier.</p>
+        <button class="button button--primary" id="startButton" type="button" disabled>Commencer la mesure à froid</button>
+        <p class="privacy-note">Vos réponses restent dans ce navigateur. Aucun audio n’est envoyé.</p>
+      </aside>
+    </section>
+
+    <section class="dashboard" aria-label="Tableau de preuve">
+      <article><span class="dashboard__value" id="dashSamples">0/2</span><span>échantillons comparables</span></article>
+      <article><span class="dashboard__value" id="dashRounds">0/3</span><span>tours 3/2/1 réalisés</span></article>
+      <article><span class="dashboard__value" id="dashChunks">0/5</span><span>blocs réemployés</span></article>
+      <article><span class="dashboard__value" id="dashTransfer">—</span><span>transfert planifié</span></article>
+    </section>
+
+    <div class="workspace">
+      <nav class="step-nav" aria-label="Étapes de la séance">
+        <ol id="stepNav"></ol>
+      </nav>
+
+      <div class="stage" id="stage" tabindex="-1">
+        <section class="step" data-step="0" aria-labelledby="step0-title">
+          <header class="step__header">
+            <div><p class="eyebrow">0–5 min · Point de départ</p><h2 id="step0-title">Parler avant d’apprendre</h2></div>
+            <span class="step__number">01</span>
+          </header>
+          <p class="step__intro">Répondez sans préparation. Cette prise sert de référence : elle n’est pas notée et ne doit pas être parfaite.</p>
+          <article class="task-card task-card--accent">
+            <p class="card-kicker">Situation adaptée</p>
+            <h3 id="coldTitle">Choisissez d’abord votre profil.</h3>
+            <p id="coldContext"></p>
+            <p class="prompt" id="coldPrompt"></p>
+          </article>
+          <div class="recorder" data-recorder="baseline" data-limit="90">
+            <div><p class="card-kicker">Échantillon A · 90 s maximum</p><p>Parlez en continu. Si un mot manque, reformulez.</p></div>
+            <div class="recorder__controls"><button class="button button--record" type="button">Enregistrer</button><span class="recorder__time">01:30</span></div>
+            <div class="recorder__result" aria-live="polite"></div>
+          </div>
+          <fieldset class="quick-check" data-rating-group="baseline">
+            <legend>Juste après : votre perception</legend>
+            <label>Effort pour parler <input type="range" min="1" max="5" value="3" data-field="effort"><output>3/5</output></label>
+            <label>Fluidité ressentie <input type="range" min="1" max="5" value="3" data-field="fluency"><output>3/5</output></label>
+          </fieldset>
+        </section>
+
+        <section class="step" data-step="1" aria-labelledby="step1-title" hidden>
+          <header class="step__header">
+            <div><p class="eyebrow">5–12 min · Micro-écoute A</p><h2 id="step1-title">Entendre le paradoxe</h2></div>
+            <span class="step__number">02</span>
+          </header>
+          <p class="step__intro">Trois écoutes courtes, trois intentions différentes. N’essayez pas de tout comprendre au premier passage.</p>
+          <article class="clip-card" data-video-start="943" data-video-end="965">
+            <div class="clip-card__meta"><span>15:43 → 16:05</span><span>22 secondes</span></div>
+            <h3>Plus de facilité, plus de sollicitations</h3>
+            <div class="clip-facade">
+              <button class="button button--primary load-clip" type="button">Charger l’extrait vidéo</button>
+              <p>YouTube ne sera chargé qu’après votre clic.</p>
+            </div>
+            <div class="listening-cycle">
+              <label><input type="checkbox" data-check="listen-a-1"><span><strong>1 · Sans sous-titres</strong> Résumez l’idée en sept mots maximum.</span></label>
+              <textarea data-save="gistA" maxlength="90" placeholder="Ex. : les outils rapides créent…"></textarea>
+              <label><input type="checkbox" data-check="listen-a-2"><span><strong>2 · Avec appui écrit</strong> Repérez les deux groupes en « plus…, plus… ».</span></label>
+              <button class="button button--quiet reveal-button" type="button" data-reveal="quoteA">Révéler la phrase repère</button>
+              <blockquote id="quoteA" hidden>« Plus elles nous facilitent la vie, plus elles nous permettent de compliquer celle des autres. »</blockquote>
+              <label><input type="checkbox" data-check="listen-a-3"><span><strong>3 · Sans sous-titres</strong> Reformulez sans reprendre les mots du film.</span></label>
+            </div>
+          </article>
+          <fieldset class="confidence">
+            <legend>Compréhension après trois écoutes</legend>
+            <div class="scale" data-scale="listenA"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button></div>
+            <p>1 = idée encore floue · 5 = je peux l’expliquer</p>
+          </fieldset>
+        </section>
+
+        <section class="step" data-step="2" aria-labelledby="step2-title" hidden>
+          <header class="step__header">
+            <div><p class="eyebrow">12–18 min · Micro-écoute B</p><h2 id="step2-title">Citer une donnée avec prudence</h2></div>
+            <span class="step__number">03</span>
+          </header>
+          <p class="step__intro">Le but n’est pas de mémoriser « 47 secondes », mais de distinguer la donnée, son interprétation et la réserve nécessaire.</p>
+          <article class="clip-card" data-video-start="1101" data-video-end="1119">
+            <div class="clip-card__meta"><span>18:21 → 18:39</span><span>18 secondes</span></div>
+            <h3>Attention fragmentée</h3>
+            <div class="clip-facade"><button class="button button--primary load-clip" type="button">Charger l’extrait vidéo</button><p>YouTube ne sera chargé qu’après votre clic.</p></div>
+          </article>
+          <div class="evidence-grid">
+            <label><span>Donnée rapportée</span><textarea data-save="evidenceFact" placeholder="L’étude mentionnée observe que…"></textarea></label>
+            <label><span>Interprétation possible</span><textarea data-save="evidenceMeaning" placeholder="Cela pourrait indiquer que…"></textarea></label>
+            <label><span>Réserve utile</span><textarea data-save="evidenceCaution" placeholder="Mais ce chiffre ne suffit pas à prouver que…"></textarea></label>
+          </div>
+          <div class="language-lab">
+            <p class="card-kicker">Formulation B2 sûre</p>
+            <p>« <strong>Les données citées suggèrent que</strong> l’attention se fragmente. <strong>Cela étant</strong>, elles ne permettent pas, à elles seules, d’identifier une cause unique. »</p>
+            <button class="button button--quiet speak-button" type="button" data-speak="Les données citées suggèrent que l’attention se fragmente. Cela étant, elles ne permettent pas, à elles seules, d’identifier une cause unique.">Écouter le modèle</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="3" aria-labelledby="step3-title" hidden><header class="step__header"><div><p class="eyebrow">18–27 min · Lexique actif</p><h2 id="step3-title">Cinq blocs, pas cinquante mots</h2></div><span class="step__number">04</span></header><div id="chunkDeck"></div></section>
+        <section class="step" data-step="4" aria-labelledby="step4-title" hidden><header class="step__header"><div><p class="eyebrow">27–35 min · Prononciation</p><h2 id="step4-title">Faire entendre la structure</h2></div><span class="step__number">05</span></header><div id="pronunciationLab"></div></section>
+        <section class="step" data-step="5" aria-labelledby="step5-title" hidden><header class="step__header"><div><p class="eyebrow">35–47 min · Fluidité</p><h2 id="step5-title">Même message, trois fois</h2></div><span class="step__number">06</span></header><div id="fluencyLoop"></div></section>
+        <section class="step" data-step="6" aria-labelledby="step6-title" hidden><header class="step__header"><div><p class="eyebrow">47–55 min · Interaction</p><h2 id="step6-title">Répondre sous pression</h2></div><span class="step__number">07</span></header><div id="rolePlay"></div></section>
+        <section class="step" data-step="7" aria-labelledby="step7-title" hidden><header class="step__header"><div><p class="eyebrow">55–60 min · Preuve & transfert</p><h2 id="step7-title">Comparer, décider, réutiliser</h2></div><span class="step__number">08</span></header><div id="exitLab"></div></section>
+
+        <footer class="step-actions">
+          <button class="button button--quiet" id="prevStep" type="button">← Précédent</button>
+          <button class="button button--primary" id="nextStep" type="button">Étape terminée →</button>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Prototype expérimental · Accélération B2 · Les mesures audio sont indicatives et calculées localement.</p>
+    <a href="https://youtu.be/9cO5bDqQKMM" target="_blank" rel="noopener">Voir la vidéo ARTE sur YouTube</a>
+  </footer>
+
+  <dialog id="exportDialog">
+    <form method="dialog"><button class="dialog-close" aria-label="Fermer">×</button></form>
+    <p class="eyebrow">Bilan apprenant</p><h2>Exporter la preuve de progression</h2>
+    <p>Copiez ce bilan ou téléchargez-le. Les fichiers audio restent séparés.</p>
+    <textarea id="exportText" readonly></textarea>
+    <div class="dialog-actions"><button class="button button--primary" id="copyExport" type="button">Copier</button><button class="button" id="downloadExport" type="button">Télécharger .txt</button></div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
