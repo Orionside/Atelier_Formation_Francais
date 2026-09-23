@@ -13,6 +13,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Banque — ouvrir un compte bancaire | B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Compte_Bancaire_B1/ |
 | Mobilité électrique — Plug & Charge | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Plug_Charge_B2/ |
 | Accélération — Séance Impact 60 (oral, mesure) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v3/ |
+| Accélération — Séance Impact 60 v4 (voix du film, courbes de mélodie) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v4/ |
 
 ## Notes
 
