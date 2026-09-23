@@ -15,6 +15,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Accélération — Séance Impact 60 (oral, mesure) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v3/ |
 | Accélération — Séance Impact 60 v4 (voix du film, courbes de mélodie) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v4/ |
 | Accélération — Séance Impact 60 v5 (lecteur du film corrigé, version à utiliser) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v5/ |
+| Accélération — cours de 45 min v6 (interface simplifiée, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v6/ |
 
 ## Notes
 
