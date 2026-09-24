@@ -22,6 +22,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | BYD — faire soi-même ou confier à d'autres ? v2 (lecteur de la vidéo et micro corrigés, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_BYD_Oceans_B2_v2/ |
 | Accélération — cours de 45 min v9 (suivi de lecture fiable, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v9/ |
 | BYD — faire soi-même ou confier à d'autres ? v3 (suivi de lecture fiable, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_BYD_Oceans_B2_v3/ |
+| Plug & Charge — expliquer simplement et vérifier (cours de 45 min, v2) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Plug_Charge_B2_v2/ |
 
 ## Notes
 
