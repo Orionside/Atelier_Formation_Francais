@@ -18,6 +18,8 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Accélération — cours de 45 min v6 (interface simplifiée, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v6/ |
 | Accélération — cours de 45 min v7 (corrections d'affichage, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v7/ |
 | BYD — faire soi-même ou confier à d'autres ? (cours de 45 min) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_BYD_Oceans_B2/ |
+| Accélération — cours de 45 min v8 (lecteur du film et micro corrigés, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Acceleration_B2_v8/ |
+| BYD — faire soi-même ou confier à d'autres ? v2 (lecteur de la vidéo et micro corrigés, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_BYD_Oceans_B2_v2/ |
 
 ## Notes
 
