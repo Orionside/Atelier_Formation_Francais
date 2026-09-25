@@ -25,6 +25,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Plug & Charge — expliquer simplement et vérifier (cours de 45 min, v2) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Plug_Charge_B2_v2/ |
 | Plug & Charge — expliquer simplement et vérifier v3 (extraits des phrases complets, version la plus récente) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Plug_Charge_B2_v3/ |
 | Livre ou liseuse ? — nuancer une idée qui semble évidente (cours de 45 min) | B2–C1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Livre_Liseuse_B2C1/ |
+| Livre ou liseuse ? — nuancer une idée qui semble évidente v2 (mélodie mesurée : courbes à comparer pour chaque phrase, version la plus récente) | B2–C1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Livre_Liseuse_B2C1_v2/ |
 
 ## Notes
 
