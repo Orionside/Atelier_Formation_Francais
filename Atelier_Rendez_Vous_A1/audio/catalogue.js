@@ -90,6 +90,102 @@
     add("apres-bilan","Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.","consigne");
     add("objectif-consigne","Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.","consigne");
     C.semaine.forEach(function(x,i){add("semaine-"+(i+1),x.jour+" : "+x.tache,"consigne");});
+    // Repères d'interface facultatifs : panneau replié, jamais une correction cachée.
+    function extra(section,id,display,oral){
+      add("ui-"+id,display,"interface","visible",oral || clean(display).replace(/[↗↘]/g,""));
+      entries["ui-"+id].section=section;
+    }
+    [
+      ["accueil-titre",C.meta.titreSeance],
+      ["accueil-sujet","Le sujet du jour"],
+      ["accueil-ou","Où ?"],
+      ["accueil-qui","Qui parle ?"],
+      ["accueil-vous","Vous"],
+      ["accueil-avous","À vous"],
+      ["accueil-personnaliser","Vous préférez imaginer une autre rencontre ?"],
+      ["accueil-personnaliser-exemple",S.perso.exemple],
+      ["accueil-personnaliser-note","Vous pouvez aussi garder la situation proposée. Le champ est facultatif."],
+      ["accueil-programme","Le programme"],
+      ["accueil-micro","Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande."]
+    ].forEach(function(x){extra("start",x[0],x[1]);});
+    [
+      ["avant-titre","Je parle 1 minute","Je parle une minute."],
+      ["avant-plan","Vous pouvez suivre ce plan"],
+      ["avant-enregistrer","Enregistrez-vous"],
+      ["avant-pendant","Pendant cette minute…","Pendant la minute qui suit."],
+      ["avant-difficultes","Touchez ce qui est vrai pour vous."],
+      ["avant-rec-note","Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute.","Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute."]
+    ].forEach(function(x){extra("avant",x[0],x[1],x[2]);});
+    [
+      ["ecoute-titre","J'écoute la vidéo"],
+      ["ecoute-avant","Avant d'écouter : devinez"],
+      ["ecoute-repondre","Écoutez l'extrait, puis répondez"],
+      ["ecoute-completer","Écoutez encore, puis complétez"],
+      ["ecoute-difficile","Le passage difficile"],
+      ["ecoute-verifier","Vérifier"]
+    ].forEach(function(x){extra("ecoute",x[0],x[1]);});
+    C.ecoute.forEach(function(x,i){extra("ecoute","extrait-"+(i+1),"Extrait "+(i+1)+" · "+x.titre,
+      i===1?"Deuxième extrait. Au café.":"Premier extrait. Bonjour ! Je suis…");});
+    [
+      ["phrases-titre","6 phrases utiles","Six phrases utiles."],
+      ["phrases-apprendre","Apprendre"],
+      ["phrases-rappel","Vérifier sans regarder"],
+      ["phrases-video","Dans la vidéo"],
+      ["phrases-situation","Dans votre situation"],
+      ["phrases-avous","À vous"],
+      ["phrases-voir","Voir la phrase"],
+      ["phrases-connue","Je la connais"],
+      ["phrases-revoir","À revoir"],
+      ["phrases-saisie","Ma phrase (facultatif)"]
+    ].forEach(function(x){extra("phrases",x[0],x[1],x[2]);});
+    [
+      ["melodie-titre","La mélodie du français"],
+      ["melodie-regle","La règle"],
+      ["melodie-trouvez","Écoutez et trouvez"],
+      ["melodie-repetez","Répétez comme dans la vidéo"],
+      ["melodie-signes","Les signes"],
+      ["melodie-verifier","Vérifier"]
+    ].forEach(function(x){extra("melodie",x[0],x[1]);});
+    P.legende.forEach(function(x,i){extra("melodie","legende-"+(i+1),x[1]);});
+    [
+      ["entrainement-titre","Je m'entraîne 3 fois","Je m'entraîne trois fois."],
+      ["entrainement-preparer","Préparez (1 minute)","Préparez-vous pendant une minute."],
+      ["entrainement-question",T.boutonObjection],
+      ["entrainement-bilan","Vos 3 essais en chiffres","Vos trois essais en chiffres."]
+    ].forEach(function(x){extra("entrainement",x[0],x[1],x[2]);});
+    T.essais.forEach(function(x,i){extra("entrainement","essai-titre-"+(i+1),
+      "Essai "+(i+1)+" · "+(x.duree===90?"1 min 30":x.duree===75?"1 min 15":"1 min"),
+      "Essai "+(i+1)+". "+(x.duree===90?"Une minute trente":x.duree===75?"Une minute quinze":"Une minute"));});
+    [
+      ["apres-titre","Je reparle 1 minute","Je reparle une minute."],
+      ["apres-enregistrer","Enregistrez-vous"],
+      ["apres-comparaison","Début et fin du cours"]
+    ].forEach(function(x){extra("apres",x[0],x[1],x[2]);});
+    [
+      ["objectif-titre","Mon objectif de la semaine"],
+      ["objectif-phrase","Ma phrase de la semaine"],
+      ["objectif-quand","Quand ?"],
+      ["objectif-exacte","Ma phrase exacte"],
+      ["objectif-programme","10 minutes par jour (facultatif)","Dix minutes par jour, facultatif."],
+      ["objectif-envoyer","Envoyer mon travail au formateur"],
+      ["objectif-confidentialite","Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur."],
+      ["objectif-plusloin","Pour aller plus loin (facultatif)"],
+      ["objectif-apres","Seulement après le cours, si vous voulez pratiquer davantage."],
+      ["objectif-video",C.meta.plusLoin[0].label,"Regarder la vidéo en entier. Durée : cinq minutes."]
+    ].forEach(function(x){extra("objectif",x[0],x[1],x[2]);});
+    extra("form","titre","Espace formateur");
+    extra("form","intro","Déroulé minuté et conseils de conduite.",
+      "Déroulement de la séance et conseils pour le formateur.");
+    extra("form","deroule","Déroulé (45 minutes)","Déroulé de quarante-cinq minutes.");
+    C.formateur.deroule.forEach(function(x,i){extra("form","role-"+(i+1),x.role);});
+    extra("form","notes","Notes");
+    C.formateur.notes.forEach(function(x,i){extra("form","note-"+(i+1),x);});
+    [
+      ["nav-commencer","Commencer","Commencez le cours."], ["nav-retour","Retour"],
+      ["nav-suivant","Étape suivante"], ["nav-terminer","Terminer le cours"],
+      ["nav-reponses","Copier mes réponses"], ["nav-theme","Thème"],
+      ["nav-effacer","Tout effacer"], ["nav-vitesse","Voix 0,9×","Voix un peu plus lente"]
+    ].forEach(function(x){extra("navigation",x[0],x[1],x[2]);});
     return entries;
   }
   root.impactAudioCatalogue=catalogue;

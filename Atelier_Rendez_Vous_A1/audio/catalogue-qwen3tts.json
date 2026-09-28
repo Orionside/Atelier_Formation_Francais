@@ -928,6 +928,834 @@
       "role": "consigne",
       "reveal": "visible",
       "file": "audio/qwen3-tts/semaine-4.mp3"
+    },
+    {
+      "id": "ui-accueil-titre",
+      "display_text": "Se présenter… et commander au café",
+      "tts_text": "Se présenter… et commander au café",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-titre.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-sujet",
+      "display_text": "Le sujet du jour",
+      "tts_text": "Le sujet du jour",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-sujet.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-ou",
+      "display_text": "Où ?",
+      "tts_text": "Où ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-ou.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-qui",
+      "display_text": "Qui parle ?",
+      "tts_text": "Qui parle ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-qui.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-vous",
+      "display_text": "Vous",
+      "tts_text": "Vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-vous.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-avous",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-avous.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser",
+      "display_text": "Vous préférez imaginer une autre rencontre ?",
+      "tts_text": "Vous préférez imaginer une autre rencontre ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser-exemple",
+      "display_text": "ex. : un client, un nouveau collègue, un voisin",
+      "tts_text": "ex. : un client, un nouveau collègue, un voisin",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser-exemple.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser-note",
+      "display_text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "tts_text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser-note.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-programme",
+      "display_text": "Le programme",
+      "tts_text": "Le programme",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-programme.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-micro",
+      "display_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "tts_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-micro.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-avant-titre",
+      "display_text": "Je parle 1 minute",
+      "tts_text": "Je parle une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-titre.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-plan",
+      "display_text": "Vous pouvez suivre ce plan",
+      "tts_text": "Vous pouvez suivre ce plan",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-plan.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-enregistrer",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-enregistrer.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-pendant",
+      "display_text": "Pendant cette minute…",
+      "tts_text": "Pendant la minute qui suit.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-pendant.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-difficultes",
+      "display_text": "Touchez ce qui est vrai pour vous.",
+      "tts_text": "Touchez ce qui est vrai pour vous.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-difficultes.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-rec-note",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-rec-note.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-ecoute-titre",
+      "display_text": "J'écoute la vidéo",
+      "tts_text": "J'écoute la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-titre.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-avant",
+      "display_text": "Avant d'écouter : devinez",
+      "tts_text": "Avant d'écouter : devinez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-avant.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-repondre",
+      "display_text": "Écoutez l'extrait, puis répondez",
+      "tts_text": "Écoutez l'extrait, puis répondez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-repondre.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-completer",
+      "display_text": "Écoutez encore, puis complétez",
+      "tts_text": "Écoutez encore, puis complétez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-completer.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-difficile",
+      "display_text": "Le passage difficile",
+      "tts_text": "Le passage difficile",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-difficile.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-verifier",
+      "display_text": "Vérifier",
+      "tts_text": "Vérifier",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-verifier.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-extrait-1",
+      "display_text": "Extrait 1 · Bonjour ! Je suis…",
+      "tts_text": "Premier extrait. Bonjour ! Je suis…",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-extrait-1.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-extrait-2",
+      "display_text": "Extrait 2 · Au café",
+      "tts_text": "Deuxième extrait. Au café.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-extrait-2.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-phrases-titre",
+      "display_text": "6 phrases utiles",
+      "tts_text": "Six phrases utiles.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-titre.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-apprendre",
+      "display_text": "Apprendre",
+      "tts_text": "Apprendre",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-apprendre.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-rappel",
+      "display_text": "Vérifier sans regarder",
+      "tts_text": "Vérifier sans regarder",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-rappel.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-video",
+      "display_text": "Dans la vidéo",
+      "tts_text": "Dans la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-video.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-situation",
+      "display_text": "Dans votre situation",
+      "tts_text": "Dans votre situation",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-situation.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-avous",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-avous.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-voir",
+      "display_text": "Voir la phrase",
+      "tts_text": "Voir la phrase",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-voir.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-connue",
+      "display_text": "Je la connais",
+      "tts_text": "Je la connais",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-connue.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-revoir",
+      "display_text": "À revoir",
+      "tts_text": "À revoir",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-revoir.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-saisie",
+      "display_text": "Ma phrase (facultatif)",
+      "tts_text": "Ma phrase (facultatif)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-saisie.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-melodie-titre",
+      "display_text": "La mélodie du français",
+      "tts_text": "La mélodie du français",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-titre.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-regle",
+      "display_text": "La règle",
+      "tts_text": "La règle",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-regle.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-trouvez",
+      "display_text": "Écoutez et trouvez",
+      "tts_text": "Écoutez et trouvez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-trouvez.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-repetez",
+      "display_text": "Répétez comme dans la vidéo",
+      "tts_text": "Répétez comme dans la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-repetez.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-signes",
+      "display_text": "Les signes",
+      "tts_text": "Les signes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-signes.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-verifier",
+      "display_text": "Vérifier",
+      "tts_text": "Vérifier",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-verifier.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-1",
+      "display_text": "la voix monte (mesuré dans la vidéo)",
+      "tts_text": "la voix monte (mesuré dans la vidéo)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-1.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-2",
+      "display_text": "la voix descend",
+      "tts_text": "la voix descend",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-2.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-3",
+      "display_text": "syllabe plus longue",
+      "tts_text": "syllabe plus longue",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-3.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-4",
+      "display_text": "fin d'une information",
+      "tts_text": "fin d'une information",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-4.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-5",
+      "display_text": "on enchaîne, sans pause",
+      "tts_text": "on enchaîne, sans pause",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-5.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-entrainement-titre",
+      "display_text": "Je m'entraîne 3 fois",
+      "tts_text": "Je m'entraîne trois fois.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-titre.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-preparer",
+      "display_text": "Préparez (1 minute)",
+      "tts_text": "Préparez-vous pendant une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-preparer.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-question",
+      "display_text": "Question du serveur (pour le formateur)",
+      "tts_text": "Question du serveur (pour le formateur)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-question.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-bilan",
+      "display_text": "Vos 3 essais en chiffres",
+      "tts_text": "Vos trois essais en chiffres.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-bilan.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-1",
+      "display_text": "Essai 1 · 1 min 30",
+      "tts_text": "Essai 1. Une minute trente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-1.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-2",
+      "display_text": "Essai 2 · 1 min 15",
+      "tts_text": "Essai 2. Une minute quinze",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-2.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-3",
+      "display_text": "Essai 3 · 1 min",
+      "tts_text": "Essai 3. Une minute",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-3.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-apres-titre",
+      "display_text": "Je reparle 1 minute",
+      "tts_text": "Je reparle une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-titre.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-apres-enregistrer",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-enregistrer.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-apres-comparaison",
+      "display_text": "Début et fin du cours",
+      "tts_text": "Début et fin du cours",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-comparaison.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-objectif-titre",
+      "display_text": "Mon objectif de la semaine",
+      "tts_text": "Mon objectif de la semaine",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-titre.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-phrase",
+      "display_text": "Ma phrase de la semaine",
+      "tts_text": "Ma phrase de la semaine",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-phrase.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-quand",
+      "display_text": "Quand ?",
+      "tts_text": "Quand ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-quand.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-exacte",
+      "display_text": "Ma phrase exacte",
+      "tts_text": "Ma phrase exacte",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-exacte.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-programme",
+      "display_text": "10 minutes par jour (facultatif)",
+      "tts_text": "Dix minutes par jour, facultatif.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-programme.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-envoyer",
+      "display_text": "Envoyer mon travail au formateur",
+      "tts_text": "Envoyer mon travail au formateur",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-envoyer.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-confidentialite",
+      "display_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "tts_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-confidentialite.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-plusloin",
+      "display_text": "Pour aller plus loin (facultatif)",
+      "tts_text": "Pour aller plus loin (facultatif)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-plusloin.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-apres",
+      "display_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "tts_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-apres.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-video",
+      "display_text": "Regarder la vidéo en entier (5 min)",
+      "tts_text": "Regarder la vidéo en entier. Durée : cinq minutes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-video.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-titre",
+      "display_text": "Espace formateur",
+      "tts_text": "Espace formateur",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-titre.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-intro",
+      "display_text": "Déroulé minuté et conseils de conduite.",
+      "tts_text": "Déroulement de la séance et conseils pour le formateur.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-intro.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-deroule",
+      "display_text": "Déroulé (45 minutes)",
+      "tts_text": "Déroulé de quarante-cinq minutes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-deroule.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-1",
+      "display_text": "Jouez la collègue : « Bonjour ! Je m'appelle Camille. Je suis française. Et vous ? » 1 minute, sans correction. Pour un A1, 3 à 5 phrases, c'est déjà bien.",
+      "tts_text": "Jouez la collègue : « Bonjour ! Je m'appelle Camille. Je suis française. Et vous ? » 1 minute, sans correction. Pour un A1, 3 à 5 phrases, c'est déjà bien.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-2",
+      "display_text": "Dialogue joué, lent (environ 87 mots/min). Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "tts_text": "Dialogue joué, lent (environ 87 mots/min). Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-3",
+      "display_text": "Moitié « se présenter » (p1, p2, p3), moitié « au café » (p4, p5, p6). Faites dire chaque phrase avec les informations réelles de l'apprenant.",
+      "tts_text": "Moitié « se présenter » (p1, p2, p3), moitié « au café » (p4, p5, p6). Faites dire chaque phrase avec les informations réelles de l'apprenant.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-3.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-4",
+      "display_text": "Cible : la voix monte ↗ à la fin de chaque information, et descend ↘ à la fin. Syllabes à cliquer, puis parler en même temps que la voix, puis courbes.",
+      "tts_text": "Cible : la voix monte à la fin de chaque information, et descend à la fin. Syllabes à cliquer, puis parler en même temps que la voix, puis courbes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-4.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-5",
+      "display_text": "Vous jouez la collègue, puis le serveur. À l'essai 2, lisez une question (« Question du serveur »). Retour entre les essais : 2 points au maximum.",
+      "tts_text": "Vous jouez la collègue, puis le serveur. À l'essai 2, lisez une question (« Question du serveur »). Retour entre les essais : 2 points au maximum.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-5.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-6",
+      "display_text": "Même situation qu'au début. Commentez les 3 chiffres avec l'apprenant.",
+      "tts_text": "Même situation qu'au début. Commentez les 3 chiffres avec l'apprenant.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-6.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-7",
+      "display_text": "Une phrase, une situation réelle (un café, une réunion), une date.",
+      "tts_text": "Une phrase, une situation réelle (un café, une réunion), une date.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-7.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-notes",
+      "display_text": "Notes",
+      "tts_text": "Notes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-notes.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-1",
+      "display_text": "Vidéo : petit film joué par des acteurs (voix humaines), pour débutants. Un Français (docteur) et une Hongroise (professeure) se rencontrent, puis vont au café ; à la fin, chaque personnage se présente seul. Débit lent (environ 87 mots/min), phrases très courtes.",
+      "tts_text": "Vidéo : petit film joué par des acteurs (voix humaines), pour débutants. Un Français (docteur) et une Hongroise (professeure) se rencontrent, puis vont au café ; à la fin, chaque personnage se présente seul. Débit lent (environ 87 mots/min), phrases très courtes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-2",
+      "display_text": "Tu et vous : les deux personnages se disent « tu » ; avec le serveur, tout le monde dit « vous ». Pour l'apprenant, au travail : « vous » d'abord.",
+      "tts_text": "Tu et vous : les deux personnages se disent « tu » ; avec le serveur, tout le monde dit « vous ». Pour l'apprenant, au travail : « vous » d'abord.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-3",
+      "display_text": "Blague à expliquer : Adrienne dit d'abord « J'ai 20 ans » (pour plaisanter), puis « J'ai 40 ans » dans sa présentation finale. Philippe a 60 ans, Patrice 50 ans, Olaf (le chien) 2 ans : utile pour les nombres.",
+      "tts_text": "Blague à expliquer : Adrienne dit d'abord « J'ai 20 ans » (pour plaisanter), puis « J'ai 40 ans » dans sa présentation finale. Philippe a 60 ans, Patrice 50 ans, Olaf (le chien) 2 ans : utile pour les nombres.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-3.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-4",
+      "display_text": "Extraits : chaque phrase commence 0,6 s avant le premier mot et finit 0,3 s après le dernier, puis a été retranscrite avec deux modèles Whisper (grand et petit), entière et sans ses 0,4 premières secondes : aucun mot ne manque. Dans la marge de la phrase 5, on entend aussi « Parfait ».",
+      "tts_text": "Extraits : chaque phrase commence 0,6 s avant le premier mot et finit 0,3 s après le dernier, puis a été retranscrite avec deux modèles Whisper (grand et petit), entière et sans ses 0,4 premières secondes : aucun mot ne manque. Dans la marge de la phrase 5, on entend aussi « Parfait ».",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-4.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-5",
+      "display_text": "Mélodie mesurée (pas supposée) : dans la présentation d'Adrienne, la voix monte sur « Adrienne » (+10 demi-tons) et « hongroise » (+9) ; dans la liste de Philippe, elle monte sur « français » (+3) et « anglais » (+7), puis descend sur « hongrois » (−9) ; chez Patrice, « anglais » ↗ (+4), « hongrois » ↘ (−8) ; « Un café ? » monte (+10 en fin de mot). Pas de flèche sur « Budapest » ni « espagnol » : mesure ambiguë. « Et toi ? » reste plat (0) et « Adrienne ? » (confirmation) descend (−7) : c'est pourquoi la cible n'est pas « la question monte », mais « la voix monte quand ce n'est pas fini ».",
+      "tts_text": "Mélodie mesurée (pas supposée) : dans la présentation d'Adrienne, la voix monte sur « Adrienne » (+10 demi-tons) et « hongroise » (+9) ; dans la liste de Philippe, elle monte sur « français » (+3) et « anglais » (+7), puis descend sur « hongrois » (−9) ; chez Patrice, « anglais » (+4), « hongrois » (−8) ; « Un café ? » monte (+10 en fin de mot). Pas de flèche sur « Budapest » ni « espagnol » : mesure ambiguë. « Et toi ? » reste plat (0) et « Adrienne ? » (confirmation) descend (−7) : c'est pourquoi la cible n'est pas « la question monte », mais « la voix monte quand ce n'est pas fini ».",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-5.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-6",
+      "display_text": "Transcription : les sous-titres et la reconnaissance vocale écrivent parfois « espèce » au lieu de « espèces » (payer en espèces), « professeur » pour « professeure » (même prononciation), « en droit » ou « anglois » pour « hongrois », « La mission » pour « L'addition ». À 0:38, on appelle le chien : « Allez, Olaf ! »",
+      "tts_text": "Transcription : les sous-titres et la reconnaissance vocale écrivent parfois « espèce » au lieu de « espèces » (payer en espèces), « professeur » pour « professeure » (même prononciation), « en droit » ou « anglois » pour « hongrois », « La mission » pour « L'addition ». À 0:38, on appelle le chien : « Allez, Olaf ! »",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-6.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-7",
+      "display_text": "Support de conversation complet (11 segments, questions et focus grammaire) : à utiliser en parallèle pour la discussion ; cet atelier sert à l'entraînement oral mesuré.",
+      "tts_text": "Support de conversation complet (11 segments, questions et focus grammaire) : à utiliser en parallèle pour la discussion ; cet atelier sert à l'entraînement oral mesuré.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-7.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-nav-commencer",
+      "display_text": "Commencer",
+      "tts_text": "Commencez le cours.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-commencer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-retour",
+      "display_text": "Retour",
+      "tts_text": "Retour",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-retour.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-suivant",
+      "display_text": "Étape suivante",
+      "tts_text": "Étape suivante",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-suivant.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-terminer",
+      "display_text": "Terminer le cours",
+      "tts_text": "Terminer le cours",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-terminer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-reponses",
+      "display_text": "Copier mes réponses",
+      "tts_text": "Copier mes réponses",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-reponses.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-theme",
+      "display_text": "Thème",
+      "tts_text": "Thème",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-theme.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-effacer",
+      "display_text": "Tout effacer",
+      "tts_text": "Tout effacer",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-effacer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-vitesse",
+      "display_text": "Voix 0,9×",
+      "tts_text": "Voix un peu plus lente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-vitesse.mp3",
+      "section": "navigation"
     }
   ]
 }

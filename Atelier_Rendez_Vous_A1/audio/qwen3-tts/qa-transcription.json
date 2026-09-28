@@ -929,6 +929,742 @@
       "word_error_rate": 0.0556,
       "answer_possibly_disclosed": false,
       "review_priority": "normale"
+    },
+    "ui-accueil-titre": {
+      "sha256": "cb56d7392a16cdf43459e37b77a45eac13a8da62a6032afe9b71ad109f9bbe67",
+      "text": "Se présenter… et commander au café",
+      "transcribed": "se présenter et commander au café.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-sujet": {
+      "sha256": "8c94cba70b83e634d51ac630a4d700ee703d49beba524abfadb70870d04c4d7f",
+      "text": "Le sujet du jour",
+      "transcribed": "le sujet du jour,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-ou": {
+      "sha256": "92dd0e53fc82e3facccf2665bf6510e0d05d6bc340050390407bdf291e806b6f",
+      "text": "Où ?",
+      "transcribed": "ou",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-qui": {
+      "sha256": "0df563e16f42683ca4166076957efdef20826f3a8622e169db245a609c462c8e",
+      "text": "Qui parle ?",
+      "transcribed": "Qui parle ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-vous": {
+      "sha256": "8fc8ecf2a4e9662f97af7727f926e889481baec07fec341086762d37dcc7ab97",
+      "text": "Vous",
+      "transcribed": "Vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-avous": {
+      "sha256": "85203149f4ea660ac29437c253d79ee472b792efe9d782c5025f71127b1b4aaa",
+      "text": "À vous",
+      "transcribed": "À vous !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser": {
+      "sha256": "d5f3d4a46439df162b129323a86ea223969a48015fb5395111b9b2dda0080576",
+      "text": "Vous préférez imaginer une autre rencontre ?",
+      "transcribed": "Vous préférez imaginer une autre rencontre ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser-exemple": {
+      "sha256": "acde524090347e853693311225db17ccb3e9c17a8f8e8267341072c35a3d2284",
+      "text": "ex. : un client, un nouveau collègue, un voisin",
+      "transcribed": "Ex, un client, un nouveau collègue, un voisin.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser-note": {
+      "sha256": "7bf399fb59e4f29bd008c9516ca4137cb1490aae27b92ba9f6706ac37b1f7c15",
+      "text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "transcribed": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-programme": {
+      "sha256": "800cdf795d57ed1c7a86d465da3fee5293f98a0f2d7720d8e17c07dcbab5ef21",
+      "text": "Le programme",
+      "transcribed": "le programme.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-micro": {
+      "sha256": "c7ae510f1878965668f51a7b12f4019075e1e298e318221ab3854455ee9622ff",
+      "text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "transcribed": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-titre": {
+      "sha256": "5d6f18c23dd96c440e0594e914e3792d26af46e88c8c138bca18645afe05af0b",
+      "text": "Je parle une minute.",
+      "transcribed": "Je parle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-plan": {
+      "sha256": "a0ee0fb677948c92462d02d36696380487924286d20d014dc072e2e24026b8f6",
+      "text": "Vous pouvez suivre ce plan",
+      "transcribed": "Vous pouvez suivre ce plan",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-enregistrer": {
+      "sha256": "d2e00188a7c851b072edbc2ac984cb461ca9d5d663e792a221c143285b5834bf",
+      "text": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-pendant": {
+      "sha256": "e2ac2c6fb34bbe75592525c5108c02ca3eba3e38e4fcc353bf901519d4ab4d26",
+      "text": "Pendant la minute qui suit.",
+      "transcribed": "pendant la minute qui suit.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-difficultes": {
+      "sha256": "c59226c528e67b2f123ce2c06ede17e992272829594a7a073f14d8c7361a85fa",
+      "text": "Touchez ce qui est vrai pour vous.",
+      "transcribed": "Touchez ce qui est vrai pour vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-rec-note": {
+      "sha256": "e1bd80bc2a076232affe975a3790e100d7545a38a3f95d32e6826843f7a4623b",
+      "text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "transcribed": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-titre": {
+      "sha256": "08cc2a37d5662dadfd87b97703e78adb44dcb8253c3c912091681f7d00286009",
+      "text": "J'écoute la vidéo",
+      "transcribed": "J'écoute la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-avant": {
+      "sha256": "bd29302b67a0c3cbad605f58204547b0dfe6881d509c16e8ebe97a0174b89f3b",
+      "text": "Avant d'écouter : devinez",
+      "transcribed": "Avant d'écouter, devinez !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-repondre": {
+      "sha256": "a0ace0e8e3b20ff193ae6ad149aa1bae29c1dabe1366ed410303e0195e8f2e78",
+      "text": "Écoutez l'extrait, puis répondez",
+      "transcribed": "Écoutez l'extrait, puis répondez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-completer": {
+      "sha256": "56ec8e830f90e578ae817c5830ff0bd43635e2623a832bb5f12e095d05d39c83",
+      "text": "Écoutez encore, puis complétez",
+      "transcribed": "Écoutez encore, puis complétez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-difficile": {
+      "sha256": "8440d68137860bd3cde00227e9b83726a5de04b56d687e4d0bb88328f842ba9b",
+      "text": "Le passage difficile",
+      "transcribed": "le passage difficile",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-verifier": {
+      "sha256": "6f2cd8bf0f1132e62e1ce3f26dd3490b7d414f3a5ac8984e299df372c95200a3",
+      "text": "Vérifier",
+      "transcribed": "Vérifier.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-extrait-1": {
+      "sha256": "8fc4862b0b4dca270a3f893a23c1c3a9526eb34a01a7f1fa79b77473b732f0d1",
+      "text": "Premier extrait. Bonjour ! Je suis…",
+      "transcribed": "Premier extrait. Bonjour, je suis...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-extrait-2": {
+      "sha256": "8140938010e795631fb51daddc28b7537d8042801aca5ad02f0d5544e3b16d55",
+      "text": "Deuxième extrait. Au café.",
+      "transcribed": "Deuxième extrait, au café.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-titre": {
+      "sha256": "6f124a47bb06d559e60fba3506571590b105014c368d8e06189f94fb4ee35271",
+      "text": "Six phrases utiles.",
+      "transcribed": "6 phrases utiles.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-apprendre": {
+      "sha256": "46e7ccc3efa31c2b9d842214eb7a5b3b389df47a3056ca4d2a4ac57a7e73e607",
+      "text": "Apprendre",
+      "transcribed": "Apprendre.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-rappel": {
+      "sha256": "70dcfadea835053a5038c7b7549062bec21560d258fd94999c84e18f61802df1",
+      "text": "Vérifier sans regarder",
+      "transcribed": "Vérifiez sans regarder.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-video": {
+      "sha256": "77f6f7a14a9fc687f6e98c5460ecf6ad01a174a6ba84993257847d581227635e",
+      "text": "Dans la vidéo",
+      "transcribed": "dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-situation": {
+      "sha256": "519cb5074c1b96986008d12cb85974e48dc32f9bf7ca9376945552ad7fee0e5a",
+      "text": "Dans votre situation",
+      "transcribed": "Dans votre situation,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-avous": {
+      "sha256": "85203149f4ea660ac29437c253d79ee472b792efe9d782c5025f71127b1b4aaa",
+      "text": "À vous",
+      "transcribed": "À vous !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-voir": {
+      "sha256": "2df2ce017831df030ac50a8c0f3e15fa1b85cc7cb5b339dca5eb63380fc95752",
+      "text": "Voir la phrase",
+      "transcribed": "voir la phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-connue": {
+      "sha256": "dd2a97f6a6e3031b5805da1a0251459c59c6c70a8d27189444a91119ed36825b",
+      "text": "Je la connais",
+      "transcribed": "Je la connais.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-revoir": {
+      "sha256": "fc4acffe6129b20ee15c17dbbb703c7c9a8b529654526f481bf68e27e78b0c08",
+      "text": "À revoir",
+      "transcribed": "A revoir.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-saisie": {
+      "sha256": "389ce8fbaeee6bded006a375115febba397db8f2105c244255bd02673e704df3",
+      "text": "Ma phrase (facultatif)",
+      "transcribed": "ma phrase facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-titre": {
+      "sha256": "6d812cbc4cccfe3e7d6e6fe8d2e3f1141fd761c47e76d855c94dfe7232607b1b",
+      "text": "La mélodie du français",
+      "transcribed": "La mélodie du français.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-regle": {
+      "sha256": "d39a4545a2203733b8aac11a9d3922c09580e708bc3584a33586a2c5962f854a",
+      "text": "La règle",
+      "transcribed": "La règle ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-trouvez": {
+      "sha256": "3ecdff156713aa044025b158bbfd0f4e36dda3ba6ae2a41d51f1bb650c17001c",
+      "text": "Écoutez et trouvez",
+      "transcribed": "Écoutez et trouvez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-repetez": {
+      "sha256": "3e65e43d4a95a9d6c888c58be812c245ee00839fb1d21fcafcb16f397f040089",
+      "text": "Répétez comme dans la vidéo",
+      "transcribed": "Répétez comme dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-signes": {
+      "sha256": "a5fd056fc62cdef5b2b63e1477acead1a83bb452ae4a49f867bef3eded845e4b",
+      "text": "Les signes",
+      "transcribed": "les signes",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-verifier": {
+      "sha256": "6f2cd8bf0f1132e62e1ce3f26dd3490b7d414f3a5ac8984e299df372c95200a3",
+      "text": "Vérifier",
+      "transcribed": "Vérifier.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-1": {
+      "sha256": "3f1ac0a123c973fd49fccaa8f7393064451a0f31e1e3bdf0d067dc8c1b47c8bb",
+      "text": "la voix monte (mesuré dans la vidéo)",
+      "transcribed": "La voix monte, mesurée dans la vidéo.",
+      "word_error_rate": 0.1429,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-2": {
+      "sha256": "050a4c451ad174f408260b31130049ad13df505a085239e786e78e144f972711",
+      "text": "la voix descend",
+      "transcribed": "La voie descend.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-3": {
+      "sha256": "8f225ad34b1a61d010e5c882cc580423fa0a7a67b117f3b51ba32080feb48a8a",
+      "text": "syllabe plus longue",
+      "transcribed": "Syllabes plus longues.",
+      "word_error_rate": 0.6667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-legende-4": {
+      "sha256": "9a5871b2cccd13e31ea9a350305720470ac59cf0260f9fa21a6164f2580fe020",
+      "text": "fin d'une information",
+      "transcribed": "Fin d'une information.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-5": {
+      "sha256": "2c26352e45a5e95749b8cd8de5c597263257e01f5a8ba664a0457e9ac35bad2d",
+      "text": "on enchaîne, sans pause",
+      "transcribed": "On enchaîne sans pause.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-titre": {
+      "sha256": "d35750d26225d0045fe0b22ae50e7e9ddb24bc14d4ccb4fee4885d165403b648",
+      "text": "Je m'entraîne trois fois.",
+      "transcribed": "Je m'entraîne trois fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-preparer": {
+      "sha256": "21300657ee7bdd81b03231816413552f61b976538d2a17da0716503e485aeac9",
+      "text": "Préparez-vous pendant une minute.",
+      "transcribed": "Préparez-vous pendant une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-question": {
+      "sha256": "86f96a3288eb11484095d0709cae10abd282f691c348eed24395227a81e4e529",
+      "text": "Question du serveur (pour le formateur)",
+      "transcribed": "« Questions du serveur » pour le formateur.",
+      "word_error_rate": 0.1667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-bilan": {
+      "sha256": "4c965476a5e629853df1adfb64b5de4fd5846262bcc4a0574f3bb47fba301f45",
+      "text": "Vos trois essais en chiffres.",
+      "transcribed": "vos trois essais en chiffres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-essai-titre-1": {
+      "sha256": "b2db4ea4758280e544ad0c55da16e26cf7a5ff9ae7a900ff47ebbed753c2a106",
+      "text": "Essai 1. Une minute trente",
+      "transcribed": "Essai 1, 1 minute 30.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-essai-titre-2": {
+      "sha256": "e2efa2433be2b1924bcfe20ca24c91508e8f6e382a9be375787b4fb45c602d45",
+      "text": "Essai 2. Une minute quinze",
+      "transcribed": "Essai 2, 1 minute 15.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-essai-titre-3": {
+      "sha256": "a0859523c11e34f51091d92ec90978add8440e30ea3a9e5d8bee94e0a278568d",
+      "text": "Essai 3. Une minute",
+      "transcribed": "Essai 3, 1 minute.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-titre": {
+      "sha256": "39499fad3c867d4beec96d303263e7a65b49931ed0bb06cc615a76a3557c06f1",
+      "text": "Je reparle une minute.",
+      "transcribed": "Je reparle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-enregistrer": {
+      "sha256": "d2e00188a7c851b072edbc2ac984cb461ca9d5d663e792a221c143285b5834bf",
+      "text": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-comparaison": {
+      "sha256": "6218f1e09a3a041a2f18ed5db0c1e090f7c1cc29039ac18fcf01841d6c1ce945",
+      "text": "Début et fin du cours",
+      "transcribed": "début et fin du cours.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-titre": {
+      "sha256": "4a6ce3e77b39b3ecbf1e13c681d1e46f138e2ae45fe49f23ddcb2c947f63322e",
+      "text": "Mon objectif de la semaine",
+      "transcribed": "mon objectif de la semaine",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-phrase": {
+      "sha256": "ae427a84dcd2a28821c0c7df14594fd3ab4d96a2e0f3c62ddf7a17b89df4f92f",
+      "text": "Ma phrase de la semaine",
+      "transcribed": "Ma phrase de la semaine",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-quand": {
+      "sha256": "706d5abe93d4d5a98ea4b9c99da5d0579463060d14895ebb5856c5df8b6a617c",
+      "text": "Quand ?",
+      "transcribed": "Quand ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-exacte": {
+      "sha256": "c5662a816fb60266ac5a7dbbc1cf46e47dde2df017e60b4ee0505f6c246d990a",
+      "text": "Ma phrase exacte",
+      "transcribed": "Ma phrase exacte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-programme": {
+      "sha256": "6c7b4252f7ea5e85906312d496d67a5ce7ae918fa6669eb4bb3bf32c5658bcf8",
+      "text": "Dix minutes par jour, facultatif.",
+      "transcribed": "10 minutes par jour, facultatif.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-envoyer": {
+      "sha256": "20cfdddb991913da197d12333a9cf56c9c9de85e73837517b22f87ab29d17670",
+      "text": "Envoyer mon travail au formateur",
+      "transcribed": "« Envoyer mon travail au formateur »",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-confidentialite": {
+      "sha256": "a77e4ea454cc7e721397423ec3f146b1d6710c83ae19d499a31cade1111fcbe2",
+      "text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "transcribed": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-plusloin": {
+      "sha256": "3d16cdee1131a12706ba59ab66a6cecd965c695c4f5ef6088190033d55d2247e",
+      "text": "Pour aller plus loin (facultatif)",
+      "transcribed": "pour aller plus loin, facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-apres": {
+      "sha256": "8b992d9fa1df26f11b2396c8f9506d16f332c038b2be21e20e154c3a202b894e",
+      "text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "transcribed": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-video": {
+      "sha256": "8ead43badac4e76ef9d14c287c3039fe2bfe6a6089beb4a7bbf03a5467db3dbc",
+      "text": "Regarder la vidéo en entier. Durée : cinq minutes.",
+      "transcribed": "Regardez la vidéo en entier. Durée 5 minutes.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-titre": {
+      "sha256": "00e34907430dae67c8f5557d6cc0b5a078762a74a872bd1d51d66b8751745fb2",
+      "text": "Espace formateur",
+      "transcribed": "espace formateur,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-intro": {
+      "sha256": "bfa4ceedea3be471246871cff9d40db75eab47c029a88864d0229e4daf8a32d8",
+      "text": "Déroulement de la séance et conseils pour le formateur.",
+      "transcribed": "Déroulement de la séance et conseils pour le formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-deroule": {
+      "sha256": "834133ca288a5e384589f11d6d9cbf9f8e21c4e867049ef5a582e85bdef01edc",
+      "text": "Déroulé de quarante-cinq minutes.",
+      "transcribed": "déroulé de 45 minutes.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-role-1": {
+      "sha256": "68d36884673d6c280a09f6351fd584ce4ac1ef1fecddaa66da3f39a82635a1b1",
+      "text": "Jouez la collègue : « Bonjour ! Je m'appelle Camille. Je suis française. Et vous ? » 1 minute, sans correction. Pour un A1, 3 à 5 phrases, c'est déjà bien.",
+      "transcribed": "Jouez la collègue. Bonjour, je m'appelle Camille, je suis française. Et vous ? 1 minute, sans correction. Pour un A1, 3 à 5 phrases, c'est déjà bien.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-2": {
+      "sha256": "a033d2b1f8959a0245f1db7fcfdff42b6a3f0cd52bde19bc8f5e71230e136a45",
+      "text": "Dialogue joué, lent (environ 87 mots/min). Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "transcribed": "Dialogue joué, lent, environ 87 mots pyrmine. Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "word_error_rate": 0.0556,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-3": {
+      "sha256": "0a40dabd3272e93bb5237fc96190f8ac7eb247ee202441acda8456f41494293f",
+      "text": "Moitié « se présenter » (p1, p2, p3), moitié « au café » (p4, p5, p6). Faites dire chaque phrase avec les informations réelles de l'apprenant.",
+      "transcribed": "Moitié se présenter, P1, P2, P3. Moitié au café, P4, P5, P6. Faites dire chaque phrase avec les informations réelles de l'apprenant.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-4": {
+      "sha256": "b2e5618d7c06bbb7b7b6f97335cc996be0497789b85e66bd541644734adf97d0",
+      "text": "Cible : la voix monte à la fin de chaque information, et descend à la fin. Syllabes à cliquer, puis parler en même temps que la voix, puis courbes.",
+      "transcribed": "Cible, la voix monte à la fin de chaque information et descend à la fin. Syllabes à cliquer, puis parler en même temps que la voix, puis courbe.",
+      "word_error_rate": 0.0357,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-5": {
+      "sha256": "84e8979c81758baf4dd05c8e8b31482655fa8b9be0e34dd1fb50bd71c6daafef",
+      "text": "Vous jouez la collègue, puis le serveur. À l'essai 2, lisez une question (« Question du serveur »). Retour entre les essais : 2 points au maximum.",
+      "transcribed": "Vous jouez la collègue, puis le serveur. À l'essai 2, lisez une question, question du serveur. Retour entre les essais. Deux points au maximum.",
+      "word_error_rate": 0.04,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-6": {
+      "sha256": "c53faf3be8a5d57834637062000104ddb60fcb68fac579f7837960f761592d2c",
+      "text": "Même situation qu'au début. Commentez les 3 chiffres avec l'apprenant.",
+      "transcribed": "Même situation qu'au début, commentez les trois chiffres avec l'apprenant.",
+      "word_error_rate": 0.0833,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-7": {
+      "sha256": "f2a71b509300a36fe78914f9bc694a44dc9fef5b6fd441b02c7fe844c4d0b66c",
+      "text": "Une phrase, une situation réelle (un café, une réunion), une date.",
+      "transcribed": "Une phrase, une situation réelle, un café, une réunion, une date.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-notes": {
+      "sha256": "44286045659b2efa3dd386169e880e018882dc8c6d661b160e1fb88df7c9c72d",
+      "text": "Notes",
+      "transcribed": "Note",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-note-1": {
+      "sha256": "68c4df13987d87deda7d7e5e682701fd5dc42c898ec2ffb6932ac42fb88f1fd2",
+      "text": "Vidéo : petit film joué par des acteurs (voix humaines), pour débutants. Un Français (docteur) et une Hongroise (professeure) se rencontrent, puis vont au café ; à la fin, chaque personnage se présente seul. Débit lent (environ 87 mots/min), phrases très courtes.",
+      "transcribed": "Vidéo, petit film joué par des acteurs, voix humaine, pour débutants. Un français, docteur, et une hongroise, professeur, se rencontrent, puis vont au café. A la fin, chaque personnage se présente seul. Des bilans, environ 87 mots, kminth, phrases très courtes.",
+      "word_error_rate": 0.122,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-2": {
+      "sha256": "85c7d7f747d1d5a42e8a26fbb985bcdde627fcc93747ba2e17e68ce9bf15b809",
+      "text": "Tu et vous : les deux personnages se disent « tu » ; avec le serveur, tout le monde dit « vous ». Pour l'apprenant, au travail : « vous » d'abord.",
+      "transcribed": "Tu et vous, les deux personnages se disent « tu » avec le serveur, tout le monde dit « vous ». Pour l'apprenant, au travail, vous d'abord.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-3": {
+      "sha256": "ac3deb872276f7fd57a38f23eebe8819cfdad4a17720924d65d81ea09f62eece",
+      "text": "Blague à expliquer : Adrienne dit d'abord « J'ai 20 ans » (pour plaisanter), puis « J'ai 40 ans » dans sa présentation finale. Philippe a 60 ans, Patrice 50 ans, Olaf (le chien) 2 ans : utile pour les nombres.",
+      "transcribed": "Blague à expliquer. Adrienne dit d'abord « j'ai 20 ans » pour plaisanter, puis « j'ai 40 ans » dans sa présentation finale. Philippe a 60 ans, Patrice 50 ans, Olaf, le chien, 2 ans, utile pour les nombres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-4": {
+      "sha256": "102c7aeeeaec9a9667725c61f5778b0fc946450dc9b6232cdb85d90a690df4ed",
+      "text": "Extraits : chaque phrase commence 0,6 s avant le premier mot et finit 0,3 s après le dernier, puis a été retranscrite avec deux modèles Whisper (grand et petit), entière et sans ses 0,4 premières secondes : aucun mot ne manque. Dans la marge de la phrase 5, on entend aussi « Parfait ».",
+      "transcribed": "Extrait. Chaque phrase commence 0,6s avant le premier mot et finit 0,3s après le dernier, puis a été retranscrite avec deux modèles Whisper, grand et petit, entière et sans ces 0,4 premières secondes, aucun mot ne manque. Dans la marge de la phrase 5, on entend aussi « parfait ».",
+      "word_error_rate": 0.1132,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-5": {
+      "sha256": "f0b01a795a95bc05570767fd541bc858592588ea14a240e98e10000bdaabf2dd",
+      "text": "Mélodie mesurée (pas supposée) : dans la présentation d'Adrienne, la voix monte sur « Adrienne » (+10 demi-tons) et « hongroise » (+9) ; dans la liste de Philippe, elle monte sur « français » (+3) et « anglais » (+7), puis descend sur « hongrois » (−9) ; chez Patrice, « anglais » (+4), « hongrois » (−8) ; « Un café ? » monte (+10 en fin de mot). Pas de flèche sur « Budapest » ni « espagnol » : mesure ambiguë. « Et toi ? » reste plat (0) et « Adrienne ? » (confirmation) descend (−7) : c'est pourquoi la cible n'est pas « la question monte », mais « la voix monte quand ce n'est pas fini ».",
+      "transcribed": "Mélodie mesurée, pas supposée, dans la présentation d'Adrienne, la voix monte sur Adrienne plus 10 demi-tons et hongroise plus 9. Dans la liste de Philippe, elle monte sur français plus 3 et anglais plus 7, puis descend sur hongrois, 9 chez Patrice, anglais plus 4, hongrois, 8. Un café monte plus 10 en fin de mot. Pas de flèche sur Budapest ni espagnol. Mesure ambiguë. Et toi, reste plat, 0 et Adrienne, confirmation, descend, 7. C'est pourquoi la cible n'est pas la question monte, mais la voix monte quand ce n'est pas fini.",
+      "word_error_rate": 0.0652,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-6": {
+      "sha256": "7831e77c12ebb2bfba3f9e061a3049f8ae1327d5280582b34b6fb0a9b19334b7",
+      "text": "Transcription : les sous-titres et la reconnaissance vocale écrivent parfois « espèce » au lieu de « espèces » (payer en espèces), « professeur » pour « professeure » (même prononciation), « en droit » ou « anglois » pour « hongrois », « La mission » pour « L'addition ». À 0:38, on appelle le chien : « Allez, Olaf ! »",
+      "transcribed": "Transcription, les sous-titres et la reconnaissance vocale écrivent parfois espèce au lieu de espèce. Payé en espèce, professeur pour professeur, même prononciation, endroit ou anglois pour hongrois. La mission pour l'addition. À 038, on appelle le chien. Allez Olaf !",
+      "word_error_rate": 0.186,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-7": {
+      "sha256": "0cbcb62c089abc361959cab1de2d70e764feeb7d5aa5f9c5e4de45d023378ff4",
+      "text": "Support de conversation complet (11 segments, questions et focus grammaire) : à utiliser en parallèle pour la discussion ; cet atelier sert à l'entraînement oral mesuré.",
+      "transcribed": "Support de conversation complet, 11 segments, questions et focus grammaire. À utiliser en parallèle pour la discussion, cet atelier sert à l'entraînement oral mesuré.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-commencer": {
+      "sha256": "90f14de0905bb17007b8b2b9a98c5a71c25d5bb8303567825c6d0633d9dfa1c3",
+      "text": "Commencez le cours.",
+      "transcribed": "Commencez le cours.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-retour": {
+      "sha256": "f9fe09e8079269109d32e36a772c973ed5bc364011107029a88e4702e68ab05f",
+      "text": "Retour",
+      "transcribed": "Retour.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-suivant": {
+      "sha256": "9eff9bcfbe16a3fae035c6c7e3bd9139f8f3e9e0b4b0b52306a4f603dd52cb1e",
+      "text": "Étape suivante",
+      "transcribed": "Étape suivante.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-terminer": {
+      "sha256": "e45d54f4d0988d3a24f6ec784e4a45bf847cc9cd1583a205c1b2450cb99da19f",
+      "text": "Terminer le cours",
+      "transcribed": "Terminez le cours.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-reponses": {
+      "sha256": "9ad74a1eb490e11bff72aef3a8f0aa054eb8fe0c9a3c19b5bfe18735f909e3ae",
+      "text": "Copier mes réponses",
+      "transcribed": "Copiez mes réponses.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-theme": {
+      "sha256": "8bdbaf996d79b84ab018c97425eb16aec3e53a833afd249f8b2dbd0efb5192a7",
+      "text": "Thème",
+      "transcribed": "TEME",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-nav-effacer": {
+      "sha256": "e2f4ba60f275b3d07162e4ba5409d330a32890be8f3c79efd70ffd7d5b0215e7",
+      "text": "Tout effacer",
+      "transcribed": "Tout effacer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-vitesse": {
+      "sha256": "09e71a9c5a9e3ccecc9be6793d17187f9d3b5ca08c5493ce36eddd1055ed40d8",
+      "text": "Voix un peu plus lente",
+      "transcribed": "Voix un peu plus lente.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
     }
   }
 }

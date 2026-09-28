@@ -1,11 +1,12 @@
 # Audio de l'atelier Rendez-vous A1
 
-Le catalogue `catalogue-qwen3tts.json` contient les 116 segments pédagogiques prédéfinis. Chaque entrée sépare le texte affiché (`display_text`) du texte effectivement envoyé au modèle (`tts_text`), précise son rôle oral et le moment où elle peut être écoutée (`reveal`). `catalogue.js` en est la source : ne modifiez pas le JSON à la main.
+Le catalogue `catalogue-qwen3tts.json` contient 208 segments prédéfinis : 116 segments pédagogiques et 92 repères d'interface facultatifs. Chaque entrée sépare le texte affiché (`display_text`) du texte effectivement envoyé au modèle (`tts_text`), précise son rôle oral et le moment où elle peut être écoutée (`reveal`). `catalogue.js` en est la source : ne modifiez pas le JSON à la main.
 
 ## Choix pédagogiques
 
 - Un clip court par consigne, question, option, formule, exemple ou correction : l'apprenant peut lire et réécouter sans parcourir un long enregistrement.
 - L'audio d'une correction de QCM reste caché jusqu'à une réponse ; celui d'un texte à trous reste caché jusqu'à « Vérifier ». Les phrases du mode « Vérifier sans regarder » restent également cachées jusqu'à « Voir la phrase ».
+- Les titres, repères de navigation et notes destinées au formateur se trouvent dans « Autres repères à écouter », replié par défaut. Ce panneau ne contient aucune réponse cachée.
 - Les quatre questions du serveur ne sont disponibles qu'après leur apparition dans l'exercice.
 - Les passages de la vidéo et les phrases associées aux courbes de mélodie restent lus par la vidéo authentique, pas par Qwen3-TTS. Les remplacer invaliderait le lien entre voix et courbe.
 - La voix à vitesse normale garde le rythme du modèle. Le bouton global « Voix 0,9× » ralentit les boutons « Écouter » ; les lecteurs des six exemples disposent aussi de leur propre option « Un peu plus lent ». Éviter une lecture artificiellement très ralentie pour un A1 : privilégier des segments courts et la répétition.
@@ -21,6 +22,7 @@ node scripts/construire-catalogue.mjs
 /Users/toufik/impact60_mesure/.venv-qwen3tts/bin/python scripts/generer-qwen3tts.py --all
 /Users/toufik/impact60_mesure/.venv-qwen3tts/bin/python scripts/generer-qwen3tts.py --check
 /Users/toufik/.hermes/workspaces/default/.venv-transcription/bin/python scripts/verifier-qwen3tts.py
+node scripts/verifier-integration-audio.mjs
 ```
 
 Le générateur est reprenable : il ne refait que les entrées dont le texte, le rôle ou les paramètres vocaux ont changé. Il utilise le modèle `mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit` avec une référence vocale locale. Le fichier de référence n'est **pas** ajouté au dépôt. Les MP3 sont des ressources statiques : l'apprenant n'utilise ni clé API ni modèle installé.

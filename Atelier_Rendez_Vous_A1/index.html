@@ -259,6 +259,11 @@ ol.seqlist{gap:8px}
 .opts .audio-line{width:100%}.opts .audio-line > .opt{width:100%}
 .audio-line.speaking > :first-child, .speaking{background:var(--accent-soft); border-radius:5px}
 .audio-status{font-size:13px; color:var(--no)}
+.audio-extra{border:1px solid var(--line);border-radius:9px;background:var(--surface);padding:11px 14px}
+.audio-extra summary{cursor:pointer;font-weight:600;color:var(--accent-ink)}
+.audio-extra ul{margin-top:12px;list-style:none;padding:0;gap:10px}
+.audio-extra li{display:flex;flex-direction:column;align-items:flex-start;gap:3px;border-top:1px solid var(--line);padding-top:8px}
+.audio-extra li .chip{font-size:12px;padding:4px 9px}
 /* ---------- v6 : lisibilité pour l'apprenant ---------- */
 body{font-size:16.5px}
 .lede{font-size:17px; color:var(--ink); opacity:.85}
@@ -676,7 +681,7 @@ function speechBtn(id, node){
   var src = clip.file;
   AUDIO_MANIFEST.then(function(m){
     var x = m && m.clips && m.clips[id];
-    if(x && x.display_text === clip.display_text && x.sha256){
+    if(x && x.display_text === clip.display_text && x.tts_text === clip.tts_text && x.sha256){
       src += "?v=" + x.sha256.slice(0,12); b.hidden = false;
     }
   });
@@ -703,13 +708,28 @@ function speechBtn(id, node){
 function audible(node,id){
   var w=el("div","audio-line"); w.appendChild(node); w.appendChild(speechBtn(id,node)); return w;
 }
+function extraAudioPanel(step){
+  var excluded={"ui-nav-commencer":step!=="start","ui-nav-retour":state.step===0,
+    "ui-nav-suivant":step==="start"||step==="objectif"||step==="form",
+    "ui-nav-terminer":step!=="objectif","ui-nav-effacer":window.innerWidth<=900};
+  var entries=Object.keys(AUDIO_CATALOGUE).map(function(id){return AUDIO_CATALOGUE[id];})
+    .filter(function(x){return x.section===step || (x.section==="navigation"&&!excluded[x.id]);});
+  if(!entries.length)return null;
+  var box=el("details","audio-extra");
+  box.appendChild(el("summary",null,"Autres repères à écouter ("+entries.length+")"));
+  var list=el("ul");
+  entries.forEach(function(x){var li=el("li");li.appendChild(el("span",null,x.display_text));
+    li.appendChild(speechBtn(x.id));list.appendChild(li);});
+  box.appendChild(list);return box;
+}
 /* Exemple de chaque formule : même catalogue et même empreinte que les autres MP3. */
 function voiceSlot(fid, label, texteElement){
   var slot = el("div"); slot.style.display = "contents";
   var id = "phrase-" + fid + "-exemple";
   AUDIO_MANIFEST.then(function(m){
     var x = m && m.clips && m.clips[id];
-    if(x && x.sha256 && x.display_text === AUDIO_CATALOGUE[id].display_text){
+    if(x && x.sha256 && x.display_text === AUDIO_CATALOGUE[id].display_text &&
+      x.tts_text === AUDIO_CATALOGUE[id].tts_text){
       slot.appendChild(fileClip(x.file + "?v=" + x.sha256.slice(0,12),label || "Écouter l'exemple","voix Qwen3-TTS",texteElement));
     }
   });
@@ -1590,6 +1610,7 @@ function render(){
     go(st.id === "form" ? 0 : state.step+1);
   });
   nav.appendChild(prev); nav.appendChild(next); s.appendChild(nav);
+  var extras=extraAudioPanel(st.id);if(extras)s.appendChild(extras);
   main.appendChild(s);
   espacesFr(main);
   renderRail(); refreshProgress();
