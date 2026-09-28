@@ -81,6 +81,7 @@ ul,ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
 .btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
 .btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
 .btn.small{padding:5px 10px; font-size:12.5px}
+.btn[aria-pressed="true"]{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
 
 /* ---------- mise en page ---------- */
 .shell{max-width:1180px; margin:0 auto; padding-inline:20px; padding-block:26px 64px;
@@ -402,6 +403,7 @@ input[type="text"]{font-size:15.5px}
       <span class="prog-num" id="progNum">0 / 7</span>
     </div>
     <button class="btn" id="exportBtn" type="button">Copier mes réponses</button>
+    <button class="btn small" id="paceBtn" type="button" aria-pressed="false" title="Ralentir les consignes à 0,9×">Voix 0,9×</button>
     <button class="btn btn-ghost" id="themeBtn" type="button" aria-label="Changer de thème">Thème</button>
   </div>
 </div>
@@ -431,7 +433,7 @@ var M = C.meta, VIDEO = M.video.url;
 var AUDIO_CATALOGUE = window.impactAudioCatalogue ? window.impactAudioCatalogue(C) : {};
 var AUDIO_MANIFEST = fetch("audio/qwen3-tts/manifest.json", {cache:"no-store"})
   .then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; });
-var KEY = "impact60-" + M.id, THEME_KEY = "impact60-theme";
+var KEY = "impact60-" + M.id, THEME_KEY = "impact60-theme", PACE_KEY = "impact60-pace-" + M.id;
 var SUP = Object.assign({le:"le film", du:"du film", dans:"dans le film", Le:"Le film"}, M.support || {});
 
 /* ---------------- stockage ---------------- */
@@ -468,6 +470,12 @@ function fmt(n, d){ return (n == null || isNaN(n)) ? "—" : n.toFixed(d == null
 var root = document.documentElement;
 var savedTheme = lsGet(THEME_KEY);
 if(savedTheme === "light" || savedTheme === "dark") root.setAttribute("data-theme", savedTheme);
+var PACE_SLOW = lsGet(PACE_KEY) === "slow";
+var paceBtn = document.getElementById("paceBtn");
+function paintPace(){paceBtn.setAttribute("aria-pressed",PACE_SLOW?"true":"false");
+  paceBtn.title=PACE_SLOW?"Consignes à 0,9×. Cliquer pour revenir à 1×.":"Ralentir les consignes à 0,9×";}
+paintPace();
+paceBtn.addEventListener("click",function(){PACE_SLOW=!PACE_SLOW;lsSet(PACE_KEY,PACE_SLOW?"slow":"normal");audioStop();paintPace();});
 document.getElementById("themeBtn").addEventListener("click", function(){
   var cur = root.getAttribute("data-theme");
   if(!cur) cur = (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
@@ -681,7 +689,8 @@ function speechBtn(id, node){
     if(REC_LOCK){ b.textContent = "Enregistrement en cours"; return; }
     if(audioOwner === owner){audioStop(); return;}
     pauseLearnerAudio(); audioStop(); ytStop();
-    AUDIO_EL.src = src; AUDIO_EL.loop = false; AUDIO_EL.playbackRate = 1;
+    AUDIO_EL.src = src; AUDIO_EL.loop = false; AUDIO_EL.playbackRate = PACE_SLOW ? SLOW : 1;
+    try{AUDIO_EL.preservesPitch=true;AUDIO_EL.webkitPreservesPitch=true;}catch(e){}
     audioOwner = owner; audioFail = function(){ b.textContent = "Audio indisponible";
       setTimeout(function(){if(audioOwner!==owner)b.textContent="🔊 Écouter";},2500); };
     owner(true);

@@ -8,7 +8,7 @@ Le catalogue `catalogue-qwen3tts.json` contient les 116 segments pédagogiques p
 - L'audio d'une correction de QCM reste caché jusqu'à une réponse ; celui d'un texte à trous reste caché jusqu'à « Vérifier ». Les phrases du mode « Vérifier sans regarder » restent également cachées jusqu'à « Voir la phrase ».
 - Les quatre questions du serveur ne sont disponibles qu'après leur apparition dans l'exercice.
 - Les passages de la vidéo et les phrases associées aux courbes de mélodie restent lus par la vidéo authentique, pas par Qwen3-TTS. Les remplacer invaliderait le lien entre voix et courbe.
-- La voix à vitesse normale garde le rythme du modèle ; l'option « Un peu plus lent » des lecteurs d'exemple descend à 0,9×. Éviter une lecture artificiellement très ralentie pour un A1 : privilégier des segments courts et la répétition.
+- La voix à vitesse normale garde le rythme du modèle. Le bouton global « Voix 0,9× » ralentit les boutons « Écouter » ; les lecteurs des six exemples disposent aussi de leur propre option « Un peu plus lent ». Éviter une lecture artificiellement très ralentie pour un A1 : privilégier des segments courts et la répétition.
 - Les nombres, formes abrégées et glosses espagnoles problématiques sont reformulés *dans le texte oral seulement* lorsque cela améliore la compréhension. Le texte affiché reste intact.
 - Les textes saisis librement par l'apprenant ne peuvent pas être préparés à l'avance et ne sont pas lus par Qwen.
 
