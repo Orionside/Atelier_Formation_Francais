@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Atelier Rendez-vous</title>
-<meta name="description" content="Séance Impact 60 — atelier d'expression orale B2 pour cadres : mesure, écoute ciblée, formules, prononciation, tâche en 3 tours.">
+<meta name="description" content="Atelier de français A1 : se présenter et commander au café, avec écoute, répétition et pratique orale.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,600;0,700;1,500&display=swap">
@@ -253,6 +253,11 @@ ol.seqlist{gap:8px}
 
 /* voix : lecteur du film, fichiers audio */
 .listen{display:flex; gap:6px; align-items:center; flex-wrap:wrap}
+.audio-line{display:flex; flex-direction:column; align-items:flex-start; gap:5px}
+.audio-line > .chip{font-size:13px; padding:5px 10px; align-self:flex-start}
+.opts .audio-line{width:100%}.opts .audio-line > .opt{width:100%}
+.audio-line.speaking > :first-child, .speaking{background:var(--accent-soft); border-radius:5px}
+.audio-status{font-size:13px; color:var(--no)}
 /* ---------- v6 : lisibilité pour l'apprenant ---------- */
 body{font-size:16.5px}
 .lede{font-size:17px; color:var(--ink); opacity:.85}
@@ -411,6 +416,7 @@ input[type="text"]{font-size:15.5px}
   <main id="main"></main>
 </div>
 <script src="contenu.js"></script>
+<script src="audio/catalogue.js"></script>
 <script>
 (function(){
 "use strict";
@@ -422,6 +428,9 @@ if(!C){
   return;
 }
 var M = C.meta, VIDEO = M.video.url;
+var AUDIO_CATALOGUE = window.impactAudioCatalogue ? window.impactAudioCatalogue(C) : {};
+var AUDIO_MANIFEST = fetch("audio/qwen3-tts/manifest.json", {cache:"no-store"})
+  .then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; });
 var KEY = "impact60-" + M.id, THEME_KEY = "impact60-theme";
 var SUP = Object.assign({le:"le film", du:"du film", dans:"dans le film", Le:"Le film"}, M.support || {});
 
@@ -469,10 +478,11 @@ document.getElementById("themeBtn").addEventListener("click", function(){
 /* ================= voix authentiques =================
    1. Le film : lecteur YouTube officiel, calé sur la phrase (début/fin au centième),
       en boucle et un peu plus lentement (0,9) si YouTube le permet. Aucun extrait n'est copié.
-   2. Les exemples métier : fichiers audio (voix du formateur, sinon voix neuronale).
+   2. Les exemples et consignes : fichiers audio Qwen3-TTS préparés avant publication.
    Plus de voix de synthèse du navigateur : trop robotique pour servir de modèle. */
 var VIDEO_ID = (VIDEO.match(/(?:youtu\.be\/|[?&]v=|embed\/)([\w-]{11})/) || [])[1];
 var YT_STATE = {player:null, ready:false, failed:false, waiters:[], seg:null, loop:false, rate:1, poll:null, owner:null};
+var AUDIO_VIEW_ID = 0;
 var floatBox = null;
 function ensureFloat(){
   if(floatBox) return floatBox;
@@ -522,6 +532,7 @@ function ytStop(){
   if(YT_STATE.owner) YT_STATE.owner(false); YT_STATE.owner = null;
 }
 function ytPlay(a, b, loop, rate, owner, onFail){
+  audioStop(); pauseLearnerAudio();
   ytStop();
   YT_STATE.seg = [a, b]; YT_STATE.loop = loop; YT_STATE.owner = owner;
   var p = YT_STATE.player;
@@ -595,6 +606,7 @@ function ytSlowRate(){
   return r;
 }
 function filmClip(a, b, label){
+  var viewId=AUDIO_VIEW_ID, request=0;
   var msg = el("p","alerte",""); msg.hidden = true;
   var lien = VIDEO + (VIDEO.indexOf("?") > -1 ? "&" : "?") + "t=" + Math.floor(a);
   function echec(texte, suite){
@@ -603,51 +615,95 @@ function filmClip(a, b, label){
     msg.hidden = false;
   }
   var w = listenBar(label || "Écouter " + SUP.dans, function(o, owner, slowBtn){
+    if(REC_LOCK){msg.textContent="Arrêtez d'abord l'enregistrement.";msg.hidden=false;return;}
+    audioStop(); pauseLearnerAudio();
     msg.hidden = true;
     owner("wait");
+    var current=++request;
     ytLoad(function(ok){
+      if(viewId!==AUDIO_VIEW_ID || current!==request){owner(false);return;}
+      if(REC_LOCK){owner(false);msg.textContent="Arrêtez d'abord l'enregistrement.";msg.hidden=false;return;}
       if(!ok){ owner(false); echec("Le lecteur ne s'ouvre pas ici."); return; }
       var r = ytSlowRate();
       slowBtn.hidden = !r;
       ytPlay(a, b, o.loop, (o.slow && r) ? r : 1, owner, function(){ echec("La vidéo ne démarre pas. Cliquez sur ▶ dans le lecteur (en bas à droite), ou", true); });
     });
-  }, function(){ ytStop(); }, {slowHidden: !(YT_STATE.ready && ytSlowRate())});
+  }, function(){ request++; ytStop(); }, {slowHidden: !(YT_STATE.ready && ytSlowRate())});
   var box = el("div","listen-wrap"); box.appendChild(w); box.appendChild(msg);
   return box;
 }
 var AUDIO_EL = new Audio(); var audioOwner = null;
-function audioStop(){ try{ AUDIO_EL.pause(); }catch(e){} if(audioOwner) audioOwner(false); audioOwner = null; }
-AUDIO_EL.addEventListener("ended", function(){ if(audioOwner) audioOwner(false); audioOwner = null; });
-function fileClip(src, label, tag){
-  return listenBar(label, function(o, owner){
-    audioStop(); ytStop();
+var audioFail = null, REC_LOCK = false, activeRecStop = null;
+function pauseLearnerAudio(){ document.querySelectorAll(".rec audio").forEach(function(a){a.pause();}); }
+function audioStop(){
+  try{ AUDIO_EL.pause(); AUDIO_EL.currentTime = 0; }catch(e){}
+  var owner = audioOwner; audioOwner = null; audioFail = null;
+  if(owner) owner(false);
+}
+AUDIO_EL.addEventListener("ended", audioStop);
+AUDIO_EL.addEventListener("error", function(){ var fail = audioFail; audioStop(); if(fail) fail(); });
+function fileClip(src, label, tag, texteElement){
+  var msg = el("p","audio-status","Audio indisponible. Réessayez plus tard."); msg.hidden = true;
+  var bar = listenBar(label, function(o, owner){
+    if(REC_LOCK){ msg.textContent = "Arrêtez d'abord l'enregistrement."; msg.hidden = false; return; }
+    pauseLearnerAudio(); audioStop(); ytStop();
     AUDIO_EL.src = src; AUDIO_EL.loop = o.loop; AUDIO_EL.playbackRate = o.slow ? SLOW : 1;
     try{ AUDIO_EL.preservesPitch = true; AUDIO_EL.webkitPreservesPitch = true; }catch(e){}
-    audioOwner = owner; owner(true);
-    var pr = AUDIO_EL.play(); if(pr && pr.catch) pr.catch(function(){ owner(false); });
+    msg.hidden = true;
+    function own(on){owner(on);if(texteElement)texteElement.classList.toggle("speaking",!!on);}
+    audioOwner = own; own(true);
+    audioFail = function(){ msg.hidden = false; };
+    var pr = AUDIO_EL.play(); if(pr && pr.catch) pr.catch(function(){
+      if(audioOwner === own){ var fail = audioFail; audioStop(); if(fail) fail(); }
+    });
   }, audioStop, {tag: tag});
+  var box = el("div","listen-wrap"); box.appendChild(bar); box.appendChild(msg); return box;
 }
-/* Exemples « au travail » : la voix du formateur si le fichier existe, sinon une voix de synthèse
-   de qualité ; sans fichier, rien ne s'affiche. Fichiers : audio/formateur/p1.mp3, audio/neuronal/p1.mp3… */
-var VOIX = C.voix || {};
-var DOSSIERS = VOIX.dossiers || {formateur:"audio/formateur/", neuronale:"audio/neuronal/"};
-function probe(src){
-  return new Promise(function(res){
-    var a = new Audio(); var t = setTimeout(function(){ res(false); }, 6000);
-    a.preload = "metadata";
-    a.addEventListener("loadedmetadata", function(){ clearTimeout(t); res(true); });
-    a.addEventListener("error", function(){ clearTimeout(t); res(false); });
-    a.src = src;
+function speechBtn(id, node){
+  var clip = AUDIO_CATALOGUE[id];
+  var b = el("button","chip","🔊 Écouter"); b.type = "button"; b.hidden = true;
+  if(!clip) throw Error("Audio sans catalogue : " + id);
+  b.dataset.audioId = id;
+  b.setAttribute("aria-label","Écouter : " + clip.display_text);
+  var src = clip.file;
+  AUDIO_MANIFEST.then(function(m){
+    var x = m && m.clips && m.clips[id];
+    if(x && x.display_text === clip.display_text && x.sha256){
+      src += "?v=" + x.sha256.slice(0,12); b.hidden = false;
+    }
   });
+  function owner(on){
+    b.textContent = on ? "■ Arrêter" : "🔊 Écouter";
+    b.setAttribute("aria-pressed",on ? "true" : "false");
+    if(node) node.classList.toggle("speaking",!!on);
+  }
+  b.addEventListener("click",function(){
+    if(REC_LOCK){ b.textContent = "Enregistrement en cours"; return; }
+    if(audioOwner === owner){audioStop(); return;}
+    pauseLearnerAudio(); audioStop(); ytStop();
+    AUDIO_EL.src = src; AUDIO_EL.loop = false; AUDIO_EL.playbackRate = 1;
+    audioOwner = owner; audioFail = function(){ b.textContent = "Audio indisponible";
+      setTimeout(function(){if(audioOwner!==owner)b.textContent="🔊 Écouter";},2500); };
+    owner(true);
+    var pr = AUDIO_EL.play(); if(pr && pr.catch) pr.catch(function(){
+      if(audioOwner === owner){var fail=audioFail; audioStop(); if(fail) fail();}
+    });
+  });
+  return b;
 }
-function voiceSlot(fid, label){
+function audible(node,id){
+  var w=el("div","audio-line"); w.appendChild(node); w.appendChild(speechBtn(id,node)); return w;
+}
+/* Exemple de chaque formule : même catalogue et même empreinte que les autres MP3. */
+function voiceSlot(fid, label, texteElement){
   var slot = el("div"); slot.style.display = "contents";
-  var nom = fid + ".mp3";
-  var cands = [[DOSSIERS.formateur + nom, "voix du formateur"], [DOSSIERS.neuronale + nom, "voix de synthèse"]];
-  (function next(i){
-    if(i >= cands.length) return;
-    probe(cands[i][0]).then(function(ok){ if(ok) slot.appendChild(fileClip(cands[i][0], label || "Écouter", cands[i][1])); else next(i+1); });
-  })(0);
+  var id = "phrase-" + fid + "-exemple";
+  AUDIO_MANIFEST.then(function(m){
+    var x = m && m.clips && m.clips[id];
+    if(x && x.sha256 && x.display_text === AUDIO_CATALOGUE[id].display_text){
+      slot.appendChild(fileClip(x.file + "?v=" + x.sha256.slice(0,12),label || "Écouter l'exemple","voix Qwen3-TTS",texteElement));
+    }
+  });
   return slot;
 }
 
@@ -929,10 +985,13 @@ function recorder(key, seconds, opts){
   function stop(){
     clearInterval(tick);
     if(mr && mr.state !== "inactive") mr.stop();
+    REC_LOCK = false; activeRecStop = null;
     btn.classList.remove("on"); btn.textContent = "Recommencer";
   }
   btn.addEventListener("click", function(){
     if(mr && mr.state === "recording"){ stop(); return; }
+    if(REC_LOCK){msg.textContent="Un autre enregistrement est en cours.";return;}
+    audioStop(); ytStop(); pauseLearnerAudio();
     if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder){
       msg.textContent = "Ce navigateur ne peut pas enregistrer. Utilisez le dictaphone de votre téléphone."; msg.className = "alerte"; fileWrap.hidden = false; noMic.hidden = true;
       return;
@@ -944,10 +1003,13 @@ function recorder(key, seconds, opts){
       mr = type ? new MediaRecorder(s, {mimeType:type}) : new MediaRecorder(s);
       mr.ondataavailable = function(e){ if(e.data && e.data.size) chunks.push(e.data); };
       mr.onstop = function(){
+        REC_LOCK = false; activeRecStop = null;
         stream.getTracks().forEach(function(t){ t.stop(); });
         handle(new Blob(chunks, {type: mr.mimeType || "audio/webm"}));
       };
+      audioStop(); ytStop(); pauseLearnerAudio();
       mr.start(250); t0 = Date.now();
+      REC_LOCK = true; activeRecStop = stop;
       btn.classList.add("on"); btn.textContent = "Arrêter";
       msg.textContent = "Enregistrement en cours…";
       tick = setInterval(function(){
@@ -1001,25 +1063,25 @@ function situationCard(){
   var S = C.sujet, x = sujetPerso();
   var c = el("div","scene");
   c.appendChild(el("span","scene-tag", x ? "Votre sujet" : "Le sujet du jour"));
-  function row(k, v, cls){ var r = el("div","scene-row"); r.appendChild(el("span","scene-k",k)); r.appendChild(html("div","scene-v" + (cls ? " " + cls : ""), v)); c.appendChild(r); }
+  function row(k, v, cls, id){ var r = el("div","scene-row"); r.appendChild(el("span","scene-k",k)); var node=html("div","scene-v" + (cls ? " " + cls : ""), v); r.appendChild(id?audible(node,id):node); c.appendChild(r); }
   if(x){
     row("La situation", S.perso.phrase.replace("{x}", "<strong>" + x.replace(/[<>&]/g,"") + "</strong>"));
   } else {
-    row("Où ?", S.lieu);
-    row("Qui parle ?", S.qui + " dit :");
-    c.appendChild(html("p","scene-quote", S.dit));
-    row("Vous", S.vous);
+    row("Où ?", S.lieu,null,"situation-lieu");
+    row("Qui parle ?", S.qui + " dit :",null,"situation-qui");
+    c.appendChild(audible(html("p","scene-quote", S.dit),"situation-dialogue"));
+    row("Vous", S.vous,null,"situation-vous");
   }
-  row("À vous", S.consigne + " <strong>En 1 minute.</strong>", "scene-go");
+  row("À vous", S.consigne + " <strong>En 1 minute.</strong>", "scene-go", "situation-consigne");
   return c;
 }
 function planCard(withFields){
   var g = el("div","plan-grid");
   C.sujet.plan.forEach(function(p, i){
     var b = el("div","plan-box");
-    var h = el("div","plan-h"); h.appendChild(el("span","plan-n", String(i+1))); h.appendChild(el("span",null,p.titre)); b.appendChild(h);
+    var h = el("div","plan-h"); h.appendChild(el("span","plan-n", String(i+1))); h.appendChild(el("span",null,p.titre)); b.appendChild(audible(h,"plan-"+(i+1)+"-titre"));
     if(withFields){
-      b.appendChild(html("p","plan-aide","Phrase utile : <em>" + p.aide + "</em>"));
+      b.appendChild(audible(html("p","plan-aide","Phrase utile : <em>" + p.aide + "</em>"),"plan-"+(i+1)+"-exemple"));
       var t = textBox("plan_" + i, "mots-clés", 2); b.appendChild(t);
     }
     g.appendChild(b);
@@ -1038,25 +1100,26 @@ function lineBox(key, placeholder){
   t.addEventListener("input", function(){ state.a[key] = t.value; saveSoon(); });
   return t;
 }
-function mcq(key, item){
+function mcq(key, item, audioId){
   var w = el("div","mcq");
-  w.appendChild(html("p","mcq-q", item.q));
+  w.appendChild(audible(html("p","mcq-q", item.q),audioId));
   var opts = el("div","opts");
   var ex = html("div","expl", item.explication || ""); ex.hidden = true;
   var btns = item.options.map(function(o, i){
     var b = html("button","opt", o); b.type = "button";
     b.addEventListener("click", function(){ state.a[key] = i; save(); paint(); });
-    opts.appendChild(b); return b;
+    opts.appendChild(audible(b,audioId+"-option-"+(i+1))); return b;
   });
   function paint(){
     var v = state.a[key];
     btns.forEach(function(b, i){ b.classList.remove("ok","no"); if(v === i) b.classList.add(i === item.bonne ? "ok" : "no"); if(v != null && i === item.bonne) b.classList.add("ok"); });
     ex.hidden = (v == null);
   }
+  ex.appendChild(speechBtn(audioId+"-explication",ex));
   w.appendChild(opts); w.appendChild(ex); paint();
   return w;
 }
-function gaps(key, trous){
+function gaps(key, trous, audioPrefix){
   var w = el("div","gaps");
   var store = state.a[key] || (state.a[key] = {});
   var ins = trous.map(function(t, i){
@@ -1068,11 +1131,14 @@ function gaps(key, trous){
     inp.addEventListener("input", function(){ store[i] = inp.value; inp.classList.remove("ok","no"); saveSoon(); });
     line.appendChild(inp);
     if(t.apres) line.appendChild(document.createTextNode(" " + t.apres));
-    r.appendChild(line);
-    if(t.aide) r.appendChild(el("p","gap-aide","Aide : " + t.aide));
-    var sol = el("span","gap-sol",""); r.appendChild(sol);
+    var id=audioPrefix+"-trou-"+(i+1);
+    r.appendChild(audible(line,id));
+    if(t.aide) r.appendChild(audible(el("p","gap-aide","Aide : " + t.aide),id+"-aide"));
+    var solBox=el("div","audio-line");solBox.hidden=true;
+    var sol = el("span","gap-sol",""); solBox.appendChild(sol);
+    var solAudio=speechBtn(id+"-solution",sol);solBox.appendChild(solAudio);r.appendChild(solBox);
     w.appendChild(r);
-    return {inp:inp, t:t, sol:sol};
+    return {inp:inp, t:t, sol:sol, solBox:solBox};
   });
   var b = el("button","btn small","Vérifier"); b.type = "button";
   b.addEventListener("click", function(){
@@ -1080,6 +1146,7 @@ function gaps(key, trous){
       var ok = o.t.reponses.some(function(r){ return norm(r) === norm(o.inp.value); });
       o.inp.classList.toggle("ok", ok); o.inp.classList.toggle("no", !ok);
       o.sol.textContent = ok ? "✓" : "Réponse : " + o.t.solution;
+      o.solBox.hidden = false;
     });
   });
   w.appendChild(b);
@@ -1088,7 +1155,7 @@ function gaps(key, trous){
 function chips(key, options){
   var w = el("div","chips");
   var cur = state.a[key] || [];
-  options.forEach(function(o){
+  options.forEach(function(o,i){
     var b = el("button","chip big",o); b.type = "button";
     b.setAttribute("aria-pressed", cur.indexOf(o) > -1 ? "true" : "false");
     b.addEventListener("click", function(){
@@ -1096,7 +1163,7 @@ function chips(key, options){
       var i = arr.indexOf(o); if(i > -1) arr.splice(i,1); else arr.push(o);
       b.setAttribute("aria-pressed", i > -1 ? "false" : "true"); save();
     });
-    w.appendChild(b);
+    w.appendChild(audible(b,"difficulte-"+(i+1)));
   });
   return w;
 }
@@ -1122,7 +1189,8 @@ function prosodyHtml(t){
 function sylQuiz(key, it){
   var box = el("div","syl-box");
   box.appendChild(el("span","syl-title", it.titre));
-  box.appendChild(html("p","syl-consigne", it.consigne));
+  var exerciseId="melodie-exercice-"+(Number(key.replace("syl_",""))+1);
+  box.appendChild(audible(html("p","syl-consigne", it.consigne),exerciseId));
   var sent = el("p","syl-sentence"), btns = [], targets = [];
   var words = it.phrase.split(" ");
   words.forEach(function(w, wi){
@@ -1161,7 +1229,7 @@ function sylQuiz(key, it){
   var row = el("div","row"); row.appendChild(check);
   box.appendChild(row);
   box.appendChild(filmClip(it.debut, it.fin, "Écouter pour vérifier"));
-  box.appendChild(ex);
+  ex.appendChild(speechBtn(exerciseId+"-explication",ex)); box.appendChild(ex);
   paint();
   return box;
 }
@@ -1169,36 +1237,36 @@ function sylQuiz(key, it){
 /* ================= étapes ================= */
 var STEPS = [
   {id:"start", t:"Aujourd'hui", time:"", count:false},
-  {id:"avant", t:"Je parle 1 minute", time:"3 min", d:"Je donne mon avis, sans préparer."},
+  {id:"avant", t:"Je parle 1 minute", time:"3 min", d:"Je me présente et je commande, sans préparer."},
   {id:"ecoute", t:"J'écoute " + SUP.le, time:"8 min", d:"Deux extraits courts."},
-  {id:"phrases", t:"6 phrases utiles", time:"9 min", d:"Des phrases " + SUP.du + " pour mes réunions."},
+  {id:"phrases", t:"6 phrases utiles", time:"9 min", d:"Des phrases " + SUP.du + " pour se présenter et commander."},
   {id:"melodie", t:"La mélodie du français", time:"6 min", d:"Je parle comme un francophone."},
   {id:"entrainement", t:"Je m'entraîne 3 fois", time:"12 min", d:"Le même sujet, de plus en plus court."},
   {id:"apres", t:"Je reparle 1 minute", time:"3 min", d:"Je compare avec le début."},
-  {id:"objectif", t:"Mon objectif de la semaine", time:"4 min", d:"Une phrase à dire au travail."},
+  {id:"objectif", t:"Mon objectif de la semaine", time:"4 min", d:"Une phrase à utiliser dans la vie réelle."},
   {id:"form", t:"Espace formateur", time:"", count:false}
 ];
 var COUNTED = STEPS.filter(function(s){ return s.count !== false; });
-function head(eyebrow, title, lede){
+function head(eyebrow, title, lede, audioId){
   var h = el("div","step-head");
   var e = el("div","eyebrow"); eyebrow.forEach(function(x){ e.appendChild(el("span",null,x)); }); h.appendChild(e);
   h.appendChild(el("h2",null,title));
-  if(lede) h.appendChild(html("p","lede",lede));
+  if(lede){var p=html("p","lede",lede);h.appendChild(audioId?audible(p,audioId):p);}
   return h;
 }
 function stepEyebrow(id){ var i = COUNTED.map(function(x){ return x.id; }).indexOf(id); return ["Étape " + (i+1) + " sur " + COUNTED.length, COUNTED[i].time]; }
 
 var R = {};
 R.start = function(s){
-  s.appendChild(head(["Cours de " + (M.duree || 45) + " minutes", "Niveau " + M.niveau], M.titreSeance, M.objectif));
+  s.appendChild(head(["Cours de " + (M.duree || 45) + " minutes", "Niveau " + M.niveau], M.titreSeance, M.objectif,"accueil-objectif"));
   var c = card(null);
   var holder = el("div"); holder.appendChild(situationCard()); c.appendChild(holder);
   var perso = el("div","perso");
-  perso.appendChild(html("label","perso-q", "<strong>Vous préférez un sujet de votre travail ?</strong> (facultatif) " + C.sujet.perso.question));
+  perso.appendChild(audible(html("label","perso-q", "<strong>Vous préférez imaginer une autre rencontre ?</strong> (facultatif) " + C.sujet.perso.question),"situation-question"));
   var inp = lineBox("sujetPerso", C.sujet.perso.exemple);
   inp.addEventListener("input", function(){ holder.innerHTML = ""; holder.appendChild(situationCard()); });
   perso.appendChild(inp);
-  perso.appendChild(el("p","small muted","Vous pouvez reprendre un sujet de votre semaine, dont vous avez parlé avec votre formateur."));
+  perso.appendChild(el("p","small muted","Vous pouvez aussi garder la situation proposée. Le champ est facultatif."));
   c.appendChild(perso);
   s.appendChild(c);
 
@@ -1217,7 +1285,7 @@ R.start = function(s){
 
 R.avant = function(s){
   s.appendChild(head(stepEyebrow("avant"), "Je parle 1 minute",
-    "Donnez votre avis sur le sujet, <strong>sans préparer</strong>. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute : vous verrez la différence."));
+    "Présentez-vous et commandez, <strong>sans préparer</strong>. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.","avant-consigne"));
   s.appendChild(situationCard());
   var p = card("Vous pouvez suivre ce plan"); p.appendChild(planCard(false)); s.appendChild(p);
   var c = card("Enregistrez-vous"); c.appendChild(recorder("t1", 60)); s.appendChild(c);
@@ -1227,20 +1295,21 @@ R.avant = function(s){
 
 R.ecoute = function(s){
   s.appendChild(head(stepEyebrow("ecoute"), "J'écoute " + SUP.le,
-    "Deux extraits courts. Pour chaque extrait : <strong>devinez</strong>, <strong>écoutez</strong>, <strong>répondez</strong>, <strong>réécoutez</strong>."));
+    "Deux extraits courts. Pour chaque extrait : <strong>devinez</strong>, <strong>écoutez</strong>, <strong>répondez</strong>, <strong>réécoutez</strong>.","ecoute-consigne"));
   C.ecoute.forEach(function(x, n){
+    var prefix="ecoute-"+x.id.toLowerCase();
     var c = el("div","card");
     c.appendChild(el("h3",null,"Extrait " + (n+1) + " · " + x.titre));
     c.appendChild(filmClip(x.debut, x.fin, "Écouter l'extrait (" + dureeTxt(x.fin - x.debut) + ")"));
-    c.appendChild(html("p","why","<strong>Pourquoi cet extrait ?</strong> " + x.pourquoi));
+    c.appendChild(audible(html("p","why","<strong>Pourquoi cet extrait ?</strong> " + x.pourquoi),prefix+"-pourquoi"));
     c.appendChild(subH(1, "Avant d'écouter : devinez"));
-    c.appendChild(html("p","prose", x.devine));
+    c.appendChild(audible(html("p","prose", x.devine),prefix+"-devine"));
     c.appendChild(subH(2, "Écoutez l'extrait, puis répondez"));
-    x.questions.forEach(function(q, i){ c.appendChild(mcq("q_" + x.id + "_" + i, q)); });
+    x.questions.forEach(function(q, i){ c.appendChild(mcq("q_" + x.id + "_" + i, q,prefix+"-q"+(i+1))); });
     c.appendChild(subH(3, "Écoutez encore, puis complétez"));
-    c.appendChild(gaps("gap_" + x.id, x.trous));
+    c.appendChild(gaps("gap_" + x.id, x.trous,prefix));
     c.appendChild(subH(4, "Le passage difficile"));
-    c.appendChild(html("p","prose", x.difficile.texte));
+    c.appendChild(audible(html("p","prose", x.difficile.texte),prefix+"-difficile"));
     c.appendChild(filmClip(x.difficile.debut, x.difficile.fin, "Réécouter ce passage"));
     s.appendChild(c);
   });
@@ -1248,7 +1317,7 @@ R.ecoute = function(s){
 
 R.phrases = function(s){
   s.appendChild(head(stepEyebrow("phrases"), "6 phrases utiles",
-    "Six phrases " + SUP.du + ", très utiles en réunion. Pour chaque phrase : <strong>1.</strong> écoutez-la " + SUP.dans + ", <strong>2.</strong> répétez-la à voix haute, <strong>3.</strong> dites votre propre phrase."));
+    "Six phrases de la vidéo pour se présenter et commander au café. <strong>Écoutez</strong>, <strong>répétez</strong>, puis dites votre propre phrase.","phrases-consigne"));
   var mode = state.a.fmode || "apprendre";
   var seg = el("div","seg");
   [["apprendre","Apprendre"],["rappel","Vérifier sans regarder"]].forEach(function(m){
@@ -1257,7 +1326,7 @@ R.phrases = function(s){
     seg.appendChild(b);
   });
   s.appendChild(seg);
-  if(mode === "rappel") s.appendChild(html("p","note","Lisez « à quoi elle sert », dites la phrase à voix haute, puis cliquez sur « Voir la phrase »."));
+  if(mode === "rappel") s.appendChild(audible(html("p","note","Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur « Voir la phrase »."),"phrases-rappel"));
   var list = el("div","pc-list");
   C.phrases.forEach(function(p, i){ list.appendChild(mode === "rappel" ? phraseRecall(p, i) : phraseCard(p, i)); });
   s.appendChild(list);
@@ -1276,26 +1345,26 @@ function statusRow(p, c){
 function pcHead(p, i){
   var h = el("div","pc-head");
   h.appendChild(el("span","pc-num", String(i+1)));
-  h.appendChild(el("span","pc-sert", p.sert));
+  h.appendChild(audible(el("span","pc-sert", p.sert),"phrase-"+p.id+"-utilite"));
   return h;
 }
 function phraseCard(p, i){
   var c = el("article","pc");
   c.appendChild(pcHead(p, i));
-  c.appendChild(el("p","pc-forme", p.forme));
+  c.appendChild(audible(el("p","pc-forme", p.forme),"phrase-"+p.id+"-forme"));
   var b1 = el("div","pc-block");
   b1.appendChild(el("span","pc-lbl", SUP.dans.charAt(0).toUpperCase() + SUP.dans.slice(1)));
   b1.appendChild(html("p","pc-film","« " + p.film.texte + " »"));
   b1.appendChild(filmClip(p.film.debut, p.film.fin, "Écouter"));
   c.appendChild(b1);
   var b2 = el("div","pc-block");
-  b2.appendChild(el("span","pc-lbl","Au travail"));
-  b2.appendChild(el("p","pc-ex", p.exemple));
-  b2.appendChild(voiceSlot(p.id));
+  b2.appendChild(el("span","pc-lbl","Dans votre situation"));
+  var ex=el("p","pc-ex",p.exemple);b2.appendChild(ex);
+  b2.appendChild(voiceSlot(p.id,null,ex));
   c.appendChild(b2);
   var b3 = el("div","pc-block");
   b3.appendChild(el("span","pc-lbl","À vous"));
-  b3.appendChild(el("p","pc-avous","Dites votre phrase à voix haute, sur votre travail."));
+  b3.appendChild(audible(el("p","pc-avous","Dites votre phrase à voix haute, avec vos informations."),"phrase-"+p.id+"-avous"));
   b3.appendChild(lineBox("ma_" + p.id, "Ma phrase (facultatif)"));
   c.appendChild(b3);
   c.appendChild(statusRow(p, c));
@@ -1305,8 +1374,8 @@ function phraseRecall(p, i){
   var c = el("article","pc");
   c.appendChild(pcHead(p, i));
   var hid = el("div","pc-hidden"); hid.hidden = true;
-  hid.appendChild(el("p","pc-forme", p.forme));
-  hid.appendChild(el("p","pc-ex", p.exemple));
+  hid.appendChild(audible(el("p","pc-forme", p.forme),"phrase-"+p.id+"-forme"));
+  hid.appendChild(audible(el("p","pc-ex", p.exemple),"phrase-"+p.id+"-exemple"));
   var b = el("button","btn small","Voir la phrase"); b.type = "button";
   b.addEventListener("click", function(){ hid.hidden = false; b.hidden = true; });
   c.appendChild(b); c.appendChild(hid);
@@ -1316,16 +1385,16 @@ function phraseRecall(p, i){
 
 R.melodie = function(s){
   var P = C.prononciation;
-  s.appendChild(head(stepEyebrow("melodie"), "La mélodie du français", P.intro));
+  s.appendChild(head(stepEyebrow("melodie"), "La mélodie du français", P.intro,"melodie-intro"));
   var rg = card("La règle");
-  var ol = el("ol","regle"); P.regle.forEach(function(x){ ol.appendChild(html("li",null,x)); }); rg.appendChild(ol);
-  rg.appendChild(html("p","attention", "<strong>Attention :</strong> " + P.attention));
+  var ol = el("ol","regle"); P.regle.forEach(function(x,i){var li=el("li");li.appendChild(audible(html("span",null,x),"melodie-regle-"+(i+1)));ol.appendChild(li);}); rg.appendChild(ol);
+  rg.appendChild(audible(html("p","attention", "<strong>Attention :</strong> " + P.attention),"melodie-attention"));
   s.appendChild(rg);
   var pc = card("Écoutez et trouvez");
   P.perception.forEach(function(it, i){ pc.appendChild(sylQuiz("syl_" + i, it)); });
   s.appendChild(pc);
   var md = card("Répétez comme " + SUP.dans);
-  var steps = el("ol","mini-steps"); P.etapes.forEach(function(x){ steps.appendChild(html("li",null,x)); }); md.appendChild(steps);
+  var steps = el("ol","mini-steps"); P.etapes.forEach(function(x,i){var li=el("li");li.appendChild(audible(html("span",null,x),"melodie-etape-"+(i+1)));steps.appendChild(li);}); md.appendChild(steps);
   var lg = el("div","legend");
   lg.appendChild(el("span","legend-t","Les signes :"));
   P.legende.forEach(function(x){
@@ -1349,23 +1418,29 @@ R.melodie = function(s){
 R.entrainement = function(s){
   var T = C.entrainement;
   s.appendChild(head(stepEyebrow("entrainement"), "Je m'entraîne 3 fois",
-    "Le même sujet, 3 fois, de plus en plus court. Avant chaque essai, vous ajoutez <strong>une</strong> chose."));
+    "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez <strong>une</strong> chose.","entrainement-consigne"));
   s.appendChild(situationCard());
-  var pc = card("Préparez (1 minute)", "Notez seulement des mots-clés, pas de phrases.");
+  var pc = card("Préparez (1 minute)");pc.appendChild(audible(el("p","sub","Notez seulement des mots-clés, pas de phrases."),"entrainement-preparation"));
   pc.appendChild(timer(T.preparation));
   pc.appendChild(planCard(true));
   s.appendChild(pc);
   T.essais.forEach(function(t, i){
     var c = card("Essai " + (i+1) + " · " + dureeTxt(t.duree));
-    c.appendChild(html("p","consigne", t.consigne));
+    c.appendChild(audible(html("p","consigne", t.consigne),"essai-"+(i+1)));
     if(i === 1){
       var ob = el("button","btn small", T.boutonObjection || "Objection (pour le formateur)"); ob.type = "button";
       var box = el("p","objection"); box.hidden = true;
-      ob.addEventListener("click", function(){ box.textContent = "« " + T.objections[Math.floor(Math.random()*T.objections.length)] + " »"; box.hidden = false; });
-      c.appendChild(ob); c.appendChild(box);
+      var questionAudio=el("div","audio-line");questionAudio.hidden=true;
+      ob.addEventListener("click", function(){
+        audioStop();
+        var j=Math.floor(Math.random()*T.objections.length);
+        box.textContent = "« " + T.objections[j] + " »"; box.hidden = false;
+        questionAudio.replaceChildren(speechBtn("serveur-question-"+(j+1),box));questionAudio.hidden=false;
+      });
+      c.appendChild(ob); c.appendChild(box);c.appendChild(questionAudio);
     }
     c.appendChild(recorder("essai" + (i+1), t.duree, {onDone: function(){ paintEssais(); }}));
-    if(t.ajout) c.appendChild(html("div","ajout", "<span class='ajout-t'>Avant l'essai " + (i+2) + "</span>" + t.ajout));
+    if(t.ajout) c.appendChild(audible(html("div","ajout", "<span class='ajout-t'>Avant l'essai " + (i+2) + "</span>" + t.ajout),"essai-"+(i+1)+"-ajout"));
     s.appendChild(c);
   });
   var sum = card("Vos 3 essais en chiffres");
@@ -1404,7 +1479,7 @@ function compareTable(cols){
 }
 
 R.apres = function(s){
-  s.appendChild(head(stepEyebrow("apres"), "Je reparle 1 minute", "Le même sujet qu'au début. Parlez 1 minute, <strong>sans vos notes</strong>."));
+  s.appendChild(head(stepEyebrow("apres"), "Je reparle 1 minute", "Le même sujet qu'au début. Parlez une minute, <strong>sans vos notes</strong>.","apres-consigne"));
   s.appendChild(situationCard());
   var c = card("Enregistrez-vous");
   c.appendChild(recorder("t2", 60, {onDone: function(){ paint(); }}));
@@ -1412,21 +1487,21 @@ R.apres = function(s){
   var cc = card("Début et fin du cours"); var holder = el("div"); cc.appendChild(holder); s.appendChild(cc);
   function paint(){ holder.innerHTML = ""; holder.appendChild(compareTable([["Début","t1"],["Fin","t2"]])); }
   paint();
-  var f = card("Quelles phrases utiles avez-vous dites ?", "Réécoutez-vous et cochez.");
+  var f = card("Quelles phrases utiles avez-vous dites ?");f.appendChild(audible(el("p","sub","Réécoutez-vous et cochez."),"apres-bilan"));
   f.appendChild(checklist("t2_phrases", C.phrases.map(function(x){ return x.forme; })));
   s.appendChild(f);
 };
 
 R.objectif = function(s){
   s.appendChild(head(stepEyebrow("objectif"), "Mon objectif de la semaine",
-    "Choisissez <strong>une</strong> phrase utile. Dites-la cette semaine, dans une vraie réunion ou un vrai appel."));
+    "Choisissez <strong>une</strong> phrase utile. Dites-la cette semaine, dans une situation réelle.","objectif-consigne"));
   var c = card("Ma phrase de la semaine");
   var ch = el("div","opts");
   C.phrases.forEach(function(p){
     var b = el("button","opt", p.forme); b.type = "button";
     if(state.a.engF === p.id) b.classList.add("ok");
     b.addEventListener("click", function(){ state.a.engF = p.id; save(); render(); });
-    ch.appendChild(b);
+    ch.appendChild(audible(b,"phrase-"+p.id+"-forme"));
   });
   c.appendChild(ch);
   c.appendChild(el("label","field-l","Quand ?"));
@@ -1440,7 +1515,7 @@ R.objectif = function(s){
     var li = el("li"), lab = el("label"), cb = document.createElement("input");
     cb.type = "checkbox"; cb.id = "plan-" + i; cb.checked = !!state.plan[i];
     cb.addEventListener("change", function(){ state.plan[i] = cb.checked; save(); });
-    lab.appendChild(cb); lab.appendChild(html("span",null,"<strong>" + d.jour + " :</strong> " + d.tache));
+    lab.appendChild(cb); lab.appendChild(audible(html("span",null,"<strong>" + d.jour + " :</strong> " + d.tache),"semaine-"+(i+1)));
     li.appendChild(lab); wl.appendChild(li);
   });
   w.appendChild(wl); s.appendChild(w);
@@ -1488,8 +1563,9 @@ function renderRail(){
     li.appendChild(b); railEl.appendChild(li);
   });
 }
-function go(i){ state.step = Math.max(0, Math.min(STEPS.length-1, i)); save(); render(); window.scrollTo(0,0); }
+function go(i){ if(activeRecStop) activeRecStop(); state.step = Math.max(0, Math.min(STEPS.length-1, i)); save(); render(); window.scrollTo(0,0); }
 function render(){
+  AUDIO_VIEW_ID++;
   ytStop(); audioStop();
   var st = STEPS[state.step] || STEPS[0];
   main.innerHTML = "";

@@ -1,0 +1,934 @@
+{
+  "asr_model": "mlx-community/whisper-large-v3-turbo",
+  "limitation": "La transcription ne mesure pas la prosodie native.",
+  "clips": {
+    "accueil-objectif": {
+      "sha256": "ffd0733402bc8809e35194bd5e7b277b56b8348604b3a2d5c67c32caaa6bd12b",
+      "text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En 1 minute, avec des phrases courtes.",
+      "transcribed": "Aujourd'hui, vous apprenez à vous présenter, nom, nationalité, ville, et à commander et payer au café, en 1000 minutes avec des phrases courtes.",
+      "word_error_rate": 0.0833,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-lieu": {
+      "sha256": "a1b429d14972ee14cf5f55c9d61123034966c39840c04c46802149d3b8e1920f",
+      "text": "Au café, avant une réunion",
+      "transcribed": "Au café, avant une réunion,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-qui": {
+      "sha256": "6415bcdc1c30351f17c2035a8d8aeaf15a6e63fcc2f07990b002e1cf7270ba08",
+      "text": "Une nouvelle collègue française",
+      "transcribed": "une nouvelle collègue française",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-dialogue": {
+      "sha256": "93b4ffe9f42fcc384ab2cdd9ec236033a51e28956d62db6a382616492b325cca",
+      "text": "« Bonjour ! Je m'appelle Camille. Je suis française. Et vous ? »",
+      "transcribed": "Bonjour, je m'appelle Camille, je suis française. Et vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-vous": {
+      "sha256": "7eecb73d3b316eca14863f3e032feec23a6a5bc263dca7ff08ad97912f0862d1",
+      "text": "Vous répondez : votre nom, votre nationalité, votre ville. Puis vous commandez pour vous deux, et vous payez.",
+      "transcribed": "Vous répondez votre nom, votre nationalité, votre ville, puis vous commandez pour vous deux et vous payez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-consigne": {
+      "sha256": "e7fa2b735ffcd4d446fb937444848d0404d9afb629bc155e2e239d0da0811abe",
+      "text": "Présentez-vous, puis commandez. Vous avez une minute.",
+      "transcribed": "Présentez-vous, puis commandez. Vous avez une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-question": {
+      "sha256": "192b7a53da6da0907d206663d730808c7b9b5ab8472f63cc371523b36ecb2dd9",
+      "text": "Qui rencontrez-vous au café, dans votre vie ?",
+      "transcribed": "Qui rencontrez-vous au café dans votre vie ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1-titre": {
+      "sha256": "39f45fd05b800bc5df42e06f2ca823cb6fffad1cd302558a0e47bddda14253f0",
+      "text": "Mon nom",
+      "transcribed": "Mon nom.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1-exemple": {
+      "sha256": "66873ae9fdab5703148d83cf1f6881e0ef4a388d7e0ee4c2317aa940e0fdd174",
+      "text": "Bonjour ! Je m'appelle… Et vous ?",
+      "transcribed": "Bonjour, je m'appelle, et vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-2-titre": {
+      "sha256": "8acfa3b4915f1b8cc46895947cc158404fe39befc378ffd3c617980ca9914a3a",
+      "text": "Ma nationalité et ma ville",
+      "transcribed": "ma nationalité et ma ville.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-2-exemple": {
+      "sha256": "fc8b770984e204ddbe5b3c5b3dbd9d81fa6a1a8ae7834cd4cb5f121a97c202d4",
+      "text": "Je suis espagnole. J'habite à…",
+      "transcribed": "Je suis espagnole. J'habite à...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3-titre": {
+      "sha256": "ccaf7c7423db8d75daef4c90ace484098ac0b3a83f492e29c47fb665363e8543",
+      "text": "Je commande",
+      "transcribed": "Je commande",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3-exemple": {
+      "sha256": "c273dfc48deb72e985811421e055927ed50d665b14974bc81232ab836584983b",
+      "text": "Un café pour moi, s'il vous plaît.",
+      "transcribed": "Un café pour moi, s'il vous plaît.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4-titre": {
+      "sha256": "52b846a9beb03ce0a1a8267ef11c56aff8e22e4f65a38583bbc8c8f9f8adc394",
+      "text": "Je paie et je pars",
+      "transcribed": "Je paie et je pars.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4-exemple": {
+      "sha256": "4c13ff071b869d7b6a11d2803a92c5f4752e838a08a057e1481b326b53b60a1b",
+      "text": "L'addition, s'il vous plaît.",
+      "transcribed": "L'addition, s'il vous plaît.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avant-consigne": {
+      "sha256": "7d19caee97ae836fa2c4da116037894e5528f3a1f91883e17b22121e5f57bfdc",
+      "text": "Présentez-vous et commandez, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "transcribed": "Présentez-vous et commandez sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-1": {
+      "sha256": "6e0156038561f171e0fa3598c68939f27a13a4a7b6855e5bbdc6f9c67f50617b",
+      "text": "Je cherchais mes mots",
+      "transcribed": "Je cherchais mes mots.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-2": {
+      "sha256": "5a2a1f573aad8b81e29aab8a2c7ec8762d5bfea12d0626fae92576f76c686ebf",
+      "text": "Je ne savais pas comment commencer",
+      "transcribed": "Je ne savais pas comment commencer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-3": {
+      "sha256": "14637945168e27bda25c1c812bbef1a007aab4638b45e4eeadd266a79738fa9d",
+      "text": "Je ne savais pas dire « tu » ou « vous »",
+      "transcribed": "Je ne savais pas dire tu ou vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-4": {
+      "sha256": "9f263cf17648b864e25184fa5cf6449063206855698df9ab5e575f07adb4e8b7",
+      "text": "Je n'étais pas sûre de ma prononciation",
+      "transcribed": "Je n'étais pas sûre de ma prononciation.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-5": {
+      "sha256": "fdd0e862e455dcc9e33d87db565d51afd1768f248dd09b43c370cdbdb38e2760",
+      "text": "Rien de spécial",
+      "transcribed": "Rien de spécial.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-consigne": {
+      "sha256": "0b8a367519e012a99b59ef870dc30c95eb223c3c32861ea7ab159edb53cb807b",
+      "text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "transcribed": "deux extraits courts. Pour chaque extrait, devinez, écoutez, répondez, réécoutez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-pourquoi": {
+      "sha256": "e30e0c52c7b674f8c22c3b84543a5097da67e4e3721246c703e6675f3f60cfa6",
+      "text": "Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
+      "transcribed": "Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-devine": {
+      "sha256": "c1e4ad1aab3b91386519bb8e461d8df739319858ee8dfdea1049adb57dd6437c",
+      "text": "Vous rencontrez une personne pour la première fois. Vous dites quoi ? Répondez à voix haute : 2 phrases.",
+      "transcribed": "Vous rencontrez une personne pour la première fois. Vous dites quoi ? Répondez à voix haute deux phrases.",
+      "word_error_rate": 0.0588,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1": {
+      "sha256": "ec99247d819e248acbcaf34bd0614db3d371c502bbc8d322289809242440a939",
+      "text": "L'homme est de quelle nationalité ?",
+      "transcribed": "L'homme est de quelle nationalité ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-1": {
+      "sha256": "2e1967fcc5fde3956fc368d6d0069abb2bb752dc4d7f2aa9fde2d45145b86d47",
+      "text": "Il est hongrois.",
+      "transcribed": "Il est hongrois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-2": {
+      "sha256": "4c552fc594c7d355092ec184ea2f978114aa21cae17671298e58a655cc61110c",
+      "text": "Il est français.",
+      "transcribed": "Il est français.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-3": {
+      "sha256": "db0b4e1446d6e695c65750ec2db0f324c2992b0c765f865ad9bfe363391616cb",
+      "text": "Il est espagnol.",
+      "transcribed": "Il est espagnol.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-explication": {
+      "sha256": "6e82d986748d4fcaca22a65efccdd975170aa6f9d372816b7c7ee74ae3a1b45b",
+      "text": "Il dit : « Je suis français. Et toi ? » La femme répond : « Je suis hongroise. »",
+      "transcribed": "Il dit « Je suis français, et toi ? » La femme répond « Je suis hongroise. »",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2": {
+      "sha256": "e8787cdcc3ba968074a502fba4f0be2d2429a509f873a80ae432a3120e0312d5",
+      "text": "Quel est le métier de la femme ?",
+      "transcribed": "Quel est le métier de la femme ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-1": {
+      "sha256": "06dca1565a6593a180329877d3cec98c0fc2c092051a56649b0d89af2392f80f",
+      "text": "Elle est docteur.",
+      "transcribed": "Elle est docteur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-2": {
+      "sha256": "ca693a69beb56faa31ba4a403904d6436038c225f24d4fd0fef75d4b351e58da",
+      "text": "Elle est serveuse.",
+      "transcribed": "Elle est serveuse.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-3": {
+      "sha256": "b9f695214145f436a3788a5061698c3e6615953c65fcb1fcf119e63b80109e8d",
+      "text": "Elle est professeure.",
+      "transcribed": "Elle est professeure.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-explication": {
+      "sha256": "7f0d5c85f57475f8d7e2cda7acc4ead1b598b341646dfdcab930e8dada35e64b",
+      "text": "L'homme dit : « Je suis docteur. Et toi ? » Elle répond : « Je suis professeure. »",
+      "transcribed": "L'homme dit « Je suis docteur, et toi ? » Elle répond « Je suis professeur. »",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1": {
+      "sha256": "e82e118547c5c2962a7846bbe03c6ef3c6a0c1578505e6ff6eb1eded714d9aa3",
+      "text": "J'habite à Budapest, mais je ne… pas hongrois.",
+      "transcribed": "J'habite à Budapest, mais je ne... pas hongrois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1-aide": {
+      "sha256": "5e7f5743c69b2ce3bdb795be30cca271b53da7ac620286870f98e1f551f23e73",
+      "text": "verbe « parler »",
+      "transcribed": "Verbe parler.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1-solution": {
+      "sha256": "d1b157e19caf12588163d363e616e2f36dcd3c032c50a121bf5fa762ce39775a",
+      "text": "J'habite à Budapest, mais je ne parle pas hongrois.",
+      "transcribed": "J'habite à Budapest, mais je ne parle pas hongrois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2": {
+      "sha256": "3e5abe41456afffd6ccc477ca577fb81412ec5cbe6e15932d76ec2e1b6e824b5",
+      "text": "Mais moi, je parle un… français.",
+      "transcribed": "mais moi je parle un français.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2-aide": {
+      "sha256": "309432119c5dd0a0fec12bdb2c70e488d6ba052b9c231655d70dee4eb3e80c09",
+      "text": "Cela veut dire : pas beaucoup",
+      "transcribed": "Cela veut dire pas beaucoup.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2-solution": {
+      "sha256": "d9fdfee277394b76737327cbdd535c4c8533f191047f28ead2696a5f85e89903",
+      "text": "Mais moi, je parle un peu français.",
+      "transcribed": "Mais moi, je parle un peu français.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-difficile": {
+      "sha256": "7904f410754ac3f535c3650657bd7d373a3dfee0a7701a899829e06efdb85ce1",
+      "text": "« J'habite à Budapest, mais je ne parle pas hongrois. » Écoutez « je ne parle pas » : pour dire non, on met ne avant le verbe et pas après. À l'oral, le « ne » est très court.",
+      "transcribed": "J'habite à Budapest, mais je ne parle pas hongrois. Écoutez, je ne parle pas. Pour dire non, on met ne avant le verbe et pas après. À l'oral, le ne est très court.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-pourquoi": {
+      "sha256": "12ac8e1c34909be0196ca881058015115ed79fbc029383bc2c61d877b697f175",
+      "text": "Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
+      "transcribed": "Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-devine": {
+      "sha256": "8432da8df421a79508e8e5305300a979f0333b4c4354b7accc623ca1957b1a42",
+      "text": "Au café, le serveur arrive. Vous dites quoi pour commander un café ? Répondez à voix haute.",
+      "transcribed": "Au café, le serveur arrive. Vous dites quoi pour commander un café ? Répondez à voix haute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1": {
+      "sha256": "c601be1eb9f40f89daf0837b67873b7bb97ccc61f7b534c36e8bcf45842cd669",
+      "text": "Qu'est-ce qu'ils commandent ?",
+      "transcribed": "Qu'est-ce qu'il commande ?",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ecoute-b-q1-option-1": {
+      "sha256": "d1ba879f8b1f2c435833dca7a407f7539dee09ff1a3ebe14ef545cc2ba35db2e",
+      "text": "Deux thés et un sandwich.",
+      "transcribed": "deux thés et un sandwich.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-2": {
+      "sha256": "463e549a902e06e7b3d509a1e6153122dda218c4a0b51edfb018f101c93e9ec1",
+      "text": "Un café noir, un café long, un jus d'orange et un croissant.",
+      "transcribed": "Un café noir, un café long, un jus d'orange et un croissant.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-3": {
+      "sha256": "56471340572ca5f521ed53bbc8fc515dc320bffc31673adc4f792c1bef653165",
+      "text": "Une eau et un gâteau.",
+      "transcribed": "une eau et un gâteau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-explication": {
+      "sha256": "f6a6203d6636c5ee72e94d229a22c16ded87a509ebde7998237b111a9e1ef717",
+      "text": "« Un café noir pour moi, s'il vous plaît. » — « Un café long et un jus d'orange. » Puis : « Un croissant aussi. »",
+      "transcribed": "Un café noir pour moi, s'il vous plaît. Un café long et un jus d'orange. Puis, un croissant aussi.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2": {
+      "sha256": "b338a059403185b754479f7fb18c7386141733e84ef3695343766a8ce94be55f",
+      "text": "Comment paient-ils ?",
+      "transcribed": "Comment pèent-ils ?",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-1": {
+      "sha256": "d525dac60c7e8f8d14425dc4cdd0fcddc159e1a398fa989bdb97fb05ffd38780",
+      "text": "Par carte.",
+      "transcribed": "par carte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-2": {
+      "sha256": "3374bd97725fa2be65a02816403c5a5df19ec1e96945ce84b1edf40b9815efe9",
+      "text": "En espèces.",
+      "transcribed": "en espèces.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-3": {
+      "sha256": "f2e6f67c6859223a2e42cbe99c490ff05a9952f37cd82e7aab6ade26dbefcade",
+      "text": "Ils ne paient pas.",
+      "transcribed": "il ne paie pas.",
+      "word_error_rate": 0.5,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ecoute-b-q2-explication": {
+      "sha256": "2bdbf2a084adbb78014411bbde6509f27a4cd31a96707747137f11ef5aebf056",
+      "text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
+      "transcribed": "Le serveur demande « carte ou espèce ? » Réponse « espèce » avec des billets et des pièces en effectivo.",
+      "word_error_rate": 0.1875,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1": {
+      "sha256": "efab45799e26074ca127ee494e2662f63d580914270a14df91386abfe840ecfd",
+      "text": "Bonjour madame. Bonjour monsieur.… la carte.",
+      "transcribed": "Bonjour madame, bonjour monsieur. La carte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1-aide": {
+      "sha256": "d789409c2b96399075515739e03f058091e74dee4775998fdeed89316fa306d6",
+      "text": "Cela veut dire : je vous donne",
+      "transcribed": "Cela veut dire « Je vous donne »",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1-solution": {
+      "sha256": "bf1bb27465e77567301c97a1f19a54403c72815e853043fb4b21f6d545629535",
+      "text": "Bonjour madame. Bonjour monsieur. Voici la carte.",
+      "transcribed": "Bonjour Madame. Bonjour Monsieur. Voici la carte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2": {
+      "sha256": "cfab5188da13c22eb7c23d4963abccf3da31254254ba008cd15292b35fed7d84",
+      "text": "Merci beaucoup. — Je vous en….",
+      "transcribed": "Merci beaucoup. Je vous en...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2-aide": {
+      "sha256": "7c7f90b3a376e2c6998ceff608333e5ac480e383fd92d8b4ae78fccb9ee0e82e",
+      "text": "réponse polie à « merci »",
+      "transcribed": "Réponse polie à merci.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2-solution": {
+      "sha256": "6d5cde95f0b0cf3b3186db8f439f71fb059047add9f34e64ad6f7c6ad6c0c848",
+      "text": "Merci beaucoup. — Je vous en prie.",
+      "transcribed": "Merci beaucoup. Je vous en prie.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-difficile": {
+      "sha256": "e16dbee41180728a003ca711e71a679ecd30c733cb0f0d6aaf804ed9ddde674e",
+      "text": "Carte ou espèces ? Espèces, espèces. Le serveur ne fait pas une phrase complète : c'est normal au café. Carte, c'est la carte bancaire. Espèces, ce sont les billets et les pièces. On répond avec un seul mot, ou : Par carte, s'il vous plaît.",
+      "transcribed": "Carte ou espèce ? Espèce, espèce. Le serveur ne fait pas une phrase complète. C'est normal au café. Carte, c'est la carte bancaire. Espèce, ce sont les billets et les pièces. On répond avec un seul mot ou par carte, s'il vous plaît.",
+      "word_error_rate": 0.0889,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-consigne": {
+      "sha256": "c6a2a7189bb3c5b006b998efb91ea8af157a9f84b78a10131822fb1c27b02d9c",
+      "text": "Six phrases de la vidéo pour se présenter et commander au café. Écoutez, répétez, puis dites votre propre phrase.",
+      "transcribed": "6 phrases de la vidéo pour se présenter et commander au café. Écoutez, répétez, puis dites votre propre phrase.",
+      "word_error_rate": 0.0526,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-rappel": {
+      "sha256": "b7262ae9ff2dc17317a21990639939536a04a6bf085efbbf1609b965d5a0ab87",
+      "text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur Voir la phrase.",
+      "transcribed": "Lisez à quoi sert la phrase. Dites-la à voix haute, puis cliquez sur « Voir la phrase ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-utilite": {
+      "sha256": "247037cd1deeded26d1a94ce2db0a33b3fa3a51f95018f0e040c161a961242ee",
+      "text": "Pour dire qui on est, et poser la même question à l'autre (« toi » avec un ami, « vous » au travail)",
+      "transcribed": "pour dire qui on est et poser la même question à l'autre, toi avec un ami, vous au travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-forme": {
+      "sha256": "6c963aaf0ec9c6aa0a6643cd1fa439bdf682e66032e012530565d6dec2a9796a",
+      "text": "Je suis… Et toi ? Et vous ?",
+      "transcribed": "Je suis... Et toi ? Et vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-exemple": {
+      "sha256": "0fba20e6ac7c3430470ded5e0269268ecdb1b6520baef54b9be0e23c7a436cd3",
+      "text": "Bonjour, je suis Ana. Et vous ?",
+      "transcribed": "Bonjour, je suis Anna. Et vous ?",
+      "word_error_rate": 0.1667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-avous": {
+      "sha256": "5443d17da3bb0613c51a65fa48003e2089179cb9f1e0b89254e62e1fb2faae5e",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-utilite": {
+      "sha256": "05d182d8e8321fd672506f3415606a86f76c1792d25904f2b4be12755fd08b41",
+      "text": "Pour dire sa nationalité (un homme : espagnol ; une femme : espagnole)",
+      "transcribed": "pour dire sa nationalité, un homme espagnol, une femme espagnole.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-forme": {
+      "sha256": "dc6a22eda3138641b2c4dacf4ce25fd607d8e18b7afa078e71eb36215fe91001",
+      "text": "Je suis espagnol. Je suis espagnole.",
+      "transcribed": "je suis espagnol je suis espagnol",
+      "word_error_rate": 0.1667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-exemple": {
+      "sha256": "bc1a6cee9cc20746251347a42f56d6b212b4704fbf23a34d6e379e222201cc51",
+      "text": "Je suis espagnole. J'habite à Madrid.",
+      "transcribed": "Je suis espagnole, j'habite à Madrid.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-avous": {
+      "sha256": "5443d17da3bb0613c51a65fa48003e2089179cb9f1e0b89254e62e1fb2faae5e",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-utilite": {
+      "sha256": "9eb9e3aaa8084b326da079a7e956a7efb7b538bed80d93d6c052995e31d2edc1",
+      "text": "Pour demander le prénom, et le corriger poliment",
+      "transcribed": "pour demander le prénom et le corriger poliment",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-forme": {
+      "sha256": "55a351fe37a7ad685684ec4be2090ca93c877b25d8c0885329a1b7e32c1f27e2",
+      "text": "Comment tu t'appelles ? Je m'appelle…",
+      "transcribed": "Comment tu t'appelles ? Je m'appelle...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-exemple": {
+      "sha256": "c4c503313dece455ab759ea893ace04606a041978e6faa76e98bb438b026792f",
+      "text": "Comment vous vous appelez ? — Je m'appelle Laura.",
+      "transcribed": "Comment vous vous appelez ? Je m'appelle Laura.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-avous": {
+      "sha256": "5443d17da3bb0613c51a65fa48003e2089179cb9f1e0b89254e62e1fb2faae5e",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-utilite": {
+      "sha256": "116b400bdcf166259035c79b91b372267f1f5ce1b826b6736ccbed3f89eade3b",
+      "text": "Pour commander au café",
+      "transcribed": "pour commander au café",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-forme": {
+      "sha256": "98f41328aa9de564acaf4aa74a2efba0b849550a7b494f738acfac4d93f936ac",
+      "text": "Un café pour moi, s'il vous plaît.",
+      "transcribed": "Un café pour moi, s'il vous plaît.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-exemple": {
+      "sha256": "2d16227805ce0ab2807cbc90c75e36e4d0eb040a337ab2507418bee5f9292f38",
+      "text": "Un thé pour moi, s'il vous plaît.",
+      "transcribed": "Un thé pour moi, s'il vous plaît.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-avous": {
+      "sha256": "5443d17da3bb0613c51a65fa48003e2089179cb9f1e0b89254e62e1fb2faae5e",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-utilite": {
+      "sha256": "a22c0a750c7ea937b0eb87ea7f5a48f4de2f4df06cdc7dd672225b3c9514a0ee",
+      "text": "Pour dire que la commande est finie",
+      "transcribed": "pour dire que la commande est finie,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-forme": {
+      "sha256": "0aa2bee94a8b2dcf121f27f511588a8aa43b1f5833ae771b5b8173b948c26bde",
+      "text": "C'est tout ? Oui, merci, c'est tout.",
+      "transcribed": "C'est tout ? Oui, merci, c'est tout.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-exemple": {
+      "sha256": "253c5c8f8f0e75be138a58e2ffe4f0b57597fa8636e7bc06c908fd382ed88a10",
+      "text": "Vous voulez autre chose ? — Non merci, c'est tout.",
+      "transcribed": "Vous voulez autre chose ? Non merci, c'est tout.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-avous": {
+      "sha256": "5443d17da3bb0613c51a65fa48003e2089179cb9f1e0b89254e62e1fb2faae5e",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-utilite": {
+      "sha256": "9cbc9959256f8b656b6b614de431d6270cfbe57347b414eaac2472d1c516b179",
+      "text": "Pour demander à payer. L'addition, c'est la somme à payer.",
+      "transcribed": "pour demander à payer. L'addition, c'est la somme à payer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-forme": {
+      "sha256": "43ec83fc8788f60f1435dc461a37dea5ba0235a2adb5db8df38bace6015df941",
+      "text": "L'addition, s'il vous plaît.",
+      "transcribed": "L'addition, s'il vous plaît.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-exemple": {
+      "sha256": "bd40ec56e5238561fda8baf0e2857c11864ff3451d5a89a553f5fa3a67862d16",
+      "text": "L'addition, s'il vous plaît. Je paie par carte.",
+      "transcribed": "L'addition, s'il vous plaît. Je paie par carte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-avous": {
+      "sha256": "5443d17da3bb0613c51a65fa48003e2089179cb9f1e0b89254e62e1fb2faae5e",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-intro": {
+      "sha256": "adb2ee4fbcefaae977b3e9f9a81ed63b0785c4741938ba89ef3fe0e890a13f4d",
+      "text": "En français, la voix monte quand une autre information arrive, ou quand vous posez certaines questions. La voix descend quand la phrase est finie.",
+      "transcribed": "En français, la voix monte quand une autre information arrive ou quand vous posez certaines questions. La voix descend quand la phrase est finie.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-1": {
+      "sha256": "fce37bca1469a0fc0a889bb75a0f26404c638b5f7a19af7e740776b439b04dd2",
+      "text": "Vous donnez une information, et il y a une suite : la voix monte.",
+      "transcribed": "Vous donnez une information et il y a une suite. La voix monte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-2": {
+      "sha256": "0ba647e54cd144601bd5c206848cfe677351dfb8902923db658bc2540dd56f13",
+      "text": "Vous proposez quelque chose (« Un café ? ») : la voix monte.",
+      "transcribed": "Vous proposez quelque chose, un café, la voix monte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-3": {
+      "sha256": "3076408232eb34ee7079a055550fafc01dcbfe165eadb4196b77fa6fc6d177bb",
+      "text": "C'est la dernière information : la voix descend. L'autre sait que c'est à lui de parler.",
+      "transcribed": "C'est la dernière information. La voix descend. L'autre sait que c'est à lui de parler.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-attention": {
+      "sha256": "afc81d340d65043685ffb3c655ac1efa26d95db1a15a978a8b1a3abf7bd1aef9",
+      "text": "La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. Attention : toutes les questions ne montent pas. Dans la vidéo, Et toi ? reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "transcribed": "La dernière syllabe du mot est plus longue. Adrienne, hongroise, français. Attention, toutes les questions ne montent pas. Dans la vidéo, et toi, reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-1": {
+      "sha256": "55fa6c8fa00d7a33276c0e74beb2cc0524eb619987f557ce342294a9a57c49f3",
+      "text": "La femme donne 3 informations. Écoutez : sur quelles syllabes la voix monte-t-elle très nettement ? Cliquez sur les 2 syllabes, puis vérifiez.",
+      "transcribed": "la femme donne trois informations. Écoutez, sur quelles syllabes la voix monte-t-elle très nettement ? Cliquez sur les deux syllabes, puis vérifiez.",
+      "word_error_rate": 0.087,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-1-explication": {
+      "sha256": "46670291b0d108ac4dafad170aaa5a45c7ec811c3f69ba2c34a39669416d6eb9",
+      "text": "La voix monte sur « -enne » et « -groise » : il y a une suite. À la fin (« Budapest »), elle ne monte plus : c'est fini.",
+      "transcribed": "La voix monte sur N et groise. Il y a une suite. À la fin, Budapest, elle ne monte plus. C'est fini.",
+      "word_error_rate": 0.0435,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-2": {
+      "sha256": "fe9d9902eb20553ce58a2f46d82dd1e43d1845ee738b1d38558e867c43e19fdc",
+      "text": "L'homme donne une liste de 3 langues. Cliquez sur la syllabe où la voix monte, puis vérifiez.",
+      "transcribed": "L'homme donne une liste de trois langues. Cliquez sur la syllabe où la voix monte, puis vérifiez.",
+      "word_error_rate": 0.0556,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-2-explication": {
+      "sha256": "2250b3308b35324c11a986c62d4fa8b9b6d7d16385574fd45716b3f8130aeb94",
+      "text": "La voix monte sur « -glais » : la liste continue. Sur « hongrois », elle descend : la liste est finie.",
+      "transcribed": "la voix monte sur gley la liste continue sur hongrois elle descend la liste est finie",
+      "word_error_rate": 0.0625,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-1": {
+      "sha256": "8b69461c54fdc74a9179952855ad39a499d91120ec686a9e488c1c3700e4d676",
+      "text": "Écoutez la phrase 2 fois.",
+      "transcribed": "Écoutez la phrase deux fois.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-2": {
+      "sha256": "c5faf3e00ce66cc9adb25e47a790d9c2a24d19159ee475f75d744915586d7e53",
+      "text": "Parlez en même temps que la voix, 2 fois.",
+      "transcribed": "Parlez en même temps que la voix, deux fois.",
+      "word_error_rate": 0.1111,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-3": {
+      "sha256": "c4652b3948996e688bae3ab2786f00a6f93de4868c2204839c9f60005ebc0bff",
+      "text": "Enregistrez-vous seule et comparez les courbes.",
+      "transcribed": "Enregistrez-vous seul et comparez les courbes.",
+      "word_error_rate": 0.1429,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-consigne": {
+      "sha256": "9bea9e09d49a1c929ee85a63d8c48118a1b02be0109554dd451218476249cd59",
+      "text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "transcribed": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-preparation": {
+      "sha256": "efeb70d2dc78b315a302461a214522531ac10d0de4851e2b1b6defff0fc741a9",
+      "text": "Notez seulement des mots-clés, pas de phrases.",
+      "transcribed": "Notez seulement des mots-clés, pas de phrases.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1": {
+      "sha256": "226919d0dc25de0aef9b8ac685011c6c01cb41b91bf01f022fec3ede357e429a",
+      "text": "Parlez avec vos notes : votre nom, votre nationalité, votre ville, puis la commande.",
+      "transcribed": "Parlez avec vos notes, votre nom, votre nationalité, votre ville, puis la commande.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1-ajout": {
+      "sha256": "7d2e21a70fcd4af5d4bece71c442d3e5296aa391a960c53e77a363e090a88890",
+      "text": "Pour l'essai 2, ajoutez : « Et vous ? » et « Oui, merci, c'est tout. ». Et faites monter la voix à la fin de chaque information.",
+      "transcribed": "Pour laisser 2, ajoutez « et vous ? » Et oui, merci, c'est tout. Et faites monter la voix à la fin de chaque information.",
+      "word_error_rate": 0.0833,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2": {
+      "sha256": "80bb0a071a851f4699ee77076091ca2481d7e589e3e2b203ae236dbc9145ad62",
+      "text": "Votre formateur joue le serveur et vous pose une question. Répondez.",
+      "transcribed": "Votre formateur joue le serveur et vous pose une question. Répondez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2-ajout": {
+      "sha256": "3180e25dd25cd966ad29bec4a0dfc989d91e4deec5c9b45a56de94b396501114",
+      "text": "Pour l'essai 3, finissez avec : « L'addition, s'il vous plaît. » puis « Merci, bonne journée ! Au revoir ! »",
+      "transcribed": "Pour l'essai 3, finissez avec l'addition s'il vous plaît. Puis, merci, bonne journée. Au revoir. Merci.",
+      "word_error_rate": 0.0556,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-3": {
+      "sha256": "fc645c20e1179f87113bd61faedfa903bec004b12e44ee2ceb7a71368b2b126e",
+      "text": "Sans vos notes. Seulement l'essentiel.",
+      "transcribed": "sans vos notes, seulement l'essentiel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-1": {
+      "sha256": "89ee1637e4f737828dcb878262a349b719d3266bb58f4901642fa1ff9100507e",
+      "text": "Carte ou espèces ?",
+      "transcribed": "cartes ou espèces.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-2": {
+      "sha256": "a6b2544e02eb84f74074dee27d971a4fe164e1c31b78edbcd451c21ec483e191",
+      "text": "C'est tout ?",
+      "transcribed": "C'est tout.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-3": {
+      "sha256": "1bc08793901f6e942458fb9af522f34238b9fb0a44423fab1cb4e2a8e60e1405",
+      "text": "Pardon, vous vous appelez comment ?",
+      "transcribed": "Pardon, vous vous appelez comment ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-4": {
+      "sha256": "16191d7a64c3fd6436dfa88627f7ccd33f489e0698df683718a62803c9eceba2",
+      "text": "Désolé, il n'y a plus de jus d'orange. Vous voulez autre chose ?",
+      "transcribed": "Désolé, il n'y a plus de jus d'orange. Vous voulez autre chose ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-consigne": {
+      "sha256": "870f685a9ab07393e3153a03ca1d514c968c24c8fe5d16c012aa86b77d6c5715",
+      "text": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "transcribed": "Le même sujet qu'au début. Parlez une minute sans vos notes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-bilan": {
+      "sha256": "9898b74562dc835331edee11f409286eed7adccbe72d6625ea5335707c5d2c1a",
+      "text": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
+      "transcribed": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "objectif-consigne": {
+      "sha256": "94adff84db04b822669ac78c1cf8e00dbb96c1debd27e7a74f26cfc4b836a9af",
+      "text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "transcribed": "Choisissez une phrase utile. Dites-la cette semaine dans une situation réelle.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-1": {
+      "sha256": "4ded5de0fe0074ef05c502d23a7c99d487a2ad362ba310f9aab8ea66ae2dabc2",
+      "text": "Jour 1 : Répétez les 4 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "transcribed": "Jour 1. Répétez les 4 phrases de la mélodie avec la vidéo en même temps que la voix. 5 minutes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-2": {
+      "sha256": "843cb267dd34a517789b3d7e70d666c5bac1d0a7f82c32675b94676af2c9aec7",
+      "text": "Jour 2 : Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "transcribed": "Jour 2. Dites les six phrases utiles sans regarder. Bouton « Vérifier sans regarder ».",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-3": {
+      "sha256": "a7fa9962bef9b5506ee74fd43eec75d38e88d7662a580d92db7b65f0c47829fe",
+      "text": "Jour 3 : Présentez-vous à voix haute en 4 phrases : nom, nationalité, ville, langues. Enregistrez-vous.",
+      "transcribed": "Jour 3. Présentez-vous à voix haute en 4 phrases. Nom, nationalité, ville, langue. Enregistrez-vous.",
+      "word_error_rate": 0.0625,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-4": {
+      "sha256": "8b99cc622f3181decf4aaa1d4db3e4b6cf964412decb0165bb4a63c10c85c814",
+      "text": "Jour 4 : Enregistrez 1 minute : vous vous présentez et vous commandez au café. Envoyez-la à votre formateur.",
+      "transcribed": "Jour 4, enregistrez une minute, vous vous présentez et vous commandez au café. Envoyez-la à votre formateur.",
+      "word_error_rate": 0.0556,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    }
+  }
+}

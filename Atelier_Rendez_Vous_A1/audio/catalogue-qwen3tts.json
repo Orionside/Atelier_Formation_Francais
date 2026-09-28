@@ -1,0 +1,933 @@
+{
+  "atelier": "Rendez-vous A1",
+  "entries": [
+    {
+      "id": "accueil-objectif",
+      "display_text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En 1 minute, avec des phrases courtes.",
+      "tts_text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En 1 minute, avec des phrases courtes.",
+      "role": "objectif",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/accueil-objectif.mp3"
+    },
+    {
+      "id": "situation-lieu",
+      "display_text": "Au café, avant une réunion",
+      "tts_text": "Au café, avant une réunion",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-lieu.mp3"
+    },
+    {
+      "id": "situation-qui",
+      "display_text": "Une nouvelle collègue française",
+      "tts_text": "Une nouvelle collègue française",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-qui.mp3"
+    },
+    {
+      "id": "situation-dialogue",
+      "display_text": "« Bonjour ! Je m'appelle Camille. Je suis française. Et vous ? »",
+      "tts_text": "« Bonjour ! Je m'appelle Camille. Je suis française. Et vous ? »",
+      "role": "dialogue",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-dialogue.mp3"
+    },
+    {
+      "id": "situation-vous",
+      "display_text": "Vous répondez : votre nom, votre nationalité, votre ville. Puis vous commandez pour vous deux, et vous payez.",
+      "tts_text": "Vous répondez : votre nom, votre nationalité, votre ville. Puis vous commandez pour vous deux, et vous payez.",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-vous.mp3"
+    },
+    {
+      "id": "situation-consigne",
+      "display_text": "Présentez-vous, puis commandez. En 1 minute.",
+      "tts_text": "Présentez-vous, puis commandez. Vous avez une minute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-consigne.mp3"
+    },
+    {
+      "id": "situation-question",
+      "display_text": "Qui rencontrez-vous au café, dans votre vie ?",
+      "tts_text": "Qui rencontrez-vous au café, dans votre vie ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-question.mp3"
+    },
+    {
+      "id": "plan-1-titre",
+      "display_text": "Mon nom",
+      "tts_text": "Mon nom",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-1-titre.mp3"
+    },
+    {
+      "id": "plan-1-exemple",
+      "display_text": "Bonjour ! Je m'appelle… Et vous ?",
+      "tts_text": "Bonjour ! Je m'appelle… Et vous ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-1-exemple.mp3"
+    },
+    {
+      "id": "plan-2-titre",
+      "display_text": "Ma nationalité et ma ville",
+      "tts_text": "Ma nationalité et ma ville",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-2-titre.mp3"
+    },
+    {
+      "id": "plan-2-exemple",
+      "display_text": "Je suis espagnol(e). J'habite à…",
+      "tts_text": "Je suis espagnole. J'habite à…",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-2-exemple.mp3"
+    },
+    {
+      "id": "plan-3-titre",
+      "display_text": "Je commande",
+      "tts_text": "Je commande",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-3-titre.mp3"
+    },
+    {
+      "id": "plan-3-exemple",
+      "display_text": "Un café pour moi, s'il vous plaît.",
+      "tts_text": "Un café pour moi, s'il vous plaît.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-3-exemple.mp3"
+    },
+    {
+      "id": "plan-4-titre",
+      "display_text": "Je paie et je pars",
+      "tts_text": "Je paie et je pars",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-4-titre.mp3"
+    },
+    {
+      "id": "plan-4-exemple",
+      "display_text": "L'addition, s'il vous plaît.",
+      "tts_text": "L'addition, s'il vous plaît.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-4-exemple.mp3"
+    },
+    {
+      "id": "avant-consigne",
+      "display_text": "Présentez-vous et commandez, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "tts_text": "Présentez-vous et commandez, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/avant-consigne.mp3"
+    },
+    {
+      "id": "difficulte-1",
+      "display_text": "Je cherchais mes mots",
+      "tts_text": "Je cherchais mes mots",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-1.mp3"
+    },
+    {
+      "id": "difficulte-2",
+      "display_text": "Je ne savais pas comment commencer",
+      "tts_text": "Je ne savais pas comment commencer",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-2.mp3"
+    },
+    {
+      "id": "difficulte-3",
+      "display_text": "Je ne savais pas dire « tu » ou « vous »",
+      "tts_text": "Je ne savais pas dire « tu » ou « vous »",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-3.mp3"
+    },
+    {
+      "id": "difficulte-4",
+      "display_text": "Je n'étais pas sûr·e de ma prononciation",
+      "tts_text": "Je n'étais pas sûre de ma prononciation",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-4.mp3"
+    },
+    {
+      "id": "difficulte-5",
+      "display_text": "Rien de spécial",
+      "tts_text": "Rien de spécial",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-5.mp3"
+    },
+    {
+      "id": "ecoute-consigne",
+      "display_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "tts_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-consigne.mp3"
+    },
+    {
+      "id": "ecoute-a-pourquoi",
+      "display_text": "Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
+      "tts_text": "Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-a-devine",
+      "display_text": "Vous rencontrez une personne pour la première fois. Vous dites quoi ? Répondez à voix haute : 2 phrases.",
+      "tts_text": "Vous rencontrez une personne pour la première fois. Vous dites quoi ? Répondez à voix haute : 2 phrases.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-devine.mp3"
+    },
+    {
+      "id": "ecoute-a-q1",
+      "display_text": "L'homme est de quelle nationalité ?",
+      "tts_text": "L'homme est de quelle nationalité ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-1",
+      "display_text": "Il est hongrois.",
+      "tts_text": "Il est hongrois.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-2",
+      "display_text": "Il est français.",
+      "tts_text": "Il est français.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-3",
+      "display_text": "Il est espagnol.",
+      "tts_text": "Il est espagnol.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-explication",
+      "display_text": "Il dit : « Je suis français. Et toi ? » La femme répond : « Je suis hongroise. »",
+      "tts_text": "Il dit : « Je suis français. Et toi ? » La femme répond : « Je suis hongroise. »",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-a-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-q2",
+      "display_text": "Quel est le métier de la femme ?",
+      "tts_text": "Quel est le métier de la femme ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-1",
+      "display_text": "Elle est docteur.",
+      "tts_text": "Elle est docteur.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-2",
+      "display_text": "Elle est serveuse.",
+      "tts_text": "Elle est serveuse.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-3",
+      "display_text": "Elle est professeure.",
+      "tts_text": "Elle est professeure.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-explication",
+      "display_text": "L'homme dit : « Je suis docteur. Et toi ? » Elle répond : « Je suis professeure. »",
+      "tts_text": "L'homme dit : « Je suis docteur. Et toi ? » Elle répond : « Je suis professeure. »",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-a-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1",
+      "display_text": "J'habite à Budapest, mais je ne […] pas hongrois.",
+      "tts_text": "J'habite à Budapest, mais je ne… pas hongrois.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-aide",
+      "display_text": "verbe « parler » (hablar)",
+      "tts_text": "verbe « parler »",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-solution",
+      "display_text": "J'habite à Budapest, mais je ne parle pas hongrois.",
+      "tts_text": "J'habite à Budapest, mais je ne parle pas hongrois.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2",
+      "display_text": "Mais moi, je parle un […] français.",
+      "tts_text": "Mais moi, je parle un… français.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-aide",
+      "display_text": "= pas beaucoup (un poco)",
+      "tts_text": "Cela veut dire : pas beaucoup",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-solution",
+      "display_text": "Mais moi, je parle un peu français.",
+      "tts_text": "Mais moi, je parle un peu français.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-difficile",
+      "display_text": "« J'habite à Budapest, mais je ne parle pas hongrois. » Écoutez « je ne parle pas » : pour dire non, on met ne avant le verbe et pas après. À l'oral, le « ne » est très court.",
+      "tts_text": "« J'habite à Budapest, mais je ne parle pas hongrois. » Écoutez « je ne parle pas » : pour dire non, on met ne avant le verbe et pas après. À l'oral, le « ne » est très court.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-difficile.mp3"
+    },
+    {
+      "id": "ecoute-b-pourquoi",
+      "display_text": "Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
+      "tts_text": "Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-b-devine",
+      "display_text": "Au café, le serveur arrive. Vous dites quoi pour commander un café ? Répondez à voix haute.",
+      "tts_text": "Au café, le serveur arrive. Vous dites quoi pour commander un café ? Répondez à voix haute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-devine.mp3"
+    },
+    {
+      "id": "ecoute-b-q1",
+      "display_text": "Qu'est-ce qu'ils commandent ?",
+      "tts_text": "Qu'est-ce qu'ils commandent ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-1",
+      "display_text": "Deux thés et un sandwich.",
+      "tts_text": "Deux thés et un sandwich.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-2",
+      "display_text": "Un café noir, un café long, un jus d'orange et un croissant.",
+      "tts_text": "Un café noir, un café long, un jus d'orange et un croissant.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-3",
+      "display_text": "Une eau et un gâteau.",
+      "tts_text": "Une eau et un gâteau.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-explication",
+      "display_text": "« Un café noir pour moi, s'il vous plaît. » — « Un café long et un jus d'orange. » Puis : « Un croissant aussi. »",
+      "tts_text": "« Un café noir pour moi, s'il vous plaît. » — « Un café long et un jus d'orange. » Puis : « Un croissant aussi. »",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-b-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-q2",
+      "display_text": "Comment paient-ils ?",
+      "tts_text": "Comment paient-ils ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-1",
+      "display_text": "Par carte.",
+      "tts_text": "Par carte.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-2",
+      "display_text": "En espèces.",
+      "tts_text": "En espèces.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-3",
+      "display_text": "Ils ne paient pas.",
+      "tts_text": "Ils ne paient pas.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-explication",
+      "display_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
+      "tts_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1",
+      "display_text": "Bonjour madame. Bonjour monsieur. […] la carte.",
+      "tts_text": "Bonjour madame. Bonjour monsieur.… la carte.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-aide",
+      "display_text": "= je vous donne (aquí tiene)",
+      "tts_text": "Cela veut dire : je vous donne",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-solution",
+      "display_text": "Bonjour madame. Bonjour monsieur. Voici la carte.",
+      "tts_text": "Bonjour madame. Bonjour monsieur. Voici la carte.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2",
+      "display_text": "Merci beaucoup. — Je vous en […] .",
+      "tts_text": "Merci beaucoup. — Je vous en….",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-aide",
+      "display_text": "réponse polie à « merci » (de nada)",
+      "tts_text": "réponse polie à « merci »",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-solution",
+      "display_text": "Merci beaucoup. — Je vous en prie .",
+      "tts_text": "Merci beaucoup. — Je vous en prie.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-difficile",
+      "display_text": "« Carte ou espèces ? — Espèces, espèces. » Le serveur ne fait pas une phrase complète : c'est normal au café. Carte = carte bancaire. Espèces = billets et pièces. On répond avec un seul mot, ou : « Par carte, s'il vous plaît. »",
+      "tts_text": "Carte ou espèces ? Espèces, espèces. Le serveur ne fait pas une phrase complète : c'est normal au café. Carte, c'est la carte bancaire. Espèces, ce sont les billets et les pièces. On répond avec un seul mot, ou : Par carte, s'il vous plaît.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-difficile.mp3"
+    },
+    {
+      "id": "phrases-consigne",
+      "display_text": "Six phrases de la vidéo pour se présenter et commander au café. Écoutez, répétez, puis dites votre propre phrase.",
+      "tts_text": "Six phrases de la vidéo pour se présenter et commander au café. Écoutez, répétez, puis dites votre propre phrase.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrases-consigne.mp3"
+    },
+    {
+      "id": "phrases-rappel",
+      "display_text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur Voir la phrase.",
+      "tts_text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur Voir la phrase.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrases-rappel.mp3"
+    },
+    {
+      "id": "phrase-p1-utilite",
+      "display_text": "Pour dire qui on est, et poser la même question à l'autre (« toi » avec un ami, « vous » au travail)",
+      "tts_text": "Pour dire qui on est, et poser la même question à l'autre (« toi » avec un ami, « vous » au travail)",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-utilite.mp3"
+    },
+    {
+      "id": "phrase-p1-forme",
+      "display_text": "Je suis… Et toi ? / Et vous ?",
+      "tts_text": "Je suis… Et toi ? Et vous ?",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-forme.mp3"
+    },
+    {
+      "id": "phrase-p1-exemple",
+      "display_text": "Bonjour, je suis Ana. Et vous ?",
+      "tts_text": "Bonjour, je suis Ana. Et vous ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-exemple.mp3"
+    },
+    {
+      "id": "phrase-p1-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-avous.mp3"
+    },
+    {
+      "id": "phrase-p2-utilite",
+      "display_text": "Pour dire sa nationalité (un homme : espagnol ; une femme : espagnole)",
+      "tts_text": "Pour dire sa nationalité (un homme : espagnol ; une femme : espagnole)",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-utilite.mp3"
+    },
+    {
+      "id": "phrase-p2-forme",
+      "display_text": "Je suis espagnol. / Je suis espagnole.",
+      "tts_text": "Je suis espagnol. Je suis espagnole.",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-forme.mp3"
+    },
+    {
+      "id": "phrase-p2-exemple",
+      "display_text": "Je suis espagnole. J'habite à Madrid.",
+      "tts_text": "Je suis espagnole. J'habite à Madrid.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-exemple.mp3"
+    },
+    {
+      "id": "phrase-p2-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-avous.mp3"
+    },
+    {
+      "id": "phrase-p3-utilite",
+      "display_text": "Pour demander le prénom, et le corriger poliment",
+      "tts_text": "Pour demander le prénom, et le corriger poliment",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-utilite.mp3"
+    },
+    {
+      "id": "phrase-p3-forme",
+      "display_text": "Comment tu t'appelles ? — Je m'appelle…",
+      "tts_text": "Comment tu t'appelles ? Je m'appelle…",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-forme.mp3"
+    },
+    {
+      "id": "phrase-p3-exemple",
+      "display_text": "Comment vous vous appelez ? — Je m'appelle Laura.",
+      "tts_text": "Comment vous vous appelez ? — Je m'appelle Laura.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-exemple.mp3"
+    },
+    {
+      "id": "phrase-p3-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-avous.mp3"
+    },
+    {
+      "id": "phrase-p4-utilite",
+      "display_text": "Pour commander au café",
+      "tts_text": "Pour commander au café",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-utilite.mp3"
+    },
+    {
+      "id": "phrase-p4-forme",
+      "display_text": "Un café pour moi, s'il vous plaît.",
+      "tts_text": "Un café pour moi, s'il vous plaît.",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-forme.mp3"
+    },
+    {
+      "id": "phrase-p4-exemple",
+      "display_text": "Un thé pour moi, s'il vous plaît.",
+      "tts_text": "Un thé pour moi, s'il vous plaît.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-exemple.mp3"
+    },
+    {
+      "id": "phrase-p4-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-avous.mp3"
+    },
+    {
+      "id": "phrase-p5-utilite",
+      "display_text": "Pour dire que la commande est finie",
+      "tts_text": "Pour dire que la commande est finie",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-utilite.mp3"
+    },
+    {
+      "id": "phrase-p5-forme",
+      "display_text": "C'est tout ? — Oui, merci, c'est tout.",
+      "tts_text": "C'est tout ? Oui, merci, c'est tout.",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-forme.mp3"
+    },
+    {
+      "id": "phrase-p5-exemple",
+      "display_text": "Vous voulez autre chose ? — Non merci, c'est tout.",
+      "tts_text": "Vous voulez autre chose ? — Non merci, c'est tout.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-exemple.mp3"
+    },
+    {
+      "id": "phrase-p5-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-avous.mp3"
+    },
+    {
+      "id": "phrase-p6-utilite",
+      "display_text": "Pour demander à payer (l'addition = la cuenta)",
+      "tts_text": "Pour demander à payer. L'addition, c'est la somme à payer.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-utilite.mp3"
+    },
+    {
+      "id": "phrase-p6-forme",
+      "display_text": "L'addition, s'il vous plaît.",
+      "tts_text": "L'addition, s'il vous plaît.",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-forme.mp3"
+    },
+    {
+      "id": "phrase-p6-exemple",
+      "display_text": "L'addition, s'il vous plaît. Je paie par carte.",
+      "tts_text": "L'addition, s'il vous plaît. Je paie par carte.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-exemple.mp3"
+    },
+    {
+      "id": "phrase-p6-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-avous.mp3"
+    },
+    {
+      "id": "melodie-intro",
+      "display_text": "En français, la voix monte ↗ quand ce n'est pas fini : une autre information arrive, ou vous posez une question. La voix descend ↘ quand c'est fini.",
+      "tts_text": "En français, la voix monte quand une autre information arrive, ou quand vous posez certaines questions. La voix descend quand la phrase est finie.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-intro.mp3"
+    },
+    {
+      "id": "melodie-regle-1",
+      "display_text": "Vous donnez une information, et il y a une suite : la voix monte ↗.",
+      "tts_text": "Vous donnez une information, et il y a une suite : la voix monte.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-1.mp3"
+    },
+    {
+      "id": "melodie-regle-2",
+      "display_text": "Vous proposez quelque chose (« Un café ? ») : la voix monte ↗.",
+      "tts_text": "Vous proposez quelque chose (« Un café ? ») : la voix monte.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-2.mp3"
+    },
+    {
+      "id": "melodie-regle-3",
+      "display_text": "C'est la dernière information : la voix descend ↘. L'autre sait que c'est à lui de parler.",
+      "tts_text": "C'est la dernière information : la voix descend. L'autre sait que c'est à lui de parler.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-3.mp3"
+    },
+    {
+      "id": "melodie-attention",
+      "display_text": "La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Attention : toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
+      "tts_text": "La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. Attention : toutes les questions ne montent pas. Dans la vidéo, Et toi ? reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-attention.mp3"
+    },
+    {
+      "id": "melodie-exercice-1",
+      "display_text": "La femme donne 3 informations. Écoutez : sur quelles syllabes la voix monte-t-elle très nettement ? Cliquez sur les 2 syllabes, puis vérifiez.",
+      "tts_text": "La femme donne 3 informations. Écoutez : sur quelles syllabes la voix monte-t-elle très nettement ? Cliquez sur les 2 syllabes, puis vérifiez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-exercice-1.mp3"
+    },
+    {
+      "id": "melodie-exercice-1-explication",
+      "display_text": "La voix monte sur « -enne » et « -groise » : il y a une suite. À la fin (« Budapest »), elle ne monte plus : c'est fini.",
+      "tts_text": "La voix monte sur « -enne » et « -groise » : il y a une suite. À la fin (« Budapest »), elle ne monte plus : c'est fini.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/melodie-exercice-1-explication.mp3"
+    },
+    {
+      "id": "melodie-exercice-2",
+      "display_text": "L'homme donne une liste de 3 langues. Cliquez sur la syllabe où la voix monte, puis vérifiez.",
+      "tts_text": "L'homme donne une liste de 3 langues. Cliquez sur la syllabe où la voix monte, puis vérifiez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-exercice-2.mp3"
+    },
+    {
+      "id": "melodie-exercice-2-explication",
+      "display_text": "La voix monte sur « -glais » : la liste continue. Sur « hongrois », elle descend : la liste est finie.",
+      "tts_text": "La voix monte sur « -glais » : la liste continue. Sur « hongrois », elle descend : la liste est finie.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/melodie-exercice-2-explication.mp3"
+    },
+    {
+      "id": "melodie-etape-1",
+      "display_text": "Écoutez la phrase 2 fois.",
+      "tts_text": "Écoutez la phrase 2 fois.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-1.mp3"
+    },
+    {
+      "id": "melodie-etape-2",
+      "display_text": "Parlez en même temps que la voix, 2 fois.",
+      "tts_text": "Parlez en même temps que la voix, 2 fois.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-2.mp3"
+    },
+    {
+      "id": "melodie-etape-3",
+      "display_text": "Enregistrez-vous seul·e et comparez les courbes.",
+      "tts_text": "Enregistrez-vous seule et comparez les courbes.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-3.mp3"
+    },
+    {
+      "id": "entrainement-consigne",
+      "display_text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "tts_text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/entrainement-consigne.mp3"
+    },
+    {
+      "id": "entrainement-preparation",
+      "display_text": "Notez seulement des mots-clés, pas de phrases.",
+      "tts_text": "Notez seulement des mots-clés, pas de phrases.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/entrainement-preparation.mp3"
+    },
+    {
+      "id": "essai-1",
+      "display_text": "Parlez avec vos notes : votre nom, votre nationalité, votre ville, puis la commande.",
+      "tts_text": "Parlez avec vos notes : votre nom, votre nationalité, votre ville, puis la commande.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-1.mp3"
+    },
+    {
+      "id": "essai-1-ajout",
+      "display_text": "Pour l'essai 2, ajoutez : « Et vous ? » et « Oui, merci, c'est tout. ». Et faites monter la voix ↗ à la fin de chaque information.",
+      "tts_text": "Pour l'essai 2, ajoutez : « Et vous ? » et « Oui, merci, c'est tout. ». Et faites monter la voix à la fin de chaque information.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-1-ajout.mp3"
+    },
+    {
+      "id": "essai-2",
+      "display_text": "Votre formateur joue le serveur et vous pose une question. Répondez.",
+      "tts_text": "Votre formateur joue le serveur et vous pose une question. Répondez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-2.mp3"
+    },
+    {
+      "id": "essai-2-ajout",
+      "display_text": "Pour l'essai 3, finissez avec : « L'addition, s'il vous plaît. » puis « Merci, bonne journée ! Au revoir ! »",
+      "tts_text": "Pour l'essai 3, finissez avec : « L'addition, s'il vous plaît. » puis « Merci, bonne journée ! Au revoir ! »",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-2-ajout.mp3"
+    },
+    {
+      "id": "essai-3",
+      "display_text": "Sans vos notes. Seulement l'essentiel.",
+      "tts_text": "Sans vos notes. Seulement l'essentiel.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-3.mp3"
+    },
+    {
+      "id": "serveur-question-1",
+      "display_text": "Carte ou espèces ?",
+      "tts_text": "Carte ou espèces ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-1.mp3"
+    },
+    {
+      "id": "serveur-question-2",
+      "display_text": "C'est tout ?",
+      "tts_text": "C'est tout ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-2.mp3"
+    },
+    {
+      "id": "serveur-question-3",
+      "display_text": "Pardon, vous vous appelez comment ?",
+      "tts_text": "Pardon, vous vous appelez comment ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-3.mp3"
+    },
+    {
+      "id": "serveur-question-4",
+      "display_text": "Désolé, il n'y a plus de jus d'orange. Vous voulez autre chose ?",
+      "tts_text": "Désolé, il n'y a plus de jus d'orange. Vous voulez autre chose ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-4.mp3"
+    },
+    {
+      "id": "apres-consigne",
+      "display_text": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "tts_text": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/apres-consigne.mp3"
+    },
+    {
+      "id": "apres-bilan",
+      "display_text": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
+      "tts_text": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/apres-bilan.mp3"
+    },
+    {
+      "id": "objectif-consigne",
+      "display_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "tts_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/objectif-consigne.mp3"
+    },
+    {
+      "id": "semaine-1",
+      "display_text": "Jour 1 : Répétez les 4 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "tts_text": "Jour 1 : Répétez les 4 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-1.mp3"
+    },
+    {
+      "id": "semaine-2",
+      "display_text": "Jour 2 : Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "tts_text": "Jour 2 : Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-2.mp3"
+    },
+    {
+      "id": "semaine-3",
+      "display_text": "Jour 3 : Présentez-vous à voix haute en 4 phrases : nom, nationalité, ville, langues. Enregistrez-vous.",
+      "tts_text": "Jour 3 : Présentez-vous à voix haute en 4 phrases : nom, nationalité, ville, langues. Enregistrez-vous.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-3.mp3"
+    },
+    {
+      "id": "semaine-4",
+      "display_text": "Jour 4 : Enregistrez 1 minute : vous vous présentez et vous commandez au café. Envoyez-la à votre formateur.",
+      "tts_text": "Jour 4 : Enregistrez 1 minute : vous vous présentez et vous commandez au café. Envoyez-la à votre formateur.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-4.mp3"
+    }
+  ]
+}

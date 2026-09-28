@@ -1634,11 +1634,8 @@ window.IMPACT60 = {
     }
   ],
   "voix": {
-    "neuronale": "fr-FR-RemyMultilingualNeural",
-    "dossiers": {
-      "formateur": "audio/formateur/",
-      "neuronale": "audio/neuronal/"
-    }
+    "moteur": "Qwen3-TTS-12Hz-1.7B-Base-8bit",
+    "dossier": "audio/qwen3-tts/"
   },
   "formateur": {
     "deroule": [
