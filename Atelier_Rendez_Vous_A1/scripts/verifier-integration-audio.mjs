@@ -31,7 +31,8 @@ for(const [id,clip] of Object.entries(current)){
 }
 for(const id of Object.keys(manifest.clips))if(!current[id])errors.push(`MP3 orphelin : ${id}`);
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-if(!html.includes('<script src="audio/catalogue.js"></script>')||
+if(!/<script src="contenu\.js(?:\?[^\"]*)?"><\/script>/.test(html)||
+   !/<script src="audio\/catalogue\.js(?:\?[^\"]*)?"><\/script>/.test(html)||
    !html.includes('audio/qwen3-tts/manifest.json'))errors.push('Lecteur non relié au catalogue');
 console.log(`${Object.keys(current).length} entrées ; ${Object.keys(manifest.clips).length} MP3 ; ${errors.length} erreur(s)`);
 for(const error of errors)console.error(error);

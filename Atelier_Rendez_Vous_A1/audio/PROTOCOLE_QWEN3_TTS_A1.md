@@ -30,6 +30,8 @@ Le générateur est reprenable : il ne refait que les entrées dont le texte, le
 
 Pour réessayer un clip sans changer son texte, utilisez `--all --force-id identifiant` ; le générateur change alors sa graine aléatoire. Vérifiez le nouveau clip par transcription **et** écoute avant de le retenir. Une correction uniquement visuelle met à jour le manifeste sans regénérer inutilement le son.
 
+Après toute mise à jour de `contenu.js` ou `audio/catalogue.js` sur GitHub Pages, augmentez leur paramètre `?v=` dans `index.html`. Sinon, un navigateur peut combiner une ancienne version de ces scripts avec le nouveau manifeste et masquer des boutons audio. Les MP3 utilisent déjà leur empreinte SHA dans l'URL ; le manifeste est demandé sans cache.
+
 ## Validation indispensable avant usage pédagogique
 
 `qa-transcription.json` compare le texte prévu à une transcription Whisper et signale les écarts lexicaux. Cela ne mesure **ni** la justesse de l'accent, **ni** la liaison, **ni** la courbe intonative, **ni** le naturel de la voix. Les homophones (`il/ils`, `paie/paient`, `espèce/espèces`) créent des faux positifs.

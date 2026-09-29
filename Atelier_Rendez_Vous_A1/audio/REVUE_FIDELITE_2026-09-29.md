@@ -7,6 +7,7 @@
 - Le nouveau contrôle `node scripts/verifier-fidelite-texte.mjs` trouve **0 divergence lexicale sur 208** après neutralisation de la typographie muette, des nombres écrits en chiffres et des variantes orthographiques de genre homophones.
 - L'inspection des neuf écrans interactifs ne trouve plus de divergence entre le texte adjacent au bouton et son intitulé audio. Les quatre phrases à trous sont l'exception de présentation : le champ `…` matérialise le mot volontairement absent.
 - Après « Vérifier », la phrase complète est maintenant affichée à côté de son audio, même lorsque la réponse saisie était correcte. Avant cela, ni le texte ni le bouton de cette correction ne sont visibles.
+- Le site charge `contenu.js` et `audio/catalogue.js` avec une version d'URL renouvelée : un ancien cache navigateur ne peut plus masquer les nouveaux boutons par incompatibilité avec le manifeste.
 - `qa-transcription.json` contient une transcription de contrôle pour les 208 MP3. Les écarts signalés par Whisper restent des **alertes**, pas des preuves d'une erreur de prononciation.
 
 ## Corrections de contenu et d'interface
