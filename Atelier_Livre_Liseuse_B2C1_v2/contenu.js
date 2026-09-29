@@ -45,7 +45,7 @@ window.IMPACT60 = {
     "plan": [
       {
         "titre": "Reconnaître",
-        "aide": "C'est pas faux. / C'est vrai que…"
+        "aide": "C'est pas faux. Ou : c'est vrai que…"
       },
       {
         "titre": "Nuancer",
@@ -167,7 +167,7 @@ window.IMPACT60 = {
         {
           "avant": "Un livre en papier, ça se",
           "apres": ".",
-          "aide": "on le donne à quelqu'un, qui le rend ensuite",
+          "aide": "on le donne à quelqu'un, qui le rend ensuite.",
           "reponses": [
             "prête"
           ],
@@ -271,7 +271,7 @@ window.IMPACT60 = {
         "debut": 620.3,
         "fin": 637.5
       },
-      "exemple": "C'est pas faux, le papier coûte cher. Mais il faudrait plutôt réduire les impressions que tout passer sur tablette.",
+      "exemple": "C'est pas faux, le papier coûte cher. Mais il faudrait plutôt réduire les impressions au lieu de tout passer sur tablette.",
       "detect": [
         "c est pas faux",
         "ce n est pas faux",
@@ -284,7 +284,7 @@ window.IMPACT60 = {
     "regle": [
       "Coupez votre phrase en groupes courts.",
       "Faites une petite pause <strong>avant</strong> « sauf que », « mais », « or ».",
-      "Faites les liaisons obligatoires : « les auteurs » se dit « lé-<strong>z</strong>auteurs », « deux expressos » se dit « deu-<strong>z</strong>expressos »."
+      "Faites les liaisons obligatoires : dans « les auteurs » et « deux expressos », prononcez un son « z » entre les mots."
     ],
     "attention": "Sans la pause, votre nuance sonne comme une contradiction brutale. Les flèches ↗ ↘ montrent la mélodie <strong>mesurée</strong> dans la vidéo.",
     "perception": [
@@ -292,7 +292,7 @@ window.IMPACT60 = {
         "titre": "Phrase 1",
         "phrase": "Qu'un ou deux *ex·pres·sos bien tassés.",
         "consigne": "Écoutez. Sur quelle syllabe entendez-vous un son [z] qui n'est pas écrit ? Cliquez dessus.",
-        "explication": "« deux[z]expressos » : on entend « de-<strong>z</strong>ex-pres-sos ». Après « deux », « trois », « les », « des », la liaison est obligatoire devant une voyelle.",
+        "explication": "Dans « deux expressos », on entend le son « z » entre les deux mots. Après « deux », « trois », « les » et « des », la liaison est obligatoire devant une voyelle.",
         "debut": 307.8,
         "fin": 312.9
       },
@@ -300,7 +300,7 @@ window.IMPACT60 = {
         "titre": "Phrase 2",
         "phrase": "C'est pas faux. Les *au·tri·ces, les *au·teurs, les li·brai·res, les mai·sons d'é·di·tion.",
         "consigne": "Écoutez. Sur quelles syllabes entendez-vous un son [z] ? Cliquez sur les 2 syllabes, puis vérifiez.",
-        "explication": "« les[z]autrices, les[z]auteurs » : liaison obligatoire devant une voyelle. Devant une consonne (« les libraires », « les maisons »), pas de liaison.",
+        "explication": "Dans « les autrices » et « les auteurs », on entend le son « z ». La liaison est obligatoire devant une voyelle. Devant une consonne, comme dans « les libraires » ou « les maisons », il n'y a pas de liaison.",
         "debut": 620.3,
         "fin": 625.9
       }
@@ -1026,11 +1026,9 @@ window.IMPACT60 = {
     }
   ],
   "voix": {
-    "neuronale": "fr-FR-RemyMultilingualNeural",
-    "dossiers": {
-      "formateur": "audio/formateur/",
-      "neuronale": "audio/neuronal/"
-    }
+    "modele": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+    "dossier": "audio/qwen3-tts/",
+    "generation": "locale avant publication"
   },
   "formateur": {
     "deroule": [
