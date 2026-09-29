@@ -1,0 +1,1718 @@
+{
+  "asr_model": "mlx-community/whisper-large-v3-turbo",
+  "limitation": "La transcription ne mesure pas la prosodie native.",
+  "clips": {
+    "accueil-objectif": {
+      "sha256": "f1368ee4eba9346a03138794d65e7fd1d3eaf69a669226868076ca242dafef47",
+      "text": "Aujourd'hui, vous apprenez à reconnaître ce qui est vrai dans une idée, puis à la nuancer avec un argument et à proposer une solution. En 1 minute, sans chercher vos mots.",
+      "transcribed": "Aujourd'hui, vous apprenez à reconnaître ce qui est vrai dans une idée, puis à la nuancer avec un argument et à proposer une solution. En minutes sans chercher vos mots.",
+      "word_error_rate": 0.0625,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-lieu": {
+      "sha256": "e34c81a3bd236aab02cd9e30ef90ca48369f1a9a7db728a76ebffbe29593c36a",
+      "text": "En réunion d'équipe",
+      "transcribed": "En réunion d'équipe,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-qui": {
+      "sha256": "05c6f6a6e5b5f13ec121fb166298af5a510ec6a154b886c7050f3ad7b32172e2",
+      "text": "Une collègue dit :",
+      "transcribed": "Une collègue dit",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-dialogue": {
+      "sha256": "199bf9be26f990def58951d4c846e86befade9e90facabc834fe66dbf6adef59",
+      "text": "« À partir de lundi, on passe au zéro papier : tout sur tablette. C'est plus écolo, c'est évident ! »",
+      "transcribed": "À partir de lundi, on passe au zéro papier, tout sur tablette. C'est plus écolo, c'est évident.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-vous": {
+      "sha256": "7f1525a4894d7218d3513d14b6ed62b7b4b79d2fc7d7a6071179aa3e8a9ae14f",
+      "text": "Vous êtes d'accord sur une partie, mais ce n'est pas si simple. Reconnaissez ce qui est vrai, nuancez avec un argument, puis proposez une solution.",
+      "transcribed": "Vous êtes d'accord sur une partie, mais ce n'est pas si simple. Reconnaissez ce qui est vrai, nuancez avec un argument, puis proposez une solution.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-consigne": {
+      "sha256": "c051ce8ff4b0ce184903850bfc0c213d6448b276c201ca56c0a5876614bf4a90",
+      "text": "Répondez-lui. En une minute.",
+      "transcribed": "Répondez-lui en une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-question": {
+      "sha256": "d7883c9e0f7d42bd72fb3e7c86d3aa77a6cf9d200e44fc5e89aaaffeb81726f8",
+      "text": "Vous préférez un sujet de votre travail ? (facultatif) Dans votre entreprise, quelle idée « évidente » mériterait d'être nuancée ?",
+      "transcribed": "Vous préférez un sujet de votre travail, facultatif ? Dans votre entreprise, quelle idée évidente mériterait d'être nuancée ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1-titre": {
+      "sha256": "5f01446dd7e9ef489eb5c0edba7a65c2fa3771a7c1451155f4abadb8085456e9",
+      "text": "Reconnaître",
+      "transcribed": "Reconnaître.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1-exemple": {
+      "sha256": "11d790610721010e392bd2c05fbc9eb7177979c686cdb98c21dd0978fe915f35",
+      "text": "C'est pas faux. Ou : c'est vrai que…",
+      "transcribed": "C'est pas faux. Ou c'est vrai que...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-2-titre": {
+      "sha256": "3c66d0493f7e556b7938456e8fd97369dff08ad9f01f843129faa1d4c619a8d8",
+      "text": "Nuancer",
+      "transcribed": "nuancé.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "plan-2-exemple": {
+      "sha256": "a4a3c34590bfc08e3e58ec6c4fb26e14920a629f2628e494f7c7cf55850f025a",
+      "text": "Sauf que…",
+      "transcribed": "Sauf que.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3-titre": {
+      "sha256": "97f151b575d41cb6f7d74b74f8f5b411525033931c6425cf718c075f7d6ccbf9",
+      "text": "Un argument",
+      "transcribed": "un argument.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3-exemple": {
+      "sha256": "a93a8805d159aa07ae2fa5a58f1dc0f51d77cc44b61d107823191b55cd5a80bb",
+      "text": "Si on fait bien les comptes…",
+      "transcribed": "Si on fait bien les comptes,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4-titre": {
+      "sha256": "fb1d108094bb377495a3a11f4977664cda65efb05c502edd23104e0a3129bee0",
+      "text": "Proposer",
+      "transcribed": "proposer",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4-exemple": {
+      "sha256": "139d00d417bf759d053140e515acf606c12d833a4766bc599bcd5464f76649ee",
+      "text": "Il faudrait plutôt…",
+      "transcribed": "il faudrait plutôt",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avant-consigne": {
+      "sha256": "2489f8b6531724e8478ef9427ce43cb79634b4d0227f8f9f98bde460e0c667cd",
+      "text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore une minute : vous verrez la différence.",
+      "transcribed": "Donnez votre avis sur le sujet sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore une minute. Vous verrez la différence.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-1": {
+      "sha256": "02941c1d2622255ef3699a18a7732f0286d0ca2b6090e4fa32237f9518a674b4",
+      "text": "Je cherchais mes mots",
+      "transcribed": "Je cherchais mes mots.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-2": {
+      "sha256": "257de1415f3654aa14b11af53795e0476f25eca5cb848dd832f766f07d9b377e",
+      "text": "J'ai dit « oui » ou « non », sans nuance",
+      "transcribed": "J'ai dit oui ou non, sans nuance.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-3": {
+      "sha256": "481e1c7a78e00b820880474348e560e281aeeb120b00e620d5fbc4c6a0efc04d",
+      "text": "Je n'avais pas d'argument concret",
+      "transcribed": "Je n'avais pas d'argument concret.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-4": {
+      "sha256": "dccb8bd9a6ad408deb4530cfd7b1140e56cb5da9ddbd2761a68ccace56e06fcc",
+      "text": "Je n'étais pas sûre de ma prononciation",
+      "transcribed": "Je n'étais pas sûre de ma prononciation.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-5": {
+      "sha256": "021ba285c3a287a3df909de353ee6f62bf282c0a2bb4d6dda67e8d8ecd6e23ba",
+      "text": "Rien de spécial",
+      "transcribed": "Rien de spécial !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-consigne": {
+      "sha256": "88c1533a66d690c3b7ce022c9f140a5df3dcf1e2a9a9ee8d3a16515d95935df0",
+      "text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "transcribed": "deux extraits courts. Pour chaque extrait, devinez, écoutez, répondez, réécoutez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-pourquoi": {
+      "sha256": "384e2c1fe6c6d8144d8546502189060345bafb57a24c3568f4663663721817a2",
+      "text": "Pourquoi cet extrait ? Un personnage croit avoir trouvé la solution. L'expert le freine, puis nuance avec des faits. C'est ce que vous allez faire.",
+      "transcribed": "Pourquoi cet extrait ? Un personnage croit avoir trouvé la solution. L'expert le freine, puis nuance avec des faits. C'est ce que vous allez faire.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-devine": {
+      "sha256": "5a529fdb7f855f64942f855fceef733811cbb9a710d5a834a75f74e35482070a",
+      "text": "Un personnage dit : « Ce qu'il faut, c'est dématérialiser (= tout mettre en numérique). » À votre avis, une liseuse est-elle vraiment « sans matière » ? Répondez à voix haute.",
+      "transcribed": "Un personnage dit « Ce qu'il faut, c'est dématérialiser, tout mettre en numérique. » À votre avis, une liseuse est-elle vraiment sans matière ? Répondez à voix haute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1": {
+      "sha256": "d6bff8d111b44a890a6d63d89875c09c14308f20a8a164ebd13bc0a182d08ebc",
+      "text": "Pourquoi l'expert dit-il qu'une liseuse n'est « pas du tout dématérialisée » ?",
+      "transcribed": "Pourquoi l'expert dit-il qu'une liseuse n'est pas du tout dématérialisée ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-1": {
+      "sha256": "afb67f7765044751a00d55c12378713559e8c090ea766937f9da8cb219106923",
+      "text": "Parce qu'elle consomme beaucoup d'électricité.",
+      "transcribed": "parce qu'elle consomme beaucoup d'électricité.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-2": {
+      "sha256": "dcd1d9108f97d493441f6be6761ea94b663a723c833796046ecd386bc10c83f4",
+      "text": "Parce qu'il faut du plastique et beaucoup de métaux pour la fabriquer.",
+      "transcribed": "parce qu'il faut du plastique et beaucoup de métaux pour la fabriquer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-3": {
+      "sha256": "8763ee88ef2a995d91d8b96e564291af52bf4f5940bbcbdbe8674fb33f39e727",
+      "text": "Parce qu'on ne peut pas y mettre beaucoup de livres.",
+      "transcribed": "parce qu'on ne peut pas y mettre beaucoup de livres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-explication": {
+      "sha256": "1c8eb2f18036fb6adcfeb3a324f2cc2e5cabf210b1b844bb5f3b56247abd9130",
+      "text": "« Il faut du plastique pour l'objet en lui-même », puis de l'aluminium, du cuivre, de l'indium, de l'étain… des métaux « arrachés à la terre ».",
+      "transcribed": "Il faut du plastique pour l'objet en lui-même, puis de l'aluminium, du cuivre, de l'indium, de l'étain, des métaux arrachés à la terre.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2": {
+      "sha256": "02f5aedaabd1d3cf5090215de3f25cc17f692aaa201c755cdc213828957f7056",
+      "text": "Selon la vidéo, l'exploitation minière est…",
+      "transcribed": "Selon la vidéo, l'exploitation minière est…",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-1": {
+      "sha256": "ac4af36a684a5ab8deb43a905ecf5ff6ebd9248b13c48597af05c01eb82fe984",
+      "text": "la première cause de déforestation dans le monde.",
+      "transcribed": "la première cause de déforestation dans le monde.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-2": {
+      "sha256": "38258a60b495a935c6c8e27dcead7c5c6be25f5a6340c64e40e8280217f5c94d",
+      "text": "la troisième cause de déforestation dans le monde.",
+      "transcribed": "la troisième cause de déforestation dans le monde.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-3": {
+      "sha256": "31a015b261421c7a65d596d36b0cdcc1aaf544c58e3dfed6ba5aeabe80d58d83",
+      "text": "sans effet sur les forêts.",
+      "transcribed": "sans effet sur les forêts.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-explication": {
+      "sha256": "960bf5f82d3c9fdedefe7b4d2ca21990e19d7c4e1e214b4595447ea01e4c27de",
+      "text": "« L'exploitation minière représente la troisième cause de déforestation dans le monde. » Les mines obligent d'abord à « raser des forêts ».",
+      "transcribed": "L'exploitation minière représente la troisième cause de déforestation dans le monde. Les mines obligent d'abord à raser des forêts.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1": {
+      "sha256": "ae8955f0d7848aefab4e860dce017ee1ef49e936baba5da14d9af282b1ac4490",
+      "text": "Au contraire, c'est même très très….",
+      "transcribed": "Au contraire, c'est même très très.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1-aide": {
+      "sha256": "dd0a0fc8dc49d803a2eccd65fd31ee5b091857181be49eb4b5985ae6f608b7e7",
+      "text": "Aide : le contraire de « dématérialisé »",
+      "transcribed": "Aide, le contraire de dématérialiser.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1-solution": {
+      "sha256": "763892fa4f41601a325a79f96bd90883a66fe35ece0f8885931bb10067eed7b9",
+      "text": "Au contraire, c'est même très très matériel.",
+      "transcribed": "Au contraire, c'est même très très matériel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2": {
+      "sha256": "f758bc1d01e96fc3295ec971f68b81ceae9947ac02bd414489c6b3feff4119e8",
+      "text": "…l'étain, toute une… de métaux plus ou moins rares.",
+      "transcribed": "l'étain, toute une, de métaux plus ou moins rares.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2-aide": {
+      "sha256": "dea08f57f66ab0e4b355b22e78aee4c212abee29d7da922ba59a82e60a9fed19",
+      "text": "Aide : familier : = une grande quantité",
+      "transcribed": "aide, familier, une grande quantité.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2-solution": {
+      "sha256": "c1045448546a0c8dfea1cb0993654ba27c9208e20807368d4d372331490aa1d2",
+      "text": "…l'étain, toute une floppée de métaux plus ou moins rares.",
+      "transcribed": "L'étain, toute une flopée de métaux plus ou moins rares.",
+      "word_error_rate": 0.0909,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-difficile": {
+      "sha256": "85a0456a014405b501dd027bdd8e5bd8768ce4d2a373d6efbf9405a6c73ddbd1",
+      "text": "Une liste de métaux, très vite : « de l'aluminium, du cuivre, de l'indium, de l'étain, toute une floppée de métaux plus ou moins rares arrachés à la terre ». Pas besoin de tout retenir. Retenez l'expression utile : toute une floppée de (familier, = beaucoup de).",
+      "transcribed": "Une liste de métaux, très vite. De l'aluminium, du cuivre, de l'indium, de l'étain, toute une flopée de métaux plus ou moins rares arrachés à la terre. Pas besoin de tout retenir. Retenez l'expression utile, toute une flopée de « familier » égale beaucoup de « ».",
+      "word_error_rate": 0.0652,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-pourquoi": {
+      "sha256": "4464b1aa14ae7c7c2950ff8f3e1de33de876424f15705134d9a7ca8b0235afac",
+      "text": "Pourquoi cet extrait ? Les personnages veulent la liseuse… et les livres papier. L'expert montre, chiffres à l'appui, que ce n'est pas si simple.",
+      "transcribed": "Pourquoi cet extrait ? Les personnages veulent la liseuse et les livres papier. L'expert montre, chiffre à l'appui, que ce n'est pas si simple.",
+      "word_error_rate": 0.0385,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-devine": {
+      "sha256": "ffbbf34d3c954710da76d09c921deed5eec2721a8249b4f9004a5be98c1f0119",
+      "text": "Beaucoup de gens ont une liseuse. À votre avis, est-ce qu'ils arrêtent d'acheter des livres papier ? Répondez à voix haute.",
+      "transcribed": "Beaucoup de gens ont une liseuse. À votre avis, est-ce qu'ils arrêtent d'acheter des livres papiers ? Répondez à voix haute.",
+      "word_error_rate": 0.0435,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1": {
+      "sha256": "9fb9f84d19d4441a3dbb5c81fd42cd5754de23e2123703d53d140f2ecdeff972",
+      "text": "Combien d'utilisateurs de liseuses lisent seulement des livres numériques ?",
+      "transcribed": "Combien d'utilisateurs de liseuses lisent seulement des livres numériques ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-1": {
+      "sha256": "2e299c3e6f3093cf8cb05501d99df227253acc1ea039b9f5e7004b256a61b0d6",
+      "text": "un pour cent",
+      "transcribed": "1%.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-2": {
+      "sha256": "ba9d8823e8b7a9cdc27774debda1a602ed58b5b5880c39322b3a6bc410119a0a",
+      "text": "quarante pour cent",
+      "transcribed": "40%",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-3": {
+      "sha256": "9705160307fe9b58f248e64251ab44a4af276943705848d58870a6026e413a95",
+      "text": "quatre-vingt-dix-neuf pour cent",
+      "transcribed": "99%",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-explication": {
+      "sha256": "32fce3ba1c40c98641cb24ec625402ede502a0c0d9149d0a328d87470ab96575",
+      "text": "« Seul un pour cent des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. » Les quatre-vingt-dix-neuf pour cent restants achètent aussi des livres papier.",
+      "transcribed": "Seuls 1% des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. Les 99% restants achètent aussi des livres papiers.",
+      "word_error_rate": 0.069,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2": {
+      "sha256": "31fdc9d8c5f1e579a6a8d5400b9d157a76a10e86eec0014d7226a0f1cb820b9a",
+      "text": "Vous prêtez un livre papier à votre colocataire, qui le lit. Selon la vidéo, son impact…",
+      "transcribed": "vous prêtez un livre papier à votre colocataire qui le lit. Selon la vidéo, son impact...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-1": {
+      "sha256": "09520533a05a4778a30f21e60070cf9651619fe032459929f2949cc211de8e6b",
+      "text": "double.",
+      "transcribed": "double.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-2": {
+      "sha256": "e4036d3cba2c4b1f96e5f2bb28798e0e3873c7a83080155b180c73df241471f9",
+      "text": "ne change pas.",
+      "transcribed": "ne change pas.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-3": {
+      "sha256": "9d0e14a89ee767da34b305bf303a7375dff52e521471dabc78830ae5f5c3d93d",
+      "text": "est divisé par deux.",
+      "transcribed": "est divisé par deux.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-explication": {
+      "sha256": "bf24a7d23bbeb7e938665670075b21d1fd7f473cbc4f2f323dc53ec4276b54dc",
+      "text": "« Vous divisez par deux son impact environnemental », car « le livre a été fabriqué une fois, mais il a rendu son service deux fois ».",
+      "transcribed": "Vous divisez par deux son impact environnemental, car le livre a été fabriqué une fois, mais il a rendu son service deux fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1": {
+      "sha256": "65ef112c1f98d62b9baf26fb4afb8a291fd9772bdfb99e34a0e47316957e3c0b",
+      "text": "Mais tu as raison, je vais faire… la facture environnementale.",
+      "transcribed": "Mais tu as raison, je vais faire la facture environnementale.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1-aide": {
+      "sha256": "9b04a61b611b529844971de2de8b1a3b0297da66e03f343ad3ea50ecd34a2e8b",
+      "text": "Aide : familier : faire … = faire exploser",
+      "transcribed": "Aide, familier, faire, exploser.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1-solution": {
+      "sha256": "7aa5957504c34bfbc1aa5e4200a8be1e4cc59c18cf9704bb58c79de16fcd0495",
+      "text": "Mais tu as raison, je vais faire péter la facture environnementale.",
+      "transcribed": "Mais tu as raison, je vais faire péter la facture environnementale.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2": {
+      "sha256": "c0a173f7203052270958a92d91dbe536745a9ddba176aa4677085a22f184b133",
+      "text": "Un livre en papier, ça se….",
+      "transcribed": "Un livre en papier, ça se...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2-aide": {
+      "sha256": "083030c466719c4074738245fb49269e9cc1abdbe46bf0ea5cbaf19698b6e56a",
+      "text": "Aide : on le donne à quelqu'un, qui le rend ensuite.",
+      "transcribed": "Aide, on le donne à quelqu'un qui le rend ensuite.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2-solution": {
+      "sha256": "6781aa8681b3af38eb5f1d77c5c7330056353d750600a35e25ddee60c7044620",
+      "text": "Un livre en papier, ça se prête.",
+      "transcribed": "Un livre en papier, ça se prête.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-difficile": {
+      "sha256": "416874ebfe5221519fddd0235cb0c359d8da27468d3b2f903a3e70fc7cc99e98",
+      "text": "Des pourcentages, très vite : « Seul un pour cent des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. Les quatre-vingt-dix-neuf pour cent restants achètent aussi des livres papier en plus des livres numériques. » Écoutez « ne lisent que » (= lisent seulement) et « les quatre-vingt-dix-neuf pour cent restants » (= les autres).",
+      "transcribed": "Des pourcentages très vite. Seuls 1% des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. Les 99% restants achètent aussi des livres papiers en plus des livres numériques. Écoutez, ne lisent que « Lise seulement » et les 99% restants, les autres.",
+      "word_error_rate": 0.0545,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-consigne": {
+      "sha256": "6bfc839bcd50a349c0bd14c6e44ce289ff1f50143d6bf813b57311be61002781",
+      "text": "Six phrases de la vidéo, très utiles en réunion. Pour chaque phrase : un, écoutez-la dans la vidéo ; deux, répétez-la à voix haute ; trois, dites votre propre phrase.",
+      "transcribed": "6 phrases de la vidéo très utiles en réunion. Pour chaque phrase, 1. Écoutez-la dans la vidéo. 2. Répétez-la à voix haute. 3. Dites votre propre phrase.",
+      "word_error_rate": 0.1379,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-rappel": {
+      "sha256": "99633f12d07a3da293e035bfd09d04b4f323075cb5861c91bf05d4f87608d772",
+      "text": "Lisez « à quoi elle sert », dites la phrase à voix haute, puis cliquez sur « Voir la phrase ».",
+      "transcribed": "Lisez à quoi elle sert, dites la phrase à voix haute, puis cliquez sur « Voir la phrase ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-utilite": {
+      "sha256": "a5215f28bb97531e17571038cce37e9c9b77c60feae9c47ed14a047189f736c9",
+      "text": "Pour reconnaître un point, puis nuancer",
+      "transcribed": "pour reconnaître un point, puis nuancer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-forme": {
+      "sha256": "a9196dd68ace35eedb29f54df587ca2eb6461eb6e631baced9e2cb07b90ad03a",
+      "text": "C'est vrai, sauf que…",
+      "transcribed": "C'est vrai, sauf que...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-exemple": {
+      "sha256": "04c109de88cd4748ecf638eea6a18ce9b82e9c709e28166f4cf4eb71839af28b",
+      "text": "C'est vrai que la visio fait gagner du temps, sauf qu'on perd souvent les échanges informels.",
+      "transcribed": "C'est vrai que la visio fait gagner du temps, sauf qu'on perd souvent les échanges informels.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-avous": {
+      "sha256": "757660e3b6a401c0da8bd5d538eb6a2bba87ac863d4f8f20e8a070bbe4bb017e",
+      "text": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-utilite": {
+      "sha256": "de7f2ee51b5488733ab4dd9c02e1cedcd847decf4a168066cc95586f82fc6922",
+      "text": "Pour freiner quelqu'un qui conclut trop vite",
+      "transcribed": "pour freiner quelqu'un qui conclut trop vite",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-forme": {
+      "sha256": "44298c684ae9b5907a1e50762965b658dbeeb26680240fb5060a59cf2656b64d",
+      "text": "Pas si vite !",
+      "transcribed": "Pas si vite !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-exemple": {
+      "sha256": "d8f43f1ff0d0900fc7ce7813080744ba54d9c231781c18301c7df8ef2f02f714",
+      "text": "Pas si vite : avant de tout changer, regardons d'abord les chiffres.",
+      "transcribed": "Pas si vite, avant de tout changer, regardons d'abord les chiffres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-avous": {
+      "sha256": "757660e3b6a401c0da8bd5d538eb6a2bba87ac863d4f8f20e8a070bbe4bb017e",
+      "text": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-utilite": {
+      "sha256": "154416aa760ddd94c47d2952c7cbc3e97c26157231a4990a4032eddd197f83a8",
+      "text": "Pour demander une comparaison honnête",
+      "transcribed": "Pour demander une comparaison honnête,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-forme": {
+      "sha256": "6731c0f56acb84ca9c2aa9bba8e421fbc9ee51c1798e79247bb072c097abde98",
+      "text": "Il faut comparer ce qui est comparable.",
+      "transcribed": "Il faut comparer ce qui est comparable.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-exemple": {
+      "sha256": "b89c86d0d471a74e25304753b83c8a82655ea4f77879fc75e022647bf3c9e53d",
+      "text": "Pour choisir entre les deux logiciels, il faut comparer ce qui est comparable : le prix, mais aussi le temps de formation.",
+      "transcribed": "Pour choisir entre les deux logiciels, il faut comparer ce qui est comparable, le prix mais aussi le temps de formation.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-avous": {
+      "sha256": "757660e3b6a401c0da8bd5d538eb6a2bba87ac863d4f8f20e8a070bbe4bb017e",
+      "text": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-utilite": {
+      "sha256": "daf244b9e450d4419e3c2fcb376dd6a296e813a9083645bcc390733707d4e38a",
+      "text": "Pour appuyer sa nuance sur des faits",
+      "transcribed": "pour appuyer sa nuance sur des faits",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-forme": {
+      "sha256": "a93a8805d159aa07ae2fa5a58f1dc0f51d77cc44b61d107823191b55cd5a80bb",
+      "text": "Si on fait bien les comptes…",
+      "transcribed": "Si on fait bien les comptes,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-exemple": {
+      "sha256": "b23a86f4638417c776c7f5727152e7b4114066d14ae204f63cec0574dfa9e687",
+      "text": "Si on fait bien les comptes, le nouvel outil nous coûte plus cher que l'ancien la première année.",
+      "transcribed": "Si on fait bien les comptes, le nouvel outil nous coûte plus cher que l'ancien la première année.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-avous": {
+      "sha256": "757660e3b6a401c0da8bd5d538eb6a2bba87ac863d4f8f20e8a070bbe4bb017e",
+      "text": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-utilite": {
+      "sha256": "6965479f8ee4051234904a5d71a0f181cf4417230596856a4b6cb2512486ddc1",
+      "text": "Pour montrer que tout dépend d'une condition",
+      "transcribed": "pour montrer que tout dépend d'une condition ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-forme": {
+      "sha256": "bca2d3a10fb07668dec3ce01502a8340f4c48283c0068c335ba629dff2d9400b",
+      "text": "Plus… plus…",
+      "transcribed": "plus, plus,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-exemple": {
+      "sha256": "34e4d00647f2a0d2d4368ed0599fe05afc38d85a6cb749047389cf1c566d0de9",
+      "text": "Plus on garde nos ordinateurs longtemps, plus leur coût est amorti.",
+      "transcribed": "Plus on garde nos ordinateurs longtemps, plus leur cou est amorti.",
+      "word_error_rate": 0.0909,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-avous": {
+      "sha256": "757660e3b6a401c0da8bd5d538eb6a2bba87ac863d4f8f20e8a070bbe4bb017e",
+      "text": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-utilite": {
+      "sha256": "0932b91173fee9c5b7da825cb0593cfd2f61be435be320285e05c7b92bd3c405",
+      "text": "Pour concéder un point, puis proposer une solution",
+      "transcribed": "pour concéder un point, puis proposer une solution",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-forme": {
+      "sha256": "fa39ae4cf0133d99e1881f3ed508937ded1d93821280e76ddeae16eab5d45fca",
+      "text": "C'est pas faux… Il faudrait plutôt…",
+      "transcribed": "C'est pas faux. Il faudrait plutôt...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-exemple": {
+      "sha256": "703d13fea06ff8341016c7c2eacf7dbe5a167903f02dd0a0ef5bd093dde110e2",
+      "text": "C'est pas faux, le papier coûte cher. Mais il faudrait plutôt réduire les impressions au lieu de tout passer sur tablette.",
+      "transcribed": "C'est pas faux, le papier coûte cher. Mais il faudrait plutôt réduire les impressions au lieu de tout passer sur tablette.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-avous": {
+      "sha256": "757660e3b6a401c0da8bd5d538eb6a2bba87ac863d4f8f20e8a070bbe4bb017e",
+      "text": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-intro": {
+      "sha256": "99050d26bde8012c79f002341d868addeff8b4bf23b8b0c445cd561327a35bb7",
+      "text": "Pour nuancer, on parle en deux temps : d'abord on reconnaît (« C'est vrai »), petite pause, puis on nuance (« sauf que… »). À l'oral, chaque groupe de mots se termine par une syllabe un peu plus longue. Et on fait les liaisons obligatoires.",
+      "transcribed": "Pour nuancer, on parle en deux temps. D'abord, on reconnaît, c'est vrai. Petite pause, puis on nuance, sauf que, à l'oral, chaque groupe de mots se termine par une syllabe un peu plus longue et on fait les liaisons obligatoires.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-1": {
+      "sha256": "cff446825e2e65e90f08b8e1474c2c3bda7ee0451937c726e9b43ccc8823b5de",
+      "text": "Coupez votre phrase en groupes courts.",
+      "transcribed": "Coupez votre phrase en groupe court.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "melodie-regle-2": {
+      "sha256": "736bcc4a459d6002a8805263e60918fafb26a99bf1beea65f82553157e2c704b",
+      "text": "Faites une petite pause avant « sauf que », « mais », « or ».",
+      "transcribed": "Faites une petite pause avant « sauf que » mais « or ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-3": {
+      "sha256": "d558bec3d38a75320e1329863897dc634738c9aa4298bd75c94f6f6b1d9ac551",
+      "text": "Faites les liaisons obligatoires : dans « les auteurs » et « deux expressos », prononcez un son « z » entre les mots.",
+      "transcribed": "Faites les liaisons obligatoires. Dans « Les auteurs » et « Deux expresso », prononcez un son « z » entre les mots.",
+      "word_error_rate": 0.0588,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-attention": {
+      "sha256": "b9a4262e7f7022ef3961e4490996a81aab823915c460bf5cf981544ec78d8fd6",
+      "text": "Attention : Sans la pause, votre nuance sonne comme une contradiction brutale. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "transcribed": "Attention, sans la pause, votre nuance sonne comme une contradiction brutale. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-1": {
+      "sha256": "1118ffb0409ed69c6ecd048f91da90f2ea8b64c918fb002072d85ef6e7118592",
+      "text": "Écoutez. Sur quelle syllabe entendez-vous un son [z] qui n'est pas écrit ? Cliquez dessus.",
+      "transcribed": "Écoutez, sur quelle syllabe entendez-vous un son Z qui n'est pas écrit ? Cliquez dessus.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-1-explication": {
+      "sha256": "406c3c2d21c9ae54f49c3fc420591ea67b360438ee69b07722c01b28b0285f44",
+      "text": "Dans « deux expressos », on entend le son « z » entre les deux mots. Après « deux », « trois », « les » et « des », la liaison est obligatoire devant une voyelle.",
+      "transcribed": "Dans deux expresso, on entend le son Z entre les deux mots. Après 2, 3, les et des, la liaison est obligatoire devant une voyelle.",
+      "word_error_rate": 0.12,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-2": {
+      "sha256": "1ea336baf43f793879ae6dc6ef5d37d2ff292ab455a6f2111485125cec6dcf56",
+      "text": "Écoutez. Sur quelles syllabes entendez-vous un son [z] ? Cliquez sur les 2 syllabes, puis vérifiez.",
+      "transcribed": "Écoutez. Sur quelles syllabes entendez-vous un son ? Z. Cliquez sur les deux syllabes, puis vérifiez.",
+      "word_error_rate": 0.0625,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-2-explication": {
+      "sha256": "86541afb42b2c61571c1935cffd95026b1ccda963206cd06561d2c9d5173d4e2",
+      "text": "Dans « les autrices » et « les auteurs », on entend le son « z ». La liaison est obligatoire devant une voyelle. Devant une consonne, comme dans « les libraires » ou « les maisons », il n'y a pas de liaison.",
+      "transcribed": "Dans les autrices et les auteurs, on entend le son Z. La liaison est obligatoire devant une voyelle. Devant une consonne, comme dans les libraires ou les maisons, il n'y a pas de liaison.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-1": {
+      "sha256": "d6f434eb08d03b193cc3b426acecd23de5ddbb7849246b273675d7426244e219",
+      "text": "Écoutez la phrase 2 fois.",
+      "transcribed": "Écoutez la phrase deux fois.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-2": {
+      "sha256": "4641e63b8c089d3c7dfb52329d11fb1c3380d9d49a8834a4a91662cf6eb76e1a",
+      "text": "Parlez en même temps que la voix, 2 fois. Respectez les pauses.",
+      "transcribed": "Parlez en même temps que la voix. Deux fois. Respectez les pauses.",
+      "word_error_rate": 0.0833,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-3": {
+      "sha256": "e8467f0d59a8dad96a3b767df01ae573a6e0c8cbbb9f18f9b53c147aa66555fc",
+      "text": "Enregistrez-vous seule et comparez les courbes.",
+      "transcribed": "Enregistrez-vous seul et comparez les courbes.",
+      "word_error_rate": 0.1429,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-consigne": {
+      "sha256": "4e15129e1be3420d55d3ce3e29d723002617afae4d0c964b1c304f7ec4f2cf5b",
+      "text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "transcribed": "Le même sujet trois fois de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-preparation": {
+      "sha256": "6d57bf23cfa0130c828802cfea94fbf9310924940ad145eddd7f08a785435d84",
+      "text": "Notez seulement des mots-clés, pas de phrases.",
+      "transcribed": "Notez seulement des mots-clés, pas de phrases.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1": {
+      "sha256": "879f6ef7afa081f64281bc88d5cd3595e2290712edcd52ae381e0c38157a60fe",
+      "text": "Répondez avec vos notes, en suivant les 4 étapes.",
+      "transcribed": "répondez avec vos notes en suivant les quatre étapes.",
+      "word_error_rate": 0.1111,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1-ajout": {
+      "sha256": "8409e0da5e1c3c2da1e2fba4c68e7e48ecb9cb55786d4b0d265f46207de25245",
+      "text": "Pour l'essai 2, ajoutez : « Pas si vite… » et « Si on fait bien les comptes, … ». Et faites une petite pause avant « sauf que ».",
+      "transcribed": "pour laisser deux ajouter « pas si vite » et « si on fait bien les comptes » et « faites une petite pause avant, sauf que ».",
+      "word_error_rate": 0.1739,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2": {
+      "sha256": "3744ef219bab492cc61dae9ab4c7c1b6ef065398db2211df9c40395d1d5dc674",
+      "text": "Votre formateur joue la collègue et réagit. Répondez, puis concédez un point : « C'est pas faux… »",
+      "transcribed": "Votre formateur joue la collègue et réagit. Répondez, puis concédez un point. C'est pas faux.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2-ajout": {
+      "sha256": "fbb9d8aa02c7c6ed4e8a6ad02c6e697fde3ff6aafb08df221ebb653d21cad5ae",
+      "text": "Pour l'essai 3, terminez par une proposition : « Il faudrait plutôt… ».",
+      "transcribed": "Pour l'essai 3, terminez par une proposition. Il faudrait plutôt...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-3": {
+      "sha256": "eec72f981dab1b69895e8de8f25577aee70ee2d4e1f5c346d956e89ee808b7a0",
+      "text": "Sans vos notes. Seulement l'essentiel : reconnaître, nuancer, proposer.",
+      "transcribed": "Sans vos notes, seulement l'essentiel, reconnaître, nuancer, proposer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "collegue-objection-1": {
+      "sha256": "edfbd4d484836bd4556a775599c689abef6068834662c8d9cc20b3f3987d38d0",
+      "text": "Mais le papier, ce sont des arbres coupés !",
+      "transcribed": "Mais le papier, ce sont des arbres coupés.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "collegue-objection-2": {
+      "sha256": "37b1cabaa8fb824f70b97281460e55a990e4544fc7b8d113797e5620dc13674b",
+      "text": "Franchement, s'il faut faire des maths pour tout décider…",
+      "transcribed": "Franchement, s'il faut faire des maths pour tout décider.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "collegue-objection-3": {
+      "sha256": "d1520b050205bff75e0ea8e3f37fd8f02563eb33ca8cfbba5746d27ea3914fc6",
+      "text": "Tout le monde le fait, pourquoi pas nous ?",
+      "transcribed": "Tout le monde le fait, pourquoi pas nous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "collegue-objection-4": {
+      "sha256": "0c48a89994d21f5f46077110f322502be0f6170c547ae890b48f034fda74c37e",
+      "text": "Et les tablettes, on les a déjà : c'est gratuit, non ?",
+      "transcribed": "Et les tablettes, on les a déjà. C'est gratuit, non ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-consigne": {
+      "sha256": "be8a3dda3376edbfe173a4755b61f43753c1f5b7ff81c3d0cfa4e6ab462490de",
+      "text": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "transcribed": "le même sujet qu'au début. Parlez une minute sans vos notes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-bilan": {
+      "sha256": "6837b39bb597ddedc1cdd7e130872c309dbd07a4bf3cd3fe5863b9ff24740d7d",
+      "text": "Réécoutez-vous et cochez.",
+      "transcribed": "Réécoutez-vous et cochez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "objectif-consigne": {
+      "sha256": "a37692278f3b34237f278154834289aac90ad1c06750685f758fffdc8b378007",
+      "text": "Choisissez une phrase utile. Dites-la cette semaine, dans une vraie réunion ou un vrai appel.",
+      "transcribed": "Choisissez une phrase utile. Dites-la cette semaine dans une vraie réunion ou un vrai appel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-1": {
+      "sha256": "2c7fa88d6b4a65c3fe5ae0493750879ed9b9a64b0b2bd68407a21b64a6f7446d",
+      "text": "Jour 1 : Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "transcribed": "Jour 1. Répétez les trois phrases de la mélodie avec la vidéo en même temps que la voix. 5 minutes.",
+      "word_error_rate": 0.05,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-2": {
+      "sha256": "f810ec85e5a5d7ca043b2361135e61b214286952541b07c1fa371fec413028df",
+      "text": "Jour 2 : Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "transcribed": "Jour 2. Dites les six phrases utiles sans regarder. Bouton « Vérifier sans regarder ».",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-3": {
+      "sha256": "989ecdf58892837e1a5b4e89090b0cddec39deb77402e19be0344a7fe3451d6e",
+      "text": "Jour 3 : En réunion, nuancez une fois avec : « C'est vrai, sauf que… ».",
+      "transcribed": "Jour 3, en réunion, nuancée une fois avec « C'est vrai, sauf que… »",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-4": {
+      "sha256": "15c235a78e538891b756491e83932cd6266e83f939e055d4bbafee83ac50ff5b",
+      "text": "Jour 4 : Enregistrez 1 minute : nuancez une idée « évidente » de votre travail, et envoyez-la à votre formateur.",
+      "transcribed": "Jour 4. Enregistrez 1 minute, nuancez une idée évidente de votre travail et envoyez-la à votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-titre": {
+      "sha256": "b6b11a1aa7ecf5a4d63660bbb7c831f1600405942526301a5b1e836b4a172e78",
+      "text": "« C'est vrai, sauf que… » : nuancer une idée qui semble évidente",
+      "transcribed": "C'est vrai, sauf que nuancer une idée qui semble évidente,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-sujet": {
+      "sha256": "4f1d370f132e81d376c09faa1758296063195675c65628213db987ca8608dfc8",
+      "text": "Le sujet du jour",
+      "transcribed": "Le sujet du jour,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-ou": {
+      "sha256": "4159e18129340d5070816027ce9f9b76f541e33328678db550431c6f1393941a",
+      "text": "Où ?",
+      "transcribed": "ou",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-qui": {
+      "sha256": "fa7a11270bb7a192b312abb80621cd9ae3bf5c3009fabde0a4e0c8fd80fe39f4",
+      "text": "Qui parle ?",
+      "transcribed": "qui parle.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-vous": {
+      "sha256": "6dbb931b16e6cdaacd791bd90b6f432375452e83b8f7c13026ca86c7c6471510",
+      "text": "Vous",
+      "transcribed": "Vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-avous": {
+      "sha256": "1d908d058ba1beec9471260c6782236c0071dd146ba4e05e03e7c8393e02e66a",
+      "text": "À vous",
+      "transcribed": "À vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser": {
+      "sha256": "6ec3edd2e6bc05ac7fd4ba9eaf0497c9e684363baf5f6bca7c62465443c185f4",
+      "text": "Vous préférez un sujet de votre travail ?",
+      "transcribed": "Vous préférez un sujet de votre travail ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser-exemple": {
+      "sha256": "56b3edcb8b2cf28c2f2ee4cc61852bf1dc33151eecbef1229c4489c8f2bfe6ee",
+      "text": "ex. : tout passer au cloud, changer tous les ordinateurs, faire toutes les réunions en visio",
+      "transcribed": "X. Tout passer au cloud, changer tous les ordinateurs, faire toutes les réunions en visio.",
+      "word_error_rate": 0.0667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser-note": {
+      "sha256": "020f9f65898585ef7848480c7e4d07281bc6ecbf96589aaf91bb018213598853",
+      "text": "Vous pouvez reprendre un sujet de votre semaine, dont vous avez parlé avec votre formateur.",
+      "transcribed": "Vous pouvez reprendre un sujet de votre semaine dont vous avez parlé avec votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-programme": {
+      "sha256": "414f9090e3fa12f20e2deb5e4d248e660f9fb21a2c8783ade53000a6e23d8e38",
+      "text": "Le programme",
+      "transcribed": "le programme.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-micro": {
+      "sha256": "af50c63c5c2a9a8cb500b348d785ac8e64a96e2f2138d8d88d0d6d16162c15a1",
+      "text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "transcribed": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-titre": {
+      "sha256": "fdec33af2b3e83e602b3a8b2bd856e6c77c54b3d30e702ce984b67f7ed90fc1b",
+      "text": "Je parle une minute.",
+      "transcribed": "Je parle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-plan": {
+      "sha256": "948e4398e7c15c97d6eb7396882a3576603b8b03ad2339dee6b66a138e518345",
+      "text": "Vous pouvez suivre ce plan",
+      "transcribed": "Vous pouvez suivre ce plan.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-enregistrer": {
+      "sha256": "95017b932e59d99ca34fabf3d558b030dccaa2ae4859b773e4eeeac58fb2181e",
+      "text": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-pendant": {
+      "sha256": "81c242d8d6fd62c345f2630e4225cbb165a962fd15d4c61335e9693356c8f0fd",
+      "text": "Pendant cette minute…",
+      "transcribed": "pendant 7 minutes.",
+      "word_error_rate": 0.6667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-avant-difficultes": {
+      "sha256": "01d1a0dcff1306f6af8de25fdbac8e5a1c83c087b0fb8d4c29f35db4adb9b2f0",
+      "text": "Touchez ce qui est vrai pour vous.",
+      "transcribed": "Touchez ce qui est vrai pour vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-rec-note": {
+      "sha256": "4bfa8475a3eabbb053e4c6e58e8d1eb319b5cfc4adb20ef51b64f69c4c7664fd",
+      "text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "transcribed": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-titre": {
+      "sha256": "71443888ff692a805414f38e3c1340fb8e68bbe74b6110a33edb1635304e110d",
+      "text": "J'écoute la vidéo",
+      "transcribed": "J'écoute la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-avant": {
+      "sha256": "96b47c626de951b963420b452838ce0bb56f0825301b05364aca5a3a6693fa0f",
+      "text": "Avant d'écouter : devinez",
+      "transcribed": "Avant d'écouter, devinez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-repondre": {
+      "sha256": "1d991d220bbdf897a7ad3306a54c8e73c692f92bc2137730a07d8e13d52e6b92",
+      "text": "Écoutez l'extrait, puis répondez",
+      "transcribed": "Écoutez l'extrait, puis répondez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-completer": {
+      "sha256": "6323489432e124b19c9750c19ad5742f1835b417b5d1482c1e7c2ed50c223e63",
+      "text": "Écoutez encore, puis complétez",
+      "transcribed": "écoutez encore, puis complétez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-difficile": {
+      "sha256": "73bad909a59c70115c08d86cd26e4befbcbfd02dd9028d1b73bd63caa4fe3433",
+      "text": "Le passage difficile",
+      "transcribed": "le passage difficile",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-verifier": {
+      "sha256": "828e761624ec6969e1fc20fe2d5d3f94e68300d28c988110c798d627ea1a7fbc",
+      "text": "Vérifier",
+      "transcribed": "Vérifier.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-extrait-1": {
+      "sha256": "76897aea3ad197da945773e99bbb62cea229e1c1c8ce8ebf2c26d01e2c009d98",
+      "text": "Extrait 1. « Une liseuse, c'est très matériel »",
+      "transcribed": "Extrait 1. Une liseuse, c'est très matériel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-extrait-2": {
+      "sha256": "4898f0de1c8205eaa257aa1fd4a324ed8a556cd8232369726815170e5228bbe9",
+      "text": "Extrait 2. Liseuse + livres papier = double facture",
+      "transcribed": "Extrait 2. Liseuse plus livre papier égale double facture.",
+      "word_error_rate": 0.4286,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-phrases-titre": {
+      "sha256": "0fff896c699e156eb2e8ecaf88570edf43b526c3a14910e5409b73a4e16c187e",
+      "text": "Six phrases utiles.",
+      "transcribed": "six phrases utiles.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-apprendre": {
+      "sha256": "7f228faa8309def5d7b3ee043f6c5975414f0bd76fe818d109d50c10686c2919",
+      "text": "Apprendre",
+      "transcribed": "Apprendre.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-rappel": {
+      "sha256": "2138f4d2d2d946ec3987ce1eac4739a6b022ecc15bf17c21769f43a3b5dc4e33",
+      "text": "Vérifier sans regarder",
+      "transcribed": "Vérifiez sans regarder.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-video": {
+      "sha256": "a0f0a6636031ebe3b5fb95d99a986de18648b779522e16e9481bf143976bce54",
+      "text": "Dans la vidéo",
+      "transcribed": "dans la vidéo",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-situation": {
+      "sha256": "a7c6f63e2516d970a6889a65afae49a7cd3f0f111c51ebc29ac8906d6e9667d1",
+      "text": "Au travail",
+      "transcribed": "au travail,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-avous": {
+      "sha256": "1d908d058ba1beec9471260c6782236c0071dd146ba4e05e03e7c8393e02e66a",
+      "text": "À vous",
+      "transcribed": "À vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-voir": {
+      "sha256": "1767fc2aee34a1ad84c08385350e3c189f9e960c06d466d7144188ec3d91851e",
+      "text": "Voir la phrase",
+      "transcribed": "voir la phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-connue": {
+      "sha256": "fd08ca2679011e8c6313d80effec33b63a7451a7e38667232a7e4c6b7a98fa25",
+      "text": "Je la connais",
+      "transcribed": "Je la connais.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-revoir": {
+      "sha256": "15482e4029296f672b0e41b8e1b4d343101141618e48a460cd52c4537c5420e6",
+      "text": "À revoir",
+      "transcribed": "A revoir.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-saisie": {
+      "sha256": "1f41ab60f2a91f3c8550b4d93a62d0f49998129a15b521da8fd146d87f3258ee",
+      "text": "Ma phrase (facultatif)",
+      "transcribed": "ma phrase facultatif",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-titre": {
+      "sha256": "5ec04bf9fb0531e7493ccf9da403b3416be8a51432f70326ccd543a44fda2cc8",
+      "text": "La mélodie du français",
+      "transcribed": "la mélodie du français,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-regle": {
+      "sha256": "10de030d0db949ba2658f98d94b758d9a4b0834b5e21e14ca912475a1ca5839a",
+      "text": "La règle à retenir",
+      "transcribed": "La règle à retenir",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-trouvez": {
+      "sha256": "73f8310faa1f8e7b346b092e85d0e56ffb6b2a6c648e1394f79bc92794f76a58",
+      "text": "Écoutez et trouvez",
+      "transcribed": "écouter et trouver",
+      "word_error_rate": 0.6667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-melodie-repetez": {
+      "sha256": "faea06cffb097210a1d83c81c72bb1a9401e203396d65a6c8c0ac41cfcc0c4a3",
+      "text": "Répétez comme dans la vidéo",
+      "transcribed": "Répétez comme dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-signes": {
+      "sha256": "9b623e5d2cd35715e1a8771b3a090f14956cd8984bbecdcb9d1375d7e2ad58ef",
+      "text": "Les signes",
+      "transcribed": "les signes",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-verifier": {
+      "sha256": "828e761624ec6969e1fc20fe2d5d3f94e68300d28c988110c798d627ea1a7fbc",
+      "text": "Vérifier",
+      "transcribed": "Vérifier.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-1": {
+      "sha256": "6e52c2d637eba4060af4f923769e4233cf16795102c9af80812ecf8781020326",
+      "text": "la voix monte",
+      "transcribed": "La voix monte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-2": {
+      "sha256": "a191bbac48eae1f0c8123e8787db33eb8b120667b1d27bd6b3abcc199975e0c2",
+      "text": "la voix descend",
+      "transcribed": "La voie descend.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-3": {
+      "sha256": "795c36bfe3813015a6d652f2c52fd2e591433a6e2fad78978e6ac47f1783a542",
+      "text": "syllabe plus longue (fin du groupe)",
+      "transcribed": "Syllabes plus longues, fin du groupe.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-legende-4": {
+      "sha256": "8ef92af4c8b7aa230a4538f0cefaf1abc4bffedf58164f9f965fda3f893d6a67",
+      "text": "petite pause",
+      "transcribed": "Petite pause.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-5": {
+      "sha256": "c8468c731c346483df0765033e451a6b8c02717d1c75f2100fcdc607713eb99d",
+      "text": "on ajoute ce son (liaison)",
+      "transcribed": "On ajoute ce son. Liaison.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-titre": {
+      "sha256": "3a11cdf97b985033c5486ff0b2e3297198abf57e235903b5ee7ef1f5b58e34d3",
+      "text": "Je m'entraîne trois fois.",
+      "transcribed": "Je m'entraîne trois fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-preparer": {
+      "sha256": "672366200c796aebac1ba8b4eefd2b8bf3af992110c8f7159ba289fe3c2b090e",
+      "text": "Préparez. Une minute.",
+      "transcribed": "Préparez une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-question": {
+      "sha256": "0333c11b90ff507e4f02f609107362dc108b88e8268c917916ea16e3bc4ec563",
+      "text": "Réaction de la collègue (pour le formateur)",
+      "transcribed": "Réaction de la collègue pour le formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-bilan": {
+      "sha256": "75e95311ae69bae8488ca67ea2fd55d60821bc3939c923ab69df5923a2b0a8e9",
+      "text": "Vos trois essais en chiffres.",
+      "transcribed": "Vos trois essais en chiffres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-essai-titre-1": {
+      "sha256": "12bd2e6d73bf9031d44497966cf0a501572d586dfac46b71df5c0a38ddc8f27e",
+      "text": "Essai 1. Une minute trente",
+      "transcribed": "Essai 1. 1 minute 30.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-essai-titre-2": {
+      "sha256": "75d1e25ac317f8f83be2c6265612ec2506b1cb39e30001deec1924d3dab4d66f",
+      "text": "Essai 2. Une minute quinze",
+      "transcribed": "Essai 2, 1 minute 15.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-essai-titre-3": {
+      "sha256": "bb28c284110098347533e71a5f5e92186eef46e864b87e5ba909c62604d1bc9b",
+      "text": "Essai 3. Une minute",
+      "transcribed": "Essai 3. Une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-titre": {
+      "sha256": "8850afcedbf2468714cd6095eeb362fda99f5dbd9c6b3904b9e27dbd2fa91b6f",
+      "text": "Je reparle une minute.",
+      "transcribed": "Je reparle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-enregistrer": {
+      "sha256": "95017b932e59d99ca34fabf3d558b030dccaa2ae4859b773e4eeeac58fb2181e",
+      "text": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-comparaison": {
+      "sha256": "226ae8248522dc49e0b3eb147af2cb0c72abe82a2f3d84e120b93a5552045ca8",
+      "text": "Début et fin du cours",
+      "transcribed": "début et fin du cours.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-titre": {
+      "sha256": "dac52899c8e584c0a48eb5a04d23968ead9caf722986b2d8e0f96c3769c44a7b",
+      "text": "Mon objectif de la semaine",
+      "transcribed": "Mon objectif de la semaine,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-phrase": {
+      "sha256": "e1974b02e2fb0a876d190020198c294c5885735e2530f6352c1fe8f51a57f6b4",
+      "text": "Ma phrase de la semaine",
+      "transcribed": "Ma phrase de la semaine",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-quand": {
+      "sha256": "7d5bb31dd6cf64cc1d676d5fc432dcf4edb3bf8f97668c4e03e999f4fdb1d8be",
+      "text": "Quand ?",
+      "transcribed": "Quand ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-exacte": {
+      "sha256": "144de31b0c881b4a65e8dcd6db0e4597f690fe180f5fae43a9000cd207d5cb3c",
+      "text": "Ma phrase exacte",
+      "transcribed": "Ma phrase exacte ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-programme": {
+      "sha256": "4eaa8eca729d32b7faf4c948047066ab932d28a96946945fbbdc0bd13e9017c5",
+      "text": "Dix minutes par jour, facultatif.",
+      "transcribed": "10 minutes par jour, facultatif.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-envoyer": {
+      "sha256": "7cfe37b34ba8d1851f80f669ae54cfab466789eeeb59990ed72e4ca9e1821061",
+      "text": "Envoyer mon travail au formateur",
+      "transcribed": "« Envoyer mon travail au formateur ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-confidentialite": {
+      "sha256": "4f249972e584039d691223b3d324329119d1116df2db9971f12e9c5eb25ae144",
+      "text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "transcribed": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-plusloin": {
+      "sha256": "44fda10a86a0d5e17118dc16b392bbfa00ee748394fedfeabcf75f190b1e7a52",
+      "text": "Pour aller plus loin (facultatif)",
+      "transcribed": "pour aller plus loin, facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-apres": {
+      "sha256": "900866c31c9d63c5a7bfc29c3c7625a2983a19d7fe6d37670418f99fe1012a87",
+      "text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "transcribed": "Seulement après le cours si vous voulez pratiquer davantage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-video": {
+      "sha256": "f4c1810a758be6dda9a5f20d6c1a21d0fdd646100a81fd09394a8dc8a2ea47b6",
+      "text": "Regarder la vidéo en entier. Onze minutes.",
+      "transcribed": "Regardez la vidéo en entier, 11 minutes.",
+      "word_error_rate": 0.2857,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-titre": {
+      "sha256": "1cd3f075d4461aa01369df359d75356ca7f40e5fafe9ce1b1e5d511657e3c49d",
+      "text": "Espace formateur",
+      "transcribed": "Espaces formateurs.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-intro": {
+      "sha256": "cf25d1c478865e8bc7ec6a1da1f99a160276b0a040f6bfea8d528e825734fc38",
+      "text": "Déroulé minuté et conseils de conduite.",
+      "transcribed": "Déroulez, minuté et conseil de conduite.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-deroule": {
+      "sha256": "3ae5cfb1556eb6be459753692319fd206bf8f889e4dd87f8cac5f825516ad5a3",
+      "text": "Déroulé. Quarante-cinq minutes.",
+      "transcribed": "Déroulez 45 minutes.",
+      "word_error_rate": 0.75,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-role-1": {
+      "sha256": "ced0056dfdb505de178817f39a2e18e6e5996e439cb5bb61792cdf8010fe6da9",
+      "text": "Choisissez le sujet pendant la discussion libre (champ « Mon sujet » : une idée « évidente » de son entreprise). 1 minute, sans correction.",
+      "transcribed": "choisissez le sujet pendant la discussion libre « Chant mon sujet », une idée évidente de son entreprise. 1 minute sans correction.",
+      "word_error_rate": 0.05,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-2": {
+      "sha256": "f1fe29c104ab958dbbba39d604933ce7c6553c5e3ae86a5d8eee5f8452f408f1",
+      "text": "Ton ironique et rapide (sketch + voix off). Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "transcribed": "Ton ironique et rapide, sketch plus voix off. Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "word_error_rate": 0.0556,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-3": {
+      "sha256": "88c57d6101c797edd83f4875d6a25d942c0cc3f67715d35d6e6c945d0520994a",
+      "text": "Trois temps de la nuance : reconnaître (p1, p6), freiner et comparer (p2, p3), argumenter (p4, p5). Faites adapter l'exemple au métier de l'apprenant.",
+      "transcribed": "3 temps de la nuance. Reconnaître, P1, P6. Freiner et comparer, P2, P3. Argumenter, P4, P5. Faites adapter l'exemple au métier de l'apprenant.",
+      "word_error_rate": 0.04,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-4": {
+      "sha256": "a2b16ff8dd6f5666708bc3c7a1312c10d534f43659533fc033869d246cf7a0d6",
+      "text": "Cible : la pause avant « sauf que » et les liaisons obligatoires. Syllabes à cliquer, puis shadowing.",
+      "transcribed": "Cible, la pause avant, sauf que, et les liaisons obligatoires. Syllabe à cliquer, puis shadowing.",
+      "word_error_rate": 0.0667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-5": {
+      "sha256": "f4d79017e05a783e6b088aa8a283bd3946e4ad9befcf1ebeeb5bb4cd5985d60b",
+      "text": "Vous jouez la collègue. À l'essai 2, lisez une réaction (« Réaction de la collègue »). Retour entre les essais : 2 points au maximum.",
+      "transcribed": "Vous jouez la collègue. À l'essai 2, lisez une réaction, réaction de la collègue. Retour entre les essais, deux points au maximum.",
+      "word_error_rate": 0.0435,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-6": {
+      "sha256": "12953a97ac45956686b3a3664143f4399f03a3ede58f9ef857e87914b2a69a29",
+      "text": "Même sujet qu'au début. Commentez les 3 chiffres avec l'apprenant.",
+      "transcribed": "Même sujet qu'au début. Commentez les trois chiffres avec l'apprenant.",
+      "word_error_rate": 0.0833,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-role-7": {
+      "sha256": "52d894efe8b5b577ee11bb942eeec1955d54d6520ee285f0658ae8db34c305a3",
+      "text": "Une phrase, une réunion réelle, une date.",
+      "transcribed": "une phrase, une réunion réelle, une date.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-notes": {
+      "sha256": "6a8d78e803c6be4da58856cd2ee7f65e4fa69a352bad582159ce3961194f1cdd",
+      "text": "Notes",
+      "transcribed": "Note.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-note-1-1": {
+      "sha256": "fe0dc93d9c9d765c98e1e8d9732645c6c284fd97a21f288fc77ccda91c5fa5fc",
+      "text": "Vidéo : sketch d'ARTE (« Écolo mon cul ! ») avec une voix off d'expert, ironique. Registre familier assumé : « c'est pas ouf », « faire péter la facture », « toute une floppée de », « bouquin ». Bon point de discussion : ce qui passe en réunion, et ce qui ne passe pas.",
+      "transcribed": "Vidéo, sketch d'art, écolo mon cul, avec une voix off d'expert, ironique. Registre familier assumé, c'est pas ouf. Faire péter la facture, toute une flopée de bouquins. Bon point de discussion, ce qui passe en réunion et ce qui ne passe pas.",
+      "word_error_rate": 0.0667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-2-1": {
+      "sha256": "5fa578f9e107ad45fbc98d1d87b3b925838444fa466bcbcb9b33c7c5f465bf05",
+      "text": "Minutage : les 5 phrases de « La mélodie du français » ont été calées sur l'audio (Whisper large-v3-turbo et small, au centième), avec 0,6 s de marge au début, puis retranscrites pour vérifier qu'aucun mot ne manque, même sans les 0,4 premières secondes. Correction par rapport à la v1 : la phrase 1 s'arrêtait sur « étagère » (fin 190,3 → 191,6 s) et l'exercice « expressos » perdait « Qu'un » (début 309,3 → 307,8 s).",
+      "transcribed": "Les cinq phrases de La Mélodie du français ont été calées sur l'audio, avec 0,6 S de marge au début, puis retranscrites pour vérifier qu'aucun mot ne manque, même sans les 0,4 première seconde. Correction par rapport à la V1, la phrase 1 s'arrêtait sur étagère, fin 190,3, 191, 6, et l'exercice expresso perdait qu'un, début 309,3, 307,8 S.",
+      "word_error_rate": 0.1772,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-2-2": {
+      "sha256": "55873fd79d4c9acf474ef97c4c87a592d37083afa555bf050e0755d67ea23d9c",
+      "text": "Les autres extraits (écoute, 6 phrases utiles) restent calés sur la transcription YouTube : écoutez-les avant d'envoyer le lien.",
+      "transcribed": "Les autres extraits, écoute, six phrases utiles, restent calés sur la transcription YouTube. Écoutez-les avant d'envoyer le lien.",
+      "word_error_rate": 0.05,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-3-1": {
+      "sha256": "03bec16a0b1d77afc1e2fc78681c05871dfcd8cd89abf22749e7d6516cb1e29a",
+      "text": "Mélodie : comme dans Accélération v9, chaque phrase de la partie 4 (les 3 modèles et les 2 phrases de l'exercice des liaisons) a sa courbe mesurée ; l'apprenant s'enregistre et voit sa courbe sur celle de la vidéo.",
+      "transcribed": "Mélodie, comme dans Accélération V9, chaque phrase de la partie 4, les trois modèles et les deux phrases de l'exercice des liaisons, a sa courbe mesurée, l'apprenant s'enregistre et voit sa courbe sur celle de la vidéo.",
+      "word_error_rate": 0.05,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-3-2": {
+      "sha256": "0abcb0de60e84bd632f4b25e6f70a15d1307acb451cc92e5a982feeb04f0a5d1",
+      "text": "Flèches placées uniquement là où la mesure est nette : « C'est vrai » (plus sept demi-tons), « une seule fois » (moins sept), « Une liseuse » (plus trois puis moins quatre virgule cinq), « de main en main » (plus neuf), « la liseuse » (plus sept, la phrase continue), « expressos » (moins cinq), l'énumération « les autrices, les auteurs, les libraires » (plus quatre à plus cinq virgule cinq à chaque élément), « C'est pas faux » . Pas de flèche sur « années », « tassés » ni « dématérialisé » : mesure ambiguë.",
+      "transcribed": "Flèche placée uniquement là où la mesure est nette, c'est vrai, plus 7 demi-tons, une seule fois, moins 7, une liseuse, plus 3 puis moins 4,5, de main en main, plus 9, la liseuse, plus 7, la phrase continue, expresso, moins 5, les numérations, les autrices, les auteurs, les libraires, plus 4 à plus 5,5 à chaque élément, c'est pas faux. Pas de flèche sur ânée, tassée, ni dématérialisée, mesure ambiguë.",
+      "word_error_rate": 0.2692,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-note-3-3": {
+      "sha256": "a89f738d41ed036dea2d228dc27fedf93d9d466785489dc907abccb1a21c5f25",
+      "text": "Étendue de la mélodie : 11,1 / 10,9 / 17,9 / 15,8 / 9,0 demi-tons.",
+      "transcribed": "Étendue de la mélodie, 11,1, 10,9, 17,9, 15,8, 9,0 demi-tons.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-4-1": {
+      "sha256": "0c0e5ac2e5d25402cab7a139e9a86259b5f19ccf5eb2b95626f806fb0c8908a2",
+      "text": "La transcription automatique de YouTube se trompe souvent. Il faut lire : écoanxiété (« écanxiété »), arbres (« arres »), pin (« pain »), haches (« Hes »).",
+      "transcribed": "La transcription automatique de YouTube se trompe souvent. Il faut lire « éco-anxiété, écanxiété, arbre, ar, pin, pin, hache, s ».",
+      "word_error_rate": 0.3684,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-note-4-2": {
+      "sha256": "a7c9ac8f71675bb28a3de48630f00cf89999ce6dd7760cef9a06817f2118a5a0",
+      "text": "tronc (« tron »), paquebots (« Pqubo »), pilonnés (« pyonnés »), étain (« éteint »), encre (« ancre »), la liseuse (« l'Éliseuse »), fatras (« fatra »).",
+      "transcribed": "Tronc, tronc, paquebot, coubeau, pilonné, pionné, éteint, éteint, éteint. Ancre, ancre, la liseuse, les liseuses. Fatra, fatra.",
+      "word_error_rate": 0.6875,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-note-5-1": {
+      "sha256": "44e3f43cc372ba12b6818bdc470d83c18584232a55f1687d028f0c87fbd241aa",
+      "text": "Écarts avec le support Drive : « tomber dans le panneau », « se voiler la face », « le nerf de la guerre », « jouer sur les deux tableaux », « sur le papier » et « un sacré chantier » ne sont pas dits dans la vidéo (ce sont des tournures des réponses modèles). La vidéo dit « un beau chantier de société » et « le fatras du numérique » (et non « foutoir »).",
+      "transcribed": "écart avec le support drive, tomber dans le panneau, se voiler la face, le nerf de la guerre, jouer sur les deux tableaux, sur le papier et un sacré chantier ne sont pas dits dans la vidéo, ce sont des tournures des réponses modèles. La vidéo dit un beau chantier de société et le fatras du numérique, et non foutoir.",
+      "word_error_rate": 0.0167,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-5-2": {
+      "sha256": "f42d481565f2703543c2eab05a32435c147caa78aff78dacf55048e462aba912",
+      "text": "Les tournures réellement dites sont celles des 6 phrases utiles, plus « la bonne blague », « prendre la poussière », « au pilon », « c'est pas ouf », « à la pelle », « bien vu », « passer de main en main », « prendre du recul ».",
+      "transcribed": "Les tournures réellement dites sont celles des six phrases utiles, plus la bonne blague, prendre la poussière, au pilon, c'est pas ouf, à la pelle, bien vu, passer de main en main, prendre du recul.",
+      "word_error_rate": 0.0278,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-6-1": {
+      "sha256": "e912da59d290023eb03390f77617144f6cc6852dbfe75378b2764cf339da477b",
+      "text": "Pour la discussion libre (avant le cours), questions du support Drive : papier ou numérique au quotidien ? Votre intuition : livre ou liseuse, lequel est le plus écologique ? Le « zéro papier » en entreprise est-il toujours justifié ?",
+      "transcribed": "Pour la discussion libre, avant le cours, question du support drive, papier ou numérique au quotidien. Votre intuition, livre ou liseuse, lequel est le plus écologique ? Le zéro papier en entreprise est-il toujours justifié ?",
+      "word_error_rate": 0.0286,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-commencer": {
+      "sha256": "d92ea9cd49be343fe0edcee6ff1bf6fe707aecfc1e3fa69649d6ff1864e8405d",
+      "text": "Commencer",
+      "transcribed": "Commencez !",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-nav-retour": {
+      "sha256": "0ad3da73a421caf49acc34faa8043619415a1270d9452ef6b6fb82667d77266f",
+      "text": "Retour",
+      "transcribed": "Retour.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-suivant": {
+      "sha256": "8a7de86353c3bd546d4f1077cba22f6072f2661dcfaf386ed8fa2fe8810ad0b0",
+      "text": "Étape suivante",
+      "transcribed": "Étape suivante.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-terminer": {
+      "sha256": "1050f7c8b85d338bfe04c7d8cb15940976a17f3d239b4d4b1e1df9564e937dc4",
+      "text": "Terminer le cours",
+      "transcribed": "Terminez le cours.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-reponses": {
+      "sha256": "5f14d239c3d057faf409f6fab48aa07cfda383cb1a3014599e3f940ebb28d40f",
+      "text": "Copier mes réponses",
+      "transcribed": "Copiez mes réponses.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-theme": {
+      "sha256": "39faeb09fd28e4a420cb4e987f08ce88f173df047562417474e283b5eae2c9f5",
+      "text": "Thème",
+      "transcribed": "T'aime.",
+      "word_error_rate": 2.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-nav-effacer": {
+      "sha256": "26e23b37b0c2af125aa032db15b1f9b0910e428a928aa34e47bddb5881929fe7",
+      "text": "Tout effacer",
+      "transcribed": "tout effacé,",
+      "word_error_rate": 0.5,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-nav-vitesse": {
+      "sha256": "de8008aef54ede139e5ffe879743718affd972a0ccae8cf902d6a7c8845b6df3",
+      "text": "Voix lente",
+      "transcribed": "Voix lente.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-note-4-3": {
+      "sha256": "1074bf1c1130f97c39f7cb50ce826d6b446bee780ce7e35577135e509c3e147b",
+      "text": "Proust (« Prou »), une seule liseuse (« une salle liseuse »), coloc (« colloque »), format poche (« Forme à poche »), encrage (« ancrage »).",
+      "transcribed": "Proust, proue, une seule liseuse, une sale liseuse, coloc, coloc, format poche, format poche, ancrage, ancrage.",
+      "word_error_rate": 0.3529,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-note-4-4": {
+      "sha256": "0fa586ed3803038b894d53e3db0d7bf198f61253a90c39911568fd27ccd501b8",
+      "text": "« Avec ou sans liseuse » (« ou sans liseuse »).",
+      "transcribed": "avec ou sans liseuse, ou sans liseuse.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    }
+  }
+}
