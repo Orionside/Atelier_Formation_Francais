@@ -283,7 +283,7 @@
       "review_priority": "normale"
     },
     "ecoute-a-trou-1-aide": {
-      "sha256": "5c2e979246a6f8cf8199c13eb672d6e45c90ae004a8e160abf63d37fdf108406",
+      "sha256": "4d8eb5f20651b2f55e1a0861b812fc5d23dd5c8716e53938c0ac6b69afa17f3b",
       "text": "Aide : le verbe « parler ». En espagnol : « hablar ».",
       "transcribed": "« ed » le verbe « parler » en espagnol « hablar ».",
       "word_error_rate": 0.1429,
@@ -307,12 +307,12 @@
       "review_priority": "normale"
     },
     "ecoute-a-trou-2-aide": {
-      "sha256": "79ea4f8a41b0d58d547cc98f8c16c44159eca1969883531bf20368274d09ff60",
+      "sha256": "175669f983285d8065299d3d2aa0b2ffed6cedbb4a7e403f231b64a9875dfea5",
       "text": "Aide : pas beaucoup. En espagnol : « un poco ».",
-      "transcribed": "aide pas beaucoup en espagnol un poco",
-      "word_error_rate": 0.0,
+      "transcribed": "Aide pas beaucoup en espagnol.",
+      "word_error_rate": 0.2857,
       "answer_possibly_disclosed": false,
-      "review_priority": "normale"
+      "review_priority": "haute"
     },
     "ecoute-a-trou-2-solution": {
       "sha256": "d9fdfee277394b76737327cbdd535c4c8533f191047f28ead2696a5f85e89903",
@@ -419,10 +419,10 @@
       "review_priority": "haute"
     },
     "ecoute-b-q2-explication": {
-      "sha256": "2bdbf2a084adbb78014411bbde6509f27a4cd31a96707747137f11ef5aebf056",
-      "text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
-      "transcribed": "Le serveur demande « carte ou espèce ? » Réponse « espèce » avec des billets et des pièces en effectivo.",
-      "word_error_rate": 0.1875,
+      "sha256": "0c39cf24c090ca0586f0ae4a98c3d3f5e78d7f4ad1a01554039d8b153dad905b",
+      "text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol : « en efectivo ».",
+      "transcribed": "Le serveur demande « carte ou espèce ? » Réponse « espèce », cela veut dire « avec des billets et des pièces » en espagnol. Inefectivo.",
+      "word_error_rate": 0.1905,
       "answer_possibly_disclosed": false,
       "review_priority": "normale"
     },
@@ -435,10 +435,10 @@
       "review_priority": "normale"
     },
     "ecoute-b-trou-1-aide": {
-      "sha256": "8267500df2e31051916e00fd2739235c815f21d7f5c72e5d8fb7aa645658577d",
+      "sha256": "79b18ce461d52356a4c0e42ed2d7feda6bd11aa3774e16787764603cd8d708e3",
       "text": "Aide : je vous donne. En espagnol : « aquí tiene ».",
-      "transcribed": "Aide, je vous donne, en espagnol, à qui tienne.",
-      "word_error_rate": 0.375,
+      "transcribed": "Aide, je vous donne, en espagnol.",
+      "word_error_rate": 0.25,
       "answer_possibly_disclosed": false,
       "review_priority": "haute"
     },
@@ -459,9 +459,9 @@
       "review_priority": "normale"
     },
     "ecoute-b-trou-2-aide": {
-      "sha256": "ec6342fb31d4c950efcfae0ee3aa98afbe00379473487550151245e28e34ffe1",
+      "sha256": "9daecc426e5949bc182ae5761b98593eee357993cfafceaecd39085fefdc173d",
       "text": "Aide : une réponse polie à « merci ». En espagnol : « de nada ».",
-      "transcribed": "« Aide », une réponse polie à « merci » en espagnol de Nada.",
+      "transcribed": "« Aide », une réponse polie à « Merci » en espagnol. De nada.",
       "word_error_rate": 0.0,
       "answer_possibly_disclosed": false,
       "review_priority": "normale"
@@ -723,9 +723,9 @@
       "review_priority": "normale"
     },
     "melodie-attention": {
-      "sha256": "68be7ead6706e2f6f5ac3970465266b9cbb84a42dc3809909d283598a0aa828a",
-      "text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
-      "transcribed": "Attention, la dernière syllabe du mot est plus longue. Adrienne, hongroise, français, en espagnol, français, c'est pareil. Toutes les questions ne montent pas. Dans la vidéo, et toi, reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "sha256": "6d5f2726985bee514520c62ea89e89091a0ccc3c9b1d89cd1aeda5583903aa10",
+      "text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol : « francés ». C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "transcribed": "Attention, la dernière syllabe du mot est plus longue. Adrienne, hongroise, français. En espagnol, flanféj. C'est pareil, toutes les questions ne montent pas. Dans la vidéo, et toi, reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
       "word_error_rate": 0.025,
       "answer_possibly_disclosed": false,
       "review_priority": "normale"

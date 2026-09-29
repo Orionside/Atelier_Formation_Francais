@@ -102,7 +102,7 @@ window.IMPACT60 = {
         {
           "avant": "J'habite à Budapest, mais je ne",
           "apres": "pas hongrois.",
-          "aide": "le verbe « parler ». En espagnol : « hablar ».",
+          "aide": "le verbe « parler ». En espagnol : « <span lang=\"es-ES\">hablar</span> ».",
           "reponses": [
             "parle"
           ],
@@ -111,7 +111,7 @@ window.IMPACT60 = {
         {
           "avant": "Mais moi, je parle un",
           "apres": "français.",
-          "aide": "pas beaucoup. En espagnol : « un poco ».",
+          "aide": "pas beaucoup. En espagnol : « <span lang=\"es-ES\">un poco</span> ».",
           "reponses": [
             "peu"
           ],
@@ -150,14 +150,14 @@ window.IMPACT60 = {
             "Ils ne paient pas."
           ],
           "bonne": 1,
-          "explication": "Le serveur demande : « Carte ou espèces ? » Réponse : « <strong>Espèces.</strong> » (= avec des billets et des pièces, en efectivo)."
+          "explication": "Le serveur demande : « Carte ou espèces ? » Réponse : « <strong>Espèces.</strong> » Cela veut dire : avec des billets et des pièces. En espagnol : « <span lang=\"es-ES\">en efectivo</span> »."
         }
       ],
       "trous": [
         {
           "avant": "Bonjour madame. Bonjour monsieur.",
           "apres": "la carte.",
-          "aide": "je vous donne. En espagnol : « aquí tiene ».",
+          "aide": "je vous donne. En espagnol : « <span lang=\"es-ES\">aquí tiene</span> ».",
           "reponses": [
             "voici",
             "voila"
@@ -167,7 +167,7 @@ window.IMPACT60 = {
         {
           "avant": "Merci beaucoup. — Je vous en",
           "apres": ".",
-          "aide": "une réponse polie à « merci ». En espagnol : « de nada ».",
+          "aide": "une réponse polie à « merci ». En espagnol : « <span lang=\"es-ES\">de nada</span> ».",
           "reponses": [
             "prie"
           ],
@@ -1023,7 +1023,7 @@ window.IMPACT60 = {
       "Vous proposez quelque chose (« Un café ? ») : la voix <strong>monte ↗</strong>.",
       "C'est la dernière information : la voix <strong>descend ↘</strong>. L'autre sait que c'est à lui de parler."
     ],
-    "attention": "La dernière syllabe du mot est plus longue : Adri<strong>enne</strong>, hon<strong>groise</strong>, fran<strong>çais</strong> (en espagnol : fran<strong>cés</strong>, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie <strong>mesurée</strong> dans la vidéo.",
+    "attention": "La dernière syllabe du mot est plus longue : Adri<strong>enne</strong>, hon<strong>groise</strong>, fran<strong>çais</strong>. En espagnol : « <span lang=\"es-ES\">fran<strong>cés</strong></span> ». C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie <strong>mesurée</strong> dans la vidéo.",
     "perception": [
       {
         "titre": "Phrase 1",

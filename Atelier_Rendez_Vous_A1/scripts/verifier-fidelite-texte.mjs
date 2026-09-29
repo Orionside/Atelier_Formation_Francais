@@ -28,7 +28,13 @@ function lexical(s){
     .replace(/[^a-z0-9]+/g,' ').trim();
 }
 
-const mismatches=entries.filter(x=>lexical(x.display_text)!==lexical(x.tts_text));
+const mismatches=entries.filter(x=>
+  lexical(x.display_text)!==lexical(x.tts_text) ||
+  (x.segments && (
+    lexical(x.tts_text)!==lexical(x.segments.map(s=>s.text).join(' ')) ||
+    x.segments.filter(s=>s.lang==='es-ES').length!==1 ||
+    x.segments.some(s=>!['fr-FR','es-ES'].includes(s.lang))
+  )));
 console.log(`${entries.length} entrées vérifiées ; ${mismatches.length} divergence(s) lexicale(s)`);
 for(const x of mismatches){
   console.error(`${x.id}\n  écrit : ${x.display_text}\n  lu    : ${x.tts_text}`);

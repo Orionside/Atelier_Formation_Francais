@@ -440,9 +440,22 @@
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3",
-      "key": "e446812a1ba7defba1d73875d7ff40f69a6d57e7713675c19c77f84e5d9c67c2",
-      "duration_s": 4.24,
-      "sha256": "5c2e979246a6f8cf8199c13eb672d6e45c90ae004a8e160abf63d37fdf108406",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : le verbe « parler ». En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "hablar"
+        }
+      ],
+      "spanish_voice": "Mónica",
+      "spanish_locale": "es_ES",
+      "key": "d5cde737544a2956d69cf5510f2e87c036ba8ffd51630e535d94449106b5b55e",
+      "duration_s": 4.341,
+      "sha256": "4d8eb5f20651b2f55e1a0861b812fc5d23dd5c8716e53938c0ac6b69afa17f3b",
+      "seed_variant": 0,
       "status": "non_valide_a_l_ecoute"
     },
     "ecoute-a-trou-1-solution": {
@@ -476,9 +489,22 @@
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3",
-      "key": "57a526f86cfb8523f0af1d154b9c3dcfdb7531a72fcfba6f6bc41eb61ff503ec",
-      "duration_s": 3.6,
-      "sha256": "79ea4f8a41b0d58d547cc98f8c16c44159eca1969883531bf20368274d09ff60",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : pas beaucoup. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "un poco"
+        }
+      ],
+      "spanish_voice": "Mónica",
+      "spanish_locale": "es_ES",
+      "key": "116f4ff570e3f85a2659867f01ab346083418219d81a5a714c454b1037ed9242",
+      "duration_s": 3.632,
+      "sha256": "175669f983285d8065299d3d2aa0b2ffed6cedbb4a7e403f231b64a9875dfea5",
+      "seed_variant": 0,
       "status": "non_valide_a_l_ecoute"
     },
     "ecoute-a-trou-2-solution": {
@@ -639,14 +665,27 @@
     },
     "ecoute-b-q2-explication": {
       "id": "ecoute-b-q2-explication",
-      "display_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
-      "tts_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
+      "display_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol : « en efectivo ».",
+      "tts_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol : « en efectivo ».",
       "role": "correction",
       "reveal": "apres_reponse",
       "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3",
-      "key": "1b72e36638f3023078eab148ba4cd2ae09fbb2cf77ee3c179bf36d66a8666648",
-      "duration_s": 6.64,
-      "sha256": "2bdbf2a084adbb78014411bbde6509f27a4cd31a96707747137f11ef5aebf056",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "en efectivo"
+        }
+      ],
+      "spanish_voice": "Mónica",
+      "spanish_locale": "es_ES",
+      "key": "8423c18d82c0ffb4cd629d52d99d843a67cd7642753ba9996a9c0b973055b73c",
+      "duration_s": 9.477,
+      "sha256": "0c39cf24c090ca0586f0ae4a98c3d3f5e78d7f4ad1a01554039d8b153dad905b",
+      "seed_variant": 0,
       "status": "non_valide_a_l_ecoute"
     },
     "ecoute-b-trou-1": {
@@ -668,9 +707,22 @@
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3",
-      "key": "7c438caa9e812f11df619d403d9755ec88a46cd9c0078b47a4718b0f08317ef3",
-      "duration_s": 3.92,
-      "sha256": "8267500df2e31051916e00fd2739235c815f21d7f5c72e5d8fb7aa645658577d",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : je vous donne. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "aquí tiene"
+        }
+      ],
+      "spanish_voice": "Mónica",
+      "spanish_locale": "es_ES",
+      "key": "6109637c903ec2326bc2956e3fdfd15ad586fb68ce08e2db4c8ce15957866f7d",
+      "duration_s": 3.726,
+      "sha256": "79b18ce461d52356a4c0e42ed2d7feda6bd11aa3774e16787764603cd8d708e3",
+      "seed_variant": 0,
       "status": "non_valide_a_l_ecoute"
     },
     "ecoute-b-trou-1-solution": {
@@ -704,9 +756,22 @@
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3",
-      "key": "477a2241fc414b80c85375c700177ed535e7faec9bd23cc2ee12d3dacc328fa0",
-      "duration_s": 4.8,
-      "sha256": "ec6342fb31d4c950efcfae0ee3aa98afbe00379473487550151245e28e34ffe1",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : une réponse polie à « merci ». En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "de nada"
+        }
+      ],
+      "spanish_voice": "Mónica",
+      "spanish_locale": "es_ES",
+      "key": "d9390e217bb81c9f49949b5cb941c89a6a677aa4c48bc498c16b2c99ba7770cc",
+      "duration_s": 4.593,
+      "sha256": "9daecc426e5949bc182ae5761b98593eee357993cfafceaecd39085fefdc173d",
+      "seed_variant": 0,
       "status": "non_valide_a_l_ecoute"
     },
     "ecoute-b-trou-2-solution": {
@@ -1095,14 +1160,31 @@
     },
     "melodie-attention": {
       "id": "melodie-attention",
-      "display_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
-      "tts_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "display_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol : « francés ». C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
+      "tts_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol : « francés ». C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
       "role": "explication",
       "reveal": "visible",
       "file": "audio/qwen3-tts/melodie-attention.mp3",
-      "key": "158fd051307a711cca4fb41deb7f0bc86e269cbf65952db41270fa83d4352b55",
-      "duration_s": 14.8,
-      "sha256": "68be7ead6706e2f6f5ac3970465266b9cbb84a42dc3809909d283598a0aa828a",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "francés"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo."
+        }
+      ],
+      "spanish_voice": "Mónica",
+      "spanish_locale": "es_ES",
+      "key": "fbab42eea5e4a0e5d8a4641293ae0ef2f3583acabdbcc073e2a06d647960ba27",
+      "duration_s": 16.598,
+      "sha256": "6d5f2726985bee514520c62ea89e89091a0ccc3c9b1d89cd1aeda5583903aa10",
+      "seed_variant": 0,
       "status": "non_valide_a_l_ecoute"
     },
     "melodie-exercice-1": {

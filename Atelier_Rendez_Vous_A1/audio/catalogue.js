@@ -182,6 +182,28 @@
       ["nav-reponses","Copier mes réponses"], ["nav-theme","Thème"],
       ["nav-effacer","Tout effacer"], ["nav-vitesse","Voix lente"]
     ].forEach(function(x){extra("navigation",x[0],x[1],x[2]);});
+    // Chaque glose castillane est une unité vocale es-ES distincte. Les autres
+    // mots gardent la voix française ; le changement de langue ne doit jamais
+    // dépendre d'une détection automatique au milieu d'un texte français.
+    function bilingue(id, avant, espagnol, apres){
+      var parts=[{lang:"fr-FR",text:avant},{lang:"es-ES",text:espagnol}];
+      if(apres) parts.push({lang:"fr-FR",text:apres});
+      var mots=function(s){return (s.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu)||[]).join("|");};
+      if(mots(entries[id].tts_text)!==mots(parts.map(function(x){return x.text;}).join(" ")))
+        throw Error("Segments bilingues différents du texte oral : "+id);
+      entries[id].segments=parts;
+    }
+    bilingue("ecoute-a-trou-1-aide","Aide : le verbe « parler ». En espagnol :","hablar");
+    bilingue("ecoute-a-trou-2-aide","Aide : pas beaucoup. En espagnol :","un poco");
+    bilingue("ecoute-b-trou-1-aide","Aide : je vous donne. En espagnol :","aquí tiene");
+    bilingue("ecoute-b-trou-2-aide","Aide : une réponse polie à « merci ». En espagnol :","de nada");
+    bilingue("ecoute-b-q2-explication",
+      "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol :",
+      "en efectivo");
+    bilingue("melodie-attention",
+      "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol :",
+      "francés",
+      "C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.");
     return entries;
   }
   root.impactAudioCatalogue=catalogue;

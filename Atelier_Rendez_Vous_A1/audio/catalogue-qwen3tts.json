@@ -287,7 +287,17 @@
       "tts_text": "Aide : le verbe « parler ». En espagnol : « hablar ».",
       "role": "aide",
       "reveal": "visible",
-      "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3"
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : le verbe « parler ». En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "hablar"
+        }
+      ]
     },
     {
       "id": "ecoute-a-trou-1-solution",
@@ -311,7 +321,17 @@
       "tts_text": "Aide : pas beaucoup. En espagnol : « un poco ».",
       "role": "aide",
       "reveal": "visible",
-      "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3"
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : pas beaucoup. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "un poco"
+        }
+      ]
     },
     {
       "id": "ecoute-a-trou-2-solution",
@@ -419,11 +439,21 @@
     },
     {
       "id": "ecoute-b-q2-explication",
-      "display_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
-      "tts_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » (= avec des billets et des pièces, en efectivo).",
+      "display_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol : « en efectivo ».",
+      "tts_text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol : « en efectivo ».",
       "role": "correction",
       "reveal": "apres_reponse",
-      "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3"
+      "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Le serveur demande : « Carte ou espèces ? » Réponse : « Espèces. » Cela veut dire : avec des billets et des pièces. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "en efectivo"
+        }
+      ]
     },
     {
       "id": "ecoute-b-trou-1",
@@ -439,7 +469,17 @@
       "tts_text": "Aide : je vous donne. En espagnol : « aquí tiene ».",
       "role": "aide",
       "reveal": "visible",
-      "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3"
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : je vous donne. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "aquí tiene"
+        }
+      ]
     },
     {
       "id": "ecoute-b-trou-1-solution",
@@ -463,7 +503,17 @@
       "tts_text": "Aide : une réponse polie à « merci ». En espagnol : « de nada ».",
       "role": "aide",
       "reveal": "visible",
-      "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3"
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Aide : une réponse polie à « merci ». En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "de nada"
+        }
+      ]
     },
     {
       "id": "ecoute-b-trou-2-solution",
@@ -723,11 +773,25 @@
     },
     {
       "id": "melodie-attention",
-      "display_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
-      "tts_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "display_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol : « francés ». C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
+      "tts_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol : « francés ». C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
       "role": "explication",
       "reveal": "visible",
-      "file": "audio/qwen3-tts/melodie-attention.mp3"
+      "file": "audio/qwen3-tts/melodie-attention.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. En espagnol :"
+        },
+        {
+          "lang": "es-ES",
+          "text": "francés"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "C'est pareil ! Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo."
+        }
+      ]
     },
     {
       "id": "melodie-exercice-1",

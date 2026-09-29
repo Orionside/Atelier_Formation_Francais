@@ -1,0 +1,48 @@
+{
+  "asr_model": "mlx-community/whisper-large-v3-mlx",
+  "limitation": "La transcription contrôle les glosses isolées régénérées par Mónica, et non le MP3 assemblé ; elle ne mesure ni l'accent castillan ni le naturel.",
+  "clips": {
+    "ecoute-a-trou-1-aide": {
+      "expected": "hablar",
+      "transcribed": "Hablar.",
+      "lexical_match": true,
+      "voice": "Mónica",
+      "locale": "es_ES"
+    },
+    "ecoute-a-trou-2-aide": {
+      "expected": "un poco",
+      "transcribed": "Un poco.",
+      "lexical_match": true,
+      "voice": "Mónica",
+      "locale": "es_ES"
+    },
+    "ecoute-b-q2-explication": {
+      "expected": "en efectivo",
+      "transcribed": "En efectivo.",
+      "lexical_match": true,
+      "voice": "Mónica",
+      "locale": "es_ES"
+    },
+    "ecoute-b-trou-1-aide": {
+      "expected": "aquí tiene",
+      "transcribed": "Aquí tiene.",
+      "lexical_match": true,
+      "voice": "Mónica",
+      "locale": "es_ES"
+    },
+    "ecoute-b-trou-2-aide": {
+      "expected": "de nada",
+      "transcribed": "De nada.",
+      "lexical_match": true,
+      "voice": "Mónica",
+      "locale": "es_ES"
+    },
+    "melodie-attention": {
+      "expected": "francés",
+      "transcribed": "francés.",
+      "lexical_match": true,
+      "voice": "Mónica",
+      "locale": "es_ES"
+    }
+  }
+}

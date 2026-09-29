@@ -423,8 +423,8 @@ input[type="text"]{font-size:15.5px}
   </aside>
   <main id="main"></main>
 </div>
-<script src="contenu.js?v=20260929-fidelite"></script>
-<script src="audio/catalogue.js?v=20260929-fidelite"></script>
+<script src="contenu.js?v=20260929-castillan"></script>
+<script src="audio/catalogue.js?v=20260929-castillan"></script>
 <script>
 (function(){
 "use strict";
@@ -1166,7 +1166,7 @@ function gaps(key, trous, audioPrefix){
     if(t.apres) line.appendChild(document.createTextNode((/^[.,!?]/.test(t.apres) ? "" : " ") + t.apres));
     var id=audioPrefix+"-trou-"+(i+1);
     r.appendChild(audible(line,id));
-    if(t.aide) r.appendChild(audible(el("p","gap-aide","Aide : " + t.aide),id+"-aide"));
+    if(t.aide) r.appendChild(audible(html("p","gap-aide","Aide : " + t.aide),id+"-aide"));
     var solBox=el("div","audio-line");solBox.hidden=true;
     var feedback = el("span","gap-feedback",""); solBox.appendChild(feedback);
     var sol = el("span","gap-sol",""); solBox.appendChild(sol);

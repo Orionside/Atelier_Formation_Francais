@@ -29,3 +29,9 @@ La première transcription (Whisper large-v3-turbo) marque encore 14 clips en pr
 ## Validation orale encore nécessaire
 
 Une transcription ne permet pas de certifier l'accent natif, la liaison, le rythme, les pauses ou l'intonation interrogative. Tous les clips restent donc marqués `non_valide_a_l_ecoute` dans le manifeste. Avant une séance avec apprenant, faire écouter par un francophone les six modèles professionnels, les questions, les quatre textes à trous et leurs corrections, puis les consignes longues et les aides bilingues. Comparer aussi le timbre, le débit et la courbe intonative à la voix de référence sur un casque et un téléphone. Si un clip échoue, le régénérer avec `--all --force-id <identifiant>`, vérifier sa transcription, puis retenir ou rejeter **à l'oreille** la nouvelle prise.
+
+## Ajustement castillan
+
+Six clips bilingues ont été reconstruits en unités vocales distinctes. Le français reste généré par Qwen3-TTS avec la référence de l'atelier ; `hablar`, `un poco`, `en efectivo`, `aquí tiene`, `de nada` et `francés` sont générés par la voix locale **Mónica**, identifiée par macOS comme `es_ES` (Espagne). Une pause sépare les langues et le niveau sonore de la glose est raccordé au segment français. Les mots espagnols portent aussi `lang="es-ES"` dans la page pour les lecteurs d'écran.
+
+Whisper large-v3 en mode espagnol a reconnu exactement les six expressions (`qa-castillan.json`, 6/6). Cela vérifie la présence des mots, pas la perfection de l'accent : une écoute par un hispanophone d'Espagne reste le dernier contrôle pédagogique. Le changement de timbre entre français et espagnol est volontaire et signale clairement la traduction.
