@@ -27,6 +27,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Livre ou liseuse ? — nuancer une idée qui semble évidente (cours de 45 min) | B2–C1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Livre_Liseuse_B2C1/ |
 | Livre ou liseuse ? — nuancer une idée qui semble évidente v2 (mélodie mesurée et 214 audios pédagogiques préparés, version la plus récente) | B2–C1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Livre_Liseuse_B2C1_v2/ |
 | Rendez-vous — se présenter… et commander au café (cours de 45 min) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Rendez_Vous_A1/ |
+| Livre ou liseuse ? — nuancer une idée qui semble évidente v3 (« Avant d'écouter : devinez » placé avant chaque extrait, version la plus récente) | B2–C1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Livre_Liseuse_B2C1_v3/ |
 
 ## Notes
 
