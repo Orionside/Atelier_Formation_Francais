@@ -1,0 +1,1815 @@
+{
+  "atelier": "Livre ou liseuse B2-C1 v2",
+  "entries": [
+    {
+      "id": "accueil-objectif",
+      "display_text": "Aujourd'hui, vous apprenez à reconnaître ce qui est vrai dans une idée, puis à la nuancer avec un argument et à proposer une solution. En 1 minute, sans chercher vos mots.",
+      "tts_text": "Aujourd'hui, vous apprenez à reconnaître ce qui est vrai dans une idée, puis à la nuancer avec un argument et à proposer une solution. En 1 minute, sans chercher vos mots.",
+      "role": "objectif",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/accueil-objectif.mp3"
+    },
+    {
+      "id": "situation-lieu",
+      "display_text": "En réunion d'équipe",
+      "tts_text": "En réunion d'équipe",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-lieu.mp3"
+    },
+    {
+      "id": "situation-qui",
+      "display_text": "Une collègue dit :",
+      "tts_text": "Une collègue dit :",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-qui.mp3"
+    },
+    {
+      "id": "situation-dialogue",
+      "display_text": "« À partir de lundi, on passe au zéro papier : tout sur tablette. C'est plus écolo, c'est évident ! »",
+      "tts_text": "« À partir de lundi, on passe au zéro papier : tout sur tablette. C'est plus écolo, c'est évident ! »",
+      "role": "dialogue",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-dialogue.mp3"
+    },
+    {
+      "id": "situation-vous",
+      "display_text": "Vous êtes d'accord sur une partie, mais ce n'est pas si simple. Reconnaissez ce qui est vrai, nuancez avec un argument, puis proposez une solution.",
+      "tts_text": "Vous êtes d'accord sur une partie, mais ce n'est pas si simple. Reconnaissez ce qui est vrai, nuancez avec un argument, puis proposez une solution.",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-vous.mp3"
+    },
+    {
+      "id": "situation-consigne",
+      "display_text": "Répondez-lui. En 1 minute.",
+      "tts_text": "Répondez-lui. En une minute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-consigne.mp3"
+    },
+    {
+      "id": "situation-question",
+      "display_text": "Vous préférez un sujet de votre travail ? (facultatif) Dans votre entreprise, quelle idée « évidente » mériterait d'être nuancée ?",
+      "tts_text": "Vous préférez un sujet de votre travail ? (facultatif) Dans votre entreprise, quelle idée « évidente » mériterait d'être nuancée ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-question.mp3"
+    },
+    {
+      "id": "plan-1-titre",
+      "display_text": "Reconnaître",
+      "tts_text": "Reconnaître",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-1-titre.mp3"
+    },
+    {
+      "id": "plan-1-exemple",
+      "display_text": "C'est pas faux. Ou : c'est vrai que…",
+      "tts_text": "C'est pas faux. Ou : c'est vrai que…",
+      "role": "amorce",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-1-exemple.mp3"
+    },
+    {
+      "id": "plan-2-titre",
+      "display_text": "Nuancer",
+      "tts_text": "Nuancer",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-2-titre.mp3"
+    },
+    {
+      "id": "plan-2-exemple",
+      "display_text": "…sauf que…",
+      "tts_text": "Sauf que…",
+      "role": "amorce",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-2-exemple.mp3"
+    },
+    {
+      "id": "plan-3-titre",
+      "display_text": "Un argument",
+      "tts_text": "Un argument",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-3-titre.mp3"
+    },
+    {
+      "id": "plan-3-exemple",
+      "display_text": "Si on fait bien les comptes, …",
+      "tts_text": "Si on fait bien les comptes…",
+      "role": "amorce",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-3-exemple.mp3"
+    },
+    {
+      "id": "plan-4-titre",
+      "display_text": "Proposer",
+      "tts_text": "Proposer",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-4-titre.mp3"
+    },
+    {
+      "id": "plan-4-exemple",
+      "display_text": "Il faudrait plutôt…",
+      "tts_text": "Il faudrait plutôt…",
+      "role": "amorce",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-4-exemple.mp3"
+    },
+    {
+      "id": "avant-consigne",
+      "display_text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute : vous verrez la différence.",
+      "tts_text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore une minute : vous verrez la différence.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/avant-consigne.mp3"
+    },
+    {
+      "id": "difficulte-1",
+      "display_text": "Je cherchais mes mots",
+      "tts_text": "Je cherchais mes mots",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-1.mp3"
+    },
+    {
+      "id": "difficulte-2",
+      "display_text": "J'ai dit « oui » ou « non », sans nuance",
+      "tts_text": "J'ai dit « oui » ou « non », sans nuance",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-2.mp3"
+    },
+    {
+      "id": "difficulte-3",
+      "display_text": "Je n'avais pas d'argument concret",
+      "tts_text": "Je n'avais pas d'argument concret",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-3.mp3"
+    },
+    {
+      "id": "difficulte-4",
+      "display_text": "Je n'étais pas sûr·e de ma prononciation",
+      "tts_text": "Je n'étais pas sûre de ma prononciation",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-4.mp3"
+    },
+    {
+      "id": "difficulte-5",
+      "display_text": "Rien de spécial",
+      "tts_text": "Rien de spécial",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-5.mp3"
+    },
+    {
+      "id": "ecoute-consigne",
+      "display_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "tts_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-consigne.mp3"
+    },
+    {
+      "id": "ecoute-a-pourquoi",
+      "display_text": "Pourquoi cet extrait ? Un personnage croit avoir trouvé la solution. L'expert le freine, puis nuance avec des faits. C'est ce que vous allez faire.",
+      "tts_text": "Pourquoi cet extrait ? Un personnage croit avoir trouvé la solution. L'expert le freine, puis nuance avec des faits. C'est ce que vous allez faire.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-a-devine",
+      "display_text": "Un personnage dit : « Ce qu'il faut, c'est dématérialiser (= tout mettre en numérique). » À votre avis, une liseuse est-elle vraiment « sans matière » ? Répondez à voix haute.",
+      "tts_text": "Un personnage dit : « Ce qu'il faut, c'est dématérialiser (= tout mettre en numérique). » À votre avis, une liseuse est-elle vraiment « sans matière » ? Répondez à voix haute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-devine.mp3"
+    },
+    {
+      "id": "ecoute-a-q1",
+      "display_text": "Pourquoi l'expert dit-il qu'une liseuse n'est « pas du tout dématérialisée » ?",
+      "tts_text": "Pourquoi l'expert dit-il qu'une liseuse n'est « pas du tout dématérialisée » ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-1",
+      "display_text": "Parce qu'elle consomme beaucoup d'électricité.",
+      "tts_text": "Parce qu'elle consomme beaucoup d'électricité.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-2",
+      "display_text": "Parce qu'il faut du plastique et beaucoup de métaux pour la fabriquer.",
+      "tts_text": "Parce qu'il faut du plastique et beaucoup de métaux pour la fabriquer.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-3",
+      "display_text": "Parce qu'on ne peut pas y mettre beaucoup de livres.",
+      "tts_text": "Parce qu'on ne peut pas y mettre beaucoup de livres.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-explication",
+      "display_text": "« Il faut du plastique pour l'objet en lui-même », puis de l'aluminium, du cuivre, de l'indium, de l'étain… des métaux « arrachés à la terre ».",
+      "tts_text": "« Il faut du plastique pour l'objet en lui-même », puis de l'aluminium, du cuivre, de l'indium, de l'étain… des métaux « arrachés à la terre ».",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-a-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-q2",
+      "display_text": "Selon la vidéo, l'exploitation minière est…",
+      "tts_text": "Selon la vidéo, l'exploitation minière est…",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-1",
+      "display_text": "la 1re cause de déforestation dans le monde.",
+      "tts_text": "la première cause de déforestation dans le monde.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-2",
+      "display_text": "la 3e cause de déforestation dans le monde.",
+      "tts_text": "la troisième cause de déforestation dans le monde.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-3",
+      "display_text": "sans effet sur les forêts.",
+      "tts_text": "sans effet sur les forêts.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-explication",
+      "display_text": "« L'exploitation minière représente la troisième cause de déforestation dans le monde. » Les mines obligent d'abord à « raser des forêts ».",
+      "tts_text": "« L'exploitation minière représente la troisième cause de déforestation dans le monde. » Les mines obligent d'abord à « raser des forêts ».",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-a-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1",
+      "display_text": "Au contraire, c'est même très très […].",
+      "tts_text": "Au contraire, c'est même très très….",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-aide",
+      "display_text": "Aide : le contraire de « dématérialisé »",
+      "tts_text": "Aide : le contraire de « dématérialisé »",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-solution",
+      "display_text": "Au contraire, c'est même très très matériel.",
+      "tts_text": "Au contraire, c'est même très très matériel.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2",
+      "display_text": "…l'étain, toute une […] de métaux plus ou moins rares.",
+      "tts_text": "…l'étain, toute une… de métaux plus ou moins rares.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-aide",
+      "display_text": "Aide : familier : = une grande quantité",
+      "tts_text": "Aide : familier : = une grande quantité",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-solution",
+      "display_text": "…l'étain, toute une floppée de métaux plus ou moins rares.",
+      "tts_text": "…l'étain, toute une floppée de métaux plus ou moins rares.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-difficile",
+      "display_text": "Une liste de métaux, très vite : « de l'aluminium, du cuivre, de l'indium, de l'étain, toute une floppée de métaux plus ou moins rares arrachés à la terre ». Pas besoin de tout retenir. Retenez l'expression utile : toute une floppée de (familier, = beaucoup de).",
+      "tts_text": "Une liste de métaux, très vite : « de l'aluminium, du cuivre, de l'indium, de l'étain, toute une floppée de métaux plus ou moins rares arrachés à la terre ». Pas besoin de tout retenir. Retenez l'expression utile : toute une floppée de (familier, = beaucoup de).",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-difficile.mp3"
+    },
+    {
+      "id": "ecoute-b-pourquoi",
+      "display_text": "Pourquoi cet extrait ? Les personnages veulent la liseuse… et les livres papier. L'expert montre, chiffres à l'appui, que ce n'est pas si simple.",
+      "tts_text": "Pourquoi cet extrait ? Les personnages veulent la liseuse… et les livres papier. L'expert montre, chiffres à l'appui, que ce n'est pas si simple.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-b-devine",
+      "display_text": "Beaucoup de gens ont une liseuse. À votre avis, est-ce qu'ils arrêtent d'acheter des livres papier ? Répondez à voix haute.",
+      "tts_text": "Beaucoup de gens ont une liseuse. À votre avis, est-ce qu'ils arrêtent d'acheter des livres papier ? Répondez à voix haute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-devine.mp3"
+    },
+    {
+      "id": "ecoute-b-q1",
+      "display_text": "Combien d'utilisateurs de liseuses lisent seulement des livres numériques ?",
+      "tts_text": "Combien d'utilisateurs de liseuses lisent seulement des livres numériques ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-1",
+      "display_text": "1 %",
+      "tts_text": "un pour cent",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-2",
+      "display_text": "40 %",
+      "tts_text": "quarante pour cent",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-3",
+      "display_text": "99 %",
+      "tts_text": "quatre-vingt-dix-neuf pour cent",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-explication",
+      "display_text": "« Seul 1 % des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. » Les 99 % restants achètent aussi des livres papier.",
+      "tts_text": "« Seul un pour cent des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. » Les quatre-vingt-dix-neuf pour cent restants achètent aussi des livres papier.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-b-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-q2",
+      "display_text": "Vous prêtez un livre papier à votre colocataire, qui le lit. Selon la vidéo, son impact…",
+      "tts_text": "Vous prêtez un livre papier à votre colocataire, qui le lit. Selon la vidéo, son impact…",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-1",
+      "display_text": "double.",
+      "tts_text": "double.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-2",
+      "display_text": "ne change pas.",
+      "tts_text": "ne change pas.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-3",
+      "display_text": "est divisé par deux.",
+      "tts_text": "est divisé par deux.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-explication",
+      "display_text": "« Vous divisez par deux son impact environnemental », car « le livre a été fabriqué une fois, mais il a rendu son service deux fois ».",
+      "tts_text": "« Vous divisez par deux son impact environnemental », car « le livre a été fabriqué une fois, mais il a rendu son service deux fois ».",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1",
+      "display_text": "Mais tu as raison, je vais faire […] la facture environnementale.",
+      "tts_text": "Mais tu as raison, je vais faire… la facture environnementale.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-aide",
+      "display_text": "Aide : familier : faire … = faire exploser",
+      "tts_text": "Aide : familier : faire … = faire exploser",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-solution",
+      "display_text": "Mais tu as raison, je vais faire péter la facture environnementale.",
+      "tts_text": "Mais tu as raison, je vais faire péter la facture environnementale.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2",
+      "display_text": "Un livre en papier, ça se […].",
+      "tts_text": "Un livre en papier, ça se….",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-aide",
+      "display_text": "Aide : on le donne à quelqu'un, qui le rend ensuite.",
+      "tts_text": "Aide : on le donne à quelqu'un, qui le rend ensuite.",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-solution",
+      "display_text": "Un livre en papier, ça se prête.",
+      "tts_text": "Un livre en papier, ça se prête.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-difficile",
+      "display_text": "Des pourcentages, très vite : « Seul 1 % des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. Les 99 % restants achètent aussi des livres papier en plus des livres numériques. » Écoutez « ne lisent que » (= lisent seulement) et « les 99 % restants » (= les autres).",
+      "tts_text": "Des pourcentages, très vite : « Seul un pour cent des utilisateurs et utilisatrices de liseuses ne lisent que des formats numériques. Les quatre-vingt-dix-neuf pour cent restants achètent aussi des livres papier en plus des livres numériques. » Écoutez « ne lisent que » (= lisent seulement) et « les quatre-vingt-dix-neuf pour cent restants » (= les autres).",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-difficile.mp3"
+    },
+    {
+      "id": "phrases-consigne",
+      "display_text": "Six phrases de la vidéo, très utiles en réunion. Pour chaque phrase : 1. écoutez-la dans la vidéo, 2. répétez-la à voix haute, 3. dites votre propre phrase.",
+      "tts_text": "Six phrases de la vidéo, très utiles en réunion. Pour chaque phrase : un, écoutez-la dans la vidéo ; deux, répétez-la à voix haute ; trois, dites votre propre phrase.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrases-consigne.mp3"
+    },
+    {
+      "id": "phrases-rappel",
+      "display_text": "Lisez « à quoi elle sert », dites la phrase à voix haute, puis cliquez sur « Voir la phrase ».",
+      "tts_text": "Lisez « à quoi elle sert », dites la phrase à voix haute, puis cliquez sur « Voir la phrase ».",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrases-rappel.mp3"
+    },
+    {
+      "id": "phrase-p1-utilite",
+      "display_text": "Pour reconnaître un point, puis nuancer",
+      "tts_text": "Pour reconnaître un point, puis nuancer",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-utilite.mp3"
+    },
+    {
+      "id": "phrase-p1-forme",
+      "display_text": "C'est vrai, sauf que…",
+      "tts_text": "C'est vrai, sauf que…",
+      "role": "amorce",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p1-forme.mp3"
+    },
+    {
+      "id": "phrase-p1-exemple",
+      "display_text": "C'est vrai que la visio fait gagner du temps, sauf qu'on perd souvent les échanges informels.",
+      "tts_text": "C'est vrai que la visio fait gagner du temps, sauf qu'on perd souvent les échanges informels.",
+      "role": "exemple",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p1-exemple.mp3"
+    },
+    {
+      "id": "phrase-p1-avous",
+      "display_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "tts_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-avous.mp3"
+    },
+    {
+      "id": "phrase-p2-utilite",
+      "display_text": "Pour freiner quelqu'un qui conclut trop vite",
+      "tts_text": "Pour freiner quelqu'un qui conclut trop vite",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-utilite.mp3"
+    },
+    {
+      "id": "phrase-p2-forme",
+      "display_text": "Pas si vite !",
+      "tts_text": "Pas si vite !",
+      "role": "amorce",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p2-forme.mp3"
+    },
+    {
+      "id": "phrase-p2-exemple",
+      "display_text": "Pas si vite : avant de tout changer, regardons d'abord les chiffres.",
+      "tts_text": "Pas si vite : avant de tout changer, regardons d'abord les chiffres.",
+      "role": "exemple",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p2-exemple.mp3"
+    },
+    {
+      "id": "phrase-p2-avous",
+      "display_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "tts_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-avous.mp3"
+    },
+    {
+      "id": "phrase-p3-utilite",
+      "display_text": "Pour demander une comparaison honnête",
+      "tts_text": "Pour demander une comparaison honnête",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-utilite.mp3"
+    },
+    {
+      "id": "phrase-p3-forme",
+      "display_text": "Il faut comparer ce qui est comparable.",
+      "tts_text": "Il faut comparer ce qui est comparable.",
+      "role": "amorce",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p3-forme.mp3"
+    },
+    {
+      "id": "phrase-p3-exemple",
+      "display_text": "Pour choisir entre les deux logiciels, il faut comparer ce qui est comparable : le prix, mais aussi le temps de formation.",
+      "tts_text": "Pour choisir entre les deux logiciels, il faut comparer ce qui est comparable : le prix, mais aussi le temps de formation.",
+      "role": "exemple",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p3-exemple.mp3"
+    },
+    {
+      "id": "phrase-p3-avous",
+      "display_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "tts_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-avous.mp3"
+    },
+    {
+      "id": "phrase-p4-utilite",
+      "display_text": "Pour appuyer sa nuance sur des faits",
+      "tts_text": "Pour appuyer sa nuance sur des faits",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-utilite.mp3"
+    },
+    {
+      "id": "phrase-p4-forme",
+      "display_text": "Si on fait bien les comptes, …",
+      "tts_text": "Si on fait bien les comptes…",
+      "role": "amorce",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p4-forme.mp3"
+    },
+    {
+      "id": "phrase-p4-exemple",
+      "display_text": "Si on fait bien les comptes, le nouvel outil nous coûte plus cher que l'ancien la première année.",
+      "tts_text": "Si on fait bien les comptes, le nouvel outil nous coûte plus cher que l'ancien la première année.",
+      "role": "exemple",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p4-exemple.mp3"
+    },
+    {
+      "id": "phrase-p4-avous",
+      "display_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "tts_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-avous.mp3"
+    },
+    {
+      "id": "phrase-p5-utilite",
+      "display_text": "Pour montrer que tout dépend d'une condition",
+      "tts_text": "Pour montrer que tout dépend d'une condition",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-utilite.mp3"
+    },
+    {
+      "id": "phrase-p5-forme",
+      "display_text": "Plus…, plus…",
+      "tts_text": "Plus… plus…",
+      "role": "amorce",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p5-forme.mp3"
+    },
+    {
+      "id": "phrase-p5-exemple",
+      "display_text": "Plus on garde nos ordinateurs longtemps, plus leur coût est amorti.",
+      "tts_text": "Plus on garde nos ordinateurs longtemps, plus leur coût est amorti.",
+      "role": "exemple",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p5-exemple.mp3"
+    },
+    {
+      "id": "phrase-p5-avous",
+      "display_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "tts_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-avous.mp3"
+    },
+    {
+      "id": "phrase-p6-utilite",
+      "display_text": "Pour concéder un point, puis proposer une solution",
+      "tts_text": "Pour concéder un point, puis proposer une solution",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-utilite.mp3"
+    },
+    {
+      "id": "phrase-p6-forme",
+      "display_text": "C'est pas faux… Il faudrait (plutôt)…",
+      "tts_text": "C'est pas faux… Il faudrait plutôt…",
+      "role": "amorce",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p6-forme.mp3"
+    },
+    {
+      "id": "phrase-p6-exemple",
+      "display_text": "C'est pas faux, le papier coûte cher. Mais il faudrait plutôt réduire les impressions au lieu de tout passer sur tablette.",
+      "tts_text": "C'est pas faux, le papier coûte cher. Mais il faudrait plutôt réduire les impressions au lieu de tout passer sur tablette.",
+      "role": "exemple",
+      "reveal": "selon_mode",
+      "file": "audio/qwen3-tts/phrase-p6-exemple.mp3"
+    },
+    {
+      "id": "phrase-p6-avous",
+      "display_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "tts_text": "Dites votre phrase à voix haute, sur votre travail.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-avous.mp3"
+    },
+    {
+      "id": "melodie-intro",
+      "display_text": "Pour nuancer, on parle en deux temps : d'abord on reconnaît (« C'est vrai »), petite pause, puis on nuance (« sauf que… »). À l'oral, chaque groupe de mots se termine par une syllabe un peu plus longue. Et on fait les liaisons obligatoires.",
+      "tts_text": "Pour nuancer, on parle en deux temps : d'abord on reconnaît (« C'est vrai »), petite pause, puis on nuance (« sauf que… »). À l'oral, chaque groupe de mots se termine par une syllabe un peu plus longue. Et on fait les liaisons obligatoires.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-intro.mp3"
+    },
+    {
+      "id": "melodie-regle-1",
+      "display_text": "Coupez votre phrase en groupes courts.",
+      "tts_text": "Coupez votre phrase en groupes courts.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-1.mp3"
+    },
+    {
+      "id": "melodie-regle-2",
+      "display_text": "Faites une petite pause avant « sauf que », « mais », « or ».",
+      "tts_text": "Faites une petite pause avant « sauf que », « mais », « or ».",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-2.mp3"
+    },
+    {
+      "id": "melodie-regle-3",
+      "display_text": "Faites les liaisons obligatoires : dans « les auteurs » et « deux expressos », prononcez un son « z » entre les mots.",
+      "tts_text": "Faites les liaisons obligatoires : dans « les auteurs » et « deux expressos », prononcez un son « z » entre les mots.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-3.mp3"
+    },
+    {
+      "id": "melodie-attention",
+      "display_text": "Attention : Sans la pause, votre nuance sonne comme une contradiction brutale. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
+      "tts_text": "Attention : Sans la pause, votre nuance sonne comme une contradiction brutale. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-attention.mp3"
+    },
+    {
+      "id": "melodie-exercice-1",
+      "display_text": "Écoutez. Sur quelle syllabe entendez-vous un son [z] qui n'est pas écrit ? Cliquez dessus.",
+      "tts_text": "Écoutez. Sur quelle syllabe entendez-vous un son [z] qui n'est pas écrit ? Cliquez dessus.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-exercice-1.mp3"
+    },
+    {
+      "id": "melodie-exercice-1-explication",
+      "display_text": "Dans « deux expressos », on entend le son « z » entre les deux mots. Après « deux », « trois », « les » et « des », la liaison est obligatoire devant une voyelle.",
+      "tts_text": "Dans « deux expressos », on entend le son « z » entre les deux mots. Après « deux », « trois », « les » et « des », la liaison est obligatoire devant une voyelle.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/melodie-exercice-1-explication.mp3"
+    },
+    {
+      "id": "melodie-exercice-2",
+      "display_text": "Écoutez. Sur quelles syllabes entendez-vous un son [z] ? Cliquez sur les 2 syllabes, puis vérifiez.",
+      "tts_text": "Écoutez. Sur quelles syllabes entendez-vous un son [z] ? Cliquez sur les 2 syllabes, puis vérifiez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-exercice-2.mp3"
+    },
+    {
+      "id": "melodie-exercice-2-explication",
+      "display_text": "Dans « les autrices » et « les auteurs », on entend le son « z ». La liaison est obligatoire devant une voyelle. Devant une consonne, comme dans « les libraires » ou « les maisons », il n'y a pas de liaison.",
+      "tts_text": "Dans « les autrices » et « les auteurs », on entend le son « z ». La liaison est obligatoire devant une voyelle. Devant une consonne, comme dans « les libraires » ou « les maisons », il n'y a pas de liaison.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/melodie-exercice-2-explication.mp3"
+    },
+    {
+      "id": "melodie-etape-1",
+      "display_text": "Écoutez la phrase 2 fois.",
+      "tts_text": "Écoutez la phrase 2 fois.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-1.mp3"
+    },
+    {
+      "id": "melodie-etape-2",
+      "display_text": "Parlez en même temps que la voix, 2 fois. Respectez les pauses.",
+      "tts_text": "Parlez en même temps que la voix, 2 fois. Respectez les pauses.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-2.mp3"
+    },
+    {
+      "id": "melodie-etape-3",
+      "display_text": "Enregistrez-vous seul·e et comparez les courbes.",
+      "tts_text": "Enregistrez-vous seule et comparez les courbes.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-3.mp3"
+    },
+    {
+      "id": "entrainement-consigne",
+      "display_text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "tts_text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/entrainement-consigne.mp3"
+    },
+    {
+      "id": "entrainement-preparation",
+      "display_text": "Notez seulement des mots-clés, pas de phrases.",
+      "tts_text": "Notez seulement des mots-clés, pas de phrases.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/entrainement-preparation.mp3"
+    },
+    {
+      "id": "essai-1",
+      "display_text": "Répondez avec vos notes, en suivant les 4 étapes.",
+      "tts_text": "Répondez avec vos notes, en suivant les 4 étapes.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-1.mp3"
+    },
+    {
+      "id": "essai-1-ajout",
+      "display_text": "Pour l'essai 2, ajoutez : « Pas si vite… » et « Si on fait bien les comptes, … ». Et faites une petite pause avant « sauf que ».",
+      "tts_text": "Pour l'essai 2, ajoutez : « Pas si vite… » et « Si on fait bien les comptes, … ». Et faites une petite pause avant « sauf que ».",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-1-ajout.mp3"
+    },
+    {
+      "id": "essai-2",
+      "display_text": "Votre formateur joue la collègue et réagit. Répondez, puis concédez un point : « C'est pas faux… »",
+      "tts_text": "Votre formateur joue la collègue et réagit. Répondez, puis concédez un point : « C'est pas faux… »",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-2.mp3"
+    },
+    {
+      "id": "essai-2-ajout",
+      "display_text": "Pour l'essai 3, terminez par une proposition : « Il faudrait plutôt… ».",
+      "tts_text": "Pour l'essai 3, terminez par une proposition : « Il faudrait plutôt… ».",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-2-ajout.mp3"
+    },
+    {
+      "id": "essai-3",
+      "display_text": "Sans vos notes. Seulement l'essentiel : reconnaître, nuancer, proposer.",
+      "tts_text": "Sans vos notes. Seulement l'essentiel : reconnaître, nuancer, proposer.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-3.mp3"
+    },
+    {
+      "id": "collegue-objection-1",
+      "display_text": "Mais le papier, ce sont des arbres coupés !",
+      "tts_text": "Mais le papier, ce sont des arbres coupés !",
+      "role": "objection",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/collegue-objection-1.mp3"
+    },
+    {
+      "id": "collegue-objection-2",
+      "display_text": "Franchement, s'il faut faire des maths pour tout décider…",
+      "tts_text": "Franchement, s'il faut faire des maths pour tout décider…",
+      "role": "objection",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/collegue-objection-2.mp3"
+    },
+    {
+      "id": "collegue-objection-3",
+      "display_text": "Tout le monde le fait, pourquoi pas nous ?",
+      "tts_text": "Tout le monde le fait, pourquoi pas nous ?",
+      "role": "objection",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/collegue-objection-3.mp3"
+    },
+    {
+      "id": "collegue-objection-4",
+      "display_text": "Et les tablettes, on les a déjà : c'est gratuit, non ?",
+      "tts_text": "Et les tablettes, on les a déjà : c'est gratuit, non ?",
+      "role": "objection",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/collegue-objection-4.mp3"
+    },
+    {
+      "id": "apres-consigne",
+      "display_text": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "tts_text": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/apres-consigne.mp3"
+    },
+    {
+      "id": "apres-bilan",
+      "display_text": "Réécoutez-vous et cochez.",
+      "tts_text": "Réécoutez-vous et cochez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/apres-bilan.mp3"
+    },
+    {
+      "id": "objectif-consigne",
+      "display_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une vraie réunion ou un vrai appel.",
+      "tts_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une vraie réunion ou un vrai appel.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/objectif-consigne.mp3"
+    },
+    {
+      "id": "semaine-1",
+      "display_text": "Jour 1 : Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "tts_text": "Jour 1 : Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-1.mp3"
+    },
+    {
+      "id": "semaine-2",
+      "display_text": "Jour 2 : Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "tts_text": "Jour 2 : Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-2.mp3"
+    },
+    {
+      "id": "semaine-3",
+      "display_text": "Jour 3 : En réunion, nuancez une fois avec : « C'est vrai, sauf que… ».",
+      "tts_text": "Jour 3 : En réunion, nuancez une fois avec : « C'est vrai, sauf que… ».",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-3.mp3"
+    },
+    {
+      "id": "semaine-4",
+      "display_text": "Jour 4 : Enregistrez 1 minute : nuancez une idée « évidente » de votre travail, et envoyez-la à votre formateur.",
+      "tts_text": "Jour 4 : Enregistrez 1 minute : nuancez une idée « évidente » de votre travail, et envoyez-la à votre formateur.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-4.mp3"
+    },
+    {
+      "id": "ui-accueil-titre",
+      "display_text": "« C'est vrai, sauf que… » : nuancer une idée qui semble évidente",
+      "tts_text": "« C'est vrai, sauf que… » : nuancer une idée qui semble évidente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-titre.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-sujet",
+      "display_text": "Le sujet du jour",
+      "tts_text": "Le sujet du jour",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-sujet.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-ou",
+      "display_text": "Où ?",
+      "tts_text": "Où ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-ou.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-qui",
+      "display_text": "Qui parle ?",
+      "tts_text": "Qui parle ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-qui.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-vous",
+      "display_text": "Vous",
+      "tts_text": "Vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-vous.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-avous",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-avous.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser",
+      "display_text": "Vous préférez un sujet de votre travail ?",
+      "tts_text": "Vous préférez un sujet de votre travail ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser-exemple",
+      "display_text": "ex. : tout passer au cloud, changer tous les ordinateurs, faire toutes les réunions en visio",
+      "tts_text": "ex. : tout passer au cloud, changer tous les ordinateurs, faire toutes les réunions en visio",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser-exemple.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser-note",
+      "display_text": "Vous pouvez reprendre un sujet de votre semaine, dont vous avez parlé avec votre formateur.",
+      "tts_text": "Vous pouvez reprendre un sujet de votre semaine, dont vous avez parlé avec votre formateur.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser-note.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-programme",
+      "display_text": "Le programme",
+      "tts_text": "Le programme",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-programme.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-micro",
+      "display_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "tts_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-micro.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-avant-titre",
+      "display_text": "Je parle 1 minute",
+      "tts_text": "Je parle une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-titre.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-plan",
+      "display_text": "Vous pouvez suivre ce plan",
+      "tts_text": "Vous pouvez suivre ce plan",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-plan.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-enregistrer",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-enregistrer.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-pendant",
+      "display_text": "Pendant cette minute…",
+      "tts_text": "Pendant cette minute…",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-pendant.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-difficultes",
+      "display_text": "Touchez ce qui est vrai pour vous.",
+      "tts_text": "Touchez ce qui est vrai pour vous.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-difficultes.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-rec-note",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-rec-note.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-ecoute-titre",
+      "display_text": "J'écoute la vidéo",
+      "tts_text": "J'écoute la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-titre.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-avant",
+      "display_text": "Avant d'écouter : devinez",
+      "tts_text": "Avant d'écouter : devinez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-avant.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-repondre",
+      "display_text": "Écoutez l'extrait, puis répondez",
+      "tts_text": "Écoutez l'extrait, puis répondez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-repondre.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-completer",
+      "display_text": "Écoutez encore, puis complétez",
+      "tts_text": "Écoutez encore, puis complétez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-completer.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-difficile",
+      "display_text": "Le passage difficile",
+      "tts_text": "Le passage difficile",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-difficile.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-verifier",
+      "display_text": "Vérifier",
+      "tts_text": "Vérifier",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-verifier.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-extrait-1",
+      "display_text": "Extrait 1 · « Une liseuse, c'est très matériel »",
+      "tts_text": "Extrait 1. « Une liseuse, c'est très matériel »",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-extrait-1.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-extrait-2",
+      "display_text": "Extrait 2 · Liseuse + livres papier = double facture",
+      "tts_text": "Extrait 2. Liseuse + livres papier = double facture",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-extrait-2.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-phrases-titre",
+      "display_text": "6 phrases utiles",
+      "tts_text": "Six phrases utiles.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-titre.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-apprendre",
+      "display_text": "Apprendre",
+      "tts_text": "Apprendre",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-apprendre.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-rappel",
+      "display_text": "Vérifier sans regarder",
+      "tts_text": "Vérifier sans regarder",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-rappel.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-video",
+      "display_text": "Dans la vidéo",
+      "tts_text": "Dans la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-video.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-situation",
+      "display_text": "Au travail",
+      "tts_text": "Au travail",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-situation.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-avous",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-avous.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-voir",
+      "display_text": "Voir la phrase",
+      "tts_text": "Voir la phrase",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-voir.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-connue",
+      "display_text": "Je la connais",
+      "tts_text": "Je la connais",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-connue.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-revoir",
+      "display_text": "À revoir",
+      "tts_text": "À revoir",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-revoir.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-saisie",
+      "display_text": "Ma phrase (facultatif)",
+      "tts_text": "Ma phrase (facultatif)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-saisie.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-melodie-titre",
+      "display_text": "La mélodie du français",
+      "tts_text": "La mélodie du français",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-titre.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-regle",
+      "display_text": "La règle à retenir",
+      "tts_text": "La règle à retenir",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-regle.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-trouvez",
+      "display_text": "Écoutez et trouvez",
+      "tts_text": "Écoutez et trouvez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-trouvez.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-repetez",
+      "display_text": "Répétez comme dans la vidéo",
+      "tts_text": "Répétez comme dans la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-repetez.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-signes",
+      "display_text": "Les signes",
+      "tts_text": "Les signes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-signes.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-verifier",
+      "display_text": "Vérifier",
+      "tts_text": "Vérifier",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-verifier.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-1",
+      "display_text": "la voix monte",
+      "tts_text": "la voix monte",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-1.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-2",
+      "display_text": "la voix descend",
+      "tts_text": "la voix descend",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-2.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-3",
+      "display_text": "syllabe plus longue (fin du groupe)",
+      "tts_text": "syllabe plus longue (fin du groupe)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-3.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-4",
+      "display_text": "petite pause",
+      "tts_text": "petite pause",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-4.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-5",
+      "display_text": "on ajoute ce son (liaison)",
+      "tts_text": "on ajoute ce son (liaison)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-5.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-entrainement-titre",
+      "display_text": "Je m'entraîne 3 fois",
+      "tts_text": "Je m'entraîne trois fois.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-titre.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-preparer",
+      "display_text": "Préparez (1 minute)",
+      "tts_text": "Préparez. Une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-preparer.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-question",
+      "display_text": "Réaction de la collègue (pour le formateur)",
+      "tts_text": "Réaction de la collègue (pour le formateur)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-question.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-bilan",
+      "display_text": "Vos 3 essais en chiffres",
+      "tts_text": "Vos trois essais en chiffres.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-bilan.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-1",
+      "display_text": "Essai 1 · 1 min 30",
+      "tts_text": "Essai 1. Une minute trente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-1.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-2",
+      "display_text": "Essai 2 · 1 min 15",
+      "tts_text": "Essai 2. Une minute quinze",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-2.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-3",
+      "display_text": "Essai 3 · 1 min",
+      "tts_text": "Essai 3. Une minute",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-3.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-apres-titre",
+      "display_text": "Je reparle 1 minute",
+      "tts_text": "Je reparle une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-titre.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-apres-enregistrer",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-enregistrer.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-apres-comparaison",
+      "display_text": "Début et fin du cours",
+      "tts_text": "Début et fin du cours",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-comparaison.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-objectif-titre",
+      "display_text": "Mon objectif de la semaine",
+      "tts_text": "Mon objectif de la semaine",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-titre.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-phrase",
+      "display_text": "Ma phrase de la semaine",
+      "tts_text": "Ma phrase de la semaine",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-phrase.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-quand",
+      "display_text": "Quand ?",
+      "tts_text": "Quand ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-quand.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-exacte",
+      "display_text": "Ma phrase exacte",
+      "tts_text": "Ma phrase exacte",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-exacte.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-programme",
+      "display_text": "10 minutes par jour (facultatif)",
+      "tts_text": "Dix minutes par jour, facultatif.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-programme.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-envoyer",
+      "display_text": "Envoyer mon travail au formateur",
+      "tts_text": "Envoyer mon travail au formateur",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-envoyer.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-confidentialite",
+      "display_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "tts_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-confidentialite.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-plusloin",
+      "display_text": "Pour aller plus loin (facultatif)",
+      "tts_text": "Pour aller plus loin (facultatif)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-plusloin.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-apres",
+      "display_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "tts_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-apres.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-video",
+      "display_text": "Regarder la vidéo en entier (11 min)",
+      "tts_text": "Regarder la vidéo en entier. Onze minutes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-video.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-titre",
+      "display_text": "Espace formateur",
+      "tts_text": "Espace formateur",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-titre.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-intro",
+      "display_text": "Déroulé minuté et conseils de conduite.",
+      "tts_text": "Déroulé minuté et conseils de conduite.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-intro.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-deroule",
+      "display_text": "Déroulé (45 minutes)",
+      "tts_text": "Déroulé. Quarante-cinq minutes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-deroule.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-1",
+      "display_text": "Choisissez le sujet pendant la discussion libre (champ « Mon sujet » : une idée « évidente » de son entreprise). 1 minute, sans correction.",
+      "tts_text": "Choisissez le sujet pendant la discussion libre (champ « Mon sujet » : une idée « évidente » de son entreprise). 1 minute, sans correction.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-2",
+      "display_text": "Ton ironique et rapide (sketch + voix off). Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "tts_text": "Ton ironique et rapide (sketch + voix off). Faites deviner avant chaque écoute. Le passage difficile se réécoute seul.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-3",
+      "display_text": "Trois temps de la nuance : reconnaître (p1, p6), freiner et comparer (p2, p3), argumenter (p4, p5). Faites adapter l'exemple au métier de l'apprenant.",
+      "tts_text": "Trois temps de la nuance : reconnaître (p1, p6), freiner et comparer (p2, p3), argumenter (p4, p5). Faites adapter l'exemple au métier de l'apprenant.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-3.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-4",
+      "display_text": "Cible : la pause avant « sauf que » et les liaisons obligatoires. Syllabes à cliquer, puis shadowing.",
+      "tts_text": "Cible : la pause avant « sauf que » et les liaisons obligatoires. Syllabes à cliquer, puis shadowing.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-4.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-5",
+      "display_text": "Vous jouez la collègue. À l'essai 2, lisez une réaction (« Réaction de la collègue »). Retour entre les essais : 2 points au maximum.",
+      "tts_text": "Vous jouez la collègue. À l'essai 2, lisez une réaction (« Réaction de la collègue »). Retour entre les essais : 2 points au maximum.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-5.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-6",
+      "display_text": "Même sujet qu'au début. Commentez les 3 chiffres avec l'apprenant.",
+      "tts_text": "Même sujet qu'au début. Commentez les 3 chiffres avec l'apprenant.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-6.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-role-7",
+      "display_text": "Une phrase, une réunion réelle, une date.",
+      "tts_text": "Une phrase, une réunion réelle, une date.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-role-7.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-notes",
+      "display_text": "Notes",
+      "tts_text": "Notes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-notes.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-1-1",
+      "display_text": "Vidéo : sketch d'ARTE (« Écolo mon cul ! ») avec une voix off d'expert, ironique. Registre familier assumé : « c'est pas ouf », « faire péter la facture », « toute une floppée de », « bouquin ». Bon point de discussion : ce qui passe en réunion, et ce qui ne passe pas.",
+      "tts_text": "Vidéo : sketch d'ARTE (« Écolo mon cul ! ») avec une voix off d'expert, ironique. Registre familier assumé : « c'est pas ouf », « faire péter la facture », « toute une floppée de », « bouquin ». Bon point de discussion : ce qui passe en réunion, et ce qui ne passe pas.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-1-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-2-1",
+      "display_text": "Minutage : les 5 phrases de « La mélodie du français » ont été calées sur l'audio (Whisper large-v3-turbo et small, au centième), avec 0,6 s de marge au début, puis retranscrites pour vérifier qu'aucun mot ne manque, même sans les 0,4 premières secondes. Correction par rapport à la v1 : la phrase 1 s'arrêtait sur « étagère » (fin 190,3 → 191,6 s) et l'exercice « expressos » perdait « Qu'un » (début 309,3 → 307,8 s).",
+      "tts_text": "Minutage : les 5 phrases de « La mélodie du français » ont été calées sur l'audio (Whisper large-v3-turbo et small, au centième), avec 0,6 s de marge au début, puis retranscrites pour vérifier qu'aucun mot ne manque, même sans les 0,4 premières secondes. Correction par rapport à la v1 : la phrase 1 s'arrêtait sur « étagère » (fin 190,3 → 191,6 s) et l'exercice « expressos » perdait « Qu'un » (début 309,3 → 307,8 s).",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-2-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-2-2",
+      "display_text": "Les autres extraits (écoute, 6 phrases utiles) restent calés sur la transcription YouTube : écoutez-les avant d'envoyer le lien.",
+      "tts_text": "Les autres extraits (écoute, 6 phrases utiles) restent calés sur la transcription YouTube : écoutez-les avant d'envoyer le lien.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-2-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-3-1",
+      "display_text": "Mélodie : comme dans Accélération v9, chaque phrase de la partie 4 (les 3 modèles et les 2 phrases de l'exercice des liaisons) a sa courbe mesurée ; l'apprenant s'enregistre et voit sa courbe sur celle de la vidéo.",
+      "tts_text": "Mélodie : comme dans Accélération v9, chaque phrase de la partie 4 (les 3 modèles et les 2 phrases de l'exercice des liaisons) a sa courbe mesurée ; l'apprenant s'enregistre et voit sa courbe sur celle de la vidéo.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-3-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-3-2",
+      "display_text": "Flèches placées uniquement là où la mesure est nette : « C'est vrai » ↗ (+7 demi-tons), « une seule fois » ↘ (−7), « Une ↗ liseuse ↘ » (+3 puis −4,5), « de main en main » ↗ (+9), « la liseuse » ↗ (+7, la phrase continue), « expressos » ↘ (−5), l'énumération « les autrices, les auteurs, les libraires » ↗ (+4 à +5,5 à chaque élément), « C'est pas faux » ↘. Pas de flèche sur « années », « tassés » ni « dématérialisé » : mesure ambiguë.",
+      "tts_text": "Flèches placées uniquement là où la mesure est nette : « C'est vrai » (plus sept demi-tons), « une seule fois » (moins sept), « Une liseuse » (plus trois puis moins quatre virgule cinq), « de main en main » (plus neuf), « la liseuse » (plus sept, la phrase continue), « expressos » (moins cinq), l'énumération « les autrices, les auteurs, les libraires » (plus quatre à plus cinq virgule cinq à chaque élément), « C'est pas faux » . Pas de flèche sur « années », « tassés » ni « dématérialisé » : mesure ambiguë.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-3-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-3-3",
+      "display_text": "Étendue de la mélodie : 11,1 / 10,9 / 17,9 / 15,8 / 9,0 demi-tons.",
+      "tts_text": "Étendue de la mélodie : 11,1 / 10,9 / 17,9 / 15,8 / 9,0 demi-tons.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-3-3.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-4-1",
+      "display_text": "La transcription automatique de YouTube se trompe souvent. Il faut lire : écoanxiété (« écanxiété »), arbres (« arres »), pin (« pain »), haches (« Hes »),",
+      "tts_text": "La transcription automatique de YouTube se trompe souvent. Il faut lire : écoanxiété (« écanxiété »), arbres (« arres »), pin (« pain »), haches (« Hes »).",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-4-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-4-2",
+      "display_text": "tronc (« tron »), paquebots (« Pqubo »), pilonnés (« pyonnés »), étain (« éteint »), encre (« ancre »), la liseuse (« l'Éliseuse »), fatras (« fatra »),",
+      "tts_text": "tronc (« tron »), paquebots (« Pqubo »), pilonnés (« pyonnés »), étain (« éteint »), encre (« ancre »), la liseuse (« l'Éliseuse »), fatras (« fatra »).",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-4-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-4-3",
+      "display_text": "Proust (« Prou »), une seule liseuse (« une salle liseuse »), coloc (« colloque »), format poche (« Forme à poche »), encrage (« ancrage »),",
+      "tts_text": "Proust (« Prou »), une seule liseuse (« une salle liseuse »), coloc (« colloque »), format poche (« Forme à poche »), encrage (« ancrage »).",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-4-3.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-4-4",
+      "display_text": "« Avec ou sans liseuse » (« ou sans liseuse »).",
+      "tts_text": "« Avec ou sans liseuse » (« ou sans liseuse »).",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-4-4.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-5-1",
+      "display_text": "Écarts avec le support Drive : « tomber dans le panneau », « se voiler la face », « le nerf de la guerre », « jouer sur les deux tableaux », « sur le papier » et « un sacré chantier » ne sont pas dits dans la vidéo (ce sont des tournures des réponses modèles). La vidéo dit « un beau chantier de société » et « le fatras du numérique » (et non « foutoir »).",
+      "tts_text": "Écarts avec le support Drive : « tomber dans le panneau », « se voiler la face », « le nerf de la guerre », « jouer sur les deux tableaux », « sur le papier » et « un sacré chantier » ne sont pas dits dans la vidéo (ce sont des tournures des réponses modèles). La vidéo dit « un beau chantier de société » et « le fatras du numérique » (et non « foutoir »).",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-5-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-5-2",
+      "display_text": "Les tournures réellement dites sont celles des 6 phrases utiles, plus « la bonne blague », « prendre la poussière », « au pilon », « c'est pas ouf », « à la pelle », « bien vu », « passer de main en main », « prendre du recul ».",
+      "tts_text": "Les tournures réellement dites sont celles des 6 phrases utiles, plus « la bonne blague », « prendre la poussière », « au pilon », « c'est pas ouf », « à la pelle », « bien vu », « passer de main en main », « prendre du recul ».",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-5-2.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-note-6-1",
+      "display_text": "Pour la discussion libre (avant le cours), questions du support Drive : papier ou numérique au quotidien ? Votre intuition : livre ou liseuse, lequel est le plus écologique ? Le « zéro papier » en entreprise est-il toujours justifié ?",
+      "tts_text": "Pour la discussion libre (avant le cours), questions du support Drive : papier ou numérique au quotidien ? Votre intuition : livre ou liseuse, lequel est le plus écologique ? Le « zéro papier » en entreprise est-il toujours justifié ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-note-6-1.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-nav-commencer",
+      "display_text": "Commencer",
+      "tts_text": "Commencer",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-commencer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-retour",
+      "display_text": "Retour",
+      "tts_text": "Retour",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-retour.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-suivant",
+      "display_text": "Étape suivante",
+      "tts_text": "Étape suivante",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-suivant.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-terminer",
+      "display_text": "Terminer le cours",
+      "tts_text": "Terminer le cours",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-terminer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-reponses",
+      "display_text": "Copier mes réponses",
+      "tts_text": "Copier mes réponses",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-reponses.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-theme",
+      "display_text": "Thème",
+      "tts_text": "Thème",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-theme.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-effacer",
+      "display_text": "Tout effacer",
+      "tts_text": "Tout effacer",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-effacer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-vitesse",
+      "display_text": "Voix lente",
+      "tts_text": "Voix lente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-vitesse.mp3",
+      "section": "navigation"
+    }
+  ]
+}
