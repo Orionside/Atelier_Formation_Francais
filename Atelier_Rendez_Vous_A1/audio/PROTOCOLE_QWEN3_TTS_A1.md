@@ -9,8 +9,8 @@ Le catalogue `catalogue-qwen3tts.json` contient 208 segments prédéfinis : 116 
 - Les titres, repères de navigation et notes destinées au formateur se trouvent dans « Autres repères à écouter », replié par défaut. Ce panneau ne contient aucune réponse cachée.
 - Les quatre questions du serveur ne sont disponibles qu'après leur apparition dans l'exercice.
 - Les passages de la vidéo et les phrases associées aux courbes de mélodie restent lus par la vidéo authentique, pas par Qwen3-TTS. Les remplacer invaliderait le lien entre voix et courbe.
-- La voix à vitesse normale garde le rythme du modèle. Le bouton global « Voix 0,9× » ralentit les boutons « Écouter » ; les lecteurs des six exemples disposent aussi de leur propre option « Un peu plus lent ». Éviter une lecture artificiellement très ralentie pour un A1 : privilégier des segments courts et la répétition.
-- Les nombres, formes abrégées et glosses espagnoles problématiques sont reformulés *dans le texte oral seulement* lorsque cela améliore la compréhension. Le texte affiché reste intact.
+- La voix à vitesse normale garde le rythme du modèle. Le bouton global « Voix lente » ralentit les boutons « Écouter » à 0,9× ; les lecteurs des six exemples disposent aussi de leur propre option « Un peu plus lent ». Éviter une lecture artificiellement très ralentie pour un A1 : privilégier des segments courts et la répétition.
+- Le contrôle lexical exige le même contenu dans l'écrit et le texte envoyé au modèle. Seuls les chiffres prononcés en lettres, les flèches de mélodie, la ponctuation des alternatives et les blancs à compléter ne sont pas littéraux. Les aides bilingues sont dites intégralement ; elles ne donnent jamais le mot-réponse avant la vérification.
 - Les textes saisis librement par l'apprenant ne peuvent pas être préparés à l'avance et ne sont pas lus par Qwen.
 
 ## Générer ou mettre à jour sur ce Mac
@@ -19,6 +19,7 @@ Depuis le dossier `Atelier_Rendez_Vous_A1` :
 
 ```sh
 node scripts/construire-catalogue.mjs
+node scripts/verifier-fidelite-texte.mjs
 /Users/toufik/impact60_mesure/.venv-qwen3tts/bin/python scripts/generer-qwen3tts.py --all
 /Users/toufik/impact60_mesure/.venv-qwen3tts/bin/python scripts/generer-qwen3tts.py --check
 /Users/toufik/.hermes/workspaces/default/.venv-transcription/bin/python scripts/verifier-qwen3tts.py
@@ -26,6 +27,8 @@ node scripts/verifier-integration-audio.mjs
 ```
 
 Le générateur est reprenable : il ne refait que les entrées dont le texte, le rôle ou les paramètres vocaux ont changé. Il utilise le modèle `mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit` avec une référence vocale locale. Le fichier de référence n'est **pas** ajouté au dépôt. Les MP3 sont des ressources statiques : l'apprenant n'utilise ni clé API ni modèle installé.
+
+Pour réessayer un clip sans changer son texte, utilisez `--all --force-id identifiant` ; le générateur change alors sa graine aléatoire. Vérifiez le nouveau clip par transcription **et** écoute avant de le retenir. Une correction uniquement visuelle met à jour le manifeste sans regénérer inutilement le son.
 
 ## Validation indispensable avant usage pédagogique
 

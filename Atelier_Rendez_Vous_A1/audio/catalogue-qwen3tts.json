@@ -3,8 +3,8 @@
   "entries": [
     {
       "id": "accueil-objectif",
-      "display_text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En 1 minute, avec des phrases courtes.",
-      "tts_text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En 1 minute, avec des phrases courtes.",
+      "display_text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En une minute, avec des phrases courtes.",
+      "tts_text": "Aujourd'hui, vous apprenez à vous présenter (nom, nationalité, ville) et à commander et payer au café. En une minute, avec des phrases courtes.",
       "role": "objectif",
       "reveal": "visible",
       "file": "audio/qwen3-tts/accueil-objectif.mp3"
@@ -19,8 +19,8 @@
     },
     {
       "id": "situation-qui",
-      "display_text": "Une nouvelle collègue française",
-      "tts_text": "Une nouvelle collègue française",
+      "display_text": "Une nouvelle collègue française dit :",
+      "tts_text": "Une nouvelle collègue française dit :",
       "role": "contexte",
       "reveal": "visible",
       "file": "audio/qwen3-tts/situation-qui.mp3"
@@ -44,15 +44,15 @@
     {
       "id": "situation-consigne",
       "display_text": "Présentez-vous, puis commandez. En 1 minute.",
-      "tts_text": "Présentez-vous, puis commandez. Vous avez une minute.",
+      "tts_text": "Présentez-vous, puis commandez. En une minute.",
       "role": "consigne",
       "reveal": "visible",
       "file": "audio/qwen3-tts/situation-consigne.mp3"
     },
     {
       "id": "situation-question",
-      "display_text": "Qui rencontrez-vous au café, dans votre vie ?",
-      "tts_text": "Qui rencontrez-vous au café, dans votre vie ?",
+      "display_text": "Vous préférez imaginer une autre rencontre ? (facultatif) Qui rencontrez-vous au café, dans votre vie ?",
+      "tts_text": "Vous préférez imaginer une autre rencontre ? (facultatif) Qui rencontrez-vous au café, dans votre vie ?",
       "role": "question",
       "reveal": "visible",
       "file": "audio/qwen3-tts/situation-question.mp3"
@@ -179,8 +179,8 @@
     },
     {
       "id": "ecoute-a-pourquoi",
-      "display_text": "Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
-      "tts_text": "Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
+      "display_text": "Pourquoi cet extrait ? Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
+      "tts_text": "Pourquoi cet extrait ? Un homme et une femme se rencontrent. Ils disent leur nom, leur nationalité, leur ville et leur métier. Vous allez faire la même chose.",
       "role": "explication",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-a-pourquoi.mp3"
@@ -283,8 +283,8 @@
     },
     {
       "id": "ecoute-a-trou-1-aide",
-      "display_text": "verbe « parler » (hablar)",
-      "tts_text": "verbe « parler »",
+      "display_text": "Aide : le verbe « parler ». En espagnol : « hablar ».",
+      "tts_text": "Aide : le verbe « parler ». En espagnol : « hablar ».",
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3"
@@ -307,8 +307,8 @@
     },
     {
       "id": "ecoute-a-trou-2-aide",
-      "display_text": "= pas beaucoup (un poco)",
-      "tts_text": "Cela veut dire : pas beaucoup",
+      "display_text": "Aide : pas beaucoup. En espagnol : « un poco ».",
+      "tts_text": "Aide : pas beaucoup. En espagnol : « un poco ».",
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3"
@@ -331,8 +331,8 @@
     },
     {
       "id": "ecoute-b-pourquoi",
-      "display_text": "Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
-      "tts_text": "Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
+      "display_text": "Pourquoi cet extrait ? Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
+      "tts_text": "Pourquoi cet extrait ? Ils commandent, ils reçoivent la commande, puis ils paient et partent. Avec le serveur, on dit « vous ».",
       "role": "explication",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-b-pourquoi.mp3"
@@ -435,8 +435,8 @@
     },
     {
       "id": "ecoute-b-trou-1-aide",
-      "display_text": "= je vous donne (aquí tiene)",
-      "tts_text": "Cela veut dire : je vous donne",
+      "display_text": "Aide : je vous donne. En espagnol : « aquí tiene ».",
+      "tts_text": "Aide : je vous donne. En espagnol : « aquí tiene ».",
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3"
@@ -451,7 +451,7 @@
     },
     {
       "id": "ecoute-b-trou-2",
-      "display_text": "Merci beaucoup. — Je vous en […] .",
+      "display_text": "Merci beaucoup. — Je vous en […].",
       "tts_text": "Merci beaucoup. — Je vous en….",
       "role": "phrase_a_completer",
       "reveal": "avant_correction",
@@ -459,15 +459,15 @@
     },
     {
       "id": "ecoute-b-trou-2-aide",
-      "display_text": "réponse polie à « merci » (de nada)",
-      "tts_text": "réponse polie à « merci »",
+      "display_text": "Aide : une réponse polie à « merci ». En espagnol : « de nada ».",
+      "tts_text": "Aide : une réponse polie à « merci ». En espagnol : « de nada ».",
       "role": "aide",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3"
     },
     {
       "id": "ecoute-b-trou-2-solution",
-      "display_text": "Merci beaucoup. — Je vous en prie .",
+      "display_text": "Merci beaucoup. — Je vous en prie.",
       "tts_text": "Merci beaucoup. — Je vous en prie.",
       "role": "correction",
       "reveal": "apres_verification",
@@ -475,8 +475,8 @@
     },
     {
       "id": "ecoute-b-difficile",
-      "display_text": "« Carte ou espèces ? — Espèces, espèces. » Le serveur ne fait pas une phrase complète : c'est normal au café. Carte = carte bancaire. Espèces = billets et pièces. On répond avec un seul mot, ou : « Par carte, s'il vous plaît. »",
-      "tts_text": "Carte ou espèces ? Espèces, espèces. Le serveur ne fait pas une phrase complète : c'est normal au café. Carte, c'est la carte bancaire. Espèces, ce sont les billets et les pièces. On répond avec un seul mot, ou : Par carte, s'il vous plaît.",
+      "display_text": "« Carte ou espèces ? — Espèces, espèces. » Le serveur ne fait pas une phrase complète : c'est normal au café. Carte, c'est la carte bancaire. Espèces, ce sont les billets et les pièces. On répond avec un seul mot, ou : « Par carte, s'il vous plaît. »",
+      "tts_text": "« Carte ou espèces ? — Espèces, espèces. » Le serveur ne fait pas une phrase complète : c'est normal au café. Carte, c'est la carte bancaire. Espèces, ce sont les billets et les pièces. On répond avec un seul mot, ou : « Par carte, s'il vous plaît. »",
       "role": "explication",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ecoute-b-difficile.mp3"
@@ -659,7 +659,7 @@
     },
     {
       "id": "phrase-p6-utilite",
-      "display_text": "Pour demander à payer (l'addition = la cuenta)",
+      "display_text": "Pour demander à payer. L'addition, c'est la somme à payer.",
       "tts_text": "Pour demander à payer. L'addition, c'est la somme à payer.",
       "role": "explication",
       "reveal": "visible",
@@ -691,8 +691,8 @@
     },
     {
       "id": "melodie-intro",
-      "display_text": "En français, la voix monte ↗ quand ce n'est pas fini : une autre information arrive, ou vous posez une question. La voix descend ↘ quand c'est fini.",
-      "tts_text": "En français, la voix monte quand une autre information arrive, ou quand vous posez certaines questions. La voix descend quand la phrase est finie.",
+      "display_text": "En français, la voix monte ↗ quand ce n'est pas fini : une autre information arrive, ou vous posez certaines questions. La voix descend ↘ quand c'est fini.",
+      "tts_text": "En français, la voix monte quand ce n'est pas fini : une autre information arrive, ou vous posez certaines questions. La voix descend quand c'est fini.",
       "role": "explication",
       "reveal": "visible",
       "file": "audio/qwen3-tts/melodie-intro.mp3"
@@ -723,8 +723,8 @@
     },
     {
       "id": "melodie-attention",
-      "display_text": "La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Attention : toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
-      "tts_text": "La dernière syllabe du mot est plus longue : Adrienne, hongroise, français. Attention : toutes les questions ne montent pas. Dans la vidéo, Et toi ? reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
+      "display_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie mesurée dans la vidéo.",
+      "tts_text": "Attention : La dernière syllabe du mot est plus longue : Adrienne, hongroise, français (en espagnol : francés, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches montrent la mélodie mesurée dans la vidéo.",
       "role": "explication",
       "reveal": "visible",
       "file": "audio/qwen3-tts/melodie-attention.mp3"
@@ -883,8 +883,8 @@
     },
     {
       "id": "apres-bilan",
-      "display_text": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
-      "tts_text": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
+      "display_text": "Réécoutez-vous et cochez.",
+      "tts_text": "Réécoutez-vous et cochez.",
       "role": "consigne",
       "reveal": "visible",
       "file": "audio/qwen3-tts/apres-bilan.mp3"
@@ -1058,7 +1058,7 @@
     {
       "id": "ui-avant-pendant",
       "display_text": "Pendant cette minute…",
-      "tts_text": "Pendant la minute qui suit.",
+      "tts_text": "Pendant cette minute…",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-avant-pendant.mp3",
@@ -1139,7 +1139,7 @@
     {
       "id": "ui-extrait-1",
       "display_text": "Extrait 1 · Bonjour ! Je suis…",
-      "tts_text": "Premier extrait. Bonjour ! Je suis…",
+      "tts_text": "Extrait 1. Bonjour ! Je suis…",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-extrait-1.mp3",
@@ -1148,7 +1148,7 @@
     {
       "id": "ui-extrait-2",
       "display_text": "Extrait 2 · Au café",
-      "tts_text": "Deuxième extrait. Au café.",
+      "tts_text": "Extrait 2. Au café",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-extrait-2.mp3",
@@ -1355,7 +1355,7 @@
     {
       "id": "ui-entrainement-preparer",
       "display_text": "Préparez (1 minute)",
-      "tts_text": "Préparez-vous pendant une minute.",
+      "tts_text": "Préparez. Une minute.",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-entrainement-preparer.mp3",
@@ -1517,7 +1517,7 @@
     {
       "id": "ui-objectif-video",
       "display_text": "Regarder la vidéo en entier (5 min)",
-      "tts_text": "Regarder la vidéo en entier. Durée : cinq minutes.",
+      "tts_text": "Regarder la vidéo en entier. Cinq minutes.",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-objectif-video.mp3",
@@ -1535,7 +1535,7 @@
     {
       "id": "ui-intro",
       "display_text": "Déroulé minuté et conseils de conduite.",
-      "tts_text": "Déroulement de la séance et conseils pour le formateur.",
+      "tts_text": "Déroulé minuté et conseils de conduite.",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-intro.mp3",
@@ -1544,7 +1544,7 @@
     {
       "id": "ui-deroule",
       "display_text": "Déroulé (45 minutes)",
-      "tts_text": "Déroulé de quarante-cinq minutes.",
+      "tts_text": "Déroulé. Quarante-cinq minutes.",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-deroule.mp3",
@@ -1688,7 +1688,7 @@
     {
       "id": "ui-nav-commencer",
       "display_text": "Commencer",
-      "tts_text": "Commencez le cours.",
+      "tts_text": "Commencer",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-nav-commencer.mp3",
@@ -1750,8 +1750,8 @@
     },
     {
       "id": "ui-nav-vitesse",
-      "display_text": "Voix 0,9×",
-      "tts_text": "Voix un peu plus lente",
+      "display_text": "Voix lente",
+      "tts_text": "Voix lente",
       "role": "interface",
       "reveal": "visible",
       "file": "audio/qwen3-tts/ui-nav-vitesse.mp3",

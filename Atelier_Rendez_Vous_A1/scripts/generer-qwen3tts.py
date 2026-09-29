@@ -79,8 +79,13 @@ def main():
     mode.add_argument("--id")
     p.add_argument("--limit", type=int, default=0)
     p.add_argument("--force", action="store_true")
+    p.add_argument("--force-id", action="append", default=[],
+                   help="Régénérer cet identifiant même si son texte n'a pas changé (répétable)")
     args = p.parse_args()
     entries = json.loads(CATALOGUE.read_text(encoding="utf-8"))["entries"]
+    unknown = sorted(set(args.force_id) - {x["id"] for x in entries})
+    if unknown:
+        p.error("Identifiants inconnus : " + ", ".join(unknown))
     if args.id:
         entries = [x for x in entries if x["id"] == args.id]
         if not entries:
@@ -106,25 +111,37 @@ def main():
               "format":"mp3 192 kb/s", "niveau":"A1", "temperature":0.9,
               "top_k":50, "top_p":1.0, "repetition_penalty":1.05}
     pending = []
+    metadata_updated = False
     for x in entries:
         key = hashlib.sha256(json.dumps({"text":x["tts_text"], "role":x["role"],
                                         "params":params}, ensure_ascii=False,
                                        sort_keys=True).encode()).hexdigest()
         target = OUTPUT / (x["id"] + ".mp3")
-        if not args.force and clips.get(x["id"], {}).get("key") == key and valid_mp3(target):
+        if not args.force and x["id"] not in args.force_id and clips.get(x["id"], {}).get("key") == key and valid_mp3(target):
+            if any(clips[x["id"]].get(field) != value for field, value in x.items()):
+                clips[x["id"]].update(x)
+                metadata_updated = True
             continue
-        pending.append((x, key, target))
+        previous = clips.get(x["id"], {})
+        forced = args.force or x["id"] in args.force_id
+        variant = (previous.get("seed_variant", 0) + 1) if forced and previous.get("key") == key else 0
+        pending.append((x, key, target, variant))
     if args.limit:
         pending = pending[:args.limit]
+    if metadata_updated:
+        MANIFEST.write_text(json.dumps({"parameters":params, "clips":clips},
+                                       ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     if not pending:
         print("Aucun segment à produire.")
         return 0
     from mlx_audio.tts.utils import load_model
     model = load_model(MODEL)
-    for i, (x, key, target) in enumerate(pending, 1):
-        duration = render(model, x, target, int(key[:8], 16))
+    for i, (x, key, target, variant) in enumerate(pending, 1):
+        seed = (int(key[:8], 16) ^ (variant * 0x9e3779b9)) & 0xffffffff
+        duration = render(model, x, target, seed)
         clips[x["id"]] = {**x, "key":key, "duration_s":duration,
-                          "sha256":sha(target), "status":"non_valide_a_l_ecoute"}
+                          "sha256":sha(target), "seed_variant":variant,
+                          "status":"non_valide_a_l_ecoute"}
         MANIFEST.write_text(json.dumps({"parameters":params, "clips":clips},
                                        ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
         print(f'[{i}/{len(pending)}] {x["id"]} : {duration:.1f} s', flush=True)

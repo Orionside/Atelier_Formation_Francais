@@ -18,7 +18,7 @@ window.IMPACT60 = {
       "Le": "La vidéo"
     },
     "titreSeance": "Se présenter… et commander au café",
-    "objectif": "Aujourd'hui, vous apprenez à <strong>vous présenter</strong> (nom, nationalité, ville) et à <strong>commander et payer au café</strong>. En 1 minute, avec des phrases courtes.",
+    "objectif": "Aujourd'hui, vous apprenez à <strong>vous présenter</strong> (nom, nationalité, ville) et à <strong>commander et payer au café</strong>. En une minute, avec des phrases courtes.",
     "video": {
       "url": "https://youtu.be/HNBQOEb_O5k",
       "titre": "Français pour débutants – Rendez-vous (Learn French with Alacarte Studio)",
@@ -102,7 +102,7 @@ window.IMPACT60 = {
         {
           "avant": "J'habite à Budapest, mais je ne",
           "apres": "pas hongrois.",
-          "aide": "verbe « parler » (hablar)",
+          "aide": "le verbe « parler ». En espagnol : « hablar ».",
           "reponses": [
             "parle"
           ],
@@ -111,7 +111,7 @@ window.IMPACT60 = {
         {
           "avant": "Mais moi, je parle un",
           "apres": "français.",
-          "aide": "= pas beaucoup (un poco)",
+          "aide": "pas beaucoup. En espagnol : « un poco ».",
           "reponses": [
             "peu"
           ],
@@ -157,7 +157,7 @@ window.IMPACT60 = {
         {
           "avant": "Bonjour madame. Bonjour monsieur.",
           "apres": "la carte.",
-          "aide": "= je vous donne (aquí tiene)",
+          "aide": "je vous donne. En espagnol : « aquí tiene ».",
           "reponses": [
             "voici",
             "voila"
@@ -167,7 +167,7 @@ window.IMPACT60 = {
         {
           "avant": "Merci beaucoup. — Je vous en",
           "apres": ".",
-          "aide": "réponse polie à « merci » (de nada)",
+          "aide": "une réponse polie à « merci ». En espagnol : « de nada ».",
           "reponses": [
             "prie"
           ],
@@ -177,7 +177,7 @@ window.IMPACT60 = {
       "difficile": {
         "debut": 198.84,
         "fin": 205.17,
-        "texte": "« Carte ou espèces ? — Espèces, espèces. » Le serveur ne fait pas une phrase complète : c'est normal au café. <strong>Carte</strong> = carte bancaire. <strong>Espèces</strong> = billets et pièces. On répond avec un seul mot, ou : « Par carte, s'il vous plaît. »"
+        "texte": "« Carte ou espèces ? — Espèces, espèces. » Le serveur ne fait pas une phrase complète : c'est normal au café. <strong>Carte</strong>, c'est la carte bancaire. <strong>Espèces</strong>, ce sont les billets et les pièces. On répond avec un seul mot, ou : « Par carte, s'il vous plaît. »"
       }
     }
   ],
@@ -879,7 +879,7 @@ window.IMPACT60 = {
     },
     {
       "id": "p6",
-      "sert": "Pour demander à payer (l'addition = la cuenta)",
+      "sert": "Pour demander à payer. L'addition, c'est la somme à payer.",
       "forme": "L'addition, s'il vous plaît.",
       "film": {
         "texte": "<strong>L'addition, s'il vous plaît.</strong>",
@@ -1017,13 +1017,13 @@ window.IMPACT60 = {
     }
   ],
   "prononciation": {
-    "intro": "En français, la voix <strong>monte ↗</strong> quand ce n'est pas fini : une autre information arrive, ou vous posez une question. La voix <strong>descend ↘</strong> quand c'est fini.",
+    "intro": "En français, la voix <strong>monte ↗</strong> quand ce n'est pas fini : une autre information arrive, ou vous posez certaines questions. La voix <strong>descend ↘</strong> quand c'est fini.",
     "regle": [
       "Vous donnez une information, et il y a une suite : la voix <strong>monte ↗</strong>.",
       "Vous proposez quelque chose (« Un café ? ») : la voix <strong>monte ↗</strong>.",
       "C'est la dernière information : la voix <strong>descend ↘</strong>. L'autre sait que c'est à lui de parler."
     ],
-    "attention": "La dernière syllabe du mot est plus longue : Adri<strong>enne</strong>, hon<strong>groise</strong>, fran<strong>çais</strong> (en espagnol : fran<strong>cés</strong>, c'est pareil !). Attention : toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie <strong>mesurée</strong> dans la vidéo.",
+    "attention": "La dernière syllabe du mot est plus longue : Adri<strong>enne</strong>, hon<strong>groise</strong>, fran<strong>çais</strong> (en espagnol : fran<strong>cés</strong>, c'est pareil !). Toutes les questions ne montent pas. Dans la vidéo, « Et toi ? » reste plat. Les flèches ↗ ↘ montrent la mélodie <strong>mesurée</strong> dans la vidéo.",
     "perception": [
       {
         "titre": "Phrase 1",
