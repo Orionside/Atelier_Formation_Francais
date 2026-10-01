@@ -1,0 +1,27 @@
+{
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-8bit",
+  "texte": "Bonjour ! Aujourd'hui, nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase.",
+  "candidates": {
+    "c1": {
+      "description": "A",
+      "instruct": "A 35-year-old native French woman from Paris speaking standard metropolitan French. Clear, precise articulation, warm and natural mid-pitched voice, calm and friendly tone of a language teacher, moderate pace, natural lively French intonation. Studio quality, no background noise.",
+      "graine": 11,
+      "duree_s": 10.08,
+      "sample_rate": 24000
+    },
+    "c2": {
+      "description": "B",
+      "instruct": "Une femme française de 35 ans, née à Paris, français standard sans accent régional. Voix claire et posée, timbre chaleureux, articulation très nette, débit modéré, intonation naturelle et vivante d'une formatrice bienveillante. Enregistrement en studio.",
+      "graine": 11,
+      "duree_s": 9.92,
+      "sample_rate": 24000
+    },
+    "c3": {
+      "description": "C",
+      "instruct": "Native French female voice, mid-thirties, professional voice-over for an online French course. Bright, clear, confident and smiling, medium pitch, crisp consonants, natural melodic French prosody, unhurried pace. Clean studio recording.",
+      "graine": 11,
+      "duree_s": 10.96,
+      "sample_rate": 24000
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "limitation": "Mesures et reconnaissance automatique : aucune certification perceptive du timbre, de l’accent ou de l’âge.",
+  "candidates": [
+    {
+      "candidate": "c1",
+      "instruction": "A 35-year-old native French woman from Paris speaking standard metropolitan French. Clear, precise articulation, warm and natural mid-pitched voice, calm and friendly tone of a language teacher, moderate pace, natural lively French intonation. Studio quality, no background noise.",
+      "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase.",
+      "wer": 0.0,
+      "duration_s": 10.08,
+      "words_per_minute": 173,
+      "median_f0_hz": 231,
+      "f0_range_semitones": 9.5
+    },
+    {
+      "candidate": "c2",
+      "instruction": "Une femme française de 35 ans, née à Paris, français standard sans accent régional. Voix claire et posée, timbre chaleureux, articulation très nette, débit modéré, intonation naturelle et vivante d'une formatrice bienveillante. Enregistrement en studio.",
+      "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase.",
+      "wer": 0.0,
+      "duration_s": 9.92,
+      "words_per_minute": 175,
+      "median_f0_hz": 200,
+      "f0_range_semitones": 8.4
+    },
+    {
+      "candidate": "c3",
+      "instruction": "Native French female voice, mid-thirties, professional voice-over for an online French course. Bright, clear, confident and smiling, medium pitch, crisp consonants, natural melodic French prosody, unhurried pace. Clean studio recording.",
+      "transcription": "Bonjour. Aujourd'hui, nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase.",
+      "wer": 0.0,
+      "duration_s": 10.96,
+      "words_per_minute": 159,
+      "median_f0_hz": 311,
+      "f0_range_semitones": 9.3
+    }
+  ]
+}

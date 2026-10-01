@@ -1,0 +1,1886 @@
+{
+  "asr_model": "mlx-community/whisper-large-v3-turbo",
+  "limitation": "La transcription ne mesure pas la prosodie native.",
+  "clips": {
+    "accueil-objectif": {
+      "sha256": "8263dc4e2ecaf1c035d9db74086a2b25d4dbcda59a4b3aea69351b0af5e47c16",
+      "text": "Aujourd'hui, vous apprenez à dire ce qui change dans votre alimentation et à expliquer votre choix. En une minute, comme à table avec un collègue.",
+      "transcribed": "Aujourd'hui, vous apprenez à dire ce qui change dans votre alimentation et à expliquer votre choix. En une minute, comme à table avec un collègue.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-lieu": {
+      "sha256": "988c74063f708d3df896edec70ebe9c1259b1947ba90f42d32a559b606bc2d78",
+      "text": "À la cantine, à midi",
+      "transcribed": "À la cantine, à midi...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-qui": {
+      "sha256": "27301f201161a11993706c0d91a2d91619aa82a04a7771ae5f31ecf8a38baf3b",
+      "text": "Un collègue français dit :",
+      "transcribed": "Un collègue français dit",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-dialogue": {
+      "sha256": "93ba80c92f1fb1c4e2da0268bc74204490b59a06e49d4810345d150793d61dba",
+      "text": "« Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? »",
+      "transcribed": "Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-vous": {
+      "sha256": "6d2ac0a545771ca840f7038ccf9cd578572f58d843b8655e67b4c1b003a4b6dc",
+      "text": "Vous répondez : ce que vous mangez, ce qui change, et pourquoi. Puis vous posez une question à votre collègue.",
+      "transcribed": "Vous répondez « ce que vous mangez », « ce qui change » et « pourquoi ». Puis vous posez une question à votre collègue.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-consigne": {
+      "sha256": "88ee0c091a9854faac00528f4539dd203cfbadd7242d8e68b5a1ae8b53bb002f",
+      "text": "Parlez de vos habitudes à table, et de ce qui change. En une minute.",
+      "transcribed": "Parlez de vos habitudes à table et de ce qui change en une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "situation-question": {
+      "sha256": "53bf37382e55d14cdb6ba0fdc5572af20ee6060fb3161e137589d09d989e5a02",
+      "text": "Vous préférez un autre sujet ? (facultatif) De quelle autre habitude voulez-vous parler ?",
+      "transcribed": "Vous préférez un autre sujet ? Facultatif. De quelle autre habitude voulez-vous parler ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1-titre": {
+      "sha256": "479ca1a10ee18b5cbac76c790c491163c470e1e28f647a4935f0a227140d80ec",
+      "text": "Mon habitude",
+      "transcribed": "Mon habitude.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1-exemple": {
+      "sha256": "1aecff7cd422e269275f228e2ee85fbe3cd00517594294b2deaee03d90f73857",
+      "text": "Des légumes ? J'en mange souvent.",
+      "transcribed": "Des légumes ? J'en mange souvent.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-2-titre": {
+      "sha256": "3058e908587f22e9c7826e0215649f2f228199cf33342324be3f008d8a1b8a62",
+      "text": "Ce qui change",
+      "transcribed": "Ce qui change ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-2-exemple": {
+      "sha256": "a8b0edfe1439f1f1f5f1a4273394f32f179befbba32ebec24d839588fb53fdf8",
+      "text": "Je mange de plus en plus de… et de moins en moins de…",
+      "transcribed": "Je mange de plus en plus de... et de moins en moins de...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3-titre": {
+      "sha256": "7c38ec1d809a81ab4548755b50ba32a2ca99be53bb09424e64f6c856dadfdaa1",
+      "text": "Pourquoi je fais ce choix",
+      "transcribed": "Pourquoi je fais ce choix ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3-exemple": {
+      "sha256": "aefc86818bcd98d19e4784ef1c5e6149798b5ee8a176d2fedaf96c50106f22aa",
+      "text": "Ça permet de moins jeter.",
+      "transcribed": "Ça permet de moins jeter.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4-titre": {
+      "sha256": "4152bffde5212aeaf1d7dff8a3f7c30dc8cd25fadc4b77d67b8d46b161f0f61d",
+      "text": "Ma question",
+      "transcribed": "Ma question.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4-exemple": {
+      "sha256": "7a2f1a785869f38899157200d75bc20092cc774cde57f95ff62615b00e1b7c10",
+      "text": "Et vous, vous avez déjà essayé ?",
+      "transcribed": "Et vous, vous avez déjà essayé ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avant-consigne": {
+      "sha256": "8bb652059602c6f42a4b93058b86b0e342893d2a41db0bc44ee4d52a52057806",
+      "text": "Parlez de vos habitudes et de ce qui change, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "transcribed": "Parlez de vos habitudes et de ce qui change sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-1": {
+      "sha256": "72a52ac024cfef342a19a6bb0200e57efe2652b167d2d9d771f968817950fc11",
+      "text": "Je cherchais mes mots",
+      "transcribed": "Je cherchais mes mots.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-2": {
+      "sha256": "618cb332f66a282d8b53240510a4ca01d60f32d04e9a5634b21598fc23b902da",
+      "text": "Je ne savais pas comment commencer",
+      "transcribed": "Je ne savais pas comment commencer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-3": {
+      "sha256": "f54fc970d967de6722914ee0483a8af0e176f7adaabccebddc3806c9b339baf0",
+      "text": "Je ne savais pas dire « de plus en plus »",
+      "transcribed": "Je ne savais pas dire de plus en plus.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-4": {
+      "sha256": "b8dbcc7828d6141a22ded911dbd97ee407da69dacb8ad5ce01e09b42e8affbdc",
+      "text": "Je n'étais pas sûre de ma prononciation",
+      "transcribed": "Je n'étais pas sûre de ma prononciation.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "difficulte-5": {
+      "sha256": "e2ea3bd5559d95b5b854e353e044e4572c0748e8bd5ff842b2c186f7d9a5e841",
+      "text": "Rien de spécial",
+      "transcribed": "Rien de spécial.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-consigne": {
+      "sha256": "e919a8ed314dae0e4eb619df9bf8bf377683882d9db43570d500e3f7ab07ffa8",
+      "text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "transcribed": "Deux extraits courts. Pour chaque extrait, devinez, écoutez, répondez, réécoutez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-pourquoi": {
+      "sha256": "dff6ce9bfd95757bf186ae8afb64932329147408a1ff8792544e20a132b1b69c",
+      "text": "Pourquoi cet extrait ? La voix explique ce qui va changer dans notre assiette, et pourquoi. Vous allez faire la même chose avec vos habitudes.",
+      "transcribed": "Pourquoi cet extrait ? La voix explique ce qui va changer dans notre assiette. Et pourquoi ? Vous allez faire la même chose avec vos habitudes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-devine": {
+      "sha256": "271a0c853a0edfabd82bd0fd952fbdda40839a1c516f3dc99f5a373a249c847e",
+      "text": "À votre avis, qu'est-ce qu'on va manger dans 20 ans ? Répondez à voix haute : 2 idées.",
+      "transcribed": "À votre avis, qu'est-ce qu'on va manger dans 20 ans ? Répondez à voix haute, deux idées.",
+      "word_error_rate": 0.0526,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1": {
+      "sha256": "6f947e6aef4581bdba92551b9a594dd8bd1b564e2aed5a2ae4dc6f9018ef52e7",
+      "text": "Dans la vidéo, quel problème est associé à la viande et au maïs ?",
+      "transcribed": "Dans la vidéo « Quel problème est associé à la viande et au maïs ? »",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-option-1": {
+      "sha256": "6b622a877c254e55271991124dea746507eac6b3f5d015a1f8773b3895734c8a",
+      "text": "Ils coûtent trop cher.",
+      "transcribed": "Il coûte trop cher.",
+      "word_error_rate": 0.5,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ecoute-a-q1-option-2": {
+      "sha256": "bfda2999efda1aacc5d86752a65a10828b0f46cd4d4580f7a441ca8bcd19fd2d",
+      "text": "Ils demandent beaucoup d'eau.",
+      "transcribed": "Il demande beaucoup d'eau.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ecoute-a-q1-option-3": {
+      "sha256": "863de4e581850872ff20078c3c4c26f0ffe993d114c042e08c2b623dbd089288",
+      "text": "Ils n'ont pas de goût.",
+      "transcribed": "Ils n'ont pas de goût.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q1-explication": {
+      "sha256": "3150832f77c1ea444a84a97f1e9b28aba1b23b04215706b15cf2ce19772376a0",
+      "text": "La voix dit : « des produits qui, comme la viande ou le maïs, nécessitent beaucoup d'eau ». Nécessiter, c'est avoir besoin de quelque chose.",
+      "transcribed": "La voix dit « des produits qui, comme la viande ou le maïs, nécessitent beaucoup d'eau. Nécessiter, c'est avoir besoin de quelque chose. »",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2": {
+      "sha256": "fc278261fa8c6861535e0e8cd79ff4c337d974009e28e414015f00aa4d184854",
+      "text": "Où peut-on trouver des protéines, sans manger de viande ?",
+      "transcribed": "Où peut-on trouver des protéines sans manger de viande ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-1": {
+      "sha256": "3505ab6fc65d78db2d9bad6f5b3b4709c26602a6767cc8ecfc240fa058848bd9",
+      "text": "Dans le chocolat et la farine.",
+      "transcribed": "dans le chocolat et la farine.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-2": {
+      "sha256": "923835b8412c27127e099faf1c96d1c4dddf670b6996bd5a5112c6ebaa18b274",
+      "text": "Dans l'eau.",
+      "transcribed": "Dans l'eau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-option-3": {
+      "sha256": "67bd54cc100d10102e0d6c22831c9378c7fefaf595056421ed64d35cd9a7a963",
+      "text": "Dans des plantes comme le soja, et dans les insectes.",
+      "transcribed": "dans des plantes comme le soja et dans les insectes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-q2-explication": {
+      "sha256": "ded52b52f6463c3936d4e7877a45a7f93f8b13ad8c224e9d61cf8e3e12abe592",
+      "text": "« On peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes. » Ailleurs, c'est dans un autre endroit.",
+      "transcribed": "On peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes. Ailleurs, c'est dans un autre endroit.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1": {
+      "sha256": "4d089c650a5c25a41b8c17c9fd068b960056fa99b4d534093f2db963efded5cc",
+      "text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup….",
+      "transcribed": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1-aide": {
+      "sha256": "945dfccb6c65272c14d9409bb70cc94ed82086f865bb762f12d865141cf60c84",
+      "text": "Aide : être différent.",
+      "transcribed": "Aide être différent.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-1-solution": {
+      "sha256": "164b4906bd58847ac5b5496a22ad8b9b1ef6cf6fd8401dc8fad7613375c9db36",
+      "text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "transcribed": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2": {
+      "sha256": "67ff5955c9fa0b032c65eb353cf1724c1c425ece88ee2da338e37218e6f3625e",
+      "text": "Manger des grillons au chocolat va devenir de plus en… banal.",
+      "transcribed": "Manger des grillons au chocolat va devenir de plus en... banal.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2-aide": {
+      "sha256": "db0d8dbed98b447ac66424fa0e89f15d00fcded41faaaf8c28c2ccc87882999b",
+      "text": "Aide : ça augmente.",
+      "transcribed": "Aide, ça augmente.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-trou-2-solution": {
+      "sha256": "e446a327769e1c57f38dfeadeab03619d67283f7966cb6bf62aea0b7cc7fd3a9",
+      "text": "Manger des grillons au chocolat va devenir de plus en plus banal.",
+      "transcribed": "Manger des grillons au chocolat va devenir de plus en plus banal.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-difficile": {
+      "sha256": "b5b8a38f58d338f98a1d3978033082aa978a9c9821d9d4c937bcb3b197e120d0",
+      "text": "Passage facultatif. La vidéo évoque la population mondiale en deux mille trente. Écoutez les nombres si vous le souhaitez. Nourrir, c'est donner à manger. Vous n'avez pas besoin de retenir ces nombres pour parler de vos habitudes.",
+      "transcribed": "Passage facultatif. La vidéo évoque la population mondiale en 2030. Écoutez les nombres si vous le souhaitez. Nourrir, c'est donner à manger. Vous n'avez pas besoin de retenir ces nombres pour parler de vos habitudes.",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-pourquoi": {
+      "sha256": "a3cea4362c7de2c1727a6cf40023e451fc4ab2162303b9a804e2a86fbc87959c",
+      "text": "Pourquoi cet extrait ? La voix donne trois nouveautés. Pour chacune, elle dit pourquoi c'est bien… ou ce qui manque encore. C'est utile pour donner votre avis.",
+      "transcribed": "Pourquoi cet extrait ? La voix donne trois nouveautés. Pour chacune, elle dit pourquoi c'est bien, ou ce qui manque encore. C'est utile pour donner votre avis.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-devine": {
+      "sha256": "f2e0ccfdca3146d3e949c060bb7050301949a3bf4ca937a2264a4a7fd9e804fe",
+      "text": "Chez vous, qu'est-ce que vous faites avec les restes ? Les restes, c'est la nourriture non mangée. Répondez à voix haute.",
+      "transcribed": "« Chez vous, qu'est-ce que vous faites avec les restes ? » « Les restes, c'est la nourriture non mangée. » Répondez à voix haute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1": {
+      "sha256": "f14873976dd28a8a603ab8ec9341906430e70cdf9ba560225eff758daf6e37d0",
+      "text": "Selon cette vidéo, le steak de laboratoire a-t-il le goût de la vraie viande ?",
+      "transcribed": "Selon cette vidéo, le steak de laboratoire a-t-il le goût de la vraie viande ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-1": {
+      "sha256": "139f345fc63811def87d2b946fb24f26715c2c46918dba6d7607cd582e2dcc00",
+      "text": "Oui, exactement le même goût.",
+      "transcribed": "Oui, exactement le même goût.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-2": {
+      "sha256": "8ea924c68986342205bf1b50ca28cb9c864f10d4fb67dc81652a26c9b07c42e5",
+      "text": "Non, pas encore.",
+      "transcribed": "Non, pas encore.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-option-3": {
+      "sha256": "4fef60f36c06392378d546edfcd553265023a6e1c2c7be1614dc365a93ba63e3",
+      "text": "La vidéo ne le dit pas.",
+      "transcribed": "La vidéo ne le dit pas.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q1-explication": {
+      "sha256": "b425e12c9d956b26c9ff58814d5e4fcd482f09eed4d16563b6f447367fb050ae",
+      "text": "« Ce steak synthétique n'a pas encore la saveur de l'original. » La saveur, c'est le goût. Synthétique : fabriqué, pas naturel.",
+      "transcribed": "Ce steak synthétique n'a pas encore la saveur de l'original. La saveur, c'est le goût. Synthétique. Fabriqué, pas naturel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2": {
+      "sha256": "d2489d69eb443c867bc1721f32b2c1fd51ae6eff87242add6e5c99b8bc83ee56",
+      "text": "« Zéro déchet » : qu'est-ce que ça veut dire dans la vidéo ?",
+      "transcribed": "Zéro déchet. Qu'est-ce que ça veut dire dans la vidéo ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-1": {
+      "sha256": "3d047914f14101b17eead891522c65b045f1c2e03d82d2646ab9feae76cfc325",
+      "text": "On ne jette plus de nourriture : on cuisine les restes.",
+      "transcribed": "On ne jette plus de nourriture, on cuisine les restes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-2": {
+      "sha256": "cfc132a547affcd3ff8541db87c7741acbf90c158b0d945bef1d175489dc5d93",
+      "text": "On mange seulement des algues.",
+      "transcribed": "On mange seulement des algues.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-option-3": {
+      "sha256": "69ec61ee6bfb14abf86d73af28abee198f6b8c93ac9eb3432ec482e3d8d5e72b",
+      "text": "On ne va plus au restaurant.",
+      "transcribed": "On ne va plus au restaurant.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-q2-explication": {
+      "sha256": "af9b04ddb089bd74c6d3477fc178584d8e1587a33c86736b3c96efaa8a9c1a2d",
+      "text": "« Savoir inventer de nouvelles recettes pour récupérer les restes, c'est ça aussi la cuisine du futur. » Un déchet, c'est une chose qu'on jette à la poubelle.",
+      "transcribed": "Savoir inventer de nouvelles recettes pour récupérer les restes, c'est ça aussi la cuisine du futur. Un déchet, c'est une chose qu'on jette à la poubelle.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1": {
+      "sha256": "62ea11f234aca2c0c9733adec13dd0079dcdcb766348c84690d5d2f11b3bd965",
+      "text": "Cette nouvelle technologie… d'économiser beaucoup d'eau.",
+      "transcribed": "Cette nouvelle technologie. D'économiser beaucoup d'eau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1-aide": {
+      "sha256": "54757e843578479b737a8bff076c2a7415852113d0be08da509b9ab310bc1b27",
+      "text": "Aide : rend possible.",
+      "transcribed": "Aide rend possible.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-1-solution": {
+      "sha256": "a03c512e4e49b0ba139f86b12be84d566f39b888bba2bac45fca1a129ca356b5",
+      "text": "Cette nouvelle technologie permet d'économiser beaucoup d'eau.",
+      "transcribed": "Cette nouvelle technologie permet d'économiser beaucoup d'eau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2": {
+      "sha256": "b9091d684a935b5e5be863d85dfd26388fa3005325870a07800a1e887ea5dfcb",
+      "text": "Un tiers de la production alimentaire mondiale est… et perdue.",
+      "transcribed": "Un tiers de la production alimentaire mondiale est... est perdue.",
+      "word_error_rate": 0.1,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2-aide": {
+      "sha256": "0473187500b0703839babcf47db357bdd1ae1152f092eca8b2d7a0cb5b9d71fc",
+      "text": "Aide : jetée, non utilisée.",
+      "transcribed": "Aide, jetez, non utilisée.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-trou-2-solution": {
+      "sha256": "5fe34bb40c7636f615685af6f8829b624d4646b74e9eb02791fa9bb19b88a1ec",
+      "text": "Un tiers de la production alimentaire mondiale est gaspillée et perdue.",
+      "transcribed": "Un tiers de la production alimentaire mondiale est gaspillée et perdue.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-difficile": {
+      "sha256": "9d9e3a5473b2bca47e53ab69397fd909eca5923900b1c54aa2a7c2b257c63280",
+      "text": "Passage facultatif. La laitue est une salade verte. La nori et le wakamé sont des algues utilisées en cuisine. Pour votre réponse, vous pouvez garder un aliment que vous connaissez.",
+      "transcribed": "Passage facultatif. La laitue est une salade verte. La nori et le wakame sont des algues utilisées en cuisine. Pour votre réponse, vous pouvez garder un aliment que vous connaissez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-consigne": {
+      "sha256": "961dc6aad337f49ed033f83e15024698a6f992f443aae439f1a225940e1b172d",
+      "text": "Six phrases de la vidéo pour dire ce qui change et expliquer pourquoi. Écoutez, répétez, puis dites votre propre phrase.",
+      "transcribed": "Six phrases de la vidéo pour dire ce qui change et expliquer pourquoi. Écoutez, répétez, puis dites votre propre phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-rappel": {
+      "sha256": "ba2b696aa0fb83d1d4663b0c2fbcef0c2e6a1450b72c669f8be964644d32c0c5",
+      "text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur Voir la phrase.",
+      "transcribed": "Lisez à quoi sert la phrase. Dites-la à voix haute, puis cliquez sur « Voir la phrase ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-utilite": {
+      "sha256": "e53f3f1a2988e04e68ab67bdcbf5b73180e9705db0c4d809c2803ddeeee5c632",
+      "text": "Pour annoncer un changement à venir. Cette phrase est un prolongement : l'objectif principal reste de parler de vos habitudes.",
+      "transcribed": "Pour annoncer un changement à venir, cette phrase est un prolongement. L'objectif principal reste de parler de vos habitudes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-forme": {
+      "sha256": "1207f46e7082645fd8e932f59d9395ee0dc6f86b0c3db6238f72a9729bfa016a",
+      "text": "va beaucoup changer.",
+      "transcribed": "va beaucoup changer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-exemple": {
+      "sha256": "174345832cef5f6b49665eb72878eb559311c5d597307008a669c4a5c0cd3306",
+      "text": "Mon alimentation va beaucoup changer : je vais cuisiner davantage.",
+      "transcribed": "Mon alimentation va beaucoup changer, je vais cuisiner davantage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-avous": {
+      "sha256": "63443216b04cffd61abc930f03ca102d1f04cd2aa159dc567c9a7c837c2bec86",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-utilite": {
+      "sha256": "939dff31fc6f3d47afd95765eb6b1c3a9eb9df2ecb1f0050955a8590f0be2d97",
+      "text": "Pour dire que quelque chose augmente. Le contraire : de moins en moins.",
+      "transcribed": "Pour dire que quelque chose augmente. Le contraire. De moins en moins.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-forme": {
+      "sha256": "5cbb3b2c6adb032bbef70b1c9a4ba5b677b8d1fa00d162a46eb2173b94e6d854",
+      "text": "de plus en plus… de moins en moins…",
+      "transcribed": "De plus en plus. De moins en moins.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-exemple": {
+      "sha256": "c3308ff4c5e0de7612d7104909c077413010c0b8e4cc2fe561985fdb02f9d5ab",
+      "text": "Je mange de plus en plus de légumes et de moins en moins de viande.",
+      "transcribed": "Je mange de plus en plus de légumes et de moins en moins de viande.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-avous": {
+      "sha256": "63443216b04cffd61abc930f03ca102d1f04cd2aa159dc567c9a7c837c2bec86",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-utilite": {
+      "sha256": "f872c76f2a10c94adf5c4a8ffbe0cdae61f6dc2de04567bf21b77e768f8089a3",
+      "text": "Pour parler d'une habitude : ce qu'on fait souvent.",
+      "transcribed": "Pour parler d'une habitude, ce qu'on fait souvent.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-forme": {
+      "sha256": "c4a3c626bc2d824bcffba11b6d8cad743a82bc0642f41ff31652b697a04dd8be",
+      "text": "J'ai l'habitude de…",
+      "transcribed": "J'ai l'habitude de...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-exemple": {
+      "sha256": "cfc0ed8c0b63e54b7695c5fa18b8275b89c88edb81b95fe6c3fd6a27deb908ea",
+      "text": "J'ai l'habitude de préparer une soupe avec les restes.",
+      "transcribed": "J'ai l'habitude de préparer une soupe avec les restes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-avous": {
+      "sha256": "63443216b04cffd61abc930f03ca102d1f04cd2aa159dc567c9a7c837c2bec86",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-utilite": {
+      "sha256": "f3b797c51aabc03d29ef481617518b9850fb8a6baacaf17e60834eb47c6a9f66",
+      "text": "Pour éviter de répéter « des légumes » : j'en mange. Avec deux verbes : je peux en préparer.",
+      "transcribed": "Pour éviter de répéter des légumes, j'en mange. Avec deux verbes, je peux en préparer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-forme": {
+      "sha256": "4194f60ad57298aca4fb217955e04d03e0587b03e405cf2754b9f299c7fc408c",
+      "text": "On peut en trouver… J'en mange…",
+      "transcribed": "On peut en trouver. J'en mange.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-exemple": {
+      "sha256": "bc8ca6d206d6de09cb79222175336aef1653ad8892cd017685983450bba0cd2b",
+      "text": "Des légumes ? J'en mange tous les jours. Du riz ? Je peux en préparer.",
+      "transcribed": "Des légumes ? J'en mange tous les jours. Du riz ? Je peux en préparer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-avous": {
+      "sha256": "63443216b04cffd61abc930f03ca102d1f04cd2aa159dc567c9a7c837c2bec86",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-utilite": {
+      "sha256": "2922bcdd4b2030757b766db9b1cfd0c524578e136fe1deccaf3cd1081a81f8a1",
+      "text": "Pour expliquer pourquoi c'est bien.",
+      "transcribed": "pour expliquer pourquoi c'est bien.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-forme": {
+      "sha256": "94a66b5886becf3d02ad5a1d17bc1b4b626dd7c0216108595dc198c7788f58d3",
+      "text": "Ça permet de…",
+      "transcribed": "Ça permet de...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-exemple": {
+      "sha256": "7cf483300555ed97e47eef970e8711947f81a87cc44d7e7a78459dbed34df99b",
+      "text": "Cuisiner les restes, ça permet de moins jeter.",
+      "transcribed": "Cuisiner les restes, ça permet de moins jeter.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-avous": {
+      "sha256": "63443216b04cffd61abc930f03ca102d1f04cd2aa159dc567c9a7c837c2bec86",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-utilite": {
+      "sha256": "760693636ac0d7a5cd4b3ef1e37de80f5bee6eccb90db97870ca6043173205c3",
+      "text": "Pour inviter l'autre à répondre. Choisissez « tu » ou « vous » selon votre relation avec cette personne.",
+      "transcribed": "Pour inviter l'autre à répondre. Choisissez « tu » ou « vous » selon votre relation avec cette personne.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-forme": {
+      "sha256": "d2fd5d75bc73a66a6128b40eb336d7d44e0ce1961d9d0fd9f266a5042bf867f5",
+      "text": "Tu as déjà essayé ? Vous avez déjà essayé ?",
+      "transcribed": "Tu as déjà essayé ? Vous avez déjà essayé ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-exemple": {
+      "sha256": "9275e5f3bbad75330346e71a3a13ff01959fbf375f7ea7db694338c5e6bd93a8",
+      "text": "Je prépare une salade avec des légumes grillés. Vous avez déjà essayé ?",
+      "transcribed": "Je prépare une salade avec des légumes grillés. Vous avez déjà essayé ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-avous": {
+      "sha256": "63443216b04cffd61abc930f03ca102d1f04cd2aa159dc567c9a7c837c2bec86",
+      "text": "Dites votre phrase à voix haute, avec vos informations.",
+      "transcribed": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-intro": {
+      "sha256": "5aa69536886c553e08fa303a8e3593007fb5fe180a04465f9668997b65162b38",
+      "text": "Dans ces extraits, écoutez comment la voix monte sur un mot important et descend à certaines fins de phrase. Reprenez un exemple à la fois.",
+      "transcribed": "Dans ces extraits, écoutez comment la voix monte sur un mot important et descend à certaines fins de phrase. Reprenez un exemple à la fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-1": {
+      "sha256": "017a9ef908f27dba73ea52122920aedd7413938ddee670695a71a84f2f879b26",
+      "text": "Dans le premier exemple, la voix monte sur « beaucoup », puis descend sur « changer ».",
+      "transcribed": "Dans le premier exemple, la voix monte sur « beaucoup », puis descend sur « changer ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-2": {
+      "sha256": "516d3571cc6345c04f9f9043c6aafb447275aac742f81808e05df4b5bb96676a",
+      "text": "Dans le deuxième exemple, écoutez le premier « plus », puis la fin du mot « banal ».",
+      "transcribed": "Dans le deuxième exemple, écoutez le premier « plus », puis la fin du mot « banal ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-regle-3": {
+      "sha256": "82029b8b7c6ce8448c5e49dfcab2631eefc994dee41d8f759caef03807a6cc8d",
+      "text": "Ces mouvements appartiennent aux exemples de la vidéo. Une question peut aussi se terminer avec une voix qui descend.",
+      "transcribed": "Ces mouvements appartiennent aux exemples de la vidéo. Une question peut aussi se terminer avec une voix qui descend.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-attention": {
+      "sha256": "71781b6745e4c7350e5d78ec5946cd2a436e7d37897cccd81f114eda07c0dbe3",
+      "text": "Attention : Les flèches décrivent la voix humaine de la vidéo. Votre voix peut être différente et rester claire. Les courbes servent à comparer les essais ; elles ne donnent pas une note de niveau.",
+      "transcribed": "Attention, les flèches décrivent la voix humaine de la vidéo. Votre voix peut être différente et rester claire. Les courbes servent à comparer les essais. Elles ne donnent pas une note de niveau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-1": {
+      "sha256": "a53a2c5f7095661c0dae0647829b785e7f1d70e7e9d8f22177c3f77c49aac077",
+      "text": "Écoutez la fin de la phrase. Sur quelle syllabe la voix monte-t-elle le plus haut ? Cliquez sur une syllabe, puis vérifiez.",
+      "transcribed": "Écoutez la fin de la phrase. Sur quelle syllabe la voix monte-t-elle le plus haut ? Cliquez sur une syllabe, puis vérifiez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-1-explication": {
+      "sha256": "20d61d3609dc11d57b73dee3ccf7bc9a7693a8554dae4fd73952284a01a63336",
+      "text": "La voix monte sur le premier « plus » : c'est le mot important. Sur « banal », elle descend : la phrase est finie.",
+      "transcribed": "La voix monte sur le premier « plus », c'est le mot important. Sur « banal », elle descend. La phrase est finie.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-2": {
+      "sha256": "21af648a386af51f657f66e059a9a624cb65ddfa499c93603248ebcca37c39e1",
+      "text": "Écoutez. Sur quelle syllabe la voix monte-t-elle ? Cliquez sur une syllabe, puis vérifiez.",
+      "transcribed": "Écoutez, sur quelle syllabe la voix monte-t-elle ? Cliquez sur une syllabe, puis vérifiez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-exercice-2-explication": {
+      "sha256": "a0fdcc3274457a01c7dd83cce37b6de5cd485871a54f551083b9adb0d6dca275",
+      "text": "La voix monte sur « -coup » de « beaucoup » : c'est le mot qui dit « combien ».",
+      "transcribed": "La voix monte sur « coup » de « beaucoup », c'est le mot qui dit « combien ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-1": {
+      "sha256": "d317742e0b52c1f4d3158bd8b8e2c105b8a1bb92c8082909e0e537b2497f97e4",
+      "text": "Écoutez une phrase deux fois.",
+      "transcribed": "Écoutez une phrase deux fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-2": {
+      "sha256": "52e62f34c32b6d9b61201585755227d84512d288fb3e0c99af3b0fb37f2e6428",
+      "text": "Répétez avec la voix deux fois. Faites une pause si nécessaire.",
+      "transcribed": "Répétez avec la voix deux fois. Faites une pause si nécessaire.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melodie-etape-3": {
+      "sha256": "c4bf60d4cce7408fda4e8287f656690cdd57f687bfdd5f12882693105eef12c4",
+      "text": "Enregistrez-vous seule. Écoutez si les mots sont clairs ; la courbe est facultative.",
+      "transcribed": "Enregistrez-vous seul. Écoutez si les mots sont clairs. La courbe est facultative.",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-consigne": {
+      "sha256": "9dd9fc43d0fbc0664979278591732f148f0500d18bdcaf6f3023dcaad0e47481",
+      "text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "transcribed": "Le même sujet trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-preparation": {
+      "sha256": "61c523193becaec7bd1fdbaeda45c5f60323b878665c5f0c9add6cc389aca702",
+      "text": "Notez seulement des mots-clés, pas de phrases.",
+      "transcribed": "Notez seulement des mots-clés, pas de phrases.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1": {
+      "sha256": "b4be78ae75c2b3552f09193f2ef74289a8350121fde3a79117c682181cfd4d76",
+      "text": "Parlez avec vos notes : votre habitude, ce qui change, pourquoi, puis votre question.",
+      "transcribed": "Parlez avec vos notes, votre habitude, ce qui change, pourquoi, puis votre question.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1-ajout": {
+      "sha256": "f1b8e44ab674b6564ebba8bdfa205735af2d07e3afc81b24af372d2c84bdbdfd",
+      "text": "Pour l'essai 2, ajoutez une expression : « de plus en plus » ou « de moins en moins ».",
+      "transcribed": "Pour les C2, ajoutez une expression « de plus en plus » ou « de moins en moins ».",
+      "word_error_rate": 0.1875,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2": {
+      "sha256": "1e2aca77013c2e6dd054e7e423f17a26fc34a95f2811b8c8f8bd8a7febe2a053",
+      "text": "Votre formateur joue le collègue et vous pose une question. Répondez.",
+      "transcribed": "Votre formateur joue le collègue et vous pose une question. Répondez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2-ajout": {
+      "sha256": "3126a84041392b238a4640e52fb23e334d639ad643d2342d7deced9ec3bd4297",
+      "text": "Pour l'essai 3, ajoutez « Ça permet de… », puis une question : « Et vous, vous avez déjà essayé ? »",
+      "transcribed": "Pour laisser 3, ajouter, ça permet de… puis une question. Et vous, vous avez déjà essayé ?",
+      "word_error_rate": 0.1765,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-3": {
+      "sha256": "9786bdae4ec09bbff5e8a885bc17fc20b249a058e15c0d861d1dd36ef5094ddf",
+      "text": "Gardez l'essentiel. Utilisez encore vos mots-clés si vous en avez besoin.",
+      "transcribed": "Gardez l'essentiel. Utilisez encore vos mots-clés si vous en avez besoin.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-1": {
+      "sha256": "6ecf086d7176f0dc71cb36a4e0b4b29da07e6859301b0ca7e4aae987f98aca3d",
+      "text": "Et les légumes, vous en mangez souvent ?",
+      "transcribed": "Et les légumes ? Vous en mangez souvent ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-2": {
+      "sha256": "3c370949e53b09f98f4d3e424c7b797fec415a0be4154de3e63337ae7ce04f91",
+      "text": "Entre la soupe et la salade, laquelle préférez-vous ?",
+      "transcribed": "Entre la soupe et la salade, laquelle préférez-vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-3": {
+      "sha256": "27fed456d19f18d853a8d5ea4f4b04f8005aadf40e1ffb607aaa802db73b7681",
+      "text": "Comment préparez-vous votre plat préféré ?",
+      "transcribed": "Comment préparez-vous votre plat préféré ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "serveur-question-4": {
+      "sha256": "63f4c92a9bcc6808b2f6cf1c38188598f570f9803fc846ffa708a218e8245706",
+      "text": "Et les restes, qu'est-ce que vous en faites ?",
+      "transcribed": "Et les restes, qu'est-ce que vous en faites ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-consigne": {
+      "sha256": "113c93eaf5f12b00b7ba71a2eefdd8587219fce88d05a7eea3a96e7c3a0e40f7",
+      "text": "Le même sujet qu'au début. Parlez une minute, avec vos mots-clés si nécessaire.",
+      "transcribed": "Le même sujet qu'au début. Parlez une minute avec vos mots-clés si nécessaire.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-bilan": {
+      "sha256": "676e904c7c1f2aab7cec3d027f11b90ec43e6058b4f31bcdb5397c55e5b1310e",
+      "text": "Réécoutez-vous et cochez.",
+      "transcribed": "Réécoutez-vous et cochez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "objectif-consigne": {
+      "sha256": "87bd20037928a81eabdd64e480f66d1714b96cb17b6c578d706e89ff4d1c95d7",
+      "text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "transcribed": "Choisissez une phrase utile. Dites-la cette semaine dans une situation réelle.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-1": {
+      "sha256": "2db8de1c61bb7d7d77d1bb36a7865e1e90b7e64a26321ee8860dd2f02e009d0f",
+      "text": "Jour 1 : Choisissez une phrase de la vidéo. Écoutez-la, puis répétez-la deux fois.",
+      "transcribed": "Jour 1. Choisissez une phrase de la vidéo. Écoutez-la, puis répétez-la deux fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-2": {
+      "sha256": "c6520b559e8fcccfedc1139665b6c49bb842317e963fe63ac30558ee46d9e45a",
+      "text": "Jour 2 : Dites trois phrases utiles avec vos propres habitudes, sans regarder si possible.",
+      "transcribed": "Jour 2. Dites trois phrases utiles avec vos propres habitudes, sans regarder si possible.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-3": {
+      "sha256": "1236f4bb5640ab35f146260ac012e88b059f3a69ec6646a16feb46a1aec1d320",
+      "text": "Jour 3 : Présentez un plat : son nom, ses ingrédients, sa préparation. Puis dites si vous en mangez souvent.",
+      "transcribed": "Jour 3. Présentez un plat. Son nom, ses ingrédients, sa préparation. Puis dites si vous en mangez souvent.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-4": {
+      "sha256": "b4046307cc4d5808ad68d52c5572f2ce6cf8cb4bd391221eb39d3cf29baf74d6",
+      "text": "Jour 4 : Parlez une minute de vos habitudes et de ce qui change. Réécoutez-vous, puis choisissez une phrase à réutiliser.",
+      "transcribed": "Jour 4. Parlez une minute de vos habitudes et de ce qui change. Réécoutez-vous, puis choisissez une phrase à réutiliser.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-titre": {
+      "sha256": "084ab4a50bc6d6fd8f9e27fed6ffd981dfc4054f882b5d8fc5add15f0ea06d0b",
+      "text": "À table : mes habitudes et mes choix",
+      "transcribed": "À table, mes habitudes et mes choix.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-sujet": {
+      "sha256": "ce11b5aa351b5eb25ebabf60bd96cad42e8cb5e3290fc4d4c35f4ce4eac8baf7",
+      "text": "Le sujet du jour",
+      "transcribed": "Le sujet du jour.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-ou": {
+      "sha256": "450704f95c22ab7bbfbeea84e0667bda2143efa39daa95f56ee7a2292a99a8f6",
+      "text": "Où ?",
+      "transcribed": "ou",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-qui": {
+      "sha256": "0f14b1e19fc6908f19a998c962cad058a99279425d84b84015b4ba8ecba998e5",
+      "text": "Qui parle ?",
+      "transcribed": "Qui parle ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-vous": {
+      "sha256": "cb4f90c6e79ff1f2f23f5dec8282204158aa540776ccfd0959f3117cddbbaf31",
+      "text": "Vous",
+      "transcribed": "Vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-avous": {
+      "sha256": "5214e7c8cd1cb841ed0932750fd15e7b76f8c38b7e69f40619d324d7bff9fa9e",
+      "text": "À vous",
+      "transcribed": "À vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser": {
+      "sha256": "eba1dbc0cf41fb742630d0e2ab120b7d2950a51e1df10a1496bcb63f5d2180f9",
+      "text": "Vous préférez un autre sujet ?",
+      "transcribed": "Vous préférez un autre sujet ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser-exemple": {
+      "sha256": "38a3a9a28147ef704d6d8d4534655794956b943257bbd85c6fa637e2e596faa3",
+      "text": "ex. : le sport, les transports, le télétravail",
+      "transcribed": "Aix, le sport, les transports, le télétravail.",
+      "word_error_rate": 0.1429,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-personnaliser-note": {
+      "sha256": "15f7d772528f559053eb214deb232ac166f4109b75ddce9fe97e2e074d9f2894",
+      "text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "transcribed": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-programme": {
+      "sha256": "2fc083328f9d556412001d0cb5a6ead8ca58c3029f1dfd5127298e820a8081e6",
+      "text": "Le programme",
+      "transcribed": "Le programme",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-accueil-micro": {
+      "sha256": "f82089795af1d2b1d1d5ba871d453d9944e140be954ea32b1e7687808448c16d",
+      "text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "transcribed": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-titre": {
+      "sha256": "f880fd48c8dc96e9917b80a2473f431fef9bbb587526b9b6ef5e68312abb815f",
+      "text": "Je parle une minute.",
+      "transcribed": "Je parle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-plan": {
+      "sha256": "2dbeb620301f0c2ce12b4dbc7daf4df11a4ee79981065029a4743d2f9dcd38f4",
+      "text": "Vous pouvez suivre ce plan",
+      "transcribed": "Vous pouvez suivre ce plan.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-enregistrer": {
+      "sha256": "535029e8dfa832309cacc8e19b29539987aab383c96b7ad77948fda19a2ec0af",
+      "text": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-pendant": {
+      "sha256": "357ff3b5da1ea7029284f2e2f2eaf6e1bee67ded95483fd251fccf510b96ae3d",
+      "text": "Pendant cette minute…",
+      "transcribed": "Pendant 7 minutes,",
+      "word_error_rate": 0.6667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-avant-difficultes": {
+      "sha256": "620255c3b4c97db6ddeabf6507c5238d1a3113b733560ac2d940cb38a03ed11d",
+      "text": "Touchez ce qui est vrai pour vous.",
+      "transcribed": "Touchez ce qui est vrai pour vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-avant-rec-note": {
+      "sha256": "6fe9e2481a893b9b0ccaeae4fc6cdfbb3d6c5aa1800324e453a7122a65ddf2c0",
+      "text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "transcribed": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-titre": {
+      "sha256": "0b681141d7e6d82b8ce2f39314de4c8ce5d997c8aae40a167b0b5f4d821a7762",
+      "text": "J'écoute la vidéo",
+      "transcribed": "J'écoute la vidéo ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-avant": {
+      "sha256": "022b98f9df6f70f8fae8e308ae97339f0096d3f4fe01b4f10fcb8a03062e84ac",
+      "text": "Avant d'écouter : devinez",
+      "transcribed": "Avant d'écouter, devinez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-repondre": {
+      "sha256": "9974153108eed5cf33f8bc05418260befb72dc46029f61042dcbb614b5687a16",
+      "text": "Écoutez l'extrait, puis répondez",
+      "transcribed": "Écoutez l'extrait, puis répondez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-completer": {
+      "sha256": "77b091aba72ed58d04f16bcabab2cc3f2167762eccd7e1607a774922a78e275e",
+      "text": "Écoutez encore, puis complétez",
+      "transcribed": "Écoutez encore, puis complétez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-difficile": {
+      "sha256": "96be562de3f32bb11837b4b33f5acb652923d90a03617e8a461c654ea912caf3",
+      "text": "Le passage difficile",
+      "transcribed": "Le passage difficile",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-ecoute-verifier": {
+      "sha256": "47c9eb757fe0da3b1d5d52dcc022bc92200522e12963d8fc642b18996b9c8281",
+      "text": "Vérifier",
+      "transcribed": "Vérifiez.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-extrait-1": {
+      "sha256": "ecc80c8cd2f6f5b9e2f6bfa7081b105b1217f1761c85eba963d1a4d03c62a560",
+      "text": "Extrait 1. Demain, dans nos assiettes",
+      "transcribed": "Extrait 1. Demain, dans nos assiettes,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-extrait-2": {
+      "sha256": "a6d3ceccfe0c55e6b7631df21de8959eeb24d781d2ebc1ca380496d5c13798d0",
+      "text": "Extrait 2. Moins d'eau, zéro déchet",
+      "transcribed": "Extrait 2. Moins d'eau, zéro déchet.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-titre": {
+      "sha256": "e7eb9a6931a9fb4ef2e131a8b1833491de6276421fa5b1fe73591cac3c33e367",
+      "text": "Six phrases utiles.",
+      "transcribed": "6 phrases utiles.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-apprendre": {
+      "sha256": "f5a42e1a721c2cbf82146000ef9fc9f2bd59d78c766b3b5c30551b8403541d3e",
+      "text": "Apprendre",
+      "transcribed": "Apprendre.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-rappel": {
+      "sha256": "0b3d5d7cc862667fc60e8505672c15d337650cd880c2d2f6a07f9a1350e95d92",
+      "text": "Vérifier sans regarder",
+      "transcribed": "Vérifiez sans regarder.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-video": {
+      "sha256": "e9e6b8556d8827baecd6fe6939ee4c4b9692458e96fa36216611eedbd4fe2c44",
+      "text": "Dans la vidéo",
+      "transcribed": "Dans la vidéo,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-situation": {
+      "sha256": "d1618c91b50bd666d02629750b724abc5d53c11b721b5dc32a0731547c172b7f",
+      "text": "Dans votre situation",
+      "transcribed": "Dans votre situation,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-avous": {
+      "sha256": "5214e7c8cd1cb841ed0932750fd15e7b76f8c38b7e69f40619d324d7bff9fa9e",
+      "text": "À vous",
+      "transcribed": "À vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-voir": {
+      "sha256": "33c1dd8b5ea2ed0975da2273e3e867cfadcf2a7cf61d13780c4b1f40b6a3a63b",
+      "text": "Voir la phrase",
+      "transcribed": "Voir la phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-connue": {
+      "sha256": "5fce1eca984d239838f11ae0824a408743eac2f288359b2b7b5bd84792249925",
+      "text": "Je la connais",
+      "transcribed": "Je la connais.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-revoir": {
+      "sha256": "1a4a93aa9c2a70a1f94349de29d5c6b40ddb56c24f60e0662df6b994c80fb3d3",
+      "text": "À revoir",
+      "transcribed": "A revoir.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-phrases-saisie": {
+      "sha256": "b22ff7e37ea5bc32f8d9e4a5055141b27928147e5a12e2c0f28e346348629820",
+      "text": "Ma phrase (facultatif)",
+      "transcribed": "Ma phrase, facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-titre": {
+      "sha256": "d73ff6be37bc6c0de4e07bc6aafd2964d892b1d60986fdabd8d253c34f05bedb",
+      "text": "La mélodie du français",
+      "transcribed": "La mélodie du français",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-regle": {
+      "sha256": "39dd5f39629216b48727160b54c317179c80a90de55b7fc90965692eb47515ea",
+      "text": "La règle",
+      "transcribed": "La règle.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-trouvez": {
+      "sha256": "90205a48c3d82485c48e59c49f142cf676e507056b5b8ba49738183e0e5ebca9",
+      "text": "Écoutez et trouvez",
+      "transcribed": "Écoutez et trouvez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-repetez": {
+      "sha256": "c82cc8e0dd83053208f9a3d5b1d211d6cc45f40760b95c44e9f01980fa3c3e9f",
+      "text": "Répétez comme dans la vidéo",
+      "transcribed": "Répétez comme dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-signes": {
+      "sha256": "f4b2110c5eb1b0e9f02525c566acf1e69a6ad7722e7e669dc5f92bfb51e1e367",
+      "text": "Les signes",
+      "transcribed": "Les signes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-melodie-verifier": {
+      "sha256": "47c9eb757fe0da3b1d5d52dcc022bc92200522e12963d8fc642b18996b9c8281",
+      "text": "Vérifier",
+      "transcribed": "Vérifiez.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-legende-1": {
+      "sha256": "39be54e5580070dc5a0f93e792004530acca2334922d4e84e92bbfeac374f72d",
+      "text": "la voix monte (mesuré dans la vidéo)",
+      "transcribed": "La voix monte, mesurée dans la vidéo,",
+      "word_error_rate": 0.1429,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-2": {
+      "sha256": "43fb249eefc65617314ed51c9307c43ab42a187ce66447c62d90f6761d25c3cc",
+      "text": "la voix descend",
+      "transcribed": "La voix descend.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-3": {
+      "sha256": "3d4ffb2ddc87857eeaeb90958da8ff625a67fa48e913b0ffa4ebc4cee7277f0a",
+      "text": "syllabe plus longue",
+      "transcribed": "Syllabes plus longues.",
+      "word_error_rate": 0.6667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-legende-4": {
+      "sha256": "e5099747f805ac4e6ef6b00dbb5869b14bb1eb785116c51cf28dfa5b948ea0d4",
+      "text": "petite pause",
+      "transcribed": "Petite pause.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-legende-5": {
+      "sha256": "12a8415f1fe616a70aaaa8d6d662e6e95030824ee59ff603183200765432a691",
+      "text": "on enchaîne, sans pause",
+      "transcribed": "On enchaîne, sans pause.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-titre": {
+      "sha256": "94d307e8a3131e2ed243d68b14bada6292d75e2affb4da3a9a9c3df5e67cf7dc",
+      "text": "Je m'entraîne trois fois.",
+      "transcribed": "Je m'entraîne trois fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-preparer": {
+      "sha256": "6d7ae568e783e9f540e5f7d0dc728824764d0a124031d744938d0455236c235c",
+      "text": "Préparez. Une minute.",
+      "transcribed": "Préparer. Une minute.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-question": {
+      "sha256": "93dafb5407f82de386ab0f9560f87dfff6095d237a2b2984614fc57671c11e95",
+      "text": "Question du collègue (pour le formateur)",
+      "transcribed": "Question du collègue pour le formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-entrainement-bilan": {
+      "sha256": "38fc35f274c1e3d6835dd917eb110ba64dc05c3bb8d6266c8dc471b6ca781a80",
+      "text": "Vos trois essais en chiffres.",
+      "transcribed": "Vos trois essais en chiffres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-essai-titre-1": {
+      "sha256": "73c8f133c808665a0219ea3a0412ff7be50beee52dc168870d4270cd262f3f57",
+      "text": "Essai 1. Une minute trente",
+      "transcribed": "Essai 1. 1 minute 30.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-essai-titre-2": {
+      "sha256": "d96627c13439a66feffa0df567d14605a3a72615d0b8e479b235c5682200e23d",
+      "text": "Essai 2. Une minute quinze",
+      "transcribed": "Essai 2, 1 minute 15",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-essai-titre-3": {
+      "sha256": "793292917116fb60a8c07c7c60e1f49cf5bd3ac8304c34ccadb95449f095627c",
+      "text": "Essai 3. Une minute",
+      "transcribed": "Essai 3. Une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-titre": {
+      "sha256": "587dcabe95d9d585b4cf199f36ba208c02062935f984293b08353bd32c953969",
+      "text": "Je reparle une minute.",
+      "transcribed": "Je reparle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-enregistrer": {
+      "sha256": "535029e8dfa832309cacc8e19b29539987aab383c96b7ad77948fda19a2ec0af",
+      "text": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-apres-comparaison": {
+      "sha256": "99008156aa98d7b1e2e9c2a263f9c4c01b8292bb681294761ff6a95afb429c43",
+      "text": "Début et fin du cours",
+      "transcribed": "Début et fin du cours",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-titre": {
+      "sha256": "ef0a00b51f8a19e625f3dffc61f6cbe66e0e507ab4643e536e7d493362c677ef",
+      "text": "Mon objectif de la semaine",
+      "transcribed": "Mon objectif de la semaine.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-phrase": {
+      "sha256": "cb9c9188f31f94bcf65c3f1856364082abdd5cdd37c4ad434d497fce987fb276",
+      "text": "Ma phrase de la semaine",
+      "transcribed": "Ma phrase de la semaine ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-quand": {
+      "sha256": "bd8dd5ae1bf7b2b8463e5abdceefb64c40588fe5e9b6d607d05aa079aa3a5474",
+      "text": "Quand ?",
+      "transcribed": "Quand ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-exacte": {
+      "sha256": "9e10a34f410e004fc3a5fe9d1a9fb5bcdbe87c230147b077f599e7ce0749afa9",
+      "text": "Ma phrase exacte",
+      "transcribed": "Ma phrase exacte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-programme": {
+      "sha256": "76da0ab60a95d8ee8f3f74463690ac1197a74d3e253fd3f9cf0967520722a28e",
+      "text": "Dix minutes par jour, facultatif.",
+      "transcribed": "10 minutes par jour, facultatif.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-envoyer": {
+      "sha256": "c8fc942bbaac4c82711bdca5c40a4bc12b9ba38313ab4f92c6ae2487d82d9506",
+      "text": "Envoyer mon travail au formateur",
+      "transcribed": "Envoyer mon travail au formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-confidentialite": {
+      "sha256": "ea082551505799d22df13dc0bdaeb2d80df2b08d2aa302606ebb6f6907474ef5",
+      "text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "transcribed": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-plusloin": {
+      "sha256": "52a07f3eef750aad18f08ed0340a7cd12c0df335b15cb88874a050d7644ddd73",
+      "text": "Pour aller plus loin (facultatif)",
+      "transcribed": "Pour aller plus loin, facultatif,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-apres": {
+      "sha256": "abf06566b2ee8cbed0f6883b2c5473a958c87e6c12538411f465a0aeffd92dd7",
+      "text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "transcribed": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-objectif-video": {
+      "sha256": "25f304a899da289c113ac8e7895d775628aef460cb88d035ca6d5c025baccdc8",
+      "text": "Regarder la vidéo en entier. Une minute quarante-deux.",
+      "transcribed": "Regardez la vidéo en entier, 1 minute 42.",
+      "word_error_rate": 0.4444,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-titre": {
+      "sha256": "37995f479898f66b1e52a0eac8080b5b7642ddb113b02d0367b959388521e9c6",
+      "text": "Espace formateur",
+      "transcribed": "Espace formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-intro": {
+      "sha256": "2a5730144214ace3580da21adf52be3d62dc99baf5010c73eb1dd6adc597234b",
+      "text": "Déroulé minuté et conseils de conduite.",
+      "transcribed": "Déroulez minuté et conseil de conduite.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-deroule": {
+      "sha256": "ae3d8b7aa6c6cf96ce2253059f5de524ba24a39a0354fb30803d17c3952f4f85",
+      "text": "Déroulé. Quarante-cinq minutes.",
+      "transcribed": "Déroulez 45 minutes.",
+      "word_error_rate": 0.75,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-notes": {
+      "sha256": "4bf0dec80222a3bc945f7427fca9727d33275f1e252d8181874943d9df5093a0",
+      "text": "Notes",
+      "transcribed": "Note",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-nav-commencer": {
+      "sha256": "b81072fc18c3c92e45e9064f5b7264041fd63985c28d35c6a50c2d53b6e41936",
+      "text": "Commencer",
+      "transcribed": "Commencez.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "ui-nav-retour": {
+      "sha256": "8320004edcbdc2958c04ea9fc5323ac8ebfbe258b77e12b5169bd426a4dba21c",
+      "text": "Retour",
+      "transcribed": "Retour.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-suivant": {
+      "sha256": "fcf1716f27d4ad2dc504fc2e510b7549139f6814f254fe87d9d9e13a634c3dd2",
+      "text": "Étape suivante",
+      "transcribed": "Étape suivante.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-terminer": {
+      "sha256": "e4b4e1f5f72f96b7f44b482df58713fcf37b027bdeef053cc7870af23b9ac7c6",
+      "text": "Terminer le cours",
+      "transcribed": "Terminez le cours.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-reponses": {
+      "sha256": "cd0f18bfdf25a30f9e9447bd3cd405115f27e16469a702e1584b7893803fdd81",
+      "text": "Copier mes réponses",
+      "transcribed": "Copiez mes réponses.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-theme": {
+      "sha256": "d27784f21218e22f9bd0a1db7448d41cfaac952c3b6d160ad9a7f34dd1ad16c5",
+      "text": "Thème",
+      "transcribed": "Thème",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-effacer": {
+      "sha256": "a7fda77cc0ed9303517c89e20f8faad8709fd2fb1040477cb364a816e6cd1d23",
+      "text": "Tout effacer",
+      "transcribed": "Tout effacer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ui-nav-vitesse": {
+      "sha256": "47a0bcc8ff2d55df509ee40942c33acd7bd66e37cc2def5a321a4127d5446f1d",
+      "text": "Voix lente",
+      "transcribed": "Voix lente",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p1-film": {
+      "sha256": "aa5ec07ad6e23c983ad76438acc0f3d7eeb07534777fbece4111d30c448f36f2",
+      "text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "transcribed": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p2-film": {
+      "sha256": "6f7ad5c449a633435ee558d3e74cf5344cb4e9ae27366a94f82202c442f88afc",
+      "text": "En Europe, manger des grillons au chocolat ou des vers de farine va devenir de plus en plus banal.",
+      "transcribed": "En Europe, manger des grillons au chocolat ou des verres de farine va devenir de plus en plus banal.",
+      "word_error_rate": 0.0526,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p3-film": {
+      "sha256": "fe1b70623f9760267bfcbe9c17d4a604779044ba61ea72d93d3bf63f7e34e168",
+      "text": "Les Africains et les Asiatiques ont depuis longtemps l'habitude de manger des chenilles, des termites ou des sauterelles.",
+      "transcribed": "Les Africains et les Asiatiques ont depuis longtemps l'habitude de manger des chenilles, des termites ou des sauterelles.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p4-film": {
+      "sha256": "5d0627ae16737c59b96ce7b5c767c70e9b19d6f05c9dfae527ede756f085a0fd",
+      "text": "Or, on peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes.",
+      "transcribed": "Or, on peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p5-film": {
+      "sha256": "d54787113ca2ecf8fec1e51624c9ffcbbf3135105ca74bb99342ddfa2b210ab9",
+      "text": "Cette nouvelle technologie permet d'économiser beaucoup d'eau…",
+      "transcribed": "Cette nouvelle technologie permet d'économiser beaucoup d'eau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrase-p6-film": {
+      "sha256": "19e1520e4246e9e327bfab1ccb261235b76a3be1ad007cd7451c34ced4653ec8",
+      "text": "Tu as déjà essayé ?",
+      "transcribed": "Tu as déjà essayé ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-0-titre": {
+      "sha256": "2d146abd87248cefd90a31f76bcf43954184b28a154e6768d17eaeb17d2cfaba",
+      "text": "Mon plat — pages 52 à 55",
+      "transcribed": "Mon plat, pages 52 à 55.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-0-consigne": {
+      "sha256": "a70d47287049fbc89ecd37ac577156461d9c6a6992c874c9f2732478d351a898",
+      "text": "Présentez un plat de votre choix : les ingrédients, la préparation, puis votre avis.",
+      "transcribed": "Présentez un plat de votre choix, les ingrédients, la préparation, puis votre avis.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-0-exemple-0": {
+      "sha256": "8ed8f8784baa72d62681dab88a6fe455725b590128ba5902a3d08deb5fbb6af4",
+      "text": "C'est une soupe de mon pays. Il y a des légumes et du riz.",
+      "transcribed": "C'est une soupe de mon pays. Il y a des légumes et du riz.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-0-exemple-1": {
+      "sha256": "2a2ab7dc5cffd008133cf5d8bffba257b79621343a167ebcfce8806255ce2027",
+      "text": "Les légumes sont cuits dans l'eau. Je trouve ça délicieux.",
+      "transcribed": "Les légumes sont cuits dans l'eau. Je trouve ça délicieux.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-1-titre": {
+      "sha256": "a63d2f2e398128429de981663a8a6b4605cda2f0d4275ec5c497e8aef3abba3f",
+      "text": "J’en mange — page 55",
+      "transcribed": "Jean Mange, page 55.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "manuel-1-consigne": {
+      "sha256": "152d2b32ab44a17530838eee905437394e561708b9b9b9d85c47cbb346ef6b54",
+      "text": "Votre collègue nomme un aliment. Répondez avec « en », puis indiquez une fréquence.",
+      "transcribed": "Votre collègue nomme un aliment. Répondez avec « en », puis indiquez une fréquence.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-1-exemple-0": {
+      "sha256": "6cee3c4814465c5faf4d1f7e751575107258cc1f8f785ebae6eae64802246a03",
+      "text": "Du poisson ? J'en mange parfois.",
+      "transcribed": "Du poisson ? J'en mange parfois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-1-exemple-1": {
+      "sha256": "c27649cb9dd4568310713dbfc9363f2b56d693573e76dc1e41378584d17ae978",
+      "text": "De la viande ? Je n'en mange pas.",
+      "transcribed": "De la viande ? Je n'en mange pas.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-1-exemple-2": {
+      "sha256": "63fd9986a99feebe1b9ac65665991d9379187d439a436c66c060c934113fb388",
+      "text": "Des légumes ? Je peux en préparer pour ce soir.",
+      "transcribed": "Des légumes ? Je peux en préparer pour ce soir.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-2-titre": {
+      "sha256": "1c3c7a6fdd4f6964e16fb52bcc11bc9f46ea66fe5d939b1d87d6aa3a248b904d",
+      "text": "Lequel ? Laquelle ? — pages 56 et 57",
+      "transcribed": "Lequel ? Laquelle, pages 56 et 57.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-2-consigne": {
+      "sha256": "12bea92755c2d1396cc28cc19ae7e860c56242c073827d7be9d740612bb8f12d",
+      "text": "Choisissez entre deux plats, puis entre deux boissons. Posez la question à votre collègue.",
+      "transcribed": "Choisissez entre deux plats, puis entre deux boissons. Posez la question à votre collègue.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-2-exemple-0": {
+      "sha256": "9b862903e81aed077f1048ba2e994066902a5bb28d6f3bbb17921a324f8667a9",
+      "text": "Le riz ou le couscous : lequel préférez-vous ?",
+      "transcribed": "Le riz ou le couscous ? Lequel préférez-vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-2-exemple-1": {
+      "sha256": "cf1ade0dd178480846e6c75be8fdc587d66ee7feb2d56c16e8f40790a689d189",
+      "text": "La soupe ou la salade : laquelle préférez-vous ?",
+      "transcribed": "La soupe ou la salade, laquelle préférez-vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-2-exemple-2": {
+      "sha256": "f21f60aaada347dc622aac0456047d7606c0d7ba03b8337accc67c258bad49ec",
+      "text": "Parmi ces légumes, lesquels choisissez-vous ?",
+      "transcribed": "Parmi ces légumes, lesquels choisissez-vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-2-exemple-3": {
+      "sha256": "86ea26633ac26ccd4e35b632e641ad42422b61af19ad90a235fbdf05e24230a6",
+      "text": "Parmi ces boissons, lesquelles préférez-vous ?",
+      "transcribed": "Parmi ces boissons, lesquelles préférez-vous ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-3-titre": {
+      "sha256": "69e1555f948d31d7e1a42a26448951467ba3ab57ce406435bdd8ff139be50848",
+      "text": "La lettre g — page 57",
+      "transcribed": "La lettre G, page 57.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-3-consigne": {
+      "sha256": "a923aa3f9763d1070cad6b3b17f570a4ddf94f8798550dd0ee1105d9e7fc5256",
+      "text": "Écoutez deux mots à la fois, puis répétez. Dans « légume » et « grillé », le g se prononce comme dans « gare ». Dans « orange » et « fromage », il se prononce comme dans « jour ».",
+      "transcribed": "Écoutez deux mots à la fois, puis répétez, dans « légumes » et « grillés », le « dji » se prononce comme dans « gar ». Dans « orange » et « fromage », il se prononce comme dans « jour ».",
+      "word_error_rate": 0.1379,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-3-exemple-0": {
+      "sha256": "54aa2d73c73d8f690252dbbfdac9f8ded0fe4b5ac6160e4e4e99b661683008e2",
+      "text": "Un légume. Un légume grillé.",
+      "transcribed": "Un légume. Un légume grillé.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-3-exemple-1": {
+      "sha256": "135d0ec6c58d1f54fe287ba7d2dc8068bdd2ba82df6999543cb16bf65751b849",
+      "text": "Une orange. Du fromage.",
+      "transcribed": "Une orange, du fromage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-titre": {
+      "sha256": "980025fc616c10014033c7fe628d900daf2550e538326a51b9b2a6a89d9c9a4c",
+      "text": "Réutiliser le manuel, si nécessaire",
+      "transcribed": "Réutilisez le manuel si nécessaire.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "manuel-intro": {
+      "sha256": "d46aeb45502d2fc8d88f9597897ab40820e582c4d62df98263ec61ecf4450e01",
+      "text": "Choisissez une seule activité avec votre formateur. Vous connaissez déjà certaines expressions : utilisez-les avec votre propre plat.",
+      "transcribed": "Choisissez une seule activité avec votre formateur. Vous connaissez déjà certaines expressions. Utilisez-les avec votre propre plat.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-0": {
+      "sha256": "9123981f74b4f4882c99e65642d35b83ea42c49c3c7a29233c990fb0ebebf667",
+      "text": "Jouez le collègue : « Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? » 1 minute, sans correction. Pour un A2+, 5 à 7 phrases, c'est déjà bien.",
+      "transcribed": "Jouez le collègue. Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? Un minute sans correction. Pour un A2+, 5 à 7 phrases, c'est déjà bien.",
+      "word_error_rate": 0.027,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-1": {
+      "sha256": "c082cfbd8259508a498c855f5e6c068e500c6288de2867df0939de0070e0f55b",
+      "text": "Deux extraits de la vidéo, avec images et deux questions chacun. Faites écouter une première fois pour l'idée générale, puis pour la réponse. Les passages difficiles sont facultatifs. Les nombres et les noms d'insectes ne sont pas des objectifs de production.",
+      "transcribed": "Deux extraits de la vidéo, avec images, et deux questions chacun. Faites écouter une première fois pour l'idée générale, puis pour la réponse. Les passages difficiles sont facultatifs. Les nombres et les noms d'insectes ne sont pas des objectifs de production.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-2": {
+      "sha256": "d2f0dd42922b52fc861640c855fcc346e3785c18d01d49f6f423cc5fb5fe7e7f",
+      "text": "Travaillez trois phrases en priorité : la progression, le pronom en et la raison du choix. Les autres phrases sont proposées pour le réemploi. Si ces acquis sont solides, choisissez une seule activité du manuel dans le panneau replié.",
+      "transcribed": "Travaillez trois phrases en priorité. La progression, le pronom « en » et la raison du choix. Les autres phrases sont proposées pour le réemploi. Si ces acquis sont solides, choisissez une seule activité du manuel dans le panneau replié.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-3": {
+      "sha256": "03e489dfcb351228862428a3503e47656b5be1221e233c7fe981a31b4a556db0",
+      "text": "Prenez un ou deux modèles de la vidéo. Écoute, répétition, puis intelligibilité. Les contours décrivent ces extraits : ils ne fixent aucune intonation obligatoire du français. La capsule du manuel porte sur la lettre g, proposée en activité facultative.",
+      "transcribed": "Prenez un ou deux modèles de la vidéo, écoute, répétition, puis intelligibilité. Les contours décrivent ces extraits. Ils ne fixent aucune intonation obligatoire du français. La capsule du manuel porte sur la lettre G proposée en activité facultative.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-4": {
+      "sha256": "c91f2b2edbb1453a990ffe5e7b498fef3aa9c98038080b1e3f1429aee9efe454",
+      "text": "Le même message, trois essais. La durée est un cadre, pas une épreuve de vitesse. Autorisez les mots-clés et gardez la même durée si la réduction déstabilise l'apprenante. Un retour concret entre les essais suffit.",
+      "transcribed": "Le même message, trois essais. La durée est un cadre, pas une épreuve de vitesse. Autorisez les mots-clés et gardez la même durée si la réduction déstabilise la prenante. Un retour concret entre les essais suffit.",
+      "word_error_rate": 0.0541,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-5": {
+      "sha256": "c358aafbd83379bf1fa2a7f22c6f0fc74d11f293638c5551a7767ba16043f1f0",
+      "text": "Même situation. Comparez surtout les idées exprimées, les expressions réutilisées et la facilité de compréhension. Les chiffres automatiques sont des indications approximatives et ne valent pas une évaluation CECRL.",
+      "transcribed": "Même situation. Comparer surtout les idées exprimées, les expressions réutilisées et la facilité de compréhension. Les chiffres automatiques sont des indications approximatives et ne valent pas une évaluation CE-CRL.",
+      "word_error_rate": 0.1034,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-role-6": {
+      "sha256": "5d2cf11495cce5d6ce385f4f6c623fd2da10cd7c990c4b3892a0a6a0c28c7fc6",
+      "text": "Une phrase, une situation réelle (un déjeuner, une pause-café), une date.",
+      "transcribed": "Une phrase, une situation réelle, un déjeuner, une pause café, une date.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-0": {
+      "sha256": "02904dc2e25cd5ccda0de287f851b6c424cc3a68385787f4737caf4035fde00e",
+      "text": "Analyse du manuel Défi actuel 2, unité trois, pages cinquante et un à cinquante-sept : spécialités des outre-mer, cuisine camerounaise, ingrédients et préparation, avis sur un plat, pronom en, progression et choix avec les pronoms interrogatifs. Les activités proposées ici sont originales et prolongent ces objectifs.",
+      "transcribed": "Analyse du manuel Défi actuel 2, unité 3, pages 51 à 57. Spécialité des Outre-mer, cuisine camerounaise, ingrédients et préparation, avis sur un plat, pronom en, progression et choix avec les pronoms interrogatifs. Les activités proposées ici sont originales et prolongent ces objectifs.",
+      "word_error_rate": 0.1489,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-1": {
+      "sha256": "4ab0fb80d7c3e6ed3e81cbd7dcf3495f78a84c3089dc4b61a42449fbc3c44657",
+      "text": "Les pistes trente-cinq à trente-neuf ont été examinées avec leurs transcriptions officielles et les durées du lecteur. La piste trente-cinq fait décrire et qualifier des plats ; trente-six porte sur une commande au restaurant ; trente-sept sur les habitudes avec en ; trente-huit sur les tendances et les choix ; trente-neuf distingue une progression d'une simple comparaison. Les fichiers sonores du manuel ne sont pas copiés dans cet atelier.",
+      "transcribed": "Les pistes 35 à 39 ont été examinées avec leurs transcriptions officielles et les durées du lecteur. La piste 35 fait décrire et qualifier des plats, 36 porte sur une commande au restaurant, 37 sur les habitudes avec en, 38 sur les tendances et les choix, 39 distingue une progression d'une simple comparaison. Les fichiers sonores du manuel ne sont pas copiés dans cet atelier.",
+      "word_error_rate": 0.1918,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-2": {
+      "sha256": "3e054672e79958e5dad7779e225b294a402d8cb1186a05b28b075bac95f3e163",
+      "text": "Pour limiter la charge cognitive, gardez la situation de cantine pendant toute la séance. Priorités : une habitude avec en, un changement et une raison simple. Un plat familier suffit. Réservez les quatre formes interrogatives et la lettre g à une seule activité de réemploi, selon les besoins.",
+      "transcribed": "Pour limiter la charge cognitive, gardez la situation de cantine pendant toute la séance. Priorité, une habitude avec un changement et une raison simple. Un plat familier suffit. Réservez les quatre formes interrogatives et la lettre G à une seule activité de réemploi, selon les besoins.",
+      "word_error_rate": 0.0426,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-3": {
+      "sha256": "e72843827877ae467b832996ab3078966fb6ee1338d3ee6d9e4af72e4288243a",
+      "text": "La vidéo est un ancien document de vulgarisation, avec un vocabulaire parfois plus difficile que celui du manuel. Elle sert à repérer des expressions ; ses prévisions ne sont pas présentées comme des faits actuels. Toute la vidéo n'est pas à comprendre ni à mémoriser.",
+      "transcribed": "La vidéo est un ancien document de vulgarisation, avec un vocabulaire parfois plus difficile que celui du manuel. Elle sert à repérer des expressions. Ces prévisions ne sont pas présentées comme des faits actuels. Toute la vidéo n'est pas à comprendre ni à mémoriser.",
+      "word_error_rate": 0.0222,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-4": {
+      "sha256": "d3b1ba2ffa3cb4c82dc7656b22ef9671e39b35aaac3f90290cc8ebe05c48220a",
+      "text": "Les consignes, expressions, exemples, compléments et notes ont une lecture féminine Qwen. La voix a été créée par description, puis réutilisée comme référence. L'âge de trente-cinq ans est une intention de timbre, pas une propriété vérifiable. Une transcription automatique contrôle les mots, mais ne garantit pas l'accent ou le naturel.",
+      "transcribed": "Les consignes, expressions, exemples, compléments et notes ont une lecture féminine quenne. La voix a été créée par description, puis réutilisée comme référence. L'âge de 35 ans est une intention de timbre, pas une propriété vérifiable. Une transcription automatique contrôle les mots, mais ne garantit pas l'accent ou le naturel.",
+      "word_error_rate": 0.0566,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-5": {
+      "sha256": "a29fbac1d08cdc3a306093a9d0a8bac1d03f9f1cb811a1680193a06f9b0a0dea",
+      "text": "Les courbes existantes se rapportent uniquement à la voix humaine de la vidéo. Une lecture Qwen peut avoir une autre mélodie. Ne demandez pas de reproduire exactement une courbe ; écoutez d'abord l'intelligibilité et le regroupement des mots.",
+      "transcribed": "Les courbes existantes se rapportent uniquement à la voix humaine de la vidéo. Une lecture quenne peut avoir une autre mélodie. Ne demandez pas de reproduire exactement une courbe. Écoutez d'abord l'intelligibilité et le regroupement des mots.",
+      "word_error_rate": 0.0256,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "form-note-6": {
+      "sha256": "b2a5598d51889bf493ab2012f2810d4c1c2613d46db4c6e088e689000128b0c3",
+      "text": "Le CECRL décrit des capacités de communication, pas une liste de points de grammaire française. Pour ce public A2 renforcé, visez une description courte et une interaction simple sur l'alimentation. La compréhension dépend de la clarté, de la familiarité du sujet et de la possibilité de répéter. L'atelier ne certifie pas le niveau de l'apprenante.",
+      "transcribed": "Le CECRL décrit des capacités de communication, pas une liste de points de grammaire française. Pour ce public A2 renforcé, visez une description courte et une interaction simple sur l'alimentation. La compréhension dépend de la clarté, de la familiarité du sujet et de la possibilité de répéter. L'atelier ne certifie pas le niveau de l'apprenante.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    }
+  }
+}

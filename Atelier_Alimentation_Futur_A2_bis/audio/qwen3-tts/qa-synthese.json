@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "lectures": 235,
+  "moteur_generation": "Qwen3-TTS VoiceDesign puis Qwen3-TTS Base (MLX, local)",
+  "langue": "French",
+  "autres_moteurs_tts_utilises": [],
+  "reference": "audio/voix-reference/reference.wav",
+  "fichiers_mp3_valides": 235,
+  "lectures_reliees_dans_le_parcours": 235,
+  "divergences_texte_catalogue": 0,
+  "reponses_devoilees_detectees": 0,
+  "lectures_avec_debit_modere": 24,
+  "controle_transcription": "Whisper large-v3-turbo, toutes les empreintes finales vérifiées",
+  "interpretation_ecarts_asr": "Les écarts résiduels prioritaires concernent des homophonies (il/ils, infinitif/impératif, singulier/pluriel, cette/sept) et la représentation des nombres. Le libellé Les signes a été régénéré ; sa nouvelle transcription est exacte.",
+  "verification_native_accent_prosodie_a_l_ecoute": false,
+  "age_percu_verifie": false,
+  "limite": "Les contrôles techniques et lexicaux ne certifient ni un accent natif, ni le naturel, ni un âge perçu de 35 ans."
+}

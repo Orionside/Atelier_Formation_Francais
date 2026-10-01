@@ -1,0 +1,66 @@
+# Alimentation du futur · bis : ancrage dans Défi actuel 2
+
+Inspection du 1er octobre 2026, dans la session Chrome autorisée du formateur. Le cours A2 fourni en premier ouvre **Défi actuel 2**. Le second lien renvoie à l'ancien cours A1 ; il n'a pas servi de source pour cet atelier.
+
+Cette version prolonge `Atelier_Alimentation_Futur_A2`, déjà publié dans le dépôt. Elle conserve le moteur et la progression de Rendez-vous A1 : situation concrète, premier oral, écoute guidée, six expressions, imitation d'un modèle humain, trois reprises du même message, second oral et objectif de réemploi. Le contenu est adapté à une apprenante adulte de niveau A2 renforcé ; sa langue maternelle n'est pas présumée.
+
+## Ce qui a été examiné
+
+- Les sept pages demandées ont été ouvertes, et leurs images complètes ont été lues visuellement. Le feuilletage présente des pages sous forme d'images ; le texte du document n'est donc pas disponible comme un article HTML accessible.
+- Les points interactifs ont été repérés par leur emplacement réel sur les pages et leur rôle dans le DOM : exercices, pistes audio, lectures du texte et capsule vidéo. Aucune réponse d'exercice ni note du compte n'a été soumise.
+- Les cinq lecteurs des pistes 35, 36, 37, 38 et 39 ont été ouverts. Leurs **transcriptions officielles visibles**, la durée et les commandes de lecture ont été examinées. La capsule vidéo sur la lettre g affiche une durée de 3 min 56.
+- Le code accessible de l'interface a été inspecté : iframe du feuilleteur, images de pages, points interactifs positionnés, lecteur, segmentation des transcriptions et choix de vitesse. Le fichier de données protégé de l'éditeur n'a pas pu être récupéré par la capacité disponible. Il n'a pas été rétroconçu à partir de données cachées.
+
+**Limite de l'analyse audio :** les transcriptions et les lecteurs permettent une analyse linguistique et structurelle. Les cinq fichiers audio natifs n'ont pas été extraits ; aucune mesure acoustique de leur accent, débit parlé effectif ou intonation n'est revendiquée. Les marques de bruits de fond proviennent des transcriptions, pas d'une écoute humaine. Les durées comprennent les introductions et les silences.
+
+## Lecture détaillée des pages
+
+| Page | Contenu vérifié | Fonction pédagogique | Conséquence pour l'atelier bis |
+|---|---|---|---|
+| 51 | Ouverture de l'unité 3, « Je me suis régalé ! ». Dossier 1 : cuisines locales, cultures culinaires, pronom en, progression, pronoms interrogatifs. Photo d'un restaurant parisien. | Annonce des objectifs de description, de réaction et de choix. Le dossier 2, annoncé également, traite d'autres acquis. | Cibler les acquis du dossier 1 ; ne pas confondre l'annonce de toute l'unité avec ce qui est effectivement travaillé avant la page 58. |
+| 52 | Carte des outre-mer et spécialités de Guadeloupe, de La Réunion et de Martinique ; courts portraits culinaires et photos. | Relier un plat à un lieu, reconnaître les ingrédients et choisir un plat. La carte et les photos permettent des hypothèses avant la lecture. | Partir d'un plat familier de l'apprenante ; ne pas faire mémoriser tous les noms et lieux. |
+| 53 | Spécialités de Nouvelle-Calédonie et de Polynésie ; activités de repérage, choix et ingrédients ; piste 35 ; répertoire pour qualifier et apprécier un plat. | Passer d'une description à une réaction personnelle ; reconnaître qui a goûté quoi, puis relever un commentaire. | Complément oral : nom, ingrédients, préparation, avis. Une appréciation suffit, sans liste exhaustive d'adjectifs. |
+| 54 | Présentation d'un restaurant camerounais et de quatre plats. Photos, ingrédients, accompagnements et préparation ; plusieurs reprises nominales avec en. | Comprendre un texte de type menu/site de restaurant et préparer l'observation du pronom. | Réutiliser la construction dans des phrases courtes sur légumes, riz ou poisson. |
+| 55 | Piste 36 : commande au restaurant. Préparations grillée, marinée, cuite ou frite. Observation de la place de en ; piste 37 : habitudes alimentaires. Réactions à des plats et présentation d'une recette personnelle. | Avec un verbe conjugué, en se place devant lui ; avec un verbe conjugué suivi d'un infinitif, en se place devant l'infinitif concerné. Réemploi avec fréquence et expérience passée. | Deux modèles centraux : j'en mange et je peux en préparer. Les formes négatives sont disponibles en complément. |
+| 56 | Quatre tendances : cuisine des restes, bols composés, fleurs comestibles et fusion de traditions. Chaque paragraphe est lié à une grande photo. | Comprendre une tendance concrète puis donner son avis ; observer progression et questions de choix dans le texte. | Garder les restes comme pont concret avec la vidéo. Les thèmes techniques ou inhabituels restent des supports de compréhension. |
+| 57 | Piste 38 : échange sur les tendances ; progression et piste 39 ; évolution des habitudes ; quatre formes de lequel ; jeu de choix ; capsule phonétique sur la lettre g. | Distinguer changement dans le temps et comparaison ; poser une question avec un référent connu ; distinguer les deux valeurs consonantiques de g dans des mots. | Lequel/laquelle et les pluriels sont réemployés dans un panneau facultatif. La lettre g est proposée avec quatre mots familiers, séparément du travail de mélodie. |
+
+## Pistes 35 à 39 : analyse linguistique des transcriptions
+
+| Piste | Durée du lecteur | Organisation et informations à comprendre | Points de vigilance |
+|---|---|---|---|
+| 35, p. 53 | 1 min 47 | Interview de trois visiteurs : cari poulet, poisson cru à la tahitienne et acras aux crevettes. Les réponses associent plat, ingrédients/goût et appréciation. | Plusieurs noms propres et spécialités peu familières. Premier passage : associer personne et plat ; second passage : une appréciation. La transcription signale un murmure de fond. |
+| 36, p. 55 | 1 min 05 | Serveur et couple : entrée partagée, deux plats, boissons, absence de dessert, satisfaction et addition. | Tableau à six informations possible, mais coûteux en première écoute. Le ndolé et les bananes plantains demandent un repère visuel. Repérer les rôles avant les détails. |
+| 37, p. 55 | 46 s | Deux amis contrastent leur consommation de viande, poisson et fromage ; en est repris dans des réponses positives et négatives. | La fréquence porte sur un aliment identifié. Végétarien et végan sont des mots de compréhension ; leur mémorisation n'est pas nécessaire pour produire une habitude. |
+| 38, p. 57 | 1 min 31 | Deux amis évoquent surtout cuisine fusion et cuisine des restes ; les questions de choix ont un référent dans la conversation. | Oral familier avec contractions, omission de ne et réactions spontanées. Présenter les formes pleines dans les modèles de production ; les variantes familières servent au repérage. L'annonce orale dit « activité 2 », tandis que le livre place la piste à l'activité 3 : le numéro de piste et son contenu font foi. |
+| 39, p. 57 | 49 s | Huit énoncés indépendants : cinq expriment une évolution ; les autres expriment une comparaison ou un choix. | Entendre plus ou moins ne suffit pas à identifier la progression. Faire porter l'écoute sur la construction entière et le sens temporel. |
+
+Les lectures supplémentaires du texte et les liens Lexiville/grammaire ont été repérés. Ils ne sont pas incorporés au parcours : ils ajoutent des objectifs et exigent le compte du manuel. Les pages ou pistes de l'éditeur ne sont pas republiées.
+
+## Alignement A2 renforcé et charge cognitive
+
+Le [Volume complémentaire du CECRL, Conseil de l'Europe, 2021](https://rm.coe.int/cadre-europeen-commun-de-reference-pour-les-langues-apprendre-enseigne/1680a4e270) distingue A2 et A2 renforcé dans certaines échelles. Il rattache la compréhension à une diction claire, à un sujet familier et à un débit adapté ; il permet des descriptions brèves et des échanges simples sur des sujets quotidiens. Les repères utilisés ici sont la compréhension générale de l'oral, la production orale, l'échange d'informations et la maîtrise phonologique. **Ce cadre ne certifie ni un support ni le niveau réel d'une personne**, et n'impose pas un inventaire de grammaire française.
+
+La conception de la bis applique ces repères de manière pédagogique :
+
+1. Une situation stable à la cantine, avec un message repris pendant toute la séance.
+2. Trois priorités : une habitude avec en, un changement et une raison simple. Les six cartes constituent une réserve de phrases ; toutes ne doivent pas être maîtrisées en une séance.
+3. Deux extraits guidés ; deux questions chacun. Les passages avec nombres, algues ou noms d'insectes sont facultatifs.
+4. Des exemples sur l'alimentation pour réduire les changements de contexte. Les aides sont en français courant, sans supposer l'espagnol.
+5. Un panneau replié pour revenir au manuel : un plat, en, un choix ou la lettre g. Le formateur choisit **une** activité selon le besoin, sans ajouter une nouvelle étape obligatoire.
+6. La répétition du même message conserve le format 90 → 75 → 60 secondes. La réduction n'est pas un test de vitesse ; le formateur peut garder une durée identique et autoriser les mots-clés.
+7. Les mesures de pauses et de mélodie sont affichées comme repères approximatifs. Une pause ou une voix moins étendue n'est pas automatiquement un échec.
+
+La vidéo « 1 jour, 1 question » contient du lexique et des formes plus complexes que le noyau de production. Elle sert de document accompagné. Ses projections sur l'avenir ne sont pas validées comme des données actuelles. Les courbes du support décrivent ses extraits humains ; elles ne deviennent pas des règles universelles de prononciation.
+
+## Lectures Qwen et limites de validation
+
+Trois candidates féminines ont été créées avec Qwen3-TTS VoiceDesign, puis comparées sur le même texte français. La transcription automatique retrouve tous les mots dans les trois références. La candidate retenue a une hauteur médiane mesurée de 200 Hz sur cette référence, contre 231 et 311 Hz pour les deux autres. Ce choix favorise un timbre posé ; la hauteur ne prouve ni le sexe perçu, ni l'âge, ni un accent natif.
+
+La référence choisie est ralentie à 0,90 sans modifier sa hauteur, puis employée par Qwen3-TTS Base pour les lectures. La même référence, le texte exact et les paramètres figurent dans les fichiers de génération. Les contenus pédagogiques, compléments, citations courtes du film et notes du formateur sont sonorisés. Les phrases saisies librement et les valeurs calculées par le navigateur ne font pas partie du catalogue prédéfini.
+
+Les lectures à trous et les variantes de certaines cartes sont fabriquées par fragments français séparés par une pause. Les lectures longues de l'apprenante dont le débit estimé dépasse 185 mots/minute sont modérées vers 175 mots/minute, avec une réduction limitée pour éviter une forte déformation temporelle. Cette estimation inclut les pauses et ne décrit pas le débit articulatoire. Le bouton de lecture lente reste disponible.
+
+Contrôles : correspondance du texte affiché avec le catalogue, fichiers MP3 décodables et non silencieux, empreintes des fichiers, intégration au parcours et reconnaissance automatique des mots. **La reconnaissance ne valide pas le naturel, la prosodie ou l'âge perçu.** Une écoute humaine reste le contrôle adéquat de ces qualités. Les modèles de la vidéo restent disponibles avec leur voix humaine ; les lectures Qwen sont des lectures complémentaires distinctes.
+
+La version initiale est conservée à son adresse. La bis possède une autre adresse et une autre clé de sauvegarde locale : elle ne remplace pas les réponses enregistrées dans l'ancien atelier.
