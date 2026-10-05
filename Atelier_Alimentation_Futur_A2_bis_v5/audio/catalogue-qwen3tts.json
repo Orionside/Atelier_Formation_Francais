@@ -1,0 +1,2062 @@
+{
+  "atelier": "Alimentation du futur A2+ bis v5",
+  "entries": [
+    {
+      "id": "accueil-objectif",
+      "display_text": "Aujourd'hui, vous apprenez à dire ce qui change dans votre alimentation et à expliquer votre choix. En une minute, comme à table avec un collègue.",
+      "tts_text": "Aujourd'hui, vous apprenez à dire ce qui change dans votre alimentation et à expliquer votre choix. En une minute, comme à table avec un collègue.",
+      "role": "objectif",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/accueil-objectif.mp3"
+    },
+    {
+      "id": "situation-lieu",
+      "display_text": "À la cantine, à midi",
+      "tts_text": "À la cantine, à midi",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-lieu.mp3"
+    },
+    {
+      "id": "situation-qui",
+      "display_text": "Un collègue français dit :",
+      "tts_text": "Un collègue français dit :",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-qui.mp3"
+    },
+    {
+      "id": "situation-dialogue",
+      "display_text": "« Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? »",
+      "tts_text": "« Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? »",
+      "role": "dialogue",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-dialogue.mp3"
+    },
+    {
+      "id": "situation-vous",
+      "display_text": "Vous répondez : ce que vous mangez, ce qui change, et pourquoi. Puis vous posez une question à votre collègue.",
+      "tts_text": "Vous répondez : ce que vous mangez, ce qui change, et pourquoi. Puis vous posez une question à votre collègue.",
+      "role": "contexte",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-vous.mp3"
+    },
+    {
+      "id": "situation-consigne",
+      "display_text": "Parlez de vos habitudes à table, et de ce qui change. En 1 minute.",
+      "tts_text": "Parlez de vos habitudes à table, et de ce qui change. En une minute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-consigne.mp3"
+    },
+    {
+      "id": "situation-question",
+      "display_text": "Vous préférez un autre sujet ? (facultatif) De quelle autre habitude voulez-vous parler ?",
+      "tts_text": "Vous préférez un autre sujet ? (facultatif) De quelle autre habitude voulez-vous parler ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/situation-question.mp3"
+    },
+    {
+      "id": "plan-1-titre",
+      "display_text": "Mon habitude",
+      "tts_text": "Mon habitude",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-1-titre.mp3"
+    },
+    {
+      "id": "plan-1-exemple",
+      "display_text": "Des légumes ? J'en mange souvent.",
+      "tts_text": "Des légumes ? J'en mange souvent.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-1-exemple.mp3"
+    },
+    {
+      "id": "plan-2-titre",
+      "display_text": "Ce qui change",
+      "tts_text": "Ce qui change",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-2-titre.mp3"
+    },
+    {
+      "id": "plan-2-exemple",
+      "display_text": "Je mange de plus en plus de… et de moins en moins de…",
+      "tts_text": "Je mange de plus en plus de… et de moins en moins de…",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-2-exemple.mp3"
+    },
+    {
+      "id": "plan-3-titre",
+      "display_text": "Pourquoi je fais ce choix",
+      "tts_text": "Pourquoi je fais ce choix",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-3-titre.mp3"
+    },
+    {
+      "id": "plan-3-exemple",
+      "display_text": "Ça permet de moins jeter.",
+      "tts_text": "Ça permet de moins jeter.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-3-exemple.mp3"
+    },
+    {
+      "id": "plan-4-titre",
+      "display_text": "Ma question",
+      "tts_text": "Ma question",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-4-titre.mp3"
+    },
+    {
+      "id": "plan-4-exemple",
+      "display_text": "Et vous, vous avez déjà essayé ?",
+      "tts_text": "Et vous, vous avez déjà essayé ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/plan-4-exemple.mp3"
+    },
+    {
+      "id": "avant-consigne",
+      "display_text": "Parlez de vos habitudes et de ce qui change, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "tts_text": "Parlez de vos habitudes et de ce qui change, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/avant-consigne.mp3"
+    },
+    {
+      "id": "difficulte-1",
+      "display_text": "Je cherchais mes mots",
+      "tts_text": "Je cherchais mes mots",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-1.mp3"
+    },
+    {
+      "id": "difficulte-2",
+      "display_text": "Je ne savais pas comment commencer",
+      "tts_text": "Je ne savais pas comment commencer",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-2.mp3"
+    },
+    {
+      "id": "difficulte-3",
+      "display_text": "Je ne savais pas dire « de plus en plus »",
+      "tts_text": "Je ne savais pas dire « de plus en plus »",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-3.mp3"
+    },
+    {
+      "id": "difficulte-4",
+      "display_text": "Je n'étais pas sûre de ma prononciation",
+      "tts_text": "Je n'étais pas sûre de ma prononciation",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-4.mp3"
+    },
+    {
+      "id": "difficulte-5",
+      "display_text": "Rien de spécial",
+      "tts_text": "Rien de spécial",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/difficulte-5.mp3"
+    },
+    {
+      "id": "ecoute-consigne",
+      "display_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "tts_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-consigne.mp3"
+    },
+    {
+      "id": "ecoute-a-pourquoi",
+      "display_text": "Pourquoi cet extrait ? La voix explique ce qui va changer dans notre assiette, et pourquoi. Vous allez faire la même chose avec vos habitudes.",
+      "tts_text": "Pourquoi cet extrait ? La voix explique ce qui va changer dans notre assiette, et pourquoi. Vous allez faire la même chose avec vos habitudes.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-a-devine",
+      "display_text": "À votre avis, qu'est-ce qu'on va manger dans 20 ans ? Répondez à voix haute : 2 idées.",
+      "tts_text": "À votre avis, qu'est-ce qu'on va manger dans 20 ans ? Répondez à voix haute : 2 idées.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-devine.mp3"
+    },
+    {
+      "id": "ecoute-a-q1",
+      "display_text": "Dans la vidéo, quel problème est associé à la viande et au maïs ?",
+      "tts_text": "Dans la vidéo, quel problème est associé à la viande et au maïs ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-1",
+      "display_text": "Ils coûtent trop cher.",
+      "tts_text": "Ils coûtent trop cher.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-2",
+      "display_text": "Ils demandent beaucoup d'eau.",
+      "tts_text": "Ils demandent beaucoup d'eau.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-3",
+      "display_text": "Ils n'ont pas de goût.",
+      "tts_text": "Ils n'ont pas de goût.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-explication",
+      "display_text": "La voix dit : « des produits qui, comme la viande ou le maïs, nécessitent beaucoup d'eau ». Nécessiter, c'est avoir besoin de quelque chose.",
+      "tts_text": "La voix dit : « des produits qui, comme la viande ou le maïs, nécessitent beaucoup d'eau ». Nécessiter, c'est avoir besoin de quelque chose.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-a-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-q2",
+      "display_text": "Où peut-on trouver des protéines, sans manger de viande ?",
+      "tts_text": "Où peut-on trouver des protéines, sans manger de viande ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-1",
+      "display_text": "Dans le chocolat et la farine.",
+      "tts_text": "Dans le chocolat et la farine.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-2",
+      "display_text": "Dans l'eau.",
+      "tts_text": "Dans l'eau.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-3",
+      "display_text": "Dans des plantes comme le soja, et dans les insectes.",
+      "tts_text": "Dans des plantes comme le soja, et dans les insectes.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-explication",
+      "display_text": "« On peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes. » Ailleurs, c'est dans un autre endroit.",
+      "tts_text": "« On peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes. » Ailleurs, c'est dans un autre endroit.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-a-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1",
+      "display_text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup […].",
+      "tts_text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup….",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup…"
+        }
+      ],
+      "pause_s": 0.8
+    },
+    {
+      "id": "ecoute-a-trou-1-aide",
+      "display_text": "Aide : être différent.",
+      "tts_text": "Aide : être différent.",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-solution",
+      "display_text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "tts_text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2",
+      "display_text": "Manger des grillons au chocolat va devenir de plus en […] banal.",
+      "tts_text": "Manger des grillons au chocolat va devenir de plus en… banal.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Manger des grillons au chocolat va devenir de plus en…"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "banal."
+        }
+      ],
+      "pause_s": 0.8
+    },
+    {
+      "id": "ecoute-a-trou-2-aide",
+      "display_text": "Aide : ça augmente.",
+      "tts_text": "Aide : ça augmente.",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-solution",
+      "display_text": "Manger des grillons au chocolat va devenir de plus en plus banal.",
+      "tts_text": "Manger des grillons au chocolat va devenir de plus en plus banal.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-difficile",
+      "display_text": "Passage facultatif. La vidéo évoque la population mondiale en 2030. Écoutez les nombres si vous le souhaitez. Nourrir, c'est donner à manger. Vous n'avez pas besoin de retenir ces nombres pour parler de vos habitudes.",
+      "tts_text": "Passage facultatif. La vidéo évoque la population mondiale en deux mille trente. Écoutez les nombres si vous le souhaitez. Nourrir, c'est donner à manger. Vous n'avez pas besoin de retenir ces nombres pour parler de vos habitudes.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-a-difficile.mp3"
+    },
+    {
+      "id": "ecoute-b-pourquoi",
+      "display_text": "Pourquoi cet extrait ? La voix donne trois nouveautés. Pour chacune, elle dit pourquoi c'est bien… ou ce qui manque encore. C'est utile pour donner votre avis.",
+      "tts_text": "Pourquoi cet extrait ? La voix donne trois nouveautés. Pour chacune, elle dit pourquoi c'est bien… ou ce qui manque encore. C'est utile pour donner votre avis.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-b-devine",
+      "display_text": "Chez vous, qu'est-ce que vous faites avec les restes ? Les restes, c'est la nourriture non mangée. Répondez à voix haute.",
+      "tts_text": "Chez vous, qu'est-ce que vous faites avec les restes ? Les restes, c'est la nourriture non mangée. Répondez à voix haute.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-devine.mp3"
+    },
+    {
+      "id": "ecoute-b-q1",
+      "display_text": "Selon cette vidéo, le steak de laboratoire a-t-il le goût de la vraie viande ?",
+      "tts_text": "Selon cette vidéo, le steak de laboratoire a-t-il le goût de la vraie viande ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-1",
+      "display_text": "Oui, exactement le même goût.",
+      "tts_text": "Oui, exactement le même goût.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-2",
+      "display_text": "Non, pas encore.",
+      "tts_text": "Non, pas encore.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-3",
+      "display_text": "La vidéo ne le dit pas.",
+      "tts_text": "La vidéo ne le dit pas.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-explication",
+      "display_text": "« Ce steak synthétique n'a pas encore la saveur de l'original. » La saveur, c'est le goût. Synthétique : fabriqué, pas naturel.",
+      "tts_text": "« Ce steak synthétique n'a pas encore la saveur de l'original. » La saveur, c'est le goût. Synthétique : fabriqué, pas naturel.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-b-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-q2",
+      "display_text": "« Zéro déchet » : qu'est-ce que ça veut dire dans la vidéo ?",
+      "tts_text": "« Zéro déchet » : qu'est-ce que ça veut dire dans la vidéo ?",
+      "role": "question",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-1",
+      "display_text": "On ne jette plus de nourriture : on cuisine les restes.",
+      "tts_text": "On ne jette plus de nourriture : on cuisine les restes.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-2",
+      "display_text": "On mange seulement des algues.",
+      "tts_text": "On mange seulement des algues.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-3",
+      "display_text": "On ne va plus au restaurant.",
+      "tts_text": "On ne va plus au restaurant.",
+      "role": "option",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-explication",
+      "display_text": "« Savoir inventer de nouvelles recettes pour récupérer les restes, c'est ça aussi la cuisine du futur. » Un déchet, c'est une chose qu'on jette à la poubelle.",
+      "tts_text": "« Savoir inventer de nouvelles recettes pour récupérer les restes, c'est ça aussi la cuisine du futur. » Un déchet, c'est une chose qu'on jette à la poubelle.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1",
+      "display_text": "Cette nouvelle technologie […] d'économiser beaucoup d'eau.",
+      "tts_text": "Cette nouvelle technologie… d'économiser beaucoup d'eau.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Cette nouvelle technologie…"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "d'économiser beaucoup d'eau."
+        }
+      ],
+      "pause_s": 0.8
+    },
+    {
+      "id": "ecoute-b-trou-1-aide",
+      "display_text": "Aide : rend possible.",
+      "tts_text": "Aide : rend possible.",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-solution",
+      "display_text": "Cette nouvelle technologie permet d'économiser beaucoup d'eau.",
+      "tts_text": "Cette nouvelle technologie permet d'économiser beaucoup d'eau.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2",
+      "display_text": "Un tiers de la production alimentaire mondiale est […] et perdue.",
+      "tts_text": "Un tiers de la production alimentaire mondiale est… et perdue.",
+      "role": "phrase_a_completer",
+      "reveal": "avant_correction",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Un tiers de la production alimentaire mondiale est…"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "et perdue."
+        }
+      ],
+      "pause_s": 0.8
+    },
+    {
+      "id": "ecoute-b-trou-2-aide",
+      "display_text": "Aide : jetée, non utilisée.",
+      "tts_text": "Aide : jetée, non utilisée.",
+      "role": "aide",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-solution",
+      "display_text": "Un tiers de la production alimentaire mondiale est gaspillée et perdue.",
+      "tts_text": "Un tiers de la production alimentaire mondiale est gaspillée et perdue.",
+      "role": "correction",
+      "reveal": "apres_verification",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-difficile",
+      "display_text": "Passage facultatif. La laitue est une salade verte. La nori et le wakamé sont des algues utilisées en cuisine. Pour votre réponse, vous pouvez garder un aliment que vous connaissez.",
+      "tts_text": "Passage facultatif. La laitue est une salade verte. La nori et le wakamé sont des algues utilisées en cuisine. Pour votre réponse, vous pouvez garder un aliment que vous connaissez.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ecoute-b-difficile.mp3"
+    },
+    {
+      "id": "phrases-consigne",
+      "display_text": "Six phrases de la vidéo pour dire ce qui change et expliquer pourquoi. Écoutez, répétez, puis dites votre propre phrase.",
+      "tts_text": "Six phrases de la vidéo pour dire ce qui change et expliquer pourquoi. Écoutez, répétez, puis dites votre propre phrase.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrases-consigne.mp3"
+    },
+    {
+      "id": "phrases-rappel",
+      "display_text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur Voir la phrase.",
+      "tts_text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur Voir la phrase.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrases-rappel.mp3"
+    },
+    {
+      "id": "phrase-p1-utilite",
+      "display_text": "Pour annoncer un changement à venir. Cette phrase est un prolongement : l'objectif principal reste de parler de vos habitudes.",
+      "tts_text": "Pour annoncer un changement à venir. Cette phrase est un prolongement : l'objectif principal reste de parler de vos habitudes.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-utilite.mp3"
+    },
+    {
+      "id": "phrase-p1-forme",
+      "display_text": "… va beaucoup changer.",
+      "tts_text": "va beaucoup changer.",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-forme.mp3"
+    },
+    {
+      "id": "phrase-p1-exemple",
+      "display_text": "Mon alimentation va beaucoup changer : je vais cuisiner davantage.",
+      "tts_text": "Mon alimentation va beaucoup changer : je vais cuisiner davantage.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-exemple.mp3"
+    },
+    {
+      "id": "phrase-p1-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-avous.mp3"
+    },
+    {
+      "id": "phrase-p2-utilite",
+      "display_text": "Pour dire que quelque chose augmente. Le contraire : de moins en moins.",
+      "tts_text": "Pour dire que quelque chose augmente. Le contraire : de moins en moins.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-utilite.mp3"
+    },
+    {
+      "id": "phrase-p2-forme",
+      "display_text": "… de plus en plus… / … de moins en moins…",
+      "tts_text": "de plus en plus… de moins en moins…",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-forme.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "de plus en plus…"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "de moins en moins…"
+        }
+      ],
+      "pause_s": 0.4
+    },
+    {
+      "id": "phrase-p2-exemple",
+      "display_text": "Je mange de plus en plus de légumes et de moins en moins de viande.",
+      "tts_text": "Je mange de plus en plus de légumes et de moins en moins de viande.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-exemple.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Je mange de plus en plus de légumes."
+        },
+        {
+          "lang": "fr-FR",
+          "text": "Et de moins en moins de viande."
+        }
+      ],
+      "pause_s": 0.4
+    },
+    {
+      "id": "phrase-p2-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-avous.mp3"
+    },
+    {
+      "id": "phrase-p3-utilite",
+      "display_text": "Pour parler d'une habitude : ce qu'on fait souvent.",
+      "tts_text": "Pour parler d'une habitude : ce qu'on fait souvent.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-utilite.mp3"
+    },
+    {
+      "id": "phrase-p3-forme",
+      "display_text": "J'ai l'habitude de…",
+      "tts_text": "J'ai l'habitude de…",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-forme.mp3"
+    },
+    {
+      "id": "phrase-p3-exemple",
+      "display_text": "J'ai l'habitude de préparer une soupe avec les restes.",
+      "tts_text": "J'ai l'habitude de préparer une soupe avec les restes.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-exemple.mp3"
+    },
+    {
+      "id": "phrase-p3-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-avous.mp3"
+    },
+    {
+      "id": "phrase-p4-utilite",
+      "display_text": "Pour éviter de répéter « des légumes » : j'en mange. Avec deux verbes : je peux en préparer.",
+      "tts_text": "Pour éviter de répéter « des légumes » : j'en mange. Avec deux verbes : je peux en préparer.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-utilite.mp3"
+    },
+    {
+      "id": "phrase-p4-forme",
+      "display_text": "On peut en trouver… / J'en mange…",
+      "tts_text": "On peut en trouver… J'en mange…",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-forme.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "On peut en trouver…"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "J'en mange…"
+        }
+      ],
+      "pause_s": 0.4
+    },
+    {
+      "id": "phrase-p4-exemple",
+      "display_text": "Des légumes ? J'en mange tous les jours. Du riz ? Je peux en préparer.",
+      "tts_text": "Des légumes ? J'en mange tous les jours. Du riz ? Je peux en préparer.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-exemple.mp3"
+    },
+    {
+      "id": "phrase-p4-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-avous.mp3"
+    },
+    {
+      "id": "phrase-p5-utilite",
+      "display_text": "Pour expliquer pourquoi c'est bien.",
+      "tts_text": "Pour expliquer pourquoi c'est bien.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-utilite.mp3"
+    },
+    {
+      "id": "phrase-p5-forme",
+      "display_text": "Ça permet de…",
+      "tts_text": "Ça permet de…",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-forme.mp3"
+    },
+    {
+      "id": "phrase-p5-exemple",
+      "display_text": "Cuisiner les restes, ça permet de moins jeter.",
+      "tts_text": "Cuisiner les restes, ça permet de moins jeter.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-exemple.mp3"
+    },
+    {
+      "id": "phrase-p5-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-avous.mp3"
+    },
+    {
+      "id": "phrase-p6-utilite",
+      "display_text": "Pour inviter l'autre à répondre. Choisissez « tu » ou « vous » selon votre relation avec cette personne.",
+      "tts_text": "Pour inviter l'autre à répondre. Choisissez « tu » ou « vous » selon votre relation avec cette personne.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-utilite.mp3"
+    },
+    {
+      "id": "phrase-p6-forme",
+      "display_text": "Tu as déjà essayé ? / Vous avez déjà essayé ?",
+      "tts_text": "Tu as déjà essayé ? Vous avez déjà essayé ?",
+      "role": "modele",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-forme.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Tu as déjà essayé ?"
+        },
+        {
+          "lang": "fr-FR",
+          "text": "Vous avez déjà essayé ?"
+        }
+      ],
+      "pause_s": 0.4
+    },
+    {
+      "id": "phrase-p6-exemple",
+      "display_text": "Je prépare une salade avec des légumes grillés. Vous avez déjà essayé ?",
+      "tts_text": "Je prépare une salade avec des légumes grillés. Vous avez déjà essayé ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-exemple.mp3"
+    },
+    {
+      "id": "phrase-p6-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-avous.mp3"
+    },
+    {
+      "id": "melodie-intro",
+      "display_text": "Dans ces extraits, écoutez comment la voix monte sur un mot important et descend à certaines fins de phrase. Reprenez un exemple à la fois.",
+      "tts_text": "Dans ces extraits, écoutez comment la voix monte sur un mot important et descend à certaines fins de phrase. Reprenez un exemple à la fois.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-intro.mp3"
+    },
+    {
+      "id": "melodie-regle-1",
+      "display_text": "Dans le premier exemple, la voix monte sur « beaucoup », puis descend sur « changer ».",
+      "tts_text": "Dans le premier exemple, la voix monte sur « beaucoup », puis descend sur « changer ».",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-1.mp3"
+    },
+    {
+      "id": "melodie-regle-2",
+      "display_text": "Dans le deuxième exemple, écoutez le premier « plus », puis la fin du mot « banal ».",
+      "tts_text": "Dans le deuxième exemple, écoutez le premier « plus », puis la fin du mot « banal ».",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-2.mp3"
+    },
+    {
+      "id": "melodie-regle-3",
+      "display_text": "Ces mouvements appartiennent aux exemples de la vidéo. Une question peut aussi se terminer avec une voix qui descend.",
+      "tts_text": "Ces mouvements appartiennent aux exemples de la vidéo. Une question peut aussi se terminer avec une voix qui descend.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-regle-3.mp3"
+    },
+    {
+      "id": "melodie-attention",
+      "display_text": "Attention : Les flèches décrivent la voix humaine de la vidéo. Votre voix peut être différente et rester claire. Les courbes servent à comparer les essais ; elles ne donnent pas une note de niveau.",
+      "tts_text": "Attention : Les flèches décrivent la voix humaine de la vidéo. Votre voix peut être différente et rester claire. Les courbes servent à comparer les essais ; elles ne donnent pas une note de niveau.",
+      "role": "explication",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-attention.mp3"
+    },
+    {
+      "id": "melodie-exercice-1",
+      "display_text": "Écoutez la fin de la phrase. Sur quelle syllabe la voix monte-t-elle le plus haut ? Cliquez sur une syllabe, puis vérifiez.",
+      "tts_text": "Écoutez la fin de la phrase. Sur quelle syllabe la voix monte-t-elle le plus haut ? Cliquez sur une syllabe, puis vérifiez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-exercice-1.mp3"
+    },
+    {
+      "id": "melodie-exercice-1-explication",
+      "display_text": "La voix monte sur le premier « plus » : c'est le mot important. Sur « banal », elle descend : la phrase est finie.",
+      "tts_text": "La voix monte sur le premier « plus » : c'est le mot important. Sur « banal », elle descend : la phrase est finie.",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/melodie-exercice-1-explication.mp3"
+    },
+    {
+      "id": "melodie-exercice-2",
+      "display_text": "Écoutez. Sur quelle syllabe la voix monte-t-elle ? Cliquez sur une syllabe, puis vérifiez.",
+      "tts_text": "Écoutez. Sur quelle syllabe la voix monte-t-elle ? Cliquez sur une syllabe, puis vérifiez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-exercice-2.mp3"
+    },
+    {
+      "id": "melodie-exercice-2-explication",
+      "display_text": "La voix monte sur « -coup » de « beaucoup » : c'est le mot qui dit « combien ».",
+      "tts_text": "La voix monte sur « -coup » de « beaucoup » : c'est le mot qui dit « combien ».",
+      "role": "correction",
+      "reveal": "apres_reponse",
+      "file": "audio/qwen3-tts/melodie-exercice-2-explication.mp3"
+    },
+    {
+      "id": "melodie-etape-1",
+      "display_text": "Écoutez une phrase deux fois.",
+      "tts_text": "Écoutez une phrase deux fois.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-1.mp3"
+    },
+    {
+      "id": "melodie-etape-2",
+      "display_text": "Répétez avec la voix deux fois. Faites une pause si nécessaire.",
+      "tts_text": "Répétez avec la voix deux fois. Faites une pause si nécessaire.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-2.mp3"
+    },
+    {
+      "id": "melodie-etape-3",
+      "display_text": "Enregistrez-vous seule. Écoutez si les mots sont clairs ; la courbe est facultative.",
+      "tts_text": "Enregistrez-vous seule. Écoutez si les mots sont clairs ; la courbe est facultative.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/melodie-etape-3.mp3"
+    },
+    {
+      "id": "entrainement-consigne",
+      "display_text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "tts_text": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, ajoutez une chose.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/entrainement-consigne.mp3"
+    },
+    {
+      "id": "entrainement-preparation",
+      "display_text": "Notez seulement des mots-clés, pas de phrases.",
+      "tts_text": "Notez seulement des mots-clés, pas de phrases.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/entrainement-preparation.mp3"
+    },
+    {
+      "id": "essai-1",
+      "display_text": "Parlez avec vos notes : votre habitude, ce qui change, pourquoi, puis votre question.",
+      "tts_text": "Parlez avec vos notes : votre habitude, ce qui change, pourquoi, puis votre question.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-1.mp3"
+    },
+    {
+      "id": "essai-1-ajout",
+      "display_text": "Pour l'essai 2, ajoutez une expression : « de plus en plus » ou « de moins en moins ».",
+      "tts_text": "Pour l'essai 2, ajoutez une expression : « de plus en plus » ou « de moins en moins ».",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-1-ajout.mp3"
+    },
+    {
+      "id": "essai-2",
+      "display_text": "Votre formateur joue le collègue et vous pose une question. Répondez.",
+      "tts_text": "Votre formateur joue le collègue et vous pose une question. Répondez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-2.mp3"
+    },
+    {
+      "id": "essai-2-ajout",
+      "display_text": "Pour l'essai 3, ajoutez « Ça permet de… », puis une question : « Et vous, vous avez déjà essayé ? »",
+      "tts_text": "Pour l'essai 3, ajoutez « Ça permet de… », puis une question : « Et vous, vous avez déjà essayé ? »",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-2-ajout.mp3"
+    },
+    {
+      "id": "essai-3",
+      "display_text": "Gardez l'essentiel. Utilisez encore vos mots-clés si vous en avez besoin.",
+      "tts_text": "Gardez l'essentiel. Utilisez encore vos mots-clés si vous en avez besoin.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/essai-3.mp3"
+    },
+    {
+      "id": "serveur-question-1",
+      "display_text": "Et les légumes, vous en mangez souvent ?",
+      "tts_text": "Et les légumes, vous en mangez souvent ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-1.mp3"
+    },
+    {
+      "id": "serveur-question-2",
+      "display_text": "Entre la soupe et la salade, laquelle préférez-vous ?",
+      "tts_text": "Entre la soupe et la salade, laquelle préférez-vous ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-2.mp3"
+    },
+    {
+      "id": "serveur-question-3",
+      "display_text": "Comment préparez-vous votre plat préféré ?",
+      "tts_text": "Comment préparez-vous votre plat préféré ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-3.mp3"
+    },
+    {
+      "id": "serveur-question-4",
+      "display_text": "Et les restes, qu'est-ce que vous en faites ?",
+      "tts_text": "Et les restes, qu'est-ce que vous en faites ?",
+      "role": "question",
+      "reveal": "apres_clic",
+      "file": "audio/qwen3-tts/serveur-question-4.mp3"
+    },
+    {
+      "id": "apres-consigne",
+      "display_text": "Le même sujet qu'au début. Parlez une minute, avec vos mots-clés si nécessaire.",
+      "tts_text": "Le même sujet qu'au début. Parlez une minute, avec vos mots-clés si nécessaire.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/apres-consigne.mp3"
+    },
+    {
+      "id": "apres-bilan",
+      "display_text": "Réécoutez-vous et cochez.",
+      "tts_text": "Réécoutez-vous et cochez.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/apres-bilan.mp3"
+    },
+    {
+      "id": "objectif-consigne",
+      "display_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "tts_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/objectif-consigne.mp3"
+    },
+    {
+      "id": "semaine-1",
+      "display_text": "Jour 1 : Choisissez une phrase de la vidéo. Écoutez-la, puis répétez-la deux fois.",
+      "tts_text": "Jour 1 : Choisissez une phrase de la vidéo. Écoutez-la, puis répétez-la deux fois.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-1.mp3"
+    },
+    {
+      "id": "semaine-2",
+      "display_text": "Jour 2 : Dites trois phrases utiles avec vos propres habitudes, sans regarder si possible.",
+      "tts_text": "Jour 2 : Dites trois phrases utiles avec vos propres habitudes, sans regarder si possible.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-2.mp3"
+    },
+    {
+      "id": "semaine-3",
+      "display_text": "Jour 3 : Présentez un plat : son nom, ses ingrédients, sa préparation. Puis dites si vous en mangez souvent.",
+      "tts_text": "Jour 3 : Présentez un plat : son nom, ses ingrédients, sa préparation. Puis dites si vous en mangez souvent.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-3.mp3"
+    },
+    {
+      "id": "semaine-4",
+      "display_text": "Jour 4 : Parlez une minute de vos habitudes et de ce qui change. Réécoutez-vous, puis choisissez une phrase à réutiliser.",
+      "tts_text": "Jour 4 : Parlez une minute de vos habitudes et de ce qui change. Réécoutez-vous, puis choisissez une phrase à réutiliser.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/semaine-4.mp3"
+    },
+    {
+      "id": "ui-accueil-titre",
+      "display_text": "À table : mes habitudes et mes choix",
+      "tts_text": "À table : mes habitudes et mes choix",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-titre.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-sujet",
+      "display_text": "Le sujet du jour",
+      "tts_text": "Le sujet du jour",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-sujet.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-ou",
+      "display_text": "Où ?",
+      "tts_text": "Où ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-ou.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-qui",
+      "display_text": "Qui parle ?",
+      "tts_text": "Qui parle ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-qui.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-vous",
+      "display_text": "Vous",
+      "tts_text": "Vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-vous.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-avous",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-avous.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser",
+      "display_text": "Vous préférez un autre sujet ?",
+      "tts_text": "Vous préférez un autre sujet ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser-exemple",
+      "display_text": "ex. : le sport, les transports, le télétravail",
+      "tts_text": "ex. : le sport, les transports, le télétravail",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser-exemple.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-personnaliser-note",
+      "display_text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "tts_text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-personnaliser-note.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-programme",
+      "display_text": "Le programme",
+      "tts_text": "Le programme",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-programme.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-accueil-micro",
+      "display_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "tts_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-accueil-micro.mp3",
+      "section": "start"
+    },
+    {
+      "id": "ui-avant-titre",
+      "display_text": "Je parle 1 minute",
+      "tts_text": "Je parle une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-titre.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-plan",
+      "display_text": "Vous pouvez suivre ce plan",
+      "tts_text": "Vous pouvez suivre ce plan",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-plan.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-enregistrer",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-enregistrer.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-pendant",
+      "display_text": "Pendant cette minute…",
+      "tts_text": "Pendant cette minute…",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-pendant.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-difficultes",
+      "display_text": "Touchez ce qui est vrai pour vous.",
+      "tts_text": "Touchez ce qui est vrai pour vous.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-difficultes.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-avant-rec-note",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-avant-rec-note.mp3",
+      "section": "avant"
+    },
+    {
+      "id": "ui-ecoute-titre",
+      "display_text": "J'écoute la vidéo",
+      "tts_text": "J'écoute la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-titre.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-avant",
+      "display_text": "Avant d'écouter : devinez",
+      "tts_text": "Avant d'écouter : devinez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-avant.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-repondre",
+      "display_text": "Écoutez l'extrait, puis répondez",
+      "tts_text": "Écoutez l'extrait, puis répondez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-repondre.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-completer",
+      "display_text": "Écoutez encore, puis complétez",
+      "tts_text": "Écoutez encore, puis complétez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-completer.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-difficile",
+      "display_text": "Le passage difficile",
+      "tts_text": "Le passage difficile",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-difficile.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-ecoute-verifier",
+      "display_text": "Vérifier",
+      "tts_text": "Vérifier",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-ecoute-verifier.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-extrait-1",
+      "display_text": "Extrait 1 · Demain, dans nos assiettes",
+      "tts_text": "Extrait 1. Demain, dans nos assiettes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-extrait-1.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-extrait-2",
+      "display_text": "Extrait 2 · Moins d'eau, zéro déchet",
+      "tts_text": "Extrait 2. Moins d'eau, zéro déchet",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-extrait-2.mp3",
+      "section": "ecoute"
+    },
+    {
+      "id": "ui-phrases-titre",
+      "display_text": "6 phrases utiles",
+      "tts_text": "Six phrases utiles.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-titre.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-apprendre",
+      "display_text": "Apprendre",
+      "tts_text": "Apprendre",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-apprendre.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-rappel",
+      "display_text": "Vérifier sans regarder",
+      "tts_text": "Vérifier sans regarder",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-rappel.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-video",
+      "display_text": "Dans la vidéo",
+      "tts_text": "Dans la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-video.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-situation",
+      "display_text": "Dans votre situation",
+      "tts_text": "Dans votre situation",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-situation.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-avous",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-avous.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-voir",
+      "display_text": "Voir la phrase",
+      "tts_text": "Voir la phrase",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-voir.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-connue",
+      "display_text": "Je la connais",
+      "tts_text": "Je la connais",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-connue.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-revoir",
+      "display_text": "À revoir",
+      "tts_text": "À revoir",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-revoir.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-phrases-saisie",
+      "display_text": "Ma phrase (facultatif)",
+      "tts_text": "Ma phrase (facultatif)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-phrases-saisie.mp3",
+      "section": "phrases"
+    },
+    {
+      "id": "ui-melodie-titre",
+      "display_text": "La mélodie du français",
+      "tts_text": "La mélodie du français",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-titre.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-regle",
+      "display_text": "La règle",
+      "tts_text": "La règle",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-regle.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-trouvez",
+      "display_text": "Écoutez et trouvez",
+      "tts_text": "Écoutez et trouvez",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-trouvez.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-repetez",
+      "display_text": "Répétez comme dans la vidéo",
+      "tts_text": "Répétez comme dans la vidéo",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-repetez.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-signes",
+      "display_text": "Les signes",
+      "tts_text": "Les signes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-signes.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-melodie-verifier",
+      "display_text": "Vérifier",
+      "tts_text": "Vérifier",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-melodie-verifier.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-1",
+      "display_text": "la voix monte (mesuré dans la vidéo)",
+      "tts_text": "la voix monte (mesuré dans la vidéo)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-1.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-2",
+      "display_text": "la voix descend",
+      "tts_text": "la voix descend",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-2.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-3",
+      "display_text": "syllabe plus longue",
+      "tts_text": "syllabe plus longue",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-3.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-4",
+      "display_text": "petite pause",
+      "tts_text": "petite pause",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-4.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-legende-5",
+      "display_text": "on enchaîne, sans pause",
+      "tts_text": "on enchaîne, sans pause",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-legende-5.mp3",
+      "section": "melodie"
+    },
+    {
+      "id": "ui-entrainement-titre",
+      "display_text": "Je m'entraîne 3 fois",
+      "tts_text": "Je m'entraîne trois fois.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-titre.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-preparer",
+      "display_text": "Préparez (1 minute)",
+      "tts_text": "Préparez. Une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-preparer.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-question",
+      "display_text": "Question du collègue (pour le formateur)",
+      "tts_text": "Question du collègue (pour le formateur)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-question.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-entrainement-bilan",
+      "display_text": "Vos 3 essais en chiffres",
+      "tts_text": "Vos trois essais en chiffres.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-entrainement-bilan.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-1",
+      "display_text": "Essai 1 · 1 min 30",
+      "tts_text": "Essai 1. Une minute trente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-1.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-2",
+      "display_text": "Essai 2 · 1 min 15",
+      "tts_text": "Essai 2. Une minute quinze",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-2.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-essai-titre-3",
+      "display_text": "Essai 3 · 1 min",
+      "tts_text": "Essai 3. Une minute",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-essai-titre-3.mp3",
+      "section": "entrainement"
+    },
+    {
+      "id": "ui-apres-titre",
+      "display_text": "Je reparle 1 minute",
+      "tts_text": "Je reparle une minute.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-titre.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-apres-enregistrer",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-enregistrer.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-apres-comparaison",
+      "display_text": "Début et fin du cours",
+      "tts_text": "Début et fin du cours",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-apres-comparaison.mp3",
+      "section": "apres"
+    },
+    {
+      "id": "ui-objectif-titre",
+      "display_text": "Mon objectif de la semaine",
+      "tts_text": "Mon objectif de la semaine",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-titre.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-phrase",
+      "display_text": "Ma phrase de la semaine",
+      "tts_text": "Ma phrase de la semaine",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-phrase.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-quand",
+      "display_text": "Quand ?",
+      "tts_text": "Quand ?",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-quand.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-exacte",
+      "display_text": "Ma phrase exacte",
+      "tts_text": "Ma phrase exacte",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-exacte.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-programme",
+      "display_text": "10 minutes par jour (facultatif)",
+      "tts_text": "Dix minutes par jour, facultatif.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-programme.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-envoyer",
+      "display_text": "Envoyer mon travail au formateur",
+      "tts_text": "Envoyer mon travail au formateur",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-envoyer.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-confidentialite",
+      "display_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "tts_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-confidentialite.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-plusloin",
+      "display_text": "Pour aller plus loin (facultatif)",
+      "tts_text": "Pour aller plus loin (facultatif)",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-plusloin.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-apres",
+      "display_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "tts_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-apres.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-objectif-video",
+      "display_text": "Regarder la vidéo en entier (1 min 42)",
+      "tts_text": "Regarder la vidéo en entier. Une minute quarante-deux.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-objectif-video.mp3",
+      "section": "objectif"
+    },
+    {
+      "id": "ui-titre",
+      "display_text": "Espace formateur",
+      "tts_text": "Espace formateur",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-titre.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-intro",
+      "display_text": "Déroulé minuté et conseils de conduite.",
+      "tts_text": "Déroulé minuté et conseils de conduite.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-intro.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-deroule",
+      "display_text": "Déroulé (45 minutes)",
+      "tts_text": "Déroulé. Quarante-cinq minutes.",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-deroule.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-notes",
+      "display_text": "Notes",
+      "tts_text": "Notes",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-notes.mp3",
+      "section": "form"
+    },
+    {
+      "id": "ui-nav-commencer",
+      "display_text": "Commencer",
+      "tts_text": "Commencer",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-commencer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-retour",
+      "display_text": "Retour",
+      "tts_text": "Retour",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-retour.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-suivant",
+      "display_text": "Étape suivante",
+      "tts_text": "Étape suivante",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-suivant.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-terminer",
+      "display_text": "Terminer le cours",
+      "tts_text": "Terminer le cours",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-terminer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-reponses",
+      "display_text": "Copier mes réponses",
+      "tts_text": "Copier mes réponses",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-reponses.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-theme",
+      "display_text": "Thème",
+      "tts_text": "Thème",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-theme.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-effacer",
+      "display_text": "Tout effacer",
+      "tts_text": "Tout effacer",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-effacer.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "ui-nav-vitesse",
+      "display_text": "Voix lente",
+      "tts_text": "Voix lente",
+      "role": "interface",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/ui-nav-vitesse.mp3",
+      "section": "navigation"
+    },
+    {
+      "id": "phrase-p1-film",
+      "display_text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "tts_text": "D'ici une vingtaine d'années, le contenu de nos assiettes va beaucoup changer.",
+      "role": "citation_video",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p1-film.mp3"
+    },
+    {
+      "id": "phrase-p2-film",
+      "display_text": "En Europe, manger des grillons au chocolat ou des vers de farine va devenir de plus en plus banal.",
+      "tts_text": "En Europe, manger des grillons au chocolat ou des vers de farine va devenir de plus en plus banal.",
+      "role": "citation_video",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p2-film.mp3"
+    },
+    {
+      "id": "phrase-p3-film",
+      "display_text": "Les Africains et les Asiatiques ont depuis longtemps l'habitude de manger des chenilles, des termites ou des sauterelles.",
+      "tts_text": "Les Africains et les Asiatiques ont depuis longtemps l'habitude de manger des chenilles, des termites ou des sauterelles.",
+      "role": "citation_video",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p3-film.mp3"
+    },
+    {
+      "id": "phrase-p4-film",
+      "display_text": "Or, on peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes.",
+      "tts_text": "Or, on peut en trouver ailleurs, dans des plantes comme le soja, mais aussi dans les insectes.",
+      "role": "citation_video",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p4-film.mp3"
+    },
+    {
+      "id": "phrase-p5-film",
+      "display_text": "Cette nouvelle technologie permet d'économiser beaucoup d'eau…",
+      "tts_text": "Cette nouvelle technologie permet d'économiser beaucoup d'eau…",
+      "role": "citation_video",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p5-film.mp3"
+    },
+    {
+      "id": "phrase-p6-film",
+      "display_text": "Tu as déjà essayé ?",
+      "tts_text": "Tu as déjà essayé ?",
+      "role": "citation_video",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/phrase-p6-film.mp3"
+    },
+    {
+      "id": "manuel-0-titre",
+      "display_text": "Mon plat — pages 52 à 55",
+      "tts_text": "Mon plat — pages 52 à 55",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-0-titre.mp3"
+    },
+    {
+      "id": "manuel-0-consigne",
+      "display_text": "Présentez un plat de votre choix : les ingrédients, la préparation, puis votre avis.",
+      "tts_text": "Présentez un plat de votre choix : les ingrédients, la préparation, puis votre avis.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-0-consigne.mp3"
+    },
+    {
+      "id": "manuel-0-exemple-0",
+      "display_text": "C'est une soupe de mon pays. Il y a des légumes et du riz.",
+      "tts_text": "C'est une soupe de mon pays. Il y a des légumes et du riz.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-0-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-0-exemple-1",
+      "display_text": "Les légumes sont cuits dans l'eau. Je trouve ça délicieux.",
+      "tts_text": "Les légumes sont cuits dans l'eau. Je trouve ça délicieux.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-0-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-1-titre",
+      "display_text": "J’en mange — page 55",
+      "tts_text": "J’en mange — page 55",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-1-titre.mp3"
+    },
+    {
+      "id": "manuel-1-consigne",
+      "display_text": "Votre collègue nomme un aliment. Répondez avec « en », puis indiquez une fréquence.",
+      "tts_text": "Votre collègue nomme un aliment. Répondez avec « en », puis indiquez une fréquence.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-1-consigne.mp3"
+    },
+    {
+      "id": "manuel-1-exemple-0",
+      "display_text": "Du poisson ? J'en mange parfois.",
+      "tts_text": "Du poisson ? J'en mange parfois.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-1-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-1-exemple-1",
+      "display_text": "De la viande ? Je n'en mange pas.",
+      "tts_text": "De la viande ? Je n'en mange pas.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-1-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-1-exemple-2",
+      "display_text": "Des légumes ? Je peux en préparer pour ce soir.",
+      "tts_text": "Des légumes ? Je peux en préparer pour ce soir.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-1-exemple-2.mp3"
+    },
+    {
+      "id": "manuel-2-titre",
+      "display_text": "Lequel ? Laquelle ? — pages 56 et 57",
+      "tts_text": "Lequel ? Laquelle ? — pages 56 et 57",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-2-titre.mp3"
+    },
+    {
+      "id": "manuel-2-consigne",
+      "display_text": "Choisissez entre deux plats, puis entre deux boissons. Posez la question à votre collègue.",
+      "tts_text": "Choisissez entre deux plats, puis entre deux boissons. Posez la question à votre collègue.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-2-consigne.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-0",
+      "display_text": "Le riz ou le couscous : lequel préférez-vous ?",
+      "tts_text": "Le riz ou le couscous : lequel préférez-vous ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-2-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-1",
+      "display_text": "La soupe ou la salade : laquelle préférez-vous ?",
+      "tts_text": "La soupe ou la salade : laquelle préférez-vous ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-2-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-2",
+      "display_text": "Parmi ces légumes, lesquels choisissez-vous ?",
+      "tts_text": "Parmi ces légumes, lesquels choisissez-vous ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-2-exemple-2.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-3",
+      "display_text": "Parmi ces boissons, lesquelles préférez-vous ?",
+      "tts_text": "Parmi ces boissons, lesquelles préférez-vous ?",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-2-exemple-3.mp3"
+    },
+    {
+      "id": "manuel-3-titre",
+      "display_text": "La lettre g — page 57",
+      "tts_text": "La lettre g — page 57",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-3-titre.mp3"
+    },
+    {
+      "id": "manuel-3-consigne",
+      "display_text": "Écoutez deux mots à la fois, puis répétez. Dans « légume » et « grillé », le g se prononce comme dans « gare ». Dans « orange » et « fromage », il se prononce comme dans « jour ».",
+      "tts_text": "Écoutez deux mots à la fois, puis répétez. Dans « légume » et « grillé », le g se prononce comme dans « gare ». Dans « orange » et « fromage », il se prononce comme dans « jour ».",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-3-consigne.mp3",
+      "segments": [
+        {
+          "lang": "fr-FR",
+          "text": "Écoutez deux mots à la fois, puis répétez."
+        },
+        {
+          "lang": "fr-FR",
+          "text": "Dans « légume » et « grillé », le g se prononce comme dans « gare »."
+        },
+        {
+          "lang": "fr-FR",
+          "text": "Dans « orange » et « fromage », il se prononce comme dans « jour »."
+        }
+      ],
+      "pause_s": 0.55
+    },
+    {
+      "id": "manuel-3-exemple-0",
+      "display_text": "Un légume. Un légume grillé.",
+      "tts_text": "Un légume. Un légume grillé.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-3-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-3-exemple-1",
+      "display_text": "Une orange. Du fromage.",
+      "tts_text": "Une orange. Du fromage.",
+      "role": "exemple",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-3-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-titre",
+      "display_text": "Réutiliser le manuel, si nécessaire",
+      "tts_text": "Réutiliser le manuel, si nécessaire",
+      "role": "titre",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-titre.mp3"
+    },
+    {
+      "id": "manuel-intro",
+      "display_text": "Choisissez une seule activité avec votre formateur. Vous connaissez déjà certaines expressions : utilisez-les avec votre propre plat.",
+      "tts_text": "Choisissez une seule activité avec votre formateur. Vous connaissez déjà certaines expressions : utilisez-les avec votre propre plat.",
+      "role": "consigne",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/manuel-intro.mp3"
+    },
+    {
+      "id": "form-role-0",
+      "display_text": "Jouez le collègue : « Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? » 1 minute, sans correction. Pour un A2+, 5 à 7 phrases, c'est déjà bien.",
+      "tts_text": "Jouez le collègue : « Moi, je mange de moins en moins de viande. Et vous, qu'est-ce qui change dans votre assiette ? » 1 minute, sans correction. Pour un A2+, 5 à 7 phrases, c'est déjà bien.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-0.mp3"
+    },
+    {
+      "id": "form-role-1",
+      "display_text": "Deux extraits de la vidéo, avec images et deux questions chacun. Faites écouter une première fois pour l'idée générale, puis pour la réponse. Les passages difficiles sont facultatifs. Les nombres et les noms d'insectes ne sont pas des objectifs de production.",
+      "tts_text": "Deux extraits de la vidéo, avec images et deux questions chacun. Faites écouter une première fois pour l'idée générale, puis pour la réponse. Les passages difficiles sont facultatifs. Les nombres et les noms d'insectes ne sont pas des objectifs de production.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-1.mp3"
+    },
+    {
+      "id": "form-role-2",
+      "display_text": "Travaillez trois phrases en priorité : la progression, le pronom en et la raison du choix. Les autres phrases sont proposées pour le réemploi. Si ces acquis sont solides, choisissez une seule activité du manuel dans le panneau replié.",
+      "tts_text": "Travaillez trois phrases en priorité : la progression, le pronom en et la raison du choix. Les autres phrases sont proposées pour le réemploi. Si ces acquis sont solides, choisissez une seule activité du manuel dans le panneau replié.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-2.mp3"
+    },
+    {
+      "id": "form-role-3",
+      "display_text": "Prenez un ou deux modèles de la vidéo. Écoute, répétition, puis intelligibilité. Les contours décrivent ces extraits : ils ne fixent aucune intonation obligatoire du français. La capsule du manuel porte sur la lettre g, proposée en activité facultative.",
+      "tts_text": "Prenez un ou deux modèles de la vidéo. Écoute, répétition, puis intelligibilité. Les contours décrivent ces extraits : ils ne fixent aucune intonation obligatoire du français. La capsule du manuel porte sur la lettre g, proposée en activité facultative.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-3.mp3"
+    },
+    {
+      "id": "form-role-4",
+      "display_text": "Le même message, trois essais. La durée est un cadre, pas une épreuve de vitesse. Autorisez les mots-clés et gardez la même durée si la réduction déstabilise l'apprenante. Un retour concret entre les essais suffit.",
+      "tts_text": "Le même message, trois essais. La durée est un cadre, pas une épreuve de vitesse. Autorisez les mots-clés et gardez la même durée si la réduction déstabilise l'apprenante. Un retour concret entre les essais suffit.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-4.mp3"
+    },
+    {
+      "id": "form-role-5",
+      "display_text": "Même situation. Comparez surtout les idées exprimées, les expressions réutilisées et la facilité de compréhension. Les chiffres automatiques sont des indications approximatives et ne valent pas une évaluation CECRL.",
+      "tts_text": "Même situation. Comparez surtout les idées exprimées, les expressions réutilisées et la facilité de compréhension. Les chiffres automatiques sont des indications approximatives et ne valent pas une évaluation CECRL.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-5.mp3"
+    },
+    {
+      "id": "form-role-6",
+      "display_text": "Une phrase, une situation réelle (un déjeuner, une pause-café), une date.",
+      "tts_text": "Une phrase, une situation réelle (un déjeuner, une pause-café), une date.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-role-6.mp3"
+    },
+    {
+      "id": "form-note-0",
+      "display_text": "Analyse du manuel Défi actuel 2, unité trois, pages cinquante et un à cinquante-sept : spécialités des outre-mer, cuisine camerounaise, ingrédients et préparation, avis sur un plat, pronom en, progression et choix avec les pronoms interrogatifs. Les activités proposées ici sont originales et prolongent ces objectifs.",
+      "tts_text": "Analyse du manuel Défi actuel 2, unité trois, pages cinquante et un à cinquante-sept : spécialités des outre-mer, cuisine camerounaise, ingrédients et préparation, avis sur un plat, pronom en, progression et choix avec les pronoms interrogatifs. Les activités proposées ici sont originales et prolongent ces objectifs.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-0.mp3"
+    },
+    {
+      "id": "form-note-1",
+      "display_text": "Les pistes trente-cinq à trente-neuf ont été examinées avec leurs transcriptions officielles et les durées du lecteur. La piste trente-cinq fait décrire et qualifier des plats ; trente-six porte sur une commande au restaurant ; trente-sept sur les habitudes avec en ; trente-huit sur les tendances et les choix ; trente-neuf distingue une progression d'une simple comparaison. Les fichiers sonores du manuel ne sont pas copiés dans cet atelier.",
+      "tts_text": "Les pistes trente-cinq à trente-neuf ont été examinées avec leurs transcriptions officielles et les durées du lecteur. La piste trente-cinq fait décrire et qualifier des plats ; trente-six porte sur une commande au restaurant ; trente-sept sur les habitudes avec en ; trente-huit sur les tendances et les choix ; trente-neuf distingue une progression d'une simple comparaison. Les fichiers sonores du manuel ne sont pas copiés dans cet atelier.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-1.mp3"
+    },
+    {
+      "id": "form-note-2",
+      "display_text": "Pour limiter la charge cognitive, gardez la situation de cantine pendant toute la séance. Priorités : une habitude avec en, un changement et une raison simple. Un plat familier suffit. Réservez les quatre formes interrogatives et la lettre g à une seule activité de réemploi, selon les besoins.",
+      "tts_text": "Pour limiter la charge cognitive, gardez la situation de cantine pendant toute la séance. Priorités : une habitude avec en, un changement et une raison simple. Un plat familier suffit. Réservez les quatre formes interrogatives et la lettre g à une seule activité de réemploi, selon les besoins.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-2.mp3"
+    },
+    {
+      "id": "form-note-3",
+      "display_text": "La vidéo est un ancien document de vulgarisation, avec un vocabulaire parfois plus difficile que celui du manuel. Elle sert à repérer des expressions ; ses prévisions ne sont pas présentées comme des faits actuels. Toute la vidéo n'est pas à comprendre ni à mémoriser.",
+      "tts_text": "La vidéo est un ancien document de vulgarisation, avec un vocabulaire parfois plus difficile que celui du manuel. Elle sert à repérer des expressions ; ses prévisions ne sont pas présentées comme des faits actuels. Toute la vidéo n'est pas à comprendre ni à mémoriser.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-3.mp3"
+    },
+    {
+      "id": "form-note-4",
+      "display_text": "Les consignes, expressions, exemples, compléments et notes ont une lecture féminine de synthèse. La voix vient d'un enregistrement de synthèse fourni par le formateur. Les lectures sont découpées en groupes de mots courts, avec une pause aux virgules et aux points. Une transcription automatique contrôle les mots, mais ne garantit pas l'accent ou le naturel.",
+      "tts_text": "Les consignes, expressions, exemples, compléments et notes ont une lecture féminine de synthèse. La voix vient d'un enregistrement de synthèse fourni par le formateur. Les lectures sont découpées en groupes de mots courts, avec une pause aux virgules et aux points. Une transcription automatique contrôle les mots, mais ne garantit pas l'accent ou le naturel.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-4.mp3"
+    },
+    {
+      "id": "form-note-5",
+      "display_text": "Les courbes existantes se rapportent uniquement à la voix humaine de la vidéo. Une lecture Qwen peut avoir une autre mélodie. Ne demandez pas de reproduire exactement une courbe ; écoutez d'abord l'intelligibilité et le regroupement des mots.",
+      "tts_text": "Les courbes existantes se rapportent uniquement à la voix humaine de la vidéo. Une lecture Qwen peut avoir une autre mélodie. Ne demandez pas de reproduire exactement une courbe ; écoutez d'abord l'intelligibilité et le regroupement des mots.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-5.mp3"
+    },
+    {
+      "id": "form-note-6",
+      "display_text": "Le CECRL décrit des capacités de communication, pas une liste de points de grammaire française. Pour ce public A2 renforcé, visez une description courte et une interaction simple sur l'alimentation. La compréhension dépend de la clarté, de la familiarité du sujet et de la possibilité de répéter. L'atelier ne certifie pas le niveau de l'apprenante.",
+      "tts_text": "Le CECRL décrit des capacités de communication, pas une liste de points de grammaire française. Pour ce public A2 renforcé, visez une description courte et une interaction simple sur l'alimentation. La compréhension dépend de la clarté, de la familiarité du sujet et de la possibilité de répéter. L'atelier ne certifie pas le niveau de l'apprenante.",
+      "role": "formateur",
+      "reveal": "visible",
+      "file": "audio/qwen3-tts/form-note-6.mp3"
+    }
+  ]
+}

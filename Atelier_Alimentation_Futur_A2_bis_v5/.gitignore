@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+qwen3tts-*/
+audio/voix-reference/reference.wav
+audio/voix-reference/reference.txt
