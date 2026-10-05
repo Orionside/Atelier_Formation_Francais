@@ -1,0 +1,230 @@
+{
+ "a11": {
+  "duree_s": 8.72,
+  "wer": 0.0,
+  "mots_min": 200,
+  "mots_min_hors_pauses": 246,
+  "pauses": [
+   [
+    "Bonjour,",
+    0.44
+   ],
+   [
+    "table.",
+    0.26
+   ],
+   [
+    "phrase,",
+    0.32
+   ],
+   [
+    "-la,",
+    0.3
+   ]
+  ],
+  "f0_hz": 165,
+  "etendue_dt": 12.1,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.34,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "a29": {
+  "duree_s": 9.12,
+  "wer": 0.0,
+  "mots_min": 191,
+  "mots_min_hors_pauses": 227,
+  "pauses": [
+   [
+    "Bonjour,",
+    0.5
+   ],
+   [
+    "table.",
+    0.2
+   ],
+   [
+    "phrase,",
+    0.24
+   ],
+   [
+    "-la,",
+    0.36
+   ]
+  ],
+  "f0_hz": 197,
+  "etendue_dt": 11.2,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.14,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "a47": {
+  "duree_s": 9.68,
+  "wer": 0.0,
+  "mots_min": 180,
+  "mots_min_hors_pauses": 203,
+  "pauses": [
+   [
+    "table.",
+    0.26
+   ],
+   [
+    "phrase,",
+    0.34
+   ],
+   [
+    "-la,",
+    0.38
+   ]
+  ],
+  "f0_hz": 188,
+  "etendue_dt": 17.3,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.12,
+  "transcription": "Bonjour ! Aujourd'hui, nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "a83": {
+  "duree_s": 8.8,
+  "wer": 0.0,
+  "mots_min": 198,
+  "mots_min_hors_pauses": 235,
+  "pauses": [
+   [
+    "Bonjour,",
+    0.5
+   ],
+   [
+    "table.",
+    0.26
+   ],
+   [
+    "phrase,",
+    0.3
+   ],
+   [
+    "-la,",
+    0.2
+   ]
+  ],
+  "f0_hz": 180,
+  "etendue_dt": 10.0,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.12,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "b11": {
+  "duree_s": 8.8,
+  "wer": 0.0,
+  "mots_min": 198,
+  "mots_min_hors_pauses": 233,
+  "pauses": [
+   [
+    "Bonjour,",
+    0.54
+   ],
+   [
+    "table.",
+    0.24
+   ],
+   [
+    "phrase,",
+    0.18
+   ],
+   [
+    "-la,",
+    0.26
+   ]
+  ],
+  "f0_hz": 163,
+  "etendue_dt": 11.0,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.1,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "b29": {
+  "duree_s": 9.68,
+  "wer": 0.0,
+  "mots_min": 180,
+  "mots_min_hors_pauses": 223,
+  "pauses": [
+   [
+    "Bonjour,",
+    0.74
+   ],
+   [
+    "table.",
+    0.3
+   ],
+   [
+    "phrase,",
+    0.34
+   ],
+   [
+    "-la,",
+    0.3
+   ]
+  ],
+  "f0_hz": 192,
+  "etendue_dt": 11.9,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.18,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "b47": {
+  "duree_s": 8.72,
+  "wer": 0.0,
+  "mots_min": 200,
+  "mots_min_hors_pauses": 243,
+  "pauses": [
+   [
+    "Bonjour,",
+    0.52
+   ],
+   [
+    "table.",
+    0.26
+   ],
+   [
+    "phrase,",
+    0.28
+   ],
+   [
+    "-la,",
+    0.34
+   ]
+  ],
+  "f0_hz": 195,
+  "etendue_dt": 11.1,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.16,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ },
+ "b83": {
+  "duree_s": 9.28,
+  "wer": 0.0,
+  "mots_min": 188,
+  "mots_min_hors_pauses": 237,
+  "pauses": [
+   [
+    "Bonjour,",
+    1.0
+   ],
+   [
+    "table.",
+    0.26
+   ],
+   [
+    "phrase,",
+    0.24
+   ],
+   [
+    "-la,",
+    0.3
+   ]
+  ],
+  "f0_hz": 208,
+  "etendue_dt": 10.2,
+  "debut_s": 0.0,
+  "fin_silence_s": 0.14,
+  "transcription": "Bonjour, aujourd'hui nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase."
+ }
+}

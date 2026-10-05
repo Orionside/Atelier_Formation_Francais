@@ -30,6 +30,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Livre ou liseuse ? — nuancer une idée qui semble évidente v3 (« Avant d'écouter : devinez » placé avant chaque extrait, version la plus récente) | B2–C1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Livre_Liseuse_B2C1_v3/ |
 | Alimentation du futur — dire ce qui change… et pourquoi c'est bien (cours de 45 min, lié à Défi actuel 2, unité 3) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2/ |
 | Alimentation du futur · bis — mes habitudes et mes choix à table (Défi actuel 2, p. 51–57, lectures féminines Qwen) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis/ |
+| Alimentation du futur · bis v3 — mes habitudes et mes choix à table (voix féminine clonée, débit ralenti pour le niveau A2, version la plus récente) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis_v3/ |
 
 ## Notes
 

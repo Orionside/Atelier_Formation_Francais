@@ -1,0 +1,45 @@
+{
+  "texte": "Bonjour ! Aujourd'hui, nous allons parler de vos habitudes à table. Qu'est-ce qui change dans votre assiette ? Écoutez la phrase, répétez-la, puis dites votre propre phrase.",
+  "candidates": {
+    "a11": {
+      "source": "a",
+      "graine": 11,
+      "duree_s": 8.72
+    },
+    "a29": {
+      "source": "a",
+      "graine": 29,
+      "duree_s": 9.12
+    },
+    "a47": {
+      "source": "a",
+      "graine": 47,
+      "duree_s": 9.68
+    },
+    "a83": {
+      "source": "a",
+      "graine": 83,
+      "duree_s": 8.8
+    },
+    "b11": {
+      "source": "b",
+      "graine": 11,
+      "duree_s": 8.8
+    },
+    "b29": {
+      "source": "b",
+      "graine": 29,
+      "duree_s": 9.68
+    },
+    "b47": {
+      "source": "b",
+      "graine": 47,
+      "duree_s": 8.72
+    },
+    "b83": {
+      "source": "b",
+      "graine": 83,
+      "duree_s": 9.28
+    }
+  }
+}
