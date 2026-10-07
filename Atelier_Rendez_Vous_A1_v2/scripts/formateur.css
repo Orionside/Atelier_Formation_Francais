@@ -1,0 +1,125 @@
+/* ======================================================================
+   Espace et vue formateur (formateur.js) — complète A5_socle.css.
+   Jetons du socle seulement (--ink, --surface, --formateur…) : clair et sombre suivent le socle.
+   Cibles tactiles : 44 px au moins. Mise en page testée pour 390 px (aucun défilement horizontal de la page :
+   les tableaux défilent dans leur propre cadre .tbl-wrap).
+   ====================================================================== */
+
+/* ---------- vue formateur : carte d'écran ---------- */
+.fmt-carte{display:flex; flex-direction:column; gap:14px; max-width:860px; margin:0 auto; padding:12px 16px 40px}
+.fmt-nav{display:flex; flex-wrap:wrap; gap:8px; align-items:center; background:var(--formateur-soft); border:1px solid var(--formateur); border-radius:var(--rayon); padding:8px 10px}
+.fmt-nav .fmt-lib{flex:1 1 100%; font-weight:700}
+.fmt-choix{min-height:var(--tactile); max-width:100%; flex:1 1 140px; border:1px solid var(--line-strong); border-radius:10px; background:var(--surface); color:var(--ink); font:inherit; padding:6px 10px}
+.fmt-avertissement{background:var(--formateur-soft); border-left:4px solid var(--formateur); border-radius:0 10px 10px 0; padding:10px 14px; font-weight:700; max-width:68ch}
+.fmt-attention{border-left:4px solid var(--no); background:var(--no-soft); border-radius:0 10px 10px 0; padding:10px 14px; font-weight:700}
+.fmt-alerte{border-left:4px solid var(--accent); background:var(--accent-soft); border-radius:0 10px 10px 0; padding:10px 14px}
+.fmt-bandeau{border:1px solid var(--formateur); background:var(--formateur-soft); border-radius:var(--rayon); padding:12px 14px; font-weight:700; margin:0 0 12px}
+.fmt-sous-titre{font-size:16px; margin:0 0 4px; color:var(--formateur)}
+.fmt-titre-section{font-size:20px; margin:18px 0 8px}
+.fmt-texte{margin:0 0 6px; max-width:72ch; line-height:1.45}
+.fmt-note{margin:2px 0 6px; font-size:15px; color:var(--muted); max-width:72ch; line-height:1.4}
+.fmt-liste{margin:4px 0 8px; padding-left:22px; display:flex; flex-direction:column; gap:4px; max-width:72ch}
+.fmt-etiquette{display:inline-block; font-size:14px; border:1px solid var(--formateur); color:var(--formateur); border-radius:999px; padding:2px 10px; background:var(--surface)}
+.fmt-code{font-family:var(--chiffres); font-size:14px; background:var(--surface-2); border:1px solid var(--line); border-radius:6px; padding:2px 6px; word-break:break-all}
+.fmt-lib{font-size:15px}
+.fmt-dit .fmt-texte{font-size:20px; font-weight:700}
+.fmt-ordre{align-items:flex-start}
+.fmt-tours{margin:4px 0 6px; padding-left:22px; display:flex; flex-direction:column; gap:6px}
+.fmt-tours li{display:flex; flex-wrap:wrap; gap:4px 10px; align-items:baseline}
+.fmt-erreur{background:var(--no-soft); border-radius:8px; padding:6px 8px}
+
+/* ---------- grille 0/1/2 ---------- */
+.fmt-grilles{display:flex; flex-direction:column; gap:12px}
+.fmt-grille{background:var(--surface); border:1px solid var(--formateur); border-radius:var(--rayon); padding:12px 14px; display:flex; flex-direction:column; gap:10px}
+.fmt-grille:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
+.fmt-grille-tete{display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:space-between}
+.fmt-grille-tete .fmt-sous-titre{margin:0; flex:1 1 200px}
+.fmt-ligne{display:flex; flex-direction:column; gap:4px}
+.fmt-ligne .fmt-lib{display:flex; flex-direction:column}
+.fmt-q{color:var(--muted); font-size:14px}
+.fmt-trois{display:flex; align-self:stretch}
+.fmt-trois button{flex:1 1 0; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; line-height:1.15; padding:6px 4px}
+.fmt-trois button b{font-size:18px}
+.fmt-trois button small{font-size:13px; text-align:center; overflow-wrap:anywhere}
+.fmt-grise{opacity:.45}
+.fmt-compteurs{gap:14px}
+.fmt-compteur{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
+.fmt-val{display:inline-block; min-width:2ch; text-align:center; font-family:var(--chiffres); font-size:18px; font-weight:700}
+.fmt-compteur .btn.small{min-width:var(--tactile)}
+.fmt-souffle input{width:22px; height:22px; margin:0}
+.fmt-champ{min-height:var(--tactile); width:100%; border:1px solid var(--line-strong); border-radius:10px; background:var(--surface); color:var(--ink); font:inherit; padding:6px 12px}
+.fmt-champ:focus-visible{outline:3px solid var(--focus); outline-offset:1px}
+.fmt-champ-ligne{display:flex; flex-direction:column; gap:4px; margin:8px 0; max-width:520px}
+.fmt-descripteurs{border-top:1px dashed var(--line-strong); padding-top:8px}
+.fmt-entendue .seg{align-self:stretch; flex-wrap:wrap}
+.fmt-entendue .seg button{flex:1 1 90px}
+
+/* ---------- fenêtre de l'espace formateur ---------- */
+.fmt-mask{position:fixed; inset:0; background:rgba(10,15,20,.6); z-index:55; display:grid; place-items:center; padding:10px}
+.fmt-modal{background:var(--surface); color:var(--ink); border:2px solid var(--formateur); border-radius:14px; box-shadow:var(--shadow);
+  width:min(980px,100%); max-height:94vh; max-height:94dvh; overflow:auto; padding:14px 16px 20px; display:flex; flex-direction:column; gap:12px}
+.fmt-modal h2{margin:0; font-size:22px; flex:1}
+.fmt-message{font-size:18px; font-weight:700}
+.fmt-tete{display:flex; align-items:center; gap:10px; justify-content:space-between}
+.fmt-onglets{display:flex; flex-wrap:wrap; gap:6px; border-bottom:2px solid var(--line); padding-bottom:8px}
+.fmt-onglet{min-height:var(--tactile); border:1px solid var(--line-strong); background:var(--surface); color:var(--ink); border-radius:10px; padding:8px 14px; font:inherit; cursor:pointer}
+.fmt-onglet.actif, .fmt-onglet[aria-selected="true"]{background:var(--formateur); color:var(--surface); border-color:var(--formateur); font-weight:700}
+.fmt-onglet:focus-visible{outline:3px solid var(--focus); outline-offset:2px}
+.fmt-corps{min-width:0}
+.fmt-panneau{min-width:0}
+.fmt-inter-ligne, .fmt-seg-ligne{display:flex; flex-direction:column; gap:4px; margin:8px 0; align-items:flex-start}
+.fmt-seg-ligne .seg{flex-wrap:wrap}
+.fmt-apercu{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px; margin-top:6px}
+
+/* ---------- sons ---------- */
+.fmt-filtres{margin:8px 0}
+.fmt-compteur-sons{font-weight:700; margin:6px 0}
+.fmt-liste-sons{display:flex; flex-direction:column; gap:10px}
+.fmt-son{border:1px solid var(--line); border-radius:var(--rayon); padding:10px 12px; background:var(--surface-2); display:flex; flex-direction:column; gap:6px}
+.fmt-son-tete{gap:8px}
+.fmt-son-texte{margin:0; font-size:17px}
+.fmt-son-statut{margin:0; font-size:15px; color:var(--muted)}
+.fmt-voix > summary{min-height:var(--tactile); display:flex; align-items:center; cursor:pointer; font-weight:700}
+
+/* ---------- pilote, suivi ---------- */
+.fmt-section{border:1px solid var(--line); border-radius:var(--rayon); margin:10px 0; background:var(--surface)}
+.fmt-section > summary{min-height:var(--tactile); display:flex; align-items:center; padding:8px 14px; cursor:pointer; font-weight:700}
+.fmt-section-corps{padding:4px 14px 14px; min-width:0; overflow-wrap:anywhere}
+.fmt-modal .tbl td, .fmt-modal .tbl th{vertical-align:top; overflow-wrap:anywhere}
+.fmt-modal .tbl-wrap{max-width:100%}
+.fmt-confirmation{margin-top:8px; display:flex; flex-direction:column; gap:8px}
+.fmt-export{margin:6px 0}
+
+/* ---------- fiche imprimable (aussi visible à l'écran) ---------- */
+.fmt-fiche{border:1px solid var(--line-strong); border-radius:var(--rayon); padding:12px; background:var(--surface); display:flex; flex-direction:column; gap:8px; min-width:0}
+.fmt-fiche .fmt-titre-section{margin:0}
+.fmt-fiche-haut{display:grid; grid-template-columns:1fr; gap:10px}
+.fmt-fiche-bloc{min-width:0}
+.fmt-fiche-conv{margin:2px 0; font-size:14px}
+.fmt-fiche-entete, .fmt-fiche-aide, .fmt-fiche-pied{margin:0; font-size:14px}
+@media (min-width:900px){ .fmt-fiche-haut{grid-template-columns:1fr 1fr} }
+
+@media (forced-colors:active){
+  .fmt-onglet[aria-selected="true"], .fmt-trois button[aria-pressed="true"]{border:3px solid ButtonText}
+}
+
+/* ---------- impression : seulement la fiche ---------- */
+@media print{
+  @page{size:A4 landscape; margin:10mm}
+  body.fmt-sur-fiche > *:not(.fmt-mask){display:none!important}
+  body.fmt-sur-fiche{background:#fff!important; color:#000!important}
+  body.fmt-sur-fiche .fmt-mask{position:static; background:none; display:block; padding:0}
+  body.fmt-sur-fiche .fmt-modal{border:0; box-shadow:none; max-height:none; width:auto; overflow:visible; padding:0; background:#fff; color:#000}
+  body.fmt-sur-fiche .fmt-modal > *:not(.fmt-corps){display:none!important}
+  body.fmt-sur-fiche .fmt-panneau > *:not(.fmt-fiche){display:none!important}
+  body.fmt-sur-fiche .fmt-fiche{border:0; padding:0; gap:4px; font-size:9pt; color:#000; background:#fff}
+  body.fmt-sur-fiche .fmt-fiche *{color:#000!important; background:transparent!important}
+  body.fmt-sur-fiche .fmt-fiche-haut{grid-template-columns:1fr 1fr; gap:8px}
+  body.fmt-sur-fiche .fmt-fiche .tbl{font-size:8pt}
+  body.fmt-sur-fiche .fmt-fiche .tbl td, body.fmt-sur-fiche .fmt-fiche .tbl th{border:1px solid #000; padding:1px 3px; font-size:8pt; color:#000}
+  body.fmt-sur-fiche .fmt-fiche .tbl-wrap{overflow:visible}
+  body.fmt-sur-fiche .fmt-fiche-obs td{height:5.2mm}
+  body.fmt-sur-fiche .fmt-fiche-conv, body.fmt-sur-fiche .fmt-note, body.fmt-sur-fiche .fmt-fiche-entete, body.fmt-sur-fiche .fmt-fiche-aide, body.fmt-sur-fiche .fmt-fiche-pied{font-size:8pt}
+  body.fmt-sur-fiche .fmt-sous-titre, body.fmt-sur-fiche .fmt-titre-section{font-size:10pt; margin:0}
+  body.fmt-sur-fiche .fmt-avertissement{padding:2px 6px; font-size:8pt; border-left:2px solid #000}
+}

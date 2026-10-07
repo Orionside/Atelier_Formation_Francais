@@ -1,0 +1,4964 @@
+{
+ "projet": "Atelier Rendez-vous A1 v2",
+ "moteur": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+ "mis_a_jour_le": "2026-10-07T09:30:50",
+ "humain_liste_complete": true,
+ "note": "Voix de synthèse, non validées à l'écoute. Un fichier audio/humain/<id>.mp3 est lu en priorité s'il existe.",
+ "voix_inventees": {
+  "personnel-1": {
+   "nom_invente": "Ardoise",
+   "role": "serveur",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "cliente-1": {
+   "nom_invente": "Voix n° 2",
+   "role": "cliente",
+   "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+  },
+  "personnel-2": {
+   "nom_invente": "Menthe",
+   "role": "serveuse",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "cliente-2": {
+   "nom_invente": "Noisette",
+   "role": "cliente",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "personnel-3": {
+   "nom_invente": "Tilleul",
+   "role": "serveuse",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "personnel-4": {
+   "nom_invente": "Sureau",
+   "role": "serveur",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "client-3": {
+   "nom_invente": "Granit",
+   "role": "client",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "client-4": {
+   "nom_invente": "Basalte",
+   "role": "client",
+   "mention": "voix de synthèse inventée, aucune personne réelle"
+  },
+  "consigne": {
+   "nom_invente": "Voix n° 2",
+   "role": "voix des consignes",
+   "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+  }
+ },
+ "clips": {
+  "s0-dialogue": {
+   "texte": "Un café et un thé ? — Non, deux thés, s'il vous plaît. — Deux thés, d'accord.",
+   "type": "dialogue",
+   "ecran": "S0",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    },
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "À la fin, deux thés sont commandés (la cliente corrige après « non »).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.51,
+   "transcription_whisper": "Un café et un thé ? — Non, deux T s'il vous plaît. — 2T, d'accord.",
+   "duree_s": 5.86,
+   "tours": [
+    {
+     "qui": "serveur",
+     "voix": "personnel-1",
+     "nom_invente": "Ardoise",
+     "debut": 0.25,
+     "fin": 1.512,
+     "texte": "Un café et un thé ?"
+    },
+    {
+     "qui": "cliente",
+     "voix": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "debut": 1.962,
+     "fin": 3.804,
+     "texte": "Non, deux thés, s'il vous plaît."
+    },
+    {
+     "qui": "serveur",
+     "voix": "personnel-1",
+     "nom_invente": "Ardoise",
+     "debut": 4.204,
+     "fin": 5.506,
+     "texte": "Deux thés, d'accord."
+    }
+   ],
+   "controle_automatique": [
+    "a_ecouter",
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/s0-dialogue.mp3",
+    "sha256": "41585defb044082d00095a3bed99fd54f0fe68dc9fc9a040d59158933795fa67",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s0-dialogue-t1": {
+   "texte": "Un café et un thé ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "s0-dialogue",
+   "ecran": "S0",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.61,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/s0-dialogue-t1.mp3",
+    "sha256": "2968cfaf306382871b6d99b940bdbf47a3d2c2cf7ad002ec4bf69e779e2f1e6b",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s0-dialogue-t2": {
+   "texte": "Non, deux thés, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "s0-dialogue",
+   "ecran": "S0",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "duree_s": 2.19,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/s0-dialogue-t2.mp3",
+    "sha256": "7c02dd84f3454face67ed2602f1f05f17ea7e7ac669f475043f84601c23adb56",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s0-dialogue-t3": {
+   "texte": "Deux thés, d'accord.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "s0-dialogue",
+   "ecran": "S0",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.65,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/s0-dialogue-t3.mp3",
+    "sha256": "52c64441073410a2d3e6002dff5d6393f665a667d741eec4f1b6325c0ca7c958",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s0-r2": {
+   "texte": "Non, deux thés, s'il vous plaît.",
+   "type": "extrait_de_dialogue",
+   "ecran": "BILAN",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "La cliente corrige : choix final = deux thés.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.32,
+   "transcription_whisper": "Non, deux T s'il vous plaît.",
+   "duree_s": 2.44,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/s0-r2.mp3",
+    "sha256": "548dee7a05250f87f57a433f375bdd6940fe23581e445d6f42e76e2c86079276",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s6-dialogue": {
+   "texte": "Un café et un thé ? — Non, deux cafés, s'il vous plaît. — Deux cafés, d'accord.",
+   "type": "dialogue",
+   "ecran": "S6",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-2",
+     "role": "serveuse"
+    },
+    {
+     "voix": "cliente-2",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "À la fin, deux cafés sont commandés (la cliente corrige après « non »).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-2",
+     "nom_invente": "Menthe",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "cliente-2",
+     "nom_invente": "Noisette",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.56,
+   "transcription_whisper": "Un café et un thé ? — Non, deux cafés, s'il vous plaît. — Deux cafés ? D'accord.",
+   "duree_s": 5.88,
+   "tours": [
+    {
+     "qui": "serveuse",
+     "voix": "personnel-2",
+     "nom_invente": "Menthe",
+     "debut": 0.25,
+     "fin": 1.423,
+     "texte": "Un café et un thé ?"
+    },
+    {
+     "qui": "cliente",
+     "voix": "cliente-2",
+     "nom_invente": "Noisette",
+     "debut": 1.873,
+     "fin": 3.617,
+     "texte": "Non, deux cafés, s'il vous plaît."
+    },
+    {
+     "qui": "serveuse",
+     "voix": "personnel-2",
+     "nom_invente": "Menthe",
+     "debut": 4.017,
+     "fin": 5.533,
+     "texte": "Deux cafés, d'accord."
+    }
+   ],
+   "controle_automatique": [
+    "a_ecouter",
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/s6-dialogue.mp3",
+    "sha256": "efcb67e7a32839f88a681c1ebaed63a2c2f002e8f0eb7d7797c9a2427e500256",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s6-dialogue-t1": {
+   "texte": "Un café et un thé ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "s6-dialogue",
+   "ecran": "S6",
+   "roles": [
+    {
+     "voix": "personnel-2",
+     "role": "serveuse"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-2",
+     "nom_invente": "Menthe",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.52,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/s6-dialogue-t1.mp3",
+    "sha256": "665c70646c287b4d717b6ead2c595d45404002cd50a730d56ed258ff7d67dc2e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s6-dialogue-t2": {
+   "texte": "Non, deux cafés, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "s6-dialogue",
+   "ecran": "S6",
+   "roles": [
+    {
+     "voix": "cliente-2",
+     "role": "cliente"
+    }
+   ],
+   "voix": [
+    {
+     "code": "cliente-2",
+     "nom_invente": "Noisette",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 2.09,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/s6-dialogue-t2.mp3",
+    "sha256": "1197fccdfebffafa034b3a209d460f49fc179c55e0e9fe4287878efb4fec2e36",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s6-dialogue-t3": {
+   "texte": "Deux cafés, d'accord.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "s6-dialogue",
+   "ecran": "S6",
+   "roles": [
+    {
+     "voix": "personnel-2",
+     "role": "serveuse"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-2",
+     "nom_invente": "Menthe",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.87,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/s6-dialogue-t3.mp3",
+    "sha256": "e0c474e0e59057c9e4777b5e23352fe3876e7d01ccc64b41721dc21a78607bff",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s6-r2": {
+   "texte": "Non, deux cafés, s'il vous plaît.",
+   "type": "extrait_de_dialogue",
+   "ecran": "S6",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-2",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "La cliente corrige : choix final = deux cafés.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-2",
+     "nom_invente": "Noisette",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.18,
+   "transcription_whisper": "Non, deux cafés, s'il vous plaît.",
+   "duree_s": 2.34,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/s6-r2.mp3",
+    "sha256": "329f2c1d106da585057bfa12834544a9bc9a6ef99b72eb14075c0626aa3aad4d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-carte-especes": {
+   "texte": "Carte ou espèces ? — Par carte, s'il vous plaît.",
+   "type": "dialogue",
+   "ecran": "S2",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    },
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Le serveur demande comment payer ; la cliente paie par carte.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.18,
+   "transcription_whisper": "Carte ou espèce — Par carte, s'il vous plaît.",
+   "duree_s": 3.55,
+   "tours": [
+    {
+     "qui": "serveur",
+     "voix": "personnel-1",
+     "nom_invente": "Ardoise",
+     "debut": 0.25,
+     "fin": 1.256,
+     "texte": "Carte ou espèces ?"
+    },
+    {
+     "qui": "cliente",
+     "voix": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "debut": 1.706,
+     "fin": 3.196,
+     "texte": "Par carte, s'il vous plaît."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/ech-carte-especes.mp3",
+    "sha256": "669b9f343a2f87bf0865a84357d3bc19d160ef50f839d025566875c07c2d73dd",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-carte-especes-t1": {
+   "texte": "Carte ou espèces ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "ech-carte-especes",
+   "ecran": "S2",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.36,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/ech-carte-especes-t1.mp3",
+    "sha256": "d670da86de3e624ccfc52ce8a1757ee835d4f53c5e2e55775a4a098c208c66db",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-carte-especes-t2": {
+   "texte": "Par carte, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "ech-carte-especes",
+   "ecran": "S2",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "duree_s": 1.84,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/ech-carte-especes-t2.mp3",
+    "sha256": "4d45b6e13a17b8c0c5ca4d5cede530d57c1bfeba504dd913a8ea64001e2d941f",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-prenez-cafe": {
+   "texte": "Qu'est-ce que vous prenez ? — Un café, s'il vous plaît.",
+   "type": "dialogue",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    },
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Le serveur invite à commander ; la cliente commande un café.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.29,
+   "transcription_whisper": "Qu'est-ce que vous prenez ? — Un café, s'il vous plaît.",
+   "duree_s": 3.68,
+   "tours": [
+    {
+     "qui": "serveur",
+     "voix": "personnel-1",
+     "nom_invente": "Ardoise",
+     "debut": 0.25,
+     "fin": 1.161,
+     "texte": "Qu'est-ce que vous prenez ?"
+    },
+    {
+     "qui": "cliente",
+     "voix": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "debut": 1.611,
+     "fin": 3.335,
+     "texte": "Un café, s'il vous plaît."
+    }
+   ],
+   "controle_automatique": [
+    "a_ecouter",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/ech-prenez-cafe.mp3",
+    "sha256": "5acd5f91c14eb8f270e8c34c59245724f3f3aed7632a0bb59ee0937170ffe59b",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-prenez-cafe-t1": {
+   "texte": "Qu'est-ce que vous prenez ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "ech-prenez-cafe",
+   "ecran": "S3",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.26,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/ech-prenez-cafe-t1.mp3",
+    "sha256": "8fe0762150f4d18b44a9f7cd13b6627c20f0b1b7cd3d5ea4f15b0377c75bcb72",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-prenez-cafe-t2": {
+   "texte": "Un café, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "ech-prenez-cafe",
+   "ecran": "S3",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "duree_s": 2.07,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/ech-prenez-cafe-t2.mp3",
+    "sha256": "467ceff732680cc51a05428c8b85d19e81ca8274450eae30dd260ddac5d2947e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-cest-tout": {
+   "texte": "C'est tout ? — Oui, merci, c'est tout.",
+   "type": "dialogue",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    },
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Le serveur demande si la commande est finie ; la cliente la ferme.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.78,
+   "transcription_whisper": "C'est tout ? — Oui, merci, c'est tout.",
+   "duree_s": 2.86,
+   "tours": [
+    {
+     "qui": "serveur",
+     "voix": "personnel-1",
+     "nom_invente": "Ardoise",
+     "debut": 0.25,
+     "fin": 0.713,
+     "texte": "C'est tout ?"
+    },
+    {
+     "qui": "cliente",
+     "voix": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "debut": 1.163,
+     "fin": 2.51,
+     "texte": "Oui, merci, c'est tout."
+    }
+   ],
+   "controle_automatique": [
+    "a_ecouter",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/ech-cest-tout.mp3",
+    "sha256": "3572ed123d0f7da32d1c00fd94bc90f88ea0344455628074b6852a743e29ff49",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-cest-tout-t1": {
+   "texte": "C'est tout ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "ech-cest-tout",
+   "ecran": "S3",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 0.81,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/ech-cest-tout-t1.mp3",
+    "sha256": "1f3a9645baeb363287e877f027be9a8af0c40d9e6462474de14018a7d081862b",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "ech-cest-tout-t2": {
+   "texte": "Oui, merci, c'est tout.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "ech-cest-tout",
+   "ecran": "S3",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "duree_s": 1.7,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/ech-cest-tout-t2.mp3",
+    "sha256": "a84cdc21fcbcb5a6ee139005ea0814780bd5aa3ba8f5328a57ed5b58a94419ba",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-d1": {
+   "texte": "C'est tout ? — Non, un thé aussi, s'il vous plaît.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    },
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "objectif_sens": "La commande n'est pas finie : le client ajoute un thé.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 3.98,
+   "transcription_whisper": "C'est tout ? — Non, un thé aussi, s'il vous plaît.",
+   "duree_s": 3.74,
+   "tours": [
+    {
+     "qui": "serveuse",
+     "voix": "personnel-3",
+     "nom_invente": "Tilleul",
+     "debut": 0.25,
+     "fin": 0.877,
+     "texte": "C'est tout ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-3",
+     "nom_invente": "Granit",
+     "debut": 1.327,
+     "fin": 3.388,
+     "texte": "Non, un thé aussi, s'il vous plaît."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-d1.mp3",
+    "sha256": "32735092aa85d505da2a9e1e08a46a55d268afba30a36befd0fa871ed1a3b2d1",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-d1-t1": {
+   "texte": "C'est tout ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-d1",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 0.98,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-d1-t1.mp3",
+    "sha256": "23ea35c008596e8b7ad539916dbe37763e9e4bf7efe801d02404f58d68bf4e4e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-d1-t2": {
+   "texte": "Non, un thé aussi, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-d1",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 2.41,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-d1-t2.mp3",
+    "sha256": "0cec3efe1dc806a6bdb24647101d5a09553981d92620fea98ca0401cb234c35a",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-d2": {
+   "texte": "Vous payez en espèces ? — Non, par carte.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    },
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "objectif_sens": "Le client paie par carte (après avoir refusé les espèces).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.19,
+   "transcription_whisper": "Vous payez en espèces ? — Non, par carte.",
+   "duree_s": 3.63,
+   "tours": [
+    {
+     "qui": "serveuse",
+     "voix": "personnel-3",
+     "nom_invente": "Tilleul",
+     "debut": 0.25,
+     "fin": 1.705,
+     "texte": "Vous payez en espèces ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-3",
+     "nom_invente": "Granit",
+     "debut": 2.155,
+     "fin": 3.283,
+     "texte": "Non, par carte."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-d2.mp3",
+    "sha256": "9c1246dad9465a8c548eebc3dd7cc6c5fd788e3ec05d603bed24aa33ac66a9eb",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-d2-t1": {
+   "texte": "Vous payez en espèces ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-d2",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.8,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-d2-t1.mp3",
+    "sha256": "e3f3dbc6e20abe537679680cc486e1c1759136a3b575ba55ae945cf547a8083d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-d2-t2": {
+   "texte": "Non, par carte.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-d2",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.48,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-d2-t2.mp3",
+    "sha256": "2709cdb36db55b0f25a680fbccde5854d9085324ac85fb771da5b7eef00766d4",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t1": {
+   "texte": "C'est tout ? — Non, un croissant aussi, s'il vous plaît.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    },
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "objectif_sens": "La commande n'est pas finie : le client ajoute un croissant.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.28,
+   "transcription_whisper": "C'est tout ? — Non, un croissant aussi, s'il vous plaît.",
+   "duree_s": 3.67,
+   "tours": [
+    {
+     "qui": "serveuse",
+     "voix": "personnel-3",
+     "nom_invente": "Tilleul",
+     "debut": 0.25,
+     "fin": 0.817,
+     "texte": "C'est tout ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-3",
+     "nom_invente": "Granit",
+     "debut": 1.267,
+     "fin": 3.323,
+     "texte": "Non, un croissant aussi, s'il vous plaît."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-t1.mp3",
+    "sha256": "8bc9bd1b1fed962c4d1124bb2c90d2d51a450a9871f77b39392d11e0c306fc77",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t1-t1": {
+   "texte": "C'est tout ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t1",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 0.92,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t1-t1.mp3",
+    "sha256": "52aa51b66dcddb36a53edb241b8b057808e96d286b7fe2db1bfe20d50e889624",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t1-t2": {
+   "texte": "Non, un croissant aussi, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t1",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 2.41,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t1-t2.mp3",
+    "sha256": "cbae398895fb570272e1eea331a69fa872cb28a6db4b09136a0f4f7c38f22f0c",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t2": {
+   "texte": "Vous payez par carte ? — Non, en espèces.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    },
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "objectif_sens": "Le client paie en espèces (après avoir refusé la carte).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.33,
+   "transcription_whisper": "Vous payez par carte ? — Non en espèce.",
+   "duree_s": 3.27,
+   "tours": [
+    {
+     "qui": "serveuse",
+     "voix": "personnel-3",
+     "nom_invente": "Tilleul",
+     "debut": 0.25,
+     "fin": 1.453,
+     "texte": "Vous payez par carte ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-3",
+     "nom_invente": "Granit",
+     "debut": 1.903,
+     "fin": 2.918,
+     "texte": "Non, en espèces."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-t2.mp3",
+    "sha256": "942bc38371ddea43dbc697ac11749302b78f36686cd6d11223611c1089f815dc",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t2-t1": {
+   "texte": "Vous payez par carte ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t2",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.55,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t2-t1.mp3",
+    "sha256": "0be7161e6601882dfef347f08ad37d7e262d19a091a17cb6d722541eb2b23dca",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t2-t2": {
+   "texte": "Non, en espèces.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t2",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-3",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-3",
+     "nom_invente": "Granit",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.37,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t2-t2.mp3",
+    "sha256": "bba7cffde071754828a39d7ca0c4c7edf5c5824e28dff43c529ae346259bf90e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t3": {
+   "texte": "Un café, s'il vous plaît. — Et un croissant ? — Non merci, c'est tout.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    },
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "À la fin, le client prend un café, pas de croissant.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.7,
+   "transcription_whisper": "Un café, s'il vous plaît. — Et un croissant ? — « Non merci, c'est tout. »",
+   "duree_s": 5.49,
+   "tours": [
+    {
+     "qui": "client",
+     "voix": "client-4",
+     "nom_invente": "Basalte",
+     "debut": 0.25,
+     "fin": 1.979,
+     "texte": "Un café, s'il vous plaît."
+    },
+    {
+     "qui": "serveur",
+     "voix": "personnel-4",
+     "nom_invente": "Sureau",
+     "debut": 2.379,
+     "fin": 3.213,
+     "texte": "Et un croissant ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-4",
+     "nom_invente": "Basalte",
+     "debut": 3.663,
+     "fin": 5.142,
+     "texte": "Non merci, c'est tout."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "a_ecouter",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-t3.mp3",
+    "sha256": "f211956a25cd561c6954b1951306b531f03abe5d1088918cd43b9c64e52969e7",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t3-t1": {
+   "texte": "Un café, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t3",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 2.08,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t3-t1.mp3",
+    "sha256": "f5a7c3414d48796180c97f14179690d6cc5186e5d0047484f54abd2c5c1848be",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t3-t2": {
+   "texte": "Et un croissant ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t3",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.18,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t3-t2.mp3",
+    "sha256": "3bf9edc380751ac49a20d9b3f02490ad9a4053e8c9b9e438d4d289f3104e7898",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t3-t3": {
+   "texte": "Non merci, c'est tout.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t3",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.83,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t3-t3.mp3",
+    "sha256": "70864ff83c48fbf0599c00f9688e80d221c4d6678e31bb28236c9cfc2692733e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4": {
+   "texte": "Pour moi, un thé. — Deux thés ? — Non, un thé.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    },
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le client veut un thé, pas deux.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.23,
+   "transcription_whisper": "Pour moi, un thé. — 2T — Nom 1T",
+   "duree_s": 4.18,
+   "tours": [
+    {
+     "qui": "client",
+     "voix": "client-4",
+     "nom_invente": "Basalte",
+     "debut": 0.25,
+     "fin": 1.373,
+     "texte": "Pour moi, un thé."
+    },
+    {
+     "qui": "serveur",
+     "voix": "personnel-4",
+     "nom_invente": "Sureau",
+     "debut": 1.773,
+     "fin": 2.34,
+     "texte": "Deux thés ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-4",
+     "nom_invente": "Basalte",
+     "debut": 2.79,
+     "fin": 3.828,
+     "texte": "Non, un thé."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-t4.mp3",
+    "sha256": "46ea68476a24c0fb061838e3794db2869adcdb1160068521d7965419a63e6b39",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-t1": {
+   "texte": "Pour moi, un thé.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t4",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.47,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t4-t1.mp3",
+    "sha256": "860b1d45f134b24556b2c3e6833ea50be7ec29722c35876f2c0ea91335e9e0ef",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-t2": {
+   "texte": "Deux thés ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t4",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 0.92,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t4-t2.mp3",
+    "sha256": "8ab0328a69b7639e2bb853032abae589bcb524315f00e76a616596f4a345c041",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-t3": {
+   "texte": "Non, un thé.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t4",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.39,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t4-t3.mp3",
+    "sha256": "8c498398494fe4f356e506c78124ef7bf486ddfeb631fd3574ee9015700f9785",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-un-seul": {
+   "texte": "Pour moi, un thé. — Deux thés ? — Non, un seul, s'il vous plaît.",
+   "type": "dialogue",
+   "ecran": "BANQUE",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    },
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le client veut un thé, pas deux (variante avec « un seul »).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    },
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.09,
+   "transcription_whisper": "Pour moi, un thé. — 2T — Non, un seul, s'il vous plaît.",
+   "duree_s": 5.22,
+   "tours": [
+    {
+     "qui": "client",
+     "voix": "client-4",
+     "nom_invente": "Basalte",
+     "debut": 0.25,
+     "fin": 1.554,
+     "texte": "Pour moi, un thé."
+    },
+    {
+     "qui": "serveur",
+     "voix": "personnel-4",
+     "nom_invente": "Sureau",
+     "debut": 1.954,
+     "fin": 2.504,
+     "texte": "Deux thés ?"
+    },
+    {
+     "qui": "client",
+     "voix": "client-4",
+     "nom_invente": "Basalte",
+     "debut": 2.954,
+     "fin": 4.871,
+     "texte": "Non, un seul, s'il vous plaît."
+    }
+   ],
+   "controle_automatique": [
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/b-t4-un-seul.mp3",
+    "sha256": "d0be9c95a2ac33a9da2feeaa749a95627db639746d5f43b161f67abbb6f69509",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-un-seul-t1": {
+   "texte": "Pour moi, un thé.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t4-un-seul",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 1.65,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t4-un-seul-t1.mp3",
+    "sha256": "02f6be3176ab882b8ce3b710ba6f3f0089b51146410806fb2b9ace8f01155405",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-un-seul-t2": {
+   "texte": "Deux thés ?",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t4-un-seul",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 0.9,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t4-un-seul-t2.mp3",
+    "sha256": "623fb9fcb4c9ad4715fee3fccf2036980520a30f6bf9aa6b88ca06f4585a1d39",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "b-t4-un-seul-t3": {
+   "texte": "Non, un seul, s'il vous plaît.",
+   "type": "tour_de_dialogue",
+   "extrait_de": "b-t4-un-seul",
+   "ecran": "BANQUE",
+   "roles": [
+    {
+     "voix": "client-4",
+     "role": "client"
+    }
+   ],
+   "voix": [
+    {
+     "code": "client-4",
+     "nom_invente": "Basalte",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "duree_s": 2.27,
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "source": "N — dialogue créé pour le cours",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/b-t4-un-seul-t3.mp3",
+    "sha256": "61e48a11c3495188a1df4a607f0523efdfb6e5e88117f13ed45e1dc1f3e4822d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-bonjour": {
+   "texte": "Bonjour !",
+   "type": "replique",
+   "ecran": "ACCUEIL",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur salue le client.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.01,
+   "transcription_whisper": "Bonjour.",
+   "duree_s": 1.17,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-bonjour.mp3",
+    "sha256": "8923c95ac92e137d625f1b68df5e4d30f126731f66b9a5667d21c885a98afca2",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s0-question-vous": {
+   "texte": "Et pour vous, café ou thé ?",
+   "type": "replique",
+   "ecran": "S0",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur interroge l'apprenant : café ou thé ?",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.55,
+   "transcription_whisper": "Et pour vous, café ou thé ?",
+   "duree_s": 2.26,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/s0-question-vous.mp3",
+    "sha256": "b74f83602dfa2d508a6c680d37ad0b901da44d47fcadf3588cc918288bd5ed8f",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-prenez": {
+   "texte": "Qu'est-ce que vous prenez ?",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur invite à commander.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.73,
+   "transcription_whisper": "Qu'est-ce que vous prenez ?",
+   "duree_s": 1.51,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-prenez.mp3",
+    "sha256": "fc226501a78fddd4e09214e086a180c81244405e01072a1ddcf30bd7dfb8c34f",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-cest-tout": {
+   "texte": "C'est tout ?",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur demande si la commande est finie.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.94,
+   "transcription_whisper": "C'est tout ?",
+   "duree_s": 1.07,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-cest-tout.mp3",
+    "sha256": "d55a1019ca0cc1e86de4fdc3036e3ce11645e0eeaf26778adf96bd896a7933d1",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-autre-chose": {
+   "texte": "Autre chose ?",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur demande si le client veut autre chose.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 3.46,
+   "transcription_whisper": "Autre chose.",
+   "duree_s": 1.23,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-autre-chose.mp3",
+    "sha256": "c4ea162cbd5ec1336e95ffcc06296ff6073ac0a385b5b32f26b842464054d244",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-carte-ou-especes": {
+   "texte": "Carte ou espèces ?",
+   "type": "replique",
+   "ecran": "S2",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur demande comment payer.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.15,
+   "transcription_whisper": "Carte ou espèce",
+   "duree_s": 1.85,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-carte-ou-especes.mp3",
+    "sha256": "dec149e0ec3fb3c35e2c4cd68f5bd07572adc2e39f3b9a0dade2b61c9cd26198",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-vous-desirez": {
+   "texte": "Vous désirez ?",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur invite à commander (autre formule).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.91,
+   "transcription_whisper": "Vous désirez ?",
+   "duree_s": 1.33,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-vous-desirez.mp3",
+    "sha256": "163622980774c13a0367f0dff926d021505d85bad82cef4a29148f150920023e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-un-the": {
+   "texte": "Un thé ?",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur a mal compris : il propose un thé (l'apprenant corrige).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.44,
+   "transcription_whisper": "Un thé ?",
+   "duree_s": 1.04,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-un-the.mp3",
+    "sha256": "1bcec34b038a57326f6353210aebddcc9d8862c3d7122e46fc8a8a521d70d4a8",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-tres-bien-merci": {
+   "texte": "Très bien, merci.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur clôt la conversation.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.14,
+   "transcription_whisper": "Très bien, merci.",
+   "duree_s": 1.77,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-tres-bien-merci.mp3",
+    "sha256": "3313a00a934ab061b6b45fa4508df862565aec7309c35dc70efc49121ab3e2ff",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-vous-payez-comment": {
+   "texte": "Vous payez comment ?",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur demande comment payer (question ouverte).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.99,
+   "transcription_whisper": "Vous payez comment ?",
+   "duree_s": 1.5,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-vous-payez-comment.mp3",
+    "sha256": "5b668abfc66401a91b3732a6d3ef00412444cbf360257e894eef91c3f9c42adf",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-trois-euros": {
+   "texte": "Ça fait trois euros.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le serveur annonce le prix : trois euros.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.18,
+   "transcription_whisper": "Ça fait 3 euros.",
+   "duree_s": 1.61,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-trois-euros.mp3",
+    "sha256": "a18d16e15737e8a4b5d054d707194c69d98f494d98973df9ae1f81491d8a05ad",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "pers1-plus-de-cafe-noir": {
+   "texte": "Il n'y a plus de thé. Un café ?",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le produit manque (le thé) : le serveur propose un café.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 6.23,
+   "transcription_whisper": "Il n'y a plus de thé. Un café ?",
+   "duree_s": 2.5,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/pers1-plus-de-cafe-noir.mp3",
+    "sha256": "26aac5c2e99e37cd52e6841d4d8484092f69fc7079db3f126bc337ed89526f2d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "s6-question-vous": {
+   "texte": "Et pour vous ?",
+   "type": "replique",
+   "ecran": "S6",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-2",
+     "role": "serveuse"
+    }
+   ],
+   "objectif_sens": "La serveuse interroge l'apprenant sur sa commande.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-2",
+     "nom_invente": "Menthe",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.55,
+   "transcription_whisper": "Et pour vous ?",
+   "duree_s": 1.33,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/s6-question-vous.mp3",
+    "sha256": "fa8fdae8d1a83a22c5848b6ab9040d36bf0acd2f9c2e62c8ca31e98c7466aa30",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j2-prenez": {
+   "texte": "Qu'est-ce que vous prenez ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "objectif_sens": "Le personnel invite à commander.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.49,
+   "transcription_whisper": "Qu'est-ce que vous prenez ?",
+   "duree_s": 1.58,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j2-prenez.mp3",
+    "sha256": "f4b76b79855f4047efee8e368ac2ec850f3142c143cbafc5ef82af77f13244d6",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j2-cest-tout": {
+   "texte": "C'est tout ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "objectif_sens": "Le personnel demande si la commande est finie.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.16,
+   "transcription_whisper": "C'est tout ?",
+   "duree_s": 1.15,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j2-cest-tout.mp3",
+    "sha256": "1dec8a5611de0ae1f95ca5df3d840f6c6a9ea04568f62b0af3913207e4026053",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j2-carte-ou-especes": {
+   "texte": "Carte ou espèces ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-3",
+     "role": "serveuse"
+    }
+   ],
+   "objectif_sens": "Le personnel demande comment payer.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-3",
+     "nom_invente": "Tilleul",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.01,
+   "transcription_whisper": "Carte ou espèce",
+   "duree_s": 1.64,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j2-carte-ou-especes.mp3",
+    "sha256": "c48ede336eb39550fafa70283c29a81f1a87bc64f6382e25c4aa9cabc2230c9a",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j7-prenez": {
+   "texte": "Qu'est-ce que vous prenez ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le personnel invite à commander.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 6.05,
+   "transcription_whisper": "Qu'est-ce que vous prenez ?",
+   "duree_s": 1.5,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j7-prenez.mp3",
+    "sha256": "1b62433066e31b3d8148d1735d96c0ffce74a5a04e7fe0e280d7f7c4b55d3877",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j7-un-the": {
+   "texte": "Un thé ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le personnel a mal compris : il propose un thé.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.74,
+   "transcription_whisper": "Un thé ?",
+   "duree_s": 1.09,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j7-un-the.mp3",
+    "sha256": "9daa1e2b16728d30c1d3f2d34f98cc4defe1d28e878c11e79b9e167780b59d85",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j7-carte-ou-especes": {
+   "texte": "Carte ou espèces ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le personnel demande comment payer.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.41,
+   "transcription_whisper": "Cartes ou espèces ?",
+   "duree_s": 1.58,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j7-carte-ou-especes.mp3",
+    "sha256": "a50749d97dca639bb49b1e137e6328cd91132318f91952008612db9b8214b67e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j7-cest-tout": {
+   "texte": "C'est tout ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le personnel demande si la commande est finie.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.84,
+   "transcription_whisper": "C'est tout ?",
+   "duree_s": 1.08,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j7-cest-tout.mp3",
+    "sha256": "25c14deae81c06f50e7765917d74a949a4002034601971995c7eb7875e59e456",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "j7-vous-payez-comment": {
+   "texte": "Vous payez comment ?",
+   "type": "replique",
+   "ecran": "APRES",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "personnel-4",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Le personnel demande comment payer (question ouverte).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-4",
+     "nom_invente": "Sureau",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.67,
+   "transcription_whisper": "Vous payez comment ?",
+   "duree_s": 1.55,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/j7-vous-payez-comment.mp3",
+    "sha256": "5514e3b193406e177a5e8c3f97938653e7c1bfcd1870fdfa1e092089fafab497",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-un-cafe-svp": {
+   "texte": "Un café, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S0",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : commander un café.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.1,
+   "transcription_whisper": "Un café, s'il vous plaît.",
+   "duree_s": 2.13,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-un-cafe-svp.mp3",
+    "sha256": "14432144589a3ace72976f68a881bc66ebb847e3e9e1bd74621a232bd1218142",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-un-the-svp": {
+   "texte": "Un thé, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S0",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : commander un thé.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.36,
+   "transcription_whisper": "Un T s'il vous plaît",
+   "duree_s": 1.82,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-un-the-svp.mp3",
+    "sha256": "e73c6d8c378687677ba751e12b0afdf4b66cc4481f3f0dd6f181bf7693bf8d8d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-un-jus-dorange-svp": {
+   "texte": "Un jus d'orange, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S4",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : commander un jus d'orange.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.75,
+   "transcription_whisper": "Un jus d'orange, s'il vous plaît.",
+   "duree_s": 2.3,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-un-jus-dorange-svp.mp3",
+    "sha256": "db7722e35e15e770fb949d27c69cad91b0407cfa88bcc4935bcab86d6d1cd6d3",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-oui-merci-cest-tout": {
+   "texte": "Oui, merci, c'est tout.",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : fermer la commande.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.07,
+   "transcription_whisper": "Oui, merci, c'est tout.",
+   "duree_s": 1.9,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-oui-merci-cest-tout.mp3",
+    "sha256": "1569eed4435134b690126095f1970b6ddee03b5f3f91c7311bdce1e1a721f27b",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-non-merci-cest-tout": {
+   "texte": "Non merci, c'est tout.",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : refuser une proposition et fermer la commande.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.21,
+   "transcription_whisper": "Non merci, c'est tout.",
+   "duree_s": 1.85,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-non-merci-cest-tout.mp3",
+    "sha256": "c2002c3db416c3fe259bf6135d6cdfdaf79a3321bc7990e4ea9e6731580ad180",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-par-carte-svp": {
+   "texte": "Par carte, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S2",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : payer par carte.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.14,
+   "transcription_whisper": "Par carte, s'il vous plaît.",
+   "duree_s": 1.85,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-par-carte-svp.mp3",
+    "sha256": "d4e4277cac11d3c963ee5e98391d53cb4d6487ed1e29efe3a8504dfcf2ff7b1c",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-en-especes": {
+   "texte": "En espèces.",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : payer en espèces.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 3.71,
+   "transcription_whisper": "En espèces.",
+   "duree_s": 1.45,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-en-especes.mp3",
+    "sha256": "827acf663353b2f08e317974f2fcc9599c7793003f2ed4a271ce4d4324b8c126",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-pardon-repeter": {
+   "texte": "Pardon, vous pouvez répéter, s'il vous plaît ?",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Phrase modèle : demander de répéter.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.26,
+   "transcription_whisper": "Pardon, vous pouvez répéter, s'il vous plaît ?",
+   "duree_s": 2.76,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-pardon-repeter.mp3",
+    "sha256": "726feda4f10efe141cd5ef7cbdb1c614edd9e501b0c4ce7c75594b734606e462",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-non-un-cafe-svp": {
+   "texte": "Non, un café, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : corriger une erreur (un café, pas un thé).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.43,
+   "transcription_whisper": "Non, un café s'il vous plaît",
+   "duree_s": 2.24,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-non-un-cafe-svp.mp3",
+    "sha256": "2aeed2b6a23d2ee848fbed2cb5b12e1953465a4bc17d80c38b54d7c0b9bb1371",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-deux-thes-svp": {
+   "texte": "Deux thés, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : commander deux thés.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.11,
+   "transcription_whisper": "Deux T s'il vous plaît.",
+   "duree_s": 1.86,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-deux-thes-svp.mp3",
+    "sha256": "1bfb3d63ec15bbb061d061f24a8c8030ac760b03611e3e1d30f0d6799c88d0f1",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-oui-merci": {
+   "texte": "Oui, merci.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : accepter la proposition.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 3.92,
+   "transcription_whisper": "Oui, merci.",
+   "duree_s": 1.6,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-oui-merci.mp3",
+    "sha256": "1badea1ddc60daafb65071cc3ad234876bc17c862a9dea67c1fa1ac54bfa2fff",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-non-merci": {
+   "texte": "Non merci.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : refuser la proposition.",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.04,
+   "transcription_whisper": "Non merci.",
+   "duree_s": 1.41,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-non-merci.mp3",
+    "sha256": "3134e3660ebb44e2376828a6a8fcbc5e36595bffecd53bb9a9dc57449fc3d899",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-un-cafe-long-daccord": {
+   "texte": "Oui, un café, d'accord.",
+   "type": "replique",
+   "ecran": "S5",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : accepter l'autre produit proposé (un café).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 3.9,
+   "transcription_whisper": "Oui, un café, d'accord.",
+   "duree_s": 2.47,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-un-cafe-long-daccord.mp3",
+    "sha256": "692c453da09d390e99c4320a7a9e6dea8d4c831e4e2a3a2db0833551b4e1755c",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "cli1-cafe-moi-the-elle": {
+   "texte": "Un café pour moi et un thé pour elle, s'il vous plaît.",
+   "type": "replique",
+   "ecran": "S3",
+   "situation": "Au café, au comptoir.",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Réponse modèle : commander pour deux personnes (extension facultative).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.24,
+   "transcription_whisper": "Un café pour moi et un thé pour elle, s'il vous plaît.",
+   "duree_s": 3.34,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/cli1-cafe-moi-the-elle.mp3",
+    "sha256": "1d135db0b2620d1b10446fd37ce8d3a924fc52c364d1e8f4c9cd9d187f605522",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "qui-cest-tout-question": {
+   "texte": "C'est tout ?",
+   "type": "replique",
+   "ecran": "S2",
+   "situation": "S2, « Qui parle ? » : deux voix différentes (B0 n°14).",
+   "roles": [
+    {
+     "voix": "personnel-1",
+     "role": "serveur"
+    }
+   ],
+   "objectif_sens": "Phrase dite comme une QUESTION (le serveur).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "personnel-1",
+     "nom_invente": "Ardoise",
+     "mention": "voix de synthèse inventée, aucune personne réelle"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.92,
+   "transcription_whisper": "C'est tout.",
+   "duree_s": 1.08,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/qui-cest-tout-question.mp3",
+    "sha256": "ca93de1dc0e6bd8d1388253d26ae9278062a165fd20bdbba8c13e3bc92da0ee6",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "qui-cest-tout-reponse": {
+   "texte": "C'est tout, merci.",
+   "type": "replique",
+   "ecran": "S2",
+   "situation": "S2, « Qui parle ? » : deux voix différentes (B0 n°14).",
+   "roles": [
+    {
+     "voix": "cliente-1",
+     "role": "cliente"
+    }
+   ],
+   "objectif_sens": "Phrase dite comme une RÉPONSE (le client).",
+   "registre": "commerce courant, poli (vous entre client et personnel)",
+   "voix": [
+    {
+     "code": "cliente-1",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.35,
+   "transcription_whisper": "C'est tout, merci !",
+   "duree_s": 1.72,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/qui-cest-tout-reponse.mp3",
+    "sha256": "8497efaab0cf800b89467d1e8c996600dc0800ab4547b44b0a1ecb2bcb7b3071",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-accueil-situation": {
+   "texte": "Vous êtes au café, au comptoir. Vous parlez au serveur. Vous êtes le client ou la cliente. Aujourd'hui : vous comprenez, vous commandez, vous payez.",
+   "type": "consigne",
+   "ecran": "ACCUEIL",
+   "situation": "Consigne lue, écran : Accueil.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas A.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.19,
+   "transcription_whisper": "Vous êtes au café, au comptoir, vous parlez au serveur, vous êtes le client ou la cliente. Aujourd'hui, vous comprenez, vous commandez, vous payez.",
+   "duree_s": 9.88,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-accueil-situation.mp3",
+    "sha256": "54d95d6ecd005aa6b540ae74222027b62e8d951c9316c79aed19d8e2e0af3ad9",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-accueil-choix": {
+   "texte": "Je travaille comment ? Mon niveau aujourd'hui. Aide dans ma langue. Vous essayez d'abord en français. L'aide vient après.",
+   "type": "consigne",
+   "ecran": "ACCUEIL",
+   "situation": "Consigne lue, écran : Accueil.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas A.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.57,
+   "transcription_whisper": "Je travaille comment ? Mon niveau aujourd'hui. Aide dans ma langue. Vous essayez d'abord en français, l'aide vient après.",
+   "duree_s": 8.58,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-accueil-choix.mp3",
+    "sha256": "edab354753b299e91f2ff234b57e2a47dd52c434efa6d8f9ff24040cf60e8896",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-accueil-micro": {
+   "texte": "Le micro : seulement si vous voulez. Vous pouvez vous enregistrer pour vous écouter. Votre voix reste sur cet appareil.",
+   "type": "consigne",
+   "ecran": "ACCUEIL",
+   "situation": "Consigne lue, écran : Accueil.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas A.3).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.29,
+   "transcription_whisper": "Le micro, seulement si vous voulez. Vous pouvez vous enregistrer pour vous écouter. Votre voix reste sur cet appareil.",
+   "duree_s": 7.55,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-accueil-micro.mp3",
+    "sha256": "d8a79e179cc2721c0020dcf36b82bb46b0ac01ecabbb4d34f94626530b7a26e8",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s0-ecoute": {
+   "texte": "Vous êtes au café. Écoutez deux personnes : un serveur et une cliente. À la fin, la cliente veut combien de thés ? Vous écoutez une fois, sans texte. Vous allez répondre trois fois. C'est normal.",
+   "type": "consigne",
+   "ecran": "S0",
+   "situation": "Consigne lue, écran : S0.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 0.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.59,
+   "transcription_whisper": "Vous êtes au café, écoutez deux personnes, un serveur et une cliente. A la fin, la cliente veut combien de thé ? Vous écoutez une fois, sans texte, vous allez répondre trois fois, c'est normal.",
+   "duree_s": 11.8,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s0-ecoute.mp3",
+    "sha256": "f3122df42d04f3de8929f253d839cf286f91ab224d308070006e57a365fcb275",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-e-nombre": {
+   "texte": "Dites le nombre, ou montrez-le avec les doigts. Puis touchez le nombre.",
+   "type": "consigne",
+   "ecran": "S0",
+   "situation": "Consigne lue, écran : S0, S6, banque T4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas E2 (quantité)).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.92,
+   "transcription_whisper": "Dites le nombre ou montrez-le avec les doigts, puis touchez le nombre.",
+   "duree_s": 4.58,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-e-nombre.mp3",
+    "sha256": "9ac721d15337ed3916bcb73bf806df959baa05c2e1aa89d89285d5aaa847b571",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-e-idee": {
+   "texte": "Dites votre idée. Vous pouvez parler dans votre langue.",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas E2 (autre question)).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.42,
+   "transcription_whisper": "Dites votre idée, vous pouvez parler dans votre langue",
+   "duree_s": 3.82,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-e-idee.mp3",
+    "sha256": "482eca29f837f7e4d97931d4766d149f79c9dddea00ad847ba6c478c514093e6",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-e-images": {
+   "texte": "Regardez les deux images. Touchez votre réponse.",
+   "type": "consigne",
+   "ecran": "S0",
+   "situation": "Consigne lue, écran : S0, S6.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas E3).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.99,
+   "transcription_whisper": "Regardez les deux images. Touchez votre réponse.",
+   "duree_s": 3.51,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-e-images.mp3",
+    "sha256": "78b9e689a26d20b5c0057591e5d534e8c7869be5029d5fc004e57a680b6e658c",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-e-encore": {
+   "texte": "Écoutez encore une fois. Puis touchez votre réponse.",
+   "type": "consigne",
+   "ecran": "S0",
+   "situation": "Consigne lue, écran : S0, S2, S6, banque.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas E4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.82,
+   "transcription_whisper": "Écoutez encore une fois, puis touchez votre réponse.",
+   "duree_s": 3.91,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-e-encore.mp3",
+    "sha256": "cec6b9a75aaaa65017d77770312a23805dcbe4d56b0e690096f39b6f1b25cc97",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-e-moment": {
+   "texte": "Qu'est-ce que la personne fait ? Touchez.",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2, S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (S2 pas 2.x.3 ; S3 pas 3.n.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.07,
+   "transcription_whisper": "Qu'est-ce que la personne fait ? Toucher",
+   "duree_s": 2.66,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-e-moment.mp3",
+    "sha256": "2854c2f423abaf665d7c3c8a2bdb553c2c7a18601c13004d1d7c92749c43ed3d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s0-vous": {
+   "texte": "Maintenant, le serveur vous parle. Répondez avec vos mots. Vous pouvez dire : \"Pardon ?\"",
+   "type": "consigne",
+   "ecran": "S0",
+   "situation": "Consigne lue, écran : S0.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 0.6).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.54,
+   "transcription_whisper": "Maintenant, le serveur vous parle. Répondez avec vos mots. Vous pouvez dire pardon.",
+   "duree_s": 6.31,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s0-vous.mp3",
+    "sha256": "f87e420ea2ebbd7986f4f6f86be7fedb82e9d2b51f11a89196cd8b561e4bcd68",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s1-regarde": {
+   "texte": "Regardez le film. Un homme et une femme sont au café, à une table. Un serveur arrive. Qui parle au serveur ? Ils commandent quoi ? Vous n'avez pas besoin de comprendre tous les mots.",
+   "type": "consigne",
+   "ecran": "S1",
+   "situation": "Consigne lue, écran : S1.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 1.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.07,
+   "transcription_whisper": "Regardez le film. Un homme et une femme sont au café, à une table. Un serveur arrive. Qui parle au serveur ? Il commande quoi ? Vous n'avez pas besoin de comprendre tous les mots.",
+   "duree_s": 12.12,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s1-regarde.mp3",
+    "sha256": "4499c9489d53c2ec037a0e1dc1f920b3b8c800c8e92e28f4d8636f257bd620b6",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s1-qui": {
+   "texte": "Qui parle au serveur ? Touchez.",
+   "type": "consigne",
+   "ecran": "S1",
+   "situation": "Consigne lue, écran : S1.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 1.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.9,
+   "transcription_whisper": "Qui parle au serveur ? Touché",
+   "duree_s": 2.54,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s1-qui.mp3",
+    "sha256": "75d22745a9f808d50acdb2b11d2a239289b2b4e7b879461978b788456a245ca3",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s1-quoi": {
+   "texte": "Ils commandent quoi ? Touchez les images. Puis touchez \"J'ai fini\".",
+   "type": "consigne",
+   "ecran": "S1",
+   "situation": "Consigne lue, écran : S1.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 1.3).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.64,
+   "transcription_whisper": "Il commande quoi ? Toucher les images, puis toucher j'ai fini.",
+   "duree_s": 6.34,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s1-quoi.mp3",
+    "sha256": "f7ab76f5135a7b1a05c324b987ae230a0613ceb1c86f8a47f9719d4ae1390a04",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s1-fin": {
+   "texte": "Regardez encore. À la fin, ils demandent quoi ?",
+   "type": "consigne",
+   "ecran": "S1",
+   "situation": "Consigne lue, écran : S1.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 1.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.36,
+   "transcription_whisper": "Regardez encore, à la fin, il demande quoi ?",
+   "duree_s": 4.04,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s1-fin.mp3",
+    "sha256": "cf994fd5a35259016d4d296837593d649514b57377f71acbe3433168d5ff9459",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s2-debut": {
+   "texte": "Vous allez écouter quatre phrases courtes. Après chaque phrase : qu'est-ce que la personne fait ? Pour les phrases du film : écoutez sans regarder l'écran.",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 2.0).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.22,
+   "transcription_whisper": "Vous allez écouter quatre phrases courtes. Après chaque phrase, qu'est-ce que la personne fait ? Pour les phrases du film, écoutez sans regarder l'écran.",
+   "duree_s": 8.39,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s2-debut.mp3",
+    "sha256": "24b38855b8e2f35fe2748904acac72d035bdee5122da954fb76bc7aa1a7ec8ee",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s2-ecoute": {
+   "texte": "Écoutez sans regarder l'écran. Qu'est-ce que la personne fait ?",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 2.x.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.77,
+   "transcription_whisper": "Écoutez sans regarder l'écran. Qu'est-ce que la personne fait ?",
+   "duree_s": 4.46,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s2-ecoute.mp3",
+    "sha256": "75a7476bdfd29f3dcbc4c05a498536b05790f03867e2ce4438abbcd35c4d33a6",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s2-qui": {
+   "texte": "Écoutez deux phrases. Qui parle : le serveur ou le client ?",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 2.B.6).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.75,
+   "transcription_whisper": "Écoutez deux phrases. Qui parle ? Le serveur ou le client ?",
+   "duree_s": 4.03,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s2-qui.mp3",
+    "sha256": "60abf36ad70e14caf6fd6dd23507fb223869b0e523453c4f2441e1c6eb4c9959",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s2-table-comptoir": {
+   "texte": "Dans le film : à table. Ils demandent l'addition à la fin. Aujourd'hui : au comptoir. Vous commandez, puis vous payez.",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 2.C.6).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.86,
+   "transcription_whisper": "Dans le film « À table », il demande l'addition à la fin. Aujourd'hui, au comptoir, vous commandez puis vous payez.",
+   "duree_s": 9.41,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s2-table-comptoir.mp3",
+    "sha256": "36b3da048138aacb727511e90ecea4e9ac89c8f69faa94a5e028b9825f31470e",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s2-d": {
+   "texte": "Maintenant, deux autres personnes, au comptoir. Écoutez. Qu'est-ce que la personne fait ?",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 2.D.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.32,
+   "transcription_whisper": "Maintenant deux autres personnes au comptoir. Écoutez, qu'est-ce que la personne fait ?",
+   "duree_s": 6.3,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s2-d.mp3",
+    "sha256": "b9a909dfaf38be5d739ba5d3b8de91ff6af27593e0387d19f84a25ae2a81a3d8",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s2-paie": {
+   "texte": "La cliente paie comment ? Touchez.",
+   "type": "consigne",
+   "ecran": "S2",
+   "situation": "Consigne lue, écran : S2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 2.D.5).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.72,
+   "transcription_whisper": "La cliente paie comment ? Toucher.",
+   "duree_s": 2.57,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s2-paie.mp3",
+    "sha256": "fe4fed84a1ca4807aa73632f645385840c6c13a95380bb563eb16c04eeda05ff",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s3-ecoute": {
+   "texte": "Écoutez le serveur et la cliente.",
+   "type": "consigne",
+   "ecran": "S3",
+   "situation": "Consigne lue, écran : S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 3.n.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.92,
+   "transcription_whisper": "Écoutez le serveur et la cliente.",
+   "duree_s": 2.5,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s3-ecoute.mp3",
+    "sha256": "1cc96967b39120cd829ef9533097a09bff1fe2c6e84c679d7c68c1c41cbc1da9",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s3-lisez": {
+   "texte": "Lisez. Écoutez. Puis dites la réponse.",
+   "type": "consigne",
+   "ecran": "S3",
+   "situation": "Consigne lue, écran : S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 3.n.3).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.53,
+   "transcription_whisper": "Lisez, écoutez, puis dites la réponse.",
+   "duree_s": 3.26,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s3-lisez.mp3",
+    "sha256": "566a9445017758ba82dd83d048f58f6e9ec0e870f0aab7ccf14755a4872fb219",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s3-change-1": {
+   "texte": "Maintenant, vous voulez un thé. Changez un seul mot. Répondez au serveur.",
+   "type": "consigne",
+   "ecran": "S3",
+   "situation": "Consigne lue, écran : S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 3.1.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.05,
+   "transcription_whisper": "Maintenant, vous voulez un T. Changez un seul mot. Répondez au serveur.",
+   "duree_s": 5.22,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s3-change-1.mp3",
+    "sha256": "8d7e02ec02d1c79c7d70ed5215e4093cd0094e58c84ba5f6cb08772655270abe",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s3-change-2": {
+   "texte": "Le serveur change sa question. Écoutez.",
+   "type": "consigne",
+   "ecran": "S3",
+   "situation": "Consigne lue, écran : S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 3.2.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.07,
+   "transcription_whisper": "Le serveur change sa question. Écoutez.",
+   "duree_s": 3.18,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s3-change-2.mp3",
+    "sha256": "a9c818d7dca2e27df3a248f2964dd0ea3cada108718931c1ba3eea39732ea4a4",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s3-change-3": {
+   "texte": "Maintenant, vous payez avec des billets. Changez la réponse.",
+   "type": "consigne",
+   "ecran": "S3",
+   "situation": "Consigne lue, écran : S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 3.3.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5,
+   "transcription_whisper": "Maintenant, vous payez avec des billets. Changez la réponse.",
+   "duree_s": 3.93,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s3-change-3.mp3",
+    "sha256": "753420e73ca2bd21b79c00b373d6c95fe84ce1d03a6525117df6ffa01354e98d",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s3-sans-texte": {
+   "texte": "Maintenant, sans le texte et sans image. Écoutez le serveur. Répondez.",
+   "type": "consigne",
+   "ecran": "S3",
+   "situation": "Consigne lue, écran : S3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 3.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.86,
+   "transcription_whisper": "Maintenant, sans le texte et sans images. Écoutez le serveur. Répondez.",
+   "duree_s": 5.57,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s3-sans-texte.mp3",
+    "sha256": "a2ca90372124f5a72281a696cfe3fa8da5a3b554e136bb461f8249b8b13439e4",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s4-ecoute": {
+   "texte": "Écoutez la femme du film, sans regarder l'écran. Elle a fini de commander ?",
+   "type": "consigne",
+   "ecran": "S4",
+   "situation": "Consigne lue, écran : S4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 4.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.92,
+   "transcription_whisper": "Écoutez la femme du film sans regarder l'écran. Elle a fini de commander ?",
+   "duree_s": 4.93,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s4-ecoute.mp3",
+    "sha256": "4c9c14bd06ada255038dfca6653501368fc2b43167389073275e9b0a116ad4fe",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s4-ensemble": {
+   "texte": "\"S'il vous plaît\" va ensemble. Ne vous arrêtez pas au milieu.",
+   "type": "consigne",
+   "ecran": "S4",
+   "situation": "Consigne lue, écran : S4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 4.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.4,
+   "transcription_whisper": "S'il vous plaît, va ensemble. Ne vous arrêtez pas au milieu.",
+   "duree_s": 4.06,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s4-ensemble.mp3",
+    "sha256": "888b19661ca6ac14fc554012b09df170eeacfe5f9b0b2dc5cc2bfc841e3373b9",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s4-dites": {
+   "texte": "Dites la phrase une fois.",
+   "type": "consigne",
+   "ecran": "S4",
+   "situation": "Consigne lue, écran : S4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 4.3).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.13,
+   "transcription_whisper": "Dites la phrase une fois.",
+   "duree_s": 1.88,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s4-dites.mp3",
+    "sha256": "f1ee73e8b18133171c5e6ce0048d473d74bc592318bdbc5f86925b97855fab49",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s4-vous": {
+   "texte": "Maintenant, vous. Vous voulez quoi ? Touchez une image. Dites votre commande, sans vous arrêter au milieu.",
+   "type": "consigne",
+   "ecran": "S4",
+   "situation": "Consigne lue, écran : S4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 4.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.01,
+   "transcription_whisper": "Maintenant, vous. Vous voulez quoi ? Touchez une image. Dites votre commande sans vous arrêter au milieu.",
+   "duree_s": 7.36,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s4-vous.mp3",
+    "sha256": "3ffda616812b0b3240f18fd2258e6c6c43973a83e104a12d7127ba26425dd2e0",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s4-geste": {
+   "texte": "Si vous voulez, redites votre commande. Faites un geste de la main. Un seul geste pour toute la phrase.",
+   "type": "consigne",
+   "ecran": "S4",
+   "situation": "Consigne lue, écran : S4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 4.5).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.26,
+   "transcription_whisper": "Si vous voulez, redites votre commande. Faites un geste de la main, un seul geste pour toute la phrase.",
+   "duree_s": 7.51,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s4-geste.mp3",
+    "sha256": "f5912aee1f15505b7031adc185875f504d35361222dc6693dff04cdd252b1847",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s5-pardon": {
+   "texte": "Vous ne comprenez pas le serveur ? Demandez de répéter. Écoutez. Dites la phrase une fois.",
+   "type": "consigne",
+   "ecran": "S5",
+   "situation": "Consigne lue, écran : S5.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 5.0).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.99,
+   "transcription_whisper": "Vous ne comprenez pas le serveur ? Demandez de répéter. Écoutez, dites la phrase une fois.",
+   "duree_s": 7.51,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s5-pardon.mp3",
+    "sha256": "40c121e100f322299a91349b69fa852009d3b0b3048c1d425c8534af014a45d7",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s5-conv1": {
+   "texte": "Conversation un. Vous voulez un café. Le serveur pose une question. Vous ne connaissez pas la question. Écoutez bien.",
+   "type": "consigne",
+   "ecran": "S5",
+   "situation": "Consigne lue, écran : S5.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 5.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.53,
+   "transcription_whisper": "Conversation 1. Vous voulez un café ? Le serveur pose une question. Vous ne connaissez pas la question. Écoutez bien.",
+   "duree_s": 7.86,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s5-conv1.mp3",
+    "sha256": "c5d78673a2d3ed41fc16aa137eccf2310bd7c4d8dac3d6cfeba34f45ee437c53",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s5-conv2": {
+   "texte": "Conversation deux. Regardez vos deux images. Ne les montrez pas au serveur. Commandez. Puis répondez au serveur.",
+   "type": "consigne",
+   "ecran": "S5",
+   "situation": "Consigne lue, écran : S5.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 5.3).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.41,
+   "transcription_whisper": "Conversation 2. Regardez vos deux images, ne les montrez pas au serveur. Commandez, puis répondez au serveur.",
+   "duree_s": 8.18,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s5-conv2.mp3",
+    "sha256": "a9482dadfb6eedb6b7740084895442a6822830260ad6522a6a5f3d3884c135c9",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s5-conv3": {
+   "texte": "Conversation trois. Sans texte, sans image. Vous voulez un café. Écoutez bien le serveur.",
+   "type": "consigne",
+   "ecran": "S5",
+   "situation": "Consigne lue, écran : S5.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 5.4).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.84,
+   "transcription_whisper": "Conversation 3. Sans texte, sans images. Vous voulez un café. Écoutez bien le serveur.",
+   "duree_s": 6.9,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s5-conv3.mp3",
+    "sha256": "1f8c2f71a45db33e9ffd47eebafe23ceb0b29018307a6edf2534178f00795c98",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s5-defi": {
+   "texte": "Un défi, si vous voulez. Vous voulez un thé.",
+   "type": "consigne",
+   "ecran": "S5",
+   "situation": "Consigne lue, écran : S5.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 5.5).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.4,
+   "transcription_whisper": "Un défi si vous voulez, vous voulez un thé.",
+   "duree_s": 3.2,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s5-defi.mp3",
+    "sha256": "326af2a1ed16d2d32a17e19b5d7eaa41a6b765c22a2e184f69abc4e0f0c65339",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s6-ecoute": {
+   "texte": "Vous êtes au café. Écoutez deux nouvelles personnes : une serveuse et une cliente. À la fin, la cliente veut combien de cafés ? Vous écoutez une fois, sans texte. Vous allez répondre trois fois. C'est normal.",
+   "type": "consigne",
+   "ecran": "S6",
+   "situation": "Consigne lue, écran : S6.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 6.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.82,
+   "transcription_whisper": "Vous êtes au café. Écoutez deux nouvelles personnes, une serveuse et une cliente. À la fin, la cliente veut combien de café ? Vous écoutez une fois, sans texte. Vous allez répondre trois fois. C'est normal.",
+   "duree_s": 12.84,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s6-ecoute.mp3",
+    "sha256": "1b41a0ffac3579813ea2840c7cdd48c45ba0a244200e05a1890909698af083c8",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-s6-vous": {
+   "texte": "Maintenant, la serveuse vous parle. Répondez. Vous pouvez demander de répéter.",
+   "type": "consigne",
+   "ecran": "S6",
+   "situation": "Consigne lue, écran : S6.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 6.6).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.29,
+   "transcription_whisper": "Maintenant, la serveuse vous parle. Répondez. Vous pouvez demander de répéter.",
+   "duree_s": 5.35,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-s6-vous.mp3",
+    "sha256": "686ba7cd1d2866db594bb086e55026a6dc6b9eeb80f1e90b6700e3c3d116eeed",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-bilan": {
+   "texte": "Voici ce que vous avez fait aujourd'hui. Attention : ce sont deux dialogues différents, avec des voix différentes. Ce n'est pas une note.",
+   "type": "consigne",
+   "ecran": "S6",
+   "situation": "Consigne lue, écran : S6.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas 6.7).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 5.56,
+   "transcription_whisper": "Voici ce que vous avez fait aujourd'hui. Attention, ce sont deux dialogues différents avec des voix différentes. Ce n'est pas une note.",
+   "duree_s": 8.19,
+   "controle_automatique": [
+    "a_ecouter"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-bilan.mp3",
+    "sha256": "b473fe83d41bd67bb48ff25b4967b017d2d33fbfb3937683f55b705e1d9cacf3",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-apres-debut": {
+   "texte": "Revenez deux fois, pour quelques minutes : dans deux jours et dans sept jours.",
+   "type": "consigne",
+   "ecran": "APRES",
+   "situation": "Consigne lue, écran : Après le cours.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas P.0).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.23,
+   "transcription_whisper": "Revenez deux fois pour quelques minutes dans deux jours et dans sept jours.",
+   "duree_s": 5.1,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-apres-debut.mp3",
+    "sha256": "f30b7e1a01a527525d3137381cc982026a28ceab292acec3fb62ef983a287641",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-apres-phrases": {
+   "texte": "Répondez sans regarder vos phrases.",
+   "type": "consigne",
+   "ecran": "APRES",
+   "situation": "Consigne lue, écran : Après le cours.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas J2.1 et J7.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.63,
+   "transcription_whisper": "Répondez sans regarder vos phrases.",
+   "duree_s": 2.59,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-apres-phrases.mp3",
+    "sha256": "9be5ac2d3b46e44f7dddaacdad5e1d854112e169c95bb25024b01415c1628147",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-b-ecoute": {
+   "texte": "Écoutez deux personnes au café. Une seule fois, sans texte. La question arrive après.",
+   "type": "consigne",
+   "ecran": "BANQUE",
+   "situation": "Consigne lue, écran : banque.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas B.1).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.76,
+   "transcription_whisper": "Écoutez deux personnes au café, une seule fois, sans texte. La question arrive après.",
+   "duree_s": 7.34,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-b-ecoute.mp3",
+    "sha256": "d935b88561b19bd6037031a174818f499657c923f3765f34d7fc860841192b00",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-b-fini-ou-encore": {
+   "texte": "Le client a fini ? Ou il veut encore quelque chose ? Dites votre réponse.",
+   "type": "consigne",
+   "ecran": "BANQUE",
+   "situation": "Consigne lue, écran : banque D1, T1.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas B.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.26,
+   "transcription_whisper": "Le client a fini ou il veut encore quelque chose ? Dites votre réponse.",
+   "duree_s": 5.41,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-b-fini-ou-encore.mp3",
+    "sha256": "794789af8cdcab01b48b89dbe22149ccb2951482d8ea4f42dff0efa524d4b932",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-b-paie": {
+   "texte": "Le client paie comment ? Dites votre réponse.",
+   "type": "consigne",
+   "ecran": "BANQUE",
+   "situation": "Consigne lue, écran : banque D2, T2.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas B.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.12,
+   "transcription_whisper": "Le client paie comment ? Dites votre réponse.",
+   "duree_s": 3.18,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-b-paie.mp3",
+    "sha256": "adf2404e51d529c9bd019097e8e9d7206d9fa1746e4ac1802281dd0106630c03",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-b-t3": {
+   "texte": "À la fin, le client prend quoi ? Dites votre réponse.",
+   "type": "consigne",
+   "ecran": "BANQUE",
+   "situation": "Consigne lue, écran : banque T3.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas B.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.57,
+   "transcription_whisper": "A la fin, le client prend quoi ? Dites votre réponse.",
+   "duree_s": 3.52,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-b-t3.mp3",
+    "sha256": "f76a6c2e157e6df4c7f24befe73cfdd3cf4c771c483c77781400ddc118697573",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "c-b-t4": {
+   "texte": "Le client veut combien de thés ?",
+   "type": "consigne",
+   "ecran": "BANQUE",
+   "situation": "Consigne lue, écran : banque T4.",
+   "roles": [
+    {
+     "voix": "consigne",
+     "role": "voix des consignes"
+    }
+   ],
+   "objectif_sens": "Consigne principale (pas B.2).",
+   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "voix de synthèse fournie par le formateur (« voix féminine n° 2 », déjà utilisée dans l'atelier Alimentation du futur bis v4 ; déclarée voix de synthèse, aucune personne réelle)"
+    }
+   ],
+   "variete_declaree": "français de France, visé",
+   "debit_mesure_syl_s": 4.08,
+   "transcription_whisper": "Le client veut combien de thé ?",
+   "duree_s": 2.6,
+   "controle_automatique": [
+    "ok"
+   ],
+   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
+   "format": "mp3 mono 24 kHz 96 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "source": "N — dialogue créé pour le cours",
+   "synthese": {
+    "file": "audio/synthese/c-b-t4.mp3",
+    "sha256": "ea44b607125514500215c7dc94e4baa990ff7d5c5eb7390357dfe0c92fbcd9cb",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  }
+ }
+}

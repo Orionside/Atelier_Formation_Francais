@@ -33,6 +33,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Alimentation du futur · bis v3 — mes habitudes et mes choix à table (première voix féminine clonée) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis_v3/ |
 | Alimentation du futur · bis v4 — mes habitudes et mes choix à table (nouvelle voix féminine, lectures découpées en groupes de mots avec pauses réglées) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis_v4/ |
 | Alimentation du futur · bis v5 — nouvelle voix féminine et repérage des groupes rythmiques (version la plus récente) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis_v5/ |
+| Au café — comprendre, commander et payer (Rendez-vous A1 v2 : écoute sans texte, trois échanges par rôles, vue formateur, voix de synthèse à valider ; cours de 45 min) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Rendez_Vous_A1_v2/ |
 
 ## Notes
 
