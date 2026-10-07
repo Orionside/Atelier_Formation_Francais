@@ -34,6 +34,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Alimentation du futur · bis v4 — mes habitudes et mes choix à table (nouvelle voix féminine, lectures découpées en groupes de mots avec pauses réglées) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis_v4/ |
 | Alimentation du futur · bis v5 — nouvelle voix féminine et repérage des groupes rythmiques (version la plus récente) | A2+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Alimentation_Futur_A2_bis_v5/ |
 | Au café — comprendre, commander et payer (Rendez-vous A1 v2 : écoute sans texte, trois échanges par rôles, vue formateur, voix de synthèse à valider ; cours de 45 min) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Rendez_Vous_A1_v2/ |
+| Les médicaments GLP-1 — comprendre, raconter, expliquer et réagir à l'oral (3 séances de 50 min : parcours oral, chrono, jeux de rôle) | B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Medicaments_B1/ |
 
 ## Notes
 

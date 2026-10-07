@@ -1,0 +1,1745 @@
+<!doctype html><html lang="fr"><head><meta charset=utf8><meta name="robots" content="noindex, nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Atelier GLP-1 B1+</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#5B6B7A; --line:#D5DDE4; --line-strong:#B9C5CF;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --focus:#1F5FA8;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --sans:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Spectral", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --focus:#82B6EB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#94A4B3; --line:#2A3743; --line-strong:#3C4C5A;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --focus:#82B6EB;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:15.5px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--serif); font-weight:700; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:4px}
+button{font:inherit; color:inherit; cursor:pointer}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1180px; margin:0 auto; padding:10px 20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0}
+.brand b{font-family:var(--serif); font-size:17px; font-weight:700; white-space:nowrap}
+.brand span{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.prog{display:flex; align-items:center; gap:9px}
+.prog-track{width:120px; height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.prog-fill{height:100%; width:0%; background:var(--accent); transition:width .35s ease}
+.prog-num{font-family:var(--mono); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums}
+.btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:7px 13px; border-radius:7px; font-size:13.5px; font-weight:500;
+  transition:background .15s, border-color .15s;
+}
+.btn:hover{background:var(--surface-2); border-color:var(--muted)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .btn-primary, :root:not([data-theme="light"]) .btn-primary{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-primary:hover{filter:brightness(1.08); background:var(--accent)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted)}
+.btn-ghost:hover{background:var(--surface-2); color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:0 20px; padding-block:26px 64px;
+  display:grid; grid-template-columns:238px minmax(0,1fr); gap:38px; align-items:start}
+@media (max-width:900px){ .shell{grid-template-columns:minmax(0,1fr); gap:20px} }
+
+/* ---------- stepper ---------- */
+.rail{position:sticky; top:calc(env(safe-area-inset-top,0px) + 74px)}
+@media (max-width:900px){
+  .rail{position:static}
+  .rail-list{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; scrollbar-width:thin}
+  .rail-item{flex:0 0 auto; width:auto!important}
+  .rail-item .rl-title{white-space:nowrap}
+  .rail-head{margin-bottom:9px}
+}
+.rail-head{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:12px; padding-left:2px}
+.rail-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+@media (max-width:900px){ .rail-list{flex-direction:row} }
+.rail-item{width:100%}
+.rl{
+  display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:9px;
+  padding:8px 11px; color:var(--muted); font-size:13.5px; line-height:1.35;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.rl:hover{border-color:var(--line-strong); background:var(--surface-2); color:var(--ink)}
+.rl[aria-current="true"]{
+  background:var(--accent); border-color:var(--accent); color:#fff;
+  font-weight:500; box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .rl[aria-current="true"],
+:root:not([data-theme="light"]) .rl[aria-current="true"]{color:#1A1206}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .rl[aria-current="true"]{color:#fff}}
+.rl-num{
+  font-family:var(--mono); font-size:11px; flex:0 0 auto;
+  width:23px; height:23px; display:grid; place-items:center; border-radius:6px;
+  background:var(--surface-2); border:1px solid var(--line); color:var(--muted);
+}
+.rl.is-done .rl-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.rl[aria-current="true"] .rl-num,
+.rl[aria-current="true"].is-done .rl-num{
+  background:rgba(255,255,255,.24); border-color:transparent; color:inherit;
+}
+.rl-title{min-width:0}
+.rail-foot{margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+@media (max-width:900px){ .rail-foot{display:none} }
+
+/* ---------- main ---------- */
+main{min-width:0}
+.step{display:flex; flex-direction:column; gap:20px}
+.step-head{border-bottom:1px solid var(--line); padding-bottom:16px;
+  display:flex; flex-direction:column; gap:7px}
+.eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.eyebrow .dot{width:3px;height:3px;border-radius:50%;background:var(--line-strong)}
+.step-head h2{font-size:clamp(22px,4.3vw,29px); line-height:1.2}
+.step-head .lede{color:var(--muted); max-width:62ch}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:18px 19px;
+  display:flex; flex-direction:column; gap:13px}
+.card h3{font-size:17px; line-height:1.3}
+.card > .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:11px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.prose strong{font-weight:600}
+.prose em{color:var(--muted)}
+
+.callout{border-left:3px solid var(--accent); background:var(--surface-2); border-radius:0 9px 9px 0;
+  padding:14px 17px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.callout .ct{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink)}
+
+/* timecode */
+.tc{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+  background:var(--surface-2); border:1px solid var(--line); border-radius:6px;
+  padding:3px 8px; color:var(--ink); text-decoration:none; white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.tc:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tc::before{content:"▶"; font-size:8px; color:var(--accent-ink)}
+
+/* questions */
+.q{display:flex; flex-direction:column; gap:10px; padding-block:4px}
+.q + .q{border-top:1px dashed var(--line); padding-top:16px}
+.q-lbl{display:flex; gap:10px; align-items:baseline}
+.q-n{font-family:var(--mono); font-size:12px; color:var(--accent-ink); flex:0 0 auto; font-weight:500}
+.q-t{font-weight:500; max-width:64ch}
+.q-hint{font-size:13.5px; color:var(--muted); max-width:64ch}
+textarea{
+  width:100%; min-height:82px; resize:vertical; font:inherit; font-size:14.5px;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line);
+  border-radius:8px; padding:10px 12px; line-height:1.55;
+}
+textarea::placeholder{color:var(--muted); opacity:.75}
+textarea:focus{border-color:var(--focus); background:var(--surface)}
+.row{display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+.reveal{background:var(--surface-2); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:13px 15px; font-size:14.5px; max-width:66ch;
+  display:flex; flex-direction:column; gap:8px}
+.reveal .rt{font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.saved{font-family:var(--mono); font-size:11px; color:var(--ok); opacity:0; transition:opacity .3s}
+.saved.on{opacity:1}
+
+/* amorces cliquables */
+.starters{display:flex; flex-wrap:wrap; gap:6px; align-items:center; max-width:68ch}
+.starters-lbl{flex:0 0 100%; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted)}
+.starter{
+  border:1px solid var(--line-strong); background:var(--surface-2); border-radius:20px;
+  padding:5px 13px; font-family:var(--serif); font-style:italic; font-size:13.5px;
+  color:var(--muted); text-align:left; line-height:1.45; max-width:100%;
+  transition:background .15s, border-color .15s, color .15s;
+}
+.starter:hover{background:var(--accent-soft); border-color:var(--accent); color:var(--ink)}
+
+/* true/false */
+.tf-list{display:flex; flex-direction:column; gap:10px}
+.tf-item{border:1px solid var(--line); border-radius:9px; padding:12px 14px; background:var(--surface-2);
+  display:flex; flex-direction:column; gap:10px}
+.tf-top{display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap}
+.tf-txt{flex:1 1 300px; min-width:0; font-size:14.5px}
+.tf-btns{display:flex; gap:6px; flex:0 0 auto}
+.pick{border:1px solid var(--line-strong); background:var(--surface); border-radius:7px;
+  padding:5px 12px; font-size:13px; font-weight:500; min-width:62px}
+.pick[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.tf-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.tf-item.no{border-color:var(--no); background:var(--no-soft)}
+.verdict{font-size:14px; display:flex; gap:8px; align-items:flex-start}
+.verdict .vi{font-family:var(--mono); font-weight:500; flex:0 0 auto}
+.ok .verdict .vi{color:var(--ok)} .no .verdict .vi{color:var(--no)}
+
+/* gaps */
+.gaps{display:flex; flex-direction:column; gap:9px}
+.gap-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+  border-bottom:1px dotted var(--line); padding-bottom:9px}
+.gap-row:last-of-type{border-bottom:0; padding-bottom:0}
+.gap-lbl{flex:1 1 240px; min-width:0; font-size:14.5px}
+.gap-in{display:flex; align-items:center; gap:7px; flex:0 0 auto}
+input[type="text"]{
+  font:inherit; font-size:14.5px; font-family:var(--mono); width:118px; text-align:center;
+  background:var(--surface-2); color:var(--ink); border:1px solid var(--line-strong);
+  border-radius:7px; padding:6px 9px;
+}
+input[type="text"]:focus{border-color:var(--focus); background:var(--surface)}
+input.ok{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+input.no{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.gap-suf{font-size:13.5px; color:var(--muted); font-family:var(--mono)}
+.gap-sol{font-size:13px; color:var(--ok); font-family:var(--mono)}
+
+select{
+  font:inherit; font-size:14px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:7px; padding:6px 9px; max-width:100%;
+}
+select:focus{border-color:var(--focus)}
+select.ok{border-color:var(--ok); background:var(--ok-soft)}
+select.no{border-color:var(--no); background:var(--no-soft)}
+
+/* order */
+.ord-pool{display:flex; gap:8px; flex-wrap:wrap}
+.chip{border:1px solid var(--line-strong); background:var(--surface-2); border-radius:8px;
+  padding:8px 12px; font-size:14px; text-align:left; max-width:100%}
+.chip:hover{border-color:var(--accent)}
+.chip:disabled{opacity:.34; cursor:default}
+.chip .ck{font-family:var(--mono); color:var(--accent-ink); margin-right:7px; font-size:12px}
+.ord-slot{display:flex; gap:8px; flex-wrap:wrap; align-items:center; min-height:40px;
+  border:1px dashed var(--line-strong); border-radius:9px; padding:8px; background:var(--surface-2)}
+.ord-slot .ph{color:var(--muted); font-size:13.5px; padding:4px}
+.seq{display:inline-flex; align-items:center; gap:7px; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:5px 10px; font-size:13.5px}
+.seq .sn{font-family:var(--mono); font-size:11px; color:var(--muted)}
+.ord-slot.ok{border-color:var(--ok); border-style:solid; background:var(--ok-soft)}
+.ord-slot.no{border-color:var(--no); border-style:solid; background:var(--no-soft)}
+
+/* match / classify */
+.mt-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-bottom:10px;
+  border-bottom:1px dotted var(--line)}
+.mt-row:last-of-type{border-bottom:0; padding-bottom:0}
+.mt-left{flex:1 1 230px; font-size:14.5px; min-width:0}
+.cl-item{border:1px solid var(--line); border-radius:9px; background:var(--surface-2);
+  padding:12px 14px; display:flex; flex-direction:column; gap:9px}
+.cl-q{font-size:14.5px}
+.cl-q b{font-weight:600; color:var(--accent-ink)}
+.cl-opts{display:flex; gap:6px; flex-wrap:wrap}
+.cl-item.ok{border-color:var(--ok); background:var(--ok-soft)}
+.cl-item.no{border-color:var(--no); background:var(--no-soft)}
+
+/* cards */
+.grp{display:flex; flex-direction:column; gap:10px}
+.grp-h{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.cgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(212px,1fr)); gap:9px}
+.fc{position:relative; border:1px solid var(--line); background:var(--surface-2); border-radius:9px;
+  padding:12px 13px; min-height:78px; text-align:left; display:flex; flex-direction:column; gap:6px;
+  transition:border-color .15s, background .15s}
+.fc:hover{border-color:var(--accent)}
+.fc .term{font-weight:600; font-size:14.5px}
+.fc .def{font-size:13.5px; color:var(--muted); line-height:1.5}
+.fc .tap{font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em}
+.fc.known{border-color:var(--ok); background:var(--ok-soft)}
+.fc-mark{position:absolute; top:8px; right:8px; border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:6px; font-size:11px; padding:2px 7px; line-height:1.5;
+  font-family:var(--mono); color:var(--muted)}
+.fc.known .fc-mark{border-color:var(--ok); color:var(--ok)}
+
+/* clip */
+.clip{border:1px solid var(--line); border-radius:11px; background:var(--surface); padding:17px 18px;
+  display:flex; flex-direction:column; gap:13px}
+.clip-h{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.clip-h h3{font-size:16.5px}
+blockquote{margin:0; padding:12px 16px; background:var(--surface-2); border-left:3px solid var(--line-strong);
+  border-radius:0 8px 8px 0; font-size:15px; font-family:var(--serif); line-height:1.65; max-width:64ch}
+
+/* scale */
+.sc-tbl{width:100%; border-collapse:collapse; font-size:14px}
+.sc-wrap{overflow-x:auto}
+.sc-tbl th{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:500; padding:0 8px 9px; text-align:center}
+.sc-tbl th:first-child{text-align:left}
+.sc-tbl td{border-top:1px solid var(--line); padding:9px 8px; text-align:center}
+.sc-tbl td:first-child{text-align:left; min-width:190px}
+.rad{width:20px; height:20px; border-radius:50%; border:1.5px solid var(--line-strong); background:var(--surface-2); padding:0}
+.rad[aria-pressed="true"]{background:var(--accent); border-color:var(--accent)}
+
+/* nav */
+.stepnav{display:flex; gap:10px; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:6px}
+
+/* modal */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.55); z-index:60; display:grid; place-items:center; padding:20px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; overflow:auto; padding:22px; display:flex; flex-direction:column; gap:14px}
+.modal h3{font-size:19px}
+.modal textarea{min-height:300px; font-family:var(--mono); font-size:12.5px; line-height:1.55}
+
+.storewarn{
+  max-width:1180px; margin:16px auto 0; padding:12px 16px;
+  border:1px solid var(--accent); border-left-width:3px; border-radius:0 9px 9px 0;
+  background:var(--accent-soft); color:var(--ink); font-size:14px; line-height:1.55;
+}
+@media (max-width:1220px){ .storewarn{margin-inline:20px} }
+.hr{height:1px; background:var(--line); border:0; margin:2px 0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+[hidden]:not([hidden=until-found i]){display:none!important}
+</style>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <b>Atelier GLP-1</b>
+      <span>B1+ · santé, argent &amp; marchés</span>
+    </div>
+    <div class="prog" title="Activités complétées">
+      <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+      <span class="prog-num" id="progNum">0 / 0</span>
+    </div>
+    <button class="btn" id="exportBtn">Exporter mes réponses</button>
+    <button class="btn btn-ghost" id="themeBtn" aria-label="Changer de thème">Thème</button>
+  </div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-head">Parcours · 3 séances de 50 min</div>
+    <ul class="rail-list" id="rail"></ul>
+    <div class="rail-foot">
+      <a class="tc" href="https://youtu.be/TI9-BQ5Utg8" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+      <button class="btn btn-ghost small" id="resetBtn">Tout effacer</button>
+    </div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var VIDEO = "https://youtu.be/TI9-BQ5Utg8";
+var KEY = "glp1-b1plus-v1";
+
+/* ---------------- storage ---------------- */
+var state = {step:0, a:{}, done:{}, known:{}};
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var p = JSON.parse(raw); if(p && typeof p==="object"){
+      state.step = p.step|0; state.a = p.a||{}; state.done = p.done||{}; state.known = p.known||{};
+    }}
+  }catch(e){}
+}
+var STORAGE_OK = (function(){
+  try{ localStorage.setItem(KEY+"-probe","1"); localStorage.removeItem(KEY+"-probe"); return true; }
+  catch(e){ return false; }
+})();
+var saveTimer=null;
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+}
+function saveSoon(){ clearTimeout(saveTimer); saveTimer=setTimeout(save,300); }
+
+/* ---------------- helpers ---------------- */
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=txt; return n; }
+function html(tag, cls, h){ var n=document.createElement(tag); if(cls)n.className=cls; if(h!=null)n.innerHTML=h; return n; }
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return m+":"+(r<10?"0":"")+r; }
+function tcLink(sec, label){
+  var a=el("a","tc",label||mmss(sec));
+  a.href=VIDEO+"?t="+sec; a.target="_blank"; a.rel="noopener";
+  a.title="Ouvrir la vidéo à "+mmss(sec);
+  return a;
+}
+function norm(s){
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[^a-z0-9]/g," ").replace(/\s+/g," ").trim();
+}
+function matches(val, answers){
+  var v = norm(val); if(!v) return false;
+  for(var i=0;i<answers.length;i++){ if(v === norm(answers[i])) return true; }
+  return false;
+}
+
+/* ---------------- content ---------------- */
+var ORAL = "Dites-le d'abord à voix haute (45 s). Ensuite seulement, notez 3 à 5 mots-clés.";
+var SEGS = [
+{"t":"seg","n":1,"a":0,"b":109,"title":"Un médicament qui change la vie… et les courses",
+ "sum":"Le présentateur annonce le sujet : les <strong>GLP-1</strong>, une nouvelle génération de médicaments qui permettent à certains patients de perdre plusieurs dizaines de kilos. Aux États-Unis, leur succès commence à modifier les habitudes de consommation : moins de gras, moins de sucre, et l'industrie agroalimentaire s'adapte. À New York, <strong>Christopher Sanford</strong>, comptable, s'injecte du GLP-1 depuis trois ans (on entend des noms de marque comme Ozempic ou Mounjaro ; le troisième est mal transcrit). Il a perdu <strong>59 kg</strong>, préfère marcher plutôt que prendre le métro, n'a plus d'envies irrépressibles ni de grignotage, et le gras et le sucre le dégoûtent. Comme le médicament coupe la faim, il cherche des <strong>protéines</strong> et des <strong>fibres</strong> : au supermarché, il choisit des tortillas « adaptées au GLP-1 » (blé complet, 5 g de fibres).",
+ "obj":["Comprendre le vocabulaire du corps et de l'appétit : <em>la faim</em>, <em>le grignotage</em>, <em>des envies irrépressibles</em>.","Repérer des chiffres à l'oral : <em>59 kg</em>, <em>trois ans</em>, <em>5 g</em>.","Reconnaître un témoignage (récit à la première personne) et ses marqueurs : <em>je pense que</em>, <em>pour moi</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Qui est Christopher Sanford et qu'est-ce qui a changé dans sa vie ?","starters":["C'est un comptable qui…","Depuis trois ans,…","Maintenant, il…"],"model":"« C'est un comptable new-yorkais qui s'injecte du GLP-1 depuis trois ans et qui a perdu 59 kilos. Maintenant, il marche volontiers, il n'a plus d'envies irrépressibles de nourriture et il choisit des produits riches en protéines et en fibres. »"},
+  {"type":"Reformulation","q":"« Toutes les envies irrépressibles de nourriture, de grignotage ont disparu. » Reformulez avec vos mots.","starters":["Cela veut dire que…","Autrement dit,…"],"model":"« Cela veut dire qu'il n'a plus envie de manger sans arrêt. <em>Irrépressible</em> = qu'on ne peut pas contrôler. Autrement dit, il ne grignote plus entre les repas. »"},
+  {"type":"Réaction","q":"Ce témoignage est-il convaincant ? Qu'est-ce qui peut vous rendre prudent(e) ?","starters":["Ce qui est convaincant, c'est…","En revanche,…","Il faudrait aussi savoir…"],"model":"« Ce qui est convaincant, c'est le résultat : 59 kilos en trois ans. En revanche, c'est un seul témoin, pas une étude : on ne sait rien des autres patients. Il faudrait aussi savoir si ce résultat dure. »"}],
+ "tour":[
+  ["sans X, je n'aurais pas pu…","hypothèse sur une situation différente dans le passé","Sans votre aide, nous n'aurions pas pu terminer à temps."],
+  ["couper la faim","supprimer l'appétit","Ce médicament coupe la faim."],
+  ["au point que + indicatif","à tel degré que (conséquence)","Le succès est tel qu'il modifie les habitudes, au point que l'industrie s'adapte."],
+  ["perdre X kilos","maigrir de X kg","Elle a perdu vingt kilos en un an."]],
+ "gram":{"t":"<em>sans</em> + nom, <em>je n'aurais pas pu</em> (conditionnel passé)","h":"<p>« <strong>Sans</strong> GLP1, je <strong>n'aurais pas pu</strong> vivre ici. » → on imagine ce qui serait arrivé sans cet élément (= si je n'avais pas eu le GLP1).</p><p>Forme : <em>je n'aurais pas pu</em>, <em>nous n'aurions pas pu</em> (conditionnel présent de <em>avoir</em> + participe passé).</p><p>En réunion : « <strong>Sans</strong> ce fournisseur, nous <strong>n'aurions pas tenu</strong> les délais. »</p>"}},
+
+{"t":"seg","n":2,"a":109,"b":208,"title":"Quand l'industrie s'adapte",
+ "sum":"Des étiquettes « GLP-1 » envahissent les rayons : les industriels ont <strong>flairé un nouveau marché lucratif</strong>. Le médicament, créé pour les diabétiques, est devenu le régime à la mode : plus d'un Américain sur 10 l'utilise, soit <strong>28 millions</strong> de personnes. Une marque explique à la télévision qu'elle change certaines recettes : on pensait que les gens allaient manger moins, mais leurs besoins nutritifs ont juste évolué. Cela va bien au-delà de l'alimentaire : une influenceuse qui a perdu <strong>57 kg</strong> promeut des produits (crème pour la peau flasque, casque pour le cuir chevelu à plus de 500 €), et les <strong>parfums sucrés</strong> font fureur : +850 % de ventes cette année pour ceux à la pistache.",
+ "obj":["Comprendre le lexique du marché : <em>un rayon</em>, <em>une étiquette</em>, <em>un marché lucratif</em>.","Repérer un <strong>argument commercial</strong> (la marque qui justifie ses choix).","Comprendre <em>aller</em> à l'imparfait + infinitif : « les gens <em>allaient</em> manger moins »."],
+ "qs":[
+  {"type":"Compréhension","q":"Comment l'industrie réagit-elle à ce succès ? Donnez deux exemples.","starters":["Les industriels ont…","Par exemple,…","Cela va même au-delà de…"],"model":"« Les industriels ont flairé un marché lucratif : ils changent leurs recettes, avec plus de protéines et de fibres, et ils mettent une étiquette GLP-1 sur les paquets. Par exemple, des tortillas au blé complet ou des parfums sucrés. Cela va même au-delà de l'alimentaire, avec des crèmes et des casques pour les cheveux. »"},
+  {"type":"Reformulation","q":"« Leurs besoins nutritifs n'ont pas disparu, ils ont juste évolué. » Que veut dire la marque ? Pourquoi le dit-elle à la télévision ?","starters":["La marque veut dire que…","Elle le dit pour…"],"model":"« La marque veut dire que les clients mangent différemment, mais qu'ils mangent toujours : il y a donc encore des ventes à faire. Elle le dit pour rassurer ses clients et ses actionnaires : c'est un argument commercial, pas un fait mesuré. »"},
+  {"type":"Réaction","q":"Pourquoi des parfums sucrés ? Faites une hypothèse.","starters":["Je suppose que…","Peut-être que…","Cela s'explique sans doute par…"],"model":"« Je suppose que certaines personnes ont encore envie de sucre, mais ne veulent plus en manger. Le reportage dit qu'elles sentent le sucre plutôt que de le manger : c'est moins calorique. »"}],
+ "tour":[
+  ["flairer un marché","repérer une opportunité commerciale","Plusieurs groupes ont flairé un marché porteur."],
+  ["faire fureur","avoir un énorme succès","Ce produit fait fureur cette année."],
+  ["au-delà de","plus loin que, en dehors de","Cela va bien au-delà de l'alimentaire."],
+  ["promouvoir","faire la promotion de","Elle promeut des produits de beauté."]],
+ "gram":{"t":"<em>aller</em> à l'imparfait + infinitif","h":"<p>« On pensait que les gens <strong>allaient manger</strong> moins. » → ce qu'on attendait dans le passé (un futur vu depuis le passé).</p><p>Piège : on ne dit pas « allaient mangeraient ». C'est <em>allaient</em> + infinitif.</p><p>En réunion : « Nous pensions que le client <strong>allait signer</strong> avant la fin du mois. »</p>"}},
+
+{"t":"seg","n":3,"a":208,"b":265,"title":"Combien ça coûte aux États-Unis ?",
+ "sum":"Dans une clinique esthétique de Washington, un département entier est réservé aux patients GLP-1. Aux États-Unis, le médicament <strong>n'est remboursé que</strong> pour les diabétiques ou les personnes atteintes d'obésité extrême. Une femme de 35 ans, qui veut perdre du poids après sa grossesse, <strong>paie de sa poche</strong> près de <strong>300 dollars par mois</strong> (environ 260 €), sans compter les produits dérivés : « le prix qu'on paie, c'est pour la beauté, et oui, c'est cher ». L'administration Trump réfléchit à faire baisser les tarifs pour <strong>démocratiser</strong> l'utilisation. Les compagnies aériennes américaines ont calculé qu'elles <strong>pourraient économiser 580 millions de dollars</strong> de carburant par an si les passagers étaient plus minces.",
+ "obj":["Comprendre qui est remboursé et qui paie : <em>rembourser</em>, <em>payer de sa poche</em>.","Repérer un chiffre qui est un <strong>calcul</strong> (hypothèse), pas un fait mesuré.","Comprendre l'hypothèse : <em>si</em> + imparfait → conditionnel."],
+ "qs":[
+  {"type":"Compréhension","q":"Aux États-Unis, qui est remboursé ? Qui paie de sa poche ? Combien ?","starters":["Le médicament n'est remboursé que pour…","Les autres patients…","Par exemple, une femme de 35 ans…"],"model":"« Le médicament n'est remboursé que pour les diabétiques ou les personnes en obésité extrême. Les autres paient de leur poche. Par exemple, une femme de 35 ans paie près de 300 dollars par mois pour perdre du poids après sa grossesse. »"},
+  {"type":"Reformulation","q":"« Le prix qu'on paie, c'est pour la beauté. » Que veut dire cette patiente ? Son motif est-il médical ?","starters":["Elle veut dire que…","Son motif est plutôt…"],"model":"« Elle veut dire qu'elle ne le prend pas pour une raison de santé, mais pour son apparence. Son motif est plutôt esthétique que médical, et elle accepte que ce soit cher. »"},
+  {"type":"Réaction","q":"« Les compagnies aériennes pourraient économiser 580 millions de dollars. » Comment présenteriez-vous ce chiffre à un collègue, avec prudence ?","starters":["Selon leurs calculs,…","Ce chiffre repose sur…","À condition que…"],"model":"« Selon leurs propres calculs, les compagnies aériennes pourraient économiser 580 millions de dollars par an, à condition que les passagers soient plus minces. C'est une estimation, pas un résultat constaté : il faut donc la prendre avec prudence. »"}],
+ "tour":[
+  ["payer de sa poche","payer soi-même, sans remboursement","Ces frais sont à payer de sa poche."],
+  ["démocratiser","rendre accessible au plus grand nombre","L'objectif est de démocratiser l'accès au traitement."],
+  ["ne… que","seulement","Il n'est remboursé que pour les diabétiques."],
+  ["sans compter","en plus de","300 dollars par mois, sans compter les produits dérivés."]],
+ "gram":{"t":"<em>si</em> + imparfait → conditionnel présent","h":"<p>« Elles <strong>pourraient</strong> économiser 580 millions <strong>si</strong> les passagers <strong>étaient</strong> plus minces. » → une hypothèse possible, mais pas certaine.</p><p>Règle : <em>si</em> + imparfait dans la condition, conditionnel dans la conséquence. Jamais de conditionnel après <em>si</em>.</p><p>En réunion : « Nous <strong>gagnerions</strong> du temps <strong>si</strong> le client <strong>validait</strong> le devis plus vite. »</p>"}},
+
+{"t":"seg","n":4,"a":265,"b":327,"title":"En France : le remboursement et la molécule",
+ "sum":"En France, l'accès à ces traitements vient de franchir une nouvelle étape : <strong>depuis le 15 juin</strong>, deux d'entre eux (Wegovy et Mounjaro ; la transcription écrit « Wegovi » et « Munjaro ») peuvent être <strong>remboursés par l'Assurance maladie</strong> pour certains patients atteints d'obésité. Le présentateur pose trois questions : comment fonctionnent ces médicaments, à qui s'adressent-ils, quels sont leurs effets indésirables et leurs risques. Le médecin-journaliste répond en « trois infos » : <strong>une piqûre par semaine</strong>, des effets spectaculaires, mais aussi des risques réels et un coût élevé. Première info : ils sont très efficaces et peuvent faire perdre <strong>15 % du poids de départ</strong> en un an. Ils s'appuient sur une petite molécule, le GLP-1, <strong>sécrétée par les intestins</strong> : elle dit au pancréas de baisser le taux de sucre dans le sang, à l'estomac « tu es plein », au cerveau « je n'ai plus faim ». (Année du reportage : non donnée dans la transcription.)",
+ "obj":["Comprendre une annonce de changement : <em>franchir une nouvelle étape</em>, <em>depuis le 15 juin</em>.","Suivre une explication en trois temps : <em>notre première info… notre deuxième info…</em>","Repérer la mise en relief : <em>c'est elle qui…</em>"],
+ "qs":[
+  {"type":"Compréhension","q":"Qu'est-ce qui change en France depuis le 15 juin ? Pour qui ?","starters":["Depuis le 15 juin,…","Ils peuvent être remboursés par…","Cela concerne…"],"model":"« Depuis le 15 juin, deux de ces médicaments peuvent être remboursés par l'Assurance maladie. Cela concerne certains patients atteints d'obésité, pas tous les patients. »"},
+  {"type":"Reformulation","q":"Expliquez à un collègue comment fonctionne le GLP-1, avec des mots simples : intestins, pancréas, estomac, cerveau.","starters":["C'est une petite molécule que…","Elle dit au pancréas de…","Résultat :…"],"model":"« C'est une petite molécule que les intestins produisent. Elle dit au pancréas de baisser le taux de sucre, à l'estomac qu'il est plein, et au cerveau qu'on n'a plus faim. Résultat : on mange moins et on perd du poids. »"},
+  {"type":"Réaction","q":"Dans votre pays, que savez-vous du remboursement de ces traitements ? Si vous ne savez pas, dites-le et expliquez comment vous vérifieriez.","starters":["À ma connaissance,…","Je ne suis pas sûr(e) que…","Pour vérifier, je consulterais…"],"model":"« À ma connaissance, ces traitements ne sont pas remboursés pour tout le monde, mais je ne suis pas sûr(e) des conditions. Pour vérifier, je consulterais le site de l'assurance maladie ou je demanderais à un pharmacien. »"}],
+ "tour":[
+  ["franchir une nouvelle étape","passer un cap","Le projet vient de franchir une nouvelle étape."],
+  ["s'appuyer sur","reposer sur","Ces médicaments s'appuient sur une petite molécule."],
+  ["sécréter","produire (une substance) dans le corps","L'intestin sécrète cette molécule."],
+  ["pouvoir être remboursé","être pris en charge financièrement par l'Assurance maladie","Deux médicaments peuvent être remboursés."]],
+ "gram":{"t":"La mise en relief : <em>c'est… qui</em>","h":"<p>« <strong>C'est</strong> elle <strong>qui</strong> dit au pancréas : il faut baisser le taux de sucre. » → on insiste sur le sujet (elle, et pas une autre).</p><p>Autre forme : <em>c'est… que</em> pour insister sur un objet ou un moment : « <strong>C'est</strong> en juin <strong>que</strong> le remboursement a commencé. »</p><p>En réunion : « <strong>C'est</strong> la direction <strong>qui</strong> décide, pas le service. »</p>"}},
+
+{"t":"seg","n":5,"a":327,"b":377,"title":"Les risques, le muscle et le prix",
+ "sum":"Deuxième info : <strong>des effets indésirables et des risques réels</strong>. <strong>Une fois sur deux</strong>, des troubles digestifs (nausées, douleurs abdominales) ; <strong>beaucoup plus rarement</strong>, une pancréatite, inflammation très grave du pancréas. Ces médicaments font aussi <strong>fondre les muscles</strong> : plus d'un quart de la perte de poids, c'est du muscle, pas de la graisse. Il faut donc les réserver aux obésités importantes. Troisième info : <strong>le prix élevé</strong>, entre <strong>180 et 435 € par mois</strong>. Le remboursement concerne l'obésité importante (une phrase est mal transcrite à 6:00) ; <strong>en revanche</strong>, pas de remboursement pour l'obésité modérée ou le simple surpoids avec des maladies associées. Conclusion : des médicaments <strong>à réserver à ceux qui en ont vraiment besoin</strong>.",
+ "obj":["Comprendre des fréquences : <em>une fois sur deux</em>, <em>beaucoup plus rarement</em>.","Repérer le contraste : <em>en revanche</em>.","Reconnaître la conclusion d'un exposé : <em>en conclusion, des médicaments à réserver à…</em>"],
+ "qs":[
+  {"type":"Compréhension","q":"Quels sont les effets indésirables et les risques cités ? Avec quelle fréquence ?","starters":["Une fois sur deux,…","Beaucoup plus rarement,…","Ils font aussi fondre…"],"model":"« Une fois sur deux, ils provoquent des troubles digestifs : nausées, douleurs abdominales. Beaucoup plus rarement, une pancréatite, c'est-à-dire une inflammation très grave du pancréas. Ils font aussi fondre les muscles : plus d'un quart de la perte de poids, c'est du muscle. »"},
+  {"type":"Reformulation","q":"« Plus d'un quart de la perte de poids, c'est du muscle, pas de la graisse. » Expliquez pourquoi c'est un problème, et donnez la conclusion du reportage.","starters":["Cela pose problème parce que…","Le reportage conclut que…"],"model":"« Cela pose problème parce qu'on veut perdre de la graisse, pas du muscle : le muscle sert à bouger et à rester en forme. Le reportage conclut que ces médicaments sont à réserver à ceux qui en ont vraiment besoin. »"},
+  {"type":"Réaction","q":"Prix, risques, remboursement limité : à votre avis, qui devrait pouvoir en bénéficier ? Donnez un argument, sans trancher à la place d'un médecin.","starters":["D'un côté,…","De l'autre,…","Cela dépend surtout de…"],"model":"« D'un côté, pour une obésité importante, le bénéfice pour la santé peut être grand. De l'autre, les risques et le prix sont réels. Cela dépend surtout de l'avis du médecin, qui connaît le patient. »"}],
+ "tour":[
+  ["une fois sur deux","dans la moitié des cas","Ils provoquent des troubles digestifs une fois sur deux."],
+  ["beaucoup plus rarement","dans de rares cas","La complication existe, mais beaucoup plus rarement."],
+  ["en revanche","au contraire, par contre","En revanche, pas de remboursement pour le surpoids."],
+  ["à réserver à","qui doit être limité à","Un traitement à réserver aux cas graves."]],
+ "gram":{"t":"<em>à</em> + infinitif · <em>ceux qui</em>","h":"<p>« Des médicaments <strong>à réserver</strong> à <strong>ceux qui</strong> en ont vraiment besoin. » → <em>à + infinitif</em> exprime une destination ou une obligation.</p><p><em>Ceux qui</em> = les personnes qui. Féminin : <em>celles qui</em>.</p><p>En réunion : « Un dossier <strong>à valider</strong> avant vendredi », « un budget <strong>à réserver à</strong> <strong>ceux qui</strong> en ont besoin ».</p>"}},
+
+{"t":"seg","n":6,"a":377,"b":457,"title":"Dans un cabinet de Marseille : « je veux la piqûre »",
+ "sum":"Le succès a fait naître un <strong>marché parallèle</strong> : des vendeurs proposent ces médicaments illégalement, sans ordonnance, notamment sur les réseaux sociaux, avec des arnaques et de fausses prescriptions. Mais d'abord, dans un cabinet de <strong>médecine esthétique à Marseille</strong> (le nom du docteur est mal transcrit), le Botox et les soins capillaires ont laissé place aux médicaments antiobésité et les demandes affluent. Pour le médecin, <strong>10 à 20 % des patients</strong> arrivent en disant : « Je veux maigrir, mais je veux la piqûre ». Il prescrit le Mounjaro, qui renforce la sensation de satiété et est devenu « la star des réseaux sociaux ». Dans une vidéo sur les réseaux sociaux, une personne dit être sous traitement depuis <strong>plus de 17 mois</strong> et avoir perdu <strong>plus de 43 kg</strong>. Selon le dosage, le traitement coûte environ <strong>300 € par mois</strong>.",
+ "obj":["Suivre une scène de consultation : demande du patient, prescription.","Repérer des proportions et des durées : <em>10 à 20 %</em>, <em>17 mois</em>, <em>43 kg</em>.","Comprendre les relatives : <em>des gens qui arrivent</em>, <em>un coupe-faim que les patients plébiscitent</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Que se passe-t-il dans ce cabinet ? Que dit le médecin de ses patients ?","starters":["Dans ce cabinet,…","Pour le médecin,…","Il prescrit…"],"model":"« Dans ce cabinet, les demandes de perte de poids affluent. Pour le médecin, 10 à 20 % des patients arrivent en disant qu'ils veulent maigrir et qu'ils veulent « la piqûre ». Il leur prescrit un médicament qui renforce la sensation de satiété. »"},
+  {"type":"Reformulation","q":"« Je veux maigrir, mais je veux la piqûre. » Pourquoi cette demande peut-elle poser un problème à un médecin ?","starters":["Le patient choisit lui-même…","Pourtant, c'est le médecin qui…"],"model":"« Le patient choisit lui-même le traitement avant la consultation. Pourtant, c'est le médecin qui doit décider si le traitement est adapté ou non, selon la situation du patient. »"},
+  {"type":"Réaction","q":"Les réseaux sociaux parlent de ce traitement comme d'une « star ». Quel est leur rôle, à votre avis ? Un avantage, un risque.","starters":["Un avantage, c'est que…","Le risque, c'est que…","Il vaut mieux…"],"model":"« Un avantage, c'est que les gens s'informent et osent en parler. Le risque, c'est qu'ils veuillent le traitement sans avoir de raison médicale. Il vaut mieux en parler d'abord avec un médecin. »"}],
+ "tour":[
+  ["les demandes affluent","il y a beaucoup de demandes","Les demandes affluent depuis ce matin."],
+  ["plébisciter","choisir massivement, approuver très fortement","Les patients plébiscitent cette injection."],
+  ["laisser place à","être remplacé par","Le Botox a laissé place aux médicaments antiobésité."],
+  ["être sous traitement","suivre un traitement","Je suis sous traitement depuis un an."]],
+ "gram":{"t":"Les pronoms relatifs <em>qui</em> et <em>que</em>","h":"<p><strong>qui</strong> = sujet : « des gens <strong>qui</strong> arrivent et <strong>qui</strong> me disent… »</p><p><strong>que</strong> = objet : « un coupe-faim <strong>que</strong> les patients plébiscitent » (les patients plébiscitent <em>le coupe-faim</em>).</p><p>Astuce : si le verbe a déjà son sujet derrière (<em>les patients</em>), on emploie <em>que</em>.</p><p>En réunion : « Le client <strong>qui</strong> a appelé… », « le rapport <strong>que</strong> j'ai envoyé… »</p>"}},
+
+{"t":"seg","n":7,"a":457,"b":499,"title":"Une arnaque en ligne : le vendeur qui n'est pas venu",
+ "sum":"Sur Internet, des vendeurs <strong>bradent</strong> ces médicaments <strong>en toute illégalité</strong>. L'équipe de journalistes contacte l'un d'eux : il <strong>se présente comme</strong> spécialiste de l'obésité (le nom est mal transcrit : « Pharmacenter »). Par messagerie, il propose une molécule en phase d'essai clinique, la <strong>rétatrutide</strong>, qui n'est pas autorisée à la vente. Il donne rendez-vous à <strong>Toulouse</strong>, à l'adresse d'un important grossiste pharmaceutique, « comme <strong>gage de crédibilité</strong> ». Sur place, il n'est pas là. Il exige d'abord un <strong>virement</strong> ; les journalistes refusent et le vendeur ne répond plus.",
+ "obj":["Suivre un récit d'enquête dans l'ordre chronologique.","Comprendre comment un journaliste prend de la distance : <em>il se présente comme</em>, <em>un certain…</em>","Repérer les signaux d'alerte d'une arnaque."],
+ "qs":[
+  {"type":"Compréhension","q":"Racontez l'enquête des journalistes, dans l'ordre.","starters":["D'abord,…","Ensuite,…","Finalement,…"],"model":"« D'abord, ils contactent un vendeur en ligne qui se présente comme spécialiste de l'obésité. Ensuite, il leur propose une molécule qui n'est pas autorisée à la vente et il donne rendez-vous à Toulouse. Sur place, il n'est pas là et il exige un virement. Finalement, les journalistes refusent et il ne répond plus. »"},
+  {"type":"Reformulation","q":"« Comme gage de crédibilité » : que veut dire cette expression ? Pourquoi choisir l'adresse d'un grossiste ?","starters":["Un gage de crédibilité, c'est…","Il choisit cette adresse pour…"],"model":"« Un gage de crédibilité, c'est une preuve qui rend quelqu'un crédible, qui donne confiance. Il choisit l'adresse d'un grossiste pour faire croire qu'il travaille dans le monde pharmaceutique. »"},
+  {"type":"Réaction","q":"Quels signaux d'alerte permettent de reconnaître une arnaque en ligne ? Donnez-en trois.","starters":["Premier signal :…","Deuxième signal :…","Enfin, méfiez-vous quand…"],"model":"« Premier signal : un produit qui n'est pas autorisé à la vente. Deuxième signal : on exige un virement avant de se rencontrer. Enfin, méfiez-vous quand le vendeur n'a pas d'adresse ni de numéro d'identification vérifiable. »"}],
+ "tour":[
+  ["brader","vendre à très bas prix","Certains vendeurs bradent ces produits."],
+  ["en toute illégalité","sans respecter la loi, sans se cacher","Ils vendent en toute illégalité."],
+  ["un gage de crédibilité","une preuve qui rend crédible","Cette adresse sert de gage de crédibilité."],
+  ["exiger un virement","demander impérativement un paiement par virement","Il exige d'abord un virement."]],
+ "gram":{"t":"Prendre de la distance : <em>se présenter comme</em>, <em>un certain</em>","h":"<p>« Il <strong>se présente comme</strong> spécialiste de l'obésité. » → il l'affirme, mais le journaliste ne le confirme pas.</p><p>« <strong>Un certain</strong> Pharmacenter » → un nom qu'on ne peut pas vérifier. Autre outil : <em>prétendu</em> (« un prétendu spécialiste »).</p><p>En réunion : « Un <strong>prétendu</strong> fournisseur nous a contactés : il <strong>se présente comme</strong> un grossiste. »</p>"}},
+
+{"t":"seg","n":8,"a":499,"b":560,"title":"Les douaniers de Roissy",
+ "sum":"Derrière ces arnaques existe <strong>un marché bien réel</strong>, dans le viseur des <strong>douaniers de l'aéroport de Roissy</strong>. Des médicaments <strong>contrefaits</strong> ou <strong>détournés de leur usage</strong>, commandés en ligne, arrivent dans un centre de tri : soit sans ordonnance ni autorisation de mise sur le marché, soit de la contrefaçon. Il y a des <strong>centaines de millions de colis</strong> à scruter, avec de plus en plus de médicaments antiobésité, souvent envoyés dans de petites enveloppes qu'il faut passer au rayon X. Dans un entrepôt tenu secret, on montre les <strong>saisies des dernières 24 heures</strong>. Pour les douaniers, la saisie est le <strong>point de départ</strong> : il faut ensuite « tirer les fils » pour comprendre qui importe et où cela va.",
+ "obj":["Comprendre le lexique du contrôle : <em>une saisie</em>, <em>la contrefaçon</em>, <em>un colis</em>.","Repérer l'énumération : <em>soit… soit…</em>","Comprendre les questions indirectes : <em>comprendre qui importe et où ça va</em>."],
+ "qs":[
+  {"type":"Compréhension","q":"Quel est le travail des douaniers de Roissy ? Quels médicaments arrivent dans ce centre de tri ?","starters":["Les douaniers contrôlent…","Il s'agit soit de…, soit de…","Pour eux, la saisie, c'est…"],"model":"« Les douaniers contrôlent des colis commandés en ligne. Il s'agit soit de médicaments sans ordonnance ni autorisation de vente, soit de contrefaçons. Pour eux, la saisie, c'est seulement le point de départ de l'enquête. »"},
+  {"type":"Reformulation","q":"Expliquez avec des mots simples : « un médicament contrefait » et « un médicament détourné de son usage ».","starters":["Un médicament contrefait, c'est…","Un médicament détourné, c'est…","La différence, c'est que…"],"model":"« Un médicament contrefait, c'est une imitation illégale d'un vrai médicament. Un médicament détourné, c'est un vrai médicament utilisé pour un autre but que prévu. La différence, c'est que le premier est faux, alors que le second est vrai. »"},
+  {"type":"Réaction","q":"Commander un médicament sur Internet pour éviter l'attente : pourquoi est-ce risqué ? Donnez deux raisons.","starters":["D'abord, on ne sait pas…","De plus,…","En cas de problème,…"],"model":"« D'abord, on ne sait pas ce que contient vraiment le produit : il peut être contrefait. De plus, il n'y a pas de suivi par un médecin. En cas de problème, il n'y a personne vers qui se tourner. »"}],
+ "tour":[
+  ["contrefait / la contrefaçon","imité illégalement","Un médicament contrefait."],
+  ["détourné de son usage","utilisé pour un autre but que prévu","Un produit détourné de son usage."],
+  ["dans le viseur de","surveillé de près par","Ce trafic est dans le viseur des douaniers."],
+  ["tirer les fils","enquêter pas à pas pour comprendre","Il faut tirer les fils pour trouver l'origine."]],
+ "gram":{"t":"La question indirecte : <em>comprendre qui… / où… / ce qui…</em>","h":"<p>« Il faut tirer les fils pour comprendre <strong>ce qui</strong> se passe, <strong>qui</strong> importe et <strong>où</strong> ça va. » → on intègre une question dans une phrase : pas d'inversion, pas de point d'interrogation.</p><p>Question directe : <em>Où va ce colis ?</em> → indirecte : <em>Je voudrais savoir où va ce colis.</em></p><p>En réunion : « Pouvez-vous nous expliquer <strong>comment</strong> le dossier a été traité ? »</p>"}},
+
+{"t":"seg","n":9,"a":560,"b":600,"title":"De fausses ordonnances à l'hôpital",
+ "sum":"Pour éviter les médicaments douteux, certains se tournent vers les <strong>vrais médicaments avec de fausses ordonnances</strong>. À l'<strong>hôpital Bichat</strong> (la transcription écrit « Bicha »), le chef du service obésité a été alerté par un pharmacien : l'ordonnance « a la tête d'une ordonnance » et elle est plutôt bien faite, mais ce n'est pas une ordonnance de son hôpital et la signature n'est pas la sienne. Il imagine que d'autres pharmacies ne se sont même pas posé la question et ont délivré le médicament (cette phrase est mal transcrite). Ce marché parallèle est alimenté par des <strong>délais de prise en charge pouvant aller jusqu'à un an</strong>. En France, <strong>8 millions de personnes</strong> sont touchées par l'obésité. (La transcription s'arrête à 10:00 : la vidéo peut continuer.)",
+ "obj":["Comprendre un récit d'alerte : <em>être alerté par</em>, <em>une signature qui n'est pas la mienne</em>.","Comprendre le participe présent : <em>des délais pouvant aller jusqu'à un an</em>.","Relier les causes et les conséquences : <em>un marché alimenté par…</em>"],
+ "qs":[
+  {"type":"Compréhension","q":"Que découvre le chef de service à l'hôpital Bichat ? Comment le sait-il ?","starters":["Un pharmacien l'a alerté…","L'ordonnance était…","Mais ce n'était pas…"],"model":"« Un pharmacien l'a alerté à propos d'une ordonnance. Elle était plutôt bien faite, mais ce n'était pas une ordonnance de l'hôpital et la signature n'était pas la sienne. C'était donc une fausse ordonnance. »"},
+  {"type":"Reformulation","q":"« Un marché parallèle alimenté par des délais de prise en charge pouvant aller jusqu'à un an. » Reformulez avec des phrases simples.","starters":["Il y a un marché parallèle parce que…","Les patients attendent…","Certains préfèrent donc…"],"model":"« Il y a un marché parallèle parce que les patients doivent attendre parfois jusqu'à un an pour être pris en charge. Certains préfèrent donc chercher le médicament autrement, même de façon illégale. »"},
+  {"type":"Réaction","q":"Que faudrait-il faire, à votre avis, pour limiter ce marché parallèle ? Proposez deux solutions.","starters":["À mon avis, il faudrait…","On pourrait aussi…","Cela permettrait de…"],"model":"« À mon avis, il faudrait réduire les délais de prise en charge. On pourrait aussi mieux informer sur les risques des achats en ligne. Cela permettrait de limiter les arnaques et de protéger les patients. »"}],
+ "tour":[
+  ["avoir la tête de","ressembler à, avoir l'apparence de","Une ordonnance qui a la tête d'une ordonnance."],
+  ["délivrer un médicament","donner un médicament (en pharmacie)","La pharmacie a délivré le médicament."],
+  ["alimenter un marché","le faire exister, le faire grandir","Ces délais alimentent un marché parallèle."],
+  ["se poser la question","se demander si","Beaucoup ne se sont même pas posé la question."]],
+ "gram":{"t":"Le participe présent : <em>pouvant</em> = <em>qui peuvent</em>","h":"<p>« Des délais <strong>pouvant</strong> aller jusqu'à un an » = des délais <strong>qui peuvent</strong> aller jusqu'à un an. « Des médicaments <strong>pouvant</strong> présenter des risques » = qui peuvent présenter des risques.</p><p>Surtout écrit ou journalistique : à reconnaître à l'oral, pas obligatoire à produire.</p><p>En réunion, version courante : « des délais <strong>qui peuvent</strong> aller jusqu'à un an ».</p>"}}
+];
+
+/* exercices d'écoute propres à chaque segment */
+var EX = {
+ 1:{t:"tf", items:[
+   {q:"Aux États-Unis, ces médicaments commencent à modifier les habitudes de consommation.", a:true, j:"« Aux États-Unis, leur succès commence même à modifier les habitudes de consommation. »"},
+   {q:"Christopher Sanford préfère maintenant prendre le métro.", a:false, j:"Il préfère <strong>marcher</strong> plutôt que prendre le métro."},
+   {q:"Il a perdu 59 kg.", a:true, j:"« Depuis, il a perdu 59 kg. »"},
+   {q:"Il mange moins, mais il a toujours envie des mêmes choses.", a:false, j:"« Je n'ai plus envie des mêmes choses. »"}]},
+ 2:{t:"gaps", fields:[
+   {k:"a", label:"Plus d'un Américain sur … utilise ces médicaments", answers:["10","dix"], sol:"10"},
+   {k:"b", label:"Nombre de personnes concernées (en millions)", answers:["28","vingt-huit","vingt huit"], sol:"28"},
+   {k:"c", label:"Les industriels ont flairé un nouveau marché …", answers:["lucratif"], sol:"lucratif"},
+   {k:"d", label:"Les besoins nutritifs n'ont pas disparu : ils ont juste …", answers:["evolue","evolues"], sol:"évolué"},
+   {k:"e", label:"Hausse des ventes de parfums à la pistache (en %)", answers:["850","huit cent cinquante"], sol:"850 %"}]},
+ 3:{t:"tf", items:[
+   {q:"Aux États-Unis, le médicament est remboursé pour tout le monde.", a:false, j:"Seulement pour les <strong>diabétiques</strong> ou les personnes en <strong>obésité extrême</strong>."},
+   {q:"La patiente de 35 ans paie près de 300 dollars par mois.", a:true, j:"« …près de 300 dollars par mois… »"},
+   {q:"Elle dit que ce qu'elle paie, c'est pour la beauté.", a:true, j:"« Le prix qu'on paye, c'est pour la beauté, et oui, c'est cher. »"},
+   {q:"L'administration Trump envisage de faire baisser les prix.", a:true, j:"Elle « réfléchit à faire baisser ses tarifs »."},
+   {q:"Les compagnies aériennes ont mesuré une économie de 580 millions de dollars.", a:false, j:"Elles l'ont <strong>calculée</strong> : elles « pourraient économiser » cette somme <strong>si</strong> les passagers étaient plus minces. C'est une estimation."}]},
+ 4:{t:"gaps", fields:[
+   {k:"a", label:"Depuis le … juin, deux médicaments peuvent être remboursés", answers:["15","quinze"], sol:"15"},
+   {k:"b", label:"Perte possible en un an de traitement (% du poids de départ)", answers:["15","quinze"], sol:"15 %"},
+   {k:"c", label:"La molécule GLP-1 est sécrétée par les …", answers:["intestins","intestin"], sol:"intestins"},
+   {k:"d", label:"À l'estomac, elle dit : tu es …", answers:["plein","pleine"], sol:"plein"},
+   {k:"e", label:"Au cerveau, elle dit : je n'ai plus …", answers:["faim"], sol:"faim"}]},
+ 5:{t:"tf", items:[
+   {q:"Les troubles digestifs concernent un patient sur deux.", a:true, j:"« Ils provoquent une fois sur deux des troubles digestifs. »"},
+   {q:"La pancréatite est un effet très fréquent.", a:false, j:"Elle est « beaucoup plus rare »."},
+   {q:"Plus d'un quart de la perte de poids correspond à de la graisse.", a:false, j:"C'est du <strong>muscle</strong>, « pas de la graisse »."},
+   {q:"Le traitement coûte entre 180 et 435 € par mois.", a:true, j:"« …entre 180 et 435 € par mois. »"},
+   {q:"Le reportage conclut que ces médicaments sont à réserver à ceux qui en ont vraiment besoin.", a:true, j:"« En conclusion, des médicaments à réserver à ceux qui en ont vraiment besoin. »"}]},
+ 6:{t:"gaps", fields:[
+   {k:"a", label:"Part des patients qui demandent « la piqûre » : de 10 à … %", answers:["20","vingt"], sol:"20 %"},
+   {k:"b", label:"Le traitement est devenu la … des réseaux sociaux", answers:["star"], sol:"star"},
+   {k:"c", label:"Une personne dit être sous traitement depuis plus de … mois", answers:["17","dix-sept","dix sept"], sol:"17"},
+   {k:"d", label:"Cette personne dit avoir perdu plus de … kg", answers:["43","quarante-trois","quarante trois"], sol:"43"},
+   {k:"e", label:"Selon le dosage, le traitement coûte autour de … € par mois", answers:["300","trois cents","trois cent"], sol:"300 €"}]},
+ 7:{t:"gaps", fields:[
+   {k:"a", label:"Il se présente comme … de l'obésité", answers:["specialiste"], sol:"spécialiste"},
+   {k:"b", label:"La molécule est en phase d'essai …", answers:["clinique"], sol:"clinique"},
+   {k:"c", label:"Rendez-vous dans la ville de …", answers:["toulouse"], sol:"Toulouse"},
+   {k:"d", label:"Avant de rencontrer les journalistes, le vendeur exige un …", answers:["virement"], sol:"virement"}]},
+ 8:{t:"tf", items:[
+   {q:"Les médicaments saisis sont tous autorisés mais mal étiquetés.", a:false, j:"Ils sont sans autorisation ou <strong>contrefaits</strong>, ou détournés de leur usage."},
+   {q:"Les médicaments antiobésité arrivent souvent dans de petites enveloppes.", a:true, j:"« …souvent envoyés dans ces petites enveloppes. »"},
+   {q:"Pour les douaniers, la saisie est la fin de l'enquête.", a:false, j:"C'est « le point de départ » : il faut ensuite « tirer les fils »."},
+   {q:"Il y a des centaines de millions de colis à contrôler.", a:true, j:"« Des centaines de millions de colis à scruter. »"}]},
+ 9:{t:"gaps", fields:[
+   {k:"a", label:"Hôpital où une fausse ordonnance a été repérée", answers:["bichat","bicha"], sol:"Bichat"},
+   {k:"b", label:"La … sur l'ordonnance n'est pas celle du médecin", answers:["signature"], sol:"signature"},
+   {k:"c", label:"L'alerte vient d'un …", answers:["pharmacien"], sol:"pharmacien"},
+   {k:"d", label:"Délais de prise en charge : jusqu'à … an", answers:["1","un"], sol:"1"},
+   {k:"e", label:"En France, … millions de personnes sont touchées par l'obésité", answers:["8","huit"], sol:"8"}]}
+};
+
+var LETTERS = "ABCDEFGHIJ";
+function segCard(s, idx){
+  var blocks = [];
+  blocks.push({t:"callout", ct:"Objectifs du segment", h:"<ul style='margin:0;padding-left:18px'>"+s.obj.map(function(o){return "<li>"+o+"</li>";}).join("")+"</ul>"});
+  var ex = EX[s.n];
+  if(ex){
+    if(ex.t==="gaps") blocks.push({t:"gaps", k:"x"+s.n, fields:ex.fields});
+    else blocks.push({t:"tf", k:"x"+s.n, items:ex.items});
+  }
+  blocks.push({t:"reveal", label:"Vérifier avec le résumé du segment", rt:"Résumé — à lire après l'écoute, pas avant", h:"<p>"+s.sum+"</p>"});
+  blocks.push({t:"timer", sec:45, label:"Chrono — 45 secondes par question", note:"Parlez à voix haute jusqu'à la fin du chrono, sans lire."});
+  s.qs.forEach(function(q, i){
+    blocks.push({t:"open", k:"s"+s.n+"_"+i, n:String(i+1), starters:q.starters,
+      q:"<strong>"+q.type+".</strong> "+q.q, hint:q.hint||ORAL, model:q.model});
+  });
+  blocks.push({t:"callout", ct:"Focus langue — tournures et construction clé",
+    h:"<ul style='margin:0;padding-left:18px'>"+s.tour.map(function(t){
+        return "<li><strong>"+t[0]+"</strong> ("+t[1]+") — <em>« "+t[2]+" »</em></li>";}).join("")+"</ul>"+
+      "<p><strong>Construction clé : "+s.gram.t+"</strong></p>"+s.gram.h});
+  return {t:"card", h3:LETTERS[idx]+". Segment "+s.n+" — "+s.title,
+    sub:(ex ? (ex.t==="gaps" ? "Écoutez le segment sans sous-titres et repérez les chiffres et les mots-clés. Vérifiez avec le résumé, puis parlez." : "Écoutez le segment : vrai ou faux ? Vérifiez avec le résumé, puis parlez.") : ""),
+    tc:[{sec:s.a, l:mmss(s.a)},{sec:s.b, l:mmss(s.b)}], blocks:blocks};
+}
+
+/* phrases clés (extraits horodatés) */
+var CLIPS = [
+ {t:"clip", sec:38, title:"Imaginer une situation différente : sans X, je n'aurais pas pu",
+  quote:"Je pense que sans GLP1, je n'aurais pas pu vivre ici. Avant, c'était épuisant pour moi de me balader. Maintenant, j'adore.",
+  focus:"<p><strong>sans GLP1, je n'aurais pas pu</strong> : on imagine le passé sans un élément (conditionnel passé). Très utile pour expliquer l'importance de quelque chose.</p><p><strong>Avant, c'était… Maintenant,…</strong> : le contraste passé / présent, avec l'imparfait puis le présent. <strong>Je pense que</strong> introduit un témoignage personnel.</p>",
+  ex:[{k:"e1a", q:"Dites en 30 secondes : « Sans …, je n'aurais pas pu … ». Parlez d'une chose qui a changé votre travail ou votre vie (outil, personne, décision).", model:"« Sans mon collègue de Barcelone, je n'aurais pas pu finir ce dossier à temps. Avant, c'était long et compliqué. Maintenant, nous travaillons beaucoup plus vite. »"}]},
+ {t:"clip", sec:117, title:"Justifier ou nuancer : il faut dire que",
+  quote:"Il faut dire que le médicament créé pour les diabétiques est devenu le régime à la mode aux États-Unis.",
+  focus:"<p><strong>Il faut dire que…</strong> : on ajoute une explication ou une nuance à ce qu'on vient de dire (« en effet… »). Très courant à l'oral.</p><p><strong>créé pour les diabétiques</strong> : un participe passé qui précise le nom (= qui a été créé pour…). Utile pour parler vite sans phrase relative.</p>",
+  ex:[{k:"e2a", q:"Donnez un fait sur votre secteur, puis justifiez-le avec « Il faut dire que… » (30 secondes).", model:"« Les ventes en ligne ont beaucoup augmenté cette année. Il faut dire que la livraison est devenue beaucoup plus rapide. »"}]},
+ {t:"clip", sec:295, title:"Annoncer un plan : nous allons voir que… mais aussi…",
+  quote:"Nous allons voir qu'ils ont une action puissante, mais présentent aussi des risques réels et un coût élevé.",
+  focus:"<p><strong>Nous allons voir que…</strong> : on annonce le contenu avant de le détailler. Votre auditoire sait où vous allez.</p><p><strong>…mais présentent aussi…</strong> : on ajoute le contrepoint avec <em>mais</em> + <em>aussi</em>. On ne répète pas le sujet (<em>ils</em>).</p>",
+  ex:[{k:"e3a", q:"Annoncez en une phrase le plan d'une présentation sur un sujet de votre métier avec « Nous allons voir que… mais… aussi… » (30 secondes).", model:"« Nous allons voir que ce projet est rentable, mais qu'il présente aussi des risques de calendrier et un budget serré. »"}]},
+ {t:"clip", sec:363, title:"Opposer : en revanche + pas de + nom",
+  quote:"En revanche, pas de remboursement pour ceux qui ont une obésité modérée ou simplement du surpoids avec des maladies associées.",
+  focus:"<p><strong>En revanche</strong> : introduit un contraste avec ce qu'on vient de dire (≈ <em>par contre</em>, plus soigné).</p><p><strong>pas de remboursement</strong> : une phrase sans verbe, courante dans les médias et en réunion. <strong>pour ceux qui…</strong> : pour les personnes qui…</p>",
+  ex:[{k:"e4a", q:"Dites une règle générale, puis l'exception avec « En revanche, pas de… pour ceux qui… » (30 secondes).", model:"« Les frais de transport sont remboursés. En revanche, pas de remboursement pour ceux qui n'ont pas gardé leurs justificatifs. »"}]},
+ {t:"clip", sec:372, title:"Conclure : en conclusion, à réserver à…",
+  quote:"En conclusion, des médicaments à réserver à ceux qui en ont vraiment besoin.",
+  focus:"<p><strong>En conclusion,</strong> : annonce la fin d'un exposé. Après cette formule, on donne l'idée principale en une phrase.</p><p><strong>à réserver à ceux qui en ont besoin</strong> : <em>à + infinitif</em> pour dire ce qui doit être limité ; <em>en… besoin</em> : <em>en avoir besoin</em>.</p>",
+  ex:[{k:"e5a", q:"Terminez une présentation de votre travail par « En conclusion, … à réserver à ceux qui… » (30 secondes).", model:"« En conclusion, une aide à réserver à ceux qui en ont vraiment besoin : les équipes les plus chargées. »"}]}
+];
+
+/* méthode commune des extraits */
+var CLIP_METHOD = {t:"callout", ct:"Méthode, pour chaque extrait (≈ 1 minute 30)", h:"<p><strong>1.</strong> Écoutez <strong>2 fois</strong> sans lire. <strong>2.</strong> Lisez la phrase et réécoutez. <strong>3.</strong> <strong>Imitation facultative</strong> : répétez à voix haute en même temps que la voix, 2 essais maximum, puis seul(e). Soyez attentif aux groupes de mots, aux pauses et à la voix qui descend en fin de phrase. <strong>4.</strong> Réemployez la structure sur <strong>votre</strong> travail, à voix haute.</p><p>Aucune note automatique : seul le formateur juge si vous êtes compréhensible. À votre niveau, une pause pour chercher un mot est normale.</p>"};
+
+/* « Parler trois fois » : même contenu, public différent, durée décroissante */
+function talk3(pre, cfg){
+  var b = [];
+  b.push({t:"callout", ct:"Consigne : même contenu, trois publics", h:cfg.consigne});
+  b.push({t:"callout", ct:"Votre carte d'idées — parlez à partir de ces mots-clés, pas de phrases écrites", h:cfg.carte});
+  cfg.passes.forEach(function(p, i){
+    b.push({t:"card", h3:"Passage "+(i+1)+" — "+p.titre, sub:p.sub, blocks:[
+      {t:"timer", sec:p.sec, label:"Chrono — "+p.label, note:p.note},
+      {t:"open", k:pre+"t"+(i+1), n:"", starters:p.starters, q:p.q, hint:"À voix haute d'abord. Enregistrez-vous avec votre téléphone si vous le pouvez ; notez ensuite 3 mots-clés.", model:p.model}
+    ]});
+  });
+  b.push({t:"card", h3:"Une seule cible de correction", sub:"Pas dix. Une seule, que vous reprendrez au passage suivant.", blocks:[
+    {t:"open", k:pre+"cible", n:"", starters:["Ma cible, c'est…","Je veux réemployer…","Je veux mieux enchaîner…"],
+     q:"Après le passage 1, quelle est <strong>la seule</strong> chose à améliorer ? Une structure du reportage à réemployer, un enchaînement, un mot précis ?",
+     hint:"Avec le formateur : il note un seul point, que vous reprenez au passage 3. Une pause pour chercher un mot n'est pas une erreur."}
+  ]});
+  return b;
+}
+
+var STEPS = [
+{
+ id:"prep", title:"Avant la séance 1 — l'essentiel", time:"8 min",
+ lede:"Ce parcours est construit pour que vous parliez plus que vous n'écrivez. Avant chaque séance, vous préparez à voix haute, avec un chrono ; les notes (3 à 5 mots-clés) viennent ensuite. Tout est enregistré dans votre navigateur.",
+ blocks:[
+  {t:"callout", ct:"Le plan : trois séances de 50 minutes", h:"<ul style='margin:0;padding-left:18px'><li><strong>En autonomie, avant la séance 1 (≈ 30 min)</strong> : l'essentiel, le lexique, le premier visionnage de toute la vidéo. Le temps de classe est ainsi réservé à la parole.</li><li><strong>Séance 1 (50 min)</strong> : les États-Unis — un témoignage, un marché, un prix.</li><li><strong>Séance 2 (50 min)</strong> : la France — efficacité, risques, prix, et comment juger une source.</li><li><strong>Séance 3 (50 min)</strong> : le marché parallèle — récit d'enquête, interaction, avis argumenté.</li></ul><p style='margin-top:8px'>Chaque séance suit la même logique : <strong>écouter un extrait → redire → reformuler → réagir</strong>, puis <strong>reprendre le même contenu devant un autre public</strong>, de plus en plus court.</p>"},
+  {t:"callout", ct:"Méthode du premier visionnage", h:"<p><strong>Sans sous-titres automatiques, sans pause, sans dictionnaire.</strong> La vidéo dure environ 10 minutes (la transcription disponible s'arrête à 10:00). Plusieurs voix : présentateur, correspondante, témoins américains, patients, médecins, douaniers. Débit de reportage télévisé : phrases courtes et enchaînées, chiffres, sigles. Vous ne comprendrez pas tout, et ce n'est pas le but : <strong>suivre le fil</strong>. Vous reviendrez ensuite segment par segment, avec pauses.</p><p>À votre niveau (B1+), les pauses pour chercher un mot sont normales, y compris quand vous parlez longtemps. L'objectif est de <strong>continuer à parler de façon compréhensible</strong>, pas de parler vite.</p>"},
+  {t:"card", h3:"Où va le temps de parole ?", sub:"Estimation indicative de conception, non mesurée. L'objectif : environ la moitié du travail à voix haute.", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+    "<li><strong>Autonomie (≈ 30 min)</strong> : environ 6 min à voix haute (ouverture, chiffres, résumé d'une minute).</li>"+
+    "<li><strong>Chaque séance (50 min)</strong> : l'apprenant parle environ 30 à 35 min ; le formateur écoute, relance et ne corrige qu'<strong>un point à la fois</strong>.</li>"+
+    "<li><strong>Entre les séances</strong> : un rendez-vous à vous-même, 2 minutes, à J+7.</li></ul>"+
+    "<p><strong>Si vous manquez de temps</strong> : gardez le premier visionnage, l'étape « Parler trois fois » de chaque séance et le bilan. Le reste peut se préparer plus tard.</p></div>"}
+  ]},
+  {t:"card", h3:"Pourquoi cette vidéo", sub:"Support de préparation et de conversation · niveau B1+", blocks:[
+   {t:"note", h:"<div class='prose'>"+
+    "<p><strong>Trois raisons.</strong></p>"+
+    "<ul>"+
+    "<li>C'est <strong>un sujet d'actualité</strong> dont on parle partout : santé, argent, habitudes de consommation. Vous aurez des choses à dire, même sans être médecin.</li>"+
+    "<li>C'est <strong>du français parlé authentique</strong> : un reportage télévisé avec plusieurs voix, des chiffres, des témoignages, des experts. C'est ce que vous entendrez dans les médias et en réunion.</li>"+
+    "<li>C'est <strong>riche en structures utiles</strong> pour raconter, expliquer, comparer et donner un avis : <em>sans…, je n'aurais pas pu</em>, <em>il faut dire que</em>, <em>en revanche</em>, <em>à réserver à…</em></li>"+
+    "</ul>"+
+    "<p><strong>Objectifs.</strong></p>"+
+    "<ul>"+
+    "<li><strong>Comprendre</strong> un reportage : l'idée centrale, les chiffres, qui parle et pourquoi.</li>"+
+    "<li><strong>Raconter et expliquer</strong> : relier des idées de façon claire, en continuant à parler malgré les pauses.</li>"+
+    "<li><strong>Réagir et interagir</strong> : confirmer, demander de répéter, reformuler, donner un avis nuancé.</li>"+
+    "<li><strong>Rester prudent(e)</strong> : distinguer un fait, un témoignage, une explication et un argument commercial.</li>"+
+    "</ul></div>"}
+  ]},
+  {t:"card", h3:"Questions d'ouverture", sub:"Avant de lancer la vidéo. Répondez de mémoire, à voix haute.", blocks:[
+   {t:"timer", sec:60, label:"Chrono — 60 secondes par question", note:"Parlez jusqu'à la fin du chrono. Un mot manque : contournez-le en français."},
+   {t:"open", k:"p1", n:"1", starters:["J'ai entendu dire que…","À ma connaissance,…","Ce que je sais, c'est que…"],
+    q:"Que savez-vous des médicaments GLP-1 (Ozempic, Mounjaro…) ? Qu'avez-vous entendu dire ?",
+    hint:"Dites-le d'abord à voix haute. Si vous ne savez rien, dites-le et imaginez ce que cela peut être.",
+    model:"« J'ai entendu dire que ce sont des médicaments qu'on s'injecte une fois par semaine pour perdre du poids. À ma connaissance, ils ont été créés pour les diabétiques. Je sais aussi que certaines personnes en trouvent sur Internet, sans ordonnance. »"},
+   {t:"open", k:"p2", n:"2", starters:["Si beaucoup de gens en prenaient,…","À mon avis,…","Ce qui changerait,…"],
+    q:"Selon vous, que change un médicament de ce type dans les habitudes de consommation d'un pays ? Faites une hypothèse avec « si… ».",
+    hint:"Dites-le d'abord à voix haute. Pensez à l'alimentation, aux loisirs, à la santé.",
+    model:"« Si beaucoup de gens en prenaient, ils mangeraient moins et autrement : moins de gras et de sucre, plus de protéines. Les entreprises devraient donc changer leurs produits. À mon avis, cela ne changerait pas seulement les repas : d'autres secteurs pourraient aussi être touchés. »"},
+   {t:"open", k:"p3", n:"3", starters:["Les mots qui me manquent, ce sont…","En espagnol / en italien je dis…, mais en français je bloque.","Je ne sais pas comment dire…"],
+    q:"Quels mots vous manquent pour parler de santé, de médicaments et d'argent ? Notez-les avant de regarder.",
+    hint:"Ici, notez vraiment une liste de mots : elle sera votre point de départ en séance."}
+  ]},
+  {t:"callout", ct:"À savoir — prudence", h:"<p>Un reportage de télévision n'est pas une source médicale. Cet atelier est un <strong>support de langue</strong> : il ne donne aucun conseil de santé. Les informations de santé et de remboursement sont celles <strong>annoncées dans le reportage</strong> (« depuis le 15 juin » ; l'année n'est pas donnée dans la transcription). Pour toute décision, consultez un professionnel de santé et vérifiez les règles en vigueur sur des sources officielles.</p>"},
+  {t:"callout", ct:"Note — la transcription automatique de la vidéo", h:"<p>Les sous-titres générés par YouTube déforment plusieurs mots. Formes à retenir : <strong>Ozempic</strong> (et non « osampique »), <strong>Mounjaro</strong> (et non « manjaro », « Munjaro », « Monjar »), <strong>Wegovy</strong> (et non « Wegovi »), « <strong>baisser</strong> » le taux de sucre (et non « baiser »), « des <strong>nausées</strong> », les <strong>douaniers</strong> de <strong>Roissy</strong> (et non « douigners », « Roissie »), l'hôpital <strong>Bichat</strong> (et non « Bicha »), un <strong>coupe-faim</strong>, « pouvant présenter » (et non « épouvant présenter »).</p><p><strong>À vérifier à l'écoute</strong> : le troisième nom de marque (« RA ») ; le nom du docteur de Marseille (« Caldi ») ; le nom du vendeur (« Pharmacenter ») ; les noms des journalistes ; deux nombres de <em>semaines</em> non transcrits (influenceuse, clinique de Washington) ; la phrase de 6:00 sur le remboursement, incomplète ; la phrase de 9:47 sur les pharmacies, hésitante.</p>"}
+ ]
+},
+{
+ id:"lex", title:"Le lexique essentiel", time:"9 min",
+ lede:"Cliquez sur une carte pour révéler la définition. Les définitions sont en français. Ne mémorisez pas : familiarisez-vous. Puis dites les chiffres à voix haute : c'est ce qui bloque le plus souvent à l'écoute.",
+ blocks:[
+  {t:"cards", k:"lx", groups:[
+   {name:"Le corps et le traitement", items:[
+    ["un médicament","une substance qui soigne ou traite une maladie"],
+    ["une piqûre / une injection","un médicament qu'on injecte avec une aiguille"],
+    ["une molécule","la substance active d'un médicament"],
+    ["la faim / la satiété","l'envie de manger / le sentiment d'avoir assez mangé"],
+    ["grignoter / le grignotage","manger de petites quantités entre les repas"],
+    ["un effet indésirable / secondaire","une conséquence négative d'un médicament"],
+    ["une nausée","l'envie de vomir"],
+    ["une pancréatite","une inflammation du pancréas"]
+   ]},
+   {name:"Santé et argent", items:[
+    ["l'obésité / le surpoids","un poids très élevé / un poids un peu trop élevé"],
+    ["rembourser / un remboursement","rendre l'argent dépensé (ici, l'Assurance maladie)"],
+    ["la prise en charge","l'organisation et le paiement des soins"],
+    ["payer de sa poche","payer soi-même, sans remboursement"],
+    ["un tarif","le prix d'un service ou d'un produit"],
+    ["un marché lucratif","un marché qui rapporte beaucoup d'argent"],
+    ["démocratiser","rendre accessible au plus grand nombre"],
+    ["une ordonnance","le papier du médecin qui prescrit un médicament"]
+   ]},
+   {name:"Le marché parallèle", items:[
+    ["une arnaque","une tromperie pour voler de l'argent"],
+    ["la contrefaçon / contrefait","l'imitation illégale d'un produit"],
+    ["détourné de son usage","utilisé pour un autre but que prévu"],
+    ["un colis / une saisie","un paquet / la confiscation par les autorités"],
+    ["les douaniers","les agents qui contrôlent les marchandises aux frontières"],
+    ["une fausse ordonnance","une ordonnance qui n'a pas été écrite par le médecin indiqué"],
+    ["usurper une identité","se faire passer pour quelqu'un d'autre"],
+    ["un virement","un transfert d'argent d'un compte à un autre"]
+   ]},
+   {name:"Alimentation et produits", items:[
+    ["les protéines / les fibres","des éléments nutritifs (viande, œufs / céréales complètes)"],
+    ["le gras / le sucre","des éléments des aliments qu'on essaie de limiter"],
+    ["un rayon","la partie d'un supermarché consacrée à une famille de produits"],
+    ["une étiquette","le papier collé sur un produit avec ses informations"],
+    ["une recette","la liste des ingrédients et la méthode de préparation"],
+    ["adapté à","conçu pour convenir à"],
+    ["un parfum sucré","une odeur de sucre, de fraise, de lait…"],
+    ["un coupe-faim","un produit qui supprime l'envie de manger"]
+   ]},
+   {name:"Huit tournures du reportage", items:[
+    ["au point que","à tel degré que : le succès est tel que…"],
+    ["il faut dire que","pour justifier ou nuancer ce qu'on vient de dire"],
+    ["faire fureur","avoir un énorme succès"],
+    ["flairer un marché","sentir une opportunité commerciale"],
+    ["payer de sa poche","payer sans remboursement"],
+    ["avec à la clé…","avec comme conséquence…"],
+    ["en toute illégalité","sans respecter la loi"],
+    ["tirer les fils","enquêter pas à pas pour comprendre"]
+   ]}
+  ]},
+  {t:"card", h3:"Micro-exercice d'appropriation", sub:"Complétez avec un mot du lexique, puis vérifiez.", blocks:[
+   {t:"gaps", k:"lxg", fields:[
+    {k:"g1", label:"Le médecin écrit une … pour prescrire le médicament.", answers:["ordonnance"], sol:"ordonnance"},
+    {k:"g2", label:"Les douaniers ont fait une … de colis suspects.", answers:["saisie"], sol:"saisie"},
+    {k:"g3", label:"Un produit qui supprime la faim, c'est un … .", answers:["coupe-faim","coupe faim","coupefaim"], sol:"coupe-faim"},
+    {k:"g4", label:"Une imitation illégale d'un médicament, c'est une … .", answers:["contrefacon"], sol:"contrefaçon"},
+    {k:"g5", label:"Elle paie ce traitement de sa … : il n'est pas remboursé.", answers:["poche"], sol:"poche"},
+    {k:"g6", label:"Le vendeur exige un … avant de rencontrer les journalistes.", answers:["virement"], sol:"virement"},
+    {k:"g7", label:"Ce parfum à la pistache … fureur cette année.", answers:["fait"], sol:"fait"}
+   ]}
+  ]},
+  {t:"callout", ct:"Les chiffres à dire à voix haute", h:"<p>Dites chaque chiffre une fois, lentement, puis une fois à vitesse normale. Ce sont ceux du reportage : <strong>cinquante-neuf</strong> kilos · <strong>cinquante-sept</strong> kilos · <strong>vingt-huit</strong> millions · <strong>huit cent cinquante</strong> pour cent · <strong>trois cents</strong> dollars · <strong>deux cent soixante</strong> euros · <strong>cinq cent quatre-vingts</strong> millions de dollars · <strong>quinze</strong> pour cent · <strong>cent quatre-vingts</strong> et <strong>quatre cent trente-cinq</strong> euros · <strong>dix-sept</strong> mois · <strong>quarante-trois</strong> kilos · <strong>huit</strong> millions.</p><p><em>GLP-1</em> se dit « gé-èl-pé-un ».</p>"},
+  {t:"timer", sec:60, label:"Chrono — 60 secondes", note:"Utilisez au moins cinq mots du lexique."},
+  {t:"card", blocks:[
+   {t:"open", k:"lx1", n:"", starters:["Un médicament qui coupe la faim,…","Les industriels ont flairé…","Payer de sa poche,…"],
+    q:"Parlez 60 secondes du sujet « santé, marché et argent » en utilisant au moins cinq mots ou expressions du lexique.",
+    hint:"À voix haute d'abord. Notez ensuite les mots que vous avez utilisés.",
+    model:"« Les médicaments qui coupent la faim ont changé le marché : les industriels ont flairé une opportunité et ils adaptent leurs recettes. Mais le traitement n'est pas remboursé pour tout le monde : beaucoup de gens doivent payer de leur poche. Et comme le marché est lucratif, il y a aussi des arnaques. »"}
+  ]},
+  {t:"callout", ct:"Pièges possibles — si votre langue est l'espagnol ou l'italien", h:"<p>À consulter seulement si cela vous concerne ; l'équivalent dans votre langue peut aider ou piéger.</p><ul style='margin:0;padding-left:18px'><li><strong>une ordonnance</strong> (la prescription du médecin) ≠ <strong>une recette</strong> (cuisine). ES/IT : <em>receta / ricetta</em> couvre les deux.</li><li><strong>un médicament</strong> ≠ <strong>la médecine</strong> ≠ <strong>un médecin</strong>. IT : <em>medicina</em> peut signifier le médicament ; en français, ce serait <em>un médicament</em>.</li><li><strong>une piqûre</strong> : le mot courant pour une injection ; ES <em>pinchazo</em>, IT <em>puntura</em>.</li><li><strong>un régime</strong> : ici, un <em>régime alimentaire</em> (ES/IT <em>dieta</em>).</li><li><strong>une arnaque</strong> : ES <em>estafa</em>, IT <em>truffa</em>.</li><li><strong>les douaniers</strong> : ES <em>aduaneros</em>, IT <em>doganieri</em>.</li><li><strong>rembourser</strong> : ES <em>reembolsar</em>, IT <em>rimborsare</em> ; <strong>l'Assurance maladie</strong> est l'organisme public français, pas une assurance privée.</li></ul>"}
+ ]
+},
+{
+ id:"glob", title:"1ᵉʳ visionnage — la vue d'ensemble", time:"12 min",
+ lede:"Lisez d'abord les questions, puis lancez la vidéo en entier. Ne revenez jamais en arrière pendant ce premier passage : le but est de suivre le fil, pas de tout comprendre. Notez ensuite dans quelles conditions vous avez répondu.",
+ blocks:[
+  {t:"play", sec:0, label:"Lancer la vidéo depuis le début", note:"environ 10 min · sans sous-titres, sans pause"},
+  {t:"card", h3:"A. L'idée centrale", blocks:[
+   {t:"timer", sec:60, label:"Chrono — 60 secondes", note:"Parlez d'abord, sans lire vos notes."},
+   {t:"open", k:"g1", n:"1", starters:["Ce reportage explique que…","D'abord,…","Ensuite,…","Enfin,…"],
+    q:"En quelques phrases : de quoi parle ce reportage ? Quelles sont les grandes parties ?",
+    hint:"À voix haute d'abord (60 s). Puis 3 à 5 mots-clés.",
+    model:"« Ce reportage explique comment les médicaments GLP-1 changent la vie des patients et le marché. D'abord, il part d'un témoin américain, puis il montre comment l'industrie s'adapte. Ensuite, il explique la situation en France : efficacité, risques et prix. Enfin, il montre le marché parallèle : arnaques, colis saisis, fausses ordonnances. »"},
+   {t:"open", k:"g2", n:"2", starters:["Le témoin dit que…","Le médecin explique que…","Les douaniers…"],
+    q:"Citez trois personnes ou groupes qui parlent dans le reportage et dites ce que chacun apporte.",
+    hint:"À voix haute d'abord (60 s). Puis notez les trois noms.",
+    model:"« Le témoin américain raconte sa transformation : c'est un témoignage personnel. Le médecin explique comment fonctionne le médicament et quels sont les risques. Les douaniers montrent le marché parallèle : ils donnent des faits sur les saisies. »"}
+  ]},
+  {t:"card", h3:"B. La structure du reportage", sub:"Cliquez sur les moments dans leur ordre d'apparition.", blocks:[
+   {t:"order", k:"g3", prompt:"Remettez les sept moments dans l'ordre du reportage.",
+    items:[
+     {id:"A", label:"Les douaniers de Roissy et les colis saisis"},
+     {id:"B", label:"Une fausse ordonnance repérée à l'hôpital"},
+     {id:"C", label:"Un comptable américain qui a perdu 59 kg"},
+     {id:"D", label:"La demande de « la piqûre » dans un cabinet de Marseille"},
+     {id:"E", label:"Les « trois infos pour comprendre » : efficacité, risques, prix"},
+     {id:"F", label:"Les marques et les cliniques américaines qui s'adaptent"},
+     {id:"G", label:"Un vendeur en ligne qui propose un produit non autorisé"}
+    ],
+    solution:["C","F","E","D","G","A","B"]}
+  ]},
+  {t:"card", h3:"C. Les chiffres et les sigles", sub:"Associez chaque élément à ce qu'il désigne dans le reportage.", blocks:[
+   {t:"match", k:"g4",
+    options:["la molécule sécrétée par les intestins","le poids perdu par le comptable américain","le nombre d'Américains qui utilisent ces médicaments","la perte moyenne en un an de traitement","le prix du traitement en France, par mois","la date à partir de laquelle deux médicaments peuvent être remboursés en France","le nombre de personnes touchées par l'obésité en France","l'économie annuelle de carburant calculée par les compagnies aériennes"],
+    rows:[
+     {left:"le GLP-1", answer:"la molécule sécrétée par les intestins"},
+     {left:"59 kg", answer:"le poids perdu par le comptable américain"},
+     {left:"28 millions", answer:"le nombre d'Américains qui utilisent ces médicaments"},
+     {left:"15 %", answer:"la perte moyenne en un an de traitement"},
+     {left:"180 à 435 €", answer:"le prix du traitement en France, par mois"},
+     {left:"le 15 juin", answer:"la date à partir de laquelle deux médicaments peuvent être remboursés en France"},
+     {left:"8 millions", answer:"le nombre de personnes touchées par l'obésité en France"},
+     {left:"580 millions de dollars", answer:"l'économie annuelle de carburant calculée par les compagnies aériennes"}
+    ]}
+  ]},
+  {t:"card", h3:"D. Dans quelles conditions ai-je compris ?", sub:"Répondez honnêtement : une réponse après réécoute ou avec les sous-titres n'a pas la même valeur qu'une réponse sans aide.", blocks:[
+   {t:"scale", k:"g5", cols:["Sans aide","Après une réécoute","Avec sous-titres ou résumé"], rows:[
+    "Dire l'idée centrale du reportage",
+    "Retrouver les chiffres (kg, %, €)",
+    "Reconnaître qui parle (témoin, médecin, douanier)",
+    "Suivre le récit de l'enquête (partie sur le marché parallèle)"
+   ]},
+   {t:"open", k:"g6", n:"", starters:["Ce qui m'a le plus gêné, c'est…","J'ai décroché au moment où…","En revanche, j'ai bien suivi…"],
+    q:"Qu'est-ce qui a été le plus difficile : le débit, les chiffres, les noms propres, les enchaînements sans pause, le vocabulaire médical ?",
+    hint:"Soyez précis : « les passages où il enchaîne trois chiffres » est exploitable ; « l'écoute » est trop vague."}
+  ]}
+ ]
+},
+{
+ id:"s1", title:"Séance 1 — Les États-Unis", time:"50 min",
+ lede:"Un témoignage américain, une industrie qui s'adapte, un prix. Cette séance est faite pour parler : écouter un extrait, le redire, le reformuler, puis réagir. Le formateur écoute, relance et ne corrige qu'un point à la fois.",
+ blocks:[
+  {t:"callout", ct:"Minutage de la séance 1 (50 minutes)", h:"<ul style='margin:0;padding-left:18px'><li><strong>0–5</strong> · Échauffement : ce que j'ai retenu (60 s) et une question du formateur.</li><li><strong>5–25</strong> · Segments 1 à 3 : écoute d'un extrait, puis trois questions orales par segment.</li><li><strong>25–33</strong> · Deux phrases clés : écouter, imiter, réemployer.</li><li><strong>33–47</strong> · Parler trois fois : le récit du témoin, devant trois publics.</li><li><strong>47–50</strong> · Bilan : ma cible pour la séance 2.</li></ul><p style='margin-top:8px'>Si le temps manque : un seul extrait de phrase clé, et deux passages au lieu de trois.</p>"},
+  {t:"card", h3:"0–5 min · Échauffement", sub:"Sans notes. Le formateur pose ensuite une question de relance.", blocks:[
+   {t:"timer", sec:60, label:"Chrono — 60 secondes", note:"Parlez jusqu'à la fin du chrono."},
+   {t:"open", k:"s1w", n:"", starters:["Ce que j'ai retenu, c'est…","Ce qui m'a le plus surpris(e),…","Ce que je n'ai pas bien compris,…"],
+    q:"En 60 secondes : qu'avez-vous retenu du reportage ? Quel moment vous a le plus surpris(e), et pourquoi ?",
+    hint:"À voix haute. Le formateur peut relancer : « Pourquoi ? », « Un exemple ? »",
+    model:"« Ce que j'ai retenu, c'est que ces médicaments changent non seulement la santé des patients, mais aussi le marché. Ce qui m'a le plus surpris, c'est les parfums sucrés : des gens qui sentent le sucre plutôt que de le manger. »"}
+  ]},
+  {t:"callout", ct:"5–25 min · Segments 1 à 3 (2ᵉ visionnage)", h:"<p>Pour chaque segment : <strong>1.</strong> écoutez l'extrait (liens horodatés) et répondez aux vrai/faux ou aux trous ; <strong>2.</strong> vérifiez avec le résumé, <strong>après</strong> l'écoute ; <strong>3.</strong> parlez à voix haute, 45 secondes par question ; <strong>4.</strong> lisez le focus langue en dernier. Pauses et sous-titres autorisés à partir d'ici.</p>"},
+  segCard(SEGS[0], 0),
+  segCard(SEGS[1], 1),
+  segCard(SEGS[2], 2),
+  {t:"callout", ct:"25–33 min · Deux phrases clés", h:"<p>Deux phrases du reportage qui contiennent des structures très utiles pour raconter et expliquer.</p>"},
+  CLIP_METHOD,
+  CLIPS[0],
+  CLIPS[1]
+ ].concat([
+  {t:"callout", ct:"33–47 min · Parler trois fois", h:"<p>Même contenu, trois publics, de moins en moins de temps. Vous gardez les idées et vous gagnez en continuité, sans réciter.</p>"}
+ ]).concat(talk3("s1", {
+   consigne:"<p>Racontez <strong>l'histoire de Christopher Sanford</strong> : qui est-il, ce qui a changé pour lui, ce qu'il achète maintenant, et pourquoi son cas ne suffit pas à tout prouver. Trois publics, trois durées :</p><ul style='margin:0;padding-left:18px'><li>Passage 1 : à <strong>un collègue</strong> qui n'a pas vu la vidéo (1 min 30).</li><li>Passage 2 : à <strong>un cadre pressé</strong> : version courte (1 min).</li><li>Passage 3 : à <strong>un ami</strong>, avec votre avis (45 s).</li></ul>",
+   carte:"<ol style='margin:0;padding-left:18px'><li>Qui ? comptable à New York · 3 ans de traitement · 59 kg</li><li>Avant / maintenant : épuisant de marcher → il préfère marcher</li><li>Plus d'envies, le gras et le sucre le dégoûtent</li><li>Ses courses : protéines, fibres, tortillas « adaptées »</li><li>Limite : un seul témoin, pas une étude</li></ol>",
+   passes:[
+    {titre:"à un collègue", sub:"Vous expliquez tout, avec des connecteurs.", sec:90, label:"1 min 30", note:"Parlez jusqu'à la fin du chrono, même avec des pauses.",
+     starters:["Je voudrais te raconter l'histoire de…","Avant,… Maintenant,…","Ce qui est intéressant,…","En revanche,…"],
+     q:"Racontez l'histoire de Christopher Sanford à un collègue qui ne connaît pas le reportage.",
+     model:"« Je voudrais te raconter l'histoire de Christopher, un comptable américain. Depuis trois ans, il s'injecte un médicament et il a perdu 59 kilos. Avant, c'était épuisant pour lui de marcher. Maintenant, il préfère même marcher plutôt que prendre le métro. Il n'a plus d'envies irrépressibles et il choisit des produits avec plus de protéines et de fibres. En revanche, c'est un seul témoin : cela ne prouve pas que ce sera pareil pour tout le monde. »"},
+    {titre:"à un cadre pressé", sub:"Seulement l'essentiel : l'idée, un chiffre, la limite.", sec:60, label:"1 minute", note:"Ne répétez pas mot à mot le passage 1.",
+     starters:["En deux mots,…","Le résultat,…","La limite,…"],
+     q:"Même histoire en version courte, pour un cadre qui n'a que 1 minute : l'idée, un chiffre, la limite.",
+     model:"« En deux mots : un comptable américain a perdu 59 kilos en trois ans avec ce médicament, et ses habitudes ont changé. La limite : c'est un seul cas, pas une étude. »"},
+    {titre:"à un ami, avec mon avis", sub:"Plus personnel : vous dites ce que vous en pensez.", sec:45, label:"45 secondes", note:"Une seule idée, une opinion nette.",
+     starters:["Personnellement,…","Ce qui me frappe,…","À sa place,…"],
+     q:"Racontez-lui l'histoire en trois phrases et dites ce que vous en pensez.",
+     model:"« Personnellement, ce qui me frappe, c'est qu'il n'a plus envie des mêmes choses : ce n'est pas seulement une question de volonté. Mais je serais prudent(e) : un seul témoin ne suffit pas pour juger. »"}
+   ]
+ })).concat([
+  {t:"card", h3:"47–50 min · Bilan de la séance 1", sub:"Une chose à emporter, une cible pour la séance 2.", blocks:[
+   {t:"open", k:"s1b", n:"", starters:["La structure que je veux réemployer, c'est…","La séance prochaine, je veux mieux…"],
+    q:"Quelle structure de cette séance (<em>sans…, je n'aurais pas pu</em> · <em>il faut dire que</em> · <em>si + imparfait</em> · <em>au point que</em>) voulez-vous réemployer cette semaine ? Dans quelle phrase, sur quel sujet ?",
+    hint:"À voix haute à un collègue ou à vous-même ; notez la phrase."}
+  ]}
+ ])
+},
+{
+ id:"s2", title:"Séance 2 — La France", time:"50 min",
+ lede:"Le cœur du reportage : trois informations pour comprendre. Vous apprenez à les expliquer clairement, à juger la source d'une information, et à reprendre le même contenu devant trois publics.",
+ blocks:[
+  {t:"callout", ct:"Minutage de la séance 2 (50 minutes)", h:"<ul style='margin:0;padding-left:18px'><li><strong>0–4</strong> · Reprise : réemployer la structure de la séance 1.</li><li><strong>4–16</strong> · Segments 4 et 5 : trois questions orales par segment.</li><li><strong>16–24</strong> · Trois phrases clés : écouter, imiter, réemployer.</li><li><strong>24–31</strong> · Fait, témoignage, explication ou argument commercial ?</li><li><strong>31–46</strong> · Parler trois fois : expliquer les « trois infos » à un collègue.</li><li><strong>46–50</strong> · Bilan : ma cible pour la séance 3.</li></ul>"},
+  {t:"card", h3:"0–4 min · Reprise", sub:"Sans notes. Le formateur choisit un thème.", blocks:[
+   {t:"timer", sec:90, label:"Chrono — 1 min 30", note:"Utilisez la structure que vous aviez choisie à la fin de la séance 1."},
+   {t:"open", k:"s2w", n:"", starters:["Sans…, je n'aurais pas pu…","Il faut dire que…","Si… étaient…, …"],
+    q:"Redites votre phrase de la séance 1, puis donnez-en une deuxième sur un autre sujet avec la même structure.",
+    hint:"À voix haute. Le formateur peut proposer un thème : le travail, la ville, un outil."}
+  ]},
+  {t:"callout", ct:"4–16 min · Segments 4 et 5 (2ᵉ visionnage)", h:"<p>Même méthode : écouter l'extrait, vérifier avec le résumé après l'écoute, parler 45 secondes par question, lire le focus langue en dernier.</p>"},
+  segCard(SEGS[3], 3),
+  segCard(SEGS[4], 4),
+  {t:"callout", ct:"16–24 min · Trois phrases clés", h:"<p>Trois phrases du reportage, utiles pour annoncer un plan, opposer deux idées et conclure.</p>"},
+  CLIP_METHOD,
+  CLIPS[2],
+  CLIPS[3],
+  CLIPS[4],
+  {t:"callout", ct:"24–31 min · Fait, témoignage, explication ou argument commercial ?", h:"<p>Le reportage mêle des <strong>chiffres</strong>, des <strong>témoignages</strong>, des <strong>explications d'expert</strong> et des <strong>arguments commerciaux</strong>. Les distinguer à l'oreille est une compétence de compréhension, mais aussi de prudence : savoir <em>qui parle</em> et <em>dans quel intérêt</em>.</p>"},
+  {t:"card", h3:"Les quatre types", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+     "<li><strong>Donnée chiffrée</strong> — un chiffre, une proportion, un prix. <em>Question utile : d'où vient-il ? Est-il mesuré ou calculé ?</em></li>"+
+     "<li><strong>Témoignage personnel</strong> — « moi », « pour moi », une expérience ou une impression. <em>Un cas, pas une règle.</em></li>"+
+     "<li><strong>Explication médicale</strong> — un mécanisme, un effet, un risque, expliqués par un spécialiste ou par le journaliste.</li>"+
+     "<li><strong>Argument commercial</strong> — une marque ou un vendeur qui présente son produit ou sa stratégie. <em>Qui a intérêt à le dire ?</em></li>"+
+     "</ul></div>"}
+  ]},
+  {t:"card", h3:"À vous de classer", sub:"Le signal linguistique est mis en évidence : c'est votre indice principal.", blocks:[
+   {t:"classify", k:"cl1",
+    cats:["Donnée chiffrée","Témoignage personnel","Explication médicale","Argument commercial"],
+    items:[
+     {q:"« Plus d'un Américain sur 10 l'utilise. <b>28 millions de personnes.</b> »", a:"Donnée chiffrée"},
+     {q:"« <b>C'est un peu un médicament miracle pour moi.</b> »", a:"Témoignage personnel"},
+     {q:"« C'est elle qui dit au pancréas : il faut <b>baisser le taux de sucre</b> dans le sang. »", a:"Explication médicale"},
+     {q:"« Vous l'allumez, ça devient rouge. <b>Plus de 500 € le casque</b> et ça stimule votre cuir chevelu. »", a:"Argument commercial"},
+     {q:"« Mais leurs besoins nutritifs <b>n'ont pas disparu, ils ont juste évolué</b>. » (une marque, à la télévision)", a:"Argument commercial"},
+     {q:"« <b>Le prix qu'on paye</b>, c'est pour la beauté, et oui, c'est cher. »", a:"Témoignage personnel"},
+     {q:"« Ils font aussi fondre les muscles : <b>plus d'un quart de la perte de poids</b>, c'est du muscle, pas de la graisse. »", a:"Explication médicale"},
+     {q:"« Les compagnies aériennes américaines <b>ont calculé</b> qu'elles pourraient économiser 580 millions de dollars. »", a:"Donnée chiffrée"},
+     {q:"« <b>Moi, c'est 10 à 20 %</b> de gens qui arrivent et qui me disent : je veux la piqûre. » (un médecin, de son expérience)", a:"Témoignage personnel"},
+     {q:"« <b>Selon le dosage</b>, le traitement coûte aux alentours de 300 € par mois. »", a:"Donnée chiffrée"}
+    ]}
+  ]},
+  {t:"card", h3:"Trois questions pour vérifier avant de croire", sub:"À dire à voix haute, avec politesse.", blocks:[
+   {t:"timer", sec:60, label:"Chrono — 60 secondes", note:"Formulez les trois questions à voix haute, puis testez-les sur un chiffre du reportage."},
+   {t:"open", k:"dis2", n:"", starters:["D'où vient ce chiffre ?","Est-ce un cas isolé ou une tendance ?","Qui a intérêt à le dire ?"],
+    q:"Choisissez un chiffre ou une affirmation du reportage et posez trois questions pour la vérifier avant de la répéter à un collègue.",
+    hint:"À voix haute d'abord. Exemple de départ : les 580 millions de dollars des compagnies aériennes.",
+    model:"« D'où vient ce chiffre ? Ce sont les compagnies aériennes qui l'ont calculé, pas un organisme indépendant. Est-ce un fait ou une hypothèse ? C'est une hypothèse : ‘si les passagers étaient plus minces’. Et qui a intérêt à le dire ? Les compagnies elles-mêmes, peut-être pour justifier des demandes de leur côté. »"}
+  ]}
+ ].concat([
+  {t:"callout", ct:"31–46 min · Parler trois fois", h:"<p>Même contenu, trois publics, de moins en moins de temps. Cette fois, vous devez <strong>enchaîner trois idées</strong> avec des connecteurs : efficacité, risques, prix.</p>"}
+ ]).concat(talk3("s2", {
+   consigne:"<p>Expliquez les <strong>« trois infos pour comprendre »</strong> du reportage : l'efficacité, les risques, le prix. Trois publics, trois durées :</p><ul style='margin:0;padding-left:18px'><li>Passage 1 : à <strong>un collègue</strong> qui doit en parler en réunion (2 min).</li><li>Passage 2 : à <strong>un cadre pressé</strong> : l'essentiel (1 min 30).</li><li>Passage 3 : à <strong>un ami</strong> inquiet : une conclusion prudente (1 min).</li></ul>",
+   carte:"<ol style='margin:0;padding-left:18px'><li>Depuis le 15 juin : deux médicaments remboursés (certains patients)</li><li>1ʳᵉ info : efficacité · jusqu'à 15 % du poids en un an · molécule GLP-1</li><li>2ᵉ info : risques · troubles digestifs une fois sur deux · pancréatite, plus rare · muscle</li><li>3ᵉ info : prix · 180 à 435 € par mois · remboursé si obésité importante</li><li>Conclusion : à réserver à ceux qui en ont vraiment besoin</li></ol>",
+   passes:[
+    {titre:"à un collègue", sub:"Vous expliquez les trois infos avec des connecteurs.", sec:120, label:"2 minutes", note:"Parlez jusqu'à la fin du chrono. Une pause pour chercher un mot est normale.",
+     starters:["Le reportage donne trois informations.","La première, c'est que…","La deuxième concerne…","En revanche,…","Pour conclure,…"],
+     q:"Expliquez à un collègue les trois informations : efficacité, risques, prix, et dites à qui ces médicaments sont destinés.",
+     model:"« Le reportage donne trois informations. La première, c'est que ces médicaments sont très efficaces : ils peuvent faire perdre jusqu'à 15 % du poids de départ en un an. La deuxième concerne les risques : une fois sur deux, des troubles digestifs, et plus rarement une pancréatite. Ils font aussi fondre les muscles. La troisième, c'est le prix : entre 180 et 435 euros par mois. En revanche, il y a du remboursement pour l'obésité importante. Pour conclure, ce sont des médicaments à réserver à ceux qui en ont vraiment besoin. »"},
+    {titre:"à un cadre pressé", sub:"L'essentiel en 1 min 30 : un chiffre par info.", sec:90, label:"1 min 30", note:"Un chiffre par information, pas plus.",
+     starters:["En résumé,…","Un chiffre à retenir :…","Le point d'attention,…"],
+     q:"Même contenu en version courte : un chiffre par information, et la conclusion.",
+     model:"« En résumé : c'est efficace, jusqu'à 15 % du poids en un an. Mais il y a des risques, des troubles digestifs une fois sur deux. Et c'est cher : de 180 à 435 euros par mois. Conclusion : à réserver aux cas d'obésité importante. »"},
+    {titre:"à un ami inquiet", sub:"Une conclusion prudente : vous ne donnez pas de conseil médical.", sec:60, label:"1 minute", note:"Parlez simplement, sans jargon.",
+     starters:["Ce que dit le reportage, c'est que…","Le plus important,…","Le mieux, c'est d'en parler à…"],
+     q:"Un ami pense à prendre ce type de médicament. Dites-lui, avec prudence, ce que le reportage explique, sans lui donner de conseil médical.",
+     model:"« Ce que dit le reportage, c'est que c'est efficace mais que ce n'est pas sans risques, et que c'est cher. Le plus important, c'est que ce n'est pas pour tout le monde. Le mieux, c'est d'en parler à un médecin : lui seul peut dire si c'est adapté. »"}
+   ]
+ })).concat([
+  {t:"card", h3:"46–50 min · Bilan de la séance 2", sub:"Une cible pour la séance 3.", blocks:[
+   {t:"open", k:"s2b", n:"", starters:["Ce que j'ai mieux réussi,…","Ma cible pour la séance 3,…"],
+    q:"Qu'avez-vous mieux réussi entre le passage 1 et le passage 3 ? Quelle est votre cible pour la séance 3 ?",
+    hint:"À voix haute à un collègue ou à vous-même ; notez deux phrases."}
+  ]}
+ ])
+},
+{
+ id:"s3", title:"Séance 3 — Le marché parallèle", time:"50 min",
+ lede:"Un récit d'enquête, puis le passage à l'interaction : comprendre l'autre, confirmer, demander de répéter, relancer. Vous terminez par un avis argumenté et par un transfert vers un sujet nouveau, sans notes.",
+ blocks:[
+  {t:"callout", ct:"Minutage de la séance 3 (50 minutes)", h:"<ul style='margin:0;padding-left:18px'><li><strong>0–4</strong> · Reprise : mes trois infos en 1 minute 30.</li><li><strong>4–20</strong> · Segments 6 à 9 : l'enquête, de Marseille à l'hôpital.</li><li><strong>20–32</strong> · Interagir et réparer : confirmer, demander de répéter, deux jeux de rôle.</li><li><strong>32–44</strong> · Mon avis argumenté, puis un transfert sur un sujet nouveau.</li><li><strong>44–50</strong> · Bilan et rendez-vous à J+7 (étape suivante).</li></ul>"},
+  {t:"card", h3:"0–4 min · Reprise", sub:"Sans notes.", blocks:[
+   {t:"timer", sec:90, label:"Chrono — 1 min 30", note:"Les trois infos, de mémoire."},
+   {t:"open", k:"s3w", n:"", starters:["La première, c'est que…","La deuxième concerne…","La troisième,…"],
+    q:"Redites de mémoire les trois informations pour comprendre (efficacité, risques, prix), avec vos mots.",
+    hint:"À voix haute. Le formateur ne vous aide qu'après le chrono.",
+    model:"« La première, c'est que c'est efficace : jusqu'à 15 % du poids en un an. La deuxième concerne les risques : troubles digestifs et perte de muscle. La troisième, c'est le prix, entre 180 et 435 euros par mois. »"}
+  ]},
+  {t:"callout", ct:"4–20 min · Segments 6 à 9 (2ᵉ visionnage)", h:"<p>Quatre segments courts : un cabinet, une arnaque, les douaniers, une fausse ordonnance. Même méthode : écouter l'extrait, vérifier avec le résumé après l'écoute, parler 45 secondes par question. Si le temps manque : segments 6 et 8 en séance, 7 et 9 en autonomie.</p>"},
+  segCard(SEGS[5], 5),
+  segCard(SEGS[6], 6),
+  segCard(SEGS[7], 7),
+  segCard(SEGS[8], 8),
+  {t:"callout", ct:"20–32 min · Interagir et réparer", h:"<p>Parler seul(e) est utile, mais interagir est une autre compétence : <strong>comprendre</strong> l'autre, <strong>confirmer</strong>, <strong>demander de répéter</strong>, <strong>relancer</strong>. À votre niveau, une stratégie très efficace consiste à <strong>reprendre une partie de ce que l'autre vient de dire</strong> pour confirmer que vous avez bien compris.</p>"},
+  {t:"card", h3:"Cinq formules pour réparer la conversation", sub:"À dire à voix haute, deux fois chacune.", blocks:[
+   {t:"note", h:"<div class='prose'><ul>"+
+    "<li><strong>Demander de répéter</strong> : « Pardon, je n'ai pas bien compris la fin. » · « Vous pouvez répéter, s'il vous plaît ? »</li>"+
+    "<li><strong>Demander de ralentir</strong> : « Vous pouvez parler un peu plus lentement, s'il vous plaît ? »</li>"+
+    "<li><strong>Reprendre pour confirmer</strong> : « Donc, vous dites que… ? » · « Si je comprends bien, … ? »</li>"+
+    "<li><strong>Demander une précision</strong> : « Vous voulez dire que… ? » · « C'est-à-dire ? »</li>"+
+    "<li><strong>Reformuler</strong> : « Autrement dit, … » · « En d'autres termes, … »</li></ul></div>"}
+  ]},
+  {t:"card", h3:"Exercice 1 — Confirmer en reprenant", sub:"Le formateur dit une phrase du reportage ; vous confirmez en la reprenant.", blocks:[
+   {t:"timer", sec:90, label:"Chrono — 1 min 30", note:"Quatre phrases, une confirmation chacune."},
+   {t:"open", k:"ic1", n:"", starters:["Donc, vous dites que…","Si je comprends bien,…","Vous voulez dire que…","Autrement dit,…"],
+    q:"Confirmez à voix haute en reprenant une partie de la phrase : <br>1. « Ils font aussi fondre les muscles. » <br>2. « Le vendeur exige d'abord un virement. » <br>3. « Les demandes affluent depuis quelques mois. » <br>4. « Le remboursement n'existe que pour l'obésité importante. »",
+    hint:"À voix haute d'abord. Notez ensuite la formule que vous avez le moins utilisée.",
+    model:"« 1. Donc, vous dites que ces médicaments font fondre les muscles ? 2. Si je comprends bien, il demande de l'argent avant de se rencontrer ? 3. Vous voulez dire qu'il y a de plus en plus de demandes ? 4. Autrement dit, ce n'est pas remboursé pour les autres cas ? »"}
+  ]},
+  {t:"card", h3:"Exercice 2 — Jeu de rôle : la consultation", sub:"Avec le formateur ou un partenaire. Rôle A : patient(e) ; rôle B : médecin.", blocks:[
+   {t:"note", h:"<div class='prose'><p><strong>Rôle A (patient·e)</strong> : vous voulez « la piqûre ». Demandez comment ça fonctionne, ce que cela coûte, si c'est remboursé. Vous devez <strong>demander de répéter au moins une fois</strong> et <strong>confirmer un chiffre</strong>.</p><p><strong>Rôle B (médecin)</strong> : expliquez le fonctionnement, les risques, le prix et les conditions de remboursement, en une phrase à la fois. Vous devez <strong>reformuler au moins une fois</strong>. Vous ne donnez pas de décision définitive : vous dites qu'un examen est nécessaire.</p><p><em>Consigne pour tous : ne lisez pas, regardez vos notes seulement si vous êtes bloqué(e).</em></p></div>"},
+   {t:"timer", sec:180, label:"Chrono — 3 minutes", note:"Jouez la scène, puis échangez les rôles si le temps le permet."},
+   {t:"open", k:"ic2", n:"", starters:["J'ai demandé de répéter quand…","J'ai confirmé le chiffre…","Ce qui m'a manqué,…"],
+    q:"Après la scène : quelle formule de réparation avez-vous utilisée ? Qu'est-ce qui vous a manqué ?",
+    hint:"Quelques mots suffisent : le formateur note un seul point à améliorer."}
+  ]},
+  {t:"card", h3:"Exercice 3 — Jeu de rôle : l'offre suspecte", sub:"Rôle A : vendeur en ligne ; rôle B : acheteur méfiant.", blocks:[
+   {t:"note", h:"<div class='prose'><p><strong>Rôle A (vendeur)</strong> : vous proposez un produit « miracle » sans ordonnance, moins cher qu'en pharmacie. Vous exigez un paiement par virement avant la rencontre.</p><p><strong>Rôle B (acheteur méfiant)</strong> : posez au moins <strong>trois questions de vérification</strong> (d'où vient le produit ? y a-t-il une autorisation ? pourquoi un virement avant ?) et <strong>reprenez</strong> une réponse du vendeur pour la confirmer. Concluez poliment que vous préférez passer par un médecin.</p></div>"},
+   {t:"timer", sec:180, label:"Chrono — 3 minutes", note:"Jouez la scène, puis échangez les rôles."},
+   {t:"open", k:"ic3", n:"", starters:["Mes trois questions étaient…","J'ai conclu en disant…"],
+    q:"Notez les trois questions de vérification que vous avez posées et la phrase par laquelle vous avez conclu.",
+    hint:"Gardez-les : elles servent de modèle pour votre travail.",
+    model:"« Mes trois questions : d'où vient ce produit ? Est-il autorisé à la vente ? Pourquoi faut-il payer avant de se voir ? J'ai conclu : je vous remercie, mais je préfère en parler à mon médecin. »"}
+  ]},
+  {t:"callout", ct:"32–44 min · Mon avis argumenté et un transfert", h:"<p>Deux tâches de parole plus libres : une opinion nuancée sur le reportage, puis la même méthode sur un sujet que vous n'avez pas préparé.</p>"},
+  {t:"card", h3:"A. Mon avis argumenté", sub:"Un sujet sensible : vous exprimez une position de langue, pas un avis médical.", blocks:[
+   {t:"timer", sec:90, label:"Chrono — 1 min 30", note:"Un avis, deux arguments, une nuance."},
+   {t:"open", k:"av1", n:"", starters:["À mon avis,…","D'un côté,… De l'autre,…","Premier argument :…","Cela dit,…"],
+    q:"Question : ces médicaments devraient-ils être remboursés plus largement ? Donnez votre avis avec deux arguments et une nuance.",
+    hint:"À voix haute d'abord. Vous pouvez défendre l'une ou l'autre position, ou dire que cela dépend. L'important : des arguments clairs.",
+    model:"« À mon avis, cela dépend de la gravité de l'obésité. D'un côté, pour les personnes en obésité importante, le bénéfice pour la santé peut être grand, donc un remboursement se justifie. De l'autre, le prix et les risques sont élevés : il faut un suivi médical. Cela dit, si les délais d'attente sont trop longs, on risque de pousser les gens vers le marché parallèle. »"}
+  ]},
+  {t:"card", h3:"B. Transfert : un sujet nouveau, sans notes", sub:"Mêmes outils, autre sujet, que vous n'avez pas préparé.", blocks:[
+   {t:"timer", sec:90, label:"Chrono — 1 min 30", note:"Un fait, un témoignage, un risque, votre avis."},
+   {t:"open", k:"av2", n:"", starters:["Un fait :…","Un témoin dirait que…","Le risque, c'est que…","À mon avis,…"],
+    q:"Choisissez une nouvelle habitude ou un nouveau produit qui change le marché dans votre domaine (outil d'intelligence artificielle, voiture électrique, paiement mobile…). Parlez 1 min 30 : un fait, un témoignage possible, un risque, votre avis.",
+    hint:"Sans notes. Utilisez au moins deux structures de ces séances (sans…, il faut dire que, en revanche, à réserver à…, si + imparfait).",
+    model:"« Un fait : de plus en plus de gens paient avec leur téléphone. Un témoin dirait que, sans ce système, il n'aurait pas pu payer son café le jour où il avait oublié son portefeuille. Le risque, c'est la sécurité des données. À mon avis, c'est pratique, à condition de bien protéger son compte. »"}
+  ]}
+ ]
+},
+{
+ id:"bil", title:"Bilan et rendez-vous à J+7", time:"6 min",
+ lede:"À remplir après la séance 3. Ce bilan sert à choisir vos priorités et à vérifier plus tard ce qui est resté.",
+ blocks:[
+  {t:"card", h3:"Mes trois expressions", sub:"Trois tournures du reportage, chacune dans une phrase sur votre travail ou votre vie.", blocks:[
+   {t:"open", k:"b1", n:"", starters:["1. Sans…, je n'aurais pas pu…","2. Il faut dire que…","3. En revanche, …","4. À mon avis, …"],
+    q:"Mes trois expressions à réemployer cette semaine :",
+    hint:"À voix haute d'abord, puis notez les trois phrases.",
+    model:"« 1. Sans cet outil, je n'aurais pas pu finir à temps. 2. Les ventes ont augmenté. Il faut dire que le prix a baissé. 3. Le projet est rentable. En revanche, il comporte des risques. »"}
+  ]},
+  {t:"card", h3:"Mes passages incompris", sub:"Deux moments précis où vous avez décroché. Nous les réécouterons ensemble.", blocks:[
+   {t:"open", k:"b2", n:"", starters:["Vers …:…, j'ai cru comprendre que…","J'ai complètement décroché à partir de…"],
+    q:"Indiquez le minutage et ce que vous avez cru comprendre."}
+  ]},
+  {t:"card", h3:"Mon auto-évaluation", blocks:[
+   {t:"scale", k:"b3", cols:["Difficile","Correct","À l'aise"], rows:[
+    "Suivre un reportage avec plusieurs voix et des chiffres",
+    "Raconter un témoignage de façon continue, même avec des pauses",
+    "Expliquer trois informations avec des connecteurs",
+    "Demander de répéter ou confirmer en reprenant ce que l'autre a dit",
+    "Distinguer à l'oreille fait, témoignage, explication et argument commercial",
+    "Donner un avis argumenté et nuancé"
+   ]}
+  ]},
+  {t:"card", h3:"Ce que je veux travailler en priorité", sub:"Une seule chose, et soyez précis.", blocks:[
+   {t:"open", k:"b4", n:"", starters:["Ce que je veux travailler en priorité, c'est…","Concrètement, j'aimerais arriver à…"],
+    q:"« L'oral » est trop vague. « Enchaîner trois idées sans m'arrêter » ou « demander de répéter sans bloquer » est exploitable."}
+  ]},
+  {t:"callout", ct:"Dans 7 jours — un rendez-vous avec vous-même (2 minutes)", h:"<p>Dans une semaine, <strong>sans relire vos notes</strong>, redites en 2 minutes : trois idées du reportage, deux chiffres, une structure que vous avez réemployée. Ensuite seulement, vérifiez ce que vous aviez retrouvé sans aide et ce que vous aviez oublié. Cet intervalle d'une semaine est un choix de conception : le formateur peut le raccourcir ou l'allonger.</p>"},
+  {t:"card", blocks:[
+   {t:"open", k:"b5", n:"", starters:["Sans relire, j'ai retrouvé…","J'ai oublié…","Ce qui m'a aidé(e)…"],
+    q:"À remplir à J+7 : qu'avez-vous retrouvé sans aide ? Qu'avez-vous oublié ?",
+    hint:"À voix haute d'abord (2 min), puis 3 mots-clés."}
+  ]},
+  {t:"callout", ct:"Avant la prochaine séance", h:"<p>L'objectif n'était pas de tout retenir, mais de <strong>pouvoir en parler</strong> : raconter, expliquer, réagir et interagir. Envoyez-moi votre récapitulatif (bouton ci-dessous) si vous le souhaitez ; en classe, nous partirons de vos réponses.</p>"},
+  {t:"export"}
+ ]
+},
+{
+ id:"form", title:"Espace formateur", time:"",
+ lede:"Pour le formateur : la grille d'observation, le plan en deux séances, les fondements de la méthode et ses limites.",
+ blocks:[
+  {t:"callout", ct:"Si vous n'avez que deux séances de 50 minutes", h:"<p><strong>Séance A</strong> : reprise (3 min) · segments 1, 2 et 4 (écoute courte, une question orale par segment, 12 min) · phrases clés 1, 3 et 5 (6 min) · classement des sources (5 min) · parler trois fois sur les « trois infos » (16 min) · bilan (3 min). <strong>Séance B</strong> : reprise (3 min) · segments 6 et 8 (8 min) · interaction (confirmer, deux jeux de rôle, 14 min) · avis argumenté (8 min) · transfert (10 min) · bilan et J+7 (4 min). Les segments non traités restent en autonomie (étape 1 et segments avec résumé).</p>"},
+  {t:"callout", ct:"Grille d'observation 0 / 1 / 2 — proposée, non standardisée", h:"<p>À remplir par le formateur pendant les passages et les jeux de rôle, avec des exemples ancrés dans des productions réelles. Aucun score automatique ; aucune note de « mélodie » ou de fluidité calculée par le programme.</p><ul style='margin:0;padding-left:18px'><li><strong>Sens transmis</strong> : 0 information importante erronée ou non identifiable · 1 idée principale identifiable mais détail ou chiffre ambigu · 2 idées et chiffres clés corrects.</li><li><strong>Continuité</strong> : 0 arrêts qui empêchent de suivre · 1 pauses de planification fréquentes mais l'idée reste suivie · 2 unités courtes enchaînées, pauses surtout aux frontières. <em>À B1, des pauses de planification visibles sont attendues.</em></li><li><strong>Adéquation et interaction</strong> : 0 réponse hors sujet ou aucune stratégie quand c'est bloqué · 1 réponse adaptée mais sans réparation · 2 réponse adaptée, avec confirmation, demande de répétition ou reformulation utiles. Une demande de répétition inutile n'est pas pénalisée.</li><li><strong>Cible de la séance</strong> : la structure choisie est-elle réemployée ? Oui / en partie / non.</li></ul>"},
+  {t:"reveal", label:"Afficher les fondements et les limites de la méthode", rt:"Choix de conception — étayés quand c'est indiqué, sinon à tester", h:
+   "<p><strong>Répétition de tâche avec public et durée qui changent.</strong> Une étude sur 60 apprenants d'anglais langue étrangère (Qiu, <em>Language Teaching Research</em>, 2020, titre exact à vérifier) rapporte que la répétition d'un monologue améliore la complexité, l'exactitude et la fluidité, y compris sur un sujet peu familier. Une autre étude (Tran et Saito, <em>Effects of the 4/3/2 Activity Revisited</em>, <em>Language Teaching Research</em>, référence complète à vérifier), sur 36 étudiants vietnamiens d'anglais, trouve avec la technique 4/3/2 accompagnée d'un retour correctif différé un gain de fluidité et sur une forme précise (passé irrégulier), mais pas sur les pauses internes aux propositions. Limites : petits effectifs, adultes jeunes en anglais, tâches de laboratoire. <em>La répétition n'est pas du transfert</em> : c'est pourquoi chaque séance se termine par un contenu nouveau (séance 3).</p>"+
+   "<p><strong>Imitation simultanée (shadowing).</strong> Hamada (<em>RELC Journal</em>, 2019) la définit comme une répétition immédiate de ce qu'on entend ; les effets documentés portent surtout sur la perception à l'écoute, ceux sur l'expression orale sont limités, la technique semble plus efficace chez les niveaux élevés et les études sont surtout menées en Asie, souvent sur un mois ou moins. Un mémoire de master d'Oxford (Whitworth, 2024, <em>Shadowing for pronunciation: a systematic review</em>) conclut à un effet probable sur l'intelligibilité et la compréhensibilité, avec peu de preuves sur les sons isolés. Ici, l'imitation reste <strong>facultative, brève et à tester</strong> avec chaque apprenant.</p>"+
+   "<p><strong>Descripteurs du CECR (tableau 3, aspects qualitatifs de la langue parlée).</strong> À B1, l'apprenant peut poursuivre de façon compréhensible malgré des pauses de planification et de réparation très visibles, surtout dans les productions longues ; il peut reprendre une partie de ce que dit l'interlocuteur pour confirmer la compréhension mutuelle ; il enchaîne des éléments simples en une suite linéaire. Cela justifie : ne pas pénaliser les pauses, enseigner la confirmation par reprise, travailler les connecteurs. Le CECR est un référentiel, pas une preuve d'efficacité d'une méthode.</p>"+
+   "<p><strong>Principes andragogiques</strong> (cadre de Knowles) : contenu utile et actuel, expérience de l'adulte mobilisée, autonomie dans la préparation, temps de classe réservé à ce qui exige un interlocuteur. C'est un cadre de conception, pas une preuve d'efficacité.</p>"+
+   "<p><strong>Reprise différée à J+7.</strong> Choix de conception inspiré des travaux sur la récupération espacée ; l'intervalle optimal n'est pas établi pour ce public.</p>"+
+   "<p><strong>Ce qui n'a pas été fait.</strong> Aucun effet mesuré chez des apprenants ; la vidéo n'a pas été écoutée par l'auteur du support (travail sur transcription : débit, voix et prosodie ne sont pas évalués) ; pas de relecture par un second francophone ; temps indiqués estimés, non chronométrés.</p>"},
+  {t:"callout", ct:"Rappels pour la séance", h:"<ul style='margin:0;padding-left:18px'><li>L'apprenant parle environ 60 à 70 % du temps de séance.</li><li>Un seul point de correction à la fois, différé : noter pendant, corriger après le passage.</li><li>Les pauses de recherche de mot sont normales à B1 : ne pas les interrompre.</li><li>Les enregistrements au téléphone restent chez l'apprenant ; ils ne sont pas transmis par cette page.</li><li>Sujet de santé : rester sur la langue ; ne jamais donner de conseil médical, renvoyer à un professionnel de santé.</li></ul>"}
+ ]
+}
+];
+
+
+
+/* ---------------- activity registry ---------------- */
+var ACTS = [];
+function reg(k){ if(ACTS.indexOf(k)<0) ACTS.push(k); }
+(function scan(){
+  function walk(bs){
+    bs.forEach(function(b){
+      if(b.t==="open") reg(b.k);
+      else if(b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale") reg(b.k);
+      else if(b.t==="gaps") reg(b.k);
+      else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ reg(x.k); }); }
+      else if(b.t==="card"&&b.blocks) walk(b.blocks);
+    });
+  }
+  STEPS.forEach(function(s){ walk(s.blocks); });
+})();
+
+function isDone(k){
+  var v = state.a[k];
+  if(v==null) return false;
+  if(typeof v === "string") return v.trim().length>2;
+  if(typeof v === "object") return Object.keys(v).length>0;
+  return false;
+}
+function stepDone(s){
+  var ks = stepKeys(s);
+  if(!ks.length) return false;
+  var n=0; ks.forEach(function(k){ if(isDone(k)) n++; });
+  return n >= Math.ceil(ks.length*0.7);
+}
+function stepKeys(s){
+  var out=[];
+  function walk(bs){ bs.forEach(function(b){
+    if(b.t==="open"||b.t==="tf"||b.t==="order"||b.t==="match"||b.t==="classify"||b.t==="scale"||b.t==="gaps"){ if(b.k) out.push(b.k); }
+    else if(b.t==="clip"){ (b.ex||[]).forEach(function(x){ out.push(x.k); }); }
+    else if(b.t==="card"&&b.blocks) walk(b.blocks);
+  });}
+  walk(s.blocks); return out;
+}
+
+/* ---------------- renderers ---------------- */
+function mkReveal(labelText, contentHTML){
+  var wrap = el("div");
+  var btn = el("button","btn btn-ghost small", labelText||"Voir une réponse possible");
+  var box = html("div","reveal","<div class='rt'>Réponse possible — un modèle, pas une correction</div>"+contentHTML);
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? (labelText||"Voir une réponse possible") : "Masquer";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+
+function rOpen(b){
+  var n = el("div","q");
+  var lbl = el("div","q-lbl");
+  if(b.n) lbl.appendChild(el("span","q-n", b.n+"."));
+  lbl.appendChild(html("div","q-t", b.q));
+  n.appendChild(lbl);
+  if(b.hint) n.appendChild(html("div","q-hint", b.hint));
+  var ta = el("textarea");
+  ta.id = "f_"+b.k;
+  ta.placeholder = "Votre réponse…";
+  ta.value = state.a[b.k] || "";
+  var flag = el("span","saved","enregistré");
+  function touched(){
+    state.a[b.k] = ta.value; saveSoon(); flag.classList.add("on");
+    clearTimeout(ta._t); ta._t = setTimeout(function(){ flag.classList.remove("on"); },1200);
+    updateProgress();
+  }
+  ta.addEventListener("input", touched);
+  if(b.starters && b.starters.length){
+    var sw = el("div","starters");
+    sw.appendChild(el("span","starters-lbl","Amorces — cliquez pour insérer"));
+    b.starters.forEach(function(st){
+      var bt = el("button","starter", st); bt.type = "button";
+      bt.setAttribute("aria-label", "Insérer l'amorce : "+st);
+      bt.addEventListener("click", function(){
+        var cur = ta.value;
+        ta.value = (cur && !/\s$/.test(cur) ? cur+" " : cur) + st + " ";
+        ta.focus();
+        try{ ta.setSelectionRange(ta.value.length, ta.value.length); }catch(e){}
+        touched();
+      });
+      sw.appendChild(bt);
+    });
+    n.appendChild(sw);
+  }
+  n.appendChild(ta);
+  var foot = el("div","row");
+  foot.appendChild(flag);
+  n.appendChild(foot);
+  if(b.model) n.appendChild(mkReveal(null, "<div>"+b.model+"</div>"));
+  return n;
+}
+
+function rTf(b){
+  var wrap = el("div","tf-list");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","tf-item");
+    var top = el("div","tf-top");
+    top.appendChild(html("div","tf-txt","<strong style='font-family:var(--mono);font-size:12px;color:var(--muted)'>"+(i+1)+"</strong> &nbsp;"+it.q));
+    var btns = el("div","tf-btns");
+    var verdict = html("div","verdict","");
+    verdict.hidden = true;
+    function apply(val){
+      store[i] = val; saveSoon();
+      bV.setAttribute("aria-pressed", val==="V"?"true":"false");
+      bF.setAttribute("aria-pressed", val==="F"?"true":"false");
+      var right = (val==="V") === it.a;
+      box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+      verdict.hidden = false;
+      verdict.innerHTML = "<span class='vi'>"+(right?"✓ Exact":"✗ Non")+"</span><span>"+it.j+"</span>";
+      updateProgress();
+    }
+    var bV = el("button","pick","Vrai"); bV.type="button"; bV.setAttribute("aria-pressed","false");
+    var bF = el("button","pick","Faux"); bF.type="button"; bF.setAttribute("aria-pressed","false");
+    bV.addEventListener("click", function(){ apply("V"); });
+    bF.addEventListener("click", function(){ apply("F"); });
+    btns.appendChild(bV); btns.appendChild(bF);
+    top.appendChild(btns);
+    box.appendChild(top); box.appendChild(verdict);
+    wrap.appendChild(box);
+    if(store[i]) apply(store[i]);
+  });
+  return wrap;
+}
+
+function rGaps(b){
+  var wrap = el("div","gaps");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var inputs = [];
+  b.fields.forEach(function(f){
+    var row = el("div","gap-row");
+    row.appendChild(html("div","gap-lbl", f.label));
+    var box = el("div","gap-in");
+    var inp = document.createElement("input");
+    inp.type="text"; inp.id = "f_"+b.k+"_"+f.k;
+    inp.value = store[f.k] || "";
+    inp.setAttribute("aria-label", f.label.replace(/<[^>]+>/g,""));
+    inp.addEventListener("input", function(){
+      store[f.k] = inp.value; inp.classList.remove("ok","no"); sol.textContent=""; saveSoon(); updateProgress();
+    });
+    box.appendChild(inp);
+    if(f.suf) box.appendChild(el("span","gap-suf", f.suf));
+    var sol = el("span","gap-sol","");
+    box.appendChild(sol);
+    row.appendChild(box);
+    wrap.appendChild(row);
+    inputs.push({inp:inp, f:f, sol:sol});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    inputs.forEach(function(o){
+      var right = matches(o.inp.value, o.f.answers);
+      o.inp.classList.toggle("ok", right); o.inp.classList.toggle("no", !right);
+      o.sol.textContent = right ? "✓" : ("→ "+o.f.sol);
+      o.sol.style.color = right ? "var(--ok)" : "var(--no)";
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rOrder(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="11px";
+  if(b.prompt) wrap.appendChild(html("div","q-t", b.prompt));
+  var slot = el("div","ord-slot");
+  var pool = el("div","ord-pool");
+  var chosen = (state.a[b.k] && state.a[b.k].seq) ? state.a[b.k].seq.slice() : [];
+  function render(){
+    slot.innerHTML=""; pool.innerHTML="";
+    if(!chosen.length){ slot.appendChild(el("span","ph","Cliquez les éléments dans l'ordre…")); }
+    chosen.forEach(function(id, i){
+      var it = b.items.filter(function(x){return x.id===id;})[0];
+      var s = el("div","seq");
+      s.appendChild(el("span","sn",(i+1)+"."));
+      s.appendChild(el("span",null,it.label));
+      slot.appendChild(s);
+    });
+    b.items.forEach(function(it){
+      var c = el("button","chip"); c.type="button";
+      c.innerHTML = "<span class='ck'>"+it.id+"</span>"+it.label;
+      if(chosen.indexOf(it.id)>=0) c.disabled = true;
+      c.addEventListener("click", function(){
+        chosen.push(it.id);
+        state.a[b.k] = {seq:chosen.slice()}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent="";
+        render(); updateProgress();
+      });
+      pool.appendChild(c);
+    });
+  }
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  var undo = el("button","btn btn-ghost","Recommencer");
+  var msg = el("span","small");
+  check.addEventListener("click", function(){
+    if(chosen.length !== b.solution.length){ msg.textContent="Placez d'abord tous les éléments."; msg.style.color="var(--muted)"; return; }
+    var right = chosen.join("") === b.solution.join("");
+    slot.classList.toggle("ok", right); slot.classList.toggle("no", !right);
+    msg.textContent = right ? "✓ C'est l'ordre du reportage." : ("✗ L'ordre est : "+b.solution.join(" → "));
+    msg.style.color = right ? "var(--ok)" : "var(--no)";
+  });
+  undo.addEventListener("click", function(){
+    chosen = []; state.a[b.k]={seq:[]}; saveSoon(); slot.classList.remove("ok","no"); msg.textContent=""; render(); updateProgress();
+  });
+  bar.appendChild(check); bar.appendChild(undo); bar.appendChild(msg);
+  wrap.appendChild(slot); wrap.appendChild(pool); wrap.appendChild(bar);
+  render();
+  return wrap;
+}
+
+function rMatch(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var sels = [];
+  b.rows.forEach(function(r, i){
+    var row = el("div","mt-row");
+    row.appendChild(html("div","mt-left", r.left));
+    var s = document.createElement("select");
+    s.id = "f_"+b.k+"_"+i;
+    s.setAttribute("aria-label", r.left);
+    var o0 = document.createElement("option"); o0.value=""; o0.textContent="— choisir —"; s.appendChild(o0);
+    b.options.forEach(function(op){
+      var o = document.createElement("option"); o.value=op; o.textContent=op; s.appendChild(o);
+    });
+    s.value = store[i] || "";
+    s.addEventListener("change", function(){ store[i]=s.value; s.classList.remove("ok","no"); saveSoon(); updateProgress(); });
+    row.appendChild(s);
+    wrap.appendChild(row);
+    sels.push({s:s, r:r});
+  });
+  var bar = el("div","row");
+  var check = el("button","btn","Vérifier");
+  check.addEventListener("click", function(){
+    sels.forEach(function(o){
+      var right = o.s.value === o.r.answer;
+      o.s.classList.toggle("ok", right); o.s.classList.toggle("no", !right);
+      if(!right && o.s.value) o.s.title = "Réponse attendue : "+o.r.answer;
+    });
+  });
+  bar.appendChild(check);
+  wrap.appendChild(bar);
+  return wrap;
+}
+
+function rClassify(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="10px";
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  b.items.forEach(function(it, i){
+    var box = el("div","cl-item");
+    box.appendChild(html("div","cl-q", it.q));
+    var opts = el("div","cl-opts");
+    var btns = [];
+    function paint(){
+      var v = store[i];
+      btns.forEach(function(x){ x.b.setAttribute("aria-pressed", x.c===v ? "true":"false"); });
+      if(v){
+        var right = v === it.a;
+        box.classList.toggle("ok", right); box.classList.toggle("no", !right);
+        fb.hidden = false;
+        fb.innerHTML = right ? "<span class='vi'>✓ Exact</span>" : "<span class='vi'>✗ Non</span><span>Il s'agit d'un énoncé de type « "+it.a+" ».</span>";
+      }
+    }
+    b.cats.forEach(function(c){
+      var bt = el("button","pick", c); bt.type="button"; bt.setAttribute("aria-pressed","false");
+      bt.style.minWidth="auto";
+      bt.addEventListener("click", function(){ store[i]=c; saveSoon(); paint(); updateProgress(); });
+      opts.appendChild(bt); btns.push({b:bt,c:c});
+    });
+    var fb = html("div","verdict",""); fb.hidden = true;
+    box.appendChild(opts); box.appendChild(fb);
+    wrap.appendChild(box);
+    paint();
+  });
+  return wrap;
+}
+
+function rCards(b){
+  var wrap = el("div");
+  wrap.style.display="flex"; wrap.style.flexDirection="column"; wrap.style.gap="22px";
+  b.groups.forEach(function(g, gi){
+    var grp = el("div","grp");
+    grp.appendChild(el("div","grp-h", g.name));
+    var grid = el("div","cgrid");
+    g.items.forEach(function(pair, ii){
+      var id = gi+"-"+ii;
+      var c = el("button","fc"); c.type="button";
+      var term = el("div","term", pair[0]);
+      var tap = el("div","tap","cliquer pour la définition");
+      var def = el("div","def", pair[1]); def.hidden = true;
+      var mark = el("span","fc-mark","?");
+      c.appendChild(mark); c.appendChild(term); c.appendChild(tap); c.appendChild(def);
+      function paint(){
+        var known = !!state.known[id];
+        c.classList.toggle("known", known);
+        mark.textContent = known ? "su" : "?";
+      }
+      c.addEventListener("click", function(){
+        if(def.hidden){ def.hidden=false; tap.hidden=true; }
+        else { state.known[id] = !state.known[id]; saveSoon(); paint(); }
+      });
+      paint();
+      grid.appendChild(c);
+    });
+    grp.appendChild(grid);
+    wrap.appendChild(grp);
+  });
+  wrap.appendChild(html("div","small muted","<em>Premier clic : la définition. Second clic : marquer la carte comme sue.</em>"));
+  return wrap;
+}
+
+function rClip(b){
+  var box = el("div","clip");
+  var head = el("div","clip-h");
+  head.appendChild(el("h3", null, b.title));
+  head.appendChild(tcLink(b.sec, "vers "+mmss(b.sec)));
+  box.appendChild(head);
+  var bq = el("blockquote"); bq.textContent = "« "+b.quote+" »";
+  box.appendChild(bq);
+  box.appendChild(html("div","prose", b.focus));
+  (b.ex||[]).forEach(function(x){
+    box.appendChild(el("hr","hr"));
+    box.appendChild(rOpen({t:"open", k:x.k, q:x.q, model:x.model}));
+  });
+  return box;
+}
+
+function rScale(b){
+  var wrap = el("div","sc-wrap");
+  var store = state.a[b.k] || (state.a[b.k] = {});
+  var tbl = el("table","sc-tbl");
+  var thead = el("thead"); var trh = el("tr");
+  trh.appendChild(el("th",null,"Je suis capable de…"));
+  b.cols.forEach(function(c){ trh.appendChild(el("th",null,c)); });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  var tb = el("tbody");
+  b.rows.forEach(function(r, i){
+    var tr = el("tr");
+    tr.appendChild(el("td",null,r));
+    var btns=[];
+    b.cols.forEach(function(c, ci){
+      var td = el("td");
+      var bt = el("button","rad"); bt.type="button";
+      bt.setAttribute("aria-label", r+" : "+c);
+      bt.setAttribute("aria-pressed", store[i]===ci ? "true":"false");
+      bt.addEventListener("click", function(){
+        store[i]=ci; saveSoon();
+        btns.forEach(function(o,oi){ o.setAttribute("aria-pressed", oi===ci ? "true":"false"); });
+        updateProgress();
+      });
+      btns.push(bt); td.appendChild(bt); tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb); wrap.appendChild(tbl);
+  return wrap;
+}
+
+function rPlay(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct","Visionnage"));
+  var row = el("div","row");
+  var a = tcLink(b.sec, b.label);
+  a.style.fontSize="13.5px"; a.style.padding="7px 13px";
+  row.appendChild(a);
+  row.appendChild(el("span","small muted", b.note||""));
+  box.appendChild(row);
+  return box;
+}
+
+function rExport(){
+  var box = el("div","card");
+  box.appendChild(html("h3",null,"Envoyer mes réponses au formateur"));
+  box.appendChild(html("p","sub","Vos réponses sont enregistrées dans ce navigateur. Le bouton ci-dessous rassemble tout dans un texte que vous pouvez copier et m'envoyer par e-mail ou message."));
+  var b = el("button","btn btn-primary","Préparer mon récapitulatif");
+  b.addEventListener("click", openExport);
+  var row = el("div","row"); row.appendChild(b);
+  box.appendChild(row);
+  return box;
+}
+
+function rNote(b){ return html("div","prose", b.h); }
+function rRevealNote(b){
+  var wrap = el("div");
+  var lbl = b.label||"Afficher";
+  var btn = el("button","btn btn-ghost small", lbl); btn.type="button";
+  var box = html("div","reveal","<div class='rt'>"+(b.rt||"")+"</div><div class='prose'>"+b.h+"</div>");
+  box.hidden = true;
+  btn.addEventListener("click", function(){
+    box.hidden = !box.hidden;
+    btn.textContent = box.hidden ? lbl : "Masquer le résumé";
+  });
+  var row = el("div","row"); row.appendChild(btn);
+  wrap.appendChild(row); wrap.appendChild(box);
+  return wrap;
+}
+function rCallout(b){
+  var box = el("div","callout");
+  if(b.ct) box.appendChild(el("div","ct", b.ct));
+  box.appendChild(html("div","prose", b.h));
+  return box;
+}
+
+function rTimer(b){
+  var box = el("div","callout");
+  box.appendChild(el("div","ct", b.label||"Chrono"));
+  var row = el("div","row");
+  var disp = el("span",null,mmss(b.sec));
+  disp.style.fontFamily="var(--mono)"; disp.style.fontSize="22px"; disp.style.minWidth="64px";
+  var start = el("button","btn btn-primary","Démarrer"); start.type="button";
+  var reset = el("button","btn btn-ghost","Remettre à zéro"); reset.type="button";
+  var note = el("span","small muted", b.note||"");
+  var left = b.sec, tm = null;
+  function stop(){ if(tm){ clearInterval(tm); tm=null; } }
+  function paint(){ disp.textContent = mmss(left); }
+  start.addEventListener("click", function(){
+    if(tm){ stop(); start.textContent="Reprendre"; return; }
+    if(left<=0){ left=b.sec; }
+    disp.style.color=""; note.textContent=b.note||""; start.textContent="Pause"; paint();
+    tm = setInterval(function(){
+      if(!document.body.contains(box)){ stop(); return; }
+      left--; paint();
+      if(left<=0){
+        stop(); start.textContent="Recommencer"; disp.style.color="var(--no)";
+        note.textContent="Temps écoulé : terminez votre phrase.";
+        try{ if(navigator.vibrate) navigator.vibrate(200); }catch(e){}
+      }
+    },1000);
+  });
+  reset.addEventListener("click", function(){ stop(); left=b.sec; paint(); disp.style.color=""; start.textContent="Démarrer"; note.textContent=b.note||""; });
+  row.appendChild(disp); row.appendChild(start); row.appendChild(reset); row.appendChild(note);
+  box.appendChild(row);
+  return box;
+}
+
+function renderBlock(b){
+  switch(b.t){
+    case "note": return rNote(b);
+    case "reveal": return rRevealNote(b);
+    case "callout": return rCallout(b);
+    case "open": return rOpen(b);
+    case "tf": return rTf(b);
+    case "gaps": return rGaps(b);
+    case "order": return rOrder(b);
+    case "match": return rMatch(b);
+    case "classify": return rClassify(b);
+    case "cards": return rCards(b);
+    case "clip": return rClip(b);
+    case "scale": return rScale(b);
+    case "play": return rPlay(b);
+    case "export": return rExport();
+    case "timer": return rTimer(b);
+    case "card": {
+      var c = el("div","card");
+      if(b.h3){
+        var hr = el("div","row");
+        hr.style.justifyContent="space-between";
+        hr.appendChild(el("h3",null,b.h3));
+        if(b.tc){ var g=el("div","row"); b.tc.forEach(function(t){ g.appendChild(tcLink(t.sec,t.l)); }); hr.appendChild(g); }
+        c.appendChild(hr);
+      } else if(b.tc){
+        var g2=el("div","row"); b.tc.forEach(function(t){ g2.appendChild(tcLink(t.sec,t.l)); }); c.appendChild(g2);
+      }
+      if(b.sub) c.appendChild(el("p","sub", b.sub));
+      (b.blocks||[]).forEach(function(x){ c.appendChild(renderBlock(x)); });
+      return c;
+    }
+  }
+  return el("div");
+}
+
+/* ---------------- shell render ---------------- */
+var main = document.getElementById("main");
+var rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  STEPS.forEach(function(s, i){
+    var li = el("li","rail-item");
+    var b = el("button","rl"); b.type="button";
+    b.setAttribute("aria-current", i===state.step ? "true":"false");
+    if(stepDone(s)) b.classList.add("is-done");
+    b.appendChild(el("span","rl-num", String(i+1).padStart(2,"0")));
+    b.appendChild(el("span","rl-title", s.title));
+    b.addEventListener("click", function(){ go(i); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+}
+
+function renderStep(){
+  var s = STEPS[state.step];
+  main.innerHTML="";
+  var sec = el("section","step");
+  var head = el("div","step-head");
+  var eye = el("div","eyebrow");
+  eye.appendChild(el("span",null,"Étape "+String(state.step+1).padStart(2,"0")+" / "+String(STEPS.length).padStart(2,"0")));
+  eye.appendChild(el("span","dot"));
+  eye.appendChild(el("span",null,s.time));
+  head.appendChild(eye);
+  head.appendChild(el("h2",null,s.title));
+  if(s.lede) head.appendChild(el("p","lede", s.lede));
+  sec.appendChild(head);
+  s.blocks.forEach(function(b){ sec.appendChild(renderBlock(b)); });
+
+  var nav = el("div","stepnav");
+  var prev = el("button","btn","← "+(state.step>0 ? STEPS[state.step-1].title : "Début"));
+  prev.disabled = state.step===0;
+  if(prev.disabled){ prev.style.opacity=".4"; prev.style.cursor="default"; }
+  prev.addEventListener("click", function(){ if(state.step>0) go(state.step-1); });
+  var next = el("button","btn btn-primary", (state.step<STEPS.length-1 ? STEPS[state.step+1].title : "Terminé")+" →");
+  next.disabled = state.step===STEPS.length-1;
+  if(next.disabled){ next.style.opacity=".4"; next.style.cursor="default"; }
+  next.addEventListener("click", function(){ if(state.step<STEPS.length-1) go(state.step+1); });
+  nav.appendChild(prev); nav.appendChild(next);
+  sec.appendChild(nav);
+  main.appendChild(sec);
+}
+
+function go(i){
+  state.step = i; save();
+  renderStep(); renderRail();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+var progFill = document.getElementById("progFill");
+var progNum = document.getElementById("progNum");
+function updateProgress(){
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  var pct = ACTS.length ? Math.round(n/ACTS.length*100) : 0;
+  progFill.style.width = pct+"%";
+  progNum.textContent = n+" / "+ACTS.length;
+  renderRail();
+}
+
+/* ---------------- export ---------------- */
+function textOf(k){
+  var v = state.a[k];
+  if(v==null) return "";
+  if(typeof v==="string") return v.trim();
+  return "";
+}
+function buildExport(){
+  var L=[];
+  L.push("ATELIER GLP-1 — trois séances de 50 min, parcours oral B1+");
+  L.push("Vidéo : reportage sur les médicaments GLP-1 (https://youtu.be/TI9-BQ5Utg8)");
+  L.push("Exporté le "+new Date().toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}));
+  var n=0; ACTS.forEach(function(k){ if(isDone(k)) n++; });
+  L.push("Avancement : "+n+" activités sur "+ACTS.length);
+  L.push("");
+  STEPS.forEach(function(s, si){
+    var lines=[];
+    function walk(bs){
+      bs.forEach(function(b){
+        if(b.t==="open"){
+          var t = textOf(b.k);
+          if(t) lines.push("• "+b.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+        } else if(b.t==="clip"){
+          (b.ex||[]).forEach(function(x){
+            var t = textOf(x.k);
+            if(t) lines.push("• "+x.q.replace(/<[^>]+>/g,"")+"\n  → "+t);
+          });
+        } else if(b.t==="scale"){
+          var st = state.a[b.k]||{};
+          b.rows.forEach(function(r,i){
+            if(st[i]!=null) lines.push("• "+r+" : "+b.cols[st[i]]);
+          });
+        } else if(b.t==="card" && b.blocks){ walk(b.blocks); }
+      });
+    }
+    walk(s.blocks);
+    if(lines.length){
+      L.push("──────────────────────────────");
+      L.push(String(si+1).padStart(2,"0")+". "+s.title.toUpperCase());
+      L.push("");
+      L.push(lines.join("\n\n"));
+      L.push("");
+    }
+  });
+  if(L.length<=5) L.push("(Aucune réponse rédigée pour l'instant.)");
+  return L.join("\n");
+}
+function openExport(){
+  var mask = el("div","mask");
+  var m = el("div","modal");
+  m.setAttribute("role","dialog"); m.setAttribute("aria-modal","true"); m.setAttribute("aria-label","Récapitulatif de mes réponses");
+  m.appendChild(html("h3",null,"Mon récapitulatif"));
+  m.appendChild(html("p","sub","Copiez ce texte et envoyez-le à votre formateur avant le cours."));
+  var ta = el("textarea"); ta.id="exportArea"; ta.value = buildExport(); ta.readOnly = true;
+  m.appendChild(ta);
+  var row = el("div","row");
+  var copy = el("button","btn btn-primary","Copier le texte");
+  var status = el("span","small muted","");
+  copy.addEventListener("click", function(){
+    ta.select(); ta.setSelectionRange(0, ta.value.length);
+    var done=false;
+    try{ done = document.execCommand("copy"); }catch(e){}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(ta.value).then(function(){ status.textContent="Copié ✓"; status.style.color="var(--ok)"; },
+        function(){ if(!done) status.textContent="Sélectionnez le texte puis Ctrl/Cmd + C."; });
+    } else {
+      status.textContent = done ? "Copié ✓" : "Sélectionnez le texte puis Ctrl/Cmd + C.";
+      status.style.color = done ? "var(--ok)" : "var(--muted)";
+    }
+  });
+  var close = el("button","btn","Fermer");
+  function shut(){ mask.remove(); document.removeEventListener("keydown", esc); }
+  function esc(e){ if(e.key==="Escape") shut(); }
+  close.addEventListener("click", shut);
+  mask.addEventListener("click", function(e){ if(e.target===mask) shut(); });
+  document.addEventListener("keydown", esc);
+  row.appendChild(copy); row.appendChild(close); row.appendChild(status);
+  m.appendChild(row);
+  mask.appendChild(m);
+  document.body.appendChild(mask);
+  copy.focus();
+}
+
+/* ---------------- theme ---------------- */
+document.getElementById("themeBtn").addEventListener("click", function(){
+  var r = document.documentElement;
+  var cur = r.getAttribute("data-theme");
+  var sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var nowDark = cur ? cur==="dark" : sysDark;
+  r.setAttribute("data-theme", nowDark ? "light" : "dark");
+  try{ localStorage.setItem(KEY+"-theme", nowDark ? "light":"dark"); }catch(e){}
+});
+(function(){ var t=null; try{ t=localStorage.getItem(KEY+"-theme"); }catch(e){} document.documentElement.setAttribute("data-theme", t==="light" ? "light" : "dark"); })();
+
+document.getElementById("exportBtn").addEventListener("click", openExport);
+document.getElementById("resetBtn").addEventListener("click", function(){
+  if(!window.confirm("Effacer toutes vos réponses ? Cette action est définitive.")) return;
+  state = {step:0, a:{}, done:{}, known:{}};
+  save(); renderStep(); renderRail(); updateProgress();
+});
+
+/* ---------------- boot ---------------- */
+if(!STORAGE_OK){
+  var warn = html("div","storewarn",
+    "<strong>Ce navigateur n'enregistre pas vos réponses sur cette page.</strong> "+
+    "Vous pouvez travailler normalement, mais <strong>avant de fermer l'onglet</strong>, "+
+    "cliquez sur « Exporter mes réponses » en haut de la page et conservez le texte.");
+  document.body.insertBefore(warn, document.querySelector(".shell"));
+}
+load();
+if(state.step<0 || state.step>=STEPS.length) state.step=0;
+renderStep();
+renderRail();
+updateProgress();
+})();
+</script>
+
+
+
+
+</body></html>
