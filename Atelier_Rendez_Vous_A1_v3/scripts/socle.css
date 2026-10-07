@@ -1,0 +1,379 @@
+/* ======================================================================
+   ATELIER RENDEZ-VOUS A1 v2 — FEUILLE DE STYLE DE BASE (A5)
+   Mobile d'abord (390 px), puis écran large à partir de 900 px.
+   Identité reprise de l'atelier publié (papier gris-bleu, cartes blanches, accent brun doré,
+   bouton d'écoute bleu), avec une seule police : Atkinson Hyperlegible.
+
+   À mettre dans <head> avant cette feuille (seule dépendance externe) :
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+   La police n'existe qu'en 400 et 700 : ne pas utiliser 500 ni 600.
+
+   Contrastes vérifiés par calcul (WCAG 2.2) : tout texte ≥ 5,3:1, bords de commandes ≥ 3:1,
+   en clair et en sombre. Cibles tactiles : 44 px au moins.
+   ====================================================================== */
+
+/* ---------- jetons ---------- */
+:root{
+  color-scheme:light;
+  --paper:#EDF0F3; --surface:#FFFFFF; --surface-2:#F4F7F9;
+  --ink:#131B24; --muted:#4F5E6C; --line:#D5DDE4; --line-strong:#7C8A97;
+  --accent:#8F5406; --accent-ink:#8F5406; --accent-soft:#F3E6D2; --on-accent:#FFFFFF;
+  --ok:#186A42; --ok-soft:#DCEFE4; --no:#9E2A21; --no-soft:#F8E2DF;
+  --rec:#B3261E; --focus:#1F5FA8;
+  /* sons : le film (voix du film) et les dialogues créés pour le cours n'ont pas la même couleur */
+  --film:#1F5FA8; --on-film:#FFFFFF; --film-soft:#E3EDF8;
+  --cree:#0E6E66; --on-cree:#FFFFFF; --cree-soft:#DDF0EE;
+  /* tout ce qui est réservé au formateur */
+  --formateur:#5B3F8C; --formateur-soft:#EEE8F7;
+  --shadow:0 1px 2px rgba(19,27,36,.06), 0 8px 24px -16px rgba(19,27,36,.28);
+  --police:"Atkinson Hyperlegible", "Atkinson Hyperlegible Next", Verdana, "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --chiffres:ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --rayon:12px;
+  --tactile:44px;
+  --haut-barre:56px;            /* hauteur de la barre du haut : le film se colle juste dessous */
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+    --ink:#E3EAF0; --muted:#9FB0BF; --line:#2A3743; --line-strong:#6F8496;
+    --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915; --on-accent:#1A1206;
+    --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+    --rec:#F2877E; --focus:#82B6EB;
+    --film:#82B6EB; --on-film:#0E141A; --film-soft:#172A3D;
+    --cree:#5CC8BC; --on-cree:#0E141A; --cree-soft:#12302D;
+    --formateur:#B9A2E6; --formateur-soft:#261D38;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0E141A; --surface:#161E26; --surface-2:#1C262F;
+  --ink:#E3EAF0; --muted:#9FB0BF; --line:#2A3743; --line-strong:#6F8496;
+  --accent:#E0A85C; --accent-ink:#E9BC7E; --accent-soft:#382915; --on-accent:#1A1206;
+  --ok:#62C18E; --ok-soft:#15301F; --no:#EE9088; --no-soft:#331816;
+  --rec:#F2877E; --focus:#82B6EB;
+  --film:#82B6EB; --on-film:#0E141A; --film-soft:#172A3D;
+  --cree:#5CC8BC; --on-cree:#0E141A; --cree-soft:#12302D;
+  --formateur:#B9A2E6; --formateur-soft:#261D38;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+
+/* ---------- base ---------- */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--police); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--police); font-weight:700; text-wrap:balance; margin:0; line-height:1.25}
+h1{font-size:clamp(24px,6vw,30px)}
+h2{font-size:clamp(20px,5vw,23px)}
+h3{font-size:18px}
+p{margin:0}
+a{color:var(--accent-ink); text-underline-offset:3px}
+button{font:inherit; color:inherit; cursor:pointer}
+button:disabled{cursor:default}
+ul,ol{margin:0; padding-left:22px; display:flex; flex-direction:column; gap:6px}
+img,svg{max-width:100%}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--focus); outline-offset:2px; border-radius:6px}
+/* texte réservé aux lecteurs d'écran */
+.sr{position:absolute!important; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); clip-path:inset(50%); white-space:nowrap; border:0}
+/* premier arrêt de la touche Tab : aller droit au contenu */
+.skip{position:absolute; left:8px; top:-80px; z-index:100; background:var(--ink); color:var(--surface); padding:12px 16px; border-radius:8px; font-weight:700}
+.skip:focus{top:8px}
+.muted{color:var(--muted)} .small{font-size:15px}
+.row{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+
+/* ---------- barre du haut : une seule ligne, même à 390 px ---------- */
+.topbar{position:sticky; top:0; z-index:30; background:var(--surface); border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top,0px)}
+.topbar-in{max-width:1180px; margin:0 auto; min-height:var(--haut-barre); padding:6px 16px;
+  display:flex; align-items:center; gap:10px; flex-wrap:nowrap}
+.brand{display:flex; flex-direction:column; margin-right:auto; min-width:0; line-height:1.2}
+.brand b{font-size:17px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.brand span{font-size:13px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+/* réglages (thème, mode, copier, effacer) : panneau dans le flux, sous la barre, jamais par-dessus le contenu */
+.reglages{max-width:1180px; margin:0 auto; padding:14px 16px; background:var(--surface); border-bottom:1px solid var(--line);
+  display:flex; flex-direction:column; gap:14px}
+.reglages-groupe{display:flex; flex-direction:column; gap:8px}
+.reglages-titre{font-weight:700; font-size:15px}
+
+/* ---------- mise en page ---------- */
+.shell{max-width:1180px; margin:0 auto; padding:14px 16px 56px; display:flex; flex-direction:column; gap:14px}
+.colonne{min-width:0; display:flex; flex-direction:column; gap:14px}
+main{min-width:0}
+main:focus{outline:none}
+@media (min-width:900px){
+  .topbar-in, .reglages{padding-inline:20px}
+  .shell{display:grid; grid-template-columns:250px minmax(0,1fr); gap:36px; align-items:start; padding:26px 20px 64px}
+}
+
+/* ---------- barre d'étapes compacte ----------
+   Téléphone : un seul bouton « 2 / 7 · titre ▾ » + un fil de progression ; la liste des écrans
+   s'ouvre dessous (classe .ouverte). Rien ne défile sur le côté.
+   Écran large : la liste est toujours visible, à gauche. */
+.etapes{display:flex; flex-direction:column; gap:8px; min-width:0}
+.etapes-bouton{display:flex; align-items:center; gap:10px; width:100%; min-height:var(--tactile); text-align:left;
+  background:var(--surface); border:1px solid var(--line-strong); border-radius:10px; padding:6px 12px}
+.etapes-num{flex:0 0 auto; font-family:var(--chiffres); font-size:14px; background:var(--accent); color:var(--on-accent);
+  border-radius:99px; padding:3px 10px; font-variant-numeric:tabular-nums}
+.etapes-titre{flex:1; min-width:0; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.etapes-chevron{flex:0 0 auto; color:var(--muted); transition:transform .15s}
+.etapes.ouverte .etapes-chevron{transform:rotate(180deg)}
+.etapes-fil{display:flex; gap:4px; height:6px}
+.etapes-fil i{flex:1; border-radius:99px; background:var(--line)}
+.etapes-fil i.fait{background:var(--ok)}
+.etapes-fil i.ici{background:var(--accent)}
+.etapes-liste{list-style:none; margin:0; padding:0; display:none; flex-direction:column; gap:4px}
+.etapes.ouverte .etapes-liste{display:flex}
+.etape{display:flex; align-items:center; gap:10px; width:100%; min-height:var(--tactile); text-align:left;
+  background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:6px 12px; color:var(--ink); font-size:16px; line-height:1.3}
+.etape:hover{border-color:var(--line-strong); background:var(--surface-2)}
+.etape[aria-current="step"]{background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:700}
+.etape-num{flex:0 0 auto; width:26px; height:26px; display:grid; place-items:center; border-radius:7px;
+  font-family:var(--chiffres); font-size:13px; background:var(--surface-2); border:1px solid var(--line-strong); color:var(--ink)}
+.etape.faite .etape-num{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.etape[aria-current="step"] .etape-num{background:transparent; border-color:currentColor; color:inherit}
+.etape-titre{flex:1; min-width:0}
+.etape-temps{flex:0 0 auto; font-family:var(--chiffres); font-size:13px; opacity:.85; white-space:nowrap}
+.etapes-pied{display:none; flex-direction:column; gap:8px; align-items:flex-start; margin-top:10px; padding-top:12px; border-top:1px solid var(--line)}
+@media (min-width:900px){
+  .etapes{position:sticky; top:calc(var(--haut-barre) + env(safe-area-inset-top,0px) + 18px)}
+  .etapes-bouton, .etapes-fil{display:none}
+  .etapes-liste, .etapes-pied{display:flex}
+}
+
+/* ---------- bandeau de mode : avec mon formateur / en petit groupe / seul(e) + palier + aide ---------- */
+.bandeau{display:flex; align-items:center; gap:8px; flex-wrap:wrap; background:var(--surface-2);
+  border:1px solid var(--line); border-radius:10px; padding:6px 8px 6px 12px; font-size:15px}
+.bandeau-item{display:inline-flex; align-items:center; gap:6px; background:var(--surface); border:1px solid var(--line);
+  border-radius:99px; padding:3px 11px; white-space:nowrap}
+.bandeau-item b{font-weight:700}
+.bandeau .btn{margin-left:auto}
+.bandeau.formateur{background:var(--formateur-soft); border-color:var(--formateur)}
+
+/* ---------- un écran ---------- */
+.ecran{display:flex; flex-direction:column; gap:16px}
+.ecran-tete{display:flex; flex-direction:column; gap:8px; border-bottom:1px solid var(--line); padding-bottom:14px}
+.surtitre{display:flex; gap:10px; flex-wrap:wrap; font-size:14px; font-weight:700; color:var(--accent-ink)}
+.lede{font-size:18px; max-width:60ch}
+.consigne{font-size:18px; font-weight:700; max-width:56ch}
+.note{font-size:15px; color:var(--muted); max-width:66ch}
+.sous-titre{display:flex; align-items:center; gap:10px; font-size:18px; font-weight:700}
+.sous-num{flex:0 0 auto; width:30px; height:30px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:var(--on-accent); font-size:15px}
+
+/* ---------- carte ---------- */
+.card{background:var(--surface); border:1px solid var(--line); border-radius:var(--rayon); padding:16px; display:flex; flex-direction:column; gap:14px}
+.card.douce{background:var(--surface-2)}
+.card.attente{border-style:dashed; color:var(--muted)}            /* contenu pas encore dévoilé */
+@media (min-width:600px){ .card{padding:20px 22px} }
+.callout{border-left:4px solid var(--accent); background:var(--surface-2); border-radius:0 10px 10px 0; padding:12px 16px; display:flex; flex-direction:column; gap:6px; max-width:68ch}
+
+/* ---------- boutons ---------- */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:var(--tactile);
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  padding:9px 16px; border-radius:10px; font-size:16px; font-weight:700; line-height:1.25; text-decoration:none;
+  transition:background .15s, border-color .15s}
+.btn:hover{background:var(--surface-2); border-color:var(--ink)}
+.btn:disabled{opacity:.5}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
+.btn-primary:hover{background:var(--accent); border-color:var(--accent); filter:brightness(1.1)}
+.btn-ghost{border-color:transparent; background:transparent; color:var(--muted); font-weight:400; text-decoration:underline; text-underline-offset:3px}
+.btn-ghost:hover{background:var(--surface-2); border-color:transparent; color:var(--ink)}
+.btn.small{font-size:15px; padding:8px 12px}
+.btn.grand{font-size:18px; padding:12px 22px; min-height:52px}
+.btn.large{width:100%}
+.btn[aria-pressed="true"]{background:var(--accent-soft); border-color:var(--accent); border-width:2px; padding:8px 15px}
+/* puces : petits choix à bascule (« Un peu plus lent », aide español / italiano) */
+.chip{display:inline-flex; align-items:center; gap:6px; min-height:var(--tactile); border:1px solid var(--line-strong);
+  background:var(--surface); border-radius:99px; padding:8px 14px; font-size:15px}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+.chip[aria-pressed="true"]::before{content:"✓"; font-weight:700}
+.pills{display:flex; gap:8px; flex-wrap:wrap}
+/* choix unique à trois positions (palier, grille 0 / 1 / 2 du formateur) */
+.seg{display:inline-flex; align-self:flex-start; border:1px solid var(--line-strong); border-radius:10px; overflow:hidden; max-width:100%}
+.seg button{min-height:var(--tactile); min-width:var(--tactile); border:0; background:var(--surface); padding:8px 14px; font-size:15px}
+.seg button + button{border-left:1px solid var(--line-strong)}
+.seg button[aria-pressed="true"]{background:var(--ink); color:var(--surface); font-weight:700}
+
+/* ---------- bouton d'écoute coloré ----------
+   .film  = voix du film (bleu)            .cree = dialogue créé pour le cours (vert d'eau)
+   .consigne = lecture d'une consigne (neutre, bord seulement)
+   En lecture (.on) : rouge + carré « Arrêter ». La couleur n'est jamais le seul signe : l'étiquette le dit en mots. */
+.listen-wrap{display:flex; flex-direction:column; gap:8px; align-items:flex-start}
+.listen{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+.listen-go{display:inline-flex; align-items:center; gap:10px; min-height:48px; border:2px solid transparent; border-radius:99px;
+  padding:10px 22px 10px 18px; background:var(--film); color:var(--on-film); font-weight:700; font-size:17px; box-shadow:var(--shadow)}
+.listen-go.cree{background:var(--cree); color:var(--on-cree)}
+.listen-go.consigne{background:var(--surface); color:var(--ink); border-color:var(--line-strong); box-shadow:none; font-size:15px; min-height:var(--tactile); padding:8px 16px 8px 13px}
+.listen-go:hover{filter:brightness(1.08)}
+.listen-go.on{background:var(--rec); color:var(--on-film); border-color:transparent}
+.listen-ico{display:inline-grid; place-items:center; width:1.1em; font-size:.95em}
+.listen-tag{font-size:14px; color:var(--muted); flex-basis:100%}
+.speaking{background:var(--accent-soft); border-radius:6px; box-shadow:0 0 0 4px var(--accent-soft)}
+
+/* ---------- le film (lecteur YouTube) ----------
+   Dans le flux de la page, sous la barre du haut. Sur téléphone il reste collé en haut pendant
+   qu'on fait défiler les questions ; il ne flotte plus en bas et RIEN n'est posé dessus
+   (règle de YouTube). Lecteur toujours ≥ 200 px de haut. */
+.film-zone{background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--rayon); overflow:hidden;
+  position:sticky; top:calc(var(--haut-barre) + env(safe-area-inset-top,0px)); z-index:20; box-shadow:var(--shadow)}
+.film-barre{display:flex; align-items:center; gap:4px 10px; flex-wrap:wrap; padding:4px 6px 4px 12px; border-bottom:1px solid var(--line)}
+.film-titre{font-weight:700; font-size:15px}
+.film-note{font-size:14px; color:var(--muted); flex:1; min-width:12ch}
+.film-cadre{aspect-ratio:16/9; min-height:200px; width:100%; background:#000}
+.film-cadre iframe, .film-cadre > div{width:100%; height:100%; display:block; border:0}
+@media (min-width:900px){ .film-zone{max-width:560px} }
+@media (max-height:520px){ .film-zone{position:static} }             /* téléphone couché : le film ne doit pas remplir l'écran */
+
+/* ---------- choix d'image : 2 ou 3 grandes vignettes ----------
+   <div class="choix-images" role="group" aria-label="…"> <button class="vignette" aria-pressed="false" aria-label="Deux thés"> <svg aria-hidden="true">…</svg> <span class="vignette-mot">…</span> </button> …
+   Le mot écrit (.vignette-mot) est facultatif : on ne l'affiche qu'après la réponse. */
+.choix-images{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+.choix-images.trois{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (min-width:600px){ .choix-images{max-width:560px} .choix-images.trois{max-width:720px} }
+.vignette{position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+  min-height:128px; padding:12px 8px; background:var(--surface); color:var(--ink);
+  border:2px solid var(--line-strong); border-radius:14px; font-size:16px; font-weight:700; text-align:center}
+.vignette svg{width:min(96px,100%); height:auto; aspect-ratio:1}
+.choix-images.trois .vignette svg{width:min(76px,100%)}
+.vignette:hover{border-color:var(--ink)}
+.vignette[aria-pressed="true"]{border-color:var(--accent); border-width:4px; padding:10px 6px; background:var(--accent-soft)}
+.vignette[aria-pressed="true"]::after{content:"✓"; position:absolute; top:6px; right:8px; width:26px; height:26px; border-radius:50%;
+  display:grid; place-items:center; background:var(--accent); color:var(--on-accent); font-size:16px}
+.vignette.attendue{border-color:var(--ok); border-style:solid}          /* montrée après la réponse : « c'était celle-ci » */
+.vignette.attendue::before{content:"★"; position:absolute; top:6px; left:8px; color:var(--ok); font-size:18px}
+.vignette:disabled{opacity:1; cursor:default}
+.vignette-mot{font-size:16px}
+/* réponses à toucher (sans image) */
+.reponses{display:flex; flex-direction:column; gap:8px; max-width:560px}
+.reponse{min-height:var(--tactile); text-align:left; border:2px solid var(--line-strong); background:var(--surface); border-radius:10px; padding:10px 14px; font-size:17px}
+.reponse:hover{border-color:var(--ink)}
+.reponse[aria-pressed="true"]{border-color:var(--accent); background:var(--accent-soft); font-weight:700}
+
+/* ---------- carte de rôle : « le personnel dit » / « vous dites » ----------
+   Deux signes à chaque fois : le mot (étiquette) ET la place (personnel à gauche, vous décalé à droite). */
+.role-carte{display:flex; flex-direction:column; gap:10px; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:14px}
+.role{display:flex; flex-direction:column; gap:8px; align-items:flex-start; border-radius:12px; padding:12px 14px; border-left:5px solid; max-width:92%}
+.role.personnel{background:var(--film-soft); border-color:var(--film)}
+.role.vous{background:var(--accent-soft); border-color:var(--accent); align-self:flex-end}
+.role.autre{background:var(--surface-2); border-color:var(--line-strong)}        /* un autre client, une collègue */
+.role-qui{display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:700; text-transform:none}
+.role-qui svg{width:22px; height:22px}
+.role-phrase{font-size:clamp(19px,5vw,22px); font-weight:700; line-height:1.35}
+.role-phrase .change{text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:4px}   /* le mot qu'on peut remplacer */
+.role-sens{font-size:15px; color:var(--muted)}
+.role-carte.fermee .role.vous .role-phrase{visibility:hidden}                    /* « je réponds sans regarder » */
+/* dialogue écouté : lignes dévoilées APRÈS la réponse ; .parle = la réplique en cours */
+.dialogue{display:flex; flex-direction:column; gap:8px}
+.replique{display:flex; flex-direction:column; gap:2px; border-left:5px solid var(--line-strong); border-radius:0 10px 10px 0; padding:8px 12px; background:var(--surface-2); max-width:92%}
+.replique.personnel{border-color:var(--film); background:var(--film-soft)}
+.replique.vous, .replique.client{border-color:var(--accent); background:var(--accent-soft); align-self:flex-end}
+.replique-qui{font-size:14px; font-weight:700}
+.replique-texte{font-size:18px}
+.replique.parle{box-shadow:0 0 0 3px var(--focus)}
+.ecoute-neutre{display:flex; align-items:center; gap:10px; min-height:var(--tactile); color:var(--muted)}   /* pendant la 1re écoute : ni texte ni rôle */
+
+/* ---------- zone de retour (role="status") ---------- */
+.retour{border-left:5px solid var(--line-strong); background:var(--surface-2); border-radius:0 10px 10px 0; padding:12px 14px; max-width:66ch; font-size:17px}
+.retour.ok{border-color:var(--ok); background:var(--ok-soft)}
+.retour.info{border-color:var(--film); background:var(--film-soft)}
+.retour.attention{border-color:var(--accent); background:var(--accent-soft)}
+.alerte{border-left:5px solid var(--rec); background:var(--no-soft); color:var(--ink); border-radius:0 10px 10px 0; padding:10px 14px; font-size:16px; max-width:66ch}
+.alerte a{color:var(--ink); font-weight:700}
+.storewarn{max-width:1180px; margin:12px 16px 0; padding:12px 16px; border:1px solid var(--accent); border-left-width:5px;
+  border-radius:0 10px 10px 0; background:var(--accent-soft); font-size:15px}
+@media (min-width:1220px){ .storewarn{margin-inline:auto} }
+/* aide dans la langue de l'apprenant (español / italiano), toujours demandée, jamais imposée */
+.aide-langue{border:1px dashed var(--line-strong); border-radius:10px; padding:10px 14px; font-size:16px; background:var(--surface)}
+.aide-langue [lang]{font-style:italic}
+
+/* ---------- panneau réservé au formateur ----------
+   <details class="panneau-formateur"><summary>Réservé au formateur</summary><div class="prive">…</div></details>
+   Replié par défaut. Sur un écran partagé, le formateur ouvre plutôt la « vue formateur » sur un autre appareil. */
+.panneau-formateur{border:2px dashed var(--formateur); border-radius:var(--rayon); background:var(--formateur-soft)}
+.panneau-formateur > summary{display:flex; align-items:center; gap:10px; min-height:var(--tactile); padding:8px 14px; cursor:pointer;
+  font-weight:700; color:var(--formateur); list-style:none}
+.panneau-formateur > summary::-webkit-details-marker{display:none}
+.panneau-formateur > summary::before{content:"🔒"; font-size:16px}
+.panneau-formateur[open] > summary::before{content:"🔓"}
+.panneau-formateur > summary::after{content:"▾"; margin-left:auto}
+.panneau-formateur[open] > summary::after{content:"▴"}
+.prive{display:flex; flex-direction:column; gap:10px; padding:4px 14px 14px; font-size:16px}
+.prive-avis{font-size:15px; color:var(--ink)}
+.carte-privee{background:var(--surface); border:1px solid var(--formateur); border-radius:10px; padding:10px 14px; display:flex; flex-direction:column; gap:4px}
+.carte-privee .a-dire{font-size:20px; font-weight:700}                            /* la phrase que le formateur dit */
+/* vue formateur (index.html?vue=formateur) : même page, autre habillage, pour ne jamais la confondre avec l'écran de l'apprenant */
+body.vue-formateur .topbar{border-bottom:4px solid var(--formateur)}
+body.vue-formateur .brand span{color:var(--formateur); font-weight:700}
+
+/* ---------- enregistreur facultatif ---------- */
+.rec{border:1px solid var(--line-strong); border-radius:var(--rayon); background:var(--surface-2); padding:14px; display:flex; flex-direction:column; gap:12px; align-items:flex-start}
+.rec-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap; width:100%}
+.btn-rec{display:inline-flex; align-items:center; gap:10px; min-height:var(--tactile); border:2px solid var(--rec); color:var(--rec); background:var(--surface);
+  border-radius:99px; padding:8px 18px; font-weight:700; font-size:16px}
+.btn-rec::before{content:""; width:12px; height:12px; border-radius:50%; background:var(--rec)}
+.btn-rec.on::before{border-radius:2px; animation:battement 1s infinite}
+@keyframes battement{50%{opacity:.35}}
+.rec-time{font-family:var(--chiffres); font-size:18px; font-variant-numeric:tabular-nums}
+.rec-bar{flex:1 1 100px; height:8px; border-radius:99px; background:var(--line); overflow:hidden; min-width:70px}
+.rec-bar i{display:block; height:100%; width:0; background:var(--rec)}
+.rec-out{display:flex; flex-direction:column; gap:10px; align-items:flex-start; width:100%}
+.rec-out:empty{display:none}
+.rec audio{width:100%; max-width:480px}
+.rec-msg{font-size:16px}
+.rec-note, .rec-file{font-size:14px; color:var(--muted)}
+.rec-file input{font-size:14px; max-width:100%}
+
+/* ---------- studio du formateur ---------- */
+.studio-ligne{display:grid; grid-template-columns:minmax(0,1fr); gap:8px; padding:12px 0; border-top:1px solid var(--line)}
+.studio-ligne:first-child{border-top:0}
+.studio-id{font-family:var(--chiffres); font-size:13px; color:var(--muted); overflow-wrap:anywhere}
+.studio-texte{font-size:18px; font-weight:700}
+.etat{display:inline-flex; align-items:center; gap:6px; font-size:14px; border:1px solid var(--line-strong); border-radius:99px; padding:2px 10px}
+.etat.valide{border-color:var(--ok); color:var(--ok); background:var(--ok-soft)}
+.etat.a-refaire{border-color:var(--no); color:var(--no); background:var(--no-soft)}
+.etat.humain{border-color:var(--cree); color:var(--cree)}
+@media (min-width:700px){ .studio-ligne{grid-template-columns:minmax(0,1fr) auto; align-items:center} }
+
+/* ---------- champs, tableaux ---------- */
+textarea, input[type="text"]{font:inherit; font-size:17px; background:var(--surface); color:var(--ink);
+  border:1px solid var(--line-strong); border-radius:10px; padding:10px 12px; line-height:1.5; width:100%; min-height:var(--tactile)}
+textarea{min-height:88px; resize:vertical}
+label{font-weight:700; font-size:16px}
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%; border-collapse:collapse; font-size:16px}
+.tbl th{font-size:14px; color:var(--muted); font-weight:700; padding:0 8px 8px; text-align:left}
+.tbl td{border-top:1px solid var(--line); padding:8px; vertical-align:top}
+.tbl td.num{font-family:var(--chiffres); font-variant-numeric:tabular-nums; white-space:nowrap}
+
+/* ---------- bas d'écran : retour / continuer (dans le flux, rien de fixe en bas) ---------- */
+.pied-nav{display:flex; gap:10px; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:16px; margin-top:6px}
+.pied-nav .btn-primary{flex:1; max-width:320px; margin-left:auto}
+
+/* ---------- fenêtre (copier mes réponses) ---------- */
+.mask{position:fixed; inset:0; background:rgba(10,15,20,.6); z-index:60; display:grid; place-items:center; padding:16px}
+.modal{background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow);
+  width:min(680px,100%); max-height:86vh; max-height:86dvh; overflow:auto; padding:20px; display:flex; flex-direction:column; gap:14px}
+.modal textarea{min-height:260px; font-family:var(--chiffres); font-size:14px}
+
+/* ---------- pictogrammes en ligne ---------- */
+.picto{width:96px; height:96px; flex:0 0 auto; color:var(--ink)}
+.picto.petit{width:28px; height:28px}
+.picto.moyen{width:56px; height:56px}
+
+/* ---------- confort ---------- */
+@media (prefers-reduced-motion:reduce){
+  *, *::before, *::after{transition:none!important; animation:none!important; scroll-behavior:auto!important}
+}
+@media (forced-colors:active){
+  .listen-go, .btn-primary, .vignette[aria-pressed="true"], .etape[aria-current="step"], .chip[aria-pressed="true"]{border:2px solid ButtonText}
+  .etapes-fil i.ici, .etapes-fil i.fait{background:Highlight}
+}
+@media print{
+  .topbar, .etapes, .film-zone, .pied-nav, .listen, .rec, .reglages{display:none!important}
+  body{background:#fff} .panneau-formateur{border-style:solid}
+}

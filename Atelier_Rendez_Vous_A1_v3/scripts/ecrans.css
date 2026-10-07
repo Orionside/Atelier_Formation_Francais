@@ -1,0 +1,75 @@
+/* Styles en plus du socle pour le moteur des écrans (mobile d'abord). */
+.pas{display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--rayon);padding:16px}
+.pas:focus{outline:3px solid var(--focus);outline-offset:2px}
+.pas.fait{border-left:5px solid var(--ok)}
+.pas-liste{display:flex;flex-direction:column;gap:14px}
+.pas-corps{display:flex;flex-direction:column;gap:12px;min-width:0}
+.aides-zone:empty{display:none}
+.aides-zone{display:flex;flex-direction:column;gap:8px}
+.contexte{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px}
+.deux-images{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mot{background:none;border:0;border-bottom:2px dotted var(--accent);font:inherit;color:inherit;padding:0;min-height:0;cursor:pointer}
+.mot:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.glose{color:var(--muted)}
+.vignette-mot[hidden]{display:none}
+.formateur-seulement{background:var(--formateur-soft);border:1px dashed var(--formateur);border-radius:8px;padding:6px 10px}
+.a-vous{display:flex;align-items:center;gap:10px}
+.possibles,.sait-dire{display:flex;flex-direction:column;gap:10px}
+.possible{display:flex;flex-direction:column;gap:6px}
+.reponses{display:flex;flex-wrap:wrap;gap:8px}
+.pied-page{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:16px}
+.bilan-bloc ul{margin:0;padding-left:20px}
+.bandeau .btn{min-height:var(--tactile)}
+.sous{display:block;font-weight:400;font-size:14px}
+.qui-phrase,.rappel-tour,.serie-item{display:flex;flex-direction:column;gap:8px}
+.conv-tour{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+img,svg{max-width:100%}
+
+/* --- Corrections après contrôle visuel dans Chrome (07/10/2026) --- */
+/* Boutons de réponse : de vrais boutons (texte centré, gras), en ligne — pas des champs de saisie. */
+.reponses{flex-direction:row;max-width:none}
+.reponse{text-align:center;font-weight:700;min-width:64px;padding:10px 20px;background:var(--surface-2);box-shadow:0 2px 0 var(--line-strong)}
+.reponse:active{transform:translateY(1px);box-shadow:none}
+/* Pictogrammes de réponse plus grands : « un » et « deux » doivent se lire d'un coup d'œil. */
+.vignette svg{width:min(132px,100%)}
+.choix-images.trois .vignette svg{width:min(104px,100%)}
+
+/* --- v3 (07/10/2026) --- */
+/* Images en couleurs : fond clair fixe dans les deux thèmes pour que les couleurs restent lisibles. */
+.vignette{background:#FFFFFF;color:#1B1B1B;border-color:#8A8A8A}
+.vignette .picto,.contexte .picto{color:#1B1B1B}
+.vignette-mot,.vignette-nsp-lib{color:#1B1B1B}
+.vignette[aria-pressed="true"]{background:#EEF4FF;border-color:var(--accent)}
+.vignette:hover{background:#FFFFFF}
+.vignette.attendue{background:#F1FBF3}
+/* tuile « Je ne sais pas » : même taille que les autres images ; le « ? » tient la place de l'image s'il n'y en a pas encore */
+.vignette-nsp-lib{font-size:16px;font-weight:700}
+.nsp-point{display:grid;place-items:center;width:min(132px,100%);aspect-ratio:1;font-size:64px;font-weight:700;color:#4A4A4A;line-height:1}
+.choix-images.trois .nsp-point{width:min(104px,100%);font-size:52px}
+/* images de contexte : fond clair fixe, taille généreuse */
+.contexte{background:#FFFFFF;color:#1B1B1B;border-radius:14px;padding:8px;box-sizing:border-box}
+.contexte .picto{width:min(120px,100%);height:auto;aspect-ratio:1}
+.contexte .picto.moyen{width:min(96px,100%)}
+.contexte .picto.petit{width:28px}
+.deux-images .contexte{justify-self:center}
+/* fenêtres de l'écoute d'un dialogue : indication discrète, boutons « ← Revenir » et « Suite » en bas */
+.fenetre{margin:0}
+.e-zone{display:flex;flex-direction:column;gap:12px}
+.e-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:4px}
+.e-nav .btn:disabled{opacity:.5}
+.retour-son{margin-top:6px}
+/* enregistrement facultatif : ni durée, ni jauge, aucune pression de temps */
+.rec-time,.rec-bar{display:none}
+.m-ecouter{margin:0;font-weight:700}
+.extrait-absent{display:none}
+
+/* Images de réponse : elles remplissent leur tuile (contrôle visuel du 07/10/2026, largeur téléphone). */
+.choix-images .vignette{padding:6px 4px 8px}
+.choix-images .vignette svg{width:min(150px,100%)}
+.choix-images.trois .vignette svg{width:min(132px,100%)}
+
+/* --- contre-relecture QA v3 (07/10/2026) --- */
+/* modèle à comparer montré juste après « J'ai répondu » (S5) ; plusieurs retours d'une même fenêtre, chacun avec son bouton d'écoute */
+.possibles-tour{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.retour-son + .retour{margin-top:10px}
+.rappel-tour .rec{margin-top:4px}
