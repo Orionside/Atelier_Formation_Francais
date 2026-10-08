@@ -1,0 +1,15 @@
+{
+  "source": "https://www.youtube.com/watch?v=TI9-BQ5Utg8",
+  "titre": "Les GLP-1, une nouvelle génération de médicaments, permettent de perdre plusieurs dizaines de kilos",
+  "chaine": "franceinfo",
+  "date_publication_youtube": "20260922",
+  "duration_s": 611.174,
+  "file": "video/glp1.mp4",
+  "bytes": 41022035,
+  "sha256": "ac6ddfd28cb90bd001863136550c535811af66c1724cbf100236b4b9fc50134c",
+  "codecs": [
+    "h264",
+    "aac"
+  ],
+  "calage": "Repères de reconnaissance locale horodatée ; bornes principales et micro-extraits, sans mesure acoustique de prosodie"
+}

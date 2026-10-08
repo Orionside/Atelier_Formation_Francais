@@ -1,0 +1,145 @@
+{
+  "method": "Revue textuelle des écarts de reconnaissance, sans certification humaine de chaque lecture. Les mots manquants et titres incomplets signalés ont été repris et contrôlés.",
+  "items": [
+    {
+      "id": "texte-be171ff3",
+      "sha256": "71a6d1af8c49c5924cc7917f1fec7c9d468a889e1d6f1000787d31f415efd9ef",
+      "expected": "six phrases utiles. Retrouver des formulations et les réutiliser.",
+      "recognized": "6 phrases utiles. Retrouvez des formulations et les réutilisez.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-6c1a2934",
+      "sha256": "6f046cc24d7ab5e2b071fab903fa020f1fd99e8e3c2603afba92dc8fa44be647",
+      "expected": "Pendant cette minute,",
+      "recognized": "Pendant 7 minutes,",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-56181b99",
+      "sha256": "727c9cd2915df73398725a20fad3a097d0d79b871a65753f60e8397dd2d04f07",
+      "expected": "Oui. Il présente seulement des produits alimentaires.",
+      "recognized": "Oui, ils présentent seulement des produits alimentaires.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-1bbed4be",
+      "sha256": "106d0589e13f80b4db8269566c647c59d331723e93cec4788d6eb6b54e7656cc",
+      "expected": "Complément : confirmer son interprétation",
+      "recognized": "Complément, confirmez son interprétation.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-7b5955b",
+      "sha256": "2107e978c8564bda287e3326b2776911f1e09da797a21f886c6847a24a57e4b8",
+      "expected": "Expliquez sa fonction ou donnez un exemple.",
+      "recognized": "expliquer sa fonction ou donner un exemple",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-c10413f0",
+      "sha256": "c79d31bffb459893f0b932ea928c38a00b422a9ec5bd2d729aa11ac5cc730ae8",
+      "expected": "Résumez une idée et donnez la parole.",
+      "recognized": "Résumer une idée et donner la parole.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-d853832b",
+      "sha256": "ce0c33e897a8b0d89a7c55a0f1dd183cea02ea3898c143535bb10adcf4464f87",
+      "expected": "Comparer après mon essai",
+      "recognized": "comparé après mon essai.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-869e920c",
+      "sha256": "8909ee33559007ab59a9f266482547de23fb5555a259945e5a012f2082f92d78",
+      "expected": "Je veux dire qu’elles changent certaines recettes. Par exemple, elles proposent davantage de fibres.",
+      "recognized": "Je veux dire qu'elle change certaines recettes. Par exemple, elle propose davantage de fibres.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-e737befd",
+      "sha256": "d801cc23ea1bc706ac1d6efe15eb8e05ca751b7068b9cb89d8d20285ba357ed3",
+      "expected": "Corrigez l’idée, donnez un exemple et posez une question.",
+      "recognized": "corriger l'idée, donner un exemple et poser une question.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-3bc655fb",
+      "sha256": "b0243ec7a92a6927067e42508bf9ee3bffc547136307bd6532b01a65f8881277",
+      "expected": "Essai trois. une minute",
+      "recognized": "Essai 3, 1 minute.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-51b09605",
+      "sha256": "e2cb9db620425bc9ce678a055fa2e1c02e0546bacd9c720f4627639345765bf6",
+      "expected": "Des reprises courtes (facultatif)",
+      "recognized": "des reprises courtes facultatives",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-107a5742",
+      "sha256": "1c2f4d67fedfe16151ad98d644c3890482e03adb46abcb57187cda0ce7e4b434",
+      "expected": "Déroulé minuté et conseils de conduite.",
+      "recognized": "Déroulez minuté et conseil de conduite.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-88d91f60",
+      "sha256": "1c800af61b347c663772e1db71793e5e3b24ee4fed18b92f65bbd9a493001a4b",
+      "expected": "Déroulé (quarante-cinq minutes)",
+      "recognized": "Déroulez 45 minutes.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-ca4ed581",
+      "sha256": "56074275666c51afd2fcd7a08683567106928579352a6bbfea228a83337be3bc",
+      "expected": "Changer complètement de sujet.",
+      "recognized": "Changez complètement de sujet.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-b1141800",
+      "sha256": "9137aeecefd9c6972c71826ef148aaf3b187c4f751e5da68068e661697906524",
+      "expected": "Elles pourraient économiser du carburant.",
+      "recognized": "Elle pourrait économiser du carburant.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-ef506",
+      "sha256": "1db4c8661300233fa7d68e0b9af8c85d513da1d19a9166fbcf3ebb2fc25b7c53",
+      "expected": "Remplacer toutes les conversations.",
+      "recognized": "Remplacez toutes les conversations.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-c1e2f1ee",
+      "sha256": "7691d42519ae377da259642ea0e4ca9e34386276c726b4022f814abc1d49fab0",
+      "expected": "Quelle limite ajoute-t-elle ?",
+      "recognized": "Quelles limites ajoutent-elles ?",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-2ed6b325",
+      "sha256": "314ef00eca3fcdfe62d991a9068585be66079ec370775bbacbfaad6adedd7cad",
+      "expected": "D’abord, ils contactent le vendeur. Ensuite, ils refusent. Finalement, il ne répond plus.",
+      "recognized": "D'abord, il contacte le vendeur. Ensuite, il refuse. Finalement, il ne répond plus.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-53c0474b",
+      "sha256": "a62f559c306b1838bb5f0e049c980dd949c4ff2b8530f01d73c4ff50318a474f",
+      "expected": "Je voudrais vérifier cette information. Quelle preuve avons-nous ?",
+      "recognized": "Je voudrais vérifier cette information. Quelles preuves avons-nous ?",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    },
+    {
+      "id": "texte-598b1a4f",
+      "sha256": "9d918fcdbb7f957ca4cfca54318deb1b798b9578cdca7a6c3e250e50b125aad0",
+      "expected": "Opposez l’apparence à une vérification et relancez.",
+      "recognized": "Opposer l'apparence à une vérification est relancée.",
+      "review": "Écart de transcription compatible avec une lecture de même sens : homophonie, accord écrit ou transcription d’un chiffre. La reconnaissance ne permet pas de certifier le naturel."
+    }
+  ]
+}

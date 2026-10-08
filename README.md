@@ -36,8 +36,8 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | Au café — comprendre, commander et payer (Rendez-vous A1 v2 : écoute sans texte, trois échanges par rôles, vue formateur, voix de synthèse à valider ; cours de 45 min) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Rendez_Vous_A1_v2/ |
 | Les médicaments GLP-1 — comprendre, raconter, expliquer et réagir à l'oral (3 séances de 50 min : parcours oral, chrono, jeux de rôle) | B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Medicaments_B1/ |
 | Au café — comprendre, commander et payer v3 (écoute toujours disponible et retour en arrière, audio pour chaque consigne et chaque correction, consignes lues lentement, illustrations en couleurs ; version la plus récente) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Rendez_Vous_A1_v3/ |
-
 | BYD — décider et nuancer v4 (secteur bancaire, lecteur vidéo natif et 238 lectures audio) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_BYD_Oceans_B2_v4/ |
+| GLP-1 — comprendre et converser (3 séances de 45 min, écoute sans texte, interaction et transfert, 454 lectures audio) | B2 · aides B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Oral_B2_v2/ |
 
 ## Notes
 
