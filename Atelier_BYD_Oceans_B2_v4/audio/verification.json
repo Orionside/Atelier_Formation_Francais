@@ -1,0 +1,2411 @@
+{
+  "clips": {
+    "accueil-objectif": {
+      "id": "accueil-objectif",
+      "sha256": "ea174afa563347a4ce503bea14f82d58a8a2f43d2db91ffdd396b75e6bf789ec",
+      "expected": "Aujourd’hui, vous apprenez à défendre un choix professionnel, à reconnaître une limite et à poser une condition. Vous reprenez le même message, puis répondez à une objection.",
+      "duration_s": 11.66,
+      "rms": 0.11553,
+      "recognized": "Aujourd'hui, vous apprenez à défendre un choix professionnel, à reconnaître une limite et à poser une condition. Vous reprenez le même message, puis répondez à une objection.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "situation-lieu": {
+      "id": "situation-lieu",
+      "sha256": "06bce4d1a144b5a9f58897e6feda2157fc8e90751c9a65eb423ad0668a7b463c",
+      "expected": "Réunion dans votre banque : accompagnement d’un nouvel outil",
+      "duration_s": 4.22,
+      "rms": 0.11705,
+      "recognized": "Réunion dans votre banque, accompagnement d'un nouvel outil.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "situation-qui": {
+      "id": "situation-qui",
+      "sha256": "4a466e16ba9a0fe39363bd7936968b9db89ecb8aa34715c01a1de561e0d1c1bf",
+      "expected": "Une collègue responsable de la formation dit :",
+      "duration_s": 3.26,
+      "rms": 0.11923,
+      "recognized": "une collègue responsable de la formation d'I.",
+      "word_error_rate": 0.286,
+      "alert": true
+    },
+    "situation-dialogue": {
+      "id": "situation-dialogue",
+      "sha256": "0f26f2a65ce9f99b505e794505c4f4504596993a90e045cb831d6ccb7c9b9c8e",
+      "expected": "« Le prestataire qui forme nos conseillers augmente ses prix de quarante pour cent et propose des dates trop tardives. Faut-il former une équipe interne ? »",
+      "duration_s": 9.02,
+      "rms": 0.09876,
+      "recognized": "Le prestataire qui forme nos conseillers augmente ses prix de 40% et propose des dates trop tardives. Faut-il former une équipe interne ?",
+      "word_error_rate": 0.08,
+      "alert": false
+    },
+    "situation-vous": {
+      "id": "situation-vous",
+      "sha256": "0bd08728ab91b6f9b50fe4b97f6887cf01927c4f700e1847b873904208985fec",
+      "expected": "Vous défendez une décision pour accompagner les conseillers lors du lancement d’un nouvel outil. Expliquez l’intérêt, reconnaissez un risque et posez une condition.",
+      "duration_s": 9.66,
+      "rms": 0.11296,
+      "recognized": "Vous défendez une décision pour accompagner les conseillers lors du lancement d'un nouvel outil. Expliquez l'intérêt, reconnaissez un risque et posez une condition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "situation-consigne": {
+      "id": "situation-consigne",
+      "sha256": "dee20aae38f3b7ecdc2922126b37dfc015e9da10005024eccc662ab45d4f7d9b",
+      "expected": "Dites ce que vous proposez, pourquoi, et à quelle condition. En une minute.",
+      "duration_s": 5.34,
+      "rms": 0.15195,
+      "recognized": "Dites ce que vous proposez, pourquoi et à quelles conditions. En une minute !",
+      "word_error_rate": 0.154,
+      "alert": false
+    },
+    "situation-question": {
+      "id": "situation-question",
+      "sha256": "6bb4f39ba85924f5a8546c703a389e1b474c90a2db87461671d611a797b21167",
+      "expected": "Vous préférez un autre sujet ? (facultatif) Quel autre service de votre banque voulez-vous examiner ?",
+      "duration_s": 8.14,
+      "rms": 0.10432,
+      "recognized": "Vous préférez un autre sujet ? Facultatif ? Quel autre service de votre banque voulez-vous examiner ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-97d73a56": {
+      "id": "texte-97d73a56",
+      "sha256": "8ad1e48fd32840264fb2d0c7c62942e63f1519c751628fb1f22297ade5fffe00",
+      "expected": "Dans notre banque : former en interne ou faire appel à un partenaire ?",
+      "duration_s": 5.26,
+      "rms": 0.10824,
+      "recognized": "Dans notre banque, former en interne ou faire appel à un partenaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fc284940": {
+      "id": "texte-fc284940",
+      "sha256": "3e17cd9c40fd2a5b9b18949d8bc35c40cacf0582444e1e599a226e0f9435bc64",
+      "expected": "Où ?",
+      "duration_s": 0.47,
+      "rms": 0.04756,
+      "recognized": "ou",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-17e951c3": {
+      "id": "texte-17e951c3",
+      "sha256": "eb13492977034cb10267aaedd1c25dab4d0310287250d6767ba05067e78e2e5b",
+      "expected": "Qui parle ?",
+      "duration_s": 0.78,
+      "rms": 0.04997,
+      "recognized": "qui parle",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ddb1d5c2": {
+      "id": "texte-ddb1d5c2",
+      "sha256": "62add6470354e99813ce8d3b0f6dfe922e256ec9fe663ff6ce9eba490fbea9fe",
+      "expected": "Vous",
+      "duration_s": 0.57,
+      "rms": 0.04876,
+      "recognized": "Vous ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7d78b25a": {
+      "id": "texte-7d78b25a",
+      "sha256": "c58fea0d1b8d99399e84fef767ba71541d76cf3bd2dbe9463006c1f8230680e1",
+      "expected": "À vous",
+      "duration_s": 0.43,
+      "rms": 0.05314,
+      "recognized": "À vous !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-99a715cc": {
+      "id": "texte-99a715cc",
+      "sha256": "9b1034e38a2b19faaa8a33e820f652c4ea6d3369259f4e01170e8e9afdf41f07",
+      "expected": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "duration_s": 5.37,
+      "rms": 0.04209,
+      "recognized": "Vous pouvez aussi garder la situation proposée. Le chant est facultatif.",
+      "word_error_rate": 0.091,
+      "alert": false
+    },
+    "texte-dc8e90a4": {
+      "id": "texte-dc8e90a4",
+      "sha256": "5b3383eab83936948a28e5b2f69166af122581ee1c21429cef572897d4a50af4",
+      "expected": "Le programme",
+      "duration_s": 0.82,
+      "rms": 0.05117,
+      "recognized": "Le programme ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-12833449": {
+      "id": "texte-12833449",
+      "sha256": "63eb7517f21e1b65b6a1f4d3a5846d0ce169939d88885c3d114082e82eb4c89f",
+      "expected": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "duration_s": 6.64,
+      "rms": 0.05213,
+      "recognized": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "avant-consigne": {
+      "id": "avant-consigne",
+      "sha256": "049e65380e9bb284a29288fc5670ab89381f68db157330b76afc8ce3905f6cdf",
+      "expected": "Défendez votre choix, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "duration_s": 6.94,
+      "rms": 0.12011,
+      "recognized": "Défendez votre choix sans préparer. Les erreurs ne sont pas un problème. A la fin du cours, vous recommencerez.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-1-titre": {
+      "id": "plan-1-titre",
+      "sha256": "1cc6cb90aad3d0d72cc3a8e61edf16d92d304607df0daea4a0849defbe82b0dd",
+      "expected": "Le problème",
+      "duration_s": 1.34,
+      "rms": 0.09958,
+      "recognized": "Le problème",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-2-titre": {
+      "id": "plan-2-titre",
+      "sha256": "4ffa54c363304e5d0ea0c53ad2ccf3ac5e0f19574329e5aa5257371696329b84",
+      "expected": "Mon choix et son intérêt",
+      "duration_s": 2.3,
+      "rms": 0.09884,
+      "recognized": "Mon choix et son intérêt.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-3-titre": {
+      "id": "plan-3-titre",
+      "sha256": "f2c6ff02de9470b6b388b738c1a04a250f411df64b43ff31aad0151f67a159fb",
+      "expected": "La limite",
+      "duration_s": 1.34,
+      "rms": 0.08979,
+      "recognized": "La limite ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-4-titre": {
+      "id": "plan-4-titre",
+      "sha256": "403d79a3715b8d201c48efc0189e3200bddb3bed024f68800e9faca6198e0e15",
+      "expected": "Ma condition et ma décision",
+      "duration_s": 2.7,
+      "rms": 0.10951,
+      "recognized": "Ma condition et ma décision.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "difficulte-1": {
+      "id": "difficulte-1",
+      "sha256": "8d9f81098d71be018fa00bfba7212e82798ed0c1bba67dfd02af5ae6b56cb7c2",
+      "expected": "Je cherchais mes mots",
+      "duration_s": 1.38,
+      "rms": 0.06021,
+      "recognized": "Je cherchais mes mots",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "difficulte-2": {
+      "id": "difficulte-2",
+      "sha256": "857f704e56910c191c51b06d0360c50aa20c5507b29eb90034e5718ae69be903",
+      "expected": "Je ne savais pas expliquer mon choix",
+      "duration_s": 2.62,
+      "rms": 0.11015,
+      "recognized": "Je ne savais pas expliquer mon choix.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "difficulte-3": {
+      "id": "difficulte-3",
+      "sha256": "e50a3e5b74110326700beef2fd7ac8d484edf37badceb4747734f2a4ed3f1ef9",
+      "expected": "Je ne savais pas reconnaître une limite",
+      "duration_s": 2.62,
+      "rms": 0.09488,
+      "recognized": "Je ne savais pas reconnaître une limite.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "difficulte-4": {
+      "id": "difficulte-4",
+      "sha256": "08ed6effee9ec0d5d65466a1e23af0f3dc1afeead7027f469eaa7979efe0ed11",
+      "expected": "Je ne savais pas répondre à une objection",
+      "duration_s": 2.54,
+      "rms": 0.10763,
+      "recognized": "Je ne savais pas répondre à une objection.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "difficulte-5": {
+      "id": "difficulte-5",
+      "sha256": "010c54b639f1c6aebe1f488f51efabf953f08f0064aa35a6d7f4331917666c9a",
+      "expected": "Rien de spécial",
+      "duration_s": 1.02,
+      "rms": 0.05497,
+      "recognized": "Rien de spécial !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f2513555": {
+      "id": "texte-f2513555",
+      "sha256": "2ee029fbe73e36d2245810b5796567e171f8e76de52e4dcb60473fe4ca212fb0",
+      "expected": "Je parle une minute",
+      "duration_s": 2.22,
+      "rms": 0.10167,
+      "recognized": "Je parle une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-690e11bc": {
+      "id": "texte-690e11bc",
+      "sha256": "d8d651f0016069992d934b05f8bc90dc3150266dc585f587c00d6fab3c8e0f8e",
+      "expected": "Vous pouvez suivre ce plan",
+      "duration_s": 1.57,
+      "rms": 0.05495,
+      "recognized": "Vous pouvez suivre ce plan.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-65c0aa8f": {
+      "id": "texte-65c0aa8f",
+      "sha256": "363c76a44159436be202cf04e31d8d560e9def4ff29a625405a055916b1f5193",
+      "expected": "Enregistrez-vous",
+      "duration_s": 1.03,
+      "rms": 0.05662,
+      "recognized": "Enregistrez-vous !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a67b42d7": {
+      "id": "texte-a67b42d7",
+      "sha256": "1ccb4d363d0b1ffbf0bee05c75fa1e25dc118ed1632296b0772c97b6c72ba3b2",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "duration_s": 8.19,
+      "rms": 0.04604,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6c1a2934": {
+      "id": "texte-6c1a2934",
+      "sha256": "c0f54198fbbeca6fc611aae0b62907a8d1567e7ad99f3ac18be456b5c6a119a4",
+      "expected": "Pendant cette minute",
+      "duration_s": 0.99,
+      "rms": 0.06027,
+      "recognized": "Pendant cette minute,",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7da4e3f7": {
+      "id": "texte-7da4e3f7",
+      "sha256": "d2363660d647494eade36a7eed0dda375e2fbb243763bd7047b9a10f9e674c5c",
+      "expected": "Touchez ce qui est vrai pour vous.",
+      "duration_s": 1.63,
+      "rms": 0.05186,
+      "recognized": "Touchez ce qui est vrai pour vous.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-consigne": {
+      "id": "ecoute-consigne",
+      "sha256": "780861d6fef5d9aa8e0e9e9db2322d85695fa570e41aa90ec5837ac820c1611d",
+      "expected": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "duration_s": 5.91,
+      "rms": 0.04165,
+      "recognized": "deux extraits courts. Pour chaque extrait, devinez, écoutez, répondez, réécoutez.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-pourquoi": {
+      "id": "ecoute-a-pourquoi",
+      "sha256": "ec521629f15eaa939009f31b784b9eb6dd54e9503a9dfadc62b2f7b0b5631788",
+      "expected": "Pourquoi cet extrait ? Repérez le problème et sa cause. Vous expliquerez ensuite pourquoi notre entreprise envisage de changer d’organisation.",
+      "duration_s": 9.74,
+      "rms": 0.10822,
+      "recognized": "Pourquoi cet extrait ? Repérez le problème et sa cause. Vous expliquerez ensuite pourquoi notre entreprise envisage de changer d'organisation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-devine": {
+      "id": "ecoute-a-devine",
+      "sha256": "28df2b6d04f48f2732aa62a715f23b190320361b8ea6cb1da24fd3655b2998c7",
+      "expected": "Avant l’écoute, dites une raison possible : pourquoi louer un navire devient-il beaucoup plus cher ? Un navire est un bateau ; affréter signifie louer sa capacité de transport.",
+      "duration_s": 10.46,
+      "rms": 0.11719,
+      "recognized": "Avant l'écoute, dites une raison possible. Pourquoi louer un navire devient-il beaucoup plus cher ? Un navire est un bateau. Affrêter signifie louer sa capacité de transport.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q1": {
+      "id": "ecoute-a-q1",
+      "sha256": "2d98930d2c4f3af1262a7507205920da9fbcef9c22be1b67ef61f09ac9ee4b09",
+      "expected": "Combien coûte la location du même bateau début deux mille vingt-quatre ?",
+      "duration_s": 3.98,
+      "rms": 0.11689,
+      "recognized": "combien coûte la location du même bateau début 2024 ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q1-option-1": {
+      "id": "ecoute-a-q1-option-1",
+      "sha256": "d9516f4709a2c8a11aff34a29e725f456d1d1230917e82d8792c4ac46d251e51",
+      "expected": "vingt-cinq mille dollars par jour.",
+      "duration_s": 2.54,
+      "rms": 0.10819,
+      "recognized": "25 000 dollars par jour.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q1-option-2": {
+      "id": "ecoute-a-q1-option-2",
+      "sha256": "6ec814ba538c45423f584a8320bd289f1e647e4d7b7007f466b71f530ac563dc",
+      "expected": "cent quinze mille dollars par jour.",
+      "duration_s": 2.94,
+      "rms": 0.10938,
+      "recognized": "115 000 dollars par jour.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q1-option-3": {
+      "id": "ecoute-a-q1-option-3",
+      "sha256": "ac919e1d928a4dd42247dcae7b3b7d794ee44761404dfe14147fd7470cd68ca8",
+      "expected": "un million de dollars par jour.",
+      "duration_s": 2.94,
+      "rms": 0.09346,
+      "recognized": "1 million de dollars par jour.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q1-explication": {
+      "id": "ecoute-a-q1-explication",
+      "sha256": "a71c79f5ab75ec65d885c54d47eaf1d6c63633a97c0b30601cf9089c66255cbd",
+      "expected": "« Début deux mille vingt-quatre, le même navire se loue cent quinze mille dollars par jour. Neuf fois plus cher en trois ans. »",
+      "duration_s": 7.82,
+      "rms": 0.10192,
+      "recognized": "Début 2024, le même navire se loue 115 000 dollars par jour. Neuf fois plus cher en trois ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q2": {
+      "id": "ecoute-a-q2",
+      "sha256": "a8756001b51043ad147532a5cf7ef7ea4fa83a54e7288c149da6a93331c14701",
+      "expected": "Après la crise de deux mille huit, quelle leçon les propriétaires de bateaux ont-ils retenue ?",
+      "duration_s": 5.66,
+      "rms": 0.10709,
+      "recognized": "Après la crise de 2008, quelles leçons les propriétaires de bateaux ont-ils retenues ?",
+      "word_error_rate": 0.188,
+      "alert": false
+    },
+    "ecoute-a-q2-option-1": {
+      "id": "ecoute-a-q2-option-1",
+      "sha256": "90bfda00c091a448501b7c691a098cd98f0e41038a9d9e56de1f7d8693752b96",
+      "expected": "Ne jamais construire un bateau sans être sûr d'avoir des clients.",
+      "duration_s": 3.9,
+      "rms": 0.10372,
+      "recognized": "Ne jamais construire un bateau sans être sûr d'avoir des clients.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q2-option-2": {
+      "id": "ecoute-a-q2-option-2",
+      "sha256": "b1b029aeba8474e47e5a4fe8b48f937d226d21ae75ad5b78804e855e7ee4b6e9",
+      "expected": "Construire beaucoup de bateaux très vite.",
+      "duration_s": 2.62,
+      "rms": 0.10013,
+      "recognized": "construire beaucoup de bateaux très vite",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q2-option-3": {
+      "id": "ecoute-a-q2-option-3",
+      "sha256": "f0e7482f20a48bc4380b332d2c3817beeb714966d896596a145ac098b410c6ca",
+      "expected": "Vendre tous leurs bateaux.",
+      "duration_s": 2.22,
+      "rms": 0.09944,
+      "recognized": "Vendre tous leurs bateaux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-q2-explication": {
+      "id": "ecoute-a-q2-explication",
+      "sha256": "9c12eb425230861552cec4cc67c3d68b0ae428309611029486c0ac62c2917ff0",
+      "expected": "« Ne jamais construire un transporteur de voitures sur spéculation » : sans être sûr d'avoir des clients.",
+      "duration_s": 6.38,
+      "rms": 0.11689,
+      "recognized": "Ne jamais construire un transporteur de voitures sur spéculation, sans être sûr d'avoir des clients.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-trou-1": {
+      "id": "ecoute-a-trou-1",
+      "sha256": "a71c79f5ab75ec65d885c54d47eaf1d6c63633a97c0b30601cf9089c66255cbd",
+      "expected": "Début deux mille vingt-quatre, le même navire se loue cent quinze mille dollars par jour. Neuf fois plus cher en trois ans.",
+      "duration_s": 7.82,
+      "rms": 0.10192,
+      "recognized": "Début 2024, le même navire se loue 115 000 dollars par jour. Neuf fois plus cher en trois ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-trou-1-aide": {
+      "id": "ecoute-a-trou-1-aide",
+      "sha256": "d7bc11eadd3b77557770e7da02acf3263e67ed6a6f1bdfb85c394168fabfdd95",
+      "expected": "Aide : le contraire de « bon marché »",
+      "duration_s": 2.86,
+      "rms": 0.10569,
+      "recognized": "Aide, le contraire de bon marché.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-trou-1-solution": {
+      "id": "ecoute-a-trou-1-solution",
+      "sha256": "a71c79f5ab75ec65d885c54d47eaf1d6c63633a97c0b30601cf9089c66255cbd",
+      "expected": "Début deux mille vingt-quatre, le même navire se loue cent quinze mille dollars par jour. Neuf fois plus cher en trois ans.",
+      "duration_s": 7.82,
+      "rms": 0.10192,
+      "recognized": "Début 2024, le même navire se loue 115 000 dollars par jour. Neuf fois plus cher en trois ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-trou-2": {
+      "id": "ecoute-a-trou-2",
+      "sha256": "8c53781ebbb089d3cf410b75baab6f3d74dc3e75145a46f0b49651ad5ab81cb3",
+      "expected": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "duration_s": 4.3,
+      "rms": 0.10896,
+      "recognized": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-trou-2-aide": {
+      "id": "ecoute-a-trou-2-aide",
+      "sha256": "3fb7207d3c4c77f8961107cbb951dcecf515480d96684346dc9e7c80608d1849",
+      "expected": "Aide : sans être sûr d'avoir des clients",
+      "duration_s": 3.34,
+      "rms": 0.12021,
+      "recognized": "aide sans être sûr d'avoir des clients",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-trou-2-solution": {
+      "id": "ecoute-a-trou-2-solution",
+      "sha256": "8c53781ebbb089d3cf410b75baab6f3d74dc3e75145a46f0b49651ad5ab81cb3",
+      "expected": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "duration_s": 4.3,
+      "rms": 0.10896,
+      "recognized": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-a-difficile": {
+      "id": "ecoute-a-difficile",
+      "sha256": "edd6a9a9d9f101ac7411cc56381049efe95dceb78983124410d16ab668aff6f0",
+      "expected": "Facultatif : écoutez les deux montants, puis la comparaison « neuf fois plus cher ». Il suffit de comprendre la forte hausse ; ne cherchez pas à reconstruire un nombre que vous n’avez pas entendu.",
+      "duration_s": 10.94,
+      "rms": 0.11546,
+      "recognized": "facultatif, écoutez les deux montants puis la comparaison neuf fois plus chère il suffit de comprendre la forte hausse ne cherchez pas à reconstruire un nombre que vous n'avez pas entendu",
+      "word_error_rate": 0.031,
+      "alert": false
+    },
+    "ecoute-b-pourquoi": {
+      "id": "ecoute-b-pourquoi",
+      "sha256": "059d21c13d46c0ff65d4f35db40c65f607aafdaeceaae22368267772ae00bd00",
+      "expected": "Pourquoi cet extrait ? Repérez la limite du choix de B Y D et la conséquence d’une baisse de la demande. Vous reprendrez ce raisonnement pour la formation de nos conseillers.",
+      "duration_s": 10.7,
+      "rms": 0.10791,
+      "recognized": "Pourquoi cet extrait ? Repérez la limite du choix de BYD et la conséquence d'une baisse de la demande. Vous reprendrez ce raisonnement pour la formation de nos conseillers.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-devine": {
+      "id": "ecoute-b-devine",
+      "sha256": "e28022fca07d7a532f6f658639b38b0e3b5b42701ce8d7fd0ae0c334147cce27",
+      "expected": "B Y D a acheté ses propres bateaux au lieu de les louer. À votre avis, quel est le grand risque de cette décision ? Répondez à voix haute.",
+      "duration_s": 8.94,
+      "rms": 0.11162,
+      "recognized": "BYD a acheté ses propres bateaux au lieu de les louer. A votre avis, quel est le grand risque de cette décision ? Répondez à voix haute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q1": {
+      "id": "ecoute-b-q1",
+      "sha256": "f182b3ca57dd1f85885729a112a281ac27d897e042f4cb0467f1e4b39a68ca1c",
+      "expected": "Quel est le vrai risque, selon le narrateur ?",
+      "duration_s": 3.18,
+      "rms": 0.12112,
+      "recognized": "Quel est le vrai risque selon le narrateur ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q1-option-1": {
+      "id": "ecoute-b-q1-option-1",
+      "sha256": "86d623e9219d3c034dfbcbc0cc89ecd09e8663427af8aab9485208da8176b94f",
+      "expected": "Les bateaux sont trop petits.",
+      "duration_s": 2.22,
+      "rms": 0.10324,
+      "recognized": "Les bateaux sont trop petits.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q1-option-2": {
+      "id": "ecoute-b-q1-option-2",
+      "sha256": "eddb0fd24a152fc0f9a98052054c9932590b5b61eb35ce37c25cd78700c02d57",
+      "expected": "Un bateau engage l'entreprise pour vingt-cinq ans, et personne ne sait si la demande restera forte.",
+      "duration_s": 6.22,
+      "rms": 0.10468,
+      "recognized": "Un bateau engage l'entreprise pour 25 ans et personne ne sait si la demande restera forte.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q1-option-3": {
+      "id": "ecoute-b-q1-option-3",
+      "sha256": "b47c415db17ae27f8a0f2d6771d83e6c52de38c80b4cb5d94c5da8e0ec5aaa30",
+      "expected": "Les voitures électriques sont trop lourdes.",
+      "duration_s": 3.18,
+      "rms": 0.11782,
+      "recognized": "Les voitures électriques sont trop lourdes.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q1-explication": {
+      "id": "ecoute-b-q1-explication",
+      "sha256": "0f13bddac013f9f92de08d8e8674dbe663ccaf2b51849bbdce8d8cefef7fa97b",
+      "expected": "« Un navire, c'est un engagement sur vingt-cinq ans. » Personne ne peut prédire la demande aussi loin.",
+      "duration_s": 6.54,
+      "rms": 0.11147,
+      "recognized": "Un navire, c'est un engagement sur 25 ans. Personne ne peut prédire la demande aussi loin.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q2": {
+      "id": "ecoute-b-q2",
+      "sha256": "1c20f19bdf01a05862f3be6ba85bf7a2757a9fb5162fc189c7b18e7f18e96d4a",
+      "expected": "S'il y a bientôt trop de bateaux, qui aura eu raison ?",
+      "duration_s": 3.82,
+      "rms": 0.12388,
+      "recognized": "S'il y a bientôt trop de bateaux, qui aura eu raison ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q2-option-1": {
+      "id": "ecoute-b-q2-option-1",
+      "sha256": "d0669b71d43d24c5f9b52469b386c714ceafa8b107670846c816a758a16c2f59",
+      "expected": "Les entreprises qui ont acheté beaucoup de bateaux.",
+      "duration_s": 3.82,
+      "rms": 0.11629,
+      "recognized": "Les entreprises qui ont acheté beaucoup de bateaux",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q2-option-2": {
+      "id": "ecoute-b-q2-option-2",
+      "sha256": "14db7c1217dce1fd3ed34f63a0b7a0507a2f95def62a3ceafced2c2449a0553e",
+      "expected": "Les entreprises qui sont restées flexibles (qui louent).",
+      "duration_s": 4.46,
+      "rms": 0.11634,
+      "recognized": "Les entreprises qui sont restées flexibles, qui louent.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q2-option-3": {
+      "id": "ecoute-b-q2-option-3",
+      "sha256": "e0c0479a2845aa17d8f793dadf17f2ae1739ef8c9402601ff124a6a4d1fb2fe4",
+      "expected": "Personne.",
+      "duration_s": 1.34,
+      "rms": 0.08541,
+      "recognized": "Personne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-q2-explication": {
+      "id": "ecoute-b-q2-explication",
+      "sha256": "abf5e01fc40ff49344df8a2728b24ccc9b1ae305fb41569d28d4a52de3caccae",
+      "expected": "« La location redevient bon marché, et ceux qui sont restés flexibles auront eu raison. »",
+      "duration_s": 5.82,
+      "rms": 0.11595,
+      "recognized": "La location redevient bon marché et ceux qui sont restés flexibles auront eu raison.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-trou-1": {
+      "id": "ecoute-b-trou-1",
+      "sha256": "afd3aed26ce01a0867a3aab2cdc6aec13dcfb5d276129539c471206750cc0fb5",
+      "expected": "Reste le vrai contre-argument. Un navire, c'est un engagement sur vingt-cinq ans.",
+      "duration_s": 5.98,
+      "rms": 0.10742,
+      "recognized": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-trou-1-aide": {
+      "id": "ecoute-b-trou-1-aide",
+      "sha256": "55245fa6a1ac473146a72a3de2272b89a6cf725ba34a2f528dece0b400c5b160",
+      "expected": "Aide : une promesse qui oblige, pour longtemps",
+      "duration_s": 3.98,
+      "rms": 0.10596,
+      "recognized": "aide une promesse qui oblige pour longtemps.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-trou-1-solution": {
+      "id": "ecoute-b-trou-1-solution",
+      "sha256": "afd3aed26ce01a0867a3aab2cdc6aec13dcfb5d276129539c471206750cc0fb5",
+      "expected": "Reste le vrai contre-argument. Un navire, c'est un engagement sur vingt-cinq ans.",
+      "duration_s": 5.98,
+      "rms": 0.10742,
+      "recognized": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-trou-2": {
+      "id": "ecoute-b-trou-2",
+      "sha256": "323f8ad5e846fcef907de8da9e4d26d69a8da55fbfabce1c085fc7323e0dfa33",
+      "expected": "Ceux qui sont restés flexibles auront eu raison.",
+      "duration_s": 3.34,
+      "rms": 0.12051,
+      "recognized": "Ceux qui sont restés flexibles auront eu raison.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-trou-2-aide": {
+      "id": "ecoute-b-trou-2-aide",
+      "sha256": "b9e50bbe54ec6e3e94f22100acd62fda049442a6b6ac35da0b54bc40c2c20138",
+      "expected": "Aide : qui peuvent changer facilement",
+      "duration_s": 3.1,
+      "rms": 0.1148,
+      "recognized": "Aides qui peuvent changer facilement.",
+      "word_error_rate": 0.2,
+      "alert": false
+    },
+    "ecoute-b-trou-2-solution": {
+      "id": "ecoute-b-trou-2-solution",
+      "sha256": "323f8ad5e846fcef907de8da9e4d26d69a8da55fbfabce1c085fc7323e0dfa33",
+      "expected": "Ceux qui sont restés flexibles auront eu raison.",
+      "duration_s": 3.34,
+      "rms": 0.12051,
+      "recognized": "Ceux qui sont restés flexibles auront eu raison.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "ecoute-b-difficile": {
+      "id": "ecoute-b-difficile",
+      "sha256": "555d7056f1f9e7260f26f4e0ebc8fdc897c045176ad0c7046b727cfadf3012fd",
+      "expected": "Facultatif : pénurie = il manque des navires ; surabondance = il y en a trop. Les coûts fixes restent à payer même si l’activité baisse. Expliquez cette opposition avec vos mots.",
+      "duration_s": 11.82,
+      "rms": 0.10279,
+      "recognized": "facultatif, pénurie égale il manque des navires, surabondance égale il y en a trop. Les coûts fixes restent à payer même si l'activité baisse. Expliquez cette opposition avec vos mots.",
+      "word_error_rate": 0.069,
+      "alert": false
+    },
+    "texte-d1582a5b": {
+      "id": "texte-d1582a5b",
+      "sha256": "cdfff7ee968cf8eb30f63ba835526dc1fe41a4f4d910ec741617b3ffbf76264b",
+      "expected": "J'écoute la vidéo",
+      "duration_s": 1.16,
+      "rms": 0.05176,
+      "recognized": "J'écoute la vidéo.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d9a715b8": {
+      "id": "texte-d9a715b8",
+      "sha256": "e21a39f7f523870a838caac6b7ed90e3d2ef9b889606edd26b8d959565bf2004",
+      "expected": "Extrait un. Neuf fois plus cher !",
+      "duration_s": 3.1,
+      "rms": 0.12416,
+      "recognized": "Extrait 1, 9 fois plus cher.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-86657706": {
+      "id": "texte-86657706",
+      "sha256": "7403aaa22f8a695f690f0734492781e2342e1de6471b23ccf804060b2512026b",
+      "expected": "Passage facultatif",
+      "duration_s": 2.14,
+      "rms": 0.09943,
+      "recognized": "Passage facultatif.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-173a930b": {
+      "id": "texte-173a930b",
+      "sha256": "235e9da804dbbf07b43d5c1707df98f58e366e3783a057c70ad7bc26cbe2e783",
+      "expected": "Extrait deux. Le vrai risque",
+      "duration_s": 3.74,
+      "rms": 0.10093,
+      "recognized": "Extrait 2 Le vrai risque",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrases-consigne": {
+      "id": "phrases-consigne",
+      "sha256": "e66be205db39c2c134818f97813974240344cb0aeb01a8ac49a00a1791b35595",
+      "expected": "Six expressions pour défendre et nuancer votre choix. Travaillez les trois priorités : écoutez, adaptez votre exemple bancaire, puis retrouvez la phrase sans regarder.",
+      "duration_s": 11.5,
+      "rms": 0.11203,
+      "recognized": "6 expressions pour défendre et nuancer votre choix. Travaillez les 3 priorités. Écoutez, adaptez votre exemple bancaire, puis retrouvez la phrase sans regarder.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p1-utilite": {
+      "id": "phrase-p1-utilite",
+      "sha256": "24cf76595b96c67442b8c13cdafa60b3303096034cf3070bd2edd47dbaa2e8bc",
+      "expected": "Pour présenter la situation",
+      "duration_s": 1.82,
+      "rms": 0.1054,
+      "recognized": "pour présenter la situation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p1-forme": {
+      "id": "phrase-p1-forme",
+      "sha256": "bbfae57eb773d7408f5f3f4fede7aae172c50d55cd81ecb7ee9e5d6862b454bc",
+      "expected": "Pendant des années, la règle était simple :",
+      "duration_s": 3.02,
+      "rms": 0.12772,
+      "recognized": "Pendant des années, la règle était simple.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p1-exemple": {
+      "id": "phrase-p1-exemple",
+      "sha256": "dfa76be83c1cdebb5f018a5afe5dff46543204b57c9d7b1ceaf112b00c6ee715",
+      "expected": "Pendant des années, la règle était simple : un prestataire formait nos conseillers.",
+      "duration_s": 4.86,
+      "rms": 0.11126,
+      "recognized": "Pendant des années, la règle était simple, un prestataire formait nos conseillers.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p2-utilite": {
+      "id": "phrase-p2-utilite",
+      "sha256": "0dcc47977bc1cbe54236585260882b83fd857d7385e473b76d53b08ddc9078c2",
+      "expected": "Priorité un. préciser le vrai problème. Vous pouvez aussi dire : « Le vrai problème, c’est ».",
+      "duration_s": 6.94,
+      "rms": 0.11854,
+      "recognized": "Priorité 1, préciser le vrai problème. Vous pouvez aussi dire « le vrai problème, c'est… »",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p2-forme": {
+      "id": "phrase-p2-forme",
+      "sha256": "c7d4d5281068409f163cc503962cdaae439fbd5427db0ef3b7dfc93900089684",
+      "expected": "n'est pas le pire. Le pire, c'est",
+      "duration_s": 2.86,
+      "rms": 0.11079,
+      "recognized": "n'est pas le pire. Le pire, c'est",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p2-exemple": {
+      "id": "phrase-p2-exemple",
+      "sha256": "87b3d2efbac4a298db7c05ccbef66a165997081dd7361afa36e14d7d8e32685b",
+      "expected": "Le prix n’est pas le pire. Le pire, c’est de lancer un outil avant que les conseillers soient formés.",
+      "duration_s": 5.82,
+      "rms": 0.10872,
+      "recognized": "Le prix n'est pas le pire. Le pire, c'est de lancer un outil avant que les conseillers soient formés.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p3-utilite": {
+      "id": "phrase-p3-utilite",
+      "sha256": "0a1c9bb1076b15de665f463baa6fc2b379569a0eae903b20c82c99c6e0dac763",
+      "expected": "Complément. souligner une conséquence importante.",
+      "duration_s": 3.5,
+      "rms": 0.12183,
+      "recognized": "Complément, souligner une conséquence importante.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p3-forme": {
+      "id": "phrase-p3-forme",
+      "sha256": "a871181173bd807219b7958622b278f4560d02e2298efbaa0821800105052855",
+      "expected": "Ce n'est pas un détail, c'est",
+      "duration_s": 2.46,
+      "rms": 0.0658,
+      "recognized": "Ce n'est pas un détail, c'est…",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p3-exemple": {
+      "id": "phrase-p3-exemple",
+      "sha256": "e7dc7a1519cdf456384daa3c123a1f34fe7b46d0a0449b28291d8f12d343ff57",
+      "expected": "Ce n’est pas un détail, c’est la qualité de l’accompagnement des clients.",
+      "duration_s": 4.22,
+      "rms": 0.11085,
+      "recognized": "Ce n'est pas un détail, c'est la qualité de l'accompagnement des clients.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p4-utilite": {
+      "id": "phrase-p4-utilite",
+      "sha256": "4cf415d5870dbabd46750fc09da8ca83f72ec0273b2483669dc86bbe0fd33e53",
+      "expected": "Priorité trois. dire dans quelles conditions le choix reste valable.",
+      "duration_s": 4.94,
+      "rms": 0.11253,
+      "recognized": "Priorité 3. Dire dans quelles conditions le choix reste valable.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p4-forme": {
+      "id": "phrase-p4-forme",
+      "sha256": "c75fee951a50e8f0d9636cc7f182253fdd881cf9aa0f764456a906f82e879d2f",
+      "expected": "Tant que,",
+      "duration_s": 1.34,
+      "rms": 0.1007,
+      "recognized": "Tant que...",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p4-exemple": {
+      "id": "phrase-p4-exemple",
+      "sha256": "6b1dcaf55e60e8096adbad3058b62fd1aad89cc01f4a6aab415efadea51b078a",
+      "expected": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "duration_s": 5.82,
+      "rms": 0.11943,
+      "recognized": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p5-utilite": {
+      "id": "phrase-p5-utilite",
+      "sha256": "2a25ae8c20f382198bf50f047b357fe72a7a26c938d81a815e43f6188e538c91",
+      "expected": "Priorité deux. reconnaître une limite. Vous pouvez aussi dire : « Il faut toutefois tenir compte de ».",
+      "duration_s": 6.14,
+      "rms": 0.11377,
+      "recognized": "Priorité 2, reconnaître une limite. Vous pouvez aussi dire « il faut toutefois tenir compte d'eux ».",
+      "word_error_rate": 0.133,
+      "alert": false
+    },
+    "phrase-p5-forme": {
+      "id": "phrase-p5-forme",
+      "sha256": "97df7eb95a81821ce2ebac448dd2411b6335668c60436133110d6c87951dbdc7",
+      "expected": "Reste le vrai contre-argument :",
+      "duration_s": 2.62,
+      "rms": 0.11498,
+      "recognized": "Reste le vrai contre-argument.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p5-exemple": {
+      "id": "phrase-p5-exemple",
+      "sha256": "1a1a61e4d8ae9a609323542330030aebdd6280e357e779e729e954486bb59f5f",
+      "expected": "Reste le vrai contre-argument : nos formateurs seront moins disponibles pour leurs clients.",
+      "duration_s": 5.42,
+      "rms": 0.1158,
+      "recognized": "Reste le vrai contre-argument. Nos formateurs seront moins disponibles pour leurs clients.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p6-utilite": {
+      "id": "phrase-p6-utilite",
+      "sha256": "879344103df1456e775388e57a2ae5b8e467de4ba7637cfb7fbcb17aea66fbae",
+      "expected": "Complément. nuancer selon la situation. Cette forme reprend la vidéo ; la variante de travail est plus courte.",
+      "duration_s": 7.9,
+      "rms": 0.1144,
+      "recognized": "complément, nuancé selon la situation. Cette forme reprend la vidéo. La variante de travail est plus courte.",
+      "word_error_rate": 0.059,
+      "alert": false
+    },
+    "phrase-p6-forme": {
+      "id": "phrase-p6-forme",
+      "sha256": "5f7bf68b6b6b98104f95ee40a7666e873adf40d8c10572fbdbbedf8550c1fe1a",
+      "expected": "paraît ; ressemble à",
+      "duration_s": 2.62,
+      "rms": 0.08691,
+      "recognized": "paraît, ressemble à",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p6-exemple": {
+      "id": "phrase-p6-exemple",
+      "sha256": "c16f848f2ab9d4fd788c3156e57c776381a128370141e2f2881c07251e5da67a",
+      "expected": "Une équipe interne paraît utile pendant le lancement ; ensuite, elle risque d’être moins sollicitée.",
+      "duration_s": 6.06,
+      "rms": 0.10828,
+      "recognized": "Une équipe interne paraît utile pendant le lancement. Ensuite, elle risque d'être moins sollicitée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-titre": {
+      "id": "manuel-titre",
+      "sha256": "d0ff9109ba548eb856eceb64f1574516f7c595dced9868bc03e16b76e31514d9",
+      "expected": "Pour approfondir (facultatif)",
+      "duration_s": 2.94,
+      "rms": 0.06058,
+      "recognized": "Pour approfondir, facultatif,",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-intro": {
+      "id": "manuel-intro",
+      "sha256": "e09eb418abddc2bab315ae6227200ac245a1c7dda29606aa12690e641f6b0d9e",
+      "expected": "Choisissez une seule activité selon votre besoin. Les formulations suivantes servent au réemploi ; elles ne sont pas toutes des citations de la vidéo.",
+      "duration_s": 9.34,
+      "rms": 0.11102,
+      "recognized": "choisissez une seule activité selon votre besoin. Les formulations suivantes servent au réemploi. Elles ne sont pas toutes des citations de la vidéo.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-0-titre": {
+      "id": "manuel-0-titre",
+      "sha256": "bd8d84079f36820e6c80d4e79ca8074c4df5aa856cd441c0b4c2146a34d07b4d",
+      "expected": "Relier une cause à une conséquence",
+      "duration_s": 2.78,
+      "rms": 0.11079,
+      "recognized": "Relier une cause à une conséquence.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-0-consigne": {
+      "id": "manuel-0-consigne",
+      "sha256": "f86d562e82e79545d51303d104e7d668b331c6e82feef8e73dc745dfe67505fb",
+      "expected": "Expliquez le même problème en deux phrases.",
+      "duration_s": 3.02,
+      "rms": 0.12722,
+      "recognized": "Expliquez le même problème en deux phrases.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-0-exemple-0": {
+      "id": "manuel-0-exemple-0",
+      "sha256": "e382156f8e76f9aa3b2f55a3276e39711a04cc0feecfa5d171a6ccaccb2be3af",
+      "expected": "Le prestataire propose les formations trop tard ; les conseillers risquent de découvrir l’outil pendant un rendez-vous client.",
+      "duration_s": 7.1,
+      "rms": 0.11291,
+      "recognized": "Le prestataire propose les formations trop tard, les conseillers risquent de découvrir l'outil pendant un rendez-vous client.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-0-exemple-1": {
+      "id": "manuel-0-exemple-1",
+      "sha256": "e29f33a4cfe9e0695cac9adc986689a3afe66522215ba5a7304b88fd7e4b3dc6",
+      "expected": "Former des collègues en interne permettrait de choisir des dates adaptées aux agences.",
+      "duration_s": 5.58,
+      "rms": 0.10458,
+      "recognized": "Former des collègues en interne permettrait de choisir des dates adaptées aux agences.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-1-titre": {
+      "id": "manuel-1-titre",
+      "sha256": "aed4af854cc48b0451c1fc93974530dcc0a01735338e48154a4297566ca3f4a8",
+      "expected": "Reconnaître une objection et proposer une réponse",
+      "duration_s": 4.06,
+      "rms": 0.11616,
+      "recognized": "reconnaître une objection et proposer une réponse.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-1-consigne": {
+      "id": "manuel-1-consigne",
+      "sha256": "3c89311da13a10e7e78e1a7760853eef32c0bba60e7a3a2fbed07a10511b6bf4",
+      "expected": "Répondez à votre collègue sans abandonner votre raisonnement.",
+      "duration_s": 3.66,
+      "rms": 0.1152,
+      "recognized": "Répondez à votre collègue sans abandonner votre raisonnement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-1-exemple-0": {
+      "id": "manuel-1-exemple-0",
+      "sha256": "9ec5861f20d53fdc57c6760c6ccc7b676306fd0fbf441a1b2de4739ffeae0803",
+      "expected": "Vous avez raison : les formateurs seront moins disponibles pour les clients. Je propose donc de commencer dans deux agences.",
+      "duration_s": 7.58,
+      "rms": 0.11299,
+      "recognized": "Vous avez raison, les formateurs seront moins disponibles pour les clients. Je propose donc de commencer dans deux agences.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-1-exemple-1": {
+      "id": "manuel-1-exemple-1",
+      "sha256": "220b91c6e21b9ee79db9a0bae313ecf04791b22be7cbd5423089d61b6e4bd39b",
+      "expected": "Si les besoins baissent après le lancement, nous garderons le prestataire pour les demandes ponctuelles.",
+      "duration_s": 6.14,
+      "rms": 0.117,
+      "recognized": "Si les besoins baissent après le lancement, nous garderons le prestataire pour les demandes ponctuelles.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-2-titre": {
+      "id": "manuel-2-titre",
+      "sha256": "92555701950e6ae89ffba23825ebe7826f9d882087d9401a31453c6acf37846c",
+      "expected": "Lire la vidéo avec recul",
+      "duration_s": 2.3,
+      "rms": 0.10991,
+      "recognized": "Lire la vidéo avec recul.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-2-consigne": {
+      "id": "manuel-2-consigne",
+      "sha256": "c89f928e8db075cd6a212a4cbd37bdeefb6f13dcd8f67c53ad468442254461b3",
+      "expected": "Distinguez un chiffre présenté, une interprétation et une hypothèse.",
+      "duration_s": 4.94,
+      "rms": 0.10731,
+      "recognized": "Distinguer un chiffre présenté, une interprétation et une hypothèse.",
+      "word_error_rate": 0.111,
+      "alert": false
+    },
+    "manuel-2-exemple-0": {
+      "id": "manuel-2-exemple-0",
+      "sha256": "c6ccc31f1eb0f69add8b026645aa50949317594c37f5c0ee648a618e3a9c6a64",
+      "expected": "Chiffre présenté : la location atteint cent quinze mille dollars par jour selon le narrateur.",
+      "duration_s": 5.9,
+      "rms": 0.10232,
+      "recognized": "Chiffre présenté, l'allocation atteint 115 000 dollars par jour selon le narrateur.",
+      "word_error_rate": 0.143,
+      "alert": false
+    },
+    "manuel-2-exemple-1": {
+      "id": "manuel-2-exemple-1",
+      "sha256": "d91fe0ea9e7fcb85a27861d000bb6ae72110820846351c9c2490cbf3b78c1b37",
+      "expected": "Interprétation : le contrôle du transport donne du pouvoir.",
+      "duration_s": 5.1,
+      "rms": 0.12001,
+      "recognized": "Interprétation, le contrôle du transport donne du pouvoir.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "manuel-2-exemple-2": {
+      "id": "manuel-2-exemple-2",
+      "sha256": "2814effb32304e5f405c0edc85c62ec4f737e306e518e4a6640ea6c0a5a5d53f",
+      "expected": "Hypothèse : si l’offre de navires devient trop importante, la location redevient avantageuse.",
+      "duration_s": 7.42,
+      "rms": 0.09964,
+      "recognized": "Hypothèse, si l'offre de navires devient trop importante, la location redevient avantageuse.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-28bfaf4d": {
+      "id": "texte-28bfaf4d",
+      "sha256": "701565a330f6be869efa6b4aa42276de04ccabcb703803372767fa858d1d4ceb",
+      "expected": "six phrases utiles",
+      "duration_s": 1.82,
+      "rms": 0.10016,
+      "recognized": "six phrases utiles.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrases-rappel": {
+      "id": "phrases-rappel",
+      "sha256": "99389266fd4e54806eade9b5b689efa2f67664f55ef7c45e57a5f0961555bc14",
+      "expected": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur « Voir la phrase ».",
+      "duration_s": 6.22,
+      "rms": 0.10745,
+      "recognized": "Lisez à quoi sert la phrase, dites-la à voix haute, puis cliquez sur « Voir la phrase ».",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-intro": {
+      "id": "melodie-intro",
+      "sha256": "8ee02161f96d3d067166be66993b830c1a826836f79e2798e67454bb530fa2a6",
+      "expected": "Faites entendre votre raisonnement par groupes de sens : le problème, la limite, puis la condition. Écoutez un modèle à la fois.",
+      "duration_s": 9.26,
+      "rms": 0.12372,
+      "recognized": "Faites entendre votre raisonnement par groupe de sens, le problème, la limite, puis la condition. Écoutez un modèle à la fois.",
+      "word_error_rate": 0.048,
+      "alert": false
+    },
+    "g-probleme": {
+      "id": "g-probleme",
+      "sha256": "8e2785a451a7725aa3e5f47bdcfa2eac2905dbd7ea3843a606201bb5b4c05aea",
+      "expected": "Mais l’argent n’est pas le pire. Le pire, c’est le contrôle.",
+      "duration_s": 4.06,
+      "rms": 0.11784,
+      "recognized": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "g-limite": {
+      "id": "g-limite",
+      "sha256": "afd3aed26ce01a0867a3aab2cdc6aec13dcfb5d276129539c471206750cc0fb5",
+      "expected": "Reste le vrai contre-argument. Un navire, c’est un engagement sur vingt-cinq ans.",
+      "duration_s": 5.98,
+      "rms": 0.10742,
+      "recognized": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "g-condition": {
+      "id": "g-condition",
+      "sha256": "29abced6c7c861d8096ec6e60a3d7b22f4a3f17207d28da738a7aa4cd7e78583",
+      "expected": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "duration_s": 7.26,
+      "rms": 0.10394,
+      "recognized": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-regle-1": {
+      "id": "melodie-regle-1",
+      "sha256": "46d20718c5bb6136b5d3e4761efeb3efc69d43c6ae3673a9de10f700b9bbe545",
+      "expected": "Écoutez une phrase avant de voir les barres. Repérez les idées qui vont ensemble.",
+      "duration_s": 5.26,
+      "rms": 0.11563,
+      "recognized": "Écoutez une phrase avant de voir les barres. Repérez les idées qui vont ensemble.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-regle-2": {
+      "id": "melodie-regle-2",
+      "sha256": "7e519f92ca9958ed5d09a5ffccb0dc53b0d13974e51f4af5e331287485071e15",
+      "expected": "Gardez les mots d’un même groupe liés. À la frontière, vous pouvez allonger la dernière syllabe ou faire une courte pause.",
+      "duration_s": 7.74,
+      "rms": 0.11214,
+      "recognized": "Gardez les mots d'un même groupe lié. À la frontière, vous pouvez allonger la dernière syllabe ou faire une courte pause.",
+      "word_error_rate": 0.045,
+      "alert": false
+    },
+    "melodie-regle-3": {
+      "id": "melodie-regle-3",
+      "sha256": "c439abbbe97855d5348e4f353882476c018a5afc236c28db235d5b2182585468",
+      "expected": "Répétez la phrase entière, puis dites votre propre exemple. Choisissez un seul passage aujourd’hui.",
+      "duration_s": 6.22,
+      "rms": 0.11698,
+      "recognized": "Répétez la phrase entière, puis dites votre propre exemple. Choisissez un seul passage aujourd'hui.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-attention": {
+      "id": "melodie-attention",
+      "sha256": "e4110b0e5634955984eaf73e7dd33ff2b13cea79ef7bd6b091c2e1dc5ee775c1",
+      "expected": "Attention : Les barres proposent un découpage de sens ; elles n’imposent pas des silences. La voix ne monte pas obligatoirement sur une opposition. Cherchez d’abord à être compris.",
+      "duration_s": 10.62,
+      "rms": 0.10944,
+      "recognized": "Attention, les barres proposent un découpage de sens, elles n'imposent pas des silences. La voix ne monte pas obligatoirement sur une opposition. Cherchez d'abord à être compris.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-exercice-1": {
+      "id": "melodie-exercice-1",
+      "sha256": "304e239f6467688dd28740d07330d330047520bf6f6e371e9f344dd347a48eff",
+      "expected": "Écoutez. Cliquez sur la dernière syllabe de chaque idée, puis vérifiez.",
+      "duration_s": 4.78,
+      "rms": 0.11597,
+      "recognized": "Écoutez, cliquez sur la dernière syllabe de chaque idée, puis vérifiez.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-exercice-1-explication": {
+      "id": "melodie-exercice-1-explication",
+      "sha256": "c2dabea24f8a9e866b38e1dda6f37fe5da312d1f5f81f112283731e3ba758847",
+      "expected": "« pire » et « trôle » terminent les deux idées. Écoutez leur durée et le mouvement de la voix, sans imposer de montée ou de descente.",
+      "duration_s": 8.22,
+      "rms": 0.10588,
+      "recognized": "« Pire » et « troll » terminent les deux idées. Écoutez leur durée et le mouvement de la voix sans imposer de montée ou de descente.",
+      "word_error_rate": 0.043,
+      "alert": false
+    },
+    "melodie-etape-1": {
+      "id": "melodie-etape-1",
+      "sha256": "e611a1687555c7102ab381f2c4d773681978e72638a7e5abfeb4ab843ce768b2",
+      "expected": "Écoutez une phrase deux fois.",
+      "duration_s": 1.73,
+      "rms": 0.04675,
+      "recognized": "Écoutez une phrase deux fois.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-etape-2": {
+      "id": "melodie-etape-2",
+      "sha256": "e390172d99fd3598ee367ed770f08a5898487570b60f8d0cf2106985b1ddd455",
+      "expected": "Répétez avec la vidéo, puis seul.",
+      "duration_s": 2.94,
+      "rms": 0.10498,
+      "recognized": "Répétez avec la vidéo, puis seul.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "melodie-etape-3": {
+      "id": "melodie-etape-3",
+      "sha256": "e6203e9a88d5454aa438b576b2ea4706b2dfa8e8dd09e2f415d50e1ba6a867a2",
+      "expected": "Reprenez votre exemple : « Le vrai problème, c’est le retard des formations. » Enregistrez-vous et vérifiez si les deux idées sont claires.",
+      "duration_s": 8.86,
+      "rms": 0.10594,
+      "recognized": "Reprenez votre exemple, le vrai problème c'est le retard des formations. Enregistrez-vous et vérifiez si les deux idées sont claires.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "modele-0": {
+      "id": "modele-0",
+      "sha256": "f076a3a65fb2d36d7275e2b74f132eb3cffe1c422fd069c429dee3cfd6a64577",
+      "expected": "Mais l’argent n’est pas le pire. , Le pire, c’est le contrôle.",
+      "duration_s": 4.38,
+      "rms": 0.11423,
+      "recognized": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "modele-1": {
+      "id": "modele-1",
+      "sha256": "cbe73863e203eb1b429e9c05003c56511046240a4f81659d0dd9970ee827fbef",
+      "expected": "Reste le vrai contre-argument. , Un navire, , c’est un engagement sur vingt-cinq ans.",
+      "duration_s": 5.5,
+      "rms": 0.11596,
+      "recognized": "reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-eb602c17": {
+      "id": "texte-eb602c17",
+      "sha256": "3d51a72ef2da093117582551fa96bedf78f7a42ae62f2d895423d07662562352",
+      "expected": "La mélodie du français",
+      "duration_s": 1.4,
+      "rms": 0.05592,
+      "recognized": "La mélodie du français.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-34934ad3": {
+      "id": "texte-34934ad3",
+      "sha256": "d536b237c5e37d45fd14e3b59ed25e815a1a0b48d56c9e0b0a9f764653765dd1",
+      "expected": "Écoutez les groupes de mots",
+      "duration_s": 1.9,
+      "rms": 0.10996,
+      "recognized": "Écoutez les groupes de mots.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a6960ae": {
+      "id": "texte-a6960ae",
+      "sha256": "6dfb3815ded2327e09556abab2095199cafe73db1fe51899eab2be62fc63c2b8",
+      "expected": "Choisissez une phrase. Écoutez-la, puis essayez d'entendre où finit chaque groupe de sens. Affichez les barres après l'écoute et répétez la phrase entière. La dernière syllabe d'un groupe peut s'allonger, même sans silence.",
+      "duration_s": 13.74,
+      "rms": 0.1129,
+      "recognized": "Choisissez une phrase, écoutez-la, puis essayez d'entendre où finit chaque groupe de sens. Affichez les barres après l'écoute et répétez la phrase entière. La dernière syllabe d'un groupe peut s'allonger, même sans silence.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-deae55ba": {
+      "id": "texte-deae55ba",
+      "sha256": "d20ce9d07932fca0b703cf8dc125fb5eabbb2e321dd88814a0ddad5b40fd4825",
+      "expected": "La règle",
+      "duration_s": 0.69,
+      "rms": 0.06015,
+      "recognized": "La règle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-28ba3d7a": {
+      "id": "texte-28ba3d7a",
+      "sha256": "dc0d30abe7965ceb9b4eb8c263d280fe9b52796d00594093c545cda230dfbac2",
+      "expected": "Écoutez et trouvez",
+      "duration_s": 1.54,
+      "rms": 0.05192,
+      "recognized": "écouter et trouver.",
+      "word_error_rate": 0.667,
+      "alert": true
+    },
+    "texte-fe7b885a": {
+      "id": "texte-fe7b885a",
+      "sha256": "8e2785a451a7725aa3e5f47bdcfa2eac2905dbd7ea3843a606201bb5b4c05aea",
+      "expected": "Mais l’argent n’est pas le pire. Le pire, c’est le contrôle.",
+      "duration_s": 4.06,
+      "rms": 0.11784,
+      "recognized": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c5a1f1b5": {
+      "id": "texte-c5a1f1b5",
+      "sha256": "3f25d5e73fb2cfa4311f901aed743ddae0d302113ec2175a13b670df661bd737",
+      "expected": "Répétez comme dans la vidéo",
+      "duration_s": 1.78,
+      "rms": 0.05413,
+      "recognized": "Répétez comme dans la vidéo",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7f6ce0fc": {
+      "id": "texte-7f6ce0fc",
+      "sha256": "195ba586a9ec44424dbb8c0e15b4650c2edb67c103fb925d02088e9149aa8f62",
+      "expected": "Enregistrez votre exemple bancaire",
+      "duration_s": 2.7,
+      "rms": 0.10725,
+      "recognized": "Enregistrez votre exemple bancaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8fcfc4c7": {
+      "id": "texte-8fcfc4c7",
+      "sha256": "e3cdff20aa11d1d5474ded94fd6ec53ac92f9ce3170d6b3d451c19445eeb64b3",
+      "expected": "Dites deux idées liées à votre décision. Réécoutez-vous : entend-on clairement où finit chaque idée ?",
+      "duration_s": 7.42,
+      "rms": 0.11428,
+      "recognized": "Dites deux idées liées à votre décision. Réécoutez-vous. Entendons clairement où finit chaque idée.",
+      "word_error_rate": 0.125,
+      "alert": false
+    },
+    "texte-4a4c5d98": {
+      "id": "texte-4a4c5d98",
+      "sha256": "3c88d5ed3a546b3dcbad881a41826e2c71a5d396e2b6ad061ae0cd87b1652f05",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après vingt secondes.",
+      "duration_s": 6.94,
+      "rms": 0.10169,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 20 secondes.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "entrainement-consigne": {
+      "id": "entrainement-consigne",
+      "sha256": "fa392cb66262dae18d64b4287e212d3ed272b485f456bdd3e9e225e7764076c4",
+      "expected": "Le même message, trois fois. Ajoutez une chose à chaque reprise. Vous pouvez garder la même durée si nécessaire.",
+      "duration_s": 8.14,
+      "rms": 0.11286,
+      "recognized": "Le même message trois fois. Ajoutez une chose à chaque reprise. Vous pouvez garder la même durée si nécessaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "entrainement-preparation": {
+      "id": "entrainement-preparation",
+      "sha256": "bc038ce454e390f73c1043106d5195d8fdc5ec62e3cb0bbb0d55588f3ac55576",
+      "expected": "Notez seulement des mots-clés, pas de phrases.",
+      "duration_s": 2.54,
+      "rms": 0.05093,
+      "recognized": "Notez seulement des mots clés, pas de phrases.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-1-exemple": {
+      "id": "plan-1-exemple",
+      "sha256": "9b85f03410f296ff403adfb9797b62430f86e530d41512403610cb0af8382351",
+      "expected": "Le prix augmente, mais le vrai problème, c’est le retard des formations.",
+      "duration_s": 4.62,
+      "rms": 0.12569,
+      "recognized": "Le prix augmente, mais le vrai problème, c'est le retard des formations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-2-exemple": {
+      "id": "plan-2-exemple",
+      "sha256": "dc688ec7e5e6bbc5ea255ab4f5273cd3037993bb176ca103a28375535af669e8",
+      "expected": "Je propose des formateurs internes pour accompagner les conseillers à temps.",
+      "duration_s": 4.54,
+      "rms": 0.11933,
+      "recognized": "Je propose des formateurs internes pour accompagner les conseillers à temps.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-3-exemple": {
+      "id": "plan-3-exemple",
+      "sha256": "241a8fb05b5fb12aae1d90f2fa1ca9d27872e55e3b452fff4890d93a8b217ac2",
+      "expected": "Reste le vrai contre-argument : les formateurs seront moins disponibles en agence.",
+      "duration_s": 5.5,
+      "rms": 0.11133,
+      "recognized": "Reste le vrai contre-argument. Les formateurs seront moins disponibles en agence.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "plan-4-exemple": {
+      "id": "plan-4-exemple",
+      "sha256": "b3afeec61eb6e6714127ce14bb7b67a60006a9e8541767aac6627a12954a6e57",
+      "expected": "Tant que plusieurs agences ont besoin de formation, ce choix se défend. Je propose donc un essai dans deux agences.",
+      "duration_s": 7.5,
+      "rms": 0.11213,
+      "recognized": "Tant que plusieurs agences ont besoin de formation, ce choix se défend. Je propose donc un essai dans deux agences.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "essai-1": {
+      "id": "essai-1",
+      "sha256": "9fdb788db9b64b6a78a411cd818fdd6c90b7fe78caeb4ac833974452675b25b7",
+      "expected": "Présentez le problème, votre choix et une raison. Appuyez-vous sur quatre mots-clés.",
+      "duration_s": 6.22,
+      "rms": 0.10897,
+      "recognized": "Présentez le problème, votre choix et une raison. Appuyez-vous sur quatre mots-clés.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "essai-1-ajout": {
+      "id": "essai-1-ajout",
+      "sha256": "a142f7210156b568a05a42b1a5f4ab6d7280ec56bebfde731352974df21ad68c",
+      "expected": "Pour l’essai deux, gardez votre décision et ajoutez une limite : « Reste le vrai contre-argument ».",
+      "duration_s": 6.22,
+      "rms": 0.10523,
+      "recognized": "Pour l'essai 2, gardez votre décision et ajoutez une limite, reste le vrai contre-argument.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "essai-2": {
+      "id": "essai-2",
+      "sha256": "468160f4d4ea262afa6aa6c54dad23700a5c00bf9d02673040dc9dc656bc85bb",
+      "expected": "Reprenez le même message. Écoutez une objection de votre collègue, puis répondez : « Ce risque existe ; je propose donc »",
+      "duration_s": 7.9,
+      "rms": 0.09726,
+      "recognized": "Reprenez le même message. Écoutez une objection de votre collègue, puis répondez « Ce risque existe, je propose donc ».",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "essai-2-ajout": {
+      "id": "essai-2-ajout",
+      "sha256": "574ecaddf0b32509e60bfef9df0b6c328ed61d516c218ecf30c6216e74c7c492",
+      "expected": "Pour l’essai trois, précisez une condition avec « Tant que ». Vous pouvez aussi dire : « Si la demande baisse, nous ».",
+      "duration_s": 7.34,
+      "rms": 0.12796,
+      "recognized": "Pour l'essai 3, précisez une condition avec « tant que ». Vous pouvez aussi dire « si la demande baisse, nous ».",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "essai-3": {
+      "id": "essai-3",
+      "sha256": "0a377ebe308bd1f35c9b334ef978c7cdf1a4cb4a1b5c4711cbcc995ccb709717",
+      "expected": "Gardez le problème, une raison, une limite et votre décision sous condition. Vos mots-clés restent disponibles. La clarté compte plus que la vitesse.",
+      "duration_s": 11.1,
+      "rms": 0.10517,
+      "recognized": "Gardez le problème, une raison, une limite et votre décision sous condition. Vos mots-clés restent disponibles. La clarté compte plus que la vitesse.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-86ce8235": {
+      "id": "texte-86ce8235",
+      "sha256": "7557c3ff1f9c23b164dea6b26bfa85d98adf82220b545135883167e1bba3c479",
+      "expected": "Je m'entraîne trois fois",
+      "duration_s": 1.98,
+      "rms": 0.10217,
+      "recognized": "Je m'entraîne trois fois.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2e26d4aa": {
+      "id": "texte-2e26d4aa",
+      "sha256": "99a6023bb41ce5a3f5e66797a691e260d65a72806faf01dd2054070569d43f42",
+      "expected": "Préparez (une minute)",
+      "duration_s": 2.3,
+      "rms": 0.08543,
+      "recognized": "Préparez une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-70f8a73c": {
+      "id": "texte-70f8a73c",
+      "sha256": "961640c1c1e6dda20089b83bf32b2c6a1422a2964fd3648ccd48251411a11514",
+      "expected": "Essai un. une minute trente secondes",
+      "duration_s": 3.58,
+      "rms": 0.12064,
+      "recognized": "Et c'est 1, 1 minute, 30 secondes.",
+      "word_error_rate": 0.667,
+      "alert": true
+    },
+    "texte-bcbd7b8c": {
+      "id": "texte-bcbd7b8c",
+      "sha256": "138e216cd559823d599d6584e0ede8eb56c5f5446cfe63e8812ef08e78637226",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute trente secondes.",
+      "duration_s": 7.66,
+      "rms": 0.09683,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute 30 secondes.",
+      "word_error_rate": 0.048,
+      "alert": false
+    },
+    "texte-b0034946": {
+      "id": "texte-b0034946",
+      "sha256": "f46de1fe1be077e22b6096987f1a4b3539a77ad8cc6c85e74c875dcf64fb5a4c",
+      "expected": "Essai deux. une minute quinze secondes",
+      "duration_s": 2.94,
+      "rms": 0.10983,
+      "recognized": "Essai 2, 1 minute 15 secondes.",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-845deb5b": {
+      "id": "texte-845deb5b",
+      "sha256": "562819ccdf76ae117ecb76736c577c9b2142dd0171c698581ee34c2e577f8b6c",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute quinze secondes.",
+      "duration_s": 7.42,
+      "rms": 0.10122,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute 15 secondes.",
+      "word_error_rate": 0.048,
+      "alert": false
+    },
+    "texte-3bc655fb": {
+      "id": "texte-3bc655fb",
+      "sha256": "b0243ec7a92a6927067e42508bf9ee3bffc547136307bd6532b01a65f8881277",
+      "expected": "Essai trois. une minute",
+      "duration_s": 2.94,
+      "rms": 0.10234,
+      "recognized": "Essai 3, 1 minute.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-52bfc5f": {
+      "id": "texte-52bfc5f",
+      "sha256": "14a1b513b98a57ed2a3936f2e6100d4f97de39b244a3f2d2ccaa3a10aec59233",
+      "expected": "Vos trois essais en chiffres",
+      "duration_s": 3.1,
+      "rms": 0.11209,
+      "recognized": "Vos 3 essais en chiffres",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-efe80e11": {
+      "id": "texte-efe80e11",
+      "sha256": "0c891a3272039306d5690820c5d7ff0cf3f8f071238d28d9b5d8ac2e8db29424",
+      "expected": "Vos chiffres apparaîtront ici après vos enregistrements.",
+      "duration_s": 4.54,
+      "rms": 0.10104,
+      "recognized": "Vos chiffres apparaîtront ici après vos enregistrements.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "serveur-question-4": {
+      "id": "serveur-question-4",
+      "sha256": "bc6d1f36bdda697baa3eeb43ff6c32577b5cc19e29767acfc1783a0ef68390e7",
+      "expected": "« Le prestataire connaît déjà bien l’outil. Pourquoi changer maintenant ? »",
+      "duration_s": 4.06,
+      "rms": 0.10909,
+      "recognized": "Le prestataire connaît déjà bien l'outil. Pourquoi changer maintenant ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "apres-consigne": {
+      "id": "apres-consigne",
+      "sha256": "f073a76c6f7a10a2a14bf38b3941edf6f551249fdb12cc2775a6f14833c65c18",
+      "expected": "Le même sujet qu'au début. Parlez une minute, avec vos mots-clés si nécessaire.",
+      "duration_s": 5.95,
+      "rms": 0.0422,
+      "recognized": "Le même sujet qu'au début. Parlez une minute avec vos mots-clés si nécessaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "apres-bilan": {
+      "id": "apres-bilan",
+      "sha256": "ad6fe6a3f7c51e2a9f8e440e5d5aa1e78686c15826fd45ad11a2c93d4802c4c4",
+      "expected": "Réécoutez-vous et cochez.",
+      "duration_s": 1.97,
+      "rms": 0.04168,
+      "recognized": "Réécoutez-vous et cochez !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f8bcc4cc": {
+      "id": "texte-f8bcc4cc",
+      "sha256": "78a9f472d71714ab19eb0c37613df7e16490ce13063141e88c1b70b59230b86b",
+      "expected": "Je reparle une minute",
+      "duration_s": 2.14,
+      "rms": 0.10092,
+      "recognized": "Je reparle une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d51d11e8": {
+      "id": "texte-d51d11e8",
+      "sha256": "0fc89833e00ceb67ea5af108ec1ae4be1258efb02102a780c4bbd0ae2b45d261",
+      "expected": "Début et fin du cours",
+      "duration_s": 1.34,
+      "rms": 0.05381,
+      "recognized": "Début et fin du cours.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-39975550": {
+      "id": "texte-39975550",
+      "sha256": "7674455a92072450939ac4827e8508c31576c728e50f041d150efb488abf8b13",
+      "expected": "Mon message est-il clair ?",
+      "duration_s": 2.06,
+      "rms": 0.09586,
+      "recognized": "Mon message est-il clair ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a828fdac": {
+      "id": "texte-a828fdac",
+      "sha256": "46d8b410d682e455ea7397afc2a6b3930dbea28feb827fdddc23d1ace5d0d18f",
+      "expected": "Quelles phrases utiles avez-vous dites ?",
+      "duration_s": 2.86,
+      "rms": 0.10452,
+      "recognized": "Quelle phrase utile avez-vous dite ?",
+      "word_error_rate": 0.667,
+      "alert": true
+    },
+    "objectif-consigne": {
+      "id": "objectif-consigne",
+      "sha256": "eeec2cdac5daaaf31f5bdac171f62fc10930e0094fc4606b70f0627da5403cfc",
+      "expected": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "duration_s": 5.35,
+      "rms": 0.04531,
+      "recognized": "Choisissez une phrase utile. Dites-la cette semaine dans une situation réelle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "semaine-1": {
+      "id": "semaine-1",
+      "sha256": "5e7c3ae01b9b3026d63b78b079f5e9516e0e53328cb5a3db90a6372c8c7d6072",
+      "expected": "Jour un : Choisissez un extrait. Écoutez-le, repérez deux groupes de sens et répétez la phrase entière.",
+      "duration_s": 6.94,
+      "rms": 0.10955,
+      "recognized": "Jour 1, choisissez un extrait. Écoutez-le, repérez deux groupes de sens et répétez la phrase entière.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "semaine-2": {
+      "id": "semaine-2",
+      "sha256": "f2c3d3706e9fb9bdbbebaa8ab4443451732fde6b700502ed3b9eb11ddaf17827",
+      "expected": "Jour deux : Dites les trois expressions prioritaires avec notre situation bancaire, puis retrouvez-les sans regarder.",
+      "duration_s": 7.02,
+      "rms": 0.11598,
+      "recognized": "Jour 2, dites les trois expressions prioritaires avec notre situation bancaire, puis retrouvez-les sans regarder.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "semaine-3": {
+      "id": "semaine-3",
+      "sha256": "d47560c264814cf4b121f1af1a1421c929f0f1b2030fb3eba81715e32d5a771a",
+      "expected": "Jour trois : Répondez à une objection. Reconnaissez le risque et proposez une mesure concrète.",
+      "duration_s": 5.82,
+      "rms": 0.11395,
+      "recognized": "Jour 3. Répondez à une objection. Reconnaissez le risque et proposez une mesure concrète.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "semaine-4": {
+      "id": "semaine-4",
+      "sha256": "713797f8c34316f16f289d5e102676e3dc68fbc888b11ccae49110ec381d1a8a",
+      "expected": "Jour quatre : Défendez un choix réel en une minute : une raison, une limite, une condition. Réutilisez une expression dans un échange professionnel.",
+      "duration_s": 10.06,
+      "rms": 0.11583,
+      "recognized": "Jour 4. Défendez un choix réel en une minute, une raison, une limite, une condition. Réutilisez une expression dans un échange professionnel.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c10b5645": {
+      "id": "texte-c10b5645",
+      "sha256": "ed9cf79cb37589e403c8dc1c67fd3297abba9c50411a8374052f6bf53a61e7bb",
+      "expected": "Mon objectif de la semaine",
+      "duration_s": 1.57,
+      "rms": 0.05721,
+      "recognized": "Mon objectif de la semaine.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-699993fa": {
+      "id": "texte-699993fa",
+      "sha256": "3544ab5b03c3c6cfc166f7f1af65b04c5e52d72a4dbd5e8e5d3870165bd9582a",
+      "expected": "Ma phrase de la semaine",
+      "duration_s": 1.21,
+      "rms": 0.05581,
+      "recognized": "Ma phrase de la semaine",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3195f031": {
+      "id": "texte-3195f031",
+      "sha256": "af99e9ebaedac36599606bbbb36c59789773ecbeba7246b580d83943b63b0f6b",
+      "expected": "Quand ?",
+      "duration_s": 0.38,
+      "rms": 0.04992,
+      "recognized": "Quand ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-de22aa6": {
+      "id": "texte-de22aa6",
+      "sha256": "758303467d377ea25900d5895b2848730b6dce4cfebf884a90ebd353d796402b",
+      "expected": "Ma phrase exacte",
+      "duration_s": 1.32,
+      "rms": 0.04622,
+      "recognized": "Ma phrase exacte.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ca7e8c70": {
+      "id": "texte-ca7e8c70",
+      "sha256": "3279b5be5ffcfdba43e8ac4a49cc4ecdedc78cc57c794adfb62405d925d2585e",
+      "expected": "dix minutes par jour (facultatif)",
+      "duration_s": 2.94,
+      "rms": 0.10585,
+      "recognized": "10 minutes par jour, facultatif.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7764a1f": {
+      "id": "texte-7764a1f",
+      "sha256": "afe811da8a1fcc028a982b41c8aa0bb8c5cf91288a41c19c00ede25e5d36f91d",
+      "expected": "Envoyer mon travail au formateur",
+      "duration_s": 2.34,
+      "rms": 0.05246,
+      "recognized": "Envoyer mon travail au formateur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8c78e1ab": {
+      "id": "texte-8c78e1ab",
+      "sha256": "f8587512fbec099d6467c4d345611a926c66f111dd7a0af5d7f16d936caad5f8",
+      "expected": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "duration_s": 6.26,
+      "rms": 0.04004,
+      "recognized": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5cfd7be5": {
+      "id": "texte-5cfd7be5",
+      "sha256": "28ef7e189bc324db0ff4302a2d888fcef7941c94de937598fc55b6b5227a2641",
+      "expected": "Pour aller plus loin (facultatif)",
+      "duration_s": 2.48,
+      "rms": 0.03865,
+      "recognized": "Pour aller plus loin, facultatif,",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6b5e176a": {
+      "id": "texte-6b5e176a",
+      "sha256": "4adf5b5e7ecea06fa23e487c398dd51280df8cbac82c7309cea01d7c58349aa6",
+      "expected": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "duration_s": 3.79,
+      "rms": 0.04974,
+      "recognized": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-role-0": {
+      "id": "form-role-0",
+      "sha256": "f8ed168be42489d8bb82308fc32037deebf75c17a69b5e4df16e75a474462f2a",
+      "expected": "Gardez la même situation bancaire pendant toute la séance. Une minute sans correction ; relevez le problème, le choix et une raison. Autorisez une autre situation dès l’accueil, puis conservez-la.",
+      "duration_s": 12.78,
+      "rms": 0.10828,
+      "recognized": "Gardez la même situation bancaire pendant toute la séance. Une minute sans correction, relevez le problème, le choix et une raison. Autorisez une autre situation dès l'accueil, puis conservez-la.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-role-1": {
+      "id": "form-role-1",
+      "sha256": "d9ca4dcf89d5574016803e7a729993f8544780bd84f8023f4e7fa550c321b181",
+      "expected": "Première écoute : quelle est l’idée ? Deuxième écoute : deux réponses. Après A, demandez pourquoi la hausse survient ; après B, demandez ce qui pourrait rendre l’achat moins intéressant. Les trous et les nombres sont facultatifs.",
+      "duration_s": 13.58,
+      "rms": 0.1083,
+      "recognized": "Première écoute, quelle est l'idée ? Deuxième écoute, deux réponses. Après A, demander pourquoi la hausse survient. Après B, demander ce qui pourrait rendre l'achat moins intéressant. Les trous et les nombres sont facultatifs.",
+      "word_error_rate": 0.057,
+      "alert": false
+    },
+    "form-role-2": {
+      "id": "form-role-2",
+      "sha256": "16100a975986e5adf33c158f5a65028c1370ba48fb0e56065f1ceb461c6fed5e",
+      "expected": "Travaillez trois fonctions : préciser le problème (carte deux), reconnaître une limite (carte cinq), poser une condition (carte quatre). Le reste constitue une réserve. Faites écouter, adapter à la formation des conseillers, puis retrouver une expression sans regarder. Un complément suffit.",
+      "duration_s": 20.44,
+      "rms": 0.10799,
+      "recognized": "Travaillez trois fonctions. Précisez le problème, carte 2. Reconnaître une limite, carte 5. Poser une condition, carte 4. Le reste constitue une réserve. Faites écouter, adaptez à la formation des conseillers, puis retrouvez une expression sans regarder. Un complément suffit.",
+      "word_error_rate": 0.075,
+      "alert": false
+    },
+    "form-role-3": {
+      "id": "form-role-3",
+      "sha256": "1564757f7df515ab5a5fb2cab4b10280a41be299f50bc81ccacdb5ffb50f8e93",
+      "expected": "Choisissez un groupe de sens. Écoute sans barres, dévoilement, phrase entière, puis exemple personnel. Corrigez une seule frontière gênante. Aucune règle universelle montée/descente ni copie exacte de la voix.",
+      "duration_s": 12.94,
+      "rms": 0.11661,
+      "recognized": "Choisissez un groupe de sens. Écoute sans barres dévoilements, phrases entières puis exemples personnels. Corrigez une seule frontière gênante. Aucune règle universelle montée, décente, ni copie exacte de la voix.",
+      "word_error_rate": 0.2,
+      "alert": false
+    },
+    "form-role-4": {
+      "id": "form-role-4",
+      "sha256": "29c5178486ec9b1705477a1f24f768cc4d27c3762df13c1101da14e6dfcd25ee",
+      "expected": "Reprenez la même décision trois fois. Ajoutez une limite, puis une condition. À l’essai deux, posez une seule objection après la raison principale. Le temps inclut la réponse ; gardez quatre-vingt-dix secondes si nécessaire. Un retour concret entre deux essais.",
+      "duration_s": 17.8,
+      "rms": 0.11163,
+      "recognized": "Reprenez la même décision trois fois. Ajoutez une limite puis une condition. À l'essai 2, posez une seule objection après la raison principale. Le temps inclut la réponse. Gardez 90 secondes si nécessaire. Un retour concret entre deux essais.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-role-5": {
+      "id": "form-role-5",
+      "sha256": "660c4fe08c3f12d53e7031cea770aabc82ec9031803680700a10302b5292e43a",
+      "expected": "Même consigne, même sujet, une minute et mots-clés autorisés. Comparez surtout clarté du choix, raison, limite et condition. Les mesures acoustiques sont approximatives et ne mesurent pas le niveau B deux.",
+      "duration_s": 14.46,
+      "rms": 0.10746,
+      "recognized": "Même consigne, même sujet, une minute et mots-clés autorisés. Comparer surtout clarté du choix, raison, limite et condition. Les mesures acoustiques sont approximatives et ne mesurent pas le niveau B2.",
+      "word_error_rate": 0.031,
+      "alert": false
+    },
+    "form-role-6": {
+      "id": "form-role-6",
+      "sha256": "829ca54fa8c46d02c14ac5d1cab785aaa438eb05c748c835051e3b74aaae5ed1",
+      "expected": "Choisissez une expression, un échange professionnel et une date. Le plan de quatre jours est facultatif.",
+      "duration_s": 6.7,
+      "rms": 0.11108,
+      "recognized": "Choisissez une expression, un échange professionnel et une date. Le plan de 4 jours est facultatif.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-note-0": {
+      "id": "form-note-0",
+      "sha256": "4df14f95119f09dce561b0ea2f6195b620b9bba25888bda6c5b955fce388b9a8",
+      "expected": "Public : apprenant adulte de niveau B deux intermédiaire, travaillant dans la banque. L’exercice porte sur une décision d’organisation de la formation ; les détails techniques de l’outil ne sont pas nécessaires. Les variantes métier sont facultatives.",
+      "duration_s": 16.04,
+      "rms": 0.10457,
+      "recognized": "public apprenant adulte de niveau B2 intermédiaire travaillant dans la banque. L'exercice porte sur une décision d'organisation de la formation. Les détails techniques de l'outil ne sont pas nécessaires. Les variantes métiers sont facultatives.",
+      "word_error_rate": 0.026,
+      "alert": false
+    },
+    "form-note-1": {
+      "id": "form-note-1",
+      "sha256": "035f9248657547fe3ca350236906ee971bb4a1d9345a98ce43efbeabbacb4e1e",
+      "expected": "Trois objectifs de production : défendre un choix avec une raison, reconnaître une limite, préciser une condition. Les six cartes ne sont pas six acquis obligatoires.",
+      "duration_s": 10.7,
+      "rms": 0.10221,
+      "recognized": "Trois objectifs de production, défendre un choix avec une raison, reconnaître une limite, préciser une condition. Les six cartes ne sont pas six acquis obligatoires.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-note-2": {
+      "id": "form-note-2",
+      "sha256": "fe8484a7945a152bb23b6b4cb9c98347aed6e244abfcdfeb8a62249c4e6e774c",
+      "expected": "La vidéo de dix-huit minutes sert de document accompagné. Seuls deux extraits sont obligatoires ; le cours ne vise pas la mémorisation des navires, dates, volumes ou entreprises.",
+      "duration_s": 10.78,
+      "rms": 0.11119,
+      "recognized": "La vidéo de 18 minutes sert de document accompagné. Seuls deux extraits sont obligatoires. Le cours ne vise pas la mémorisation des navires, dates, volumes ou entreprises.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-note-3": {
+      "id": "form-note-3",
+      "sha256": "e7aab320ad92e2a3667ff52b62e9bb1c859c70fd18f74290eaf2e2cc0196d0d2",
+      "expected": "Les chiffres et les affirmations économiques sont attribués au narrateur. Ils ne constituent pas ici des faits actuels vérifiés. Ne transformez pas « seul constructeur », « plus grand navire » ou les prévisions pour deux mille vingt-six en savoirs à apprendre.",
+      "duration_s": 15.48,
+      "rms": 0.11483,
+      "recognized": "Les chiffres et les affirmations économiques sont attribués au narrateur. Ils ne constituent pas ici des faits actuels vérifiés. Ne transformez pas seul constructeur, plus grand navire ou les prévisions pour 2026 en savoir à apprendre.",
+      "word_error_rate": 0.026,
+      "alert": false
+    },
+    "form-note-4": {
+      "id": "form-note-4",
+      "sha256": "3001cc48ede0c13c2e4738dd6c550bb42718125607c37b3339c671ea03a35648",
+      "expected": "La transcription fournie est automatique : B Y D, affréter, armateur, coûts fixes et certains nombres sont déformés. Les plages principales sont héritées de la version trois ; vérifier à l’oreille les premiers et derniers mots avant utilisation.",
+      "duration_s": 16.12,
+      "rms": 0.11773,
+      "recognized": "La transcription fournie est automatique. B, Y, D, affrété, armateur, coût fixe et certains nombres sont déformés. Les plages principales sont héritées de la version 3. Vérifiez à l'oreille les premiers et derniers mots avant d'utilisation.",
+      "word_error_rate": 0.135,
+      "alert": false
+    },
+    "form-note-5": {
+      "id": "form-note-5",
+      "sha256": "8289a7103d30087a4987e14194540fda3271470ed1e04e1c60c06ace5edbe912",
+      "expected": "Les groupes proposés sont des aides de sens, pas une mesure acoustique. Les lectures Qwen utilisent la voix française féminine du support de référence. Une lecture synthétique et la voix de la vidéo restent deux modèles distincts.",
+      "duration_s": 14.06,
+      "rms": 0.11553,
+      "recognized": "Les groupes proposés sont des aides de sens, pas une mesure acoustique. Les lectures quen utilisent la voix française féminine du support de référence. Une lecture synthétique et la voix de la vidéo restent deux modèles distincts.",
+      "word_error_rate": 0.027,
+      "alert": false
+    },
+    "form-note-6": {
+      "id": "form-note-6",
+      "sha256": "c25396b46cb44f92058b8910d74b3d17fffba080aa9f316aecfeb8738a5b16d3",
+      "expected": "L’orateur emploie des oppositions dramatiques. Pour une réunion, autorisez « Le vrai problème, c’est » ou « Il faut toutefois tenir compte de ». Le but est la nuance, pas la reproduction du ton de l’enquête.",
+      "duration_s": 13.26,
+      "rms": 0.10866,
+      "recognized": "L'orateur emploie des oppositions dramatiques. Pour une réunion, autoriser le vrai problème, c'est, ou il faut toutefois tenir compte d'eux. Le but est la nuance, pas la reproduction du ton de l'enquête.",
+      "word_error_rate": 0.086,
+      "alert": false
+    },
+    "form-note-7": {
+      "id": "form-note-7",
+      "sha256": "2092d0ce412c74079306f438649d2922b7b6a36f26c059868bbe7f62ba55a5bf",
+      "expected": "Pour approfondir la source : trois minutes sept secondes à trois minutes trente-neuf secondes, coût et contrôle ; onze minutes cinquante-six secondes à quatorze minutes quinze secondes, retours à vide et partenaires ; seize minutes trente secondes à dix-sept minutes seize secondes, engagement, surcapacité et production locale. Ces repères viennent de la transcription et restent approximatifs.",
+      "duration_s": 25.56,
+      "rms": 0.11247,
+      "recognized": "Pour approfondir la source, 3 minutes, 7 secondes à 3 minutes, 39 secondes, coût et contrôle. 11 minutes, 56 secondes à 14 minutes, 15 secondes, retour à vide et partenaire. 16 minutes, 30 secondes à 17 minutes, 16 secondes, engagement, surcapacité et production locale. Ces repères viennent de la transcription et restent approximatifs.",
+      "word_error_rate": 0.036,
+      "alert": false
+    },
+    "form-note-8": {
+      "id": "form-note-8",
+      "sha256": "9f8c46db4f8cffd19d0f4d4a474ef17537d223fc73b1147d008bc5301be56f84",
+      "expected": "Grille qualitative : le choix est identifiable ; une raison le soutient ; une limite est reconnue ; une condition est exprimée ; une objection reçoit une réponse compréhensible. Recueillez un exemple entendu, sans calculer de score automatique.",
+      "duration_s": 16.12,
+      "rms": 0.10703,
+      "recognized": "Grille qualitative. Le choix est identifiable, une raison le soutient, une limite est reconnue, une condition est exprimée, une objection reçoit une réponse compréhensible. Recueillez un exemple entendu, sans calculer de score automatique.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "form-note-9": {
+      "id": "form-note-9",
+      "sha256": "7e2416175ec099db4530a3cc92d3bf5d1e62a1cf11281d5250f4a642e0b5daae",
+      "expected": "Les enregistrements audio restent dans la session et disparaissent au rechargement. Les réponses écrites et les repères sont sauvegardés dans ce navigateur. Pour garder un audio, téléchargez-le.",
+      "duration_s": 11.18,
+      "rms": 0.12011,
+      "recognized": "Les enregistrements audio restent dans la session et disparaissent au rechargement. Les réponses écrites et les repères sont sauvegardés dans ce navigateur. Pour garder un audio, téléchargez-le.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ac9d1cab": {
+      "id": "texte-ac9d1cab",
+      "sha256": "0e0a693577d9a8c4dad452890eb2430fc956f50c11389e9a22f18e93ae5ac251",
+      "expected": "Espace formateur",
+      "duration_s": 1.24,
+      "rms": 0.04289,
+      "recognized": "Espace Formateur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-107a5742": {
+      "id": "texte-107a5742",
+      "sha256": "1c2f4d67fedfe16151ad98d644c3890482e03adb46abcb57187cda0ce7e4b434",
+      "expected": "Déroulé minuté et conseils de conduite.",
+      "duration_s": 2.65,
+      "rms": 0.04902,
+      "recognized": "Déroulez minuté et conseil de conduite.",
+      "word_error_rate": 0.333,
+      "alert": true
+    },
+    "texte-88d91f60": {
+      "id": "texte-88d91f60",
+      "sha256": "1c800af61b347c663772e1db71793e5e3b24ee4fed18b92f65bbd9a493001a4b",
+      "expected": "Déroulé (quarante-cinq minutes)",
+      "duration_s": 2.54,
+      "rms": 0.07355,
+      "recognized": "Déroulez 45 minutes.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-ff01b6a": {
+      "id": "texte-ff01b6a",
+      "sha256": "e2d31db6e7a50dc92ecfe3c4b3a013fcf54fcc09a707d94c9f64c2189a9b70ac",
+      "expected": "Notes",
+      "duration_s": 0.47,
+      "rms": 0.04746,
+      "recognized": "Notes",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ce981e45": {
+      "id": "texte-ce981e45",
+      "sha256": "54d68e5816aa445e3fff26442fefaab1188059a22aaab4ed0e403929596a1f1d",
+      "expected": "J’ai exprimé mon choix.",
+      "duration_s": 2.06,
+      "rms": 0.10435,
+      "recognized": "J'ai exprimé mon choix.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6c8889fe": {
+      "id": "texte-6c8889fe",
+      "sha256": "a6e1faf9719e5e497d34e8ebe32c944797ffee0eb0975b7cff292ed0fee2defe",
+      "expected": "J’ai donné une raison.",
+      "duration_s": 1.9,
+      "rms": 0.10531,
+      "recognized": "J'ai donné une raison.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8ed4b6fa": {
+      "id": "texte-8ed4b6fa",
+      "sha256": "09ce328d0e5ee551833b50d9cc94fd8ea1fc24563819b886f536d5c2e95f4020",
+      "expected": "J’ai reconnu une limite.",
+      "duration_s": 2.38,
+      "rms": 0.11138,
+      "recognized": "J'ai reconnu une limite.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dfd7a7a": {
+      "id": "texte-dfd7a7a",
+      "sha256": "740824bb751b7ffe70443069ae561fc3dac29b34da8d926be5998809994b653f",
+      "expected": "J’ai posé une condition.",
+      "duration_s": 2.38,
+      "rms": 0.11322,
+      "recognized": "J'ai posé une condition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-896bc7": {
+      "id": "texte-896bc7",
+      "sha256": "bbfae57eb773d7408f5f3f4fede7aae172c50d55cd81ecb7ee9e5d6862b454bc",
+      "expected": "Pendant des années, la règle était simple :",
+      "duration_s": 3.02,
+      "rms": 0.12772,
+      "recognized": "Pendant des années, la règle était simple.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f73777f4": {
+      "id": "texte-f73777f4",
+      "sha256": "c7d4d5281068409f163cc503962cdaae439fbd5427db0ef3b7dfc93900089684",
+      "expected": "n'est pas le pire. Le pire, c'est",
+      "duration_s": 2.86,
+      "rms": 0.11079,
+      "recognized": "n'est pas le pire. Le pire, c'est",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a41e0d68": {
+      "id": "texte-a41e0d68",
+      "sha256": "a871181173bd807219b7958622b278f4560d02e2298efbaa0821800105052855",
+      "expected": "Ce n'est pas un détail, c'est",
+      "duration_s": 2.46,
+      "rms": 0.0658,
+      "recognized": "Ce n'est pas un détail, c'est…",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8585e70d": {
+      "id": "texte-8585e70d",
+      "sha256": "c75fee951a50e8f0d9636cc7f182253fdd881cf9aa0f764456a906f82e879d2f",
+      "expected": "Tant que,",
+      "duration_s": 1.34,
+      "rms": 0.1007,
+      "recognized": "Tant que...",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-38c39522": {
+      "id": "texte-38c39522",
+      "sha256": "97df7eb95a81821ce2ebac448dd2411b6335668c60436133110d6c87951dbdc7",
+      "expected": "Reste le vrai contre-argument :",
+      "duration_s": 2.62,
+      "rms": 0.11498,
+      "recognized": "Reste le vrai contre-argument.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4acab4": {
+      "id": "texte-4acab4",
+      "sha256": "5f7bf68b6b6b98104f95ee40a7666e873adf40d8c10572fbdbbedf8550c1fe1a",
+      "expected": "paraît ; ressemble à",
+      "duration_s": 2.62,
+      "rms": 0.08691,
+      "recognized": "paraît, ressemble à",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a1bf5cdf": {
+      "id": "texte-a1bf5cdf",
+      "sha256": "ec42b9ce2a1497f81b5f1f71ef073be474215f15069f66db042d16ada249938f",
+      "expected": "Je parle une minute. Je défends un choix, sans préparer.",
+      "duration_s": 4.7,
+      "rms": 0.11006,
+      "recognized": "Je parle une minute. Je défends un choix sans préparer.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e7b58d7f": {
+      "id": "texte-e7b58d7f",
+      "sha256": "d07298a8052b7d5425ae3936a22b0d0d9bcd1060e5360c877980510f19d4f24e",
+      "expected": "J'écoute la vidéo. Deux extraits courts.",
+      "duration_s": 3.18,
+      "rms": 0.12371,
+      "recognized": "J'écoute la vidéo, deux extraits courts.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d078fbe": {
+      "id": "texte-d078fbe",
+      "sha256": "da43d07f477c4c9f90f9bfcaf5760d15ab20dc9078d344af73dd26b06acb19d6",
+      "expected": "six phrases utiles. Des phrases de la vidéo pour défendre et nuancer un choix.",
+      "duration_s": 5.42,
+      "rms": 0.10929,
+      "recognized": "six phrases utiles. Des phrases de la vidéo pour défendre et nuancer un choix.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dba2cff8": {
+      "id": "texte-dba2cff8",
+      "sha256": "1d56152488a9f31ab311add255f9cf7b51ab276d379aafcbb042c3fde06bf82f",
+      "expected": "La mélodie du français. Je fais entendre mes groupes de sens.",
+      "duration_s": 4.3,
+      "rms": 0.11395,
+      "recognized": "La mélodie du français. Je fais entendre mes groupes de sens.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3ae57907": {
+      "id": "texte-3ae57907",
+      "sha256": "64bb33b29145adf064eba963fb68bb2db9577aacc0088ec6ecc69f8ed75a9170",
+      "expected": "Je m'entraîne trois fois. Le même message, avec une limite et une condition.",
+      "duration_s": 5.58,
+      "rms": 0.10744,
+      "recognized": "Je m'entraîne trois fois, le même message, avec une limite et une condition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e13f73e2": {
+      "id": "texte-e13f73e2",
+      "sha256": "90b05236c06b58f04710fbf37ece66cd9426dc8b7764ab305c2c2d090bc6ca98",
+      "expected": "Je reparle une minute. Je compare avec le début.",
+      "duration_s": 3.98,
+      "rms": 0.11493,
+      "recognized": "Je reparle une minute. Je compare avec le début.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e54a800b": {
+      "id": "texte-e54a800b",
+      "sha256": "237103d59cac6398fadd6e3a2caef7a31267b8c39c0d137024a192985ac98629",
+      "expected": "Mon objectif de la semaine. Une phrase à utiliser dans la vie réelle.",
+      "duration_s": 5.9,
+      "rms": 0.11535,
+      "recognized": "Mon objectif de la semaine. Une phrase à utiliser dans la vie réelle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8ceafa3": {
+      "id": "texte-8ceafa3",
+      "sha256": "45e9df971f4d765d683325869cceb2b78844983203eb2c88a7e76f5004f78165",
+      "expected": "un. Avant d'écouter : devinez",
+      "duration_s": 3.1,
+      "rms": 0.1145,
+      "recognized": "1. Avant d'écouter, devinez.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c9838862": {
+      "id": "texte-c9838862",
+      "sha256": "5146851fa897b07e89436430c5a412ec949e18adabe353893771a02b01b6719c",
+      "expected": "deux. Écoutez l'extrait, puis répondez",
+      "duration_s": 3.58,
+      "rms": 0.12001,
+      "recognized": "2. Écoutez l'extrait, puis répondez",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d6898c6d": {
+      "id": "texte-d6898c6d",
+      "sha256": "0c5427ed788f93eb67fd4b7d0f9c60cde5748cbd4c31156bdc0b0e1f9aa1686d",
+      "expected": "trois. Écoutez encore, puis complétez",
+      "duration_s": 3.34,
+      "rms": 0.12301,
+      "recognized": "Écoutez encore puis complétez.",
+      "word_error_rate": 0.2,
+      "alert": false
+    },
+    "phrase-p1-film": {
+      "id": "phrase-p1-film",
+      "sha256": "24fca6447571b59bc636d7a7d3990367547152ae43cf3f688b6feed26aa8b305",
+      "expected": "Pendant cent ans, la règle était simple. Les constructeurs fabriquent les voitures, les compagnies maritimes les transportent.",
+      "duration_s": 7.82,
+      "rms": 0.12217,
+      "recognized": "Pendant 100 ans, la règle était simple. Les constructeurs fabriquent les voitures, les compagnies maritimes les transportent.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p1-avous": {
+      "id": "phrase-p1-avous",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p2-film": {
+      "id": "phrase-p2-film",
+      "sha256": "8e2785a451a7725aa3e5f47bdcfa2eac2905dbd7ea3843a606201bb5b4c05aea",
+      "expected": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "duration_s": 4.06,
+      "rms": 0.11784,
+      "recognized": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p2-avous": {
+      "id": "phrase-p2-avous",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p3-film": {
+      "id": "phrase-p3-film",
+      "sha256": "4ff361d868f00cd02fc4ac8e27a2ce1c788035819d8e4653957da1fd921f7654",
+      "expected": "Ce n'est pas un détail, c'est le problème.",
+      "duration_s": 3.34,
+      "rms": 0.10836,
+      "recognized": "Ce n'est pas un détail, c'est le problème.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p3-avous": {
+      "id": "phrase-p3-avous",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p4-film": {
+      "id": "phrase-p4-film",
+      "sha256": "29abced6c7c861d8096ec6e60a3d7b22f4a3f17207d28da738a7aa4cd7e78583",
+      "expected": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "duration_s": 7.26,
+      "rms": 0.10394,
+      "recognized": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p4-avous": {
+      "id": "phrase-p4-avous",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p5-film": {
+      "id": "phrase-p5-film",
+      "sha256": "afd3aed26ce01a0867a3aab2cdc6aec13dcfb5d276129539c471206750cc0fb5",
+      "expected": "Reste le vrai contre-argument. Un navire, c'est un engagement sur vingt-cinq ans.",
+      "duration_s": 5.98,
+      "rms": 0.10742,
+      "recognized": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p5-avous": {
+      "id": "phrase-p5-avous",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "phrase-p6-film": {
+      "id": "phrase-p6-film",
+      "sha256": "330f61eebeb571c6136fd4e8423b61f0ec660f475aac1e4f5184f20fa9759182",
+      "expected": "Posséder une flotte paraît brillant, en pleine pénurie. En pleine surabondance, ça ressemble à une montagne de coûts fixes dont on ne peut pas se débarrasser.",
+      "duration_s": 10.14,
+      "rms": 0.10689,
+      "recognized": "Posséder une flotte paraît brillant en pleine pénurie. En pleine surabondance, ça ressemble à une montagne de coups fixes dont on ne peut pas se débarrasser.",
+      "word_error_rate": 0.038,
+      "alert": false
+    },
+    "phrase-p6-avous": {
+      "id": "phrase-p6-avous",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6538d40d": {
+      "id": "texte-6538d40d",
+      "sha256": "dfa76be83c1cdebb5f018a5afe5dff46543204b57c9d7b1ceaf112b00c6ee715",
+      "expected": "Pendant des années, la règle était simple : un prestataire formait nos conseillers.",
+      "duration_s": 4.86,
+      "rms": 0.11126,
+      "recognized": "Pendant des années, la règle était simple, un prestataire formait nos conseillers.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cee868b8": {
+      "id": "texte-cee868b8",
+      "sha256": "87b3d2efbac4a298db7c05ccbef66a165997081dd7361afa36e14d7d8e32685b",
+      "expected": "Le prix n’est pas le pire. Le pire, c’est de lancer un outil avant que les conseillers soient formés.",
+      "duration_s": 5.82,
+      "rms": 0.10872,
+      "recognized": "Le prix n'est pas le pire. Le pire, c'est de lancer un outil avant que les conseillers soient formés.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cfb24d1e": {
+      "id": "texte-cfb24d1e",
+      "sha256": "e7dc7a1519cdf456384daa3c123a1f34fe7b46d0a0449b28291d8f12d343ff57",
+      "expected": "Ce n’est pas un détail, c’est la qualité de l’accompagnement des clients.",
+      "duration_s": 4.22,
+      "rms": 0.11085,
+      "recognized": "Ce n'est pas un détail, c'est la qualité de l'accompagnement des clients.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fc33e034": {
+      "id": "texte-fc33e034",
+      "sha256": "6b1dcaf55e60e8096adbad3058b62fd1aad89cc01f4a6aab415efadea51b078a",
+      "expected": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "duration_s": 5.82,
+      "rms": 0.11943,
+      "recognized": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d77b1eae": {
+      "id": "texte-d77b1eae",
+      "sha256": "1a1a61e4d8ae9a609323542330030aebdd6280e357e779e729e954486bb59f5f",
+      "expected": "Reste le vrai contre-argument : nos formateurs seront moins disponibles pour leurs clients.",
+      "duration_s": 5.42,
+      "rms": 0.1158,
+      "recognized": "Reste le vrai contre-argument. Nos formateurs seront moins disponibles pour leurs clients.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-509cbcae": {
+      "id": "texte-509cbcae",
+      "sha256": "c16f848f2ab9d4fd788c3156e57c776381a128370141e2f2881c07251e5da67a",
+      "expected": "Une équipe interne paraît utile pendant le lancement ; ensuite, elle risque d’être moins sollicitée.",
+      "duration_s": 6.06,
+      "rms": 0.10828,
+      "recognized": "Une équipe interne paraît utile pendant le lancement. Ensuite, elle risque d'être moins sollicitée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "serveur-question-1": {
+      "id": "serveur-question-1",
+      "sha256": "9cd1603597d5f344cca7e263fffad71a6591cda2855a11445d90532cdbeaa70d",
+      "expected": "« Nos conseillers n’ont pas encore l’expérience nécessaire pour former leurs collègues. »",
+      "duration_s": 5.82,
+      "rms": 0.1173,
+      "recognized": "Nos conseillers n'ont pas encore l'expérience nécessaire pour former leurs collègues.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "serveur-question-2": {
+      "id": "serveur-question-2",
+      "sha256": "9093fbfc9d12231eaa476e7f7f759650f9598086740e142b1ffed1e52f45e7c2",
+      "expected": "« Pendant les formations, qui prendra en charge les clients en agence ? »",
+      "duration_s": 4.86,
+      "rms": 0.10467,
+      "recognized": "Pendant les formations, qui prendra en charge les clients en agence ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "serveur-question-3": {
+      "id": "serveur-question-3",
+      "sha256": "df186cf80180b14c262194bf8201e150ac14b1b22b9dedc17c9c5373f738bad7",
+      "expected": "« Après le lancement, nous aurons beaucoup moins de personnes à former. »",
+      "duration_s": 4.14,
+      "rms": 0.12004,
+      "recognized": "Après le lancement, nous aurons beaucoup moins de personnes à former.",
+      "word_error_rate": 0.0,
+      "alert": false
+    }
+  },
+  "alerts": [
+    "situation-qui",
+    "texte-28ba3d7a",
+    "texte-70f8a73c",
+    "texte-3bc655fb",
+    "texte-a828fdac",
+    "texte-107a5742",
+    "texte-88d91f60"
+  ],
+  "summary": {
+    "count": 238,
+    "alerts": 7,
+    "audio_seconds": 1255.8
+  },
+  "review": {
+    "method": "Comparaison des transcriptions et des textes attendus ; aucune écoute humaine exhaustive ni évaluation de naturel revendiquée",
+    "accepted_asr_variants": {
+      "situation-qui": "dit / d’I : transcription phonétiquement équivalente",
+      "texte-28ba3d7a": "impératif / infinitif homophones",
+      "texte-70f8a73c": "Essai / et c’est et nombres en chiffres : équivalence phonétique",
+      "texte-3bc655fb": "une minute / 1 minute : écriture du nombre",
+      "texte-a828fdac": "singulier / pluriel homophones dans cette phrase",
+      "texte-107a5742": "Déroulé / déroulez et conseil / conseils : homophones",
+      "texte-88d91f60": "Déroulé / déroulez et durée en chiffres : équivalence phonétique"
+    },
+    "unresolved_content_alerts": []
+  }
+}

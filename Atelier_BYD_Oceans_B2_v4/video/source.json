@@ -1,0 +1,13 @@
+{
+  "source": "https://www.youtube.com/watch?v=K_fG0ezFXy0",
+  "source_credit": "ElecTruc",
+  "file": "video/byd.mp4",
+  "sha256": "9da48aed4c4bf37a54ab238506b62d1cbe96f3f6e36b2a8a1128d15b5152c85e",
+  "bytes": 99462946,
+  "duration_s": 1087.203991,
+  "codecs": [
+    "h264",
+    "aac"
+  ],
+  "role": "Lecture native et calage des extraits du support pédagogique"
+}

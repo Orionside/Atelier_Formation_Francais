@@ -1,0 +1,1432 @@
+{
+  "entries": [
+    {
+      "id": "accueil-objectif",
+      "display_text": "Aujourd’hui, vous apprenez à défendre un choix professionnel, à reconnaître une limite et à poser une condition. Vous reprenez le même message, puis répondez à une objection.",
+      "tts_text": "Aujourd’hui, vous apprenez à défendre un choix professionnel, à reconnaître une limite et à poser une condition. Vous reprenez le même message, puis répondez à une objection.",
+      "file": "audio/qwen3-tts/accueil-objectif.mp3"
+    },
+    {
+      "id": "situation-lieu",
+      "display_text": "Réunion dans votre banque : accompagnement d’un nouvel outil",
+      "tts_text": "Réunion dans votre banque : accompagnement d’un nouvel outil",
+      "file": "audio/qwen3-tts/situation-lieu.mp3"
+    },
+    {
+      "id": "situation-qui",
+      "display_text": "Une collègue responsable de la formation dit :",
+      "tts_text": "Une collègue responsable de la formation dit :",
+      "file": "audio/qwen3-tts/situation-qui.mp3"
+    },
+    {
+      "id": "situation-dialogue",
+      "display_text": "« Le prestataire qui forme nos conseillers augmente ses prix de 40 % et propose des dates trop tardives. Faut-il former une équipe interne ? »",
+      "tts_text": "« Le prestataire qui forme nos conseillers augmente ses prix de quarante pour cent et propose des dates trop tardives. Faut-il former une équipe interne ? »",
+      "file": "audio/qwen3-tts/situation-dialogue.mp3"
+    },
+    {
+      "id": "situation-vous",
+      "display_text": "Vous défendez une décision pour accompagner les conseillers lors du lancement d’un nouvel outil. Expliquez l’intérêt, reconnaissez un risque et posez une condition.",
+      "tts_text": "Vous défendez une décision pour accompagner les conseillers lors du lancement d’un nouvel outil. Expliquez l’intérêt, reconnaissez un risque et posez une condition.",
+      "file": "audio/qwen3-tts/situation-vous.mp3"
+    },
+    {
+      "id": "situation-consigne",
+      "display_text": "Dites ce que vous proposez, pourquoi, et à quelle condition. En 1 minute.",
+      "tts_text": "Dites ce que vous proposez, pourquoi, et à quelle condition. En une minute.",
+      "file": "audio/qwen3-tts/situation-consigne.mp3"
+    },
+    {
+      "id": "situation-question",
+      "display_text": "Vous préférez un autre sujet ? (facultatif) Quel autre service de votre banque voulez-vous examiner ?",
+      "tts_text": "Vous préférez un autre sujet ? (facultatif) Quel autre service de votre banque voulez-vous examiner ?",
+      "file": "audio/qwen3-tts/situation-question.mp3"
+    },
+    {
+      "id": "texte-97d73a56",
+      "display_text": "Dans notre banque : former en interne ou faire appel à un partenaire ?",
+      "tts_text": "Dans notre banque : former en interne ou faire appel à un partenaire ?",
+      "file": "audio/qwen3-tts/texte-97d73a56.mp3"
+    },
+    {
+      "id": "texte-fc284940",
+      "display_text": "Où ?",
+      "tts_text": "Où ?",
+      "file": "audio/qwen3-tts/texte-fc284940.mp3"
+    },
+    {
+      "id": "texte-17e951c3",
+      "display_text": "Qui parle ?",
+      "tts_text": "Qui parle ?",
+      "file": "audio/qwen3-tts/texte-17e951c3.mp3"
+    },
+    {
+      "id": "texte-ddb1d5c2",
+      "display_text": "Vous",
+      "tts_text": "Vous",
+      "file": "audio/qwen3-tts/texte-ddb1d5c2.mp3"
+    },
+    {
+      "id": "texte-7d78b25a",
+      "display_text": "À vous",
+      "tts_text": "À vous",
+      "file": "audio/qwen3-tts/texte-7d78b25a.mp3"
+    },
+    {
+      "id": "texte-99a715cc",
+      "display_text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "tts_text": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "file": "audio/qwen3-tts/texte-99a715cc.mp3"
+    },
+    {
+      "id": "texte-dc8e90a4",
+      "display_text": "Le programme",
+      "tts_text": "Le programme",
+      "file": "audio/qwen3-tts/texte-dc8e90a4.mp3"
+    },
+    {
+      "id": "texte-12833449",
+      "display_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "tts_text": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "file": "audio/qwen3-tts/texte-12833449.mp3"
+    },
+    {
+      "id": "avant-consigne",
+      "display_text": "Défendez votre choix, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "tts_text": "Défendez votre choix, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous recommencerez.",
+      "file": "audio/qwen3-tts/avant-consigne.mp3"
+    },
+    {
+      "id": "plan-1-titre",
+      "display_text": "Le problème",
+      "tts_text": "Le problème",
+      "file": "audio/qwen3-tts/plan-1-titre.mp3"
+    },
+    {
+      "id": "plan-2-titre",
+      "display_text": "Mon choix et son intérêt",
+      "tts_text": "Mon choix et son intérêt",
+      "file": "audio/qwen3-tts/plan-2-titre.mp3"
+    },
+    {
+      "id": "plan-3-titre",
+      "display_text": "La limite",
+      "tts_text": "La limite",
+      "file": "audio/qwen3-tts/plan-3-titre.mp3"
+    },
+    {
+      "id": "plan-4-titre",
+      "display_text": "Ma condition et ma décision",
+      "tts_text": "Ma condition et ma décision",
+      "file": "audio/qwen3-tts/plan-4-titre.mp3"
+    },
+    {
+      "id": "difficulte-1",
+      "display_text": "Je cherchais mes mots",
+      "tts_text": "Je cherchais mes mots",
+      "file": "audio/qwen3-tts/difficulte-1.mp3"
+    },
+    {
+      "id": "difficulte-2",
+      "display_text": "Je ne savais pas expliquer mon choix",
+      "tts_text": "Je ne savais pas expliquer mon choix",
+      "file": "audio/qwen3-tts/difficulte-2.mp3"
+    },
+    {
+      "id": "difficulte-3",
+      "display_text": "Je ne savais pas reconnaître une limite",
+      "tts_text": "Je ne savais pas reconnaître une limite",
+      "file": "audio/qwen3-tts/difficulte-3.mp3"
+    },
+    {
+      "id": "difficulte-4",
+      "display_text": "Je ne savais pas répondre à une objection",
+      "tts_text": "Je ne savais pas répondre à une objection",
+      "file": "audio/qwen3-tts/difficulte-4.mp3"
+    },
+    {
+      "id": "difficulte-5",
+      "display_text": "Rien de spécial",
+      "tts_text": "Rien de spécial",
+      "file": "audio/qwen3-tts/difficulte-5.mp3"
+    },
+    {
+      "id": "texte-f2513555",
+      "display_text": "Je parle 1 minute",
+      "tts_text": "Je parle une minute",
+      "file": "audio/qwen3-tts/texte-f2513555.mp3"
+    },
+    {
+      "id": "texte-690e11bc",
+      "display_text": "Vous pouvez suivre ce plan",
+      "tts_text": "Vous pouvez suivre ce plan",
+      "file": "audio/qwen3-tts/texte-690e11bc.mp3"
+    },
+    {
+      "id": "texte-65c0aa8f",
+      "display_text": "Enregistrez-vous",
+      "tts_text": "Enregistrez-vous",
+      "file": "audio/qwen3-tts/texte-65c0aa8f.mp3"
+    },
+    {
+      "id": "texte-a67b42d7",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1 minute.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "file": "audio/qwen3-tts/texte-a67b42d7.mp3"
+    },
+    {
+      "id": "texte-6c1a2934",
+      "display_text": "Pendant cette minute…",
+      "tts_text": "Pendant cette minute",
+      "file": "audio/qwen3-tts/texte-6c1a2934.mp3"
+    },
+    {
+      "id": "texte-7da4e3f7",
+      "display_text": "Touchez ce qui est vrai pour vous.",
+      "tts_text": "Touchez ce qui est vrai pour vous.",
+      "file": "audio/qwen3-tts/texte-7da4e3f7.mp3"
+    },
+    {
+      "id": "ecoute-consigne",
+      "display_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "tts_text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "file": "audio/qwen3-tts/ecoute-consigne.mp3"
+    },
+    {
+      "id": "ecoute-a-pourquoi",
+      "display_text": "Pourquoi cet extrait ? Repérez le problème et sa cause. Vous expliquerez ensuite pourquoi notre entreprise envisage de changer d’organisation.",
+      "tts_text": "Pourquoi cet extrait ? Repérez le problème et sa cause. Vous expliquerez ensuite pourquoi notre entreprise envisage de changer d’organisation.",
+      "file": "audio/qwen3-tts/ecoute-a-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-a-devine",
+      "display_text": "Avant l’écoute, dites une raison possible : pourquoi louer un navire devient-il beaucoup plus cher ? Un navire est un bateau ; affréter signifie louer sa capacité de transport.",
+      "tts_text": "Avant l’écoute, dites une raison possible : pourquoi louer un navire devient-il beaucoup plus cher ? Un navire est un bateau ; affréter signifie louer sa capacité de transport.",
+      "file": "audio/qwen3-tts/ecoute-a-devine.mp3"
+    },
+    {
+      "id": "ecoute-a-q1",
+      "display_text": "Combien coûte la location du même bateau début 2024 ?",
+      "tts_text": "Combien coûte la location du même bateau début deux mille vingt-quatre ?",
+      "file": "audio/qwen3-tts/ecoute-a-q1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-1",
+      "display_text": "25 000 dollars par jour.",
+      "tts_text": "vingt-cinq mille dollars par jour.",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-2",
+      "display_text": "115 000 dollars par jour.",
+      "tts_text": "cent quinze mille dollars par jour.",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-option-3",
+      "display_text": "1 million de dollars par jour.",
+      "tts_text": "un million de dollars par jour.",
+      "file": "audio/qwen3-tts/ecoute-a-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q1-explication",
+      "display_text": "« Début 2024, le même navire se loue 115 000 dollars par jour. Neuf fois plus cher en trois ans. »",
+      "tts_text": "« Début deux mille vingt-quatre, le même navire se loue cent quinze mille dollars par jour. Neuf fois plus cher en trois ans. »",
+      "file": "audio/qwen3-tts/ecoute-a-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-q2",
+      "display_text": "Après la crise de 2008, quelle leçon les propriétaires de bateaux ont-ils retenue ?",
+      "tts_text": "Après la crise de deux mille huit, quelle leçon les propriétaires de bateaux ont-ils retenue ?",
+      "file": "audio/qwen3-tts/ecoute-a-q2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-1",
+      "display_text": "Ne jamais construire un bateau sans être sûr d'avoir des clients.",
+      "tts_text": "Ne jamais construire un bateau sans être sûr d'avoir des clients.",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-2",
+      "display_text": "Construire beaucoup de bateaux très vite.",
+      "tts_text": "Construire beaucoup de bateaux très vite.",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-option-3",
+      "display_text": "Vendre tous leurs bateaux.",
+      "tts_text": "Vendre tous leurs bateaux.",
+      "file": "audio/qwen3-tts/ecoute-a-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-a-q2-explication",
+      "display_text": "« Ne jamais construire un transporteur de voitures sur spéculation » : sans être sûr d'avoir des clients.",
+      "tts_text": "« Ne jamais construire un transporteur de voitures sur spéculation » : sans être sûr d'avoir des clients.",
+      "file": "audio/qwen3-tts/ecoute-a-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1",
+      "display_text": "Début 2024, le même navire se loue 115 000 dollars par jour. Neuf fois plus cher en trois ans.",
+      "tts_text": "Début deux mille vingt-quatre, le même navire se loue cent quinze mille dollars par jour. Neuf fois plus cher en trois ans.",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-aide",
+      "display_text": "Aide : le contraire de « bon marché »",
+      "tts_text": "Aide : le contraire de « bon marché »",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-1-solution",
+      "display_text": "Début 2024, le même navire se loue 115 000 dollars par jour. Neuf fois plus cher en trois ans.",
+      "tts_text": "Début deux mille vingt-quatre, le même navire se loue cent quinze mille dollars par jour. Neuf fois plus cher en trois ans.",
+      "file": "audio/qwen3-tts/ecoute-a-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2",
+      "display_text": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "tts_text": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-aide",
+      "display_text": "Aide : = sans être sûr d'avoir des clients",
+      "tts_text": "Aide : sans être sûr d'avoir des clients",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-a-trou-2-solution",
+      "display_text": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "tts_text": "Ne jamais construire un transporteur de voitures sur spéculation.",
+      "file": "audio/qwen3-tts/ecoute-a-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-a-difficile",
+      "display_text": "Facultatif : écoutez les deux montants, puis la comparaison « neuf fois plus cher ». Il suffit de comprendre la forte hausse ; ne cherchez pas à reconstruire un nombre que vous n’avez pas entendu.",
+      "tts_text": "Facultatif : écoutez les deux montants, puis la comparaison « neuf fois plus cher ». Il suffit de comprendre la forte hausse ; ne cherchez pas à reconstruire un nombre que vous n’avez pas entendu.",
+      "file": "audio/qwen3-tts/ecoute-a-difficile.mp3"
+    },
+    {
+      "id": "ecoute-b-pourquoi",
+      "display_text": "Pourquoi cet extrait ? Repérez la limite du choix de BYD et la conséquence d’une baisse de la demande. Vous reprendrez ce raisonnement pour la formation de nos conseillers.",
+      "tts_text": "Pourquoi cet extrait ? Repérez la limite du choix de B Y D et la conséquence d’une baisse de la demande. Vous reprendrez ce raisonnement pour la formation de nos conseillers.",
+      "file": "audio/qwen3-tts/ecoute-b-pourquoi.mp3"
+    },
+    {
+      "id": "ecoute-b-devine",
+      "display_text": "BYD a acheté ses propres bateaux au lieu de les louer. À votre avis, quel est le grand risque de cette décision ? Répondez à voix haute.",
+      "tts_text": "B Y D a acheté ses propres bateaux au lieu de les louer. À votre avis, quel est le grand risque de cette décision ? Répondez à voix haute.",
+      "file": "audio/qwen3-tts/ecoute-b-devine.mp3"
+    },
+    {
+      "id": "ecoute-b-q1",
+      "display_text": "Quel est le vrai risque, selon le narrateur ?",
+      "tts_text": "Quel est le vrai risque, selon le narrateur ?",
+      "file": "audio/qwen3-tts/ecoute-b-q1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-1",
+      "display_text": "Les bateaux sont trop petits.",
+      "tts_text": "Les bateaux sont trop petits.",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-2",
+      "display_text": "Un bateau engage l'entreprise pour 25 ans, et personne ne sait si la demande restera forte.",
+      "tts_text": "Un bateau engage l'entreprise pour vingt-cinq ans, et personne ne sait si la demande restera forte.",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-option-3",
+      "display_text": "Les voitures électriques sont trop lourdes.",
+      "tts_text": "Les voitures électriques sont trop lourdes.",
+      "file": "audio/qwen3-tts/ecoute-b-q1-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q1-explication",
+      "display_text": "« Un navire, c'est un engagement sur 25 ans. » Personne ne peut prédire la demande aussi loin.",
+      "tts_text": "« Un navire, c'est un engagement sur vingt-cinq ans. » Personne ne peut prédire la demande aussi loin.",
+      "file": "audio/qwen3-tts/ecoute-b-q1-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-q2",
+      "display_text": "S'il y a bientôt trop de bateaux, qui aura eu raison ?",
+      "tts_text": "S'il y a bientôt trop de bateaux, qui aura eu raison ?",
+      "file": "audio/qwen3-tts/ecoute-b-q2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-1",
+      "display_text": "Les entreprises qui ont acheté beaucoup de bateaux.",
+      "tts_text": "Les entreprises qui ont acheté beaucoup de bateaux.",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-1.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-2",
+      "display_text": "Les entreprises qui sont restées flexibles (qui louent).",
+      "tts_text": "Les entreprises qui sont restées flexibles (qui louent).",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-2.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-option-3",
+      "display_text": "Personne.",
+      "tts_text": "Personne.",
+      "file": "audio/qwen3-tts/ecoute-b-q2-option-3.mp3"
+    },
+    {
+      "id": "ecoute-b-q2-explication",
+      "display_text": "« La location redevient bon marché, et ceux qui sont restés flexibles auront eu raison. »",
+      "tts_text": "« La location redevient bon marché, et ceux qui sont restés flexibles auront eu raison. »",
+      "file": "audio/qwen3-tts/ecoute-b-q2-explication.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1",
+      "display_text": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "tts_text": "Reste le vrai contre-argument. Un navire, c'est un engagement sur vingt-cinq ans.",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-aide",
+      "display_text": "Aide : = une promesse qui oblige, pour longtemps",
+      "tts_text": "Aide : une promesse qui oblige, pour longtemps",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-1-solution",
+      "display_text": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "tts_text": "Reste le vrai contre-argument. Un navire, c'est un engagement sur vingt-cinq ans.",
+      "file": "audio/qwen3-tts/ecoute-b-trou-1-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2",
+      "display_text": "Ceux qui sont restés flexibles auront eu raison.",
+      "tts_text": "Ceux qui sont restés flexibles auront eu raison.",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-aide",
+      "display_text": "Aide : = qui peuvent changer facilement",
+      "tts_text": "Aide : qui peuvent changer facilement",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-aide.mp3"
+    },
+    {
+      "id": "ecoute-b-trou-2-solution",
+      "display_text": "Ceux qui sont restés flexibles auront eu raison.",
+      "tts_text": "Ceux qui sont restés flexibles auront eu raison.",
+      "file": "audio/qwen3-tts/ecoute-b-trou-2-solution.mp3"
+    },
+    {
+      "id": "ecoute-b-difficile",
+      "display_text": "Facultatif : pénurie = il manque des navires ; surabondance = il y en a trop. Les coûts fixes restent à payer même si l’activité baisse. Expliquez cette opposition avec vos mots.",
+      "tts_text": "Facultatif : pénurie = il manque des navires ; surabondance = il y en a trop. Les coûts fixes restent à payer même si l’activité baisse. Expliquez cette opposition avec vos mots.",
+      "file": "audio/qwen3-tts/ecoute-b-difficile.mp3"
+    },
+    {
+      "id": "texte-d1582a5b",
+      "display_text": "J'écoute la vidéo",
+      "tts_text": "J'écoute la vidéo",
+      "file": "audio/qwen3-tts/texte-d1582a5b.mp3"
+    },
+    {
+      "id": "texte-d9a715b8",
+      "display_text": "Extrait 1 · Neuf fois plus cher !",
+      "tts_text": "Extrait un. Neuf fois plus cher !",
+      "file": "audio/qwen3-tts/texte-d9a715b8.mp3"
+    },
+    {
+      "id": "texte-86657706",
+      "display_text": "Passage facultatif",
+      "tts_text": "Passage facultatif",
+      "file": "audio/qwen3-tts/texte-86657706.mp3"
+    },
+    {
+      "id": "texte-173a930b",
+      "display_text": "Extrait 2 · Le vrai risque",
+      "tts_text": "Extrait deux. Le vrai risque",
+      "file": "audio/qwen3-tts/texte-173a930b.mp3"
+    },
+    {
+      "id": "phrases-consigne",
+      "display_text": "Six expressions pour défendre et nuancer votre choix. Travaillez les trois priorités : écoutez, adaptez votre exemple bancaire, puis retrouvez la phrase sans regarder.",
+      "tts_text": "Six expressions pour défendre et nuancer votre choix. Travaillez les trois priorités : écoutez, adaptez votre exemple bancaire, puis retrouvez la phrase sans regarder.",
+      "file": "audio/qwen3-tts/phrases-consigne.mp3"
+    },
+    {
+      "id": "phrase-p1-utilite",
+      "display_text": "Pour présenter la situation",
+      "tts_text": "Pour présenter la situation",
+      "file": "audio/qwen3-tts/phrase-p1-utilite.mp3"
+    },
+    {
+      "id": "phrase-p1-forme",
+      "display_text": "Pendant des années, la règle était simple : …",
+      "tts_text": "Pendant des années, la règle était simple :",
+      "file": "audio/qwen3-tts/phrase-p1-forme.mp3"
+    },
+    {
+      "id": "phrase-p1-exemple",
+      "display_text": "Pendant des années, la règle était simple : un prestataire formait nos conseillers.",
+      "tts_text": "Pendant des années, la règle était simple : un prestataire formait nos conseillers.",
+      "file": "audio/qwen3-tts/phrase-p1-exemple.mp3"
+    },
+    {
+      "id": "phrase-p2-utilite",
+      "display_text": "Priorité 1 · préciser le vrai problème. Vous pouvez aussi dire : « Le vrai problème, c’est… ».",
+      "tts_text": "Priorité un. préciser le vrai problème. Vous pouvez aussi dire : « Le vrai problème, c’est ».",
+      "file": "audio/qwen3-tts/phrase-p2-utilite.mp3"
+    },
+    {
+      "id": "phrase-p2-forme",
+      "display_text": "… n'est pas le pire. Le pire, c'est…",
+      "tts_text": "n'est pas le pire. Le pire, c'est",
+      "file": "audio/qwen3-tts/phrase-p2-forme.mp3"
+    },
+    {
+      "id": "phrase-p2-exemple",
+      "display_text": "Le prix n’est pas le pire. Le pire, c’est de lancer un outil avant que les conseillers soient formés.",
+      "tts_text": "Le prix n’est pas le pire. Le pire, c’est de lancer un outil avant que les conseillers soient formés.",
+      "file": "audio/qwen3-tts/phrase-p2-exemple.mp3"
+    },
+    {
+      "id": "phrase-p3-utilite",
+      "display_text": "Complément · souligner une conséquence importante.",
+      "tts_text": "Complément. souligner une conséquence importante.",
+      "file": "audio/qwen3-tts/phrase-p3-utilite.mp3"
+    },
+    {
+      "id": "phrase-p3-forme",
+      "display_text": "Ce n'est pas un détail, c'est…",
+      "tts_text": "Ce n'est pas un détail, c'est",
+      "file": "audio/qwen3-tts/phrase-p3-forme.mp3"
+    },
+    {
+      "id": "phrase-p3-exemple",
+      "display_text": "Ce n’est pas un détail, c’est la qualité de l’accompagnement des clients.",
+      "tts_text": "Ce n’est pas un détail, c’est la qualité de l’accompagnement des clients.",
+      "file": "audio/qwen3-tts/phrase-p3-exemple.mp3"
+    },
+    {
+      "id": "phrase-p4-utilite",
+      "display_text": "Priorité 3 · dire dans quelles conditions le choix reste valable.",
+      "tts_text": "Priorité trois. dire dans quelles conditions le choix reste valable.",
+      "file": "audio/qwen3-tts/phrase-p4-utilite.mp3"
+    },
+    {
+      "id": "phrase-p4-forme",
+      "display_text": "Tant que…, …",
+      "tts_text": "Tant que,",
+      "file": "audio/qwen3-tts/phrase-p4-forme.mp3"
+    },
+    {
+      "id": "phrase-p4-exemple",
+      "display_text": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "tts_text": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "file": "audio/qwen3-tts/phrase-p4-exemple.mp3"
+    },
+    {
+      "id": "phrase-p5-utilite",
+      "display_text": "Priorité 2 · reconnaître une limite. Vous pouvez aussi dire : « Il faut toutefois tenir compte de… ».",
+      "tts_text": "Priorité deux. reconnaître une limite. Vous pouvez aussi dire : « Il faut toutefois tenir compte de ».",
+      "file": "audio/qwen3-tts/phrase-p5-utilite.mp3"
+    },
+    {
+      "id": "phrase-p5-forme",
+      "display_text": "Reste le vrai contre-argument : …",
+      "tts_text": "Reste le vrai contre-argument :",
+      "file": "audio/qwen3-tts/phrase-p5-forme.mp3"
+    },
+    {
+      "id": "phrase-p5-exemple",
+      "display_text": "Reste le vrai contre-argument : nos formateurs seront moins disponibles pour leurs clients.",
+      "tts_text": "Reste le vrai contre-argument : nos formateurs seront moins disponibles pour leurs clients.",
+      "file": "audio/qwen3-tts/phrase-p5-exemple.mp3"
+    },
+    {
+      "id": "phrase-p6-utilite",
+      "display_text": "Complément · nuancer selon la situation. Cette forme reprend la vidéo ; la variante de travail est plus courte.",
+      "tts_text": "Complément. nuancer selon la situation. Cette forme reprend la vidéo ; la variante de travail est plus courte.",
+      "file": "audio/qwen3-tts/phrase-p6-utilite.mp3"
+    },
+    {
+      "id": "phrase-p6-forme",
+      "display_text": "… paraît… ; … ressemble à…",
+      "tts_text": "paraît ; ressemble à",
+      "file": "audio/qwen3-tts/phrase-p6-forme.mp3"
+    },
+    {
+      "id": "phrase-p6-exemple",
+      "display_text": "Une équipe interne paraît utile pendant le lancement ; ensuite, elle risque d’être moins sollicitée.",
+      "tts_text": "Une équipe interne paraît utile pendant le lancement ; ensuite, elle risque d’être moins sollicitée.",
+      "file": "audio/qwen3-tts/phrase-p6-exemple.mp3"
+    },
+    {
+      "id": "manuel-titre",
+      "display_text": "Pour approfondir (facultatif)",
+      "tts_text": "Pour approfondir (facultatif)",
+      "file": "audio/qwen3-tts/manuel-titre.mp3"
+    },
+    {
+      "id": "manuel-intro",
+      "display_text": "Choisissez une seule activité selon votre besoin. Les formulations suivantes servent au réemploi ; elles ne sont pas toutes des citations de la vidéo.",
+      "tts_text": "Choisissez une seule activité selon votre besoin. Les formulations suivantes servent au réemploi ; elles ne sont pas toutes des citations de la vidéo.",
+      "file": "audio/qwen3-tts/manuel-intro.mp3"
+    },
+    {
+      "id": "manuel-0-titre",
+      "display_text": "Relier une cause à une conséquence",
+      "tts_text": "Relier une cause à une conséquence",
+      "file": "audio/qwen3-tts/manuel-0-titre.mp3"
+    },
+    {
+      "id": "manuel-0-consigne",
+      "display_text": "Expliquez le même problème en deux phrases.",
+      "tts_text": "Expliquez le même problème en deux phrases.",
+      "file": "audio/qwen3-tts/manuel-0-consigne.mp3"
+    },
+    {
+      "id": "manuel-0-exemple-0",
+      "display_text": "Le prestataire propose les formations trop tard ; les conseillers risquent de découvrir l’outil pendant un rendez-vous client.",
+      "tts_text": "Le prestataire propose les formations trop tard ; les conseillers risquent de découvrir l’outil pendant un rendez-vous client.",
+      "file": "audio/qwen3-tts/manuel-0-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-0-exemple-1",
+      "display_text": "Former des collègues en interne permettrait de choisir des dates adaptées aux agences.",
+      "tts_text": "Former des collègues en interne permettrait de choisir des dates adaptées aux agences.",
+      "file": "audio/qwen3-tts/manuel-0-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-1-titre",
+      "display_text": "Reconnaître une objection et proposer une réponse",
+      "tts_text": "Reconnaître une objection et proposer une réponse",
+      "file": "audio/qwen3-tts/manuel-1-titre.mp3"
+    },
+    {
+      "id": "manuel-1-consigne",
+      "display_text": "Répondez à votre collègue sans abandonner votre raisonnement.",
+      "tts_text": "Répondez à votre collègue sans abandonner votre raisonnement.",
+      "file": "audio/qwen3-tts/manuel-1-consigne.mp3"
+    },
+    {
+      "id": "manuel-1-exemple-0",
+      "display_text": "Vous avez raison : les formateurs seront moins disponibles pour les clients. Je propose donc de commencer dans deux agences.",
+      "tts_text": "Vous avez raison : les formateurs seront moins disponibles pour les clients. Je propose donc de commencer dans deux agences.",
+      "file": "audio/qwen3-tts/manuel-1-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-1-exemple-1",
+      "display_text": "Si les besoins baissent après le lancement, nous garderons le prestataire pour les demandes ponctuelles.",
+      "tts_text": "Si les besoins baissent après le lancement, nous garderons le prestataire pour les demandes ponctuelles.",
+      "file": "audio/qwen3-tts/manuel-1-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-2-titre",
+      "display_text": "Lire la vidéo avec recul",
+      "tts_text": "Lire la vidéo avec recul",
+      "file": "audio/qwen3-tts/manuel-2-titre.mp3"
+    },
+    {
+      "id": "manuel-2-consigne",
+      "display_text": "Distinguez un chiffre présenté, une interprétation et une hypothèse.",
+      "tts_text": "Distinguez un chiffre présenté, une interprétation et une hypothèse.",
+      "file": "audio/qwen3-tts/manuel-2-consigne.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-0",
+      "display_text": "Chiffre présenté : la location atteint 115 000 dollars par jour selon le narrateur.",
+      "tts_text": "Chiffre présenté : la location atteint cent quinze mille dollars par jour selon le narrateur.",
+      "file": "audio/qwen3-tts/manuel-2-exemple-0.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-1",
+      "display_text": "Interprétation : le contrôle du transport donne du pouvoir.",
+      "tts_text": "Interprétation : le contrôle du transport donne du pouvoir.",
+      "file": "audio/qwen3-tts/manuel-2-exemple-1.mp3"
+    },
+    {
+      "id": "manuel-2-exemple-2",
+      "display_text": "Hypothèse : si l’offre de navires devient trop importante, la location redevient avantageuse.",
+      "tts_text": "Hypothèse : si l’offre de navires devient trop importante, la location redevient avantageuse.",
+      "file": "audio/qwen3-tts/manuel-2-exemple-2.mp3"
+    },
+    {
+      "id": "texte-28bfaf4d",
+      "display_text": "6 phrases utiles",
+      "tts_text": "six phrases utiles",
+      "file": "audio/qwen3-tts/texte-28bfaf4d.mp3"
+    },
+    {
+      "id": "phrases-rappel",
+      "display_text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur « Voir la phrase ».",
+      "tts_text": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur « Voir la phrase ».",
+      "file": "audio/qwen3-tts/phrases-rappel.mp3"
+    },
+    {
+      "id": "melodie-intro",
+      "display_text": "Faites entendre votre raisonnement par groupes de sens : le problème, la limite, puis la condition. Écoutez un modèle à la fois.",
+      "tts_text": "Faites entendre votre raisonnement par groupes de sens : le problème, la limite, puis la condition. Écoutez un modèle à la fois.",
+      "file": "audio/qwen3-tts/melodie-intro.mp3"
+    },
+    {
+      "id": "g-probleme",
+      "display_text": "Mais l’argent n’est pas le pire. Le pire, c’est le contrôle.",
+      "tts_text": "Mais l’argent n’est pas le pire. Le pire, c’est le contrôle.",
+      "file": "audio/qwen3-tts/g-probleme.mp3"
+    },
+    {
+      "id": "g-limite",
+      "display_text": "Reste le vrai contre-argument. Un navire, c’est un engagement sur 25 ans.",
+      "tts_text": "Reste le vrai contre-argument. Un navire, c’est un engagement sur vingt-cinq ans.",
+      "file": "audio/qwen3-tts/g-limite.mp3"
+    },
+    {
+      "id": "g-condition",
+      "display_text": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "tts_text": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "file": "audio/qwen3-tts/g-condition.mp3"
+    },
+    {
+      "id": "melodie-regle-1",
+      "display_text": "Écoutez une phrase avant de voir les barres. Repérez les idées qui vont ensemble.",
+      "tts_text": "Écoutez une phrase avant de voir les barres. Repérez les idées qui vont ensemble.",
+      "file": "audio/qwen3-tts/melodie-regle-1.mp3"
+    },
+    {
+      "id": "melodie-regle-2",
+      "display_text": "Gardez les mots d’un même groupe liés. À la frontière, vous pouvez allonger la dernière syllabe ou faire une courte pause.",
+      "tts_text": "Gardez les mots d’un même groupe liés. À la frontière, vous pouvez allonger la dernière syllabe ou faire une courte pause.",
+      "file": "audio/qwen3-tts/melodie-regle-2.mp3"
+    },
+    {
+      "id": "melodie-regle-3",
+      "display_text": "Répétez la phrase entière, puis dites votre propre exemple. Choisissez un seul passage aujourd’hui.",
+      "tts_text": "Répétez la phrase entière, puis dites votre propre exemple. Choisissez un seul passage aujourd’hui.",
+      "file": "audio/qwen3-tts/melodie-regle-3.mp3"
+    },
+    {
+      "id": "melodie-attention",
+      "display_text": "Attention : Les barres proposent un découpage de sens ; elles n’imposent pas des silences. La voix ne monte pas obligatoirement sur une opposition. Cherchez d’abord à être compris.",
+      "tts_text": "Attention : Les barres proposent un découpage de sens ; elles n’imposent pas des silences. La voix ne monte pas obligatoirement sur une opposition. Cherchez d’abord à être compris.",
+      "file": "audio/qwen3-tts/melodie-attention.mp3"
+    },
+    {
+      "id": "melodie-exercice-1",
+      "display_text": "Écoutez. Cliquez sur la dernière syllabe de chaque idée, puis vérifiez.",
+      "tts_text": "Écoutez. Cliquez sur la dernière syllabe de chaque idée, puis vérifiez.",
+      "file": "audio/qwen3-tts/melodie-exercice-1.mp3"
+    },
+    {
+      "id": "melodie-exercice-1-explication",
+      "display_text": "« pire » et « trôle » terminent les deux idées. Écoutez leur durée et le mouvement de la voix, sans imposer de montée ou de descente.",
+      "tts_text": "« pire » et « trôle » terminent les deux idées. Écoutez leur durée et le mouvement de la voix, sans imposer de montée ou de descente.",
+      "file": "audio/qwen3-tts/melodie-exercice-1-explication.mp3"
+    },
+    {
+      "id": "melodie-etape-1",
+      "display_text": "Écoutez une phrase deux fois.",
+      "tts_text": "Écoutez une phrase deux fois.",
+      "file": "audio/qwen3-tts/melodie-etape-1.mp3"
+    },
+    {
+      "id": "melodie-etape-2",
+      "display_text": "Répétez avec la vidéo, puis seul.",
+      "tts_text": "Répétez avec la vidéo, puis seul.",
+      "file": "audio/qwen3-tts/melodie-etape-2.mp3"
+    },
+    {
+      "id": "melodie-etape-3",
+      "display_text": "Reprenez votre exemple : « Le vrai problème, c’est le retard des formations. » Enregistrez-vous et vérifiez si les deux idées sont claires.",
+      "tts_text": "Reprenez votre exemple : « Le vrai problème, c’est le retard des formations. » Enregistrez-vous et vérifiez si les deux idées sont claires.",
+      "file": "audio/qwen3-tts/melodie-etape-3.mp3"
+    },
+    {
+      "id": "modele-0",
+      "display_text": "Mais l’argent n’est pas le pire. | Le pire, c’est le contrôle.",
+      "tts_text": "Mais l’argent n’est pas le pire. , Le pire, c’est le contrôle.",
+      "file": "audio/qwen3-tts/modele-0.mp3"
+    },
+    {
+      "id": "modele-1",
+      "display_text": "Reste le vrai contre-argument. | Un navire, | c’est un engagement sur 25 ans.",
+      "tts_text": "Reste le vrai contre-argument. , Un navire, , c’est un engagement sur vingt-cinq ans.",
+      "file": "audio/qwen3-tts/modele-1.mp3"
+    },
+    {
+      "id": "texte-eb602c17",
+      "display_text": "La mélodie du français",
+      "tts_text": "La mélodie du français",
+      "file": "audio/qwen3-tts/texte-eb602c17.mp3"
+    },
+    {
+      "id": "texte-34934ad3",
+      "display_text": "Écoutez les groupes de mots",
+      "tts_text": "Écoutez les groupes de mots",
+      "file": "audio/qwen3-tts/texte-34934ad3.mp3"
+    },
+    {
+      "id": "texte-a6960ae",
+      "display_text": "Choisissez une phrase. Écoutez-la, puis essayez d'entendre où finit chaque groupe de sens. Affichez les barres après l'écoute et répétez la phrase entière. La dernière syllabe d'un groupe peut s'allonger, même sans silence.",
+      "tts_text": "Choisissez une phrase. Écoutez-la, puis essayez d'entendre où finit chaque groupe de sens. Affichez les barres après l'écoute et répétez la phrase entière. La dernière syllabe d'un groupe peut s'allonger, même sans silence.",
+      "file": "audio/qwen3-tts/texte-a6960ae.mp3"
+    },
+    {
+      "id": "texte-deae55ba",
+      "display_text": "La règle",
+      "tts_text": "La règle",
+      "file": "audio/qwen3-tts/texte-deae55ba.mp3"
+    },
+    {
+      "id": "texte-28ba3d7a",
+      "display_text": "Écoutez et trouvez",
+      "tts_text": "Écoutez et trouvez",
+      "file": "audio/qwen3-tts/texte-28ba3d7a.mp3"
+    },
+    {
+      "id": "texte-fe7b885a",
+      "display_text": "Mais l’argent n’est pas le pire. Le pire, c’est le contrôle.",
+      "tts_text": "Mais l’argent n’est pas le pire. Le pire, c’est le contrôle.",
+      "file": "audio/qwen3-tts/texte-fe7b885a.mp3"
+    },
+    {
+      "id": "texte-c5a1f1b5",
+      "display_text": "Répétez comme dans la vidéo",
+      "tts_text": "Répétez comme dans la vidéo",
+      "file": "audio/qwen3-tts/texte-c5a1f1b5.mp3"
+    },
+    {
+      "id": "texte-7f6ce0fc",
+      "display_text": "Enregistrez votre exemple bancaire",
+      "tts_text": "Enregistrez votre exemple bancaire",
+      "file": "audio/qwen3-tts/texte-7f6ce0fc.mp3"
+    },
+    {
+      "id": "texte-8fcfc4c7",
+      "display_text": "Dites deux idées liées à votre décision. Réécoutez-vous : entend-on clairement où finit chaque idée ?",
+      "tts_text": "Dites deux idées liées à votre décision. Réécoutez-vous : entend-on clairement où finit chaque idée ?",
+      "file": "audio/qwen3-tts/texte-8fcfc4c7.mp3"
+    },
+    {
+      "id": "texte-4a4c5d98",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 0:20.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après vingt secondes.",
+      "file": "audio/qwen3-tts/texte-4a4c5d98.mp3"
+    },
+    {
+      "id": "entrainement-consigne",
+      "display_text": "Le même message, trois fois. Ajoutez une chose à chaque reprise. Vous pouvez garder la même durée si nécessaire.",
+      "tts_text": "Le même message, trois fois. Ajoutez une chose à chaque reprise. Vous pouvez garder la même durée si nécessaire.",
+      "file": "audio/qwen3-tts/entrainement-consigne.mp3"
+    },
+    {
+      "id": "entrainement-preparation",
+      "display_text": "Notez seulement des mots-clés, pas de phrases.",
+      "tts_text": "Notez seulement des mots-clés, pas de phrases.",
+      "file": "audio/qwen3-tts/entrainement-preparation.mp3"
+    },
+    {
+      "id": "plan-1-exemple",
+      "display_text": "Le prix augmente, mais le vrai problème, c’est le retard des formations.",
+      "tts_text": "Le prix augmente, mais le vrai problème, c’est le retard des formations.",
+      "file": "audio/qwen3-tts/plan-1-exemple.mp3"
+    },
+    {
+      "id": "plan-2-exemple",
+      "display_text": "Je propose des formateurs internes pour accompagner les conseillers à temps.",
+      "tts_text": "Je propose des formateurs internes pour accompagner les conseillers à temps.",
+      "file": "audio/qwen3-tts/plan-2-exemple.mp3"
+    },
+    {
+      "id": "plan-3-exemple",
+      "display_text": "Reste le vrai contre-argument : les formateurs seront moins disponibles en agence.",
+      "tts_text": "Reste le vrai contre-argument : les formateurs seront moins disponibles en agence.",
+      "file": "audio/qwen3-tts/plan-3-exemple.mp3"
+    },
+    {
+      "id": "plan-4-exemple",
+      "display_text": "Tant que plusieurs agences ont besoin de formation, ce choix se défend. Je propose donc un essai dans deux agences.",
+      "tts_text": "Tant que plusieurs agences ont besoin de formation, ce choix se défend. Je propose donc un essai dans deux agences.",
+      "file": "audio/qwen3-tts/plan-4-exemple.mp3"
+    },
+    {
+      "id": "essai-1",
+      "display_text": "Présentez le problème, votre choix et une raison. Appuyez-vous sur quatre mots-clés.",
+      "tts_text": "Présentez le problème, votre choix et une raison. Appuyez-vous sur quatre mots-clés.",
+      "file": "audio/qwen3-tts/essai-1.mp3"
+    },
+    {
+      "id": "essai-1-ajout",
+      "display_text": "Pour l’essai 2, gardez votre décision et ajoutez une limite : « Reste le vrai contre-argument… ».",
+      "tts_text": "Pour l’essai deux, gardez votre décision et ajoutez une limite : « Reste le vrai contre-argument ».",
+      "file": "audio/qwen3-tts/essai-1-ajout.mp3"
+    },
+    {
+      "id": "essai-2",
+      "display_text": "Reprenez le même message. Écoutez une objection de votre collègue, puis répondez : « Ce risque existe ; je propose donc… »",
+      "tts_text": "Reprenez le même message. Écoutez une objection de votre collègue, puis répondez : « Ce risque existe ; je propose donc »",
+      "file": "audio/qwen3-tts/essai-2.mp3"
+    },
+    {
+      "id": "essai-2-ajout",
+      "display_text": "Pour l’essai 3, précisez une condition avec « Tant que… ». Vous pouvez aussi dire : « Si la demande baisse, nous… ».",
+      "tts_text": "Pour l’essai trois, précisez une condition avec « Tant que ». Vous pouvez aussi dire : « Si la demande baisse, nous ».",
+      "file": "audio/qwen3-tts/essai-2-ajout.mp3"
+    },
+    {
+      "id": "essai-3",
+      "display_text": "Gardez le problème, une raison, une limite et votre décision sous condition. Vos mots-clés restent disponibles. La clarté compte plus que la vitesse.",
+      "tts_text": "Gardez le problème, une raison, une limite et votre décision sous condition. Vos mots-clés restent disponibles. La clarté compte plus que la vitesse.",
+      "file": "audio/qwen3-tts/essai-3.mp3"
+    },
+    {
+      "id": "texte-86ce8235",
+      "display_text": "Je m'entraîne 3 fois",
+      "tts_text": "Je m'entraîne trois fois",
+      "file": "audio/qwen3-tts/texte-86ce8235.mp3"
+    },
+    {
+      "id": "texte-2e26d4aa",
+      "display_text": "Préparez (1 minute)",
+      "tts_text": "Préparez (une minute)",
+      "file": "audio/qwen3-tts/texte-2e26d4aa.mp3"
+    },
+    {
+      "id": "texte-70f8a73c",
+      "display_text": "Essai 1 · 1 min 30",
+      "tts_text": "Essai un. une minute trente secondes",
+      "file": "audio/qwen3-tts/texte-70f8a73c.mp3"
+    },
+    {
+      "id": "texte-bcbd7b8c",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1:30.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute trente secondes.",
+      "file": "audio/qwen3-tts/texte-bcbd7b8c.mp3"
+    },
+    {
+      "id": "texte-b0034946",
+      "display_text": "Essai 2 · 1 min 15",
+      "tts_text": "Essai deux. une minute quinze secondes",
+      "file": "audio/qwen3-tts/texte-b0034946.mp3"
+    },
+    {
+      "id": "texte-845deb5b",
+      "display_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1:15.",
+      "tts_text": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute quinze secondes.",
+      "file": "audio/qwen3-tts/texte-845deb5b.mp3"
+    },
+    {
+      "id": "texte-3bc655fb",
+      "display_text": "Essai 3 · 1 min",
+      "tts_text": "Essai trois. une minute",
+      "file": "audio/qwen3-tts/texte-3bc655fb.mp3"
+    },
+    {
+      "id": "texte-52bfc5f",
+      "display_text": "Vos 3 essais en chiffres",
+      "tts_text": "Vos trois essais en chiffres",
+      "file": "audio/qwen3-tts/texte-52bfc5f.mp3"
+    },
+    {
+      "id": "texte-efe80e11",
+      "display_text": "Vos chiffres apparaîtront ici après vos enregistrements.",
+      "tts_text": "Vos chiffres apparaîtront ici après vos enregistrements.",
+      "file": "audio/qwen3-tts/texte-efe80e11.mp3"
+    },
+    {
+      "id": "serveur-question-4",
+      "display_text": "« Le prestataire connaît déjà bien l’outil. Pourquoi changer maintenant ? »",
+      "tts_text": "« Le prestataire connaît déjà bien l’outil. Pourquoi changer maintenant ? »",
+      "file": "audio/qwen3-tts/serveur-question-4.mp3"
+    },
+    {
+      "id": "apres-consigne",
+      "display_text": "Le même sujet qu'au début. Parlez une minute, avec vos mots-clés si nécessaire.",
+      "tts_text": "Le même sujet qu'au début. Parlez une minute, avec vos mots-clés si nécessaire.",
+      "file": "audio/qwen3-tts/apres-consigne.mp3"
+    },
+    {
+      "id": "apres-bilan",
+      "display_text": "Réécoutez-vous et cochez.",
+      "tts_text": "Réécoutez-vous et cochez.",
+      "file": "audio/qwen3-tts/apres-bilan.mp3"
+    },
+    {
+      "id": "texte-f8bcc4cc",
+      "display_text": "Je reparle 1 minute",
+      "tts_text": "Je reparle une minute",
+      "file": "audio/qwen3-tts/texte-f8bcc4cc.mp3"
+    },
+    {
+      "id": "texte-d51d11e8",
+      "display_text": "Début et fin du cours",
+      "tts_text": "Début et fin du cours",
+      "file": "audio/qwen3-tts/texte-d51d11e8.mp3"
+    },
+    {
+      "id": "texte-39975550",
+      "display_text": "Mon message est-il clair ?",
+      "tts_text": "Mon message est-il clair ?",
+      "file": "audio/qwen3-tts/texte-39975550.mp3"
+    },
+    {
+      "id": "texte-a828fdac",
+      "display_text": "Quelles phrases utiles avez-vous dites ?",
+      "tts_text": "Quelles phrases utiles avez-vous dites ?",
+      "file": "audio/qwen3-tts/texte-a828fdac.mp3"
+    },
+    {
+      "id": "objectif-consigne",
+      "display_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "tts_text": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "file": "audio/qwen3-tts/objectif-consigne.mp3"
+    },
+    {
+      "id": "semaine-1",
+      "display_text": "Jour 1 : Choisissez un extrait. Écoutez-le, repérez deux groupes de sens et répétez la phrase entière.",
+      "tts_text": "Jour un : Choisissez un extrait. Écoutez-le, repérez deux groupes de sens et répétez la phrase entière.",
+      "file": "audio/qwen3-tts/semaine-1.mp3"
+    },
+    {
+      "id": "semaine-2",
+      "display_text": "Jour 2 : Dites les trois expressions prioritaires avec notre situation bancaire, puis retrouvez-les sans regarder.",
+      "tts_text": "Jour deux : Dites les trois expressions prioritaires avec notre situation bancaire, puis retrouvez-les sans regarder.",
+      "file": "audio/qwen3-tts/semaine-2.mp3"
+    },
+    {
+      "id": "semaine-3",
+      "display_text": "Jour 3 : Répondez à une objection. Reconnaissez le risque et proposez une mesure concrète.",
+      "tts_text": "Jour trois : Répondez à une objection. Reconnaissez le risque et proposez une mesure concrète.",
+      "file": "audio/qwen3-tts/semaine-3.mp3"
+    },
+    {
+      "id": "semaine-4",
+      "display_text": "Jour 4 : Défendez un choix réel en une minute : une raison, une limite, une condition. Réutilisez une expression dans un échange professionnel.",
+      "tts_text": "Jour quatre : Défendez un choix réel en une minute : une raison, une limite, une condition. Réutilisez une expression dans un échange professionnel.",
+      "file": "audio/qwen3-tts/semaine-4.mp3"
+    },
+    {
+      "id": "texte-c10b5645",
+      "display_text": "Mon objectif de la semaine",
+      "tts_text": "Mon objectif de la semaine",
+      "file": "audio/qwen3-tts/texte-c10b5645.mp3"
+    },
+    {
+      "id": "texte-699993fa",
+      "display_text": "Ma phrase de la semaine",
+      "tts_text": "Ma phrase de la semaine",
+      "file": "audio/qwen3-tts/texte-699993fa.mp3"
+    },
+    {
+      "id": "texte-3195f031",
+      "display_text": "Quand ?",
+      "tts_text": "Quand ?",
+      "file": "audio/qwen3-tts/texte-3195f031.mp3"
+    },
+    {
+      "id": "texte-de22aa6",
+      "display_text": "Ma phrase exacte",
+      "tts_text": "Ma phrase exacte",
+      "file": "audio/qwen3-tts/texte-de22aa6.mp3"
+    },
+    {
+      "id": "texte-ca7e8c70",
+      "display_text": "10 minutes par jour (facultatif)",
+      "tts_text": "dix minutes par jour (facultatif)",
+      "file": "audio/qwen3-tts/texte-ca7e8c70.mp3"
+    },
+    {
+      "id": "texte-7764a1f",
+      "display_text": "Envoyer mon travail au formateur",
+      "tts_text": "Envoyer mon travail au formateur",
+      "file": "audio/qwen3-tts/texte-7764a1f.mp3"
+    },
+    {
+      "id": "texte-8c78e1ab",
+      "display_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "tts_text": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "file": "audio/qwen3-tts/texte-8c78e1ab.mp3"
+    },
+    {
+      "id": "texte-5cfd7be5",
+      "display_text": "Pour aller plus loin (facultatif)",
+      "tts_text": "Pour aller plus loin (facultatif)",
+      "file": "audio/qwen3-tts/texte-5cfd7be5.mp3"
+    },
+    {
+      "id": "texte-6b5e176a",
+      "display_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "tts_text": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "file": "audio/qwen3-tts/texte-6b5e176a.mp3"
+    },
+    {
+      "id": "form-role-0",
+      "display_text": "Gardez la même situation bancaire pendant toute la séance. Une minute sans correction ; relevez le problème, le choix et une raison. Autorisez une autre situation dès l’accueil, puis conservez-la.",
+      "tts_text": "Gardez la même situation bancaire pendant toute la séance. Une minute sans correction ; relevez le problème, le choix et une raison. Autorisez une autre situation dès l’accueil, puis conservez-la.",
+      "file": "audio/qwen3-tts/form-role-0.mp3"
+    },
+    {
+      "id": "form-role-1",
+      "display_text": "Première écoute : quelle est l’idée ? Deuxième écoute : deux réponses. Après A, demandez pourquoi la hausse survient ; après B, demandez ce qui pourrait rendre l’achat moins intéressant. Les trous et les nombres sont facultatifs.",
+      "tts_text": "Première écoute : quelle est l’idée ? Deuxième écoute : deux réponses. Après A, demandez pourquoi la hausse survient ; après B, demandez ce qui pourrait rendre l’achat moins intéressant. Les trous et les nombres sont facultatifs.",
+      "file": "audio/qwen3-tts/form-role-1.mp3"
+    },
+    {
+      "id": "form-role-2",
+      "display_text": "Travaillez trois fonctions : préciser le problème (p2), reconnaître une limite (p5), poser une condition (p4). Le reste constitue une réserve. Faites écouter, adapter à la formation des conseillers, puis retrouver une expression sans regarder. Un complément suffit.",
+      "tts_text": "Travaillez trois fonctions : préciser le problème (carte deux), reconnaître une limite (carte cinq), poser une condition (carte quatre). Le reste constitue une réserve. Faites écouter, adapter à la formation des conseillers, puis retrouver une expression sans regarder. Un complément suffit.",
+      "file": "audio/qwen3-tts/form-role-2.mp3"
+    },
+    {
+      "id": "form-role-3",
+      "display_text": "Choisissez un groupe de sens. Écoute sans barres, dévoilement, phrase entière, puis exemple personnel. Corrigez une seule frontière gênante. Aucune règle universelle montée/descente ni copie exacte de la voix.",
+      "tts_text": "Choisissez un groupe de sens. Écoute sans barres, dévoilement, phrase entière, puis exemple personnel. Corrigez une seule frontière gênante. Aucune règle universelle montée/descente ni copie exacte de la voix.",
+      "file": "audio/qwen3-tts/form-role-3.mp3"
+    },
+    {
+      "id": "form-role-4",
+      "display_text": "Reprenez la même décision trois fois. Ajoutez une limite, puis une condition. À l’essai 2, posez une seule objection après la raison principale. Le temps inclut la réponse ; gardez 90 secondes si nécessaire. Un retour concret entre deux essais.",
+      "tts_text": "Reprenez la même décision trois fois. Ajoutez une limite, puis une condition. À l’essai deux, posez une seule objection après la raison principale. Le temps inclut la réponse ; gardez quatre-vingt-dix secondes si nécessaire. Un retour concret entre deux essais.",
+      "file": "audio/qwen3-tts/form-role-4.mp3"
+    },
+    {
+      "id": "form-role-5",
+      "display_text": "Même consigne, même sujet, une minute et mots-clés autorisés. Comparez surtout clarté du choix, raison, limite et condition. Les mesures acoustiques sont approximatives et ne mesurent pas le niveau B2.",
+      "tts_text": "Même consigne, même sujet, une minute et mots-clés autorisés. Comparez surtout clarté du choix, raison, limite et condition. Les mesures acoustiques sont approximatives et ne mesurent pas le niveau B deux.",
+      "file": "audio/qwen3-tts/form-role-5.mp3"
+    },
+    {
+      "id": "form-role-6",
+      "display_text": "Choisissez une expression, un échange professionnel et une date. Le plan de quatre jours est facultatif.",
+      "tts_text": "Choisissez une expression, un échange professionnel et une date. Le plan de quatre jours est facultatif.",
+      "file": "audio/qwen3-tts/form-role-6.mp3"
+    },
+    {
+      "id": "form-note-0",
+      "display_text": "Public : apprenant adulte de niveau B2 intermédiaire, travaillant dans la banque. L’exercice porte sur une décision d’organisation de la formation ; les détails techniques de l’outil ne sont pas nécessaires. Les variantes métier sont facultatives.",
+      "tts_text": "Public : apprenant adulte de niveau B deux intermédiaire, travaillant dans la banque. L’exercice porte sur une décision d’organisation de la formation ; les détails techniques de l’outil ne sont pas nécessaires. Les variantes métier sont facultatives.",
+      "file": "audio/qwen3-tts/form-note-0.mp3"
+    },
+    {
+      "id": "form-note-1",
+      "display_text": "Trois objectifs de production : défendre un choix avec une raison, reconnaître une limite, préciser une condition. Les six cartes ne sont pas six acquis obligatoires.",
+      "tts_text": "Trois objectifs de production : défendre un choix avec une raison, reconnaître une limite, préciser une condition. Les six cartes ne sont pas six acquis obligatoires.",
+      "file": "audio/qwen3-tts/form-note-1.mp3"
+    },
+    {
+      "id": "form-note-2",
+      "display_text": "La vidéo de dix-huit minutes sert de document accompagné. Seuls deux extraits sont obligatoires ; le cours ne vise pas la mémorisation des navires, dates, volumes ou entreprises.",
+      "tts_text": "La vidéo de dix-huit minutes sert de document accompagné. Seuls deux extraits sont obligatoires ; le cours ne vise pas la mémorisation des navires, dates, volumes ou entreprises.",
+      "file": "audio/qwen3-tts/form-note-2.mp3"
+    },
+    {
+      "id": "form-note-3",
+      "display_text": "Les chiffres et les affirmations économiques sont attribués au narrateur. Ils ne constituent pas ici des faits actuels vérifiés. Ne transformez pas « seul constructeur », « plus grand navire » ou les prévisions pour 2026 en savoirs à apprendre.",
+      "tts_text": "Les chiffres et les affirmations économiques sont attribués au narrateur. Ils ne constituent pas ici des faits actuels vérifiés. Ne transformez pas « seul constructeur », « plus grand navire » ou les prévisions pour deux mille vingt-six en savoirs à apprendre.",
+      "file": "audio/qwen3-tts/form-note-3.mp3"
+    },
+    {
+      "id": "form-note-4",
+      "display_text": "La transcription fournie est automatique : BYD, affréter, armateur, coûts fixes et certains nombres sont déformés. Les plages principales sont héritées de la v3 ; vérifier à l’oreille les premiers et derniers mots avant utilisation.",
+      "tts_text": "La transcription fournie est automatique : B Y D, affréter, armateur, coûts fixes et certains nombres sont déformés. Les plages principales sont héritées de la version trois ; vérifier à l’oreille les premiers et derniers mots avant utilisation.",
+      "file": "audio/qwen3-tts/form-note-4.mp3"
+    },
+    {
+      "id": "form-note-5",
+      "display_text": "Les groupes proposés sont des aides de sens, pas une mesure acoustique. Les lectures Qwen utilisent la voix française féminine du support de référence. Une lecture synthétique et la voix de la vidéo restent deux modèles distincts.",
+      "tts_text": "Les groupes proposés sont des aides de sens, pas une mesure acoustique. Les lectures Qwen utilisent la voix française féminine du support de référence. Une lecture synthétique et la voix de la vidéo restent deux modèles distincts.",
+      "file": "audio/qwen3-tts/form-note-5.mp3"
+    },
+    {
+      "id": "form-note-6",
+      "display_text": "L’orateur emploie des oppositions dramatiques. Pour une réunion, autorisez « Le vrai problème, c’est… » ou « Il faut toutefois tenir compte de… ». Le but est la nuance, pas la reproduction du ton de l’enquête.",
+      "tts_text": "L’orateur emploie des oppositions dramatiques. Pour une réunion, autorisez « Le vrai problème, c’est » ou « Il faut toutefois tenir compte de ». Le but est la nuance, pas la reproduction du ton de l’enquête.",
+      "file": "audio/qwen3-tts/form-note-6.mp3"
+    },
+    {
+      "id": "form-note-7",
+      "display_text": "Pour approfondir la source : 3 min 07 à 3 min 39, coût et contrôle ; 11 min 56 à 14 min 15, retours à vide et partenaires ; 16 min 30 à 17 min 16, engagement, surcapacité et production locale. Ces repères viennent de la transcription et restent approximatifs.",
+      "tts_text": "Pour approfondir la source : trois minutes sept secondes à trois minutes trente-neuf secondes, coût et contrôle ; onze minutes cinquante-six secondes à quatorze minutes quinze secondes, retours à vide et partenaires ; seize minutes trente secondes à dix-sept minutes seize secondes, engagement, surcapacité et production locale. Ces repères viennent de la transcription et restent approximatifs.",
+      "file": "audio/qwen3-tts/form-note-7.mp3"
+    },
+    {
+      "id": "form-note-8",
+      "display_text": "Grille qualitative : le choix est identifiable ; une raison le soutient ; une limite est reconnue ; une condition est exprimée ; une objection reçoit une réponse compréhensible. Recueillez un exemple entendu, sans calculer de score automatique.",
+      "tts_text": "Grille qualitative : le choix est identifiable ; une raison le soutient ; une limite est reconnue ; une condition est exprimée ; une objection reçoit une réponse compréhensible. Recueillez un exemple entendu, sans calculer de score automatique.",
+      "file": "audio/qwen3-tts/form-note-8.mp3"
+    },
+    {
+      "id": "form-note-9",
+      "display_text": "Les enregistrements audio restent dans la session et disparaissent au rechargement. Les réponses écrites et les repères sont sauvegardés dans ce navigateur. Pour garder un audio, téléchargez-le.",
+      "tts_text": "Les enregistrements audio restent dans la session et disparaissent au rechargement. Les réponses écrites et les repères sont sauvegardés dans ce navigateur. Pour garder un audio, téléchargez-le.",
+      "file": "audio/qwen3-tts/form-note-9.mp3"
+    },
+    {
+      "id": "texte-ac9d1cab",
+      "display_text": "Espace formateur",
+      "tts_text": "Espace formateur",
+      "file": "audio/qwen3-tts/texte-ac9d1cab.mp3"
+    },
+    {
+      "id": "texte-107a5742",
+      "display_text": "Déroulé minuté et conseils de conduite.",
+      "tts_text": "Déroulé minuté et conseils de conduite.",
+      "file": "audio/qwen3-tts/texte-107a5742.mp3"
+    },
+    {
+      "id": "texte-88d91f60",
+      "display_text": "Déroulé (45 minutes)",
+      "tts_text": "Déroulé (quarante-cinq minutes)",
+      "file": "audio/qwen3-tts/texte-88d91f60.mp3"
+    },
+    {
+      "id": "texte-ff01b6a",
+      "display_text": "Notes",
+      "tts_text": "Notes",
+      "file": "audio/qwen3-tts/texte-ff01b6a.mp3"
+    },
+    {
+      "id": "texte-ce981e45",
+      "display_text": "J’ai exprimé mon choix.",
+      "tts_text": "J’ai exprimé mon choix.",
+      "file": "audio/qwen3-tts/texte-ce981e45.mp3"
+    },
+    {
+      "id": "texte-6c8889fe",
+      "display_text": "J’ai donné une raison.",
+      "tts_text": "J’ai donné une raison.",
+      "file": "audio/qwen3-tts/texte-6c8889fe.mp3"
+    },
+    {
+      "id": "texte-8ed4b6fa",
+      "display_text": "J’ai reconnu une limite.",
+      "tts_text": "J’ai reconnu une limite.",
+      "file": "audio/qwen3-tts/texte-8ed4b6fa.mp3"
+    },
+    {
+      "id": "texte-dfd7a7a",
+      "display_text": "J’ai posé une condition.",
+      "tts_text": "J’ai posé une condition.",
+      "file": "audio/qwen3-tts/texte-dfd7a7a.mp3"
+    },
+    {
+      "id": "texte-896bc7",
+      "display_text": "Pendant des années, la règle était simple : …",
+      "tts_text": "Pendant des années, la règle était simple :",
+      "file": "audio/qwen3-tts/texte-896bc7.mp3"
+    },
+    {
+      "id": "texte-f73777f4",
+      "display_text": "… n'est pas le pire. Le pire, c'est…",
+      "tts_text": "n'est pas le pire. Le pire, c'est",
+      "file": "audio/qwen3-tts/texte-f73777f4.mp3"
+    },
+    {
+      "id": "texte-a41e0d68",
+      "display_text": "Ce n'est pas un détail, c'est…",
+      "tts_text": "Ce n'est pas un détail, c'est",
+      "file": "audio/qwen3-tts/texte-a41e0d68.mp3"
+    },
+    {
+      "id": "texte-8585e70d",
+      "display_text": "Tant que…, …",
+      "tts_text": "Tant que,",
+      "file": "audio/qwen3-tts/texte-8585e70d.mp3"
+    },
+    {
+      "id": "texte-38c39522",
+      "display_text": "Reste le vrai contre-argument : …",
+      "tts_text": "Reste le vrai contre-argument :",
+      "file": "audio/qwen3-tts/texte-38c39522.mp3"
+    },
+    {
+      "id": "texte-4acab4",
+      "display_text": "… paraît… ; … ressemble à…",
+      "tts_text": "paraît ; ressemble à",
+      "file": "audio/qwen3-tts/texte-4acab4.mp3"
+    },
+    {
+      "id": "texte-a1bf5cdf",
+      "display_text": "Je parle 1 minute. Je défends un choix, sans préparer.",
+      "tts_text": "Je parle une minute. Je défends un choix, sans préparer.",
+      "file": "audio/qwen3-tts/texte-a1bf5cdf.mp3"
+    },
+    {
+      "id": "texte-e7b58d7f",
+      "display_text": "J'écoute la vidéo. Deux extraits courts.",
+      "tts_text": "J'écoute la vidéo. Deux extraits courts.",
+      "file": "audio/qwen3-tts/texte-e7b58d7f.mp3"
+    },
+    {
+      "id": "texte-d078fbe",
+      "display_text": "6 phrases utiles. Des phrases de la vidéo pour défendre et nuancer un choix.",
+      "tts_text": "six phrases utiles. Des phrases de la vidéo pour défendre et nuancer un choix.",
+      "file": "audio/qwen3-tts/texte-d078fbe.mp3"
+    },
+    {
+      "id": "texte-dba2cff8",
+      "display_text": "La mélodie du français. Je fais entendre mes groupes de sens.",
+      "tts_text": "La mélodie du français. Je fais entendre mes groupes de sens.",
+      "file": "audio/qwen3-tts/texte-dba2cff8.mp3"
+    },
+    {
+      "id": "texte-3ae57907",
+      "display_text": "Je m'entraîne 3 fois. Le même message, avec une limite et une condition.",
+      "tts_text": "Je m'entraîne trois fois. Le même message, avec une limite et une condition.",
+      "file": "audio/qwen3-tts/texte-3ae57907.mp3"
+    },
+    {
+      "id": "texte-e13f73e2",
+      "display_text": "Je reparle 1 minute. Je compare avec le début.",
+      "tts_text": "Je reparle une minute. Je compare avec le début.",
+      "file": "audio/qwen3-tts/texte-e13f73e2.mp3"
+    },
+    {
+      "id": "texte-e54a800b",
+      "display_text": "Mon objectif de la semaine. Une phrase à utiliser dans la vie réelle.",
+      "tts_text": "Mon objectif de la semaine. Une phrase à utiliser dans la vie réelle.",
+      "file": "audio/qwen3-tts/texte-e54a800b.mp3"
+    },
+    {
+      "id": "texte-8ceafa3",
+      "display_text": "1. Avant d'écouter : devinez",
+      "tts_text": "un. Avant d'écouter : devinez",
+      "file": "audio/qwen3-tts/texte-8ceafa3.mp3"
+    },
+    {
+      "id": "texte-c9838862",
+      "display_text": "2. Écoutez l'extrait, puis répondez",
+      "tts_text": "deux. Écoutez l'extrait, puis répondez",
+      "file": "audio/qwen3-tts/texte-c9838862.mp3"
+    },
+    {
+      "id": "texte-d6898c6d",
+      "display_text": "3. Écoutez encore, puis complétez",
+      "tts_text": "trois. Écoutez encore, puis complétez",
+      "file": "audio/qwen3-tts/texte-d6898c6d.mp3"
+    },
+    {
+      "id": "phrase-p1-film",
+      "display_text": "Pendant 100 ans, la règle était simple. Les constructeurs fabriquent les voitures, les compagnies maritimes les transportent.",
+      "tts_text": "Pendant cent ans, la règle était simple. Les constructeurs fabriquent les voitures, les compagnies maritimes les transportent.",
+      "file": "audio/qwen3-tts/phrase-p1-film.mp3"
+    },
+    {
+      "id": "phrase-p1-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "file": "audio/qwen3-tts/phrase-p1-avous.mp3"
+    },
+    {
+      "id": "phrase-p2-film",
+      "display_text": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "tts_text": "Mais l'argent n'est pas le pire. Le pire, c'est le contrôle.",
+      "file": "audio/qwen3-tts/phrase-p2-film.mp3"
+    },
+    {
+      "id": "phrase-p2-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "file": "audio/qwen3-tts/phrase-p2-avous.mp3"
+    },
+    {
+      "id": "phrase-p3-film",
+      "display_text": "Ce n'est pas un détail, c'est le problème.",
+      "tts_text": "Ce n'est pas un détail, c'est le problème.",
+      "file": "audio/qwen3-tts/phrase-p3-film.mp3"
+    },
+    {
+      "id": "phrase-p3-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "file": "audio/qwen3-tts/phrase-p3-avous.mp3"
+    },
+    {
+      "id": "phrase-p4-film",
+      "display_text": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "tts_text": "Tant que les volumes doublent chaque année et que la priorité est de battre les échéances tarifaires, le calcul se défend.",
+      "file": "audio/qwen3-tts/phrase-p4-film.mp3"
+    },
+    {
+      "id": "phrase-p4-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "file": "audio/qwen3-tts/phrase-p4-avous.mp3"
+    },
+    {
+      "id": "phrase-p5-film",
+      "display_text": "Reste le vrai contre-argument. Un navire, c'est un engagement sur 25 ans.",
+      "tts_text": "Reste le vrai contre-argument. Un navire, c'est un engagement sur vingt-cinq ans.",
+      "file": "audio/qwen3-tts/phrase-p5-film.mp3"
+    },
+    {
+      "id": "phrase-p5-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "file": "audio/qwen3-tts/phrase-p5-avous.mp3"
+    },
+    {
+      "id": "phrase-p6-film",
+      "display_text": "Posséder une flotte paraît brillant, en pleine pénurie. En pleine surabondance, ça ressemble à une montagne de coûts fixes dont on ne peut pas se débarrasser.",
+      "tts_text": "Posséder une flotte paraît brillant, en pleine pénurie. En pleine surabondance, ça ressemble à une montagne de coûts fixes dont on ne peut pas se débarrasser.",
+      "file": "audio/qwen3-tts/phrase-p6-film.mp3"
+    },
+    {
+      "id": "phrase-p6-avous",
+      "display_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "tts_text": "Dites votre phrase à voix haute, avec vos informations.",
+      "file": "audio/qwen3-tts/phrase-p6-avous.mp3"
+    },
+    {
+      "id": "texte-6538d40d",
+      "display_text": "Pendant des années, la règle était simple : un prestataire formait nos conseillers.",
+      "tts_text": "Pendant des années, la règle était simple : un prestataire formait nos conseillers.",
+      "file": "audio/qwen3-tts/texte-6538d40d.mp3"
+    },
+    {
+      "id": "texte-cee868b8",
+      "display_text": "Le prix n’est pas le pire. Le pire, c’est de lancer un outil avant que les conseillers soient formés.",
+      "tts_text": "Le prix n’est pas le pire. Le pire, c’est de lancer un outil avant que les conseillers soient formés.",
+      "file": "audio/qwen3-tts/texte-cee868b8.mp3"
+    },
+    {
+      "id": "texte-cfb24d1e",
+      "display_text": "Ce n’est pas un détail, c’est la qualité de l’accompagnement des clients.",
+      "tts_text": "Ce n’est pas un détail, c’est la qualité de l’accompagnement des clients.",
+      "file": "audio/qwen3-tts/texte-cfb24d1e.mp3"
+    },
+    {
+      "id": "texte-fc33e034",
+      "display_text": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "tts_text": "Tant que plusieurs agences ont besoin de formation, une équipe interne se défend.",
+      "file": "audio/qwen3-tts/texte-fc33e034.mp3"
+    },
+    {
+      "id": "texte-d77b1eae",
+      "display_text": "Reste le vrai contre-argument : nos formateurs seront moins disponibles pour leurs clients.",
+      "tts_text": "Reste le vrai contre-argument : nos formateurs seront moins disponibles pour leurs clients.",
+      "file": "audio/qwen3-tts/texte-d77b1eae.mp3"
+    },
+    {
+      "id": "texte-509cbcae",
+      "display_text": "Une équipe interne paraît utile pendant le lancement ; ensuite, elle risque d’être moins sollicitée.",
+      "tts_text": "Une équipe interne paraît utile pendant le lancement ; ensuite, elle risque d’être moins sollicitée.",
+      "file": "audio/qwen3-tts/texte-509cbcae.mp3"
+    },
+    {
+      "id": "serveur-question-1",
+      "display_text": "« Nos conseillers n’ont pas encore l’expérience nécessaire pour former leurs collègues. »",
+      "tts_text": "« Nos conseillers n’ont pas encore l’expérience nécessaire pour former leurs collègues. »",
+      "file": "audio/qwen3-tts/serveur-question-1.mp3"
+    },
+    {
+      "id": "serveur-question-2",
+      "display_text": "« Pendant les formations, qui prendra en charge les clients en agence ? »",
+      "tts_text": "« Pendant les formations, qui prendra en charge les clients en agence ? »",
+      "file": "audio/qwen3-tts/serveur-question-2.mp3"
+    },
+    {
+      "id": "serveur-question-3",
+      "display_text": "« Après le lancement, nous aurons beaucoup moins de personnes à former. »",
+      "tts_text": "« Après le lancement, nous aurons beaucoup moins de personnes à former. »",
+      "file": "audio/qwen3-tts/serveur-question-3.mp3"
+    }
+  ]
+}
