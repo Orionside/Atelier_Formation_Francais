@@ -39,6 +39,8 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | BYD — décider et nuancer v4 (secteur bancaire, lecteur vidéo natif et 238 lectures audio) | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_BYD_Oceans_B2_v4/ |
 | GLP-1 — comprendre et converser (3 séances de 45 min, écoute sans texte, interaction et transfert, 454 lectures audio) | B2 · aides B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Oral_B2_v2/ |
 
+| GLP-1 — essais comparatifs UI/UX : Focus et Boucle orale, analyse et protocole | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_UIUX_Comparatifs_v1/ |
+
 ## Notes
 
 - Les réponses des apprenants sont enregistrées **dans leur propre navigateur** (localStorage). Rien n'est envoyé ici : ils utilisent le bouton « Exporter mes réponses » pour vous transmettre leur travail.

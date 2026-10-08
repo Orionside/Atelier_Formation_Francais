@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08",
+  "configuration": "Séance 1, étape écoute, aides fermées, première carte Focus, avant lecture, largeur 1470 px",
+  "A": {
+    "bodyFont": "16.5px",
+    "horizontalOverflow": false,
+    "mainButtons": 68,
+    "mainWords": 298,
+    "pageHeight": 3971,
+    "viewportButtons": 6,
+    "width": 1470
+  },
+  "B": {
+    "bodyFont": "18px",
+    "horizontalOverflow": false,
+    "mainButtons": 29,
+    "mainWords": 116,
+    "pageHeight": 1783,
+    "viewportButtons": 15,
+    "width": 1470
+  }
+}
