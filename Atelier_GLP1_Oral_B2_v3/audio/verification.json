@@ -1,0 +1,4571 @@
+{
+  "clips": {
+    "texte-3dd33dec": {
+      "id": "texte-3dd33dec",
+      "sha256": "6c2fd629a2f22c197e43315e0005053a411a1e33e36b8f5502b27af9df8d9f72",
+      "expected": "Écoutez pour comprendre une idée, puis échangez : reformulez, réagissez et relancez. Trois séances complémentaires, avec des exemples du reportage et des conversations de la vie quotidienne.",
+      "duration_s": 11.98,
+      "rms": 0.11723,
+      "recognized": "Écoutez pour comprendre une idée, puis échangez, reformulez, réagissez et relancez. Trois séances complémentaires avec des exemples du reportage et des conversations de la vie quotidienne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-82ecdf46": {
+      "id": "texte-82ecdf46",
+      "sha256": "d588071e263b70a66b9130ea2701f0e533130ddacb125bbbd64c39cba3264edb",
+      "expected": "Conversation à la pause : une collègue a vu un reportage",
+      "duration_s": 4.3,
+      "rms": 0.12074,
+      "recognized": "Conversation à la pause, une collègue a vu un reportage.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7bf6199f": {
+      "id": "texte-7bf6199f",
+      "sha256": "162afea1b103d67a86420b94701900e39f7415f370f0fa6b8722afdaadc6bc90",
+      "expected": "Votre collègue dit :",
+      "duration_s": 2.06,
+      "rms": 0.09649,
+      "recognized": "Votre collègue dit",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-146be39d": {
+      "id": "texte-146be39d",
+      "sha256": "5fa1316cd951a4eadb4d128ce233d29faef33ba1d87c20c35c1a87d01e6e0b71",
+      "expected": "« J’ai vu un reportage sur les médicaments G L P un. Apparemment, ils changent aussi ce que les gens achètent. Qu’est-ce que vous en pensez ? »",
+      "duration_s": 9.26,
+      "rms": 0.10104,
+      "recognized": "J'ai vu un reportage sur les médicaments GLP-1. Apparemment, ils changent aussi ce que les gens achètent. Qu'est-ce que vous en pensez ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fb16b5a9": {
+      "id": "texte-fb16b5a9",
+      "sha256": "71e776c6c6457b5b26d27e278c5cdb6ec7660af56fe4817e09d826fe4b0cf455",
+      "expected": "Présentez un changement du reportage ou de la vie quotidienne. Donnez un exemple, réagissez à votre collègue et posez-lui une question.",
+      "duration_s": 9.34,
+      "rms": 0.11647,
+      "recognized": "Présentez un changement du reportage ou de la vie quotidienne. Donnez un exemple, réagissez à votre collègue et posez-lui une question.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7a85e16a": {
+      "id": "texte-7a85e16a",
+      "sha256": "52d61744cc360097ad74dd447bbf4af97e3b9064cfd74103c0105fe3436cc83e",
+      "expected": "Racontez ce qui a changé et pourquoi. Terminez par une question à votre interlocuteur. En une minute.",
+      "duration_s": 7.74,
+      "rms": 0.12734,
+      "recognized": "raconter ce qui a changé et pourquoi. Terminez par une question à votre interlocuteur, en une minute.",
+      "word_error_rate": 0.059,
+      "alert": false
+    },
+    "texte-e41ac545": {
+      "id": "texte-e41ac545",
+      "sha256": "cbf13f28ec720fa54c4481b91d5b469417790b3c6925dfe619f3a837e5781a8a",
+      "expected": "Vous préférez un autre sujet ? (facultatif) Quel autre changement, service ou événement voulez-vous raconter ?",
+      "duration_s": 6.62,
+      "rms": 0.10888,
+      "recognized": "Vous préférez un autre sujet, facultatif ? Quel autre changement, service ou événement voulez-vous raconter ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cd42528c": {
+      "id": "texte-cd42528c",
+      "sha256": "84a77c3c8692f06e19970d146262bbc7a375cea5d5ddadab2e4352d7fd036099",
+      "expected": "Une pause avec une collègue : qu’est-ce qui a changé ?",
+      "duration_s": 3.5,
+      "rms": 0.11961,
+      "recognized": "Une pause avec une collègue, qu'est-ce qui a changé ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fc284940": {
+      "id": "texte-fc284940",
+      "sha256": "3e17cd9c40fd2a5b9b18949d8bc35c40cacf0582444e1e599a226e0f9435bc64",
+      "expected": "Où ?",
+      "duration_s": 0.47,
+      "rms": 0.04756,
+      "recognized": "ou",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-17e951c3": {
+      "id": "texte-17e951c3",
+      "sha256": "eb13492977034cb10267aaedd1c25dab4d0310287250d6767ba05067e78e2e5b",
+      "expected": "Qui parle ?",
+      "duration_s": 0.78,
+      "rms": 0.04997,
+      "recognized": "qui parle",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ddb1d5c2": {
+      "id": "texte-ddb1d5c2",
+      "sha256": "62add6470354e99813ce8d3b0f6dfe922e256ec9fe663ff6ce9eba490fbea9fe",
+      "expected": "Vous",
+      "duration_s": 0.57,
+      "rms": 0.04876,
+      "recognized": "Vous ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7d78b25a": {
+      "id": "texte-7d78b25a",
+      "sha256": "c58fea0d1b8d99399e84fef767ba71541d76cf3bd2dbe9463006c1f8230680e1",
+      "expected": "À vous",
+      "duration_s": 0.43,
+      "rms": 0.05314,
+      "recognized": "À vous !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-99a715cc": {
+      "id": "texte-99a715cc",
+      "sha256": "9b1034e38a2b19faaa8a33e820f652c4ea6d3369259f4e01170e8e9afdf41f07",
+      "expected": "Vous pouvez aussi garder la situation proposée. Le champ est facultatif.",
+      "duration_s": 5.37,
+      "rms": 0.04209,
+      "recognized": "Vous pouvez aussi garder la situation proposée. Le chant est facultatif.",
+      "word_error_rate": 0.091,
+      "alert": false
+    },
+    "texte-dc8e90a4": {
+      "id": "texte-dc8e90a4",
+      "sha256": "5b3383eab83936948a28e5b2f69166af122581ee1c21429cef572897d4a50af4",
+      "expected": "Le programme",
+      "duration_s": 0.82,
+      "rms": 0.05117,
+      "recognized": "Le programme ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c83729d7": {
+      "id": "texte-c83729d7",
+      "sha256": "aa3c6fe31f83131bec7f078afb5e2ad5c7c5c70ae3d52ff7998298aae7d1b6c6",
+      "expected": "Je parle une minute. Je présente une idée et je relance.",
+      "duration_s": 5.26,
+      "rms": 0.11034,
+      "recognized": "Je parle une minute. Je présente une idée et je relance.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fe54988f": {
+      "id": "texte-fe54988f",
+      "sha256": "04c7a7338eaf6b8d4b92b8d3e27ae602e7bfe9f8c07deb78dcf79dea795a9b13",
+      "expected": "J'écoute le reportage. Trois extraits : écouter, comprendre, reformuler.",
+      "duration_s": 5.34,
+      "rms": 0.10786,
+      "recognized": "J'écoute le reportage. Trois extraits. Écouter, comprendre, reformuler.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-be171ff3": {
+      "id": "texte-be171ff3",
+      "sha256": "71a6d1af8c49c5924cc7917f1fec7c9d468a889e1d6f1000787d31f415efd9ef",
+      "expected": "six phrases utiles. Retrouver des formulations et les réutiliser.",
+      "duration_s": 5.74,
+      "rms": 0.1,
+      "recognized": "6 phrases utiles. Retrouvez des formulations et les réutilisez.",
+      "word_error_rate": 0.222,
+      "alert": true
+    },
+    "texte-3de2de56": {
+      "id": "texte-3de2de56",
+      "sha256": "46ac8c0f729bea4d7d51705aa1e35048b7748282a9cf857b5ae8dfb418831fc5",
+      "expected": "La mélodie du français. Je reconnais et je reprends des groupes de sens.",
+      "duration_s": 4.94,
+      "rms": 0.11043,
+      "recognized": "La mélodie du français. Je reconnais et je reprends des groupes de sens.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dcc4ff37": {
+      "id": "texte-dcc4ff37",
+      "sha256": "0227765e8955ec2b5b144b7980ee4e392deb690fb06a263fd228666466346499",
+      "expected": "Je m'entraîne trois fois. Je réagis à des relances et je reformule.",
+      "duration_s": 5.5,
+      "rms": 0.10642,
+      "recognized": "Je m'entraîne trois fois, je réagis à des relances et je reformule.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-77973340": {
+      "id": "texte-77973340",
+      "sha256": "80d8084f0d69203fd8a12ae901a163d093d1852ba71b63faaa861d5ca86d404b",
+      "expected": "Je converse sur un autre sujet. Une écoute nouvelle, puis un échange.",
+      "duration_s": 6.06,
+      "rms": 0.11025,
+      "recognized": "Je converse sur un autre sujet. Une écoute nouvelle, puis un échange.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ba085d4b": {
+      "id": "texte-ba085d4b",
+      "sha256": "82b23e09f0d94ee8b99366c97296e2adc529216cdb5fa2e7396042a56947671f",
+      "expected": "Mon objectif de la semaine. Une formule à réutiliser dans un échange réel.",
+      "duration_s": 5.42,
+      "rms": 0.10473,
+      "recognized": "Mon objectif de la semaine, une formule à réutiliser dans un échange réel.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-12833449": {
+      "id": "texte-12833449",
+      "sha256": "63eb7517f21e1b65b6a1f4d3a5846d0ce169939d88885c3d114082e82eb4c89f",
+      "expected": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "duration_s": 6.64,
+      "rms": 0.05213,
+      "recognized": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3e471ee4": {
+      "id": "texte-3e471ee4",
+      "sha256": "5f1b607b8ae703f02b373bcd93bdf46c53efe816199e67ff5d5b442ecd3a400d",
+      "expected": "Présentez votre idée, sans préparer, puis posez une question. Votre partenaire répond. Les reprises vous aideront à rendre l’échange plus clair.",
+      "duration_s": 9.58,
+      "rms": 0.11845,
+      "recognized": "Présentez votre idée sans préparer, puis posez une question. Votre partenaire répond. Les reprises vous aideront à rendre l'échange plus clair.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ca30e149": {
+      "id": "texte-ca30e149",
+      "sha256": "78490b79250ccd8f1d99c812afdf565594e134af365571250dec6bf1f4a784de",
+      "expected": "Avant et maintenant",
+      "duration_s": 1.98,
+      "rms": 0.10879,
+      "recognized": "Avant et maintenant.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1e2d242d": {
+      "id": "texte-1e2d242d",
+      "sha256": "2a891d68c22ee8633e524205e2c5d8e3b91a8a940e3b9a2e8f5c2611e49d9ae2",
+      "expected": "Un exemple et une raison",
+      "duration_s": 2.14,
+      "rms": 0.10974,
+      "recognized": "Un exemple et une raison.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-36553433": {
+      "id": "texte-36553433",
+      "sha256": "9f42d10842551b2366183eae618b5418e3d3b5743cb97ca1119a6c70c74ae2b4",
+      "expected": "Mon point de vue et une question",
+      "duration_s": 2.38,
+      "rms": 0.11131,
+      "recognized": "Mon point de vue est une question.",
+      "word_error_rate": 0.143,
+      "alert": false
+    },
+    "texte-589993a": {
+      "id": "texte-589993a",
+      "sha256": "d0ce62a08e5fc41988a22a0d5acc00022e0fdd3386fe1ebd147625a9b980c40b",
+      "expected": "Je perdais le fil de ce que j’entendais",
+      "duration_s": 2.94,
+      "rms": 0.10042,
+      "recognized": "Je perdais le fil de ce que j'entendais.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5a151932": {
+      "id": "texte-5a151932",
+      "sha256": "8d9f81098d71be018fa00bfba7212e82798ed0c1bba67dfd02af5ae6b56cb7c2",
+      "expected": "Je cherchais mes mots",
+      "duration_s": 1.38,
+      "rms": 0.06021,
+      "recognized": "Je cherchais mes mots",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-850605c2": {
+      "id": "texte-850605c2",
+      "sha256": "97cca353a7ba50091d4792d28961a8dacb2d43125d6f95526ddb13021ce5423f",
+      "expected": "Je répondais sans relancer",
+      "duration_s": 3.42,
+      "rms": 0.10256,
+      "recognized": "Je répondais sans relancer.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ff06eab0": {
+      "id": "texte-ff06eab0",
+      "sha256": "6afdff2501b9e4445acc79e7973330b1194d80ea4dddda28920369ad6049b711",
+      "expected": "Je ne savais pas demander une précision",
+      "duration_s": 2.94,
+      "rms": 0.09868,
+      "recognized": "Je ne savais pas demander une précision.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d0b5f301": {
+      "id": "texte-d0b5f301",
+      "sha256": "010c54b639f1c6aebe1f488f51efabf953f08f0064aa35a6d7f4331917666c9a",
+      "expected": "Rien de spécial",
+      "duration_s": 1.02,
+      "rms": 0.05497,
+      "recognized": "Rien de spécial !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f2513555": {
+      "id": "texte-f2513555",
+      "sha256": "2ee029fbe73e36d2245810b5796567e171f8e76de52e4dcb60473fe4ca212fb0",
+      "expected": "Je parle une minute",
+      "duration_s": 2.22,
+      "rms": 0.10167,
+      "recognized": "Je parle une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-690e11bc": {
+      "id": "texte-690e11bc",
+      "sha256": "d8d651f0016069992d934b05f8bc90dc3150266dc585f587c00d6fab3c8e0f8e",
+      "expected": "Vous pouvez suivre ce plan",
+      "duration_s": 1.57,
+      "rms": 0.05495,
+      "recognized": "Vous pouvez suivre ce plan.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-65c0aa8f": {
+      "id": "texte-65c0aa8f",
+      "sha256": "363c76a44159436be202cf04e31d8d560e9def4ff29a625405a055916b1f5193",
+      "expected": "Enregistrez-vous",
+      "duration_s": 1.03,
+      "rms": 0.05662,
+      "recognized": "Enregistrez-vous !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a67b42d7": {
+      "id": "texte-a67b42d7",
+      "sha256": "1ccb4d363d0b1ffbf0bee05c75fa1e25dc118ed1632296b0772c97b6c72ba3b2",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "duration_s": 8.19,
+      "rms": 0.04604,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6c1a2934": {
+      "id": "texte-6c1a2934",
+      "sha256": "6f046cc24d7ab5e2b071fab903fa020f1fd99e8e3c2603afba92dc8fa44be647",
+      "expected": "Pendant cette minute,",
+      "duration_s": 1.66,
+      "rms": 0.09948,
+      "recognized": "Pendant 7 minutes,",
+      "word_error_rate": 0.667,
+      "alert": true
+    },
+    "texte-7da4e3f7": {
+      "id": "texte-7da4e3f7",
+      "sha256": "d2363660d647494eade36a7eed0dda375e2fbb243763bd7047b9a10f9e674c5c",
+      "expected": "Touchez ce qui est vrai pour vous.",
+      "duration_s": 1.63,
+      "rms": 0.05186,
+      "recognized": "Touchez ce qui est vrai pour vous.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-536e59de": {
+      "id": "texte-536e59de",
+      "sha256": "171b3321cbbfa7cad01c873831d3eb31ae1e77fbf27a6fd3282019b649750438",
+      "expected": "Trois extraits. Écoutez sans texte, dites l’essentiel à voix haute, puis vérifiez. Les choix, les textes et les lectures complètes viennent après votre tentative.",
+      "duration_s": 11.02,
+      "rms": 0.1022,
+      "recognized": "Trois extraits, écoutez sans texte, dites l'essentiel à voix haute, puis vérifiez. Les choix, les textes et les lectures complètes viennent après votre tentative.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fdddb2bb": {
+      "id": "texte-fdddb2bb",
+      "sha256": "dadae53ae97e649e0839c7447781e8461d01c774de783c035624af4465508533",
+      "expected": "Pourquoi cet extrait ? Comprenez l’idée, puis expliquez-la à votre partenaire avec vos mots.",
+      "duration_s": 6.3,
+      "rms": 0.10671,
+      "recognized": "Pourquoi cet extrait ? Comprenez l'idée, puis expliquez-la à votre partenaire avec vos mots.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7829a08f": {
+      "id": "texte-7829a08f",
+      "sha256": "4037420d82afd5ba304ad744eb017ac7ac0e63b07f59eb213d31c4ff0ee730e8",
+      "expected": "Quels changements peut-on raconter après avoir modifié une habitude ?",
+      "duration_s": 4.54,
+      "rms": 0.10757,
+      "recognized": "Quels changements peut-on raconter après avoir modifié une habitude ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4e1735e9": {
+      "id": "texte-4e1735e9",
+      "sha256": "e7487105c62a45ba7275b2c11478002f4b3133080c4641ee0226a7bcd7b6fd8d",
+      "expected": "Quel changement Christopher décrit-il ?",
+      "duration_s": 2.94,
+      "rms": 0.08104,
+      "recognized": "Quel changement, Christopher décrit-il ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b8a8e5cc": {
+      "id": "texte-b8a8e5cc",
+      "sha256": "983478ca00bf2cb7c3a820dedb84a06eb196b66a3f64631d2f23638a602c2b0b",
+      "expected": "Il marche davantage et ses envies alimentaires ont changé.",
+      "duration_s": 3.58,
+      "rms": 0.11763,
+      "recognized": "Il marche davantage et ses envies alimentaires ont changé.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9bd9ca61": {
+      "id": "texte-9bd9ca61",
+      "sha256": "66a83b14718134fbc4213266c1ebc50dea7ed87b0d4000d46c70a03c5b59ab07",
+      "expected": "Il explique seulement comment fabriquer un médicament.",
+      "duration_s": 3.5,
+      "rms": 0.11498,
+      "recognized": "Il explique seulement comment fabriquer un médicament.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-eba2d99e": {
+      "id": "texte-eba2d99e",
+      "sha256": "492619edb464f583dda45d1cf61d8baef462ddfe1c3f9f75f38f071c36366c56",
+      "expected": "Il compare ses activités et ses envies avant et maintenant.",
+      "duration_s": 4.22,
+      "rms": 0.09915,
+      "recognized": "Il compare ses activités et ses envies avant et maintenant.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c3e770ec": {
+      "id": "texte-c3e770ec",
+      "sha256": "b0cde6ba4546eb584b01a7ad262a3dc5ac0a54a56619c490234d11b27ef51206",
+      "expected": "Quand il dit que c’est un médicament miracle pour lui, que fait-il ?",
+      "duration_s": 3.98,
+      "rms": 0.11259,
+      "recognized": "Quand il dit que c'est un médicament miracle pour lui, que fait-il ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6d5e4266": {
+      "id": "texte-6d5e4266",
+      "sha256": "b826f91316b351fe0a9fa1ed7bf2550bd86e502e16ccaa91cae7ddf0f7a6577e",
+      "expected": "Il donne son appréciation personnelle.",
+      "duration_s": 2.86,
+      "rms": 0.10523,
+      "recognized": "Il donne son appréciation personnelle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-53231e30": {
+      "id": "texte-53231e30",
+      "sha256": "7fa817bbd1f7239e2976bb15b854141e80a0511190747b3cbc5ae67d5973c890",
+      "expected": "Il prouve que le résultat sera identique pour tout le monde.",
+      "duration_s": 3.98,
+      "rms": 0.12575,
+      "recognized": "Il prouve que le résultat sera identique pour tout le monde.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-431bef05": {
+      "id": "texte-431bef05",
+      "sha256": "5579e78ff6d499f55ea8b349edab2a794da89847ce0e080991924bf8ea98aeba",
+      "expected": "« Pour moi » signale un point de vue personnel, pas une garantie générale.",
+      "duration_s": 4.86,
+      "rms": 0.12708,
+      "recognized": "Pour moi, signale un point de vue personnel, pas une garantie générale.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f13f524d": {
+      "id": "texte-f13f524d",
+      "sha256": "c38b1876deed5f9a0fe6697a384138b99223e93fc52dbe246f3e2e13576d42d4",
+      "expected": "Avant, c’était épuisant pour moi de me balader. Maintenant, j’adore.",
+      "duration_s": 5.1,
+      "rms": 0.12691,
+      "recognized": "Avant, c'était épuisant pour moi de me balader. Maintenant, j'adore !",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e6fe03c0": {
+      "id": "texte-e6fe03c0",
+      "sha256": "b3159c2e9edac814ff10557f4635ae4e0f66abef429d84968479d4928a1f356d",
+      "expected": "Aide : le mot qui oppose le présent au passé",
+      "duration_s": 3.42,
+      "rms": 0.12228,
+      "recognized": "« aide », le mot qui oppose le présent au passé.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-529a2aa9": {
+      "id": "texte-529a2aa9",
+      "sha256": "656cb87912303c35884280d9ab579558592dfd88502572ec62fc6c02187a9d76",
+      "expected": "Facultatif : réécoutez une phrase qui vous a gêné. Cherchez le sens avant les mots exacts.",
+      "duration_s": 6.3,
+      "rms": 0.10625,
+      "recognized": "facultatif, réécoutez une phrase qui vous a gêné, cherchez le sens avant les mots exacts.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-764d6dbc": {
+      "id": "texte-764d6dbc",
+      "sha256": "e7a3663e7fc140b4a093c544c55fec74531f760b08916eb7ad80712bc695fa59",
+      "expected": "Si les besoins des clients changent, que peut faire une marque ?",
+      "duration_s": 3.98,
+      "rms": 0.12285,
+      "recognized": "Si les besoins des clients changent, que peut faire une marque ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-58d5b0c": {
+      "id": "texte-58d5b0c",
+      "sha256": "125a46c23ae1ec3b510f446397b2a7cfbcde5dad6cbfe0cb266dce098ab326d0",
+      "expected": "Pourquoi les marques changent-elles leurs recettes ?",
+      "duration_s": 3.5,
+      "rms": 0.11614,
+      "recognized": "Pourquoi les marques changent-elles leurs recettes ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ed9d573": {
+      "id": "texte-ed9d573",
+      "sha256": "3e4f7b299fa76dde8c50dd131d4c542e1761f46ead9b426090546cb2fa471e58",
+      "expected": "Les besoins de certains clients ont évolué.",
+      "duration_s": 2.78,
+      "rms": 0.11682,
+      "recognized": "Les besoins de certains clients ont évolué.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-827bfd98": {
+      "id": "texte-827bfd98",
+      "sha256": "c9850b98cd0d1d46d6380f376998bb7ccdd810e2d7e3a4a6e22201362fa179b6",
+      "expected": "Tous les clients ont cessé d’acheter de la nourriture.",
+      "duration_s": 3.58,
+      "rms": 0.11373,
+      "recognized": "Tous les clients ont cessé d'acheter de la nourriture.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d2415b05": {
+      "id": "texte-d2415b05",
+      "sha256": "79cc65d30209874d8b974e614ffd5addf362994969c03c615d46db6a2ace69b5",
+      "expected": "La marque explique que les besoins n’ont pas disparu : ils ont évolué.",
+      "duration_s": 4.7,
+      "rms": 0.10802,
+      "recognized": "La marque explique que les besoins n'ont pas disparu, ils ont évolué.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cdcbbc20": {
+      "id": "texte-cdcbbc20",
+      "sha256": "6df832dab1b410335085fb545734b984ac0cf9a13347dea09af6634794bdd7d5",
+      "expected": "Que signale la phrase « On pensait que, Mais, » ?",
+      "duration_s": 3.82,
+      "rms": 0.12174,
+      "recognized": "que signale la phrase « on pensait que mais »",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-366ec90": {
+      "id": "texte-366ec90",
+      "sha256": "f316222ce5084543745b18bb70b2168412a3963d941d5dd9f0eb7d751a87d9bc",
+      "expected": "Une prévision que la suite du discours corrige.",
+      "duration_s": 3.26,
+      "rms": 0.12206,
+      "recognized": "Une prévision que la suite du discours corrige.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e5aaa17e": {
+      "id": "texte-e5aaa17e",
+      "sha256": "fa5aeeddb683cc5a4c6ce81ec1cbdb65d526df491647e47a9148d086b413e06c",
+      "expected": "Une liste de produits sans opposition.",
+      "duration_s": 3.26,
+      "rms": 0.12027,
+      "recognized": "Une liste de produits sans opposition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-19b6f00f": {
+      "id": "texte-19b6f00f",
+      "sha256": "6ca286abef2c2010f44c0023846e62caf12b70b71246ab85afa2394974a7b11a",
+      "expected": "Écoutez « mais » : il vous demande de réviser la première idée.",
+      "duration_s": 3.9,
+      "rms": 0.11955,
+      "recognized": "Écoutez, mais il vous demande de réviser la première idée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-60e41ced": {
+      "id": "texte-60e41ced",
+      "sha256": "7fca8ca411cff1b503a2f36260dc575cd27205623bc90d08cb831c57dcc1e167",
+      "expected": "Leurs besoins nutritifs n’ont pas disparu, ils ont juste évolué.",
+      "duration_s": 5.26,
+      "rms": 0.11924,
+      "recognized": "Leurs besoins nutritifs n'ont pas disparu, ils ont juste évolué.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-970bdd90": {
+      "id": "texte-970bdd90",
+      "sha256": "7a046054fd30d1fd29364d7be846dd1626b9632975269104f64f8f434b26b3dc",
+      "expected": "Aide : un verbe qui signifie changé",
+      "duration_s": 3.34,
+      "rms": 0.11799,
+      "recognized": "« aide », un verbe qui signifie changer.",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-3aa52670": {
+      "id": "texte-3aa52670",
+      "sha256": "e24c00c249d0271d085374b0ac913fdf74c84d7b1b306427bb583086427b62ce",
+      "expected": "Quel autre secteur peut être touché quand les habitudes de consommation changent ?",
+      "duration_s": 5.26,
+      "rms": 0.11098,
+      "recognized": "Quel autre secteur peut être touché quand les habitudes de consommation changent ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4a9f751c": {
+      "id": "texte-4a9f751c",
+      "sha256": "62013ff58f08ad9e446f685450b21ebfea77d0741397779a87c9da270fe9eadb",
+      "expected": "Le reportage parle-t-il uniquement de nourriture ?",
+      "duration_s": 3.42,
+      "rms": 0.12271,
+      "recognized": "Le reportage parle-t-il uniquement de nourriture ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3004efcb": {
+      "id": "texte-3004efcb",
+      "sha256": "469f77d4f4fbaa1bd552b149007a1ed0b1a9c165f508f4e9babe196f56e480a3",
+      "expected": "Non. Il montre aussi des produits de beauté et des parfums.",
+      "duration_s": 3.98,
+      "rms": 0.11804,
+      "recognized": "Non, il montre aussi des produits de beauté et des parfums.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-56181b99": {
+      "id": "texte-56181b99",
+      "sha256": "727c9cd2915df73398725a20fad3a097d0d79b871a65753f60e8397dd2d04f07",
+      "expected": "Oui. Il présente seulement des produits alimentaires.",
+      "duration_s": 3.74,
+      "rms": 0.11608,
+      "recognized": "Oui, ils présentent seulement des produits alimentaires.",
+      "word_error_rate": 0.286,
+      "alert": true
+    },
+    "texte-76fe38ad": {
+      "id": "texte-76fe38ad",
+      "sha256": "65fa789c44604cdc122a9fa0f11a65b27e7713b50a97e1105c72d7a7fbf87a10",
+      "expected": "La formule « au-delà de l’alimentaire » élargit le sujet.",
+      "duration_s": 4.62,
+      "rms": 0.12236,
+      "recognized": "La formule « Au-delà de l'alimentaire » élargit le sujet.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1c914ade": {
+      "id": "texte-1c914ade",
+      "sha256": "dafcf6735cb6a416bd41ce91bc74b1d2e2c315f812c2d1f4ab825591a290401b",
+      "expected": "Que signifie ici « de plus en plus de gens » ?",
+      "duration_s": 3.42,
+      "rms": 0.12108,
+      "recognized": "Que signifie ici de plus en plus de gens ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-381de6df": {
+      "id": "texte-381de6df",
+      "sha256": "1b0d38d615d7209a46241d800e05f5c73e24f2b711ca6e18df770244e19d8223",
+      "expected": "Le nombre augmente.",
+      "duration_s": 2.06,
+      "rms": 0.10576,
+      "recognized": "Le nombre augmente.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-341de14e": {
+      "id": "texte-341de14e",
+      "sha256": "490f60163f63e86aab8fcf1eac1432752f7dfcdc4f3fa5f0a301abdd78aed5b9",
+      "expected": "Le nombre diminue.",
+      "duration_s": 2.06,
+      "rms": 0.11054,
+      "recognized": "Le nombre diminue.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-511dbce4": {
+      "id": "texte-511dbce4",
+      "sha256": "2abc652f4740be035d90695978f98dfb4caf3bf763770a42279cea7c9d95ba11",
+      "expected": "Le contexte aide à comprendre une expression sans traduire chaque mot.",
+      "duration_s": 4.7,
+      "rms": 0.11829,
+      "recognized": "Le contexte aide à comprendre une expression sans traduire chaque mot.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b90aaeb4": {
+      "id": "texte-b90aaeb4",
+      "sha256": "6d7dd0f70ba10f46d46c833b7572a121eb276fce2329cd4d6da1622aa718316a",
+      "expected": "Cela va bien au-delà de l’alimentaire.",
+      "duration_s": 2.78,
+      "rms": 0.10433,
+      "recognized": "Cela va bien au-delà de l'alimentaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-84568fbf": {
+      "id": "texte-84568fbf",
+      "sha256": "165b801c69b0af41809b906e0d6bf46341298de1ccf06e6cc25667ae102e5660",
+      "expected": "Aide : une expression qui élargit le sujet",
+      "duration_s": 3.74,
+      "rms": 0.11681,
+      "recognized": "« aide », une expression qui élargit le sujet.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-aeeb8ae5": {
+      "id": "texte-aeeb8ae5",
+      "sha256": "9600b370178bf931edb7767b7d20369a5be480215a3de49ed75d130c8c250236",
+      "expected": "J'écoute le reportage",
+      "duration_s": 3.1,
+      "rms": 0.12081,
+      "recognized": "J'écoute le reportage.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e6bbb49b": {
+      "id": "texte-e6bbb49b",
+      "sha256": "6f548290540c92fd6777ae80ded6aa017cd99f9e5b9bf23f868d213ee2aceb51",
+      "expected": "Extrait un. Une personne raconte ce qui change",
+      "duration_s": 4.14,
+      "rms": 0.11182,
+      "recognized": "Extrait 1. Une personne raconte ce qui change",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8ceafa3": {
+      "id": "texte-8ceafa3",
+      "sha256": "45e9df971f4d765d683325869cceb2b78844983203eb2c88a7e76f5004f78165",
+      "expected": "un. Avant d'écouter : devinez",
+      "duration_s": 3.1,
+      "rms": 0.1145,
+      "recognized": "1. Avant d'écouter, devinez.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c9838862": {
+      "id": "texte-c9838862",
+      "sha256": "5146851fa897b07e89436430c5a412ec949e18adabe353893771a02b01b6719c",
+      "expected": "deux. Écoutez l'extrait, puis répondez",
+      "duration_s": 3.58,
+      "rms": 0.12001,
+      "recognized": "2. Écoutez l'extrait, puis répondez",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-db7a1a99": {
+      "id": "texte-db7a1a99",
+      "sha256": "e54f2a2c9f031d8b9c0025e8d11e3a373887f74928ba87696d905a727afb4196",
+      "expected": "Une question supplémentaire",
+      "duration_s": 2.3,
+      "rms": 0.11259,
+      "recognized": "Une question supplémentaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-586a71a6": {
+      "id": "texte-586a71a6",
+      "sha256": "08fcf629ef7619065644f1e596bd7c961fc69aec014b550c95dd4c54fd0764fe",
+      "expected": "trois. Reprenez une phrase complète",
+      "duration_s": 3.58,
+      "rms": 0.1094,
+      "recognized": "3. Reprenez une phrase complète",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-617b457d": {
+      "id": "texte-617b457d",
+      "sha256": "999486b9b0e6f6f37759d7a173b98b6db06e086a6fb9069d281559be4b1a471f",
+      "expected": "Travailler la phrase après les écoutes",
+      "duration_s": 3.26,
+      "rms": 0.10714,
+      "recognized": "travaillez la phrase après les écoutes",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-86657706": {
+      "id": "texte-86657706",
+      "sha256": "7403aaa22f8a695f690f0734492781e2342e1de6471b23ccf804060b2512026b",
+      "expected": "Passage facultatif",
+      "duration_s": 2.14,
+      "rms": 0.09943,
+      "recognized": "Passage facultatif.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e164ca9a": {
+      "id": "texte-e164ca9a",
+      "sha256": "8f923ce54233b7bc39ef44e595fe82b81cd0a6da4da3fe4e6f9ec7d32b379c9e",
+      "expected": "Extrait deux. Les marques s’adaptent",
+      "duration_s": 3.42,
+      "rms": 0.103,
+      "recognized": "Extrait 2. Les marques s'adaptent",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a3e1f14d": {
+      "id": "texte-a3e1f14d",
+      "sha256": "c767bd02abe80d7b3d258d5b79afc3bee0fb800341831bd009bbfe4a49795fca",
+      "expected": "Extrait trois. Un changement dans plusieurs secteurs",
+      "duration_s": 4.54,
+      "rms": 0.12006,
+      "recognized": "Extrait 3. Un changement dans plusieurs secteurs.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-80f1d5ad": {
+      "id": "texte-80f1d5ad",
+      "sha256": "d78d07735a2c292922481858b108b6e41e2d3a3129554191371374e93ee5ffef",
+      "expected": "Écoutez, créez votre exemple, puis retrouvez la formulation sans regarder. Travaillez trois fonctions aujourd’hui ; les autres sont des aides pour continuer la conversation.",
+      "duration_s": 10.78,
+      "rms": 0.1085,
+      "recognized": "Écoutez, créez votre exemple, puis retrouvez la formulation sans regarder. Travaillez trois fonctions aujourd'hui, les autres sont des aides pour continuer la conversation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a3ece6dd": {
+      "id": "texte-a3ece6dd",
+      "sha256": "c6f687deb758f92a546ead54cc8aad6c991772ab5b4139c57dd9272dd12d202c",
+      "expected": "Priorité : comparer deux moments",
+      "duration_s": 2.7,
+      "rms": 0.11322,
+      "recognized": "Priorité, comparer deux moments.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4da6aa82": {
+      "id": "texte-4da6aa82",
+      "sha256": "a0839b74895690b54c41b24a679a22bee02b64182e5783ddd81a4a5453928642",
+      "expected": "Avant, c’était difficile. Maintenant, c’est plus simple.",
+      "duration_s": 4.3,
+      "rms": 0.10354,
+      "recognized": "Avant, c'était difficile. Maintenant, c'est plus simple.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ac7be935": {
+      "id": "texte-ac7be935",
+      "sha256": "2a1f6d3d16ab86b60e7cb50402910dc0e3e0b5bc5d7ec8331d91d7317d8e7cb3",
+      "expected": "Avant, je cherchais tous mes mots. Maintenant, je peux expliquer une idée.",
+      "duration_s": 5.26,
+      "rms": 0.1235,
+      "recognized": "Avant, je cherchais tous mes mots. Maintenant, je peux expliquer une idée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-65e40aae": {
+      "id": "texte-65e40aae",
+      "sha256": "26c0a5bb340abcf8c57e76b177f5b34692a572e2c12600f4665cf02f2c0440ea",
+      "expected": "Dites votre phrase à voix haute, avec vos informations.",
+      "duration_s": 3.9,
+      "rms": 0.04485,
+      "recognized": "Dites votre phrase à voix haute avec vos informations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d5c79c7d": {
+      "id": "texte-d5c79c7d",
+      "sha256": "5b6efe86cbd0fc62d7171b790eb71911bbd8fdf52d1e8647e202e6a8bec8054a",
+      "expected": "Priorité : corriger une première idée",
+      "duration_s": 3.58,
+      "rms": 0.12305,
+      "recognized": "Priorité, corriger une première idée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-94797fc2": {
+      "id": "texte-94797fc2",
+      "sha256": "4dda622bc189e83b9130d5b13796c28bad9f6f2d490e7c61ccae616771d69bf7",
+      "expected": "On pensait que cela allait disparaître, mais les besoins ont changé.",
+      "duration_s": 4.46,
+      "rms": 0.11388,
+      "recognized": "On pensait que cela allait disparaître, mais les besoins ont changé.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e5cf821e": {
+      "id": "texte-e5cf821e",
+      "sha256": "5c4ed6883f6052fddb83ac7057738fcc2df666efe813caf045904ace9561e404",
+      "expected": "On pensait que les gens allaient manger moins et que donc il y aurait un impact négatif pour nous. Mais leurs besoins nutritifs n’ont pas disparu, ils ont juste évolué.",
+      "duration_s": 10.54,
+      "rms": 0.10889,
+      "recognized": "On pensait que les gens allaient manger moins et que donc il y aurait un impact négatif pour nous. Mais leurs besoins nutritifs n'ont pas disparu, ils ont juste évolué.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-90bccaf6": {
+      "id": "texte-90bccaf6",
+      "sha256": "e820be33e5bb197104b6f328c1cff5b2222ddbd1ef77570d695950e9daf4a3d6",
+      "expected": "On pensait que tout passerait par l’application, mais certains clients préfèrent nous appeler.",
+      "duration_s": 5.18,
+      "rms": 0.12129,
+      "recognized": "On pensait que tout passerait par l'application, mais certains clients préfèrent nous appeler.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f054f9e8": {
+      "id": "texte-f054f9e8",
+      "sha256": "a8ea6d58186a1b4e2a2217eaf485fdfa344bf8b994571529c501a029125939e6",
+      "expected": "Complément : élargir une idée",
+      "duration_s": 3.26,
+      "rms": 0.12292,
+      "recognized": "Complément, élargir une idée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5973d2be": {
+      "id": "texte-5973d2be",
+      "sha256": "ff429c70889742ff5832e8449164ee644fe7ad18458bdf7b344fdba53afa1175",
+      "expected": "Ça va bien au-delà des achats.",
+      "duration_s": 2.54,
+      "rms": 0.08362,
+      "recognized": "Ça va bien au-delà des achats.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-575dd928": {
+      "id": "texte-575dd928",
+      "sha256": "4fc0f5cf2642c0eea52aebbc93f3a8784788f9adddc7e2b0f2befcf3fa6101d5",
+      "expected": "Cela va bien au-delà de l’alimentaire. Toute l’industrie s’y est mise.",
+      "duration_s": 4.78,
+      "rms": 0.12286,
+      "recognized": "Cela va bien au-delà de l'alimentaire. Toute l'industrie s'y est mise.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-df2c289": {
+      "id": "texte-df2c289",
+      "sha256": "627950f3a56b35c1731bd98f3f989db70ad368b0d83c3ccec1372d7420be6d9e",
+      "expected": "Le télétravail, ça va bien au-delà du bureau : ça change aussi les déplacements.",
+      "duration_s": 5.18,
+      "rms": 0.11118,
+      "recognized": "Le télétravail, ça va bien au-delà du bureau. Ça change aussi les déplacements.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8869817b": {
+      "id": "texte-8869817b",
+      "sha256": "053277e43df01ebc095c9abd020005ef0b0dfb999f43100fcc23fe136641a559",
+      "expected": "La priorité est de demander une précision.",
+      "duration_s": 3.34,
+      "rms": 0.12363,
+      "recognized": "La priorité est de demander une précision.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-aafb81df": {
+      "id": "texte-aafb81df",
+      "sha256": "cf34b4d781fd535e1103780542efe29c25f90bdd777b55468fa25c3ecc642841",
+      "expected": "Quand vous dites cela, qu’est-ce que vous voulez dire ?",
+      "duration_s": 3.18,
+      "rms": 0.12474,
+      "recognized": "Quand vous dites cela, qu'est-ce que vous voulez dire ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-937117b8": {
+      "id": "texte-937117b8",
+      "sha256": "953fb6fe63f76597937f6cbb0d48129d701e96a249e48cdd2965f5dad8ffcf5e",
+      "expected": "Quand vous dites que les habitudes changent, qu’est-ce que vous voulez dire ?",
+      "duration_s": 4.14,
+      "rms": 0.11265,
+      "recognized": "Quand vous dites que les habitudes changent, qu'est-ce que vous voulez dire ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3b77ef02": {
+      "id": "texte-3b77ef02",
+      "sha256": "3e5c00236e5237f927906bfd949a98a44a1ced9b1de7ce147d6a2d8a89d6ff30",
+      "expected": "Quand vous dites que le service est plus simple, vous pensez à quoi ?",
+      "duration_s": 3.9,
+      "rms": 0.11615,
+      "recognized": "Quand vous dites que le service est plus simple, vous pensez à quoi ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1bbed4be": {
+      "id": "texte-1bbed4be",
+      "sha256": "106d0589e13f80b4db8269566c647c59d331723e93cec4788d6eb6b54e7656cc",
+      "expected": "Complément : confirmer son interprétation",
+      "duration_s": 3.58,
+      "rms": 0.117,
+      "recognized": "Complément, confirmez son interprétation.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-634ccceb": {
+      "id": "texte-634ccceb",
+      "sha256": "f47d8dc19330799de3af291b6c4ea8409abcda633189abbeff7b8de4e95b28db",
+      "expected": "Si j’ai bien compris, les besoins ont changé.",
+      "duration_s": 3.5,
+      "rms": 0.12077,
+      "recognized": "Si j'ai bien compris, les besoins ont changé.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dca32cfd": {
+      "id": "texte-dca32cfd",
+      "sha256": "af624bfb55d67d7f0ac92a77d45abecdd3355f9e5d696247aeeaadd4f6a5fcbe",
+      "expected": "Si j’ai bien compris, les besoins ont changé, mais ils n’ont pas disparu.",
+      "duration_s": 4.46,
+      "rms": 0.14928,
+      "recognized": "Si j'ai bien compris, les besoins ont changé, mais ils n'ont pas disparu.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-25e03624": {
+      "id": "texte-25e03624",
+      "sha256": "6ffab01992239edf8c258aa174ae8e481a2ffc109dd6477c5ccffeb379946604",
+      "expected": "Si j’ai bien compris, les clients veulent garder le choix. C’est bien ça ?",
+      "duration_s": 4.46,
+      "rms": 0.11122,
+      "recognized": "Si j'ai bien compris, les clients veulent garder le choix. C'est bien ça ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1e75f46a": {
+      "id": "texte-1e75f46a",
+      "sha256": "1b7710b35c965a68d5500d9ed0c67f457090e8dc7afe018585d3877bb90c246c",
+      "expected": "Complément : réagir et relancer",
+      "duration_s": 3.74,
+      "rms": 0.11738,
+      "recognized": "Complément, réagir et relancer.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-23094bdf": {
+      "id": "texte-23094bdf",
+      "sha256": "f04542a5ba36e42901a85e264145d0e5ba458ec6dfc72ed2bca6e147e93a16d2",
+      "expected": "Ah oui ? Qu’est-ce qui vous a le plus surpris ?",
+      "duration_s": 3.58,
+      "rms": 0.11553,
+      "recognized": "Ah oui ? Qu'est-ce qui vous a le plus surpris ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-67ca1d62": {
+      "id": "texte-67ca1d62",
+      "sha256": "ae528fa826aca9639f65cf2606b6493616f3483ee9ebba4d5eac97366513f10c",
+      "expected": "Ah oui ? Qu’est-ce qui vous a le plus surpris dans ce reportage ?",
+      "duration_s": 4.06,
+      "rms": 0.11281,
+      "recognized": "Ah oui ? Qu'est-ce qui vous a le plus surpris dans ce reportage ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-52adb78a": {
+      "id": "texte-52adb78a",
+      "sha256": "61616fa6a6130f588aec50a0b4117b5860ace8b4ee2798cf259e7e5b4a59955e",
+      "expected": "Ah oui ? Et vous, vous utilisez souvent cette application ?",
+      "duration_s": 4.22,
+      "rms": 0.11402,
+      "recognized": "Ah oui ? Et vous, vous utilisez souvent cette application ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-bf910149": {
+      "id": "texte-bf910149",
+      "sha256": "1fa0bf1a8f8b66f2888e3d7ba856077fdfb8dcd48c6f7f1592673a5f2ee83a44",
+      "expected": "Réparer et poursuivre la conversation",
+      "duration_s": 3.02,
+      "rms": 0.1187,
+      "recognized": "Réparer et poursuivre la conversation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-63245164": {
+      "id": "texte-63245164",
+      "sha256": "31458ee51cb07c1c1174cb61b972557f98cdd3b0d67f4d64e19ac67c1e6f973c",
+      "expected": "Écoutez une formule, puis employez-la dans un autre échange. L’aide vient après votre essai.",
+      "duration_s": 6.22,
+      "rms": 0.1083,
+      "recognized": "Écoutez une formule, puis employez-la dans un autre échange. L'aide vient après votre essai.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b8bcf5cb": {
+      "id": "texte-b8bcf5cb",
+      "sha256": "fa96384d4e40a3c6179ebf1f3590a1b6993de25bf93dc9e5aee0d217a4fa0ef3",
+      "expected": "Un mot manque",
+      "duration_s": 1.58,
+      "rms": 0.09495,
+      "recognized": "Un mot manque.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7b5955b": {
+      "id": "texte-7b5955b",
+      "sha256": "2107e978c8564bda287e3326b2776911f1e09da797a21f886c6847a24a57e4b8",
+      "expected": "Expliquez sa fonction ou donnez un exemple.",
+      "duration_s": 3.34,
+      "rms": 0.11845,
+      "recognized": "expliquer sa fonction ou donner un exemple",
+      "word_error_rate": 0.286,
+      "alert": true
+    },
+    "texte-b7f64b04": {
+      "id": "texte-b7f64b04",
+      "sha256": "546d6447b84d0704d8a4b57fe9d44b2405b07c8e77fba61ff99d23d4e837f168",
+      "expected": "Je ne connais pas le mot exact. C’est ce qui permet de vérifier l’information.",
+      "duration_s": 4.78,
+      "rms": 0.12352,
+      "recognized": "Je ne connais pas le mot exact. C'est ce qui permet de vérifier l'information.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-40880199": {
+      "id": "texte-40880199",
+      "sha256": "e7fed70b32a08850a5c38173e7611326338377a1f129eb19bc48cee4cbd6e664",
+      "expected": "Une phrase n’est pas comprise",
+      "duration_s": 2.3,
+      "rms": 0.10732,
+      "recognized": "Une phrase n'est pas comprise.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d63a406b": {
+      "id": "texte-d63a406b",
+      "sha256": "c8cb351ad2cb72a82070ce58cff1580ffbfb7441faf9534ad6f7e595c2faf14e",
+      "expected": "Reformulez l’idée avec des mots plus simples.",
+      "duration_s": 3.02,
+      "rms": 0.12766,
+      "recognized": "Reformulez l'idée avec des mots plus simples.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1952a350": {
+      "id": "texte-1952a350",
+      "sha256": "5b00ce8080d1899cc462520e51b5408964b70703f45ef130f56ac09aead6aec2",
+      "expected": "Je vais le dire autrement : les besoins ont changé, mais ils existent toujours.",
+      "duration_s": 5.42,
+      "rms": 0.11037,
+      "recognized": "Je vais le dire autrement. Les besoins ont changé, mais ils existent toujours.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-edc044fb": {
+      "id": "texte-edc044fb",
+      "sha256": "c295c0235fe3d023617a5b4f24a782cef98920b194a63068dd1614a1879be88f",
+      "expected": "Il faut garder le fil",
+      "duration_s": 1.98,
+      "rms": 0.08607,
+      "recognized": "Il faut garder le fil.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c10413f0": {
+      "id": "texte-c10413f0",
+      "sha256": "c79d31bffb459893f0b932ea928c38a00b422a9ec5bd2d729aa11ac5cc730ae8",
+      "expected": "Résumez une idée et donnez la parole.",
+      "duration_s": 2.78,
+      "rms": 0.11144,
+      "recognized": "Résumer une idée et donner la parole.",
+      "word_error_rate": 0.286,
+      "alert": true
+    },
+    "texte-d8367790": {
+      "id": "texte-d8367790",
+      "sha256": "faa00fa4189949160d36e902caf5499c762bf8500151395030eabe9db78144e7",
+      "expected": "Si j’ai bien compris, c’est utile mais cela dépend du contexte. Et vous, vous en pensez quoi ?",
+      "duration_s": 5.82,
+      "rms": 0.10324,
+      "recognized": "Si j'ai bien compris, c'est utile, mais cela dépend du contexte. Et vous, vous en pensez quoi ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-28bfaf4d": {
+      "id": "texte-28bfaf4d",
+      "sha256": "701565a330f6be869efa6b4aa42276de04ccabcb703803372767fa858d1d4ceb",
+      "expected": "six phrases utiles",
+      "duration_s": 1.82,
+      "rms": 0.10016,
+      "recognized": "six phrases utiles.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-13a3eaec": {
+      "id": "texte-13a3eaec",
+      "sha256": "99389266fd4e54806eade9b5b689efa2f67664f55ef7c45e57a5f0961555bc14",
+      "expected": "Lisez à quoi sert la phrase. Dites-la à voix haute. Puis cliquez sur « Voir la phrase ».",
+      "duration_s": 6.22,
+      "rms": 0.10745,
+      "recognized": "Lisez à quoi sert la phrase, dites-la à voix haute, puis cliquez sur « Voir la phrase ».",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-55d851d0": {
+      "id": "texte-55d851d0",
+      "sha256": "ee6832c0935f20ced619d972ca15a292019e3b6ed86583f17d10f581cb271038",
+      "expected": "Écoutez une phrase entière, repérez les idées qui vont ensemble, puis répétez et changez le contenu.",
+      "duration_s": 6.86,
+      "rms": 0.10824,
+      "recognized": "Écoutez une phrase entière, repérez les idées qui vont ensemble, puis répétez et changez le contenu.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-68977665": {
+      "id": "texte-68977665",
+      "sha256": "b7fb5fb02e5f8113a7d6919790fd115c576b211aa6a461b64d65ffff861fbd66",
+      "expected": "Mais leurs besoins nutritifs n’ont pas disparu, ils ont juste évolué.",
+      "duration_s": 5.26,
+      "rms": 0.10818,
+      "recognized": "Mais leurs besoins nutritifs n'ont pas disparu, ils ont juste évolué.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-55b02439": {
+      "id": "texte-55b02439",
+      "sha256": "debb556064b2b88b62338b1a6aa61455f39ee135a163cf6fb17be0858e5c9534",
+      "expected": "Écoutez avant de voir le texte. Cherchez les mots que vous reconnaissez dans le flux.",
+      "duration_s": 5.58,
+      "rms": 0.12348,
+      "recognized": "Écoutez avant de voir le texte. Cherchez les mots que vous reconnaissez dans le flux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3de2110d": {
+      "id": "texte-3de2110d",
+      "sha256": "2a0242a7061081a8cdbd11c691c155b62b17d85e43e3b0c4ca044ffa05468864",
+      "expected": "Gardez les mots d’un même groupe liés. Une frontière peut s’entendre sans grand silence.",
+      "duration_s": 6.14,
+      "rms": 0.11248,
+      "recognized": "Gardez les mots d'un même groupe lié. Une frontière peut s'entendre sans grand silence.",
+      "word_error_rate": 0.062,
+      "alert": false
+    },
+    "texte-ccd6456a": {
+      "id": "texte-ccd6456a",
+      "sha256": "0ba03ee3dc18813f554e73a557dba720e3f0173b68e7c59deb0d6ba422c57344",
+      "expected": "Répétez la phrase entière, puis dites votre exemple. Réécoutez-vous et améliorez un seul point.",
+      "duration_s": 6.54,
+      "rms": 0.12078,
+      "recognized": "Répétez la phrase entière, puis dites votre exemple. Réécoutez-vous et améliorez un seul point.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8443ea83": {
+      "id": "texte-8443ea83",
+      "sha256": "c8f40a64d9ffd61633af7d8771cf72c321aa72115a0cba10c4f1e1d2bbd83ea0",
+      "expected": "Attention : Les barres proposent des groupes de sens. Elles n’imposent ni silences ni montée de voix. L’objectif est l’intelligibilité et une parole souple.",
+      "duration_s": 9.9,
+      "rms": 0.11506,
+      "recognized": "Attention, les bars proposent des groupes de sens. Elles n'imposent ni silence ni montée de voix. L'objectif est l'intelligibilité et une parole souple.",
+      "word_error_rate": 0.077,
+      "alert": false
+    },
+    "texte-f2b5e4ad": {
+      "id": "texte-f2b5e4ad",
+      "sha256": "e9974d680f860458247a36b0930944c635673a204a74e94a384fbe678e04b1b6",
+      "expected": "Leurs besoins n’ont pas disparu.",
+      "duration_s": 2.38,
+      "rms": 0.10426,
+      "recognized": "Leurs besoins n'ont pas disparu.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-781580d4": {
+      "id": "texte-781580d4",
+      "sha256": "0f748f03024d5abbfc82176a70f1eedd7542f2236f9e7c244a677e7b86ee0d20",
+      "expected": "Leurs besoins ont disparu.",
+      "duration_s": 2.3,
+      "rms": 0.1012,
+      "recognized": "Leurs besoins ont disparu.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d2c27783": {
+      "id": "texte-d2c27783",
+      "sha256": "1378052f81a9ff3997ae63d07b7af7bc7acd1aed3dd7e48fe41add8ff1fd32df",
+      "expected": "La négation change le sens : dans la première phrase, les besoins existent toujours.",
+      "duration_s": 6.06,
+      "rms": 0.11052,
+      "recognized": "La négation change le sens. Dans la première phrase, les besoins existent toujours.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-43d8cb21": {
+      "id": "texte-43d8cb21",
+      "sha256": "b7bd4450fe5236ccdc7dd6ece99656ee5d8f3094accb4e10232988cba31e99e9",
+      "expected": "Écoutez la phrase à vitesse normale.",
+      "duration_s": 2.3,
+      "rms": 0.10093,
+      "recognized": "Écoutez la phrase à vitesse normale.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-345fe69": {
+      "id": "texte-345fe69",
+      "sha256": "91f05a15c55eaa625e0b6e807e1d6b96d98c666fbd8f60c72b864b677822cf1e",
+      "expected": "Répétez avec le modèle, puis seul.",
+      "duration_s": 2.54,
+      "rms": 0.07874,
+      "recognized": "Répétez avec le modèle puis seul.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9e65e2f2": {
+      "id": "texte-9e65e2f2",
+      "sha256": "86dbeb7679645b49a498d4c3104d3625aa6e3af08d2992ed44f105d49c7c5220",
+      "expected": "Changez une idée et parlez à votre partenaire.",
+      "duration_s": 3.58,
+      "rms": 0.12106,
+      "recognized": "Changez une idée et parlez à votre partenaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-49991e35": {
+      "id": "texte-49991e35",
+      "sha256": "1f078dda9c1c25735a791a8b6af776ba13dac31cb2b5964041e2fa26b9c66d46",
+      "expected": "Avant, , c’était épuisant pour moi de me balader. , Maintenant, j’adore.",
+      "duration_s": 5.42,
+      "rms": 0.11479,
+      "recognized": "Avant, c'était épuisant pour moi de me balader. Maintenant, j'adore.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-38f24609": {
+      "id": "texte-38f24609",
+      "sha256": "c71342eb111d94d4ac55a5d37c59702bf466625148fa0b5cf33e884461ed64bf",
+      "expected": "Mais leurs besoins nutritifs n’ont pas disparu, , ils ont juste évolué.",
+      "duration_s": 5.42,
+      "rms": 0.10984,
+      "recognized": "Mais leurs besoins nutritifs n'ont pas disparu. Ils ont juste évolué.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-eb602c17": {
+      "id": "texte-eb602c17",
+      "sha256": "3d51a72ef2da093117582551fa96bedf78f7a42ae62f2d895423d07662562352",
+      "expected": "La mélodie du français",
+      "duration_s": 1.4,
+      "rms": 0.05592,
+      "recognized": "La mélodie du français.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-34934ad3": {
+      "id": "texte-34934ad3",
+      "sha256": "d536b237c5e37d45fd14e3b59ed25e815a1a0b48d56c9e0b0a9f764653765dd1",
+      "expected": "Écoutez les groupes de mots",
+      "duration_s": 1.9,
+      "rms": 0.10996,
+      "recognized": "Écoutez les groupes de mots.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a6960ae": {
+      "id": "texte-a6960ae",
+      "sha256": "6dfb3815ded2327e09556abab2095199cafe73db1fe51899eab2be62fc63c2b8",
+      "expected": "Choisissez une phrase. Écoutez-la, puis essayez d'entendre où finit chaque groupe de sens. Affichez les barres après l'écoute et répétez la phrase entière. La dernière syllabe d'un groupe peut s'allonger, même sans silence.",
+      "duration_s": 13.74,
+      "rms": 0.1129,
+      "recognized": "Choisissez une phrase, écoutez-la, puis essayez d'entendre où finit chaque groupe de sens. Affichez les barres après l'écoute et répétez la phrase entière. La dernière syllabe d'un groupe peut s'allonger, même sans silence.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-deae55ba": {
+      "id": "texte-deae55ba",
+      "sha256": "d20ce9d07932fca0b703cf8dc125fb5eabbb2e321dd88814a0ddad5b40fd4825",
+      "expected": "La règle",
+      "duration_s": 0.69,
+      "rms": 0.06015,
+      "recognized": "La règle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1eb83b11": {
+      "id": "texte-1eb83b11",
+      "sha256": "751465b8f9a4c8c2392108d1528e134c69adbdc5c3ff186e4d4f0795d559c179",
+      "expected": "Écoutez ce qui change le sens",
+      "duration_s": 2.46,
+      "rms": 0.10701,
+      "recognized": "Écoutez ce qui change le sens.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-38bb131c": {
+      "id": "texte-38bb131c",
+      "sha256": "5923d1d803c4fa7878aaa2ad4451e0d0d6d1506438d5615bcc9bdcca8f9fe134",
+      "expected": "Qu’est-ce qui change dans le sens ? Dites-le avant de lire l’explication.",
+      "duration_s": 4.54,
+      "rms": 0.12179,
+      "recognized": "Qu'est-ce qui change dans le sens ? Dites-le avant de lire l'explication.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d853832b": {
+      "id": "texte-d853832b",
+      "sha256": "ce0c33e897a8b0d89a7c55a0f1dd183cea02ea3898c143535bb10adcf4464f87",
+      "expected": "Comparer après mon essai",
+      "duration_s": 2.54,
+      "rms": 0.08402,
+      "recognized": "comparé après mon essai.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-b0433171": {
+      "id": "texte-b0433171",
+      "sha256": "90f23b994c580b3cf16212f0188f10b522546d0877baa39f3a94b31ae2822992",
+      "expected": "Enregistrez votre propre exemple",
+      "duration_s": 2.54,
+      "rms": 0.09801,
+      "recognized": "Enregistrez votre propre exemple.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8fcf4546": {
+      "id": "texte-8fcf4546",
+      "sha256": "5f4668fadba0b995f25b1fd8010de2160554207f1e4dd36ba083bd1f54247ebb",
+      "expected": "Dites deux idées liées à votre message. Réécoutez-vous : entend-on clairement où finit chaque idée ?",
+      "duration_s": 7.34,
+      "rms": 0.11937,
+      "recognized": "Dites deux idées liées à votre message. Réécoutez-vous, entendons clairement où finit chaque idée.",
+      "word_error_rate": 0.125,
+      "alert": false
+    },
+    "texte-4a4c5d98": {
+      "id": "texte-4a4c5d98",
+      "sha256": "00bbc136a5215f890c455f9dff903fd9f2e0548765f53cd1edb0fa751caa3480",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après zéro:vingt.",
+      "duration_s": 6.86,
+      "rms": 0.1071,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 0, 20.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3a440263": {
+      "id": "texte-3a440263",
+      "sha256": "fa392cb66262dae18d64b4287e212d3ed272b485f456bdd3e9e225e7764076c4",
+      "expected": "Le même message, trois fois. Ajoutez une chose à chaque reprise. Vous pouvez garder la même durée si nécessaire.",
+      "duration_s": 8.14,
+      "rms": 0.11286,
+      "recognized": "Le même message trois fois. Ajoutez une chose à chaque reprise. Vous pouvez garder la même durée si nécessaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8362b738": {
+      "id": "texte-8362b738",
+      "sha256": "210a07d22cc59b40adbc5cbcdc7a0561108a01cd76077606990bfebec002bb0d",
+      "expected": "Donc, ces personnes n’achètent plus rien ?",
+      "duration_s": 2.7,
+      "rms": 0.11613,
+      "recognized": "Donc ces personnes n'achètent plus rien.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2e606ffc": {
+      "id": "texte-2e606ffc",
+      "sha256": "924d577942baa243fa055a8809be6c2586de04a10e4a5bc22444e37a23a13b8d",
+      "expected": "Pas exactement. D’après le reportage, leurs besoins changent. Elles achètent autrement. Et vous, vous avez déjà changé une habitude d’achat ?",
+      "duration_s": 9.98,
+      "rms": 0.10786,
+      "recognized": "Pas exactement. D'après le reportage, leurs besoins changent, elles achètent autrement. Et vous, vous avez déjà changé une habitude d'achat.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9cf3093b": {
+      "id": "texte-9cf3093b",
+      "sha256": "c92ae2d4412f15b5c1de65aa83710574536af996b0827dc2a2372f5076d24c17",
+      "expected": "Quand vous dites que les marques s’adaptent, ça veut dire quoi concrètement ?",
+      "duration_s": 4.7,
+      "rms": 0.11038,
+      "recognized": "Quand vous dites que les marques s'adaptent, ça veut dire quoi concrètement ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-869e920c": {
+      "id": "texte-869e920c",
+      "sha256": "8909ee33559007ab59a9f266482547de23fb5555a259945e5a012f2082f92d78",
+      "expected": "Je veux dire qu’elles changent certaines recettes. Par exemple, elles proposent davantage de fibres.",
+      "duration_s": 6.7,
+      "rms": 0.11262,
+      "recognized": "Je veux dire qu'elle change certaines recettes. Par exemple, elle propose davantage de fibres.",
+      "word_error_rate": 0.267,
+      "alert": true
+    },
+    "texte-90205f6a": {
+      "id": "texte-90205f6a",
+      "sha256": "6add6e7448198a25ef325169c6dd5dc9be091510f9b7632b67639b57214b52e0",
+      "expected": "Moi, je pense que tout ça, c’est surtout une mode.",
+      "duration_s": 3.66,
+      "rms": 0.11723,
+      "recognized": "Moi, je pense que tout ça, c'est surtout une mode.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a1429d3d": {
+      "id": "texte-a1429d3d",
+      "sha256": "7e22d5685e1dcd6f1add40563fb92e415fe7ee13284f1ca38d37bb7aa7ee7c35",
+      "expected": "C’est possible. Mais le reportage montre déjà des changements dans plusieurs secteurs. Qu’est-ce qui vous fait penser que ça va passer ?",
+      "duration_s": 7.82,
+      "rms": 0.09096,
+      "recognized": "C'est possible. Mais le reportage montre déjà des changements dans plusieurs secteurs. Qu'est-ce qui vous fait penser que ça va passer ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2d914b8b": {
+      "id": "texte-2d914b8b",
+      "sha256": "bc038ce454e390f73c1043106d5195d8fdc5ec62e3cb0bbb0d55588f3ac55576",
+      "expected": "Notez seulement des mots-clés, pas de phrases.",
+      "duration_s": 2.54,
+      "rms": 0.05093,
+      "recognized": "Notez seulement des mots clés, pas de phrases.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a2e57857": {
+      "id": "texte-a2e57857",
+      "sha256": "e1aba46325960b652a16b273e5f0bd0b754d4a5af61bf4b46c6ca18a3d1e779c",
+      "expected": "Avant, les habitudes étaient différentes. Maintenant, les entreprises s’adaptent.",
+      "duration_s": 5.18,
+      "rms": 0.09558,
+      "recognized": "Avant, les habitudes étaient différentes. Maintenant, les entreprises s'adaptent.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-10ffc252": {
+      "id": "texte-10ffc252",
+      "sha256": "3208dfea91165c3b489a8be0cd8bf3afc048f8f8a02a67344b081d75f9f8628a",
+      "expected": "Les recettes changent parce que certains clients cherchent d’autres produits.",
+      "duration_s": 3.98,
+      "rms": 0.11052,
+      "recognized": "Les recettes changent parce que certains clients cherchent d'autres produits.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6fd61965": {
+      "id": "texte-6fd61965",
+      "sha256": "1d7e1507290ea20261cb4ff3caa49219a24932db189c12561ae86fff832efac7",
+      "expected": "Ce changement me surprend. Et vous, qu’est-ce qui vous a marqué ?",
+      "duration_s": 4.78,
+      "rms": 0.1175,
+      "recognized": "Ce changement me surprend. Et vous, qu'est-ce qui vous a marqué ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6158d922": {
+      "id": "texte-6158d922",
+      "sha256": "d1251a99c9828d7816018277b047d471cf614ade897616acfd54ccc880c7da95",
+      "expected": "Présentez votre message avec trois mots-clés. Donnez un exemple et terminez par une question.",
+      "duration_s": 6.38,
+      "rms": 0.11436,
+      "recognized": "Présentez votre message avec trois mots clés. Donnez un exemple et terminez par une question.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7241f1c9": {
+      "id": "texte-7241f1c9",
+      "sha256": "91d430f7295d72ceaf8e8d3e38d7187b3f79177a129a45db5bd5f45206c35cac",
+      "expected": "Reprenez le même message. Ajoutez une réaction à votre partenaire.",
+      "duration_s": 4.7,
+      "rms": 0.10521,
+      "recognized": "Reprenez le même message. Ajoutez une réaction à votre partenaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c763adca": {
+      "id": "texte-c763adca",
+      "sha256": "dfa5e55a3dca5fac8d81f4239e008acd9914ff8f1c351687475f36fff98e053e",
+      "expected": "Écoutez une relance imprévue. Répondez à ce qui vient d’être dit, puis redonnez la parole.",
+      "duration_s": 6.22,
+      "rms": 0.10733,
+      "recognized": "Écoutez une relance imprévue. Répondez à ce qui vient d'être dit, puis redonnez la parole.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6483f40d": {
+      "id": "texte-6483f40d",
+      "sha256": "fcfe41793002bcf2176b4abe63fa45c7157eabdb54b5b6260a187e08587a34cc",
+      "expected": "Gardez vos idées. Reformulez une phrase avec des mots plus simples.",
+      "duration_s": 5.1,
+      "rms": 0.1157,
+      "recognized": "Gardez vos idées. Reformulez une phrase avec des mots plus simples.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-37d79852": {
+      "id": "texte-37d79852",
+      "sha256": "6a9b845eb28e8b7673f7a69ca10e07ac13fa9fa85381a5597fc81468cfd55228",
+      "expected": "Reprenez avec vos mots. Parlez par groupes d’idées, sans chercher à accélérer. Votre partenaire peut vous demander une précision.",
+      "duration_s": 8.86,
+      "rms": 0.09588,
+      "recognized": "Reprenez avec vos mots. Parlez par groupe d'idées sans chercher à accélérer. Votre partenaire peut vous demander une précision.",
+      "word_error_rate": 0.05,
+      "alert": false
+    },
+    "texte-86ce8235": {
+      "id": "texte-86ce8235",
+      "sha256": "7557c3ff1f9c23b164dea6b26bfa85d98adf82220b545135883167e1bba3c479",
+      "expected": "Je m'entraîne trois fois",
+      "duration_s": 1.98,
+      "rms": 0.10217,
+      "recognized": "Je m'entraîne trois fois.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a1048fe1": {
+      "id": "texte-a1048fe1",
+      "sha256": "691533e31ef48cacf403d263eddbf16f0662316e2e9623cad726afa250f94037",
+      "expected": "Échanger avec un partenaire",
+      "duration_s": 2.14,
+      "rms": 0.10505,
+      "recognized": "échanger avec un partenaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8c330f91": {
+      "id": "texte-8c330f91",
+      "sha256": "87dfac4e5e105d336475444bebcd279f180aa9daf7c33e8dabf1dd670730ca6d",
+      "expected": "Écoutez une réplique sans lire. Répondez, puis relancez. Le modèle est une possibilité, pas une réponse à réciter.",
+      "duration_s": 8.22,
+      "rms": 0.11119,
+      "recognized": "Écoutez une réplique sans lire, répondez, puis relancez. Le modèle est une possibilité, pas une réponse à réciter.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fe858eaf": {
+      "id": "texte-fe858eaf",
+      "sha256": "3652567bfbe5f7f0ffb8c7aea4f4f469ccf4bdf4a3c2226814f1981f859025fb",
+      "expected": "Réplique un",
+      "duration_s": 1.34,
+      "rms": 0.10194,
+      "recognized": "Réplique 1",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e737befd": {
+      "id": "texte-e737befd",
+      "sha256": "d801cc23ea1bc706ac1d6efe15eb8e05ca751b7068b9cb89d8d20285ba357ed3",
+      "expected": "Corrigez l’idée, donnez un exemple et posez une question.",
+      "duration_s": 4.22,
+      "rms": 0.11645,
+      "recognized": "corriger l'idée, donner un exemple et poser une question.",
+      "word_error_rate": 0.3,
+      "alert": true
+    },
+    "texte-c8e817d5": {
+      "id": "texte-c8e817d5",
+      "sha256": "9ec059a63663517f62e3b2bea61ffb93a068e60787484f228d1337f6f656bb38",
+      "expected": "Afficher la réplique après l’écoute",
+      "duration_s": 2.46,
+      "rms": 0.10982,
+      "recognized": "Afficher la réplique après l'écoute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f558964": {
+      "id": "texte-f558964",
+      "sha256": "bcbbabb7dd9d2dc7bbade78220ad4e261228565ece22f0c36abc6c9bc41a5b14",
+      "expected": "Un exemple de réponse après mon essai",
+      "duration_s": 2.62,
+      "rms": 0.10976,
+      "recognized": "Un exemple de réponse après mon essai.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ff859042": {
+      "id": "texte-ff859042",
+      "sha256": "e35f92463ac04682001a9e2a520583bf9e01ba5ac76332da9934ea6243ebe3e0",
+      "expected": "Réplique deux",
+      "duration_s": 1.5,
+      "rms": 0.09469,
+      "recognized": "Réplique 2",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-23a11909": {
+      "id": "texte-23a11909",
+      "sha256": "e04f53743116fa358b664a10c814f998a17a87d2434691a39efa219ea835d7a0",
+      "expected": "Reformulez sans répéter seulement les mêmes mots.",
+      "duration_s": 3.74,
+      "rms": 0.10627,
+      "recognized": "reformulé sans répéter seulement les mêmes mots.",
+      "word_error_rate": 0.143,
+      "alert": false
+    },
+    "texte-8591d5": {
+      "id": "texte-8591d5",
+      "sha256": "f05e830970c0222cfbbde354a30267bd1572a75d3fcf60112228c9c66e8626b0",
+      "expected": "Réplique trois",
+      "duration_s": 1.5,
+      "rms": 0.09262,
+      "recognized": "Réplique 3",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-df2b6cfc": {
+      "id": "texte-df2b6cfc",
+      "sha256": "8e76c834243fb26d01a50d3235d79c64044bc20e04e60a262201491c206297a7",
+      "expected": "Reconnaissez le point de vue et demandez sa raison.",
+      "duration_s": 3.42,
+      "rms": 0.12018,
+      "recognized": "Reconnaissez le point de vue et demandez sa raison.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cf23eadd": {
+      "id": "texte-cf23eadd",
+      "sha256": "3016f1697e6b1745972f52b26a378df565957ea540f371f01a54332e1215692b",
+      "expected": "Préparez avec trois mots-clés",
+      "duration_s": 2.22,
+      "rms": 0.10601,
+      "recognized": "Préparez avec trois mots clés.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1fe08ad": {
+      "id": "texte-1fe08ad",
+      "sha256": "04e7c5285c0d417845ad7f23122c0b450a4fb0dcaaaefd674b92d965a011d982",
+      "expected": "Le premier essai dure une minute et quinze secondes.",
+      "duration_s": 3.26,
+      "rms": 0.12342,
+      "recognized": "Le premier essai dure 1 minute et 15 secondes.",
+      "word_error_rate": 0.111,
+      "alert": false
+    },
+    "texte-845deb5b": {
+      "id": "texte-845deb5b",
+      "sha256": "b0affa56f2f1a0199e76a47f5bc929d39f9830e492757321a027b9d5e9694732",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après un:quinze.",
+      "duration_s": 6.7,
+      "rms": 0.10476,
+      "recognized": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème. L'enregistrement s'arrête seul après 1. 15.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b0034946": {
+      "id": "texte-b0034946",
+      "sha256": "f46de1fe1be077e22b6096987f1a4b3539a77ad8cc6c85e74c875dcf64fb5a4c",
+      "expected": "Essai deux. une minute quinze secondes",
+      "duration_s": 2.94,
+      "rms": 0.10983,
+      "recognized": "Essai 2, 1 minute 15 secondes.",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-3bc655fb": {
+      "id": "texte-3bc655fb",
+      "sha256": "b0243ec7a92a6927067e42508bf9ee3bffc547136307bd6532b01a65f8881277",
+      "expected": "Essai trois. une minute",
+      "duration_s": 2.94,
+      "rms": 0.10234,
+      "recognized": "Essai 3, 1 minute.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-ca13f08c": {
+      "id": "texte-ca13f08c",
+      "sha256": "b024eef82e8d3d3953c177dfc2023c3a3871dcfbb74b0d160e5f38ec288def8f",
+      "expected": "« Vous voulez dire que les gens achètent moins, ou qu’ils achètent autrement ? »",
+      "duration_s": 4.78,
+      "rms": 0.14211,
+      "recognized": "Vous voulez dire que les gens achètent moins ou qu'ils achètent autrement ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-893389be": {
+      "id": "texte-893389be",
+      "sha256": "fe75830a9859f67a8d1fb0a9ad6bb62f9097da42a69ba738473e0def3c7addd0",
+      "expected": "« D’accord, mais quel exemple vous a le plus marqué ? »",
+      "duration_s": 3.9,
+      "rms": 0.10887,
+      "recognized": "D'accord, mais quel exemple vous a le plus marqué ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5865830c": {
+      "id": "texte-5865830c",
+      "sha256": "9f9708f7d372f557b9242f4cfd862c3fa885a90597411f39b069f2febbc31eb6",
+      "expected": "« Je ne suis pas sûr d’avoir compris le lien avec les marques. »",
+      "duration_s": 3.42,
+      "rms": 0.1195,
+      "recognized": "Je ne suis pas sûre d'avoir compris le lien avec les marques.",
+      "word_error_rate": 0.077,
+      "alert": false
+    },
+    "texte-6ece6401": {
+      "id": "texte-6ece6401",
+      "sha256": "e3efb7c23330fc5ac3f9ddb942cfa7fc95081b4c9d015ed5e60cd6ffec5cc2e3",
+      "expected": "« Et dans votre travail, vous avez vu un changement comparable ? »",
+      "duration_s": 4.06,
+      "rms": 0.11082,
+      "recognized": "Et dans votre travail, vous avez vu un changement comparable ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7fda3f31": {
+      "id": "texte-7fda3f31",
+      "sha256": "30cd17697a7c7f1abf0ff8a1c9317d2de7284a804d37e160372d346ac1e283ec",
+      "expected": "Écoutez sans texte ce nouvel échange pédagogique. Dites l’idée, répondez à l’interlocuteur et posez-lui une question.",
+      "duration_s": 7.42,
+      "rms": 0.11713,
+      "recognized": "Écoutez sans texte ce nouvel échange pédagogique. Dites l'idée, répondez à l'interlocuteur et posez-lui une question.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-166b2e97": {
+      "id": "texte-166b2e97",
+      "sha256": "aab1dab78eeb01f363b61a111a098f0a6d31f72d1f1898f3552648b269d44f85",
+      "expected": "Avant, j’achetais presque tous mes livres en magasin. Maintenant, je commande souvent en ligne parce que c’est pratique. Mais, pour découvrir un nouvel auteur, je préfère encore parler avec le libraire. Et vous, vous faites comment ?",
+      "duration_s": 12.7,
+      "rms": 0.11048,
+      "recognized": "Avant, j'achetais presque tous mes livres en magasin. Maintenant, je commande souvent en ligne parce que c'est pratique. Mais pour découvrir un nouvel auteur, je préfère encore parler avec le libraire. Et vous, vous faites comment ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-897c7683": {
+      "id": "texte-897c7683",
+      "sha256": "9a196537ff1a363efda0e8d5769400308d8fe9d793e1707c4a6cc7b712ab738e",
+      "expected": "Quelle habitude a changé ?",
+      "duration_s": 1.9,
+      "rms": 0.0973,
+      "recognized": "Quelle habitude a changé ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5f12a30f": {
+      "id": "texte-5f12a30f",
+      "sha256": "ec4c79101704d08353d85f4914c66f36d306ddc5f635c3784329ffa0ee489c27",
+      "expected": "La personne commande davantage de livres en ligne.",
+      "duration_s": 3.42,
+      "rms": 0.12064,
+      "recognized": "La personne commande davantage de livres en ligne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-46d36cd": {
+      "id": "texte-46d36cd",
+      "sha256": "e0f95896c4466abce9f7d8a480fdf8e38fad5a39bfe5d21de202d16902b73164",
+      "expected": "Elle ne lit plus de livres.",
+      "duration_s": 2.3,
+      "rms": 0.10001,
+      "recognized": "Elle ne lit plus de livres.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3a59ac3a": {
+      "id": "texte-3a59ac3a",
+      "sha256": "8d2de62dace27448d480895159ea03a7e90fc7ab8e2e5e5e989122b288ed1d17",
+      "expected": "La personne achète autrement ; elle n’a pas dit qu’elle ne lisait plus.",
+      "duration_s": 4.06,
+      "rms": 0.11792,
+      "recognized": "La personne achète autrement, elle n'a pas dit qu'elle ne lisait plus.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8ab77ab2": {
+      "id": "texte-8ab77ab2",
+      "sha256": "2b1102c5ab9eb51bf37d0788dc8b41c5540807edd146dc8489fb3454e61edf44",
+      "expected": "Pourquoi garde-t-elle un lien avec le libraire ?",
+      "duration_s": 3.26,
+      "rms": 0.10721,
+      "recognized": "Pourquoi garde-t-elle un lien avec le libraire ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d1a1b2f7": {
+      "id": "texte-d1a1b2f7",
+      "sha256": "0f450c9695bb67787fbacb7a65373b4778434886146c07e2b8fc270598259938",
+      "expected": "Pour découvrir un auteur et échanger.",
+      "duration_s": 2.86,
+      "rms": 0.11345,
+      "recognized": "Pour découvrir un auteur et échanger,",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c5a8e080": {
+      "id": "texte-c5a8e080",
+      "sha256": "c01e8330f49f15bab9ad305c76a455811ea65bef9cf191e45653d549cc967f81",
+      "expected": "Pour arrêter les commandes en ligne.",
+      "duration_s": 2.62,
+      "rms": 0.09079,
+      "recognized": "Pour arrêter les commandes en ligne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5047927f": {
+      "id": "texte-5047927f",
+      "sha256": "12c193f94e2c64cdfc3e4052cfd111feae965508c2e43d6daf7b4d96971c1197",
+      "expected": "Écoutez l’opposition introduite par « mais ».",
+      "duration_s": 3.5,
+      "rms": 0.12381,
+      "recognized": "Écoutez l'opposition introduite par « mais ».",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ab12c25e": {
+      "id": "texte-ab12c25e",
+      "sha256": "27d0effb0f36c562fd5d806dec8496a06c213d1e9983b023105bc0fb00139437",
+      "expected": "Répondez à cette personne : comparez vos habitudes, donnez une raison et posez une question. Vous pouvez inventer.",
+      "duration_s": 8.3,
+      "rms": 0.1023,
+      "recognized": "répondez à cette personne, comparez vos habitudes, donnez une raison et posez une question. Vous pouvez inventer.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-28ce9ba": {
+      "id": "texte-28ce9ba",
+      "sha256": "030fc08a163f2d76077b6d1a9ede214088cb53a364e420db9c11697fedad4190",
+      "expected": "Je converse sur un autre sujet",
+      "duration_s": 3.02,
+      "rms": 0.11569,
+      "recognized": "Je converse sur un autre sujet.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f32547e5": {
+      "id": "texte-f32547e5",
+      "sha256": "f0a14327c17a7b326466b65884ec6f970002820f5d64a11907e6b143689c3839",
+      "expected": "Une autre conversation : les achats de livres",
+      "duration_s": 3.5,
+      "rms": 0.12007,
+      "recognized": "Une autre conversation, les achats de livres.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-aaac2f27": {
+      "id": "texte-aaac2f27",
+      "sha256": "8eeffbeacf7d811edd547e4f89f88b4388e6ce1ab300248550279b9222b3be91",
+      "expected": "Notez ce que vous avez compris, puis écoutez une deuxième fois si nécessaire. Comparez les deux essais avant de lire le texte.",
+      "duration_s": 7.9,
+      "rms": 0.11282,
+      "recognized": "Notez ce que vous avez compris, puis écoutez une deuxième fois si nécessaire. Comparez les deux essais avant de lire le texte.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-80b4c4d0": {
+      "id": "texte-80b4c4d0",
+      "sha256": "c78611d98ffb10e6f8c8388a2551f7ff2bd5a91c9a96cc184586a444395b1fbe",
+      "expected": "Afficher le texte après les écoutes",
+      "duration_s": 3.02,
+      "rms": 0.11472,
+      "recognized": "Afficher le texte après les écoutes.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d040a690": {
+      "id": "texte-d040a690",
+      "sha256": "a1891dd8acd1ef50a77bb65ea625817aabf9ef5a56f2471342a97b41d6c15b22",
+      "expected": "Mon échange est-il clair ?",
+      "duration_s": 2.14,
+      "rms": 0.10884,
+      "recognized": "Mon échange est-il clair ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cb29deff": {
+      "id": "texte-cb29deff",
+      "sha256": "efd82c0b8137d6ce63f18439a39141c1fda06dadab7138f20486faba0a0cfd73",
+      "expected": "J’ai raconté un changement avec un exemple.",
+      "duration_s": 3.42,
+      "rms": 0.11643,
+      "recognized": "J'ai raconté un changement avec un exemple.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2e6eb9f7": {
+      "id": "texte-2e6eb9f7",
+      "sha256": "21fc0e8ab7d9efc368a108bf19a7a63d43e378a67e94c636338bf164712a3dc7",
+      "expected": "J’ai compris ou demandé une précision.",
+      "duration_s": 3.58,
+      "rms": 0.11905,
+      "recognized": "J'ai compris ou demandé une précision ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-13c93e1e": {
+      "id": "texte-13c93e1e",
+      "sha256": "f1da4952987f1e10452c9254babcabadb92f643c0b26509ffae358ffe68b6c47",
+      "expected": "J’ai répondu à ce que l’autre personne disait.",
+      "duration_s": 3.42,
+      "rms": 0.12035,
+      "recognized": "J'ai répondu à ce que l'autre personne disait.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6ddf66b2": {
+      "id": "texte-6ddf66b2",
+      "sha256": "3bae34fdc7db3779fc5de80e1bc3a0ae08b828d20430c9f7d521493bbbc97328",
+      "expected": "J’ai posé une question pour continuer l’échange.",
+      "duration_s": 3.18,
+      "rms": 0.12741,
+      "recognized": "J'ai posé une question pour continuer l'échange.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a9570300": {
+      "id": "texte-a9570300",
+      "sha256": "d849cc6b287ab399128a4c24f7cad62803c8584134a626b78c8c46efa6ef7afe",
+      "expected": "Quelles expressions ai-je réutilisées ?",
+      "duration_s": 2.86,
+      "rms": 0.09031,
+      "recognized": "Quelles expressions ai-je réutilisées ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5d23439e": {
+      "id": "texte-5d23439e",
+      "sha256": "eeec2cdac5daaaf31f5bdac171f62fc10930e0094fc4606b70f0627da5403cfc",
+      "expected": "Choisissez une phrase utile. Dites-la cette semaine, dans une situation réelle.",
+      "duration_s": 5.35,
+      "rms": 0.04531,
+      "recognized": "Choisissez une phrase utile. Dites-la cette semaine dans une situation réelle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8f99ac55": {
+      "id": "texte-8f99ac55",
+      "sha256": "4d06307385ea729e72079e60d9cdfa33dfad1fa448d0237157ae391d66190c6e",
+      "expected": "Après deux jours : Retrouvez trois expressions sans lire. Dites un exemple avec chacune.",
+      "duration_s": 7.02,
+      "rms": 0.099,
+      "recognized": "Après deux jours, retrouvez trois expressions sans lire. Dites un exemple avec chacune.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4ed8abab": {
+      "id": "texte-4ed8abab",
+      "sha256": "208fe869e021cd41c73f539767cab357db6376da4a362cbd29b1dd7c8e6b1c40",
+      "expected": "Après quatre jours : Réécoutez un passage à vitesse normale. Résumez-le sans texte et demandez une précision.",
+      "duration_s": 7.34,
+      "rms": 0.11603,
+      "recognized": "Après 4 jours, réécoutez un passage à vitesse normale. Résumez-le sans texte et demandez une précision.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e556968c": {
+      "id": "texte-e556968c",
+      "sha256": "1dfc328251e2319c2190a4e4035498c1bb44609a59e489051349f0d27d90a75c",
+      "expected": "Après une semaine : Échangez sur un autre sujet. Réagissez, reformulez et posez une vraie question.",
+      "duration_s": 7.74,
+      "rms": 0.10962,
+      "recognized": "Après une semaine, échangez sur un autre sujet. Réagissez, reformulez et posez une vraie question.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c10b5645": {
+      "id": "texte-c10b5645",
+      "sha256": "ed9cf79cb37589e403c8dc1c67fd3297abba9c50411a8374052f6bf53a61e7bb",
+      "expected": "Mon objectif de la semaine",
+      "duration_s": 1.57,
+      "rms": 0.05721,
+      "recognized": "Mon objectif de la semaine.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-699993fa": {
+      "id": "texte-699993fa",
+      "sha256": "3544ab5b03c3c6cfc166f7f1af65b04c5e52d72a4dbd5e8e5d3870165bd9582a",
+      "expected": "Ma phrase de la semaine",
+      "duration_s": 1.21,
+      "rms": 0.05581,
+      "recognized": "Ma phrase de la semaine",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3195f031": {
+      "id": "texte-3195f031",
+      "sha256": "af99e9ebaedac36599606bbbb36c59789773ecbeba7246b580d83943b63b0f6b",
+      "expected": "Quand ?",
+      "duration_s": 0.38,
+      "rms": 0.04992,
+      "recognized": "Quand ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-de22aa6": {
+      "id": "texte-de22aa6",
+      "sha256": "758303467d377ea25900d5895b2848730b6dce4cfebf884a90ebd353d796402b",
+      "expected": "Ma phrase exacte",
+      "duration_s": 1.32,
+      "rms": 0.04622,
+      "recognized": "Ma phrase exacte.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-51b09605": {
+      "id": "texte-51b09605",
+      "sha256": "e2cb9db620425bc9ce678a055fa2e1c02e0546bacd9c720f4627639345765bf6",
+      "expected": "Des reprises courtes (facultatif)",
+      "duration_s": 3.02,
+      "rms": 0.10906,
+      "recognized": "des reprises courtes facultatives",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-7764a1f": {
+      "id": "texte-7764a1f",
+      "sha256": "afe811da8a1fcc028a982b41c8aa0bb8c5cf91288a41c19c00ede25e5d36f91d",
+      "expected": "Envoyer mon travail au formateur",
+      "duration_s": 2.34,
+      "rms": 0.05246,
+      "recognized": "Envoyer mon travail au formateur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8c78e1ab": {
+      "id": "texte-8c78e1ab",
+      "sha256": "f8587512fbec099d6467c4d345611a926c66f111dd7a0af5d7f16d936caad5f8",
+      "expected": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "duration_s": 6.26,
+      "rms": 0.04004,
+      "recognized": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5cfd7be5": {
+      "id": "texte-5cfd7be5",
+      "sha256": "28ef7e189bc324db0ff4302a2d888fcef7941c94de937598fc55b6b5227a2641",
+      "expected": "Pour aller plus loin (facultatif)",
+      "duration_s": 2.48,
+      "rms": 0.03865,
+      "recognized": "Pour aller plus loin, facultatif,",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6b5e176a": {
+      "id": "texte-6b5e176a",
+      "sha256": "4adf5b5e7ecea06fa23e487c398dd51280df8cbac82c7309cea01d7c58349aa6",
+      "expected": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "duration_s": 3.79,
+      "rms": 0.04974,
+      "recognized": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-15b05439": {
+      "id": "texte-15b05439",
+      "sha256": "6558d5cf45b8d289cba0fa229d175110ba01cb0d0dc892ca88f4d59f20aea0e2",
+      "expected": "Même situation pour les reprises. Écoutez sans interrompre ; notez une idée comprise et une stratégie utilisée.",
+      "duration_s": 7.1,
+      "rms": 0.11519,
+      "recognized": "Même situation pour les reprises. Écoutez sans interrompre. Notez une idée comprise et une stratégie utilisée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-af721210": {
+      "id": "texte-af721210",
+      "sha256": "de12e1fd8ceeaf2e7801002c7edd35caee7d57d9987398fd4109771ca82a6836",
+      "expected": "Trois extraits, une question globale chacun. Faites répondre à voix haute avant les choix. Deuxième écoute ciblée ; laissez les questions supplémentaires si le temps manque.",
+      "duration_s": 10.94,
+      "rms": 0.10164,
+      "recognized": "Trois extraits, une question globale chacun. Faites répondre à voix haute avant les choix. Deuxième écoute ciblée, laissez les questions supplémentaires si le temps manque.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6d24337d": {
+      "id": "texte-6d24337d",
+      "sha256": "84389c114c462f57d061482b68e0eebd01c83fc892397115ae5f33577a425166",
+      "expected": "Choisissez trois fonctions prioritaires. Modèle, exemple personnel, rappel sans texte. Le partenaire écoute le sens, pas une récitation.",
+      "duration_s": 9.5,
+      "rms": 0.09288,
+      "recognized": "Choisissez trois fonctions prioritaires. Modèle, exemple personnel, rappel sans texte, le partenaire écoute le sens, pas une récitation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-33415eb0": {
+      "id": "texte-33415eb0",
+      "sha256": "ab38109e4ab094eadb51b2514f636aca09cdd86f3d447f8b10aba5576c6c1c68",
+      "expected": "Travaillez une phrase réellement gênante. Écoutez, repérez, répétez, puis changez le contenu. Corrigez un point d’intelligibilité.",
+      "duration_s": 8.54,
+      "rms": 0.11276,
+      "recognized": "Travaillez une phrase réellement gênante. Écoutez, repérez, répétez, puis changez le contenu. Corrigez un point d'intelligibilité.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1f5bd32c": {
+      "id": "texte-1f5bd32c",
+      "sha256": "b726589a7e113d1c8cc8af09648e4b41b72ec7ff84062c5b1ea6b1dd4171b289",
+      "expected": "Même message, puis relance imprévue. Le formateur joue le partenaire et réagit au contenu. Les exemples de réponses viennent après la tentative.",
+      "duration_s": 9.5,
+      "rms": 0.10805,
+      "recognized": "Même message, puis relance imprévue. Le formateur joue le partenaire et réagit au contenu. Les exemples de réponses viennent après la tentative.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-77f1ec35": {
+      "id": "texte-77f1ec35",
+      "sha256": "f388bc6001b38a8589cdc71e869934642d5d6775a546ac7572c9d13d37e32ec9",
+      "expected": "Nouvel audio pédagogique sans texte. Notez ce qui est compris à la première écoute, puis à la seconde. Faites répondre et relancer sur ce nouveau sujet.",
+      "duration_s": 10.38,
+      "rms": 0.10021,
+      "recognized": "Nouvelle audio pédagogique sans texte. Notez ce qui est compris à la première écoute, puis à la seconde. Faites répondre et relancez sur ce nouveau sujet.",
+      "word_error_rate": 0.077,
+      "alert": false
+    },
+    "texte-5187ba4": {
+      "id": "texte-5187ba4",
+      "sha256": "aa9d9109b466068b86b3199af1a7b18d872c5060ea838f3c52300c5ebc335fcc",
+      "expected": "Donnez un point fort et un objectif observable. Choisissez un échange réel dans la semaine. La vitesse ne constitue pas un score de fluidité.",
+      "duration_s": 8.62,
+      "rms": 0.10601,
+      "recognized": "Donnez un point fort et un objectif observable. Choisissez un échange réel dans la semaine. La vitesse ne constitue pas un score de fluidité.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ad5f5850": {
+      "id": "texte-ad5f5850",
+      "sha256": "95739700f9a5384fbb9da322f8b7c1a72b025ba2b8d255493dfa57fa879cab67",
+      "expected": "Le reportage fournit les voix authentiques. Les dialogues ajoutés sont des modèles pédagogiques de synthèse ; ils ne reproduisent pas la variété d’une conversation native. Faites jouer un partenaire humain quand c’est possible.",
+      "duration_s": 12.54,
+      "rms": 0.10555,
+      "recognized": "Le reportage fournit les voix authentiques. Les dialogues ajoutés sont des modèles pédagogiques de synthèse. Ils ne reproduisent pas la variété d'une conversation native. Faites jouer un partenaire humain quand c'est possible.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-59b7893a": {
+      "id": "texte-59b7893a",
+      "sha256": "6d92389573cfbe69c9ed9152ee9284130e50d7c853ce618350b9f1d3b9d0790d",
+      "expected": "La lecture complète des phrases à trous contient le mot attendu, selon la préférence du formateur. Utilisez d’abord le reportage pour l’écoute sans indice, puis le bouton de lecture pour la reprise.",
+      "duration_s": 13.34,
+      "rms": 0.11785,
+      "recognized": "La lecture complète des phrases à trous contient le mot attendu, selon la préférence du formateur. Utilisez d'abord le reportage pour l'écoute sans indice, puis le bouton de lecture pour la reprise.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c2992898": {
+      "id": "texte-c2992898",
+      "sha256": "880be9ca8673085d3278664e37e0de0c0ccc1d2f5d8af8ef3184f1ddd47eb658",
+      "expected": "Les informations de santé et de remboursement sont attribuées au reportage daté. Les tâches portent sur le discours, les témoignages et la vérification, sans demander un récit de santé personnel.",
+      "duration_s": 11.82,
+      "rms": 0.11501,
+      "recognized": "Les informations de santé et de remboursement sont attribuées au reportage daté. Les tâches portent sur le discours, les témoignages et la vérification, sans demander un récit de santé personnelle.",
+      "word_error_rate": 0.033,
+      "alert": false
+    },
+    "texte-37d9df90": {
+      "id": "texte-37d9df90",
+      "sha256": "6637c9d6556764402be8345a2b932196ca0dd33f742404c339be640a1ec7eeaf",
+      "expected": "Reconnaître un mot dans le flux, inférer avec le contexte, garder trois idées, retrouver une formulation et réparer un malentendu sont des cibles de travail. Aucun exercice ne mesure directement un mécanisme cognitif.",
+      "duration_s": 14.46,
+      "rms": 0.11044,
+      "recognized": "Reconnaître un mot dans le flux, inférer avec le contexte, garder trois idées, retrouver une formulation et réparer un malentendu sont des cibles de travail. Aucun exercice ne mesure directement un mécanisme cognitif.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b2594497": {
+      "id": "texte-b2594497",
+      "sha256": "690ca5f625a2087d994a65d7ecba210a954ca8914384ae3a5fa3c15ae8c5a6c7",
+      "expected": "Adaptez les aides à la personne. Ne déduisez pas la langue première du métier ou de la nationalité. B un plus : un extrait et des mots-clés ; B deux : débit normal, moins de texte et relances variables.",
+      "duration_s": 13.34,
+      "rms": 0.11145,
+      "recognized": "Adaptez les aides à la personne. Ne déduisez pas la langue première du métier ou de la nationalité. B, un plus, un extrait et des mots-clés. B2, débit normal, moins de texte et relance variable.",
+      "word_error_rate": 0.054,
+      "alert": false
+    },
+    "texte-bf61e07a": {
+      "id": "texte-bf61e07a",
+      "sha256": "061c6ac79281b72a17f48ad1188429a74ffda2856540bcc76355d981c7a97ff6",
+      "expected": "Une hésitation utile, une demande de répétition ou une reformulation peuvent maintenir la conversation. Évaluez aussi l’adaptation à l’autre et les tours de parole.",
+      "duration_s": 11.18,
+      "rms": 0.11943,
+      "recognized": "Une hésitation utile, une demande de répétition ou une reformulation peuvent maintenir la conversation. Évaluez aussi l'adaptation à l'autre et les tours de parole.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-790f20c7": {
+      "id": "texte-790f20c7",
+      "sha256": "da59c49f85fe5b38af08f305e31486865fa7fb5f894386fed8860a6f19178a6f",
+      "expected": "Les enregistrements restent dans la session. Téléchargez-les pour les conserver. Les réponses écrites sont sauvegardées séparément pour chaque séance.",
+      "duration_s": 9.5,
+      "rms": 0.09736,
+      "recognized": "Les enregistrements restent dans la session. Téléchargez-les pour les conserver. Les réponses écrites sont sauvegardées séparément pour chaque séance.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ac9d1cab": {
+      "id": "texte-ac9d1cab",
+      "sha256": "0e0a693577d9a8c4dad452890eb2430fc956f50c11389e9a22f18e93ae5ac251",
+      "expected": "Espace formateur",
+      "duration_s": 1.24,
+      "rms": 0.04289,
+      "recognized": "Espace Formateur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-107a5742": {
+      "id": "texte-107a5742",
+      "sha256": "1c2f4d67fedfe16151ad98d644c3890482e03adb46abcb57187cda0ce7e4b434",
+      "expected": "Déroulé minuté et conseils de conduite.",
+      "duration_s": 2.65,
+      "rms": 0.04902,
+      "recognized": "Déroulez minuté et conseil de conduite.",
+      "word_error_rate": 0.333,
+      "alert": true
+    },
+    "texte-88d91f60": {
+      "id": "texte-88d91f60",
+      "sha256": "1c800af61b347c663772e1db71793e5e3b24ee4fed18b92f65bbd9a493001a4b",
+      "expected": "Déroulé (quarante-cinq minutes)",
+      "duration_s": 2.54,
+      "rms": 0.07355,
+      "recognized": "Déroulez 45 minutes.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-ff01b6a": {
+      "id": "texte-ff01b6a",
+      "sha256": "e2d31db6e7a50dc92ecfe3c4b3a013fcf54fcc09a707d94c9f64c2189a9b70ac",
+      "expected": "Notes",
+      "duration_s": 0.47,
+      "rms": 0.04746,
+      "recognized": "Notes",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8c8d8845": {
+      "id": "texte-8c8d8845",
+      "sha256": "b1148b85d25801ce16c5db8a83886988e3f9532a1f3fcc1a9dab7cb82f7839ba",
+      "expected": "Conversation avec un ami après un reportage",
+      "duration_s": 3.34,
+      "rms": 0.1147,
+      "recognized": "Conversation avec un ami après un reportage",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8af3a1f5": {
+      "id": "texte-8af3a1f5",
+      "sha256": "76082d052baa61182fd29bc265a8babbc73ac936942c468fd370bbfcb983de11",
+      "expected": "Votre ami dit :",
+      "duration_s": 1.58,
+      "rms": 0.11001,
+      "recognized": "Votre ami dit",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8bdb6f1b": {
+      "id": "texte-8bdb6f1b",
+      "sha256": "ceb13a0ce94b29fbd4fc7040804cf59c09859b871c4f792d86730c4905394c1f",
+      "expected": "« J’entends parler de ces médicaments partout. On dirait que tout est réglé ! Vous avez compris quoi, vous ? »",
+      "duration_s": 6.62,
+      "rms": 0.11751,
+      "recognized": "J'entends parler de ces médicaments partout. On dirait que tout est réglé. Vous avez compris quoi, vous ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-62029248": {
+      "id": "texte-62029248",
+      "sha256": "133fb4b200eee3d6c093bdf8fd9a5cab9cf7645c66d39b0d29dcc16d6d1e763b",
+      "expected": "Expliquez les idées présentées par le reportage, distinguez une possibilité d’un résultat et répondez à votre ami sans transformer un témoignage en règle générale.",
+      "duration_s": 9.9,
+      "rms": 0.12462,
+      "recognized": "Expliquez les idées présentées par le reportage, distinguez une possibilité d'un résultat et répondez à votre ami sans transformer un témoignage en règle générale.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-691a0f8": {
+      "id": "texte-691a0f8",
+      "sha256": "6180c7936494f10145e4a4b5b0f07f6e44e81c3c7a0d0f0177f789ba660104c7",
+      "expected": "Présentez une idée, un avantage et une limite. Vérifiez ensuite ce que votre ami a compris. En une minute.",
+      "duration_s": 8.06,
+      "rms": 0.11016,
+      "recognized": "Présentez une idée, un avantage et une limite. Vérifiez ensuite ce que votre ami a compris, en une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-831c4f1b": {
+      "id": "texte-831c4f1b",
+      "sha256": "3bfdce2dc07798cd7ff03294892851d9483712dcdb5b0476c92b275b24db495d",
+      "expected": "Un ami vous demande : « C’est une solution miracle ? »",
+      "duration_s": 3.9,
+      "rms": 0.11477,
+      "recognized": "Un ami vous demande, c'est une solution miracle ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-52a9b3ae": {
+      "id": "texte-52a9b3ae",
+      "sha256": "010c2a3ed4763200c318ea7c0fe094de409ed6518e8a334b6f89acd8976df96a",
+      "expected": "L’essentiel",
+      "duration_s": 1.5,
+      "rms": 0.09261,
+      "recognized": "L'essentiel,",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-57dad721": {
+      "id": "texte-57dad721",
+      "sha256": "bf5e07fac45a2ee0ed3a3eb5ba3ff183145c08b92971a88632f4cfa5f34f57e5",
+      "expected": "L’avantage et la limite",
+      "duration_s": 2.46,
+      "rms": 0.10959,
+      "recognized": "l'avantage et la limite.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-65aedfd8": {
+      "id": "texte-65aedfd8",
+      "sha256": "772539b8d39ccdeca81d4305d6f7cc8297334c57df069a8a6bc3a5fd0cf2c438",
+      "expected": "La nuance et la relance",
+      "duration_s": 2.46,
+      "rms": 0.11119,
+      "recognized": "La nuance est la relance.",
+      "word_error_rate": 0.2,
+      "alert": false
+    },
+    "texte-5d7412d3": {
+      "id": "texte-5d7412d3",
+      "sha256": "778d274e2a1486ad87ba42affd42b15b457497a119e10ae85aacf146bed8a976",
+      "expected": "Quand on entend « pourrait », s’agit-il forcément d’un résultat obtenu ?",
+      "duration_s": 4.78,
+      "rms": 0.11437,
+      "recognized": "Quand on entend « pourrait », s'agit-il forcément d'un résultat obtenu ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a78cbf9d": {
+      "id": "texte-a78cbf9d",
+      "sha256": "5c813521c454d6e40b7d1a0dd816aa3596870b7f1d0adfc1c38699f0215cd05e",
+      "expected": "Dans l’exemple de la patiente, que signifie « elle paie de sa poche » ?",
+      "duration_s": 5.26,
+      "rms": 0.11351,
+      "recognized": "Dans l'exemple de la patiente, que signifie « elle paie de sa poche » ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b8132e16": {
+      "id": "texte-b8132e16",
+      "sha256": "8faccc2105ada49203432a00ff9e7bf167dd32830e2443c6fe556852c9db2dee",
+      "expected": "Elle paie elle-même.",
+      "duration_s": 2.7,
+      "rms": 0.09367,
+      "recognized": "Elle paie elle-même.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c5021b35": {
+      "id": "texte-c5021b35",
+      "sha256": "9a5142326a40ce124a5c16a80d5902ef66d71ba8b3b37fb65d2f3840dc52b06a",
+      "expected": "Elle reçoit gratuitement tous les produits.",
+      "duration_s": 3.42,
+      "rms": 0.11268,
+      "recognized": "Elle reçoit gratuitement tous les produits.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e395ccc3": {
+      "id": "texte-e395ccc3",
+      "sha256": "7a553efd0b98eb1468088936a46eb19e7358292df4fcd176f7b911389e95d41c",
+      "expected": "C’est une expression : on ne parle pas d’une poche au sens matériel.",
+      "duration_s": 4.46,
+      "rms": 0.10256,
+      "recognized": "C'est une expression, on ne parle pas d'une poche au sens matériel.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-776c93cf": {
+      "id": "texte-776c93cf",
+      "sha256": "7d09cfb1aa030165822688712e9ca6df3eb216bd7af729e32093a3d66dd11914",
+      "expected": "L’économie de carburant est-elle certaine dans le récit ?",
+      "duration_s": 3.82,
+      "rms": 0.11833,
+      "recognized": "L'économie de carburant est-elle certaine dans le récit ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-141077e7": {
+      "id": "texte-141077e7",
+      "sha256": "c5ade8b572c41cfad62cbe87150fd7cadfbc6daa8a5a1d546d8fd4ca0ce37261",
+      "expected": "Non. Elle est présentée comme une possibilité liée à une condition.",
+      "duration_s": 5.02,
+      "rms": 0.1103,
+      "recognized": "Non, elle est présentée comme une possibilité liée à une condition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-62bf63a8": {
+      "id": "texte-62bf63a8",
+      "sha256": "9fb737acfa76a40eedc154f8bec8d0d60bb523f8eb0e0e5736244d37525e529d",
+      "expected": "Oui. Le journaliste affirme qu’elle a déjà été réalisée.",
+      "duration_s": 4.62,
+      "rms": 0.12604,
+      "recognized": "Oui, le journaliste affirme qu'elle a déjà été réalisée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d069118b": {
+      "id": "texte-d069118b",
+      "sha256": "a3f96607e4b2bcc1bfcb5170c8740540a8980d30dbebf2f20cb864899c1f7f53",
+      "expected": "Repérez « pourraient » et « si ». Ne confondez pas le calcul annoncé avec un résultat obtenu.",
+      "duration_s": 6.62,
+      "rms": 0.10839,
+      "recognized": "Repérez « pourrait » et « si ». Ne confondez pas le calcul annoncé avec un résultat obtenu.",
+      "word_error_rate": 0.071,
+      "alert": false
+    },
+    "texte-b866d643": {
+      "id": "texte-b866d643",
+      "sha256": "88ae249f85ae219243d19829b94a74c1d6b8bc8c1b392d21becf26b9c1a5cf5c",
+      "expected": "Les compagnies aériennes ont calculé qu’elles pourraient économiser du carburant.",
+      "duration_s": 4.14,
+      "rms": 0.11311,
+      "recognized": "Les compagnies aériennes ont calculé qu'elles pourraient économiser du carburant.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9232c8e8": {
+      "id": "texte-9232c8e8",
+      "sha256": "24e506ef1330736b8f93b663018119349602bde42b6fa242ec3074f59af1aaa6",
+      "expected": "Aide : le verbe qui indique une possibilité",
+      "duration_s": 3.18,
+      "rms": 0.11803,
+      "recognized": "aide le verbe qui indique une possibilité.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-61e20fe5": {
+      "id": "texte-61e20fe5",
+      "sha256": "c900f5b64f7890be37bb829ed736f6ab2228ba8da0f7f4b53dfec3c7bfca32eb",
+      "expected": "Que peut-on écouter dans une explication pour ne pas perdre le fil ?",
+      "duration_s": 4.46,
+      "rms": 0.13445,
+      "recognized": "Que peut-on écouter dans une explication pour ne pas perdre le fil ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ceea0a87": {
+      "id": "texte-ceea0a87",
+      "sha256": "347894d3179ac34121256117db22506678ca4c74ae4067972951e7517c00b0f7",
+      "expected": "Quels trois aspects organisent l’explication ?",
+      "duration_s": 3.58,
+      "rms": 0.10802,
+      "recognized": "Quels trois aspects organise l'explication ?",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-4c70352a": {
+      "id": "texte-4c70352a",
+      "sha256": "9c07883d3cba65dee0c22100dbeb90d24d6f3d4d1c4a57f00d9e1f497db8fab1",
+      "expected": "L’efficacité, les risques et le prix.",
+      "duration_s": 2.94,
+      "rms": 0.09669,
+      "recognized": "l'efficacité, les risques et le prix.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-75309b10": {
+      "id": "texte-75309b10",
+      "sha256": "9e87cf3ee11fa87edb2868e520f9d68b88f2f81f6ff1ec9dd1e00a9f23181b2c",
+      "expected": "Les villes, les parfums et les moyens de transport.",
+      "duration_s": 3.58,
+      "rms": 0.11685,
+      "recognized": "les villes, les parfums et les moyens de transport.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b473ad3a": {
+      "id": "texte-b473ad3a",
+      "sha256": "41514abfbfa9762fb043be5c0af6510ebb3d780af5cf228c15e99de61e7a2f8a",
+      "expected": "Les annonces « première info », « deuxième info » et « troisième info » organisent le sens.",
+      "duration_s": 6.38,
+      "rms": 0.10805,
+      "recognized": "Les annonces Première Info, Deuxième Info et Troisième Info organisent le sens.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cbceca4d": {
+      "id": "texte-cbceca4d",
+      "sha256": "591ba90d6e015499b607e71e3221d33ffeb28ac626f556cb51fd96eb0b62dd0b",
+      "expected": "Quel est le rôle de « en revanche » ?",
+      "duration_s": 2.54,
+      "rms": 0.09686,
+      "recognized": "Quel est le rôle de « en revanche » ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a5074d1b": {
+      "id": "texte-a5074d1b",
+      "sha256": "3047807a7dbf4ac8cd4c4576a96b1afd1a77f7674a105abe6d359c85c3e5aabd",
+      "expected": "Introduire une différence ou une opposition.",
+      "duration_s": 3.34,
+      "rms": 0.12352,
+      "recognized": "introduire une différence ou une opposition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-57122468": {
+      "id": "texte-57122468",
+      "sha256": "17e182bb674188831c45bb111694516fdc3350e61450ca319b6e13df12d84cee",
+      "expected": "Annoncer que toutes les situations sont identiques.",
+      "duration_s": 3.42,
+      "rms": 0.1181,
+      "recognized": "annoncer que toutes les situations sont identiques.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-829fc37a": {
+      "id": "texte-829fc37a",
+      "sha256": "40d304885d6ca93fd732b5c65665d0af409df7ff3e8c6c812273c3333a029c9f",
+      "expected": "Gardez l’opposition ; les règles de remboursement du reportage ne sont pas à mémoriser.",
+      "duration_s": 5.74,
+      "rms": 0.10361,
+      "recognized": "Gardez l'opposition. Les règles de remboursement du reportage ne sont pas à mémoriser.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-aebf40ed": {
+      "id": "texte-aebf40ed",
+      "sha256": "96b1bef255e4394d4172b89ecf6f23c79ea75b7e8f771aaaf0fc667936b548c5",
+      "expected": "Notre deuxième info : ils peuvent présenter des effets indésirables et des risques réels.",
+      "duration_s": 5.98,
+      "rms": 0.10686,
+      "recognized": "Notre deuxième info, ils peuvent présenter des effets indésirables et des risques réels.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1f041e86": {
+      "id": "texte-1f041e86",
+      "sha256": "0537f4e116897979f3ceddd2b37fc2d5115baf236a6782ec5e897cb81e1bff97",
+      "expected": "Aide : un adjectif qui signifie que ces risques existent",
+      "duration_s": 4.7,
+      "rms": 0.10897,
+      "recognized": "« Aide », un adjectif qui signifie que ces risques existent.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9e40f03": {
+      "id": "texte-9e40f03",
+      "sha256": "89288c2e8c21733c7da21555fea65c1998e39acc8b89ea73ebc4474ec375ec9b",
+      "expected": "Un témoignage sur un réseau social suffit-il à expliquer toutes les situations ?",
+      "duration_s": 5.34,
+      "rms": 0.10815,
+      "recognized": "Un témoignage sur un réseau social suffit-il à expliquer toutes les situations ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-131bde73": {
+      "id": "texte-131bde73",
+      "sha256": "ab44d332138dfb12fb7a0b239bd3aba86486a5461d3f7cd37b6b6caa8313b546",
+      "expected": "Quelle autre conséquence du succès est annoncée ?",
+      "duration_s": 3.42,
+      "rms": 0.10304,
+      "recognized": "Quelle autre conséquence du succès est annoncée ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a2628e61": {
+      "id": "texte-a2628e61",
+      "sha256": "75a9929f94ec751c3c0faef0b9447ac8fce9ced782106e1a3062d3ce8a27b758",
+      "expected": "Un marché parallèle avec des ventes illégales et des fausses prescriptions.",
+      "duration_s": 4.46,
+      "rms": 0.10173,
+      "recognized": "Un marché parallèle avec des ventes illégales et des fausses prescriptions.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d9d55d03": {
+      "id": "texte-d9d55d03",
+      "sha256": "b1d9aca601476a7ad00d94d17ff2495b1ec204d8f9a36a8f4b27d32c91e99054",
+      "expected": "La disparition des réseaux sociaux.",
+      "duration_s": 2.54,
+      "rms": 0.09628,
+      "recognized": "La disparition des réseaux sociaux",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c15688f3": {
+      "id": "texte-c15688f3",
+      "sha256": "108ec1b67bac155f1cb35da79b29d9142ba913f145c2597f0d33c45e9b99d62b",
+      "expected": "Le reportage change de mouvement : de l’explication à l’enquête.",
+      "duration_s": 4.86,
+      "rms": 0.1151,
+      "recognized": "Le reportage change de mouvement, de l'explication à l'enquête.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3df873e9": {
+      "id": "texte-3df873e9",
+      "sha256": "844d39f90268180f919e0a0edee381a78953dc494014da7e44354309b5f261e6",
+      "expected": "Dans « la piqûre, c’est-à-dire l’injection », à quoi sert « c’est-à-dire » ?",
+      "duration_s": 5.34,
+      "rms": 0.10791,
+      "recognized": "dans la piqûre, c'est-à-dire l'injection, à quoi sert, c'est-à-dire ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d9aa8980": {
+      "id": "texte-d9aa8980",
+      "sha256": "4573364214dc7a19a7f830bd74e2e23dc08b037be1260eaa7b2f117a6c25fb84",
+      "expected": "Expliquer un mot par un autre.",
+      "duration_s": 2.78,
+      "rms": 0.10577,
+      "recognized": "expliquer un mot par un autre.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ca4ed581": {
+      "id": "texte-ca4ed581",
+      "sha256": "56074275666c51afd2fcd7a08683567106928579352a6bbfea228a83337be3bc",
+      "expected": "Changer complètement de sujet.",
+      "duration_s": 2.38,
+      "rms": 0.10446,
+      "recognized": "Changez complètement de sujet.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-dccc2038": {
+      "id": "texte-dccc2038",
+      "sha256": "a4475d0b30b37ee76f280f3f7cc98e96d6334c475f26b17e38cc23795fb5f756",
+      "expected": "Vous pouvez utiliser la même stratégie quand un mot manque à votre interlocuteur.",
+      "duration_s": 5.02,
+      "rms": 0.11091,
+      "recognized": "vous pouvez utiliser la même stratégie quand un mot manque à votre interlocuteur.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-42b0ca9c": {
+      "id": "texte-42b0ca9c",
+      "sha256": "7901604866b8840e158fa847ced051ef4a30e7dc3940b502b7cd9a526fe6abbc",
+      "expected": "La piqûre, c’est-à-dire l’injection.",
+      "duration_s": 3.02,
+      "rms": 0.11895,
+      "recognized": "La piqûre, c'est-à-dire l'injection.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-650ddc68": {
+      "id": "texte-650ddc68",
+      "sha256": "ba893445eaf83d58b71575f5deb9af90a8cabd6608ae6abfd14792805f7bb9a1",
+      "expected": "Aide : une expression pour expliquer avec d’autres mots",
+      "duration_s": 3.66,
+      "rms": 0.12135,
+      "recognized": "« aide », une expression pour expliquer avec d'autres mots.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7787c163": {
+      "id": "texte-7787c163",
+      "sha256": "d0a98b0a8da0d7e3ce655bc6aa35135fae05583b186e3f833d617170897275e9",
+      "expected": "Extrait un. Un coût et une hypothèse",
+      "duration_s": 3.9,
+      "rms": 0.11574,
+      "recognized": "Extrait 1. Un coup et une hypothèse.",
+      "word_error_rate": 0.143,
+      "alert": false
+    },
+    "texte-b916b3c8": {
+      "id": "texte-b916b3c8",
+      "sha256": "ea96978d009074221746839ed2046445ecef5dd56776ad9d965abb6185ed8947",
+      "expected": "Extrait deux. Une explication organisée",
+      "duration_s": 3.74,
+      "rms": 0.12115,
+      "recognized": "Extrait 2. Une explication organisée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ea06d7b1": {
+      "id": "texte-ea06d7b1",
+      "sha256": "d849c66f73928fd21110f561fb4988caa3310ad4a75c86a718028d3db661242d",
+      "expected": "Extrait trois. La demande et les témoignages en ligne",
+      "duration_s": 4.38,
+      "rms": 0.12553,
+      "recognized": "Extrait 3. La demande et les témoignages en ligne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f2a81e91": {
+      "id": "texte-f2a81e91",
+      "sha256": "026f9842244ae40314dbefa36b503cf4d6826e2ae52fc2ffffa1c6f72991c887",
+      "expected": "Priorité : organiser une explication",
+      "duration_s": 3.82,
+      "rms": 0.10907,
+      "recognized": "Priorité, organiser une explication.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-86a22345": {
+      "id": "texte-86a22345",
+      "sha256": "141a3fcc4dc17badc580f02b285f7041a9c8ac0c92b2091cf583f38b7f582bbb",
+      "expected": "D’abord, l’intérêt. Ensuite, la limite. Enfin, le coût.",
+      "duration_s": 5.02,
+      "rms": 0.10477,
+      "recognized": "D'abord l'intérêt, ensuite la limite, enfin le coût.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cfe9079e": {
+      "id": "texte-cfe9079e",
+      "sha256": "798a54d0d94ed3f1a61b38422fda92017c4ce7dd2a06af4939cce2decb4ad777",
+      "expected": "Voici trois infos pour comprendre.",
+      "duration_s": 2.46,
+      "rms": 0.06816,
+      "recognized": "Voici 3 infos pour comprendre.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5c13d74b": {
+      "id": "texte-5c13d74b",
+      "sha256": "3af251ae560b17acc62600c3bf632b249e912e931c6c6f3798cda957a6e78020",
+      "expected": "D’abord, l’application est pratique. Ensuite, elle ne répond pas à tout. Enfin, il faut regarder le prix.",
+      "duration_s": 6.78,
+      "rms": 0.11995,
+      "recognized": "D'abord, l'application est pratique. Ensuite, elle ne répond pas à tout. Enfin, il faut regarder le prix.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-83d294bd": {
+      "id": "texte-83d294bd",
+      "sha256": "25900f104895a0c4f2b1856f1562b24723a176c65767630cf0c709079fff106c",
+      "expected": "Priorité : introduire une différence",
+      "duration_s": 3.18,
+      "rms": 0.1267,
+      "recognized": "Priorité, introduire une différence.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-301b190c": {
+      "id": "texte-301b190c",
+      "sha256": "ce864d0c408a8237134e654cdd51c365770f61dd2c02c76e1b904159bcfcea92",
+      "expected": "C’est pratique. En revanche, il faut vérifier.",
+      "duration_s": 3.98,
+      "rms": 0.11719,
+      "recognized": "C'est pratique. En revanche, il faut vérifier.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cc22667e": {
+      "id": "texte-cc22667e",
+      "sha256": "a371a4e397afcb297c3ec887749f28169357a712238375a8e596dcd38cd9edb4",
+      "expected": "En revanche, pas de remboursement pour ceux qui ont une obésité modérée.",
+      "duration_s": 5.18,
+      "rms": 0.11352,
+      "recognized": "En revanche, pas de remboursement pour ceux qui ont une obésité modérée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dd84ccb8": {
+      "id": "texte-dd84ccb8",
+      "sha256": "6970459fe14d32dd717c9a777b25770d0d50e9ebf9b57584061be2dc0484bf90",
+      "expected": "Le service est rapide. En revanche, certaines démarches demandent un rendez-vous.",
+      "duration_s": 5.18,
+      "rms": 0.12459,
+      "recognized": "Le service est rapide. En revanche, certaines démarches demandent un rendez-vous.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a3b2b7fc": {
+      "id": "texte-a3b2b7fc",
+      "sha256": "14f6a7b59cbe29b26b79a19878ed6d2bbbcc29051b57992c7e746262d383c8e4",
+      "expected": "Priorité : distinguer une possibilité d’un résultat",
+      "duration_s": 4.14,
+      "rms": 0.11402,
+      "recognized": "Priorité, distinguer une possibilité d'un résultat.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4403d6d0": {
+      "id": "texte-4403d6d0",
+      "sha256": "766da3ff98667f4ff2724957d3fd41a0cf8a5e7dc2c4b71a571802fab6e4d8b2",
+      "expected": "Cela pourrait aider, si les conditions sont réunies.",
+      "duration_s": 3.82,
+      "rms": 0.1114,
+      "recognized": "Cela pourrait aider si les conditions sont réunies.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3f6f6547": {
+      "id": "texte-3f6f6547",
+      "sha256": "cb8c437d8397a1729f32a8e60c8152fa44b2df481884d88d5495805cc945be6a",
+      "expected": "Les compagnies aériennes américaines ont par exemple calculé qu’elles pourraient économiser chaque année cinq cent quatre-vingts millions de dollars en carburant si les passagers étaient plus minces.",
+      "duration_s": 11.34,
+      "rms": 0.11164,
+      "recognized": "Les compagnies aériennes américaines ont par exemple calculé qu'elles pourraient économiser chaque année 580 millions de dollars en carburant si les passagers étaient plus minces.",
+      "word_error_rate": 0.034,
+      "alert": false
+    },
+    "texte-b61b6b31": {
+      "id": "texte-b61b6b31",
+      "sha256": "6bbba5467dc0fe4fd9d04f5846da592f06fb1078dcbe0d5cf9b863817b714d6b",
+      "expected": "Cette application pourrait faire gagner du temps si les utilisateurs la connaissent bien.",
+      "duration_s": 4.46,
+      "rms": 0.11401,
+      "recognized": "Cette application pourrait faire gagner du temps si les utilisateurs la connaissent bien.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-bc9bbe2a": {
+      "id": "texte-bc9bbe2a",
+      "sha256": "f5e43dda8cceb2853a9e124baa8641649ee86bdc7e1082d13c44b10e86a848bf",
+      "expected": "Complément : expliquer un mot autrement",
+      "duration_s": 3.34,
+      "rms": 0.12168,
+      "recognized": "Complément, expliquer un mot autrement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d28580d2": {
+      "id": "texte-d28580d2",
+      "sha256": "c3d526c1b09b347f087b5db3aae3aa1433214b8addfb3459d2063ef92b913778",
+      "expected": "C’est-à-dire, avec d’autres mots.",
+      "duration_s": 2.46,
+      "rms": 0.10895,
+      "recognized": "c'est-à-dire avec d'autres mots.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f0048ed5": {
+      "id": "texte-f0048ed5",
+      "sha256": "85b166e9946ecb84e217a8a5f220b74242af7f378266f3c7b0aa37e22ae2ca14",
+      "expected": "La piqûre, c’est-à-dire l’injection d’un coupe-faim que les patients plébiscitent.",
+      "duration_s": 4.46,
+      "rms": 0.11405,
+      "recognized": "La piqûre, c'est-à-dire l'injection d'un coupe-fin que les patients plébiscitent.",
+      "word_error_rate": 0.062,
+      "alert": false
+    },
+    "texte-14b8c30a": {
+      "id": "texte-14b8c30a",
+      "sha256": "25a76b75868a55c740c16af1f1cc6933c8d474b99e4386dfbb69f7dccdbece07",
+      "expected": "Je parle d’autonomie, c’est-à-dire pouvoir faire la démarche seul.",
+      "duration_s": 5.26,
+      "rms": 0.10073,
+      "recognized": "Je parle d'autonomie, c'est-à-dire pouvoir faire la démarche seule.",
+      "word_error_rate": 0.077,
+      "alert": false
+    },
+    "texte-5ab57dd3": {
+      "id": "texte-5ab57dd3",
+      "sha256": "71c315d1c27ea2b432ffd0881e52187b723cf9ee1b046ff80111030c8c565028",
+      "expected": "Complément : nuancer sans rompre l’échange",
+      "duration_s": 3.9,
+      "rms": 0.11595,
+      "recognized": "Complément, nuancer sans rompre l'échange.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ddc82b2b": {
+      "id": "texte-ddc82b2b",
+      "sha256": "ca3081363342111d0e5e377fc4630e4701e52caa92bc5977be22ee3582d1190f",
+      "expected": "Je vois ce que vous voulez dire. Cela dépend aussi du contexte.",
+      "duration_s": 5.42,
+      "rms": 0.09348,
+      "recognized": "Je vois ce que vous voulez dire. Cela dépend aussi du contexte.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2db63a2c": {
+      "id": "texte-2db63a2c",
+      "sha256": "ddbd6cd769e2e2d6b70f57c0d24e52569295178bbeab06e8d2bde69479645bba",
+      "expected": "Je vois ce que vous voulez dire. Mais une expérience personnelle ne représente pas toutes les situations.",
+      "duration_s": 6.06,
+      "rms": 0.10883,
+      "recognized": "Je vois ce que vous voulez dire, mais une expérience personnelle ne représente pas toutes les situations.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3783da39": {
+      "id": "texte-3783da39",
+      "sha256": "7034f01ab81d5d587eafab124a6b89580c9c664e846af841a56086d3b05723bc",
+      "expected": "Complément : vérifier l’idée comprise",
+      "duration_s": 3.58,
+      "rms": 0.11076,
+      "recognized": "Complément, vérifiez l'idée comprise.",
+      "word_error_rate": 0.2,
+      "alert": false
+    },
+    "texte-134c58b0": {
+      "id": "texte-134c58b0",
+      "sha256": "67b7dcd1a977f5249061534ff74ad771866b549fffd2a4f325fe01eac8744871",
+      "expected": "Donc, si je vous suis, c’est une possibilité.",
+      "duration_s": 3.34,
+      "rms": 0.11917,
+      "recognized": "Donc si je vous suis, c'est une possibilité.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ae528765": {
+      "id": "texte-ae528765",
+      "sha256": "7d53118cfd2b04dfb2d1f5ed8d33ba44b708c7020a974bd36886436024abcc07",
+      "expected": "Donc, si je vous suis, c’est une possibilité, pas un résultat certain.",
+      "duration_s": 5.1,
+      "rms": 0.10943,
+      "recognized": "Donc si je vous suis, c'est une possibilité, pas un résultat certain.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-70c595e0": {
+      "id": "texte-70c595e0",
+      "sha256": "a122faf65ed33ec9f457746d403a0631efd90844a27f49e87d95fdfc8dd91ba3",
+      "expected": "Donc, si je vous suis, le service est utile, mais il faut encore comparer les options.",
+      "duration_s": 5.26,
+      "rms": 0.12189,
+      "recognized": "Donc si je vous suis, le service est utile, mais il faut encore comparer les options.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-bed8857": {
+      "id": "texte-bed8857",
+      "sha256": "36f68fae6dfaa1a96ddf2374704937fe24164d9b1ad18474a35dece56cf3f292",
+      "expected": "Enfin, notre troisième info concerne le prix élevé du traitement.",
+      "duration_s": 4.78,
+      "rms": 0.12172,
+      "recognized": "Enfin, notre troisième info concerne le prix élevé du traitement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b1141800": {
+      "id": "texte-b1141800",
+      "sha256": "9137aeecefd9c6972c71826ef148aaf3b187c4f751e5da68068e661697906524",
+      "expected": "Elles pourraient économiser du carburant.",
+      "duration_s": 3.42,
+      "rms": 0.1095,
+      "recognized": "Elle pourrait économiser du carburant.",
+      "word_error_rate": 0.4,
+      "alert": true
+    },
+    "texte-76588584": {
+      "id": "texte-76588584",
+      "sha256": "85180d7b84b0360a798a9c50cb89ee0b66fab56888a331cde96c3653118295c4",
+      "expected": "Elles ont économisé du carburant.",
+      "duration_s": 3.42,
+      "rms": 0.12331,
+      "recognized": "Elles ont économisé du carburant.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f101a08a": {
+      "id": "texte-f101a08a",
+      "sha256": "c01f91d64f6332872cb658ab118512e35d86f7e1c50b0955b5cb50a72ecceb01",
+      "expected": "La première phrase présente une possibilité ; la seconde présente un résultat accompli.",
+      "duration_s": 5.74,
+      "rms": 0.10155,
+      "recognized": "La première phrase présente une possibilité, la seconde présente un résultat accompli.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-907a0aad": {
+      "id": "texte-907a0aad",
+      "sha256": "a0b84b3a06601dee194fa32c1d10fc351aee26a55a7da9969ce1a4bfdc12f421",
+      "expected": "Notre deuxième info : , ils peuvent présenter des effets indésirables , et des risques réels.",
+      "duration_s": 6.3,
+      "rms": 0.11065,
+      "recognized": "Notre deuxième info, ils peuvent présenter des effets indésirables et des risques réels.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fc38155b": {
+      "id": "texte-fc38155b",
+      "sha256": "11a0233e72e6a8609fbc17e7e2cf63c13cdd5fddb1c8f0b7d2b61b5783787b86",
+      "expected": "Enfin, , notre troisième info concerne le prix élevé du traitement.",
+      "duration_s": 4.86,
+      "rms": 0.11154,
+      "recognized": "Enfin, notre troisième info concerne le prix élevé du traitement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-875bfa3f": {
+      "id": "texte-875bfa3f",
+      "sha256": "2baaf7e7fe20e7ebf7c01f9c07dfcaaad9e2896466585f27044663c77ce40641",
+      "expected": "Bon, alors c’est vraiment la solution à tous les problèmes ?",
+      "duration_s": 3.58,
+      "rms": 0.11731,
+      "recognized": "Bon, alors c'est vraiment la solution à tous les problèmes.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fa485430": {
+      "id": "texte-fa485430",
+      "sha256": "82502ff202391c5affa51ae5a32afbb3f990577449b1cc10df10095aebc4797d",
+      "expected": "Le reportage présente des effets importants, mais aussi des risques et un coût. On ne peut pas résumer toutes les situations à un témoignage.",
+      "duration_s": 8.14,
+      "rms": 0.10697,
+      "recognized": "Le reportage présente des effets importants, mais aussi des risques et un coût. On ne peut pas résumer toutes les situations à un témoignage.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4adb8eb0": {
+      "id": "texte-4adb8eb0",
+      "sha256": "8090f47c44346f371e2940282b843bbe71eb6aeabd7ce1fb22073e7f8f2f1ef8",
+      "expected": "Quand vous dites « cela pourrait aider », vous êtes sûr ou pas ?",
+      "duration_s": 3.9,
+      "rms": 0.11515,
+      "recognized": "Quand vous dites « cela pourrait aider », vous êtes sûr ou pas ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1f75b99": {
+      "id": "texte-1f75b99",
+      "sha256": "8aa94785442c33baa8b64d98e88348b189fcd4c4b1dc883a3d0b422b397e644f",
+      "expected": "Je parle d’une possibilité. Cela ne veut pas dire que le résultat est garanti. Il faut distinguer les deux.",
+      "duration_s": 7.02,
+      "rms": 0.09875,
+      "recognized": "Je parle d'une possibilité. Cela ne veut pas dire que le résultat est garanti. Il faut distinguer les deux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-16f85658": {
+      "id": "texte-16f85658",
+      "sha256": "3b14aed8a0770f4a47cfe3715e0d89c34efa04002b6a54f0af0ee2a5b118a2ab",
+      "expected": "Je me suis perdu dans votre explication. Vous pouvez résumer ?",
+      "duration_s": 4.78,
+      "rms": 0.10199,
+      "recognized": "Je me suis perdue dans votre explication. Vous pouvez résumer ?",
+      "word_error_rate": 0.1,
+      "alert": false
+    },
+    "texte-8116b890": {
+      "id": "texte-8116b890",
+      "sha256": "8c13739b9cd3cb1112408e8ae5a2618202bc7685b1726fd55d9edfb4e7834122",
+      "expected": "Oui. D’abord, il y a un intérêt. Ensuite, il y a des limites. Enfin, il faut regarder le contexte. Qu’est-ce que vous souhaitez préciser ?",
+      "duration_s": 9.5,
+      "rms": 0.10585,
+      "recognized": "Oui, d'abord il y a un intérêt. Ensuite, il y a des limites. Enfin, il faut regarder le contexte. Qu'est-ce que vous souhaitez préciser ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-bc207697": {
+      "id": "texte-bc207697",
+      "sha256": "689adbae1e912582ab0fc49dbcf41e837af5e9fcbe7d536406e85e9f330934cd",
+      "expected": "Le reportage présente des effets importants, mais aussi des limites.",
+      "duration_s": 4.46,
+      "rms": 0.11382,
+      "recognized": "Le reportage présente des effets importants, mais aussi des limites.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9a411b9b": {
+      "id": "texte-9a411b9b",
+      "sha256": "60d13d3eaff69b7e1fc706cf21d90bcc56afacd70cb14a0d1bc88c0a94a4ff91",
+      "expected": "Il organise l’explication autour de l’efficacité, des risques et du coût.",
+      "duration_s": 4.86,
+      "rms": 0.10634,
+      "recognized": "Il organise l'explication autour de l'efficacité, des risques et du coût.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a1305469": {
+      "id": "texte-a1305469",
+      "sha256": "84c025735e2d828d90444f2dc069d5813fd0685126b5c381009879979cfc644f",
+      "expected": "Une possibilité n’est pas un résultat certain. Qu’est-ce que vous voulez préciser ?",
+      "duration_s": 5.1,
+      "rms": 0.11338,
+      "recognized": "Une possibilité n'est pas un résultat certain. Qu'est-ce que vous voulez préciser ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d018b41e": {
+      "id": "texte-d018b41e",
+      "sha256": "c7953d09c2c87790d634ae4f035b5a0d7edc2ad030d10a035942a14c642a7934",
+      "expected": "Présentez deux dimensions et réagissez à la généralisation.",
+      "duration_s": 4.14,
+      "rms": 0.10809,
+      "recognized": "Présentez deux dimensions et réagissez à la généralisation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b838f0f1": {
+      "id": "texte-b838f0f1",
+      "sha256": "9b3c20475e74b20382b162e6870f2168869c2265b4ee2cfc0f3583761b52ab8b",
+      "expected": "Expliquez la modalité plutôt que répéter la phrase.",
+      "duration_s": 3.58,
+      "rms": 0.11484,
+      "recognized": "Expliquer la modalité plutôt que répéter la phrase.",
+      "word_error_rate": 0.125,
+      "alert": false
+    },
+    "texte-5de462a1": {
+      "id": "texte-5de462a1",
+      "sha256": "ed08e762d8628672edad3a91b5815dbf3ad53180e8df08d43d153da07a365480",
+      "expected": "Reprenez avec trois groupes courts et redonnez la parole.",
+      "duration_s": 3.9,
+      "rms": 0.11535,
+      "recognized": "Reprenez avec trois groupes courts et redonnez la parole.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-91a22878": {
+      "id": "texte-91a22878",
+      "sha256": "7512956777c7fb9f14f054cd07d928d578cbe5aacc3360f1721ec9fbafb066e9",
+      "expected": "« Donc, si c’est efficace, il n’y a plus de problème ? »",
+      "duration_s": 3.58,
+      "rms": 0.10951,
+      "recognized": "Donc, si c'est efficace, il n'y a plus de problème.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-860b92e9": {
+      "id": "texte-860b92e9",
+      "sha256": "52fec101484a688c5bb767bbdc94186797aa6b5d35d5b1d61ef6af59f4658e07",
+      "expected": "« Quand vous dites « un risque », vous parlez de quoi ? »",
+      "duration_s": 3.42,
+      "rms": 0.11706,
+      "recognized": "Quand vous dites un risque, vous parlez de quoi ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2b9fb136": {
+      "id": "texte-2b9fb136",
+      "sha256": "b9d2a2f2a446f38a9f5dfc1c8e89d8e8d55065b35b8ecbd517ec59d92f426bee",
+      "expected": "« Est-ce que le reportage présente cette économie comme certaine ? »",
+      "duration_s": 3.9,
+      "rms": 0.11259,
+      "recognized": "Est-ce que le reportage présente cette économie comme certaine ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-552b7829": {
+      "id": "texte-552b7829",
+      "sha256": "7c458f78733a1bf57b215db250ad3da28fc91d2066a2ae4141e5430e7cb331a7",
+      "expected": "« Je n’ai pas compris votre deuxième idée. Vous pouvez la dire autrement ? »",
+      "duration_s": 4.3,
+      "rms": 0.11942,
+      "recognized": "Je n'ai pas compris votre deuxième idée, vous pouvez la dire autrement ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6d44809d": {
+      "id": "texte-6d44809d",
+      "sha256": "8caffa9f13049336955ddaaefab033fc791aa2a44a9182509353e8f4eb50d0e7",
+      "expected": "Cette application pourrait m’aider à pratiquer tous les jours. Elle propose des exercices courts et je peux les refaire. En revanche, elle ne remplace pas une vraie conversation. Pour moi, elle est utile en complément. Vous en pensez quoi ?",
+      "duration_s": 12.54,
+      "rms": 0.09725,
+      "recognized": "Cette application pourrait m'aider à pratiquer tous les jours. Elle propose des exercices courts et je peux les refaire. En revanche, elle ne remplace pas une vraie conversation. Pour moi, elle est utile en complément. Vous en pensez quoi ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f287e402": {
+      "id": "texte-f287e402",
+      "sha256": "730a86e96f1c956c4c844354ebd6ad5eeb396be38335b69f2549cfdeb21dbca2",
+      "expected": "Quel intérêt la personne présente-t-elle ?",
+      "duration_s": 2.94,
+      "rms": 0.08257,
+      "recognized": "Quel intérêt la personne présente-t-elle ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d867d44b": {
+      "id": "texte-d867d44b",
+      "sha256": "6aa49d4d0dadccaf96cdd195a97448eba9816009b1a6360d1e2c6e914a3f8542",
+      "expected": "Pratiquer régulièrement avec des exercices courts.",
+      "duration_s": 3.58,
+      "rms": 0.1135,
+      "recognized": "Pratiquez régulièrement avec des exercices courts.",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-ef506": {
+      "id": "texte-ef506",
+      "sha256": "1db4c8661300233fa7d68e0b9af8c85d513da1d19a9166fbcf3ebb2fc25b7c53",
+      "expected": "Remplacer toutes les conversations.",
+      "duration_s": 2.86,
+      "rms": 0.1058,
+      "recognized": "Remplacez toutes les conversations.",
+      "word_error_rate": 0.25,
+      "alert": true
+    },
+    "texte-c1d52093": {
+      "id": "texte-c1d52093",
+      "sha256": "31d378f0962fa17b475c347ed7d7c83bac48c124db8d447add6b837dd589b43c",
+      "expected": "L’intérêt est présenté avant la limite.",
+      "duration_s": 3.26,
+      "rms": 0.11126,
+      "recognized": "L'intérêt est présenté avant la limite.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c1e2f1ee": {
+      "id": "texte-c1e2f1ee",
+      "sha256": "7691d42519ae377da259642ea0e4ca9e34386276c726b4022f814abc1d49fab0",
+      "expected": "Quelle limite ajoute-t-elle ?",
+      "duration_s": 2.14,
+      "rms": 0.09916,
+      "recognized": "Quelles limites ajoutent-elles ?",
+      "word_error_rate": 1.0,
+      "alert": true
+    },
+    "texte-d1ce4040": {
+      "id": "texte-d1ce4040",
+      "sha256": "149c2aecd7c245acc09ec4c40f28e3a20148eaf420e0ce249a4d243318003f5e",
+      "expected": "L’application ne remplace pas une vraie conversation.",
+      "duration_s": 3.26,
+      "rms": 0.11764,
+      "recognized": "L'application ne remplace pas une vraie conversation.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-69d256c1": {
+      "id": "texte-69d256c1",
+      "sha256": "6eb25f6b58b23bf09ce66055f77c5d626843e4ad4f13d7d42909cf0c7df5d5fc",
+      "expected": "Il est impossible de refaire les exercices.",
+      "duration_s": 3.42,
+      "rms": 0.11911,
+      "recognized": "Il est impossible de refaire les exercices.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-62fbdde4": {
+      "id": "texte-62fbdde4",
+      "sha256": "7150997eb1d6aca568663370e903cde94b3a461ca36b045cf33385dfebc32f4d",
+      "expected": "« En revanche » vous aide à repérer la limite.",
+      "duration_s": 3.26,
+      "rms": 0.11998,
+      "recognized": "En revanche, vous aide à repérer la limite.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b4812a5e": {
+      "id": "texte-b4812a5e",
+      "sha256": "0a2d3766b72ef8e026efd653aeba8589c3846967af472568afed62a07605adfd",
+      "expected": "Répondez : reformulez l’idée, donnez votre avis avec une limite et posez une question précise.",
+      "duration_s": 6.62,
+      "rms": 0.11085,
+      "recognized": "Répondez, reformulez l'idée, donnez votre avis avec une limite et posez une question précise.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d442bfc9": {
+      "id": "texte-d442bfc9",
+      "sha256": "787be06664e5cc97f51f325bbf436415671b8bdcf7b66aa953b8b73180265300",
+      "expected": "Une autre conversation : une application de langues",
+      "duration_s": 3.58,
+      "rms": 0.11991,
+      "recognized": "Une autre conversation, une application de langue.",
+      "word_error_rate": 0.143,
+      "alert": false
+    },
+    "texte-c4811e5c": {
+      "id": "texte-c4811e5c",
+      "sha256": "657ffc44abad2b65001045a1b3f66ed0c796666c7ec6563743f6aacdf30fa890",
+      "expected": "J’ai organisé deux ou trois idées claires.",
+      "duration_s": 3.42,
+      "rms": 0.11557,
+      "recognized": "J'ai organisé deux ou trois idées claires.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-58dd76df": {
+      "id": "texte-58dd76df",
+      "sha256": "78b4a290b5f4c73f4c6f6d3b3e4c39b6f22087e153139b6668602ad6d813b0db",
+      "expected": "J’ai distingué une possibilité d’un résultat certain.",
+      "duration_s": 4.46,
+      "rms": 0.10212,
+      "recognized": "J'ai distingué une possibilité d'un résultat certain.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fc811c8c": {
+      "id": "texte-fc811c8c",
+      "sha256": "70886992ac75082f4b1e7c3aef704b532684a830a3fc031700552ee0b42aad3f",
+      "expected": "J’ai reformulé une idée quand on me l’a demandé.",
+      "duration_s": 3.58,
+      "rms": 0.12035,
+      "recognized": "J'ai reformulé une idée quand on me l'a demandé.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-df8c668c": {
+      "id": "texte-df8c668c",
+      "sha256": "3cf634d15e8dd8834802dbfb7e81a14b11893e01717c60de6875ae200308b656",
+      "expected": "J’ai vérifié ce que mon partenaire avait compris.",
+      "duration_s": 3.5,
+      "rms": 0.1184,
+      "recognized": "J'ai vérifié ce que mon partenaire avait compris.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9b271e73": {
+      "id": "texte-9b271e73",
+      "sha256": "7d295f2cbe5884eee991df0b58dac2dc76f586a6e9ef59e8aa1931aff4be764b",
+      "expected": "Conversation avec un collègue sur une annonce en ligne",
+      "duration_s": 3.98,
+      "rms": 0.10736,
+      "recognized": "Conversation avec un collègue sur une annonce en ligne",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ba618c1d": {
+      "id": "texte-ba618c1d",
+      "sha256": "319ccc597507878bff3c6006a237e54e269ce60f4cfe09c89ea0d9daeee5d082",
+      "expected": "« L’annonce a l’air officielle et le prix est intéressant. Pourquoi vous hésitez ? »",
+      "duration_s": 5.42,
+      "rms": 0.10501,
+      "recognized": "L'annonce a l'air officielle et le prix est intéressant. Pourquoi vous hésiter ?",
+      "word_error_rate": 0.071,
+      "alert": false
+    },
+    "texte-f6cd8bd6": {
+      "id": "texte-f6cd8bd6",
+      "sha256": "d43a882345b87056b3ab0305ce6b8c01cbaf5265fffde846466f7301924ed262",
+      "expected": "Racontez ce que les journalistes observent, distinguez un constat d’une supposition, puis réagissez à votre collègue. Le transfert peut porter sur un courriel bancaire ou un achat courant.",
+      "duration_s": 11.18,
+      "rms": 0.11428,
+      "recognized": "Racontez ce que les journalistes observent, distinguez un constat d'une supposition, puis réagissez à votre collègue. Le transfert peut porter sur un courriel bancaire ou un achat courant.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a195625b": {
+      "id": "texte-a195625b",
+      "sha256": "507f8daff0fb9b456d4fae2ba5dbb5b42151a346224306ce66c4658097cfc054",
+      "expected": "Racontez les faits dans l’ordre, expliquez votre doute et demandez une information précise. En une minute.",
+      "duration_s": 7.58,
+      "rms": 0.11618,
+      "recognized": "racontez les faits dans l'ordre, expliquez votre doute et demandez une information précise en une minute.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d866a1ec": {
+      "id": "texte-d866a1ec",
+      "sha256": "06b01a84b81e5c9c95a0d7762f1178a0752b8a105cab023a0d7c9ea166628bbf",
+      "expected": "Une annonce en ligne vous semble sérieuse : comment en parler ?",
+      "duration_s": 4.7,
+      "rms": 0.11629,
+      "recognized": "Une annonce en ligne vous semble sérieuse, comment en parler ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9cc8f681": {
+      "id": "texte-9cc8f681",
+      "sha256": "3e6e732a3aeda83f40c298559f5d0843fbdb63c96b55a6dc6b107d7057290406",
+      "expected": "Le récit",
+      "duration_s": 1.42,
+      "rms": 0.08818,
+      "recognized": "Le récit",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-30874bc3": {
+      "id": "texte-30874bc3",
+      "sha256": "97902745bbadbfd2029c134d8808318e3519d8ab1f2687e5b22f665b45d88f66",
+      "expected": "Le constat et la supposition",
+      "duration_s": 2.38,
+      "rms": 0.08501,
+      "recognized": "Le constat et la supposition",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ffad7143": {
+      "id": "texte-ffad7143",
+      "sha256": "342d085b404200df4f6a81030c3ab280e266495d46f47cedd48166948dbbe4dd",
+      "expected": "La vérification et la question",
+      "duration_s": 2.38,
+      "rms": 0.10478,
+      "recognized": "La vérification et la question...",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a5dd0e3f": {
+      "id": "texte-a5dd0e3f",
+      "sha256": "cbd175c15e1fb1ad101a5dffb5ba235acf35332f985ed314fd303166ad4a0179",
+      "expected": "Une adresse connue suffit-elle à donner confiance dans une annonce ?",
+      "duration_s": 4.14,
+      "rms": 0.11822,
+      "recognized": "Une adresse connue suffit-elle à donner confiance dans une annonce ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-59020034": {
+      "id": "texte-59020034",
+      "sha256": "3ba335d0d3e14d160a0a5adca77f6058e46d82064ec1e04a5b507dff8c364eac",
+      "expected": "Comment la tentative d’achat se termine-t-elle ?",
+      "duration_s": 3.1,
+      "rms": 0.12526,
+      "recognized": "Comment la tentative d'achat se termine-t-elle ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1ba77a9": {
+      "id": "texte-1ba77a9",
+      "sha256": "f7c512fbca14055ebc40cfa1ab970734ea0da80207657af87a3c31d6de098e03",
+      "expected": "Les journalistes refusent le virement et le vendeur ne répond plus.",
+      "duration_s": 4.38,
+      "rms": 0.1229,
+      "recognized": "Les journalistes refusent le virement et le vendeur ne répond plus.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7657ef21": {
+      "id": "texte-7657ef21",
+      "sha256": "36068344711959a8cf0675e0e788cb7ecfaa2ec767b9895527a21178da03bbf4",
+      "expected": "Le vendeur les rencontre et leur remet le produit.",
+      "duration_s": 3.5,
+      "rms": 0.11629,
+      "recognized": "Le vendeur les rencontre et leur remet le produit.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2b533a00": {
+      "id": "texte-2b533a00",
+      "sha256": "2ad57171ff67fc18e8b91184dadadd915a07ad029811106510734d3d6b93ec56",
+      "expected": "Reconstituez les étapes plutôt que retenir les noms des produits.",
+      "duration_s": 4.46,
+      "rms": 0.11633,
+      "recognized": "Reconstituer les étapes plutôt que retenir les noms des produits.",
+      "word_error_rate": 0.1,
+      "alert": false
+    },
+    "texte-ad1c974a": {
+      "id": "texte-ad1c974a",
+      "sha256": "ca92c36c2d7b53507a2cbc111fe824ff18a9c805e325a8e545c22374bfe76aad",
+      "expected": "Quand le vendeur « se présente comme » spécialiste, est-ce une preuve ?",
+      "duration_s": 4.46,
+      "rms": 0.11669,
+      "recognized": "Quand le vendeur se présente comme spécialiste, est-ce une preuve ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c15fbc3d": {
+      "id": "texte-c15fbc3d",
+      "sha256": "805255d25c82557ee5484bf6ae987d79351b5508230857b1c094561050857672",
+      "expected": "Non. C’est la manière dont il décrit son rôle.",
+      "duration_s": 3.66,
+      "rms": 0.11565,
+      "recognized": "Non, c'est la manière dont il décrit son rôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-66289ce6": {
+      "id": "texte-66289ce6",
+      "sha256": "d2ecd7287f6fcb9ff5ab013918a1b53b842dee483a6cd3f713d12e9731523989",
+      "expected": "Oui. Le journaliste garantit ce rôle.",
+      "duration_s": 3.18,
+      "rms": 0.12434,
+      "recognized": "Oui, le journaliste garantit ce rôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a8c2da7b": {
+      "id": "texte-a8c2da7b",
+      "sha256": "f07a16db145536b34e543ddb0f4f193404518d69c0f0ed195a18f128234cc457",
+      "expected": "La formulation garde une distance entre la déclaration et sa vérification.",
+      "duration_s": 5.18,
+      "rms": 0.10713,
+      "recognized": "La formulation garde une distance entre la déclaration et sa vérification.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-db5daa2d": {
+      "id": "texte-db5daa2d",
+      "sha256": "ddba0ffdc183d9cbfbdb49c312cfd65327cbd6aff1dba478e98724f73cf25777",
+      "expected": "Sur place, il n’est pas là. Par message, il exige d’abord un virement.",
+      "duration_s": 5.98,
+      "rms": 0.11895,
+      "recognized": "Sur place, il n'est pas là. Par message, il exige d'abord un virement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fd5d598b": {
+      "id": "texte-fd5d598b",
+      "sha256": "37c8f4dfcef377878420f63769cfe3e89253b6e8cd569f97b959fe9811fd1ddf",
+      "expected": "Aide : un transfert d’argent entre comptes",
+      "duration_s": 3.18,
+      "rms": 0.11286,
+      "recognized": "Aide un transfert d'argent entre comptes",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-807b7676": {
+      "id": "texte-807b7676",
+      "sha256": "a69861ba09b2c9485f3ab66231d96e85765d01d83d98efd9ff208a83146e494b",
+      "expected": "Après un premier contrôle, que faut-il encore chercher à comprendre ?",
+      "duration_s": 4.62,
+      "rms": 0.10503,
+      "recognized": "Après un premier contrôle, que faut-il encore chercher à comprendre ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9e8163be": {
+      "id": "texte-9e8163be",
+      "sha256": "3706d97da191910c8910a64facd6a0b2b760d1f8ced7ddc48c0c51015686c76c",
+      "expected": "Pourquoi les douaniers poursuivent-ils l’enquête après une saisie ?",
+      "duration_s": 4.06,
+      "rms": 0.10619,
+      "recognized": "Pourquoi les douaniers poursuivent-ils l'enquête après une saisie ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-78ae5951": {
+      "id": "texte-78ae5951",
+      "sha256": "7b37317d75650e44f42e4c1c81ce8911fcce4fe5faebbc7f1de9ae00cdd12258",
+      "expected": "Pour comprendre qui importe les produits et où ils vont.",
+      "duration_s": 3.74,
+      "rms": 0.12188,
+      "recognized": "pour comprendre qui importe les produits et où ils vont.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2210c6a1": {
+      "id": "texte-2210c6a1",
+      "sha256": "ed9cae7d8f58d160bef0dd47167c4cc3da4db78a8f5170b1a2e3972c25bcb9f7",
+      "expected": "Pour savoir uniquement la couleur des enveloppes.",
+      "duration_s": 2.94,
+      "rms": 0.10173,
+      "recognized": "pour savoir uniquement la couleur des enveloppes.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c9b61fec": {
+      "id": "texte-c9b61fec",
+      "sha256": "0ce5fe9a51133f7ba1014ebfe46af0ae371054d006189949456634c5d3414b1c",
+      "expected": "La saisie est un point de départ, pas toute l’enquête.",
+      "duration_s": 3.58,
+      "rms": 0.11858,
+      "recognized": "La saisie est un point de départ, pas toute l'enquête.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d957b9a4": {
+      "id": "texte-d957b9a4",
+      "sha256": "398d7d101d4b0ac1cd566b51030aeb8df9e14731c40df3960518fdde90ac74d7",
+      "expected": "Que fait le locuteur avec « soit, soit, » ?",
+      "duration_s": 3.18,
+      "rms": 0.12077,
+      "recognized": "Que fait le locuteur avec « soit, soit » ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d283664a": {
+      "id": "texte-d283664a",
+      "sha256": "df47890ec3da776ffbddb024aa0e4766fa4c1f3b81b0205b9726344b1801215e",
+      "expected": "Il présente plusieurs possibilités.",
+      "duration_s": 2.62,
+      "rms": 0.1018,
+      "recognized": "Il présente plusieurs possibilités.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-82736d51": {
+      "id": "texte-82736d51",
+      "sha256": "af6c6b8763b21420a3663d7867f8e7d9f5f632b873735aeaf2751186554628fa",
+      "expected": "Il affirme que toutes les situations sont identiques.",
+      "duration_s": 3.58,
+      "rms": 0.11584,
+      "recognized": "Il affirme que toutes les situations sont identiques.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-df54cc3a": {
+      "id": "texte-df54cc3a",
+      "sha256": "7d4c2092006656576f51763a8ac88f503e444f38e9d54439537333ba9c2e9409",
+      "expected": "Gardez les possibilités séparées, sans inventer ce qui n’a pas été dit.",
+      "duration_s": 4.78,
+      "rms": 0.10612,
+      "recognized": "Gardez les possibilités séparées, sans inventer ce qui n'a pas été dit.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-eb46dea8": {
+      "id": "texte-eb46dea8",
+      "sha256": "45909c0af691f298f46c0e35a17107cd16959cea4f7c77fa3ad6f097320683c9",
+      "expected": "Le point de départ, ça va souvent être la saisie.",
+      "duration_s": 3.82,
+      "rms": 0.11348,
+      "recognized": "Le point de départ, ça va souvent être la saisie.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9b263098": {
+      "id": "texte-9b263098",
+      "sha256": "98580916482f86501e98bba038c59e8139ede2f3b3362d7923400ded0239881d",
+      "expected": "Aide : le fait de retenir un colis dans le cadre du contrôle",
+      "duration_s": 4.38,
+      "rms": 0.10814,
+      "recognized": "aide le fait de retenir un colis dans le cadre du contrôle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-12d5128b": {
+      "id": "texte-12d5128b",
+      "sha256": "af7e0d7afca60c2569aed983adea91f44608da824a82856cb8fef92438cbfa23",
+      "expected": "Comment peut-on exprimer un doute sur un document bien présenté ?",
+      "duration_s": 4.38,
+      "rms": 0.10861,
+      "recognized": "Comment peut-on exprimer un doute sur un document bien présenté ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ca123f4c": {
+      "id": "texte-ca123f4c",
+      "sha256": "4184e408143821d8e6122a920d232aa93ba86de81a8fd6bbc6db89e0c0e5f106",
+      "expected": "Quelle vérification alerte le médecin ?",
+      "duration_s": 3.02,
+      "rms": 0.11368,
+      "recognized": "Quelle vérification alerte le médecin ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-34d7ef17": {
+      "id": "texte-34d7ef17",
+      "sha256": "104d60ce07fa21e0803f53d46fd9cae03b32cf06b8f9f9e1fe10ef2729d90360",
+      "expected": "La signature n’est pas la sienne et le document ne vient pas de son hôpital.",
+      "duration_s": 5.26,
+      "rms": 0.1119,
+      "recognized": "La signature n'est pas la sienne et le document ne vient pas de son hôpital.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-27a7904e": {
+      "id": "texte-27a7904e",
+      "sha256": "e0c410a3920669a462165f968f1bee0737287562eff7e5443c37ae7302f02c01",
+      "expected": "Le document est difficile à lire.",
+      "duration_s": 2.38,
+      "rms": 0.11338,
+      "recognized": "Le document est difficile à lire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2f26034a": {
+      "id": "texte-2f26034a",
+      "sha256": "8cbcc0f450011ba6dce6e5675fe3dfbbf14d1e1603c768303e358c6530d8ade0",
+      "expected": "Le médecin oppose l’apparence convaincante à ce qu’il peut vérifier.",
+      "duration_s": 4.14,
+      "rms": 0.11046,
+      "recognized": "Le médecin oppose l'apparence convaincante à ce qu'il peut vérifier.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-604f4db9": {
+      "id": "texte-604f4db9",
+      "sha256": "4340ce6d70468c34899f54004a885b0614e7ff1c993a51878a3f7a683c80ddb8",
+      "expected": "Avec « j’imagine que », le médecin présente-t-il un constat certain ?",
+      "duration_s": 4.7,
+      "rms": 0.10937,
+      "recognized": "Avec « J'imagine que » le médecin présente-t-il un constat certain ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e07cee5a": {
+      "id": "texte-e07cee5a",
+      "sha256": "084260bb1d7f0404132b93324de140fd32824a83ae17e98f48dc30aa01c66918",
+      "expected": "Non. Il formule une supposition.",
+      "duration_s": 3.02,
+      "rms": 0.13075,
+      "recognized": "Non, il formule une supposition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-db19a1be": {
+      "id": "texte-db19a1be",
+      "sha256": "4d20e0507bcfeda6f114836568b7ae6e74d46bd975405e426bfa4a0fe4090458",
+      "expected": "Oui. Il dit avoir vérifié chaque pharmacie.",
+      "duration_s": 3.58,
+      "rms": 0.1092,
+      "recognized": "Oui, il dit avoir vérifié chaque pharmacie.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-188defb9": {
+      "id": "texte-188defb9",
+      "sha256": "f6ca592fd001557bb8f1c9065dbe93db8f2ccbd200269385732ae058a6d121b9",
+      "expected": "Reconnaissez le degré de certitude et reformulez-le sans le renforcer.",
+      "duration_s": 5.1,
+      "rms": 0.11581,
+      "recognized": "Reconnaissez le degré de certitude et reformulez-le sans le renforcer.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-62b7bc42": {
+      "id": "texte-62b7bc42",
+      "sha256": "6eec849b581d9a466767ef000aeed8dd6ab728e3fe83aaa64385bb12c6b1ac7d",
+      "expected": "Une signature qui n’est pas la mienne.",
+      "duration_s": 2.54,
+      "rms": 0.11267,
+      "recognized": "Une signature qui n'est pas la mienne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-46749c5b": {
+      "id": "texte-46749c5b",
+      "sha256": "36407875173907bbaa70bea54f342f72f2e8a327a39a09191a0acf10e0f7b957",
+      "expected": "Aide : le possessif qui correspond à « à moi »",
+      "duration_s": 3.74,
+      "rms": 0.11179,
+      "recognized": "« Aide », le possessif qui correspond à « à moi ».",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-34bba256": {
+      "id": "texte-34bba256",
+      "sha256": "fdd1fa0c067f00fcb9f0a28f955fc56dcaae012baca11f77bd8afc5c2964bdad",
+      "expected": "Extrait un. La rencontre n’aboutit pas",
+      "duration_s": 4.14,
+      "rms": 0.11633,
+      "recognized": "Extrait 1. La rencontre n'aboutit pas.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ba3f3990": {
+      "id": "texte-ba3f3990",
+      "sha256": "393dfa1d08d838d49753d9c9017032a03a0d9f2ef6190561a3e407f4c0b788c4",
+      "expected": "Extrait deux. Un contrôle devient une enquête",
+      "duration_s": 3.66,
+      "rms": 0.11578,
+      "recognized": "Extrait 2. Un contrôle devient une enquête.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d17f76ce": {
+      "id": "texte-d17f76ce",
+      "sha256": "acb5cb6d8e4f5a2449c60451876126e790b05d72f52cc5fed6b093b04311a7a0",
+      "expected": "Extrait trois. Un document peut sembler vrai",
+      "duration_s": 3.74,
+      "rms": 0.12354,
+      "recognized": "Extrait 3. Un document peut sembler vrai.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-c190e6b6": {
+      "id": "texte-c190e6b6",
+      "sha256": "30d98c70e1528cbb064dd1dc093b951f38ebf7b4889807de04f5b37f0bc5eb1f",
+      "expected": "Priorité : raconter dans l’ordre",
+      "duration_s": 3.02,
+      "rms": 0.12022,
+      "recognized": "Priorité, raconter dans l'ordre",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2ed6b325": {
+      "id": "texte-2ed6b325",
+      "sha256": "314ef00eca3fcdfe62d991a9068585be66079ec370775bbacbfaad6adedd7cad",
+      "expected": "D’abord, ils contactent le vendeur. Ensuite, ils refusent. Finalement, il ne répond plus.",
+      "duration_s": 7.34,
+      "rms": 0.12088,
+      "recognized": "D'abord, il contacte le vendeur. Ensuite, il refuse. Finalement, il ne répond plus.",
+      "word_error_rate": 0.286,
+      "alert": true
+    },
+    "texte-724c0dc0": {
+      "id": "texte-724c0dc0",
+      "sha256": "bf907fbc18c751b6516680b3e4ab041f0dc7d745e0fe34d0323fa32535af6e94",
+      "expected": "Sur place, il n’est pas là. Par message, il exige d’abord un virement. Nous refusons, le vendeur ne nous répondra plus.",
+      "duration_s": 8.38,
+      "rms": 0.10267,
+      "recognized": "Sur place, il n'est pas là. Par message, il exige d'abord un virement. Nous refusons, le vendeur ne nous répondra plus.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-73406927": {
+      "id": "texte-73406927",
+      "sha256": "41d1218e0aae670c3d15e10f0ad98e3528a96f3891ae1d034ba9172c93624e21",
+      "expected": "D’abord, j’ai reçu un courriel. Ensuite, j’ai vérifié l’expéditeur. Finalement, j’ai appelé le service.",
+      "duration_s": 7.18,
+      "rms": 0.1104,
+      "recognized": "D'abord, j'ai reçu un courriel, ensuite j'ai vérifié l'expéditeur. Finalement, j'ai appelé le service.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e4dd26db": {
+      "id": "texte-e4dd26db",
+      "sha256": "224e883164b551fd3c60387c49a2409f7ef30c3a3bcb0bf120263d0fd58cd904",
+      "expected": "Priorité : distinguer apparence et réalité",
+      "duration_s": 4.3,
+      "rms": 0.11746,
+      "recognized": "Priorité, distinguer apparence et réalité.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9f477633": {
+      "id": "texte-9f477633",
+      "sha256": "1c9ce5eb84bc0593b75f1f7dd0c2d3bd3d0459ffd24f739f6e9646a7ec3c8f4f",
+      "expected": "Ça a l’air sérieux, mais il faut vérifier.",
+      "duration_s": 3.26,
+      "rms": 0.10747,
+      "recognized": "Ça a l'air sérieux, mais il faut vérifier.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-33089e91": {
+      "id": "texte-33089e91",
+      "sha256": "ce820f564241112c4a2803a219e462f7c31a4538d8c220055b2345b738ff9b82",
+      "expected": "Là, c’est plutôt bien fait, mais ce n’est pas une ordonnance de l’hôpital auquel j’appartiens.",
+      "duration_s": 5.42,
+      "rms": 0.10122,
+      "recognized": "Là, c'est plutôt bien fait, mais ce n'est pas une ordonnance de l'hôpital auquel j'appartiens.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-14634816": {
+      "id": "texte-14634816",
+      "sha256": "14924071f7d4587807d21761a9fc8a84dfed84c01ec577beabbb87191c251222",
+      "expected": "Ce courriel a l’air officiel, mais l’adresse me surprend.",
+      "duration_s": 4.38,
+      "rms": 0.11411,
+      "recognized": "Ce courriel a l'air officiel, mais l'adresse me surprend.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ad4aafdb": {
+      "id": "texte-ad4aafdb",
+      "sha256": "65830c540bf5ce8aa324cf366640859727500a3b61d1d747bd6cbc1cf070c948",
+      "expected": "Priorité : marquer une supposition",
+      "duration_s": 3.02,
+      "rms": 0.1256,
+      "recognized": "Priorité, marquer une supposition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dc5c5869": {
+      "id": "texte-dc5c5869",
+      "sha256": "8b73930b9404f803ec788c015db78957147c0e6cea539d7960c3bfc15e21c29f",
+      "expected": "J’imagine que c’est possible, mais je ne l’ai pas vérifié.",
+      "duration_s": 3.82,
+      "rms": 0.1128,
+      "recognized": "J'imagine que c'est possible, mais je ne l'ai pas vérifié.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ca1f7dc5": {
+      "id": "texte-ca1f7dc5",
+      "sha256": "93cc05f63f41029fbba25df407f1fe6b22d41031f99ebe936832f0e9c7e15fb5",
+      "expected": "J’imagine qu’il y a d’autres pharmacies qui ne se sont même pas posé la question.",
+      "duration_s": 5.5,
+      "rms": 0.10208,
+      "recognized": "J'imagine qu'il y a d'autres pharmacies qui ne se sont même pas posé la question.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8093c077": {
+      "id": "texte-8093c077",
+      "sha256": "7e0a03424c5508069a7747149b24b4336f9086b686d7e5ff06b90acb8439d168",
+      "expected": "J’imagine que c’est une erreur, mais je préfère vérifier avant de répondre.",
+      "duration_s": 5.74,
+      "rms": 0.10242,
+      "recognized": "J'imagine que c'est une erreur, mais je préfère vérifier avant de répondre.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e4fb5e7a": {
+      "id": "texte-e4fb5e7a",
+      "sha256": "9dba8a4759f9748368a9370ff8dbe0df97a8fe1db4854c6616e24f8965f5e386",
+      "expected": "Complément : réparer un malentendu",
+      "duration_s": 3.26,
+      "rms": 0.11571,
+      "recognized": "Complément, réparer un malentendu.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8c9c148e": {
+      "id": "texte-8c9c148e",
+      "sha256": "fbdd1151155757b84cc462c1264a13b446e9d16db2f77cdc9cb117ab849a0ef4",
+      "expected": "Je me suis mal expliqué. Je voulais dire autre chose.",
+      "duration_s": 4.86,
+      "rms": 0.10898,
+      "recognized": "Je me suis mal expliquée. Je voulais dire autre chose.",
+      "word_error_rate": 0.1,
+      "alert": false
+    },
+    "texte-60d7bff2": {
+      "id": "texte-60d7bff2",
+      "sha256": "c1da593725218274b37914088bb5b354056597bf0042934493d64bf770819ad7",
+      "expected": "Je me suis mal expliqué. Je voulais dire que l’adresse est connue, pas que le vendeur est fiable.",
+      "duration_s": 5.5,
+      "rms": 0.11809,
+      "recognized": "Je me suis mal expliqué. Je voulais dire que l'adresse est connue, pas que le vendeur est fiable.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8004be90": {
+      "id": "texte-8004be90",
+      "sha256": "c377bbf48a2ec60d48af72c4e2a1ceb9d968b5f39bca4aa135c321e82d557ace",
+      "expected": "Je me suis mal expliqué. Je parle du courriel, pas du service lui-même.",
+      "duration_s": 5.58,
+      "rms": 0.10765,
+      "recognized": "Je me suis mal expliqué. Je parle du courriel, pas du service lui-même.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4011634a": {
+      "id": "texte-4011634a",
+      "sha256": "dcaca646a2364c55d67618392a1486f0e02654ad9d2d99b2ca9daee61f77f105",
+      "expected": "Complément : gagner du temps sans perdre la parole",
+      "duration_s": 3.42,
+      "rms": 0.119,
+      "recognized": "Complément, gagner du temps sans perdre la parole.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-cfc97324": {
+      "id": "texte-cfc97324",
+      "sha256": "c16074e192d0316451d747d4c93a8c2201093223333377033112483d451f849d",
+      "expected": "Attendez, je cherche le mot. C’est le document qui confirme le paiement.",
+      "duration_s": 4.7,
+      "rms": 0.1243,
+      "recognized": "Attendez, je cherche le mot. C'est le document qui confirme le paiement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-96ebfd6": {
+      "id": "texte-96ebfd6",
+      "sha256": "b5cf64c52a83fdb206712c8afdf5974650b6b6a01c81fd761e662c270edf9cce",
+      "expected": "Je ne connais pas le mot exact. C’est la personne qui vérifie les dossiers.",
+      "duration_s": 5.1,
+      "rms": 0.11321,
+      "recognized": "Je ne connais pas le mot exact, c'est la personne qui vérifie les dossiers.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-38987d28": {
+      "id": "texte-38987d28",
+      "sha256": "79a20ac3f17a5317ec48d7ca42a5bcb002a2ceccf652d93732dbfa77dd9800ea",
+      "expected": "Complément : formuler une question précise",
+      "duration_s": 3.82,
+      "rms": 0.10802,
+      "recognized": "Complément, formulez une question précise.",
+      "word_error_rate": 0.2,
+      "alert": false
+    },
+    "texte-56ddb521": {
+      "id": "texte-56ddb521",
+      "sha256": "589d749db0a2bd7284595c490ba2f352252000eec7371e1e04b051a5961e5ea4",
+      "expected": "Qu’est-ce qui vous permet de dire cela ?",
+      "duration_s": 2.54,
+      "rms": 0.10824,
+      "recognized": "Qu'est-ce qui vous permet de dire cela ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-db7b19ef": {
+      "id": "texte-db7b19ef",
+      "sha256": "c543d6ff6b358983c9253c65c5def0de60c3d0952f66c865b11ce9b40e8a38de",
+      "expected": "Qu’est-ce qui vous permet de dire que cette annonce est fiable ?",
+      "duration_s": 3.66,
+      "rms": 0.11453,
+      "recognized": "Qu'est-ce qui vous permet de dire que cette annonce est fiable ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b1a00a41": {
+      "id": "texte-b1a00a41",
+      "sha256": "71b5ff47a0d65085335cc6d1e14eb09e589ea4ef5c3f9ded24718d03889f7c7e",
+      "expected": "Qu’est-ce qui vous permet de dire que ce courriel vient de notre banque ?",
+      "duration_s": 4.54,
+      "rms": 0.11363,
+      "recognized": "Qu'est-ce qui vous permet de dire que ce courriel vient de notre banque ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-ac88bdb7": {
+      "id": "texte-ac88bdb7",
+      "sha256": "a2b0190c48ecb9f86118686b690e89bbb8e484735fcd739fa5b5548d4935c196",
+      "expected": "J’imagine que le document est faux.",
+      "duration_s": 2.94,
+      "rms": 0.11168,
+      "recognized": "J'imagine que le document est faux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-36ccd961": {
+      "id": "texte-36ccd961",
+      "sha256": "0cd31cda5051d62e9651eb509a9c13742293c63ab4c1c296633164637c4c3539",
+      "expected": "J’ai vérifié que le document est faux.",
+      "duration_s": 2.62,
+      "rms": 0.11363,
+      "recognized": "J'ai vérifié que le document est faux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f32ca5a6": {
+      "id": "texte-f32ca5a6",
+      "sha256": "6fa8333d77cbb023af6ee16783c3d1fa599a9e3c57846b4f487c54654c23695e",
+      "expected": "La première phrase présente une supposition ; la seconde annonce une vérification.",
+      "duration_s": 6.46,
+      "rms": 0.10854,
+      "recognized": "La première phrase présente une supposition, la seconde annonce une vérification.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d28e23b9": {
+      "id": "texte-d28e23b9",
+      "sha256": "c5a880a52603326454fde9fdd9102e92103c723f26d00489872ede5b9c5f4854",
+      "expected": "Sur place, , il n’est pas là. , Par message, , il exige d’abord un virement.",
+      "duration_s": 5.74,
+      "rms": 0.10114,
+      "recognized": "Sur place, il n'est pas là. Par message, il exige d'abord un virement.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-223aec0e": {
+      "id": "texte-223aec0e",
+      "sha256": "6e452aa95b91e619a8e6d44bdc7166637ff945fa6dfbb6af8530abf2c6b6362c",
+      "expected": "Une signature , qui n’est pas la mienne.",
+      "duration_s": 2.86,
+      "rms": 0.10503,
+      "recognized": "Une signature qui n'est pas la mienne.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2b3fa94a": {
+      "id": "texte-2b3fa94a",
+      "sha256": "4d43f33e17eb8a15952bb0b2e5a59a1fc1f5443f93f14e038acc3cab11cfdf5d",
+      "expected": "Si le document est bien fait, ça prouve qu’il est vrai, non ?",
+      "duration_s": 4.22,
+      "rms": 0.11884,
+      "recognized": "Si le document est bien fait, ça prouve qu'il est vrai, non ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d6735e33": {
+      "id": "texte-d6735e33",
+      "sha256": "0bd09d2e2d47ee9b0ea083e0a12e911159a65d505d359d23f33239412b6cb7ce",
+      "expected": "Pas forcément. Le médecin vérifie la signature et l’hôpital. L’apparence seule ne suffit pas. Quelle autre information pourrait-on vérifier ?",
+      "duration_s": 9.5,
+      "rms": 0.1037,
+      "recognized": "Pas forcément. Le médecin vérifie la signature et l'hôpital. L'apparence seule ne suffit pas. Quelle autre information pourrait-on vérifier ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-7f827727": {
+      "id": "texte-7f827727",
+      "sha256": "4f51bd4384a04f44095d0293b12fff1f3a97f32f5e722588b427599720f5719e",
+      "expected": "Donc vous êtes certain que tous les documents sont faux ?",
+      "duration_s": 3.34,
+      "rms": 0.12164,
+      "recognized": "Donc vous êtes certain que tous les documents sont faux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8c335e2b": {
+      "id": "texte-8c335e2b",
+      "sha256": "6e59aae3ddb4a865f27d8a6a36f9690a309614ba4f172155c2704d49eb7b34dd",
+      "expected": "Non, je me suis mal expliqué. Je parle de cet exemple. Je n’ai pas vérifié tous les documents.",
+      "duration_s": 6.38,
+      "rms": 0.12355,
+      "recognized": "Non, je me suis mal expliqué. Je parle de cet exemple. Je n'ai pas vérifié tous les documents.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-841c3271": {
+      "id": "texte-841c3271",
+      "sha256": "34b4c4e1944adde764fa61d6df28a90845610e624b1af833492be8edac69c594",
+      "expected": "Vous avez dit un mot que je ne connais pas. C’est quoi, une saisie ?",
+      "duration_s": 4.86,
+      "rms": 0.10742,
+      "recognized": "Vous avez dit un mot que je ne connais pas. C'est quoi une saisie ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-e991cd1d": {
+      "id": "texte-e991cd1d",
+      "sha256": "133004df24e69bfb0b4367f1cafe8134a4c334b6f16c7fddf12193c1e973242a",
+      "expected": "Ici, c’est quand les agents retiennent un colis pendant un contrôle. Ce colis peut ensuite servir de point de départ à l’enquête.",
+      "duration_s": 7.9,
+      "rms": 0.1075,
+      "recognized": "Ici, c'est quand les agents retiennent un colis pendant un contrôle. Ce colis peut ensuite servir de point de départ à l'enquête.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-3ab79ed": {
+      "id": "texte-3ab79ed",
+      "sha256": "f4f8169323a576279c7ed3b54f65f2c6f694dbbc09a2323c55dc4c4878ea9603",
+      "expected": "D’abord, les journalistes contactent un vendeur. Ensuite, il demande un virement.",
+      "duration_s": 6.14,
+      "rms": 0.10897,
+      "recognized": "D'abord, les journalistes contactent un vendeur. Ensuite, ils demandent un virement.",
+      "word_error_rate": 0.167,
+      "alert": false
+    },
+    "texte-4a95ba1c": {
+      "id": "texte-4a95ba1c",
+      "sha256": "64372883509efbf7709b280095d177e7a8aaaa7e0bc5b5aa4749837776389586",
+      "expected": "Une adresse connue ne prouve pas que le vendeur est fiable.",
+      "duration_s": 4.06,
+      "rms": 0.11844,
+      "recognized": "Une adresse connue ne prouve pas que le vendeur est fiable.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-53c0474b": {
+      "id": "texte-53c0474b",
+      "sha256": "a62f559c306b1838bb5f0e049c980dd949c4ff2b8530f01d73c4ff50318a474f",
+      "expected": "Je voudrais vérifier cette information. Quelle preuve avons-nous ?",
+      "duration_s": 4.62,
+      "rms": 0.12016,
+      "recognized": "Je voudrais vérifier cette information. Quelles preuves avons-nous ?",
+      "word_error_rate": 0.222,
+      "alert": true
+    },
+    "texte-598b1a4f": {
+      "id": "texte-598b1a4f",
+      "sha256": "9d918fcdbb7f957ca4cfca54318deb1b798b9578cdca7a6c3e250e50b125aad0",
+      "expected": "Opposez l’apparence à une vérification et relancez.",
+      "duration_s": 3.66,
+      "rms": 0.11899,
+      "recognized": "Opposer l'apparence à une vérification est relancée.",
+      "word_error_rate": 0.375,
+      "alert": true
+    },
+    "texte-6f370c8f": {
+      "id": "texte-6f370c8f",
+      "sha256": "3e56c545fe2810dbfb36992c4674b72d56b8036580ef32840233958597653496",
+      "expected": "Réparez la généralisation sans perdre le fil.",
+      "duration_s": 4.06,
+      "rms": 0.10904,
+      "recognized": "Réparer la généralisation sans perdre le fil.",
+      "word_error_rate": 0.143,
+      "alert": false
+    },
+    "texte-e2f4f961": {
+      "id": "texte-e2f4f961",
+      "sha256": "7c0ea9cc234f32f212bf5f1c690a4e1dc93a0682f14424a3ba24105eed80718f",
+      "expected": "Expliquez le mot par sa fonction et revenez au récit.",
+      "duration_s": 3.82,
+      "rms": 0.11731,
+      "recognized": "Expliquez le mot par sa fonction et revenez au récit.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-81b12061": {
+      "id": "texte-81b12061",
+      "sha256": "abb06b330592835d32b21f4d7b4aeac25dd508e6d662d9a0363d602c6adc3f49",
+      "expected": "« Mais si l’adresse est connue, le vendeur est forcément fiable, non ? »",
+      "duration_s": 4.3,
+      "rms": 0.11516,
+      "recognized": "Mais si l'adresse est connue, le vendeur est forcément fiable, non ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-5ee79f24": {
+      "id": "texte-5ee79f24",
+      "sha256": "040d96c990e85eda7fe36c7cd85a74e3c18a86d6ad3967582e098304da284f07",
+      "expected": "« Attendez, vous parlez d’un fait ou d’une supposition ? »",
+      "duration_s": 3.58,
+      "rms": 0.10817,
+      "recognized": "Attendez, vous parlez d'un fait ou d'une supposition ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-121ec0a4": {
+      "id": "texte-121ec0a4",
+      "sha256": "dd92845bb8ad96fe4c77fbdd60d22aeade991be55798e94c63e62ea668602f57",
+      "expected": "« Je n’ai pas compris ce qui s’est passé en premier. »",
+      "duration_s": 3.34,
+      "rms": 0.12103,
+      "recognized": "Je n'ai pas compris ce qui s'est passé en premier.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-985dbd0e": {
+      "id": "texte-985dbd0e",
+      "sha256": "0733e7f4edb5a4ce3c7ededaea1d85f11332911fd4db01504b6ad121f6fa6a70",
+      "expected": "« Quelle information demanderiez-vous avant de répondre ? »",
+      "duration_s": 3.66,
+      "rms": 0.11767,
+      "recognized": "Quelle information demanderiez-vous avant de répondre ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-dc3e6e5d": {
+      "id": "texte-dc3e6e5d",
+      "sha256": "3f5c34316bcd0b85ed493bd0d4b4376d104d85cca75cbcf0765fcb0271441c29",
+      "expected": "J’ai reçu un courriel avec le logo de ma banque. Il me demandait de confirmer rapidement mes coordonnées. L’adresse de l’expéditeur était inhabituelle. J’imagine que c’était une tentative de fraude, mais je ne l’avais pas encore vérifié. J’ai donc contacté ma banque par mon moyen habituel. Et vous, qu’auriez-vous fait ?",
+      "duration_s": 20.84,
+      "rms": 0.11396,
+      "recognized": "J'ai reçu un courriel avec le logo de ma banque. Il me demandait de confirmer rapidement mes coordonnées. L'adresse de l'expéditeur était inhabituelle. J'imagine que c'était une tentative de fraude, mais je ne l'avais pas encore vérifiée. J'ai donc contacté ma banque par mon moyen habituel. Et vous, qu'auriez-vous fait ?",
+      "word_error_rate": 0.017,
+      "alert": false
+    },
+    "texte-ddcbd30": {
+      "id": "texte-ddcbd30",
+      "sha256": "f6d5b67ff5dd15976ba040219777cad58e9fadd4d78572df8121620531a4c4d2",
+      "expected": "Qu’est-ce que la personne a réellement observé ?",
+      "duration_s": 2.7,
+      "rms": 0.08975,
+      "recognized": "Qu'est-ce que la personne a réellement observé?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-4339558c": {
+      "id": "texte-4339558c",
+      "sha256": "cb8f3fb9d65e1fcc26c67d8826173bb93ff0fd7d494a2e6fc97fbf8b1d79a6e3",
+      "expected": "Un logo connu et une adresse inhabituelle.",
+      "duration_s": 3.34,
+      "rms": 0.12414,
+      "recognized": "un logo connu et une adresse inhabituelle.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f27ba8ef": {
+      "id": "texte-f27ba8ef",
+      "sha256": "a6f3c9cb5f50d9b1d4f70bfdf030206b468502c2881ad4b8e25a9a1f797c240b",
+      "expected": "La preuve que tous les courriels bancaires sont faux.",
+      "duration_s": 3.34,
+      "rms": 0.1075,
+      "recognized": "La preuve que tous les courriels bancaires sont faux.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-68939530": {
+      "id": "texte-68939530",
+      "sha256": "76e60f332a61208c10a0146775a6e02fea8fff00ab3fa5e16b9806383b312dc9",
+      "expected": "Le constat porte sur ce courriel, pas sur tous les messages.",
+      "duration_s": 4.7,
+      "rms": 0.11311,
+      "recognized": "Le constat porte sur ce courriel, pas sur tous les messages.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a20bd6b5": {
+      "id": "texte-a20bd6b5",
+      "sha256": "1950196183972cc88b5369e5a1f7634f3280dc9ff0ce26c543433d5d541ee461",
+      "expected": "Que présente-t-elle comme une supposition ?",
+      "duration_s": 2.78,
+      "rms": 0.1084,
+      "recognized": "Que présente-t-elle comme une supposition ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-b2e55cc9": {
+      "id": "texte-b2e55cc9",
+      "sha256": "725c7e9b9a9b53336dd5081be24edd162d3bb38476a5114de4439403fed1de59",
+      "expected": "L’idée que le message était une tentative de fraude.",
+      "duration_s": 3.42,
+      "rms": 0.11823,
+      "recognized": "l'idée que le message était une tentative de fraude.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2e739b8f": {
+      "id": "texte-2e739b8f",
+      "sha256": "b99592e6a5f545b267039207e4ee494faef3d5b0303f2c832ac62fdf9a4c5a92",
+      "expected": "Le fait qu’elle a reçu un courriel.",
+      "duration_s": 2.38,
+      "rms": 0.09084,
+      "recognized": "Le fait qu'elle a reçu un courriel.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9bcb5a66": {
+      "id": "texte-9bcb5a66",
+      "sha256": "774dfb5a6e8ab7847e5e1d0684ad1f0e93395148b84608f3a077bae10bf045e5",
+      "expected": "« J’imagine » marque l’interprétation ; le récit distingue ensuite la vérification.",
+      "duration_s": 6.46,
+      "rms": 0.10983,
+      "recognized": "« J'imagine » marque l'interprétation. Le récit distingue ensuite la vérification.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-fcd458ac": {
+      "id": "texte-fcd458ac",
+      "sha256": "fb7662b31e4f582037ec321967520f23d203586c844ffc3d3e697f75177e560a",
+      "expected": "Répondez au collègue : reprenez un fait, exprimez un doute et demandez une précision. Puis racontez un autre exemple réel ou inventé.",
+      "duration_s": 9.66,
+      "rms": 0.10863,
+      "recognized": "Répondez aux collègues, reprenez un fait, exprimez un doute et demandez une précision. Puis racontez un autre exemple réel ou inventé.",
+      "word_error_rate": 0.095,
+      "alert": false
+    },
+    "texte-e8738030": {
+      "id": "texte-e8738030",
+      "sha256": "9ff51628ba6267cea4fe70f26e21eb1beb8bf984510c067040d93fda4f3aa4f1",
+      "expected": "Une autre conversation : un courriel bancaire",
+      "duration_s": 3.42,
+      "rms": 0.11254,
+      "recognized": "Une autre conversation, un courriel bancaire.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-16fb5e8a": {
+      "id": "texte-16fb5e8a",
+      "sha256": "2b94a825e7260b39649bbf3e1540cfeedca9e96126b05350bc348d81deb93463",
+      "expected": "J’ai raconté les faits dans un ordre compréhensible.",
+      "duration_s": 4.14,
+      "rms": 0.10701,
+      "recognized": "J'ai raconté les faits dans un ordre compréhensible.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-be4d8169": {
+      "id": "texte-be4d8169",
+      "sha256": "7982cb04302ed80e0e88e778cd076777f105f2b450f450e96d712c945d2ac090",
+      "expected": "J’ai distingué un constat d’une supposition.",
+      "duration_s": 3.34,
+      "rms": 0.11797,
+      "recognized": "J'ai distingué un constat d'une supposition.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-2d494b9b": {
+      "id": "texte-2d494b9b",
+      "sha256": "22f83345263c4b6313cdd8381cc4383e2874927994bee53aebd7b79ba3238b60",
+      "expected": "J’ai expliqué un mot ou réparé un malentendu.",
+      "duration_s": 3.5,
+      "rms": 0.11955,
+      "recognized": "J'ai expliqué un mot ou réparé un malentendu.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-aafd6cdb": {
+      "id": "texte-aafd6cdb",
+      "sha256": "2755b7482e2dac9605627536c021d7462cb51d60d9aae432cda63de272d63023",
+      "expected": "J’ai répondu puis redonné la parole.",
+      "duration_s": 2.78,
+      "rms": 0.11635,
+      "recognized": "J'ai répondu puis redonné la parole.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-d4b20aae": {
+      "id": "texte-d4b20aae",
+      "sha256": "8a30dd3d7c8812d2e74d9ef535388a1671f9b8a73928beff8db20e4114226592",
+      "expected": "Un point à améliorer entre deux essais",
+      "duration_s": 3.26,
+      "rms": 0.12043,
+      "recognized": "Un point à améliorer entre deux essais.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-28237222": {
+      "id": "texte-28237222",
+      "sha256": "a930b49b30c434cc0b1300b28131012675359bcb175222debf44bc685a6fa262",
+      "expected": "Mon partenaire peut résumer mon idée.",
+      "duration_s": 3.26,
+      "rms": 0.12178,
+      "recognized": "Mon partenaire peut résumer mon idée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-8e0cd065": {
+      "id": "texte-8e0cd065",
+      "sha256": "3f396aacff535fce0abd6e6d72ca42d100b9ebf2c3e113f72e4d117d3186ffd6",
+      "expected": "Je réponds à sa relance.",
+      "duration_s": 2.94,
+      "rms": 0.09446,
+      "recognized": "Je réponds à sa relance.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-9dac6cb1": {
+      "id": "texte-9dac6cb1",
+      "sha256": "f222fec541c6c68d0f8295b2409a27ae536faa6b775d0274845cfef9375ab109",
+      "expected": "Je peux reformuler et continuer.",
+      "duration_s": 4.46,
+      "rms": 0.10009,
+      "recognized": "Je peux reformuler et continuer.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-90460e15": {
+      "id": "texte-90460e15",
+      "sha256": "e7c8a0321816828a1ac4a55559622761dca421d8f75f9ea5f6905634bbc58756",
+      "expected": "Reprenez une phrase du reportage",
+      "duration_s": 2.62,
+      "rms": 0.09428,
+      "recognized": "Reprenez une phrase du reportage.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-26076d44": {
+      "id": "texte-26076d44",
+      "sha256": "d17ffa51efe662ebebd6948cb6616c921d85ac05aaad784f64a1519d685ca2dc",
+      "expected": "À chaque changement de voix, repérez qui parle : une personne raconte son expérience, un journaliste présente les faits, ou un intervenant explique une idée.",
+      "duration_s": 10.46,
+      "rms": 0.1134,
+      "recognized": "À chaque changement de voix, repérez qui parle. Une personne raconte son expérience, un journaliste présente les faits ou un intervenant explique une idée.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-f096e770": {
+      "id": "texte-f096e770",
+      "sha256": "fb627e597575831eeb3586180e9d4a3290856e1e35d1ef5ef1004f0645b6388a",
+      "expected": "Reconnaître une formulation orale courante",
+      "duration_s": 3.34,
+      "rms": 0.11443,
+      "recognized": "Reconnaître une formulation orale courante.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-6fd8cdf6": {
+      "id": "texte-6fd8cdf6",
+      "sha256": "42efcc60c707ac1fbba9f9c248db4d056a29fb668318392321faf48b1e9db864",
+      "expected": "Ces modèles créés ont le même sens. Écoutez les deux formulations. Vous pouvez répondre avec la forme complète.",
+      "duration_s": 7.66,
+      "rms": 0.10434,
+      "recognized": "Ces modèles créés ont le même sens. Écoutez les deux formulations. Vous pouvez répondre avec la forme complète.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-a0ebfb54": {
+      "id": "texte-a0ebfb54",
+      "sha256": "d51458cdd3766a666983e7fef0741dfba200402855e830e39f903b9065298c4f",
+      "expected": "C’est pas simple, mais ça peut aider.",
+      "duration_s": 2.62,
+      "rms": 0.10327,
+      "recognized": "C'est pas simple, mais ça peut aider.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-aa474896": {
+      "id": "texte-aa474896",
+      "sha256": "f75e29a0b7a07e3a7b77b808166ffed93bd543e33c54e283d05465260ed12b02",
+      "expected": "Ce n’est pas simple, mais cela peut aider.",
+      "duration_s": 2.86,
+      "rms": 0.09154,
+      "recognized": "Ce n'est pas simple, mais cela peut aider.",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-bcba5532": {
+      "id": "texte-bcba5532",
+      "sha256": "7d12cc2f9852c987aa8345c2d008c15358bc1a9d48f2b700e994a2ae33eb9779",
+      "expected": "Ça veut dire quoi, concrètement ?",
+      "duration_s": 2.3,
+      "rms": 0.08785,
+      "recognized": "Ça veut dire quoi concrètement ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-1fed6467": {
+      "id": "texte-1fed6467",
+      "sha256": "94dddbdce7810c5ce466db036bee4c06d95a0d83e713912323d61399313cee16",
+      "expected": "Qu’est-ce que vous voulez dire, concrètement ?",
+      "duration_s": 2.62,
+      "rms": 0.10442,
+      "recognized": "Qu'est-ce que vous voulez dire concrètement ?",
+      "word_error_rate": 0.0,
+      "alert": false
+    },
+    "texte-63c67bc4": {
+      "id": "texte-63c67bc4",
+      "sha256": "6b14a408042f476d9de16800644fc432b5b562467be661c58f262f1dd37ee856",
+      "expected": "Les boutons ronds lisent les textes. Les boutons d’extrait font entendre les voix du reportage. Le mode audio seul masque les images ; vous pouvez les réafficher.",
+      "duration_s": 9.98,
+      "rms": 0.1186,
+      "recognized": "Les boutons ronds lisent les textes. Les boutons d'extrait font entendre les voix du reportage. Le mode audio seul masque les images. Vous pouvez les réafficher.",
+      "word_error_rate": 0.0,
+      "alert": false
+    }
+  },
+  "alerts": [
+    "texte-be171ff3",
+    "texte-6c1a2934",
+    "texte-56181b99",
+    "texte-1bbed4be",
+    "texte-7b5955b",
+    "texte-c10413f0",
+    "texte-d853832b",
+    "texte-869e920c",
+    "texte-e737befd",
+    "texte-3bc655fb",
+    "texte-51b09605",
+    "texte-107a5742",
+    "texte-88d91f60",
+    "texte-ca4ed581",
+    "texte-b1141800",
+    "texte-ef506",
+    "texte-c1e2f1ee",
+    "texte-2ed6b325",
+    "texte-53c0474b",
+    "texte-598b1a4f"
+  ],
+  "summary": {
+    "count": 454,
+    "alerts": 20,
+    "audio_seconds": 2049.5
+  }
+}

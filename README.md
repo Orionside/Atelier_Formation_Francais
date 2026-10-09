@@ -40,6 +40,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | GLP-1 — comprendre et converser (3 séances de 45 min, écoute sans texte, interaction et transfert, 454 lectures audio) | B2 · aides B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Oral_B2_v2/ |
 
 | GLP-1 — essais comparatifs UI/UX : Focus et Boucle orale, analyse et protocole | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_UIUX_Comparatifs_v1/ |
+| GLP-1 — comprendre et converser, présentation restructurée (3 séances de 45 min, une chose à la fois : sous-étapes, cartes de phrases, 454 lectures audio) | B2 · aides B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Oral_B2_v3/ |
 
 ## Notes
 
