@@ -6,7 +6,7 @@
  * aucun résultat d'apprenant. Schéma des blocs : B1_schema_final.md. Contrôle : node B1_verifier_contenu.mjs
  */
 window.CONTENU = {
-  "version": "20261007-v3",
+  "version": "20261013-v3-voix-a1",
   "meta": {
     "id": "rendez-vous-a1-v3",
     "titre": "Au café",
@@ -50,7 +50,8 @@ window.CONTENU = {
       "cle": "rendez-vous-a1-v3",
       "studio": "rendez-vous-a1-v3-studio"
     },
-    "statut": "v3 : dialogues créés (voix de synthèse non validées à l'écoute). Aucun résultat d'apprenant."
+    "statut": "v3 : dialogues créés (voix de synthèse non validées à l'écoute). Aucun résultat d'apprenant.",
+    "usage": "Pratique autonome sans présence du formateur."
   },
   "video": {
     "id": "HNBQOEb_O5k",
@@ -2008,7 +2009,7 @@ window.CONTENU = {
     "r-s3-9": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« Autre chose ? » = le serveur demande une autre boisson. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+      "texte": "« Autre chose ? » Le serveur demande une autre boisson. Vous avez fini ? Dites : « Non merci, c'est tout. »",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -2024,7 +2025,7 @@ window.CONTENU = {
     "r-s3-11": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« Vous désirez ? » = « Qu'est-ce que vous prenez ? ». Vous commandez.",
+      "texte": "« Vous désirez ? » Le serveur demande : « Qu'est-ce que vous prenez ? » Vous commandez.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -2120,7 +2121,7 @@ window.CONTENU = {
     "r-s5-5": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« Il n'y a plus de thé » = le thé, c'est fini. Le serveur propose un café.",
+      "texte": "« Il n'y a plus de thé. » Le thé, c'est fini. Le serveur propose un café.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S5"
@@ -2459,8 +2460,8 @@ window.CONTENU = {
       "pour_la_prochaine_fois": "Pour la prochaine fois",
       "c_est_normal_revoir": "C'est normal. Vous allez revoir ces phrases dans 2 jours.",
       "montrer_au_formateur": "Vous pouvez montrer cette page à votre formateur.",
-      "exporter": "Exporter mes réponses",
-      "exporter_note": "(= copier le texte ou enregistrer un fichier pour mon formateur)",
+      "exporter": "Garder mes réponses",
+      "exporter_note": "Pour retrouver ce que j’ai travaillé.",
       "copier_le_texte": "Copier le texte",
       "telecharger_csv": "Télécharger le fichier CSV",
       "telecharger_json": "Télécharger le fichier JSON",
@@ -2563,85 +2564,6 @@ window.CONTENU = {
             "Aujourd'hui : vous comprenez, vous commandez (= vous demandez une boisson), vous payez."
           ],
           "bouton": "suite"
-        },
-        {
-          "type": "reglages",
-          "id": "A.2",
-          "consigne": "c-accueil-choix",
-          "groupes": [
-            {
-              "cle": "mode",
-              "question": "mode_titre",
-              "defaut": "formateur",
-              "options": [
-                {
-                  "valeur": "formateur",
-                  "libelle": "mode_formateur",
-                  "image": "img-mode-formateur"
-                },
-                {
-                  "valeur": "groupe",
-                  "libelle": "mode_groupe",
-                  "image": "img-mode-groupe"
-                },
-                {
-                  "valeur": "seul",
-                  "libelle": "mode_seul",
-                  "image": "img-mode-seul"
-                }
-              ]
-            },
-            {
-              "cle": "palier",
-              "question": "palier_titre",
-              "defaut": "normal",
-              "options": [
-                {
-                  "valeur": "simple",
-                  "libelle": "palier_simple",
-                  "sous_titre": "palier_simple_sous_titre"
-                },
-                {
-                  "valeur": "normal",
-                  "libelle": "palier_normal",
-                  "sous_titre": "palier_normal_sous_titre"
-                },
-                {
-                  "valeur": "plus",
-                  "libelle": "palier_plus",
-                  "sous_titre": "palier_plus_sous_titre"
-                }
-              ]
-            },
-            {
-              "cle": "aide",
-              "question": "aide_titre",
-              "defaut": "aucune",
-              "note": "aide_note",
-              "options": [
-                {
-                  "valeur": "aucune",
-                  "libelle": "aide_aucune"
-                },
-                {
-                  "valeur": "es",
-                  "libelle": "aide_es"
-                },
-                {
-                  "valeur": "it",
-                  "libelle": "aide_it"
-                }
-              ]
-            }
-          ],
-          "bouton": "suite",
-          "note_interne": "Les valeurs par défaut suffisent : Suite est toujours actif. La langue d'aide est un choix de l'apprenant, jamais déduit."
-        },
-        {
-          "type": "aide_langue",
-          "id": "A.2.aide",
-          "aide": "accueil",
-          "apres": null
         },
         {
           "type": "texte",
@@ -4287,7 +4209,7 @@ window.CONTENU = {
             ],
             "comparer": true
           },
-          "sens_seul": "« Autre chose ? » = le serveur demande une autre boisson. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+          "sens_seul": "« Autre chose ? » Le serveur demande une autre boisson. Vous avez fini ? Dites : « Non merci, c'est tout. »",
           "retour": {
             "formateur": "celui du formateur : le sens d'abord"
           },
@@ -4551,7 +4473,7 @@ window.CONTENU = {
               }
             ]
           },
-          "sens_seul": "« Vous désirez ? » = « Qu'est-ce que vous prenez ? ». Vous commandez.",
+          "sens_seul": "« Vous désirez ? » Le serveur demande : « Qu'est-ce que vous prenez ? » Vous commandez.",
           "revoir_le_texte": {
             "trace": "s3.ferme.texte_revu"
           },
@@ -5837,7 +5759,7 @@ window.CONTENU = {
                   "son": "cli1-non-merci"
                 }
               ],
-              "sens": "« Il n'y a plus de thé » = le thé, c'est fini. Le serveur propose un café."
+              "sens": "« Il n'y a plus de thé. » Le thé, c'est fini. Le serveur propose un café."
             }
           ],
           "seul": {
@@ -9073,7 +8995,7 @@ window.CONTENU = {
         ],
         "par_mode": {
           "formateur": "Mon formateur a écouté. Je peux lui poser des questions.",
-          "seul": "J'ai parlé seul(e). Personne n'a écouté. Ce n'est pas vérifié."
+          "seul": "Écoutez le modèle. Comparez avec votre voix."
         },
         "grille_visible": false
       },
@@ -9243,7 +9165,7 @@ window.CONTENU = {
       "note": "exporter_note",
       "seul": {
         "lignes": [
-          "Vous pouvez montrer cette page à votre formateur."
+          "Gardez vos réponses pour retrouver ce que vous avez travaillé."
         ]
       }
     },

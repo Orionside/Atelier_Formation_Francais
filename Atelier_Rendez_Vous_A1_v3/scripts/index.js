@@ -22,9 +22,9 @@
 var C = window.CONTENU, S = window.Socle, J = window.JOURNAL, PICTOS = window.PICTOS || {};
 if(!C || !S || !J){ if(window.console) console.error("Atelier : contenu.js, socle.js ou journal.js manque."); return; }
 
-var VERSION = "20261007-v3";                /* même valeur que le ?v= de index.html */
+var VERSION = "20261013-v3-voix-a1";                /* même valeur que le ?v= de index.html */
 var CLE_STOCKAGE = "rendez-vous-a1-v3";     /* clé de stockage de la v3 (la v2 garde la sienne) */
-var VUE_FORMATEUR = /[?&]vue=formateur(&|$)/.test(location.search);
+var VUE_FORMATEUR = false;                 /* ce support est exclusivement destiné à l'apprenant */
 var MANQUES = [];                            /* libellés d'interface introuvables (contrôlé par les tests) */
 var ERREURS = [];                            /* erreurs attrapées pendant le rendu d'un bloc (contrôlé par les tests) */
 
@@ -271,10 +271,12 @@ function monterCoque(){
   coque.topbar = top;
 
   /* panneau des réglages (caché), dans le flux sous la barre */
-  var reg = el("section", "reglages"); reg.id = "panneau-reglages"; reg.hidden = true;
-  reg.setAttribute("aria-label", T("reglages_titre"));
-  top.insertAdjacentElement("afterend", reg);
-  coque.reglages = reg;
+  if(VUE_FORMATEUR){
+    var reg = el("section", "reglages"); reg.id = "panneau-reglages"; reg.hidden = true;
+    reg.setAttribute("aria-label", T("reglages_titre"));
+    top.insertAdjacentElement("afterend", reg);
+    coque.reglages = reg;
+  }
 
   /* mise en page : étapes à gauche (en haut sur téléphone), colonne de contenu */
   var shell = el("div", "shell"), col = el("div", "colonne");
@@ -282,7 +284,8 @@ function monterCoque(){
   coque.etapes = el("nav", "etapes"); coque.etapes.setAttribute("aria-label", T("les_etapes"));
   coque.bandeau = el("div", "bandeau" + (VUE_FORMATEUR ? " formateur" : ""));
   shell.appendChild(coque.etapes); shell.appendChild(col);
-  col.appendChild(coque.bandeau); col.appendChild(app);
+  if(VUE_FORMATEUR) col.appendChild(coque.bandeau);
+  col.appendChild(app);
   coque.app = app;
 
   /* pied de page : bouton « Formateur » (seulement dans la vue formateur, ?vue=formateur) et « Tout effacer » */
@@ -343,6 +346,7 @@ var NOMS_MODE = {formateur: "mode_formateur", groupe: "mode_groupe", seul: "mode
 var NOMS_PALIER = {simple: "palier_simple", normal: "palier_normal", plus: "palier_plus"};
 var NOMS_AIDE = {aucune: "aide_aucune", es: "aide_es", it: "aide_it"};
 function majBandeau(){
+  if(!VUE_FORMATEUR) return;
   var b = coque.bandeau, e = E(); b.innerHTML = "";
   function item(titre, val){ var s = el("span", "bandeau-item"); s.appendChild(el("b", null, titre)); s.appendChild(document.createTextNode(" " + val)); b.appendChild(s); }
   item(T("bandeau_mode"), T(NOMS_MODE[e.mode]));
@@ -379,6 +383,7 @@ function changerReglage(cle, v){
   if(cle !== "aide" && courant && courant.id !== "accueil") allerEcran(courant.idx, {reglage: true});    /* le palier et le mode changent les pas */
 }
 function majReglagesPanneau(){
+  if(!VUE_FORMATEUR) return;
   var r = coque.reglages; r.innerHTML = "";
   r.appendChild(groupeSeg("mode", T("mode_titre"), ["formateur", "groupe", "seul"], NOMS_MODE, function(v){ changerReglage("mode", v); }));
   r.appendChild(groupeSeg("palier", T("palier_titre"), ["simple", "normal", "plus"], NOMS_PALIER, function(v){ changerReglage("palier", v); }));
@@ -2137,15 +2142,23 @@ R.aide_langue = R.aide_langue || function(){ return null; };
 function demarrer(){
   S.demarrer({
     cle: CLE_STOCKAGE, version: VERSION, video: {url: C.meta.video.url},
-    etat: {options: {}, grille: {}, apprenant: "", durees: {}, ecran_id: "accueil",
+    etat: {mode: "seul", palier: "normal", aide: "aucune", options: {}, grille: {}, apprenant: "", durees: {}, ecran_id: "accueil",
       suivi: {date: "", palier_depart: "", aide_choisie_apres: ""}, avis: {}, deja: {}, sait_dire: {}, rappels: {}},
     /* textes du socle remplacés : plus de mention de provenance du film (vue apprenant), plus de « touchez » */
     textes: {filmNote: VUE_FORMATEUR ? T("note_film") : "", sonAbsent: T("son_pas_disponible"), microRefuse: T("micro_refuse"), exportTitre: T("exporter"),
+      exportAide: "Gardez vos réponses pour retrouver ce que vous avez travaillé. Votre voix n'est pas dans ce texte.",
       filmBloque: T("film_indisponible"), filmHorsLigne: T("pas_de_reseau"),
       filmNeDemarrePas: "Le film ne démarre pas. Cliquez sur ▶ dans le film, ou",
       enregistrer: nu("m_enregistrer"), arreter: nu("arreter"), microConsigne: T("rec_consigne"),
       microFini: "C'est fini. Cliquez sur la lecture pour vous écouter."}
   });
+  /* L'apprenant pratique seul, même si une ancienne session utilisait un autre mode.
+     La progression et les réponses déjà enregistrées restent conservées. */
+  if(!VUE_FORMATEUR){
+    E().mode = "seul"; E().palier = "normal"; E().aide = "aucune";
+    E().options.verification_debut = false;
+    S.sauver();
+  }
   J.brancherBanque(C);
   if(VUE_FORMATEUR) document.body.classList.add("vue-formateur");
   monterCoque();
