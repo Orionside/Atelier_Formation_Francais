@@ -1,7 +1,7 @@
 {
  "projet": "Atelier Rendez-vous A1 v3",
  "moteur": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
- "mis_a_jour_le": "2026-10-13T16:26:45",
+ "mis_a_jour_le": "2026-10-13T18:57:44",
  "humain_liste_complete": true,
  "note": "Voix de synthèse, non validées à l'écoute. Un fichier audio/humain/<id>.mp3 est lu en priorité s'il existe.",
  "voix_inventees": {
@@ -5485,7 +5485,7 @@
    ]
   },
   "r-s0-3": {
-   "texte": "Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+   "texte": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
    "type": "retour",
    "ecran": "S0",
    "situation": "Consigne lue, écran : S0.",
@@ -5505,7 +5505,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 4.891,
+   "duree_s": 5.209,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5513,11 +5513,11 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s0-3.mp3",
-    "sha256": "620a2cba649e1270452ddc8c2cefc2c68c549d5fe186b668f33bd21c28838310",
+    "sha256": "1da43d2f9d00a5142118ae7536048fa9a1312f8f211b0e22e32dea43b62f0c5d",
     "statut": "non_valide_a_l_ecoute"
    },
-   "debit_mesure_syl_s": 4.94,
-   "transcription_whisper": "Merci, vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+   "debit_mesure_syl_s": 5.12,
+   "transcription_whisper": "Merci, vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
    "controle_automatique": [
     "texte_controle",
     "debit_a1_controle"
@@ -7825,7 +7825,7 @@
    ]
   },
   "r-s6-3": {
-   "texte": "Merci. C'est la fin du cours. Cliquez sur « Après le cours ».",
+   "texte": "Merci. Vous avez terminé le parcours. Cliquez sur « Je continue ».",
    "type": "retour",
    "ecran": "S6",
    "situation": "Consigne lue, écran : S6.",
@@ -7845,7 +7845,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 5.15,
+   "duree_s": 4.927,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -7853,11 +7853,11 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s6-3.mp3",
-    "sha256": "78895cfb390130439cdaca9c84cc334619ddbc736ad338d4aec56ab34bd1e440",
+    "sha256": "2fe37d4258f36a3e82ab8b89fcae161ff8390da002795cfe006ff05ba9ec80fa",
     "statut": "non_valide_a_l_ecoute"
    },
-   "debit_mesure_syl_s": 3.79,
-   "transcription_whisper": "Merci, c'est la fin du cours. Cliquez sur « Après le cours ».",
+   "debit_mesure_syl_s": 5.61,
+   "transcription_whisper": "Merci, vous avez terminé le parcours. Cliquez sur « Je continue ».",
    "controle_automatique": [
     "texte_controle",
     "debit_a1_controle"
@@ -8098,7 +8098,7 @@
    ]
   },
   "r-apres-5": {
-   "texte": "Écoutez la phrase. Dites-la à voix haute. Vous la retrouverez au prochain cours.",
+   "texte": "Écoutez la phrase. Dites-la à voix haute. Vous pourrez la réécouter ici.",
    "type": "retour",
    "ecran": "APRES",
    "situation": "Consigne lue, écran : APRES.",
@@ -8118,7 +8118,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 5.106,
+   "duree_s": 5.701,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -8126,18 +8126,18 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-apres-5.mp3",
-    "sha256": "4bf4ab38e270e7ba28c815b42aad36b309342ebb506e26c716759ea8bc297f39",
+    "sha256": "a72a832750e6d0f5bb4ff067119b425858cdd1e56756de383415eee0e416d19b",
     "statut": "non_valide_a_l_ecoute"
    },
-   "debit_mesure_syl_s": 4.77,
-   "transcription_whisper": "Écoutez la phrase « dites-la » à voix haute. Vous la retrouverez au prochain cours.",
+   "debit_mesure_syl_s": 4.59,
+   "transcription_whisper": "Écoutez la phrase, dites-la à voix haute, vous pourrez la réécouter ici.",
    "controle_automatique": [
     "texte_controle",
     "debit_a1_controle"
    ]
   },
   "r-apres-6": {
-   "texte": "Merci. Vous avez fini le cours. Vous pouvez fermer cette page.",
+   "texte": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
    "type": "retour",
    "ecran": "APRES",
    "situation": "Consigne lue, écran : APRES.",
@@ -8157,7 +8157,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 4.688,
+   "duree_s": 5.362,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -8165,11 +8165,11 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-apres-6.mp3",
-    "sha256": "3788680d807b1dbaebe3714eade774bee41635d50f2983798c52f11e71373d1e",
+    "sha256": "de6716bd569342117215994a6bebac596ea536f4feaa83d3f321bfd3991b3b86",
     "statut": "non_valide_a_l_ecoute"
    },
-   "debit_mesure_syl_s": 5.44,
-   "transcription_whisper": "Merci, vous avez fini le cours, vous pouvez fermer cette page.",
+   "debit_mesure_syl_s": 5.06,
+   "transcription_whisper": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
    "controle_automatique": [
     "texte_controle",
     "debit_a1_controle"
@@ -8722,7 +8722,7 @@
    ]
   }
  },
- "version": "20261013-v3-voix-a1",
+ "version": "20261013-v3-voix-a1b",
  "parametres": {
   "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
   "temperature": 0.9,

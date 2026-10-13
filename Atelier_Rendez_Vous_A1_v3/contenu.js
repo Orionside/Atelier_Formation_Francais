@@ -6,7 +6,7 @@
  * aucun résultat d'apprenant. Schéma des blocs : B1_schema_final.md. Contrôle : node B1_verifier_contenu.mjs
  */
 window.CONTENU = {
-  "version": "20261013-v3-voix-a1",
+  "version": "20261013-v3-voix-a1b",
   "meta": {
     "id": "rendez-vous-a1-v3",
     "titre": "Au café",
@@ -1656,7 +1656,7 @@ window.CONTENU = {
     "r-s0-3": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+      "texte": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S0"
@@ -2137,7 +2137,7 @@ window.CONTENU = {
     "r-s6-3": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Merci. C'est la fin du cours. Cliquez sur « Après le cours ».",
+      "texte": "Merci. Vous avez terminé le parcours. Cliquez sur « Je continue ».",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S6"
@@ -2193,7 +2193,7 @@ window.CONTENU = {
     "r-apres-5": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Écoutez la phrase. Dites-la à voix haute. Vous la retrouverez au prochain cours.",
+      "texte": "Écoutez la phrase. Dites-la à voix haute. Vous pourrez la réécouter ici.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "APRES"
@@ -2201,7 +2201,7 @@ window.CONTENU = {
     "r-apres-6": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Merci. Vous avez fini le cours. Vous pouvez fermer cette page.",
+      "texte": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "APRES"
@@ -2428,7 +2428,7 @@ window.CONTENU = {
     "messages": {
       "vous_allez_repondre": "Vous pouvez écouter plusieurs fois.",
       "merci_c_est_note": "Merci.",
-      "reponse_fin_du_cours": "Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+      "reponse_fin_du_cours": "Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
       "merci_on_continue": "Merci. Écoutez les réponses possibles.",
       "merci_vous_allez_apprendre": "Merci. Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Étape suivante ».",
       "ecoutez_une_reponse": "Écoutez une réponse. Dites-la à voix haute. Puis réessayez.",
@@ -2466,10 +2466,10 @@ window.CONTENU = {
       "telecharger_csv": "Télécharger le fichier CSV",
       "telecharger_json": "Télécharger le fichier JSON",
       "copie_ok": "C'est copié.",
-      "apres_le_cours": "Après le cours"
+      "apres_le_cours": "Je continue"
     },
     "apres_le_cours": {
-      "titre": "Après le cours : je continue",
+      "titre": "Je continue à pratiquer",
       "revenez_deux_fois": "Revenez deux fois :",
       "dans_2_jours": "Dans 2 jours : {date} — 3 à 5 minutes",
       "dans_7_jours": "Dans 7 jours : {date} — 3 à 5 minutes",
@@ -2539,7 +2539,7 @@ window.CONTENU = {
       "je_ne_sais_pas": "Je ne sais pas",
       "regarder": "Regarder",
       "ecouter_la_reponse": "Écouter la réponse",
-      "fin_s0": "Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+      "fin_s0": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
       "fenetre": "Fenêtre {n} sur {total}",
       "rec_consigne": "Facultatif. Cliquez sur « M'enregistrer », puis dites votre phrase à voix haute."
     }
@@ -2549,7 +2549,7 @@ window.CONTENU = {
       "id": "accueil",
       "titre": "Au café : je comprends, je commande, je paie",
       "duree_min": 1,
-      "etape": "Avant le cours",
+      "etape": "Pour commencer",
       "objectif": "Aujourd'hui, vous commandez une boisson au café et vous payez, en français.",
       "pas": [
         {
@@ -2726,7 +2726,7 @@ window.CONTENU = {
           "id": "0.5",
           "role": "retour",
           "lignes": [
-            "Merci. Vous verrez la bonne réponse à la fin du cours.",
+            "Merci. Vous verrez la bonne réponse à la fin du parcours.",
             "Cliquez sur « Suite »."
           ],
           "bouton": "suite",
@@ -6004,17 +6004,17 @@ window.CONTENU = {
         "dit": "Laisse l'apprenant lancer le dialogue et le réécouter librement, sans commentaire. Pose « Et pour vous ? » (ou fait jouer la question de la nouvelle voix). Au pas 6.6 la serveuse confirme : « Un thé, d'accord. »",
         "note": "Choix final compris à la 1re réponse ou après les images ; nombre d'écoutes ; degré d'aide à part ; réponse à la question simple. Les réponses sont enregistrées par le support ; le formateur ajoute la réponse libre entendue.",
         "a_corriger": "Aucun avant le pas 6.5. Ensuite, un seul commentaire sur le sens : « La cliente a changé après « non ». »",
-        "si_temps_manque": "Ne jamais supprimer les pas 6.1 à 6.5. Raccourcir le bilan (partie « J'écoute » seulement) et renvoyer « Ce que je sais dire » à l'écran « Après le cours ».",
+        "si_temps_manque": "Ne jamais supprimer les pas 6.1 à 6.5. Raccourcir le bilan (partie « J'écoute » seulement) et renvoyer « Ce que je sais dire » à l'écran « Je continue ».",
         "a_savoir": "Pas de « deux cafés » en exemple pendant S1 à S5. À dire dans tout compte rendu : c'est un transfert proche (même construction qu'au début, autres voix, autre produit) ; un seul dialogue ne montre pas une compréhension générale ; début et fin sont deux formes parallèles, à comparer avec prudence ; aucun groupe de comparaison.",
         "validite": "Tant que audio/humain/s6-dialogue.mp3 n'existe pas, le test « voix humaine nouvelle » manque."
       }
     },
     {
       "id": "apres",
-      "titre": "Après le cours : je continue",
+      "titre": "Je continue à pratiquer",
       "duree_min": 5,
       "duree_texte": "3 à 5 minutes dans 2 jours, 3 à 5 minutes dans 7 jours. Un bloc de 5 à 8 minutes le jour même, si l'apprenant veut.",
-      "etape": "Après le cours",
+      "etape": "Je continue",
       "objectif": "Vous revenez deux fois, pour quelques minutes. Vous retrouvez vos phrases sans regarder. Vous écoutez des voix nouvelles.",
       "pas": [
         {
@@ -6322,7 +6322,7 @@ window.CONTENU = {
               ],
               "retour": {
                 "avant_essai": null,
-                "apres_pas_encore": "Écoutez la phrase. Dites-la à voix haute. Vous la retrouverez au prochain cours."
+                "apres_pas_encore": "Écoutez la phrase. Dites-la à voix haute. Vous pourrez la réécouter ici."
               },
               "note_interne": "Plus simple : tours 1, 2 et 4 ; le tour 3 (paiement) se répond par une image. Plus : le tour 3 devient « Vous payez comment ? »."
             },
@@ -6364,7 +6364,7 @@ window.CONTENU = {
             }
           ],
           "fin": {
-            "texte": "Merci. Vous avez fini le cours. Vous pouvez fermer cette page.",
+            "texte": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
             "recap_par_dialogue": "le nom de l'image choisie à la 1re écoute, aux images, à la 2e écoute, et « Dans le dialogue : … »",
             "total": false,
             "bouton": "copier_le_texte"
@@ -6388,7 +6388,7 @@ window.CONTENU = {
         }
       ],
       "carte_formateur": {
-        "dit": "Donne les deux dates à la fin du cours. Ne fait pas réécouter les dialogues de la banque en cours. Il peut faire J2.1 ou J7.1 en direct au début du cours suivant.",
+        "dit": "Donne les deux dates à la fin du parcours. Ne fait pas réécouter les dialogues de la banque en cours. Il peut faire J2.1 ou J7.1 en direct au début du cours suivant.",
         "note": "Les réponses dialogue par dialogue (jamais « 1/1 » ni un pourcentage) ; pour chacune : réponse à la 1re écoute, avec images, après réécoute, et les aides ; la date réelle de chaque bloc.",
         "a_corriger": "Aucun pendant les blocs. Au cours suivant : un seul point, tiré des réponses « Pas encore ».",
         "si_temps_manque": "Le bloc A est le premier à laisser ; garder les rendez-vous à 2 et à 7 jours.",
@@ -7617,7 +7617,7 @@ window.CONTENU = {
       "ecran_suivant": "Écran suivant",
       "ecran_choisir": "Choisir l'écran",
       "onglet_deroule": "Déroulé",
-      "onglet_avant": "Avant le cours",
+      "onglet_avant": "Pour commencer",
       "onglet_sons": "Sons",
       "onglet_fiche": "Fiche imprimable",
       "onglet_pilote": "Pilote",
@@ -7693,7 +7693,7 @@ window.CONTENU = {
         "cafe_seul": "un café, c'est tout",
         "cafe_et_croissant": "un café et un croissant"
       },
-      "avant_45": "Avant le cours (hors des 45 minutes)",
+      "avant_45": "Pour commencer (hors des 45 minutes)",
       "prevu": "prévu",
       "deroule_titre": "Déroulé minute par minute",
       "deroule_aide": "Les durées de la colonne « minutes » sont celles du plan. La dernière colonne montre la durée réelle de chaque écran, sans couleur ni jugement.",
@@ -7708,10 +7708,10 @@ window.CONTENU = {
         "Ne jamais supprimer S0 ni les pas 6.1 à 6.5 de S6.",
         "Si le temps manque : couper dans la colonne « Si le temps manque », de haut en bas, dans l'ordre du tableau.",
         "L'accueil, la banque « avant le cours » et « après le cours » sont hors des 45 minutes.",
-        "Une réduction de parcours décidée en cours de séance se note avec son motif (onglet « Avant le cours »)."
+        "Une réduction de parcours décidée en cours de séance se note avec son motif (onglet « Pour commencer »)."
       ],
       "provisoire": "(provisoire, à piloter)",
-      "avant_titre": "Avant le cours",
+      "avant_titre": "Pour commencer",
       "apprenant": "Prénom ou code de l'apprenant (facultatif)",
       "apprenant_aide": "Un code (P01, P02…) est préférable à un nom. Il sert seulement à nommer les fichiers d'export.",
       "banque_titre": "Les deux dialogues en plus : forme de départ",
@@ -7943,7 +7943,7 @@ window.CONTENU = {
         "a": 3,
         "ecran": "s0",
         "titre": "J'écoute deux personnes",
-        "contenu": "Écoute sans texte du dialogue d'ouverture (écoute libre, réponse au clavier puis aux images ; le nombre d'écoutes est compté), puis « Et pour vous, café ou thé ? ». Rien n'est révélé : « Merci. Vous verrez la bonne réponse à la fin du cours. »",
+        "contenu": "Écoute sans texte du dialogue d'ouverture (écoute libre, réponse au clavier puis aux images ; le nombre d'écoutes est compté), puis « Et pour vous, café ou thé ? ». Rien n'est révélé : « Merci. Vous verrez la bonne réponse à la fin du parcours. »",
         "si_temps_manque": "Ne jamais supprimer S0."
       },
       {
@@ -7998,7 +7998,7 @@ window.CONTENU = {
         "de": 45,
         "a": null,
         "ecran": "apres",
-        "titre": "Après le cours",
+        "titre": "Je continue",
         "contenu": "Rendez-vous à 2 et 7 jours (3 à 5 minutes chacun) ; bloc facultatif le jour même (5 à 8 minutes).",
         "si_temps_manque": "Le bloc du jour même est le premier à laisser."
       }
@@ -8277,7 +8277,7 @@ window.CONTENU = {
       ],
       "pendant": [
         {
-          "moment": "Avant le cours (≈ 4 min, hors des 45)",
+          "moment": "Pour commencer (≈ 4 min, hors des 45)",
           "je_fais": "Forme D ou T, déroulé standard.",
           "je_note": "Valeur dite au passage 1, tout de suite. Aucun retour avant le texte."
         },
@@ -8307,7 +8307,7 @@ window.CONTENU = {
           "je_note": "Comme S0."
         },
         {
-          "moment": "Après le cours (≈ 4 min)",
+          "moment": "Je continue (≈ 4 min)",
           "je_fais": "L'autre forme, déroulé standard.",
           "je_note": "Comme avant le cours."
         },
@@ -8833,7 +8833,7 @@ window.CONTENU = {
         "Audio partout : chaque consigne, chaque retour (correction, explication, message de fin), chaque question du serveur et chaque réplique du film affichée a son bouton d'écoute ; aucun son n'est réservé à un mode. Le serveur parle dans tous les modes.",
         "Illustrations en couleurs, tuile « Je ne sais pas » de même taille que les images de réponse.",
         "Vocabulaire : plus de « touchez » (« Sélectionnez… », « Cliquez sur « … » », « Dites … à voix haute »), plus de « montrez avec les doigts », plus de « dans votre langue ». Plus aucune étiquette de provenance (voix de machine, dialogue créé, extrait du film) dans la page de l'apprenant : l'information reste ici et dans audio/manifest.json.",
-        "S0 : message de fin qui dit quoi faire, affiché une seule fois et qui nomme le bouton réellement actif (« Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ». »).",
+        "S0 : message de fin qui dit quoi faire, affiché une seule fois et qui nomme le bouton réellement actif (« Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ». »).",
         "S2 : deux gestes par phrase (1. écouter, 2. sélectionner l'image) ; plus de fenêtre « Dites votre idée ».",
         "Aides ES/IT alignées sur les consignes modifiées : à relire par un natif.",
         "Contre-relecture du 07/10/2026 : chaque question ou consigne affichée a son bouton d'écoute ; chaque retour a le sien (2.D et 6.1 : un retour = une zone) ; « Ne regardez pas l'écran » retiré ; tuile « Je ne sais pas » dans tous les choix d'images à bonne réponse ; en S5 le modèle à comparer s'affiche juste après « J'ai répondu » ; enregistrement facultatif et modèle dans les rappels à 2 et 7 jours."
@@ -9172,7 +9172,7 @@ window.CONTENU = {
     "suite": {
       "bouton": "apres_le_cours",
       "lignes": [
-        "Merci. C'est la fin du cours. Cliquez sur « Après le cours »."
+        "Merci. Vous avez terminé le parcours. Cliquez sur « Je continue »."
       ]
     }
   },

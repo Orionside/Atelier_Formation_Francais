@@ -1,7 +1,7 @@
 {
  "projet": "Atelier Rendez-vous A1 v3",
  "moteur": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
- "mis_a_jour_le": "2026-10-13T16:26:45",
+ "mis_a_jour_le": "2026-10-13T18:57:44",
  "voix_inventees": {
   "personnel-1": {
    "nom_invente": "Voix du serveur (inventée)",
@@ -4184,33 +4184,33 @@
   },
   "r-s0-3": {
    "id": "r-s0-3",
-   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleMerci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».|rythme-natif-v2",
-   "texte": "Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleMerci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».|rythme-natif-v2",
+   "texte": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
    "voix": "consigne",
    "reference_sha256": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950",
    "clonage": "empreinte_seule",
    "rythme": "natif, sans étirement",
    "parties": [
     {
-     "texte": "Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
-     "graine": 11,
-     "duree_s": 4.291
+     "texte": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
+     "graine": 29,
+     "duree_s": 4.609
     }
    ],
-   "debit_avant_syl_s": 4.94,
-   "debit_apres_syl_s": 4.94,
+   "debit_avant_syl_s": 5.12,
+   "debit_apres_syl_s": 5.12,
    "atempo": 1.0,
-   "niveau_lufs": -19.0,
-   "gain_db": 6.47,
-   "duree_parole_s": 4.291,
+   "niveau_lufs": -20.18,
+   "gain_db": 4.17,
+   "duree_parole_s": 4.609,
    "fichier": "audio/synthese/r-s0-3.mp3",
-   "sha256": "620a2cba649e1270452ddc8c2cefc2c68c549d5fe186b668f33bd21c28838310",
-   "duree_s": 4.891,
+   "sha256": "1da43d2f9d00a5142118ae7536048fa9a1312f8f211b0e22e32dea43b62f0c5d",
+   "duree_s": 5.209,
    "verification": {
-    "recognized": "Merci, vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+    "recognized": "Merci, vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
     "phonetic_error": 0.0,
     "word_error_rate": 0.0,
-    "debit_syl_s": 4.94,
+    "debit_syl_s": 5.12,
     "text_alert": false,
     "pace_alert": false
    },
@@ -6224,33 +6224,33 @@
   },
   "r-s6-3": {
    "id": "r-s6-3",
-   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleMerci. C'est la fin du cours. Cliquez sur « Après le cours ».|rythme-natif-v2",
-   "texte": "Merci. C'est la fin du cours. Cliquez sur « Après le cours ».",
+   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleMerci. Vous avez terminé le parcours. Cliquez sur « Je continue ».|rythme-natif-v2",
+   "texte": "Merci. Vous avez terminé le parcours. Cliquez sur « Je continue ».",
    "voix": "consigne",
    "reference_sha256": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950",
    "clonage": "empreinte_seule",
    "rythme": "natif, sans étirement",
    "parties": [
     {
-     "texte": "Merci. C'est la fin du cours. Cliquez sur « Après le cours ».",
-     "graine": 11,
-     "duree_s": 4.55
+     "texte": "Merci. Vous avez terminé le parcours. Cliquez sur « Je continue ».",
+     "graine": 29,
+     "duree_s": 4.327
     }
    ],
-   "debit_avant_syl_s": 3.79,
-   "debit_apres_syl_s": 3.79,
+   "debit_avant_syl_s": 5.61,
+   "debit_apres_syl_s": 5.61,
    "atempo": 1.0,
-   "niveau_lufs": -19.19,
-   "gain_db": 4.96,
-   "duree_parole_s": 4.55,
+   "niveau_lufs": -19.0,
+   "gain_db": 4.79,
+   "duree_parole_s": 4.327,
    "fichier": "audio/synthese/r-s6-3.mp3",
-   "sha256": "78895cfb390130439cdaca9c84cc334619ddbc736ad338d4aec56ab34bd1e440",
-   "duree_s": 5.15,
+   "sha256": "2fe37d4258f36a3e82ab8b89fcae161ff8390da002795cfe006ff05ba9ec80fa",
+   "duree_s": 4.927,
    "verification": {
-    "recognized": "Merci, c'est la fin du cours. Cliquez sur « Après le cours ».",
+    "recognized": "Merci, vous avez terminé le parcours. Cliquez sur « Je continue ».",
     "phonetic_error": 0.0,
     "word_error_rate": 0.0,
-    "debit_syl_s": 3.73,
+    "debit_syl_s": 5.61,
     "text_alert": false,
     "pace_alert": false
    },
@@ -6463,33 +6463,33 @@
   },
   "r-apres-5": {
    "id": "r-apres-5",
-   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleÉcoutez la phrase. Dites-la à voix haute. Vous la retrouverez au prochain cours.|rythme-natif-v2",
-   "texte": "Écoutez la phrase. Dites-la à voix haute. Vous la retrouverez au prochain cours.",
+   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleÉcoutez la phrase. Dites-la à voix haute. Vous pourrez la réécouter ici.|rythme-natif-v2",
+   "texte": "Écoutez la phrase. Dites-la à voix haute. Vous pourrez la réécouter ici.",
    "voix": "consigne",
    "reference_sha256": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950",
    "clonage": "empreinte_seule",
    "rythme": "natif, sans étirement",
    "parties": [
     {
-     "texte": "Écoutez la phrase. Dites-la à voix haute. Vous la retrouverez au prochain cours.",
-     "graine": 11,
-     "duree_s": 4.506
+     "texte": "Écoutez la phrase. Dites-la à voix haute. Vous pourrez la réécouter ici.",
+     "graine": 29,
+     "duree_s": 5.101
     }
    ],
-   "debit_avant_syl_s": 4.77,
-   "debit_apres_syl_s": 4.77,
+   "debit_avant_syl_s": 4.59,
+   "debit_apres_syl_s": 4.59,
    "atempo": 1.0,
-   "niveau_lufs": -19.33,
-   "gain_db": 5.97,
-   "duree_parole_s": 4.506,
+   "niveau_lufs": -19.0,
+   "gain_db": 3.82,
+   "duree_parole_s": 5.101,
    "fichier": "audio/synthese/r-apres-5.mp3",
-   "sha256": "4bf4ab38e270e7ba28c815b42aad36b309342ebb506e26c716759ea8bc297f39",
-   "duree_s": 5.106,
+   "sha256": "a72a832750e6d0f5bb4ff067119b425858cdd1e56756de383415eee0e416d19b",
+   "duree_s": 5.701,
    "verification": {
-    "recognized": "Écoutez la phrase « dites-la » à voix haute. Vous la retrouverez au prochain cours.",
+    "recognized": "Écoutez la phrase, dites-la à voix haute, vous pourrez la réécouter ici.",
     "phonetic_error": 0.0,
     "word_error_rate": 0.0,
-    "debit_syl_s": 4.77,
+    "debit_syl_s": 4.59,
     "text_alert": false,
     "pace_alert": false
    },
@@ -6497,33 +6497,33 @@
   },
   "r-apres-6": {
    "id": "r-apres-6",
-   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleMerci. Vous avez fini le cours. Vous pouvez fermer cette page.|rythme-natif-v2",
-   "texte": "Merci. Vous avez fini le cours. Vous pouvez fermer cette page.",
+   "signature": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950empreinte_seuleMerci. Vous avez fini votre pratique. Vous pouvez fermer cette page.|rythme-natif-v2",
+   "texte": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
    "voix": "consigne",
    "reference_sha256": "701931df3cab9b01ea5ac1a7178484b23eb3c3f19ae86de7a79ebc607c3cc950",
    "clonage": "empreinte_seule",
    "rythme": "natif, sans étirement",
    "parties": [
     {
-     "texte": "Merci. Vous avez fini le cours. Vous pouvez fermer cette page.",
-     "graine": 11,
-     "duree_s": 4.088
+     "texte": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
+     "graine": 29,
+     "duree_s": 4.763
     }
    ],
-   "debit_avant_syl_s": 5.44,
-   "debit_apres_syl_s": 5.44,
+   "debit_avant_syl_s": 5.06,
+   "debit_apres_syl_s": 5.06,
    "atempo": 1.0,
    "niveau_lufs": -19.0,
-   "gain_db": 6.1,
-   "duree_parole_s": 4.088,
+   "gain_db": 6.0,
+   "duree_parole_s": 4.763,
    "fichier": "audio/synthese/r-apres-6.mp3",
-   "sha256": "3788680d807b1dbaebe3714eade774bee41635d50f2983798c52f11e71373d1e",
-   "duree_s": 4.688,
+   "sha256": "de6716bd569342117215994a6bebac596ea536f4feaa83d3f321bfd3991b3b86",
+   "duree_s": 5.362,
    "verification": {
-    "recognized": "Merci, vous avez fini le cours, vous pouvez fermer cette page.",
+    "recognized": "Merci. Vous avez fini votre pratique. Vous pouvez fermer cette page.",
     "phonetic_error": 0.0,
     "word_error_rate": 0.0,
-    "debit_syl_s": 5.37,
+    "debit_syl_s": 5.05,
     "text_alert": false,
     "pace_alert": false
    },

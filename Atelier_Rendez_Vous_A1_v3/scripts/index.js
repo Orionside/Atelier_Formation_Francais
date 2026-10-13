@@ -22,7 +22,7 @@
 var C = window.CONTENU, S = window.Socle, J = window.JOURNAL, PICTOS = window.PICTOS || {};
 if(!C || !S || !J){ if(window.console) console.error("Atelier : contenu.js, socle.js ou journal.js manque."); return; }
 
-var VERSION = "20261013-v3-voix-a1";                /* même valeur que le ?v= de index.html */
+var VERSION = "20261013-v3-voix-a1b";                /* même valeur que le ?v= de index.html */
 var CLE_STOCKAGE = "rendez-vous-a1-v3";     /* clé de stockage de la v3 (la v2 garde la sienne) */
 var VUE_FORMATEUR = false;                 /* ce support est exclusivement destiné à l'apprenant */
 var MANQUES = [];                            /* libellés d'interface introuvables (contrôlé par les tests) */
@@ -35,7 +35,7 @@ var LIBELLES_V3 = {
   ecouter_le_serveur: "Écouter le serveur", ecouter_le_modele: "Écouter le modèle", m_enregistrer: "M'enregistrer", arreter: "Arrêter",
   m_ecouter: "M'écouter", comparer: "Écoutez le modèle. Comparez avec votre voix.", je_ne_sais_pas: "Je ne sais pas", regarder: "Regarder",
   ecouter_la_reponse: "Écouter la réponse",
-  fin_s0: "Merci. Vous verrez la bonne réponse à la fin du cours. Cliquez sur « Suite ».",
+  fin_s0: "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
   fenetre: "Fenêtre {n} sur {total}",
   rec_consigne: "Facultatif. Cliquez sur « M'enregistrer », puis dites votre phrase à voix haute.",
   bilan_p1: "À la première réponse", bilan_images: "Avec les images"
