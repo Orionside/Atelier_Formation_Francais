@@ -1,8 +1,8 @@
 {
- "version": "20261014-v3-refonte",
+ "version": "20261014-v3-correction-2",
  "resume": {
-  "phrases": 274,
-  "sans_defaut_mesure": 257,
+  "phrases": 273,
+  "sans_defaut_mesure": 255,
   "avec_defaut_restant": {
    "s4272645a": [
     "fin de phrase déclarative qui ne descend pas : « Non, un café, s'il vous plaît. »"
@@ -28,8 +28,11 @@
    "saa8528f2": [
     "mot important sans relief : « seul »"
    ],
-   "s44e6994a": [
-    "mot important sans relief : « femme »"
+   "se9803b70": [
+    "mot important sans relief : « client »"
+   ],
+   "sc673265c": [
+    "mot important sans relief : « cliente »"
    ],
    "s073c2cac": [
     "fin de phrase déclarative qui ne descend pas : « Oui. »"

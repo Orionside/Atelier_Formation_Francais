@@ -11,13 +11,23 @@ Les versions précédentes restent en ligne, inchangées : `Atelier_Rendez_Vous_
 
 Les trois groupes de choix « Je travaille comment ? », « Mon niveau aujourd’hui » et « Aide dans ma langue » sont supprimés de l’accueil. Le parcours apprenant démarre directement en mode seul, au niveau normal, sans panneau de réglages ni bandeau de mode, niveau ou langue. Les anciennes préférences sont remplacées par ces valeurs lors de l’ouverture ; la progression est conservée. Les questions du serveur, les modèles à comparer, les réécoutes et l’enregistrement facultatif permettent de travailler sans formateur. Le bilan permet de reprendre les expressions ; les rappels à deux jours et à sept jours soutiennent la mémorisation. Aucune transmission au formateur n’est demandée.
 
+## Corrections du 14 octobre 2026 au soir (après essai du formateur)
+
+- **S0** : le message « Merci. Vous verrez la bonne réponse à la fin du parcours. » est supprimé. Après sa réponse, l'apprenant voit tout de suite le dialogue écrit et la bonne réponse : « La cliente dit « non » : pas de café. À la fin, elle veut deux thés. » Il peut réécouter le dialogue et la phrase de la cliente. Sa première réponse reste enregistrée telle quelle pour le bilan.
+- **Bouton sous les messages** : « Écouter la réponse » devient « Écouter ce message ». Le bouton lit le message affiché, qui n'est pas toujours une réponse.
+- **S1 « Qui parle au serveur ? »** et **S2 « Qui parle : le serveur ou le client ? »** : nouvelles images. Chacune montre la scène du café (le client, la cliente, le serveur). Une bulle est placée au-dessus de la personne qui parle, et les personnes qui ne participent pas à l'échange sont atténuées. Les réponses s'appellent « le client », « la cliente », « les clients » (au lieu de « l'homme », « la femme », « l'homme et la femme »).
+- **Légendes** : chaque image à sélectionner porte sa légende dès le début (« le client », « un café », « payer »…), et non plus seulement après la réponse.
+- **S2 et S3** : la question « On commande, on finit ou on paie ? » est remplacée par « C'est pour commander ou pour payer ? », avec deux images. « On finit » était ambigu (finir quoi ? de boire ? de parler ?). Le format suit l'épreuve d'écoute du DELF A1, où chaque question porte sur un but concret (« Qu'est-ce qu'on demande ? »). « C'est tout ? » est expliqué dans le retour : « Ça veut dire : vous voulez autre chose ? […] C'est la fin de la commande. »
+- **Banque (rappels)** : « Le client a fini ? Ou il veut encore quelque chose ? » devient « Le client veut encore quelque chose ? ». Les images s'appellent « rien d'autre » et « encore quelque chose ».
+- Les 19 phrases nouvelles sont lues par la même voix féminine, choisies selon les mêmes mesures que le reste (6 prises par phrase).
+
 ## Refonte du 14 octobre 2026 (remplace la version du 13 octobre)
 
 Remplacement validé par le formateur. Deux chantiers : la structure du parcours, puis tous les sons.
 
 **Structure et progression** :
 
-- S2 et S3 : la question « Qu'est-ce que la personne fait ? » était posée après des échanges à deux personnes ; elle devient « On commande, on finit ou on paie ? », la question du titre de l'étape, avec les mêmes trois images. La consigne d'entrée de S2 annonce ces trois moments.
+- S2 et S3 : la question « Qu'est-ce que la personne fait ? » était posée après des échanges à deux personnes ; elle devient « On commande, on finit ou on paie ? », la question du titre de l'étape, avec les mêmes trois images (remplacée le soir même par « C'est pour commander ou pour payer ? », voir plus haut). La consigne d'entrée de S2 annonce ces trois moments.
 - S2, moment B (serveur + client) : « Écoutez la phrase » devient « Écoutez le serveur et le client ». « Qui parle ? » : les phrases sont numérotées dans l'ordre où elles s'affichent (l'ordre tiré au sort montrait « Phrase 2 » avant « Phrase 1 »).
 - S3 : fiches « Lisez les deux phrases. Écoutez-les. » ; plus de flèches « → » dans les explications (elles ne se lisent pas à voix haute) ; avant les questions sans texte, « Le serveur peut changer ses mots » prépare « Vous désirez ? ».
 - S4 : le pas facultatif « Faites un geste de la main » est retiré (consigne vague sans interlocuteur, redite du pas précédent).

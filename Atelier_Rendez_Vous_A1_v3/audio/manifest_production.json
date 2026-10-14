@@ -1,7 +1,7 @@
 {
  "projet": "Atelier Rendez-vous A1 v3",
- "version": "20261014-v3-refonte",
- "mis_a_jour_le": "2026-10-14T18:24:12",
+ "version": "20261014-v3-correction-2",
+ "mis_a_jour_le": "2026-10-14T22:35:13",
  "voix_inventees": {
   "personnel-1": {
    "nom_invente": "Voix homme 2",
@@ -550,7 +550,7 @@
     {
      "prise": "se1243026__femme_base__g47",
      "graine": 47,
-     "score": 0.137,
+     "score": 0.136,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
@@ -576,7 +576,7 @@
     {
      "prise": "s14dd20d1__femme_base__g11",
      "graine": 11,
-     "score": 0.027,
+     "score": 0.028,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -720,7 +720,7 @@
     {
      "prise": "s1f61d400__femme_base__g11",
      "graine": 11,
-     "score": 0.095,
+     "score": 0.096,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -738,7 +738,7 @@
     {
      "prise": "seebf16cc__femme_base__g11",
      "graine": 11,
-     "score": 0.021,
+     "score": 0.022,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -818,7 +818,7 @@
     {
      "prise": "s8d82aac2__femme_base__g29",
      "graine": 29,
-     "score": 0.232,
+     "score": 0.233,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -959,7 +959,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -996,19 +996,19 @@
   },
   "c-e-moment": {
    "fichier": "audio/synthese/c-e-moment.mp3",
-   "sha256": "a61ab0dbf6b3d9ac47b7b0f623ae715a40c1b788afbadfa52c924a986c4b34b0",
-   "duree_s": 5.492,
-   "gain_db": 2.33,
+   "sha256": "c7aa4f3c008dc4326e01c46bc9a192b2ce1c12b4254d9689263f0817f8458e73",
+   "duree_s": 5.014,
+   "gain_db": 2.27,
    "unite": "c-e-moment",
    "phrases": [
     {
-     "prise": "sb1efc2c8__femme_base__g29",
-     "graine": 29,
-     "score": 0.053,
+     "prise": "s0615b379__femme_base__g137",
+     "graine": 137,
+     "score": 0.07,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "On commande, on finit ou on paie ?"
+     "texte": "C'est pour commander ou pour payer ?"
     },
     {
      "prise": "sb5670679__femme_base__g29",
@@ -1059,19 +1059,19 @@
   },
   "c-s1-regarde": {
    "fichier": "audio/synthese/c-s1-regarde.mp3",
-   "sha256": "6955edb044ac62a0994271241bf807f286fc76c083dce7175e51db21241e5f54",
-   "duree_s": 10.925,
-   "gain_db": 1.9,
+   "sha256": "782a60ebc9e42310246189a7332312417410f86e6ad11b195863ad2d439497fa",
+   "duree_s": 12.143,
+   "gain_db": 2.32,
    "unite": "c-s1-regarde",
    "phrases": [
     {
-     "prise": "s04dc4305__femme_base__g29",
-     "graine": 29,
-     "score": 0.163,
+     "prise": "see65c857__femme_base__g101",
+     "graine": 101,
+     "score": 0.017,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Un homme et une femme sont au café."
+     "texte": "Deux clients sont au café : un homme et une femme."
     },
     {
      "prise": "sb54c6a76__femme_base__g29",
@@ -1215,8 +1215,8 @@
   },
   "c-s2-debut": {
    "fichier": "audio/synthese/c-s2-debut.mp3",
-   "sha256": "5ef3e1de9d0945f2340a53518af8b288fc14ad9982c2fb911e4806c4b5b1a9c4",
-   "duree_s": 13.515,
+   "sha256": "e00a98251dcda7d488db01f9cfbd5ff4fab3cf063c2cb10fa2edc9773b004712",
+   "duree_s": 13.508,
    "gain_db": 2.13,
    "unite": "c-s2-debut",
    "phrases": [
@@ -1239,13 +1239,22 @@
      "texte": "Écoutez."
     },
     {
-     "prise": "s9aa1c2b6__femme_base__g11",
-     "graine": 11,
-     "score": 0.144,
+     "prise": "s0615b379__femme_base__g137",
+     "graine": 137,
+     "score": 0.07,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Sélectionnez l'image qui correspond : commander, finir la commande ou payer."
+     "texte": "C'est pour commander ou pour payer ?"
+    },
+    {
+     "prise": "sb5670679__femme_base__g29",
+     "graine": 29,
+     "score": 0.0,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Sélectionnez l'image."
     },
     {
      "prise": "s69ada327__femme_base__g47",
@@ -1274,13 +1283,13 @@
      "texte": "Exemple : « Un thé, s'il vous plaît. »"
     },
     {
-     "prise": "s3209429b__femme_base__g47",
-     "graine": 47,
-     "score": 0.127,
+     "prise": "sc8e5c61f__femme_base__g29",
+     "graine": 29,
+     "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "On commande."
+     "texte": "C'est pour commander."
     }
    ]
   },
@@ -1303,7 +1312,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1464,7 +1473,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1518,7 +1527,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1765,7 +1774,7 @@
     {
      "prise": "se8a687cd__femme_base__g29",
      "graine": 29,
-     "score": 0.123,
+     "score": 0.122,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2142,7 +2151,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2160,7 +2169,7 @@
     {
      "prise": "s34d1fcff__femme_base__g11",
      "graine": 11,
-     "score": 0.203,
+     "score": 0.205,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2259,7 +2268,7 @@
     {
      "prise": "sc5e855b7__femme_base__g47",
      "graine": 47,
-     "score": 0.21,
+     "score": 0.211,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2286,7 +2295,7 @@
     {
      "prise": "s34d1fcff__femme_base__g11",
      "graine": 11,
-     "score": 0.203,
+     "score": 0.205,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2331,7 +2340,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2350,28 +2359,19 @@
   },
   "c-b-fini-ou-encore": {
    "fichier": "audio/synthese/c-b-fini-ou-encore.mp3",
-   "sha256": "83184c39731cf00c5b243a11054de5e14d2e096968ca33ccdb63df9cc48c08c9",
-   "duree_s": 6.574,
-   "gain_db": 2.24,
+   "sha256": "4a18b50a81a956fcc652b0dd0b440f11ac702c3b00f74ff2adab11130e88c853",
+   "duree_s": 4.931,
+   "gain_db": 1.94,
    "unite": "c-b-fini-ou-encore",
    "phrases": [
     {
-     "prise": "s053de312__femme_base__g29",
-     "graine": 29,
-     "score": 0.0,
+     "prise": "s33f276e0__femme_base__g83",
+     "graine": 83,
+     "score": 0.036,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Le client a fini ?"
-    },
-    {
-     "prise": "sda4e46dd__femme_base__g29",
-     "graine": 29,
-     "score": 0.0,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "Ou il veut encore quelque chose ?"
+     "texte": "Le client veut encore quelque chose ?"
     },
     {
      "prise": "s49e5ed20__femme_base__g47",
@@ -2898,7 +2898,7 @@
     {
      "prise": "s14dd20d1__femme_base__g11",
      "graine": 11,
-     "score": 0.027,
+     "score": 0.028,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -3688,7 +3688,7 @@
     {
      "prise": "s82077e06__femme_base__g47",
      "graine": 47,
-     "score": 0.551,
+     "score": 0.55,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -3702,42 +3702,6 @@
      "defauts_mesures": [],
      "pauses_inserees": [],
      "texte": "Revenez dans 5 jours."
-    }
-   ]
-  },
-  "r-s0-3": {
-   "fichier": "audio/synthese/r-s0-3.mp3",
-   "sha256": "8c8fb385ab6488994624f3dc9892c66c566fcf643744e25aa426df999a489a4b",
-   "duree_s": 6.35,
-   "gain_db": 2.08,
-   "unite": "r-s0-3",
-   "phrases": [
-    {
-     "prise": "scb28af60__femme_base__g47",
-     "graine": 47,
-     "score": 0.0,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "Merci."
-    },
-    {
-     "prise": "se8b70e47__femme_base__g11",
-     "graine": 11,
-     "score": 0.0,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "Vous verrez la bonne réponse à la fin du parcours."
-    },
-    {
-     "prise": "s71c47f1e__femme_base__g11",
-     "graine": 11,
-     "score": 0.0,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "Cliquez sur « Suite »."
     }
    ]
   },
@@ -3887,28 +3851,28 @@
   },
   "r-s1-2": {
    "fichier": "audio/synthese/r-s1-2.mp3",
-   "sha256": "7cf16617409383fa87cc47b4fc9bd195faf94fc3d351dd14ee89f9899ba28a29",
-   "duree_s": 4.403,
-   "gain_db": 1.65,
+   "sha256": "2326b7da12e9c69842dac8122413342ecbf9d3441004f5ad3e81d968742a4f38",
+   "duree_s": 4.9,
+   "gain_db": 1.83,
    "unite": "r-s1-2",
    "phrases": [
     {
-     "prise": "s3223a2d9__femme_base__g29",
-     "graine": 29,
-     "score": 0.053,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "Les deux parlent au serveur."
-    },
-    {
-     "prise": "sb20645ed__femme_base__g47",
-     "graine": 47,
+     "prise": "s43c828de__femme_base__g101",
+     "graine": 101,
      "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "La femme et l'homme commandent."
+     "texte": "Les deux clients parlent au serveur."
+    },
+    {
+     "prise": "s12a67b42__femme_base__g83",
+     "graine": 83,
+     "score": 0.085,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Le client et la cliente commandent."
     }
    ]
   },
@@ -3962,7 +3926,7 @@
     {
      "prise": "sdfa000e9__femme_base__g29",
      "graine": 29,
-     "score": 0.077,
+     "score": 0.078,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -4035,19 +3999,21 @@
   },
   "r-s1-7": {
    "fichier": "audio/synthese/r-s1-7.mp3",
-   "sha256": "dd6aee327746073da6ff6cf4da298c718cb12792e1f27df6c10b5fa6b31d6a0c",
-   "duree_s": 2.305,
-   "gain_db": 1.93,
+   "sha256": "694b336d83b5bcc184e7668ac1239efc17039c4ebca162c132fa2ab3650cf4fa",
+   "duree_s": 2.389,
+   "gain_db": 1.67,
    "unite": "r-s1-7",
    "phrases": [
     {
-     "prise": "sa4abd7ea__femme_base__g11",
-     "graine": 11,
-     "score": 0.0,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
+     "prise": "se9803b70__femme_base__g47",
+     "graine": 47,
+     "score": 0.847,
+     "penalite_prosodie": 0.7,
+     "defauts_mesures": [
+      "mot important sans relief : « client »"
+     ],
      "pauses_inserees": [],
-     "texte": "Le jus d'orange est pour l'homme."
+     "texte": "Le jus d'orange est pour le client."
     }
    ]
   },
@@ -4080,21 +4046,21 @@
   },
   "r-s1-8": {
    "fichier": "audio/synthese/r-s1-8.mp3",
-   "sha256": "2d4ffd180bec140dde24e9f5c60e7833bddaf08ace7fdc4eaac00892944b706a",
-   "duree_s": 2.135,
-   "gain_db": 0.28,
+   "sha256": "bbbd1390dfb1d2362ee57844f67c54e01d3d4b00b11c7de55e5404e44c545034",
+   "duree_s": 2.345,
+   "gain_db": 1.35,
    "unite": "r-s1-8",
    "phrases": [
     {
-     "prise": "s44e6994a__femme_base__g47",
-     "graine": 47,
+     "prise": "sc673265c__femme_base__g101",
+     "graine": 101,
      "score": 0.7,
      "penalite_prosodie": 0.7,
      "defauts_mesures": [
-      "mot important sans relief : « femme »"
+      "mot important sans relief : « cliente »"
      ],
      "pauses_inserees": [],
-     "texte": "Le croissant est pour la femme."
+     "texte": "Le croissant est pour la cliente."
     }
    ]
   },
@@ -4153,19 +4119,19 @@
   },
   "r-s2-1": {
    "fichier": "audio/synthese/r-s2-1.mp3",
-   "sha256": "ed8d151a028cd76e2caf1511d964bc6884621c201d41bafc6d02910354f3190b",
-   "duree_s": 6.233,
-   "gain_db": 2.21,
+   "sha256": "f877832648d806077e503689504943d038d00f38767a9e16470b6a318705bbd2",
+   "duree_s": 5.91,
+   "gain_db": 2.25,
    "unite": "r-s2-1",
    "phrases": [
     {
-     "prise": "s6b71366e__femme_base__g47",
+     "prise": "sd73e2df8__femme_base__g47",
      "graine": 47,
-     "score": 0.046,
+     "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Ici, la femme commande."
+     "texte": "Ici, la cliente commande."
     },
     {
      "prise": "sab50fb3d__femme_base__g47",
@@ -4180,9 +4146,9 @@
   },
   "r-s2-2": {
    "fichier": "audio/synthese/r-s2-2.mp3",
-   "sha256": "09fb0995a54873a96f50e757ccb5d986316a93693785a10a18419d645c6cfc41",
-   "duree_s": 7.099,
-   "gain_db": 2.48,
+   "sha256": "cbcd0f42e8ef44f608866b7ce02863f5050bfbf19a5e5f00103a6daa972f3fb0",
+   "duree_s": 6.776,
+   "gain_db": 2.33,
    "unite": "r-s2-2",
    "phrases": [
     {
@@ -4197,13 +4163,13 @@
      "texte": "Oui."
     },
     {
-     "prise": "s6b71366e__femme_base__g47",
+     "prise": "sd73e2df8__femme_base__g47",
      "graine": 47,
-     "score": 0.046,
+     "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Ici, la femme commande."
+     "texte": "Ici, la cliente commande."
     },
     {
      "prise": "sab50fb3d__femme_base__g47",
@@ -4218,9 +4184,9 @@
   },
   "r-s2-3": {
    "fichier": "audio/synthese/r-s2-3.mp3",
-   "sha256": "cda27adf47809530a5ed148ba9b069dce01031cfc609f710fd078fc83cceefaf",
-   "duree_s": 5.437,
-   "gain_db": 2.29,
+   "sha256": "b1b40155cf6d55d0c2108870472d56b812a1282e24182b0eccf33e762bebb7dc",
+   "duree_s": 11.781,
+   "gain_db": 2.44,
    "unite": "r-s2-3",
    "phrases": [
     {
@@ -4233,21 +4199,39 @@
      "texte": "Le serveur demande : « C'est tout ? »"
     },
     {
-     "prise": "sdf268210__femme_base__g47",
+     "prise": "sf71980b7__femme_base__g47",
      "graine": 47,
-     "score": 0.095,
+     "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Le client répond oui : c'est fini."
+     "texte": "Ça veut dire : vous voulez autre chose ?"
+    },
+    {
+     "prise": "s172158cf__femme_base__g300",
+     "graine": 300,
+     "score": 0.013,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Le client répond : « Oui, merci, c'est tout. »"
+    },
+    {
+     "prise": "sc707316e__femme_base__g137",
+     "graine": 137,
+     "score": 0.241,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "C'est la fin de la commande."
     }
    ]
   },
   "r-s2-4": {
    "fichier": "audio/synthese/r-s2-4.mp3",
-   "sha256": "b319758d2c19c1d64c9122ba0692a093b308fe99d9edcf6ab964beba0c76df18",
-   "duree_s": 6.303,
-   "gain_db": 2.56,
+   "sha256": "4db373eadad54a8f9a86ce7bdf08341cdebbddece7cecfdd6ece2babf8d5a060",
+   "duree_s": 12.647,
+   "gain_db": 2.57,
    "unite": "r-s2-4",
    "phrases": [
     {
@@ -4271,13 +4255,31 @@
      "texte": "Le serveur demande : « C'est tout ? »"
     },
     {
-     "prise": "sdf268210__femme_base__g47",
+     "prise": "sf71980b7__femme_base__g47",
      "graine": 47,
-     "score": 0.095,
+     "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Le client répond oui : c'est fini."
+     "texte": "Ça veut dire : vous voulez autre chose ?"
+    },
+    {
+     "prise": "s172158cf__femme_base__g300",
+     "graine": 300,
+     "score": 0.013,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Le client répond : « Oui, merci, c'est tout. »"
+    },
+    {
+     "prise": "sc707316e__femme_base__g137",
+     "graine": 137,
+     "score": 0.241,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "C'est la fin de la commande."
     }
    ]
   },
@@ -4291,7 +4293,7 @@
     {
      "prise": "s37476cdb__femme_base__g47",
      "graine": 47,
-     "score": 0.013,
+     "score": 0.014,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -4329,7 +4331,7 @@
     {
      "prise": "s37476cdb__femme_base__g47",
      "graine": 47,
-     "score": 0.013,
+     "score": 0.014,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -4633,52 +4635,62 @@
   },
   "r-s3-3": {
    "fichier": "audio/synthese/r-s3-3.mp3",
-   "sha256": "dfbaec8c261b407c3ffee800f67f977d8a3f0907ac61ffbc445d21e26845f150",
-   "duree_s": 5.735,
-   "gain_db": 2.68,
+   "sha256": "86411fa17272832222f2032f3129a59c51df1e0982291c12f426442480b955c4",
+   "duree_s": 10.771,
+   "gain_db": 2.25,
    "unite": "r-s3-3",
    "phrases": [
     {
-     "prise": "s8718d4bf__femme_base__g11",
-     "graine": 11,
-     "score": 0.03,
+     "prise": "s85d711f5__femme_base__g47",
+     "graine": 47,
+     "score": 0.141,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [
-      {
-       "apres": "demande",
-       "ponct": ":",
-       "pause_avant_s": 0.124,
-       "ajout_s": 0.136,
-       "a_s": 1.161
-      }
-     ],
-     "texte": "Le serveur demande : vous avez fini ?"
+     "pauses_inserees": [],
+     "texte": "Le serveur demande : « C'est tout ? »"
     },
     {
-     "prise": "sf2077b7f__femme_base__g47",
+     "prise": "sf71980b7__femme_base__g47",
      "graine": 47,
+     "score": 0.0,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Ça veut dire : vous voulez autre chose ?"
+    },
+    {
+     "prise": "s0aa48570__femme_base__g11",
+     "graine": 11,
      "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
       {
-       "apres": "répond",
-       "ponct": ":",
-       "pause_avant_s": 0.072,
-       "ajout_s": 0.188,
-       "a_s": 1.013
+       "apres": "Oui",
+       "ponct": ",",
+       "pause_avant_s": 0.125,
+       "ajout_s": 0.035,
+       "a_s": 1.637
       }
      ],
-     "texte": "La cliente répond : oui, c'est tout."
+     "texte": "La cliente répond : « Oui, merci, c'est tout. »"
+    },
+    {
+     "prise": "sc707316e__femme_base__g137",
+     "graine": 137,
+     "score": 0.241,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "C'est la fin de la commande."
     }
    ]
   },
   "r-s3-4": {
    "fichier": "audio/synthese/r-s3-4.mp3",
-   "sha256": "7acc0f7b1a0f3c1fd70fec5ed7f75803abb6f963fc589d76b9e5f90f050dc8b5",
-   "duree_s": 6.601,
-   "gain_db": 2.77,
+   "sha256": "2f3c140d2b066671bf5f5bce37de19584ef7f68359478308ca77896122be3b90",
+   "duree_s": 11.637,
+   "gain_db": 2.29,
    "unite": "r-s3-4",
    "phrases": [
     {
@@ -4693,38 +4705,48 @@
      "texte": "Oui."
     },
     {
-     "prise": "s8718d4bf__femme_base__g11",
-     "graine": 11,
-     "score": 0.03,
+     "prise": "s85d711f5__femme_base__g47",
+     "graine": 47,
+     "score": 0.141,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [
-      {
-       "apres": "demande",
-       "ponct": ":",
-       "pause_avant_s": 0.124,
-       "ajout_s": 0.136,
-       "a_s": 1.161
-      }
-     ],
-     "texte": "Le serveur demande : vous avez fini ?"
+     "pauses_inserees": [],
+     "texte": "Le serveur demande : « C'est tout ? »"
     },
     {
-     "prise": "sf2077b7f__femme_base__g47",
+     "prise": "sf71980b7__femme_base__g47",
      "graine": 47,
+     "score": 0.0,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Ça veut dire : vous voulez autre chose ?"
+    },
+    {
+     "prise": "s0aa48570__femme_base__g11",
+     "graine": 11,
      "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
       {
-       "apres": "répond",
-       "ponct": ":",
-       "pause_avant_s": 0.072,
-       "ajout_s": 0.188,
-       "a_s": 1.013
+       "apres": "Oui",
+       "ponct": ",",
+       "pause_avant_s": 0.125,
+       "ajout_s": 0.035,
+       "a_s": 1.637
       }
      ],
-     "texte": "La cliente répond : oui, c'est tout."
+     "texte": "La cliente répond : « Oui, merci, c'est tout. »"
+    },
+    {
+     "prise": "sc707316e__femme_base__g137",
+     "graine": 137,
+     "score": 0.241,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "C'est la fin de la commande."
     }
    ]
   },
@@ -4799,37 +4821,37 @@
   },
   "r-s3-7": {
    "fichier": "audio/synthese/r-s3-7.mp3",
-   "sha256": "7743ea066922c1850f1301be0180be0c5aafb54c963730a61e18f745d9a65bf9",
-   "duree_s": 9.075,
-   "gain_db": 2.88,
+   "sha256": "9d2a20554811c6747690ab4672323b7d8ca7732d8f963745c3f207543830bf5c",
+   "duree_s": 9.765,
+   "gain_db": 2.43,
    "unite": "r-s3-7",
    "phrases": [
     {
-     "prise": "s902c597e__femme_base__g11",
+     "prise": "s757efd6b__femme_base__g11",
      "graine": 11,
-     "score": 0.073,
+     "score": 0.241,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "« C'est tout ? » : on répond « oui »."
+     "texte": "« C'est tout ? » : vous répondez « oui »."
     },
     {
-     "prise": "safabc1a4__femme_base__g29",
+     "prise": "s2e4a3b1e__femme_base__g137",
+     "graine": 137,
+     "score": 0.004,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "« Autre chose ? » : vous répondez « non »."
+    },
+    {
+     "prise": "sf1ac95df__femme_base__g29",
      "graine": 29,
-     "score": 0.188,
+     "score": 0.025,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "« Autre chose ? » : on répond « non »."
-    },
-    {
-     "prise": "s9cd67b13__femme_base__g11",
-     "graine": 11,
-     "score": 0.118,
-     "penalite_prosodie": 0.0,
-     "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "Les deux réponses veulent dire : j'ai fini."
+     "texte": "Les deux réponses veulent dire : je ne veux rien d'autre."
     }
    ]
   },
@@ -4953,8 +4975,8 @@
   },
   "r-s3-9": {
    "fichier": "audio/synthese/r-s3-9.mp3",
-   "sha256": "874df0d49009b3a3502fb43506e52016603f19b1514c1c0d5253f27f2230e051",
-   "duree_s": 8.215,
+   "sha256": "13a7ed199c80b2cd12b8d46a110d5f9322638f9c67f67d4ffdd2c1409fb9acde",
+   "duree_s": 8.868,
    "gain_db": 2.19,
    "unite": "r-s3-9",
    "phrases": [
@@ -4968,18 +4990,18 @@
      "texte": "« Autre chose ? » : le serveur propose encore quelque chose."
     },
     {
-     "prise": "sf14e3521__femme_base__g47",
-     "graine": 47,
-     "score": 0.545,
+     "prise": "s69c9fa6a__femme_base__g29",
+     "graine": 29,
+     "score": 0.117,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "Vous avez fini ?"
+     "texte": "Vous ne voulez rien d'autre ?"
     },
     {
      "prise": "s27704566__femme_base__g11",
      "graine": 11,
-     "score": 0.101,
+     "score": 0.102,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
@@ -5241,7 +5263,7 @@
     {
      "prise": "s1c426a42__femme_base__g47",
      "graine": 47,
-     "score": 0.027,
+     "score": 0.028,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -6149,7 +6171,7 @@
     {
      "prise": "s9a9c7f87__femme_base__g11",
      "graine": 11,
-     "score": 0.134,
+     "score": 0.135,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -6176,11 +6198,76 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.261,
+     "score": 0.262,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
      "texte": "Vous pouvez écouter plusieurs fois."
+    }
+   ]
+  },
+  "r-s0-6": {
+   "fichier": "audio/synthese/r-s0-6.mp3",
+   "sha256": "39a5d57e0ab634f85d618fc30d3655634534908e8b2cd5c2fae5873f6e0f6bd1",
+   "duree_s": 6.094,
+   "gain_db": 1.2,
+   "unite": "r-s0-6",
+   "phrases": [
+    {
+     "prise": "s728ae2d4__femme_base__g11",
+     "graine": 11,
+     "score": 0.077,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "La cliente dit « non » : pas de café."
+    },
+    {
+     "prise": "s1e76a7ef__femme_base__g47",
+     "graine": 47,
+     "score": 0.064,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "À la fin, elle veut deux thés."
+    }
+   ]
+  },
+  "r-s0-7": {
+   "fichier": "audio/synthese/r-s0-7.mp3",
+   "sha256": "428ff9a2c7994021744e01e45560a01a542e8a41412af4994c2870ac7b2b1955",
+   "duree_s": 6.96,
+   "gain_db": 1.2,
+   "unite": "r-s0-7",
+   "phrases": [
+    {
+     "prise": "s073c2cac__femme_base__g368",
+     "graine": 368,
+     "score": 0.537,
+     "penalite_prosodie": 0.5,
+     "defauts_mesures": [
+      "fin de phrase déclarative qui ne descend pas : « Oui. »"
+     ],
+     "pauses_inserees": [],
+     "texte": "Oui."
+    },
+    {
+     "prise": "s728ae2d4__femme_base__g11",
+     "graine": 11,
+     "score": 0.077,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "La cliente dit « non » : pas de café."
+    },
+    {
+     "prise": "s1e76a7ef__femme_base__g47",
+     "graine": 47,
+     "score": 0.064,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "À la fin, elle veut deux thés."
     }
    ]
   }

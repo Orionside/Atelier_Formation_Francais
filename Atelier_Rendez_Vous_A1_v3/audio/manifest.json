@@ -1,7 +1,7 @@
 {
  "projet": "Atelier Rendez-vous A1 v3",
  "moteur": "Qwen3-TTS 12Hz 1.7B Base (8 bits pour les voix féminines, bf16 pour la voix homme 2)",
- "mis_a_jour_le": "2026-10-14T18:24:12",
+ "mis_a_jour_le": "2026-10-14T22:35:13",
  "humain_liste_complete": true,
  "note": "Voix de synthèse, non validées à l'écoute. Un fichier audio/humain/<id>.mp3 est lu en priorité s'il existe.",
  "voix_inventees": {
@@ -3127,7 +3127,7 @@
    }
   },
   "c-e-moment": {
-   "texte": "On commande, on finit ou on paie ? Sélectionnez l'image.",
+   "texte": "C'est pour commander ou pour payer ? Sélectionnez l'image.",
    "type": "consigne",
    "ecran": "S2",
    "situation": "Consigne lue, écran : S2, S3.",
@@ -3147,7 +3147,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 5.492,
+   "duree_s": 5.014,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -3155,7 +3155,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/c-e-moment.mp3",
-    "sha256": "a61ab0dbf6b3d9ac47b7b0f623ae715a40c1b788afbadfa52c924a986c4b34b0",
+    "sha256": "c7aa4f3c008dc4326e01c46bc9a192b2ce1c12b4254d9689263f0817f8458e73",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -3193,7 +3193,7 @@
    }
   },
   "c-s1-regarde": {
-   "texte": "Un homme et une femme sont au café. Regardez le film. Cherchez : qui parle au serveur ? Ils commandent quoi ? Vous n'avez pas besoin de comprendre tous les mots.",
+   "texte": "Deux clients sont au café : un homme et une femme. Regardez le film. Cherchez : qui parle au serveur ? Ils commandent quoi ? Vous n'avez pas besoin de comprendre tous les mots.",
    "type": "consigne",
    "ecran": "S1",
    "situation": "Consigne lue, écran : S1.",
@@ -3213,7 +3213,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 10.925,
+   "duree_s": 12.143,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -3221,7 +3221,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/c-s1-regarde.mp3",
-    "sha256": "6955edb044ac62a0994271241bf807f286fc76c083dce7175e51db21241e5f54",
+    "sha256": "782a60ebc9e42310246189a7332312417410f86e6ad11b195863ad2d439497fa",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -3325,7 +3325,7 @@
    }
   },
   "c-s2-debut": {
-   "texte": "Vous allez écouter quatre petits moments au café. Écoutez. Sélectionnez l'image qui correspond : commander, finir la commande ou payer. Exemple : « Un thé, s'il vous plaît. » On commande.",
+   "texte": "Vous allez écouter quatre petits moments au café. Écoutez. C'est pour commander ou pour payer ? Sélectionnez l'image. Exemple : « Un thé, s'il vous plaît. » C'est pour commander.",
    "type": "consigne",
    "ecran": "S2",
    "situation": "Consigne lue, écran : S2.",
@@ -3345,7 +3345,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 13.515,
+   "duree_s": 13.508,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -3353,7 +3353,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/c-s2-debut.mp3",
-    "sha256": "5ef3e1de9d0945f2340a53518af8b288fc14ad9982c2fb911e4806c4b5b1a9c4",
+    "sha256": "e00a98251dcda7d488db01f9cfbd5ff4fab3cf063c2cb10fa2edc9773b004712",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -4216,7 +4216,7 @@
    }
   },
   "c-b-fini-ou-encore": {
-   "texte": "Le client a fini ? Ou il veut encore quelque chose ? Sélectionnez la bonne réponse.",
+   "texte": "Le client veut encore quelque chose ? Sélectionnez la bonne réponse.",
    "type": "consigne",
    "ecran": "BANQUE",
    "situation": "Consigne lue, écran : banque D1, T1.",
@@ -4236,7 +4236,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 6.574,
+   "duree_s": 4.931,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -4244,7 +4244,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/c-b-fini-ou-encore.mp3",
-    "sha256": "83184c39731cf00c5b243a11054de5e14d2e096968ca33ccdb63df9cc48c08c9",
+    "sha256": "4a18b50a81a956fcc652b0dd0b440f11ac702c3b00f74ff2adab11130e88c853",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -4644,39 +4644,6 @@
     "statut": "non_valide_a_l_ecoute"
    }
   },
-  "r-s0-3": {
-   "texte": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
-   "type": "retour",
-   "ecran": "S0",
-   "situation": "Consigne lue, écran : S0.",
-   "roles": [
-    {
-     "voix": "consigne",
-     "role": "voix des consignes"
-    }
-   ],
-   "objectif_sens": "",
-   "registre": "consigne adressée à l'apprenant (vouvoiement), neutre et claire",
-   "voix": [
-    {
-     "code": "consigne",
-     "nom_invente": "Voix n° 2",
-     "mention": "Voix féminine de référence 2 (identique à GLP-1 Oral B2 v3), empreinte vocale seule, Qwen3-TTS 1.7B Base 8 bits ; chaque phrase générée en plusieurs prises, prise retenue selon la ponctuation et le sens (mélodie finale, pauses, mot en relief). Non validée à l'écoute."
-    }
-   ],
-   "variete_declaree": "français de France, visé",
-   "duree_s": 6.35,
-   "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
-   "format": "mp3 mono 24 kHz 192 kbit/s",
-   "validateur": null,
-   "date_validation": null,
-   "source": "N — dialogue créé pour le cours",
-   "synthese": {
-    "file": "audio/synthese/r-s0-3.mp3",
-    "sha256": "8c8fb385ab6488994624f3dc9892c66c566fcf643744e25aa426df999a489a4b",
-    "statut": "non_valide_a_l_ecoute"
-   }
-  },
   "r-s0-4": {
    "texte": "Écoutez le modèle. Comparez avec votre voix.",
    "type": "retour",
@@ -4876,7 +4843,7 @@
    }
   },
   "r-s1-2": {
-   "texte": "Les deux parlent au serveur. La femme et l'homme commandent.",
+   "texte": "Les deux clients parlent au serveur. Le client et la cliente commandent.",
    "type": "retour",
    "ecran": "S1",
    "situation": "Consigne lue, écran : S1.",
@@ -4896,7 +4863,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 4.403,
+   "duree_s": 4.9,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -4904,7 +4871,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s1-2.mp3",
-    "sha256": "7cf16617409383fa87cc47b4fc9bd195faf94fc3d351dd14ee89f9899ba28a29",
+    "sha256": "2326b7da12e9c69842dac8122413342ecbf9d3441004f5ad3e81d968742a4f38",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -5074,7 +5041,7 @@
    }
   },
   "r-s1-7": {
-   "texte": "Le jus d'orange est pour l'homme.",
+   "texte": "Le jus d'orange est pour le client.",
    "type": "retour",
    "ecran": "S1",
    "situation": "Consigne lue, écran : S1.",
@@ -5094,7 +5061,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 2.305,
+   "duree_s": 2.389,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5102,7 +5069,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s1-7.mp3",
-    "sha256": "dd6aee327746073da6ff6cf4da298c718cb12792e1f27df6c10b5fa6b31d6a0c",
+    "sha256": "694b336d83b5bcc184e7668ac1239efc17039c4ebca162c132fa2ab3650cf4fa",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -5140,7 +5107,7 @@
    }
   },
   "r-s1-8": {
-   "texte": "Le croissant est pour la femme.",
+   "texte": "Le croissant est pour la cliente.",
    "type": "retour",
    "ecran": "S1",
    "situation": "Consigne lue, écran : S1.",
@@ -5160,7 +5127,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 2.135,
+   "duree_s": 2.345,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5168,7 +5135,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s1-8.mp3",
-    "sha256": "2d4ffd180bec140dde24e9f5c60e7833bddaf08ace7fdc4eaac00892944b706a",
+    "sha256": "bbbd1390dfb1d2362ee57844f67c54e01d3d4b00b11c7de55e5404e44c545034",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -5239,7 +5206,7 @@
    }
   },
   "r-s2-1": {
-   "texte": "Ici, la femme commande. Elle demande une boisson : un café noir.",
+   "texte": "Ici, la cliente commande. Elle demande une boisson : un café noir.",
    "type": "retour",
    "ecran": "S2",
    "situation": "Consigne lue, écran : S2.",
@@ -5259,7 +5226,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 6.233,
+   "duree_s": 5.91,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5267,12 +5234,12 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s2-1.mp3",
-    "sha256": "ed8d151a028cd76e2caf1511d964bc6884621c201d41bafc6d02910354f3190b",
+    "sha256": "f877832648d806077e503689504943d038d00f38767a9e16470b6a318705bbd2",
     "statut": "non_valide_a_l_ecoute"
    }
   },
   "r-s2-2": {
-   "texte": "Oui. Ici, la femme commande. Elle demande une boisson : un café noir.",
+   "texte": "Oui. Ici, la cliente commande. Elle demande une boisson : un café noir.",
    "type": "retour",
    "ecran": "S2",
    "situation": "Consigne lue, écran : S2.",
@@ -5292,7 +5259,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 7.099,
+   "duree_s": 6.776,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5300,12 +5267,12 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s2-2.mp3",
-    "sha256": "09fb0995a54873a96f50e757ccb5d986316a93693785a10a18419d645c6cfc41",
+    "sha256": "cbcd0f42e8ef44f608866b7ce02863f5050bfbf19a5e5f00103a6daa972f3fb0",
     "statut": "non_valide_a_l_ecoute"
    }
   },
   "r-s2-3": {
-   "texte": "Le serveur demande : « C'est tout ? » Le client répond oui : c'est fini.",
+   "texte": "Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? Le client répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
    "type": "retour",
    "ecran": "S2",
    "situation": "Consigne lue, écran : S2.",
@@ -5325,7 +5292,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 5.437,
+   "duree_s": 11.781,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5333,12 +5300,12 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s2-3.mp3",
-    "sha256": "cda27adf47809530a5ed148ba9b069dce01031cfc609f710fd078fc83cceefaf",
+    "sha256": "b1b40155cf6d55d0c2108870472d56b812a1282e24182b0eccf33e762bebb7dc",
     "statut": "non_valide_a_l_ecoute"
    }
   },
   "r-s2-4": {
-   "texte": "Oui. Le serveur demande : « C'est tout ? » Le client répond oui : c'est fini.",
+   "texte": "Oui. Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? Le client répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
    "type": "retour",
    "ecran": "S2",
    "situation": "Consigne lue, écran : S2.",
@@ -5358,7 +5325,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 6.303,
+   "duree_s": 12.647,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5366,7 +5333,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s2-4.mp3",
-    "sha256": "b319758d2c19c1d64c9122ba0692a093b308fe99d9edcf6ab964beba0c76df18",
+    "sha256": "4db373eadad54a8f9a86ce7bdf08341cdebbddece7cecfdd6ece2babf8d5a060",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -5800,7 +5767,7 @@
    }
   },
   "r-s3-3": {
-   "texte": "Le serveur demande : vous avez fini ? La cliente répond : oui, c'est tout.",
+   "texte": "Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? La cliente répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
    "type": "retour",
    "ecran": "S3",
    "situation": "Consigne lue, écran : S3.",
@@ -5820,7 +5787,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 5.735,
+   "duree_s": 10.771,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5828,12 +5795,12 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s3-3.mp3",
-    "sha256": "dfbaec8c261b407c3ffee800f67f977d8a3f0907ac61ffbc445d21e26845f150",
+    "sha256": "86411fa17272832222f2032f3129a59c51df1e0982291c12f426442480b955c4",
     "statut": "non_valide_a_l_ecoute"
    }
   },
   "r-s3-4": {
-   "texte": "Oui. Le serveur demande : vous avez fini ? La cliente répond : oui, c'est tout.",
+   "texte": "Oui. Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? La cliente répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
    "type": "retour",
    "ecran": "S3",
    "situation": "Consigne lue, écran : S3.",
@@ -5853,7 +5820,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 6.601,
+   "duree_s": 11.637,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5861,7 +5828,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s3-4.mp3",
-    "sha256": "7acc0f7b1a0f3c1fd70fec5ed7f75803abb6f963fc589d76b9e5f90f050dc8b5",
+    "sha256": "2f3c140d2b066671bf5f5bce37de19584ef7f68359478308ca77896122be3b90",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -5932,7 +5899,7 @@
    }
   },
   "r-s3-7": {
-   "texte": "« C'est tout ? » : on répond « oui ». « Autre chose ? » : on répond « non ». Les deux réponses veulent dire : j'ai fini.",
+   "texte": "« C'est tout ? » : vous répondez « oui ». « Autre chose ? » : vous répondez « non ». Les deux réponses veulent dire : je ne veux rien d'autre.",
    "type": "retour",
    "ecran": "S3",
    "situation": "Consigne lue, écran : S3.",
@@ -5952,7 +5919,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 9.075,
+   "duree_s": 9.765,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -5960,7 +5927,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s3-7.mp3",
-    "sha256": "7743ea066922c1850f1301be0180be0c5aafb54c963730a61e18f745d9a65bf9",
+    "sha256": "9d2a20554811c6747690ab4672323b7d8ca7732d8f963745c3f207543830bf5c",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -6097,7 +6064,7 @@
    }
   },
   "r-s3-9": {
-   "texte": "« Autre chose ? » : le serveur propose encore quelque chose. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+   "texte": "« Autre chose ? » : le serveur propose encore quelque chose. Vous ne voulez rien d'autre ? Dites : « Non merci, c'est tout. »",
    "type": "retour",
    "ecran": "S3",
    "situation": "Consigne lue, écran : S3.",
@@ -6117,7 +6084,7 @@
     }
    ],
    "variete_declaree": "français de France, visé",
-   "duree_s": 8.215,
+   "duree_s": 8.868,
    "licence": "Audio de synthèse créé pour ce cours avec Qwen3-TTS, à partir de voix inventées (aucune personne réelle, donc aucun consentement de locuteur à recueillir). Conditions de réutilisation : à fixer par l'auteur du cours.",
    "format": "mp3 mono 24 kHz 192 kbit/s",
    "validateur": null,
@@ -6125,7 +6092,7 @@
    "source": "N — dialogue créé pour le cours",
    "synthese": {
     "file": "audio/synthese/r-s3-9.mp3",
-    "sha256": "874df0d49009b3a3502fb43506e52016603f19b1514c1c0d5253f27f2230e051",
+    "sha256": "13a7ed199c80b2cd12b8d46a110d5f9322638f9c67f67d4ffdd2c1409fb9acde",
     "statut": "non_valide_a_l_ecoute"
    }
   },
@@ -7415,9 +7382,51 @@
     "sha256": "5998826f30fcd4910e26a5e319cbf6ac22fdd316bc1e30083736b88538ada81d",
     "statut": "non_valide_a_l_ecoute"
    }
+  },
+  "r-s0-6": {
+   "type": "retour",
+   "ecran": "S0",
+   "texte": "La cliente dit « non » : pas de café. À la fin, elle veut deux thés.",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "Voix féminine de référence 2 (identique à GLP-1 Oral B2 v3), empreinte vocale seule, Qwen3-TTS 1.7B Base 8 bits ; chaque phrase générée en plusieurs prises, prise retenue selon la ponctuation et le sens (mélodie finale, pauses, mot en relief). Non validée à l'écoute."
+    }
+   ],
+   "duree_s": 6.094,
+   "format": "mp3 mono 24 kHz 192 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/r-s0-6.mp3",
+    "sha256": "39a5d57e0ab634f85d618fc30d3655634534908e8b2cd5c2fae5873f6e0f6bd1",
+    "statut": "non_valide_a_l_ecoute"
+   }
+  },
+  "r-s0-7": {
+   "type": "retour",
+   "ecran": "S0",
+   "texte": "Oui. La cliente dit « non » : pas de café. À la fin, elle veut deux thés.",
+   "voix": [
+    {
+     "code": "consigne",
+     "nom_invente": "Voix n° 2",
+     "mention": "Voix féminine de référence 2 (identique à GLP-1 Oral B2 v3), empreinte vocale seule, Qwen3-TTS 1.7B Base 8 bits ; chaque phrase générée en plusieurs prises, prise retenue selon la ponctuation et le sens (mélodie finale, pauses, mot en relief). Non validée à l'écoute."
+    }
+   ],
+   "duree_s": 6.96,
+   "format": "mp3 mono 24 kHz 192 kbit/s",
+   "validateur": null,
+   "date_validation": null,
+   "synthese": {
+    "file": "audio/synthese/r-s0-7.mp3",
+    "sha256": "428ff9a2c7994021744e01e45560a01a542e8a41412af4994c2870ac7b2b1955",
+    "statut": "non_valide_a_l_ecoute"
+   }
   }
  },
- "version": "20261014-v3-refonte",
+ "version": "20261014-v3-correction-2",
  "parametres": {
   "voix_feminine_de_base": {
    "modele": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",

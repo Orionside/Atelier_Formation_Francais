@@ -2,12 +2,14 @@
  * Atelier « Au café : comprendre, commander et payer » (Rendez-vous A1 v3) — contenu.js
  * Données seulement : TOUT le texte de l'atelier, aucune logique. JSON strict après le signe égal.
  * Refondu le 2026-10-14 (structure de S2, S3, S4, S5, bilan et rappels ; voix d'homme = voix « homme 2 » du formateur ; voir LISEZMOI.md).
+ * Corrigé le 2026-10-14 au soir (essai du formateur) : correction immédiate en S0, « C'est pour commander ou pour payer ? » en S2-S3,
+ * images « qui parle » en S1-S2, bouton « Écouter ce message » (production/corriger_contenu_2.py).
  * Révisé le 2026-10-07 (v3, retour du formateur R1 à R21 : specs/C0_RETOUR_UTILISATEUR_V3.md) à partir de A1 (scénario) corrigé par B0, A2, A3, A4 (ordre de priorité de B0).
  * Statut : dialogues créés, voix de synthèse non validées à l'écoute ; aides ES/IT non relues par un locuteur natif ;
  * aucun résultat d'apprenant. Schéma des blocs : B1_schema_final.md. Contrôle : node B1_verifier_contenu.mjs
  */
 window.CONTENU = {
-  "version": "20261014-v3-refonte",
+  "version": "20261014-v3-correction-2",
   "meta": {
     "id": "rendez-vous-a1-v3",
     "titre": "Au café",
@@ -243,7 +245,7 @@ window.CONTENU = {
     "par carte": "(= avec la carte bancaire)",
     "l'addition": "(= le papier avec le prix)",
     "répéter": "(= dire encore)",
-    "c'est tout": "(= j'ai fini, je ne veux plus rien)"
+    "c'est tout": "(= je ne veux rien d'autre)"
   },
   "images": {
     "img-comptoir": {
@@ -499,8 +501,8 @@ window.CONTENU = {
     },
     "img-f-finir": {
       "pictos": "img-f-finir",
-      "libelle": "finir la commande",
-      "alt": "Finir la commande.",
+      "libelle": "c'est tout",
+      "alt": "C'est tout : je ne veux rien d'autre.",
       "ecrans": [
         "s2",
         "s3",
@@ -519,8 +521,8 @@ window.CONTENU = {
     },
     "img-fini": {
       "pictos": "img-fini",
-      "libelle": "c'est fini",
-      "alt": "C'est fini.",
+      "libelle": "rien d'autre",
+      "alt": "Rien d'autre.",
       "ecrans": [
         "banque"
       ]
@@ -599,6 +601,55 @@ window.CONTENU = {
         "s3",
         "s6",
         "banque"
+      ]
+    },
+    "img-parle-client": {
+      "pictos": "img-parle-client",
+      "libelle": "le client",
+      "alt": "Au café. Le client parle au serveur. La cliente ne parle pas.",
+      "ecrans": [
+        "s1",
+        "s2"
+      ]
+    },
+    "img-parle-cliente": {
+      "pictos": "img-parle-cliente",
+      "libelle": "la cliente",
+      "alt": "Au café. La cliente parle au serveur. Le client ne parle pas.",
+      "ecrans": [
+        "s1"
+      ]
+    },
+    "img-parle-clients": {
+      "pictos": "img-parle-clients",
+      "libelle": "les clients",
+      "alt": "Au café. Le client et la cliente parlent au serveur.",
+      "ecrans": [
+        "s1"
+      ]
+    },
+    "img-parle-serveur": {
+      "pictos": "img-parle-serveur",
+      "libelle": "le serveur",
+      "alt": "Au café. Le serveur parle au client.",
+      "ecrans": [
+        "s2"
+      ]
+    },
+    "img-le-client": {
+      "pictos": "img-le-client",
+      "libelle": "le client",
+      "alt": "Au café. Le client, à table.",
+      "ecrans": [
+        "s1"
+      ]
+    },
+    "img-la-cliente": {
+      "pictos": "img-la-cliente",
+      "libelle": "la cliente",
+      "alt": "Au café. La cliente, à table.",
+      "ecrans": [
+        "s1"
       ]
     }
   },
@@ -971,7 +1022,7 @@ window.CONTENU = {
     "c-e-moment": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "On commande, on finit ou on paie ? Sélectionnez l'image.",
+      "texte": "C'est pour commander ou pour payer ? Sélectionnez l'image.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -987,7 +1038,7 @@ window.CONTENU = {
     "c-s1-regarde": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Un homme et une femme sont au café. Regardez le film. Cherchez : qui parle au serveur ? Ils commandent quoi ? Vous n'avez pas besoin de comprendre tous les mots.",
+      "texte": "Deux clients sont au café : un homme et une femme. Regardez le film. Cherchez : qui parle au serveur ? Ils commandent quoi ? Vous n'avez pas besoin de comprendre tous les mots.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S1"
@@ -1019,7 +1070,7 @@ window.CONTENU = {
     "c-s2-debut": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Vous allez écouter quatre petits moments au café. Écoutez. Sélectionnez l'image qui correspond : commander, finir la commande ou payer. Exemple : « Un thé, s'il vous plaît. » On commande.",
+      "texte": "Vous allez écouter quatre petits moments au café. Écoutez. C'est pour commander ou pour payer ? Sélectionnez l'image. Exemple : « Un thé, s'il vous plaît. » C'est pour commander.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1235,7 +1286,7 @@ window.CONTENU = {
     "c-b-fini-ou-encore": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Le client a fini ? Ou il veut encore quelque chose ? Sélectionnez la bonne réponse.",
+      "texte": "Le client veut encore quelque chose ? Sélectionnez la bonne réponse.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "BANQUE"
@@ -1638,14 +1689,6 @@ window.CONTENU = {
       "statut": "non_valide_a_l_ecoute",
       "ecran": "APRES"
     },
-    "r-s0-3": {
-      "type": "retour",
-      "voix": "consigne",
-      "texte": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
-      "source": "N",
-      "statut": "non_valide_a_l_ecoute",
-      "ecran": "S0"
-    },
     "r-s0-4": {
       "type": "retour",
       "voix": "consigne",
@@ -1698,7 +1741,7 @@ window.CONTENU = {
     "r-s1-2": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Les deux parlent au serveur. La femme et l'homme commandent.",
+      "texte": "Les deux clients parlent au serveur. Le client et la cliente commandent.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S1"
@@ -1746,7 +1789,7 @@ window.CONTENU = {
     "r-s1-7": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Le jus d'orange est pour l'homme.",
+      "texte": "Le jus d'orange est pour le client.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S1"
@@ -1762,7 +1805,7 @@ window.CONTENU = {
     "r-s1-8": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Le croissant est pour la femme.",
+      "texte": "Le croissant est pour la cliente.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S1"
@@ -1786,7 +1829,7 @@ window.CONTENU = {
     "r-s2-1": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Ici, la femme commande. Elle demande une boisson : un café noir.",
+      "texte": "Ici, la cliente commande. Elle demande une boisson : un café noir.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1794,7 +1837,7 @@ window.CONTENU = {
     "r-s2-2": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Oui. Ici, la femme commande. Elle demande une boisson : un café noir.",
+      "texte": "Oui. Ici, la cliente commande. Elle demande une boisson : un café noir.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1802,7 +1845,7 @@ window.CONTENU = {
     "r-s2-3": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Le serveur demande : « C'est tout ? » Le client répond oui : c'est fini.",
+      "texte": "Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? Le client répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1810,7 +1853,7 @@ window.CONTENU = {
     "r-s2-4": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Oui. Le serveur demande : « C'est tout ? » Le client répond oui : c'est fini.",
+      "texte": "Oui. Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? Le client répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1922,7 +1965,7 @@ window.CONTENU = {
     "r-s3-3": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Le serveur demande : vous avez fini ? La cliente répond : oui, c'est tout.",
+      "texte": "Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? La cliente répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -1930,7 +1973,7 @@ window.CONTENU = {
     "r-s3-4": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Oui. Le serveur demande : vous avez fini ? La cliente répond : oui, c'est tout.",
+      "texte": "Oui. Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? La cliente répond : « Oui, merci, c'est tout. » C'est la fin de la commande.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -1954,7 +1997,7 @@ window.CONTENU = {
     "r-s3-7": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« C'est tout ? » : on répond « oui ». « Autre chose ? » : on répond « non ». Les deux réponses veulent dire : j'ai fini.",
+      "texte": "« C'est tout ? » : vous répondez « oui ». « Autre chose ? » : vous répondez « non ». Les deux réponses veulent dire : je ne veux rien d'autre.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -1994,7 +2037,7 @@ window.CONTENU = {
     "r-s3-9": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« Autre chose ? » : le serveur propose encore quelque chose. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+      "texte": "« Autre chose ? » : le serveur propose encore quelque chose. Vous ne voulez rien d'autre ? Dites : « Non merci, c'est tout. »",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -2310,6 +2353,22 @@ window.CONTENU = {
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
+    },
+    "r-s0-6": {
+      "type": "retour",
+      "voix": "consigne",
+      "texte": "La cliente dit « non » : pas de café. À la fin, elle veut deux thés.",
+      "source": "N",
+      "statut": "non_valide_a_l_ecoute",
+      "ecran": "S0"
+    },
+    "r-s0-7": {
+      "type": "retour",
+      "voix": "consigne",
+      "texte": "Oui. La cliente dit « non » : pas de café. À la fin, elle veut deux thés.",
+      "source": "N",
+      "statut": "non_valide_a_l_ecoute",
+      "ecran": "S0"
     }
   },
   "interface": {
@@ -2531,7 +2590,7 @@ window.CONTENU = {
       "comparer": "Écoutez le modèle. Comparez avec votre voix.",
       "je_ne_sais_pas": "Je ne sais pas",
       "regarder": "Regarder",
-      "ecouter_la_reponse": "Écouter la réponse",
+      "ecouter_la_reponse": "Écouter ce message",
       "fin_s0": "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
       "fenetre": "Fenêtre {n} sur {total}",
       "rec_consigne": "Facultatif. Cliquez sur « M'enregistrer », puis dites votre phrase à voix haute."
@@ -2685,13 +2744,40 @@ window.CONTENU = {
             "bouton": null,
             "inutilise": true
           },
-          "e5": null,
+          "e5": {
+            "etiquette": "cree",
+            "repliques": [
+              {
+                "role": "Le serveur",
+                "couleur": "personnel",
+                "texte": "Un café et un thé ?"
+              },
+              {
+                "role": "La cliente",
+                "couleur": "client",
+                "texte": "Non, deux thés, s'il vous plaît."
+              },
+              {
+                "role": "Le serveur",
+                "couleur": "personnel",
+                "texte": "Deux thés, d'accord."
+              }
+            ],
+            "son_cliente": "s0-r2",
+            "boutons": [
+              "reecouter",
+              "la_cliente"
+            ],
+            "retour": {
+              "prefixe_si_bonne": "Oui.",
+              "texte": "La cliente dit « non » : pas de café. À la fin, elle veut deux thés."
+            }
+          },
           "bonne": {
             "valeur": "deux",
             "image": "img-deux-thes",
             "libelle": "deux thés"
           },
-          "revele_dans": "s6.bilan",
           "variantes": [
             {
               "si": {
@@ -2713,17 +2799,6 @@ window.CONTENU = {
           "id": "0.1.aide",
           "aide": "s0",
           "apres": "0.1.e2"
-        },
-        {
-          "type": "texte",
-          "id": "0.5",
-          "role": "retour",
-          "lignes": [
-            "Merci. Vous verrez la bonne réponse à la fin du parcours.",
-            "Cliquez sur « Suite »."
-          ],
-          "bouton": "suite",
-          "note_interne": "B1 (QA v3) : le message de fin de S0 ne s'affiche qu'une fois (ici, pas 0.5) et nomme le bouton réellement actif : « Suite ». Son r-s0-3. Texte repris de interface.v3.fin_s0."
         },
         {
           "type": "question_serveur",
@@ -2828,7 +2903,7 @@ window.CONTENU = {
       "carte_formateur": {
         "dit": "Laisse l'apprenant lancer le dialogue ; ne mime rien, ne répète rien. Puis pose une fois, à débit naturel : « Et pour vous, café ou thé ? ». Si « Pardon ? » : redit une fois, plus clairement, sans donner la réponse.",
         "note": "La réponse libre entendue au pas 0.2 (mot dit à voix haute) ; si l'apprenant garde la première commande au lieu de la correction après « non » (difficulté attendue : la noter, ne pas l'expliquer maintenant) ; la réponse à la question : adaptée / « Pardon ? » (= stratégie, pas un échec) / rien ; aide de langue et incidents. Une réponse « trois » à « combien de thés ? » se note telle quelle.",
-        "a_corriger": "Aucun. Pas de correction ici, ni du sens ni de la forme.",
+        "a_corriger": "Le sens : après la réponse, la page montre le dialogue et la bonne réponse (deux thés). Pas de correction de la forme.",
         "si_temps_manque": "Ne jamais supprimer S0. Le pas 0.7 est hors budget.",
         "a_savoir": "Le dialogue commence au milieu de la commande : on n'entend pas la première demande (note A2). La confirmation du serveur est « Deux thés, d'accord. » (et non « très bien », pour éviter la ressemblance avec tres / tre = 3 dans une question de quantité). Pas 0.7 : voir le réglage « Forme A / Forme B ».",
         "validite": "Tant que audio/humain/s0-dialogue.mp3 n'existe pas, le son est une voix de synthèse non validée à l'écoute ; le dire dans tout compte rendu."
@@ -2850,7 +2925,7 @@ window.CONTENU = {
           "image": "img-table",
           "consigne": "c-s1-regarde",
           "lignes": [
-            "Un homme et une femme sont au café.",
+            "Deux clients sont au café : un homme et une femme.",
             "1. Regardez le film.",
             "2. Cherchez : qui parle au serveur ? Ils commandent quoi ?",
             "Vous n'avez pas besoin de comprendre tous les mots."
@@ -2917,23 +2992,23 @@ window.CONTENU = {
           "question": "Qui parle au serveur ? Sélectionnez l'image qui correspond.",
           "choix": [
             {
-              "image": "img-homme",
-              "libelle": "l'homme"
+              "image": "img-parle-client",
+              "libelle": "le client"
             },
             {
-              "image": "img-femme",
-              "libelle": "la femme"
+              "image": "img-parle-cliente",
+              "libelle": "la cliente"
             },
             {
-              "image": "img-homme-et-femme",
-              "libelle": "l'homme et la femme"
+              "image": "img-parle-clients",
+              "libelle": "les clients"
             }
           ],
           "bonne": [
-            "img-homme-et-femme"
+            "img-parle-clients"
           ],
           "retour": {
-            "commun": "Les deux parlent au serveur. La femme et l'homme commandent."
+            "commun": "Les deux clients parlent au serveur. Le client et la cliente commandent."
           },
           "note_interne": "Le même retour pour toutes les réponses."
         },
@@ -3035,19 +3110,19 @@ window.CONTENU = {
           "question": "Qui prend le jus d'orange ? Sélectionnez la bonne réponse.",
           "choix": [
             {
-              "image": "img-homme",
-              "libelle": "l'homme"
+              "image": "img-le-client",
+              "libelle": "le client"
             },
             {
-              "image": "img-femme",
-              "libelle": "la femme"
+              "image": "img-la-cliente",
+              "libelle": "la cliente"
             }
           ],
           "bonne": [
-            "img-homme"
+            "img-le-client"
           ],
           "retour": {
-            "commun": "Le jus d'orange est pour l'homme."
+            "commun": "Le jus d'orange est pour le client."
           },
           "consigne": "c-s1-jus"
         },
@@ -3063,19 +3138,19 @@ window.CONTENU = {
           "question": "Qui prend le croissant ? Sélectionnez la bonne réponse.",
           "choix": [
             {
-              "image": "img-homme",
-              "libelle": "l'homme"
+              "image": "img-le-client",
+              "libelle": "le client"
             },
             {
-              "image": "img-femme",
-              "libelle": "la femme"
+              "image": "img-la-cliente",
+              "libelle": "la cliente"
             }
           ],
           "bonne": [
-            "img-femme"
+            "img-la-cliente"
           ],
           "retour": {
-            "commun": "Le croissant est pour la femme."
+            "commun": "Le croissant est pour la cliente."
           },
           "consigne": "c-s1-croissant"
         },
@@ -3145,13 +3220,13 @@ window.CONTENU = {
           "etiquette": "film",
           "repliques": [
             {
-              "role": "La femme",
+              "role": "La cliente",
               "couleur": "client",
               "texte": "Un café noir pour moi, s'il vous plaît.",
               "extrait": "film-p4"
             },
             {
-              "role": "L'homme",
+              "role": "Le client",
               "couleur": "client",
               "texte": "Et moi, un café long et un jus d'orange, s'il vous plaît.",
               "extrait": "film-cafe-long"
@@ -3218,11 +3293,11 @@ window.CONTENU = {
     },
     {
       "id": "s2",
-      "titre": "J'écoute : on commande, on finit ou on paie ?",
+      "titre": "J'écoute : commander ou payer ?",
       "duree_min": 9,
       "etape": "Étape 3 sur 7",
-      "objectif": "Vous écoutez des moments courts au café. Vous choisissez : on commande, on finit la commande ou on paie.",
-      "note_ecran": "Quatre extraits : A, B, C (film, film_formatif) puis D (dialogue créé). Les trois images de moment sont toujours les mêmes, dans le même ordre ; v3 : elles apparaissent à la fenêtre « Je choisis l'image » ; l'écoute est libre (aucune fenêtre « Dites votre idée »).",
+      "objectif": "Vous écoutez des moments courts au café. C'est pour commander ou pour payer ?",
+      "note_ecran": "Quatre extraits : A, B, C (film, film_formatif) puis D (dialogue créé). Question « C'est pour commander ou pour payer ? », deux images (commander, payer), toujours les mêmes, dans le même ordre ; « C'est tout ? » (B) = fin de la commande. L'écoute est libre.",
       "pas": [
         {
           "type": "texte",
@@ -3231,8 +3306,8 @@ window.CONTENU = {
           "lignes": [
             "Vous allez écouter quatre petits moments au café.",
             "1. Écoutez.",
-            "2. Sélectionnez l'image qui correspond : commander, finir la commande ou payer.",
-            "Exemple : « Un thé, s'il vous plaît. » On commande."
+            "2. C'est pour commander ou pour payer ? Sélectionnez l'image.",
+            "Exemple : « Un thé, s'il vous plaît. » C'est pour commander."
           ],
           "bouton": "suite"
         },
@@ -3264,7 +3339,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "On commande, on finit ou on paie ?",
+              "C'est pour commander ou pour payer ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3272,11 +3347,6 @@ window.CONTENU = {
                 "image": "img-f-commander",
                 "libelle": "commander (= demander une boisson)",
                 "valeur": "commander"
-              },
-              {
-                "image": "img-f-finir",
-                "libelle": "finir la commande",
-                "valeur": "finir"
               },
               {
                 "image": "img-f-payer",
@@ -3296,7 +3366,7 @@ window.CONTENU = {
             "etiquette": "film",
             "repliques": [
               {
-                "role": "La femme",
+                "role": "La cliente",
                 "couleur": "client",
                 "texte": "Un café noir pour moi, s'il vous plaît.",
                 "extrait": "film-p4"
@@ -3308,7 +3378,7 @@ window.CONTENU = {
             ],
             "retour": {
               "prefixe_si_bonne": "Oui.",
-              "texte": "Ici, la femme commande. Elle demande une boisson : un café noir."
+              "texte": "Ici, la cliente commande. Elle demande une boisson : un café noir."
             }
           },
           "bonne": {
@@ -3330,9 +3400,9 @@ window.CONTENU = {
                     "valeur": "commander"
                   },
                   {
-                    "image": "img-f-finir",
-                    "libelle": "finir la commande",
-                    "valeur": "finir"
+                    "image": "img-f-payer",
+                    "libelle": "payer",
+                    "valeur": "payer"
                   }
                 ],
                 "e4.avec_texte": true,
@@ -3375,7 +3445,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "On commande, on finit ou on paie ?",
+              "C'est pour commander ou pour payer ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3383,11 +3453,6 @@ window.CONTENU = {
                 "image": "img-f-commander",
                 "libelle": "commander (= demander une boisson)",
                 "valeur": "commander"
-              },
-              {
-                "image": "img-f-finir",
-                "libelle": "finir la commande",
-                "valeur": "finir"
               },
               {
                 "image": "img-f-payer",
@@ -3419,18 +3484,18 @@ window.CONTENU = {
                 "extrait": "film-p5-reponse"
               }
             ],
-            "image": "img-f-finir",
+            "image": "img-f-commander",
             "boutons": [
               "reecouter"
             ],
             "retour": {
               "prefixe_si_bonne": "Oui.",
-              "texte": "Le serveur demande : « C'est tout ? » Le client répond oui : c'est fini."
+              "texte": "Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? Le client répond : « Oui, merci, c'est tout. » C'est la fin de la commande."
             }
           },
           "bonne": {
-            "valeur": "finir",
-            "image": "img-f-finir"
+            "valeur": "commander",
+            "image": "img-f-commander"
           },
           "variantes": [
             {
@@ -3447,9 +3512,9 @@ window.CONTENU = {
                     "valeur": "commander"
                   },
                   {
-                    "image": "img-f-finir",
-                    "libelle": "finir la commande",
-                    "valeur": "finir"
+                    "image": "img-f-payer",
+                    "libelle": "payer",
+                    "valeur": "payer"
                   }
                 ],
                 "e4.avec_texte": true,
@@ -3486,22 +3551,22 @@ window.CONTENU = {
             {
               "libelle": "phrase_1",
               "son": "qui-cest-tout-question",
-              "bonne": "img-serveur"
+              "bonne": "img-parle-serveur"
             },
             {
               "libelle": "phrase_2",
               "son": "qui-cest-tout-reponse",
-              "bonne": "img-client"
+              "bonne": "img-parle-client"
             }
           ],
           "ordre_phrases": "alea",
           "choix": [
             {
-              "image": "img-serveur",
+              "image": "img-parle-serveur",
               "libelle": "le serveur"
             },
             {
-              "image": "img-client",
+              "image": "img-parle-client",
               "libelle": "le client"
             }
           ],
@@ -3548,7 +3613,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "On commande, on finit ou on paie ?",
+              "C'est pour commander ou pour payer ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3556,11 +3621,6 @@ window.CONTENU = {
                 "image": "img-f-commander",
                 "libelle": "commander (= demander une boisson)",
                 "valeur": "commander"
-              },
-              {
-                "image": "img-f-finir",
-                "libelle": "finir la commande",
-                "valeur": "finir"
               },
               {
                 "image": "img-f-payer",
@@ -3666,7 +3726,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "On commande, on finit ou on paie ?",
+              "C'est pour commander ou pour payer ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3674,11 +3734,6 @@ window.CONTENU = {
                 "image": "img-f-commander",
                 "libelle": "commander (= demander une boisson)",
                 "valeur": "commander"
-              },
-              {
-                "image": "img-f-finir",
-                "libelle": "finir la commande",
-                "valeur": "finir"
               },
               {
                 "image": "img-f-payer",
@@ -3871,10 +3926,10 @@ window.CONTENU = {
       ],
       "carte_formateur": {
         "dit": "Laisse l'apprenant écouter chaque phrase autant de fois qu'il veut, sans rien ajouter. Après l'extrait B, peut dire avec la même voix « C'est tout ? » puis « C'est tout, merci. » (ordre libre) et demander du geste : qui parle ?",
-        "note": "Pour chaque extrait, la réponse libre, puis la réponse au choix de l'image et le nombre d'écoutes (enregistrés par le support) ; critère local de 02 : au moins deux moments reconnus au premier passage (seuil à ajuster après essai). Pour A, B, C, noter si l'apprenant regardait l'écran : le film peut afficher des sous-titres, ces trois résultats restent formatifs. Seul l'extrait D est une écoute sans texte.",
+        "note": "Pour chaque extrait, la réponse libre, puis la réponse au choix de l'image et le nombre d'écoutes (enregistrés par le support) ; critère local de 02 : au moins deux moments reconnus (commander / payer) au premier passage (seuil à ajuster après essai). Pour A, B, C, noter si l'apprenant regardait l'écran : le film peut afficher des sous-titres, ces trois résultats restent formatifs. Seul l'extrait D est une écoute sans texte.",
         "a_corriger": "Le sens. Si l'apprenant choisit « commander » pour D : « Vous avez entendu « carte ». Ici, le serveur demande comment payer. » Ne comparer « la carte » (menu) et « par carte » (paiement) que si l'apprenant fait lui-même la confusion ; pas de traduction unique de « carte ».",
         "si_temps_manque": "Supprimer d'abord le pas 2.B.6 et le pas 2.D.7, puis l'extrait C (« L'addition » reste une phrase à reconnaître, vue en S1). Garder l'extrait D si le paiement est au programme de S3 et S5.",
-        "a_savoir": "Dans un café classique, on paie souvent après avoir bu : « L'addition, s'il vous plaît » = à table, à reconnaître seulement. Palier « Plus simple » : extraits A et B avec 2 images ; C et D en écoute avec images (aucune mesure)."
+        "a_savoir": "Dans un café classique, on paie souvent après avoir bu : « L'addition, s'il vous plaît » = à table, à reconnaître seulement. Palier « Plus simple » : extraits A et B ; C et D en écoute avec images (aucune mesure)."
       }
     },
     {
@@ -3930,17 +3985,12 @@ window.CONTENU = {
           "item": "S3-C1",
           "trace": "s3.c1.sens",
           "consigne": "c-e-moment",
-          "question": "On commande, on finit ou on paie ? Sélectionnez l'image.",
+          "question": "C'est pour commander ou pour payer ? Sélectionnez l'image.",
           "choix": [
             {
               "image": "img-f-commander",
               "libelle": "commander (= demander une boisson)",
               "valeur": "commander"
-            },
-            {
-              "image": "img-f-finir",
-              "libelle": "finir la commande",
-              "valeur": "finir"
             },
             {
               "image": "img-f-payer",
@@ -4093,17 +4143,12 @@ window.CONTENU = {
           "item": "S3-C2",
           "trace": "s3.c2.sens",
           "consigne": "c-e-moment",
-          "question": "On commande, on finit ou on paie ? Sélectionnez l'image.",
+          "question": "C'est pour commander ou pour payer ? Sélectionnez l'image.",
           "choix": [
             {
               "image": "img-f-commander",
               "libelle": "commander (= demander une boisson)",
               "valeur": "commander"
-            },
-            {
-              "image": "img-f-finir",
-              "libelle": "finir la commande",
-              "valeur": "finir"
             },
             {
               "image": "img-f-payer",
@@ -4112,11 +4157,11 @@ window.CONTENU = {
             }
           ],
           "bonne": [
-            "img-f-finir"
+            "img-f-commander"
           ],
           "retour": {
             "prefixe_si_bonne": "Oui.",
-            "commun": "Le serveur demande : vous avez fini ? La cliente répond : oui, c'est tout."
+            "commun": "Le serveur demande : « C'est tout ? » Ça veut dire : vous voulez autre chose ? La cliente répond : « Oui, merci, c'est tout. » C'est la fin de la commande."
           }
         },
         {
@@ -4190,7 +4235,7 @@ window.CONTENU = {
                 "texte": "Non merci, c'est tout."
               }
             ],
-            "note": "« C'est tout ? » : on répond « oui ». « Autre chose ? » : on répond « non ». Les deux réponses veulent dire : j'ai fini."
+            "note": "« C'est tout ? » : vous répondez « oui ». « Autre chose ? » : vous répondez « non ». Les deux réponses veulent dire : je ne veux rien d'autre."
           },
           "reponses_possibles": {
             "liste": [
@@ -4201,7 +4246,7 @@ window.CONTENU = {
             ],
             "comparer": true
           },
-          "sens_seul": "« Autre chose ? » : le serveur propose encore quelque chose. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+          "sens_seul": "« Autre chose ? » : le serveur propose encore quelque chose. Vous ne voulez rien d'autre ? Dites : « Non merci, c'est tout. »",
           "retour": {
             "formateur": "celui du formateur : le sens d'abord"
           },
@@ -4248,17 +4293,12 @@ window.CONTENU = {
           "item": "S3-C3",
           "trace": "s3.c3.sens",
           "consigne": "c-e-moment",
-          "question": "On commande, on finit ou on paie ? Sélectionnez l'image.",
+          "question": "C'est pour commander ou pour payer ? Sélectionnez l'image.",
           "choix": [
             {
               "image": "img-f-commander",
               "libelle": "commander (= demander une boisson)",
               "valeur": "commander"
-            },
-            {
-              "image": "img-f-finir",
-              "libelle": "finir la commande",
-              "valeur": "finir"
             },
             {
               "image": "img-f-payer",
@@ -7156,11 +7196,11 @@ window.CONTENU = {
         "images": [
           {
             "image": "img-fini",
-            "libelle": "Il a fini."
+            "libelle": "rien d'autre"
           },
           {
             "image": "img-encore",
-            "libelle": "Encore quelque chose."
+            "libelle": "encore quelque chose"
           }
         ],
         "saisie": "dit",
@@ -7168,7 +7208,7 @@ window.CONTENU = {
         "forme": "D",
         "rang": 1,
         "consigne_question": "c-b-fini-ou-encore",
-        "question": "Le client a fini ? Ou il veut encore quelque chose ?",
+        "question": "Le client veut encore quelque chose ?",
         "bonne": "img-encore",
         "valeur_bonne": "encore",
         "texte_final": {
@@ -7241,11 +7281,11 @@ window.CONTENU = {
         "images": [
           {
             "image": "img-fini",
-            "libelle": "Il a fini."
+            "libelle": "rien d'autre"
           },
           {
             "image": "img-encore",
-            "libelle": "Encore quelque chose."
+            "libelle": "encore quelque chose"
           }
         ],
         "saisie": "dit",
@@ -7253,7 +7293,7 @@ window.CONTENU = {
         "forme": "T",
         "rang": 1,
         "consigne_question": "c-b-fini-ou-encore",
-        "question": "Le client a fini ? Ou il veut encore quelque chose ?",
+        "question": "Le client veut encore quelque chose ?",
         "bonne": "img-encore",
         "valeur_bonne": "encore",
         "texte_final": {
@@ -7896,7 +7936,7 @@ window.CONTENU = {
         "a": 3,
         "ecran": "s0",
         "titre": "J'écoute deux personnes",
-        "contenu": "Écoute sans texte du dialogue d'ouverture (écoute libre, réponse au clavier puis aux images ; le nombre d'écoutes est compté), puis « Et pour vous, café ou thé ? ». Rien n'est révélé : « Merci. Vous verrez la bonne réponse à la fin du parcours. »",
+        "contenu": "Écoute sans texte du dialogue d'ouverture (écoute libre, réponse au clavier puis aux images ; le nombre d'écoutes est compté), puis « Et pour vous, café ou thé ? ». Correction tout de suite après la réponse : texte du dialogue, réécoute, réplique de la cliente.",
         "si_temps_manque": "Ne jamais supprimer S0."
       },
       {

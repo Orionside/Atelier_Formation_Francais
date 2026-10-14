@@ -22,7 +22,7 @@
 var C = window.CONTENU, S = window.Socle, J = window.JOURNAL, PICTOS = window.PICTOS || {};
 if(!C || !S || !J){ if(window.console) console.error("Atelier : contenu.js, socle.js ou journal.js manque."); return; }
 
-var VERSION = "20261014-v3-refonte";                /* même valeur que le ?v= de index.html */
+var VERSION = "20261014-v3-correction-2";                /* même valeur que le ?v= de index.html */
 var CLE_STOCKAGE = "rendez-vous-a1-v3";     /* clé de stockage de la v3 (la v2 garde la sienne) */
 var VUE_FORMATEUR = false;                 /* ce support est exclusivement destiné à l'apprenant */
 var MANQUES = [];                            /* libellés d'interface introuvables (contrôlé par les tests) */
@@ -34,7 +34,7 @@ var LIBELLES_V3 = {
   ecouter: "Écouter", ecouter_encore: "Écouter encore", je_reponds: "Je réponds", revenir: "← Revenir", suite: "Suite",
   ecouter_le_serveur: "Écouter le serveur", ecouter_le_modele: "Écouter le modèle", m_enregistrer: "M'enregistrer", arreter: "Arrêter",
   m_ecouter: "M'écouter", comparer: "Écoutez le modèle. Comparez avec votre voix.", je_ne_sais_pas: "Je ne sais pas", regarder: "Regarder",
-  ecouter_la_reponse: "Écouter la réponse",
+  ecouter_la_reponse: "Écouter ce message",
   fin_s0: "Merci. Vous verrez la bonne réponse à la fin du parcours. Cliquez sur « Suite ».",
   fenetre: "Fenêtre {n} sur {total}",
   rec_consigne: "Facultatif. Cliquez sur « M'enregistrer », puis dites votre phrase à voix haute.",
@@ -122,7 +122,7 @@ function tuileNSP(){
   b.appendChild(el("span", "vignette-nsp-lib", T("je_ne_sais_pas")));
   return b;
 }
-/* Images à sélectionner. choix : [{image, libelle, valeur}]. Le mot écrit est caché jusqu'à la réponse (conception du socle).
+/* Images à sélectionner. choix : [{image, libelle, valeur}]. Chaque image porte sa légende dès le début (retour du formateur, 14/10/2026).
    o.nsp : ajoute la tuile « Je ne sais pas » après les images (v.nsp). Un choix dont l'image est img-je-ne-sais-pas devient lui-même cette tuile. */
 function vignettes(choix, nom, multi, o){
   o = o || {};
@@ -134,7 +134,7 @@ function vignettes(choix, nom, multi, o){
     var b = el("button", "vignette"); b.type = "button"; b.setAttribute("aria-pressed", "false");
     b.setAttribute("data-image", c.image); b.setAttribute("aria-label", altDe(c.image));
     var p = picto(c.image); if(p) b.appendChild(p);
-    var m = el("span", "vignette-mot", c.libelle || ""); m.hidden = true; b.appendChild(m);
+    var m = el("span", "vignette-mot", c.libelle || ""); m.hidden = !c.libelle; b.appendChild(m);
     box.appendChild(b); return b;
   });
   var nsp = null;
@@ -1250,7 +1250,7 @@ R.ecoute_sans_texte = function(b, ctx){ return composantE(normaliserE(b), ctx); 
 
 /* Écoute d'un dialogue, modèle v3 (C0 §2) : fenêtres ① J'écoute → ② Je réponds (clavier de chiffres, seulement pour une question de quantité)
    → ③ Je choisis l'image (+ tuile « Je ne sais pas ») → [question de suite éventuelle] → ④ texte du dialogue et retour
-   (S0 : seulement le message « fin_s0 », rien n'est corrigé).
+   (S0 aussi : la correction s'affiche tout de suite ; la première réponse reste dans le journal pour le bilan).
    - Le bouton d'écoute du dialogue est dans TOUTES les fenêtres ; écoutes illimitées ; « un peu plus lent » seulement en ④.
    - Aucun passage automatique après un son : on avance avec « Je réponds » / « Suite ».
    - « ← Revenir » (fenêtres ② à ④) revient à la fenêtre précédente. Une réponse peut être changée tant que ④ n'est pas atteinte ;
@@ -1435,7 +1435,7 @@ function composantE(sp, ctx){
     }
     var ret = S.zoneRetour(); zone.appendChild(ret);
     if(!e){
-      /* S0 : rien n'est corrigé. Le message de fin (« fin_s0 », qui nomme le bouton « Suite ») s'affiche UNE seule fois, au pas 0.5 qui porte ce bouton (B1, QA v3) */
+      /* activité sans texte de dialogue (e5 absent) : pas de retour */
       ret.remove();
     } else {
       var r = e.retour || {}, t = "", bonne = juste("img") === true, suiteRetours = [];
@@ -1673,7 +1673,7 @@ R.conversation = function(b, ctx){
         if(k === "je_demande_de_repeter"){
           relances++; rep2.n++; ctx.note("repetition");
           rejouer(son(t), true);
-          if(relances >= 2 && t.image_relance && !w.querySelector(".relance-image")){ var f = figure(t.image_relance); f.classList.add("relance-image"); w.appendChild(f); ctx.note("images"); }
+          if(relances >= 2 && t.image_relance && !w.querySelector(".relance-image")){ var f = figure(t.image_relance); f.classList.add("relance-image"); var lg = C.images[t.image_relance] && C.images[t.image_relance].libelle; if(lg) f.appendChild(el("figcaption", "small", lg)); w.appendChild(f); ctx.note("images"); }
           return;
         }
         boutons.forEach(function(x){ x.disabled = true; }); bt.setAttribute("aria-pressed", "true");

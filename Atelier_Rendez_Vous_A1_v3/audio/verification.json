@@ -1,5 +1,5 @@
 {
- "version": "20261014-v3-refonte",
+ "version": "20261014-v3-correction-2",
  "note": "Contrôle automatique des prises retenues. Ne remplace pas l'écoute humaine.",
  "phrases": {
   "sb33880ba": {
@@ -1458,42 +1458,29 @@
    "prises_comparees": 3,
    "prises_valides": 1
   },
-  "sb1efc2c8": {
-   "texte": "On commande, on finit ou on paie ?",
+  "s0615b379": {
+   "texte": "C'est pour commander ou pour payer ?",
    "voix": "femme_base",
-   "prise": "sb1efc2c8__femme_base__g29",
-   "texte_reconnu": "on commande, on finit ou on paie",
+   "prise": "s0615b379__femme_base__g137",
+   "texte_reconnu": "C'est pour commander ou pour payer ?",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.19,
-   "ressemblance_timbre": 0.9642,
-   "f0_mediane_hz": 228.9,
+   "debit_articulation_syl_s": 5.18,
+   "ressemblance_timbre": 0.9725,
+   "f0_mediane_hz": 253.7,
    "phrases": [
     {
-     "texte": "On commande, on finit ou on paie?",
+     "texte": "C'est pour commander ou pour payer?",
      "type": "q_alternative",
-     "niveau_final_st": -4.59,
-     "pente_finale_st": -0.69,
-     "montee_finale_st": -2.7,
+     "niveau_final_st": -6.09,
+     "pente_finale_st": 1.06,
+     "montee_finale_st": -0.35,
      "conforme": null
     }
    ],
-   "frontieres": [
-    {
-     "apres": "commande",
-     "ponct": ",",
-     "type": "virgule",
-     "pause_s": 0.313,
-     "allongement": null,
-     "niveau_st": -1.32,
-     "pente_st": 1.72,
-     "montee_st": -4.59,
-     "marquee": true,
-     "continuation": true
-    }
-   ],
+   "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "sb5670679": {
    "texte": "Sélectionnez l'image.",
@@ -1604,29 +1591,42 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s04dc4305": {
-   "texte": "Un homme et une femme sont au café.",
+  "see65c857": {
+   "texte": "Deux clients sont au café : un homme et une femme.",
    "voix": "femme_base",
-   "prise": "s04dc4305__femme_base__g29",
-   "texte_reconnu": "Un homme et une femme sont au café.",
+   "prise": "see65c857__femme_base__g101",
+   "texte_reconnu": "Deux clients sont au café, un homme et une femme.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.19,
-   "ressemblance_timbre": 0.9472,
-   "f0_mediane_hz": 241.9,
+   "debit_articulation_syl_s": 4.57,
+   "ressemblance_timbre": 0.9802,
+   "f0_mediane_hz": 224.3,
    "phrases": [
     {
-     "texte": "Un homme et une femme sont au café.",
+     "texte": "Deux clients sont au café: un homme et une femme.",
      "type": "declarative",
-     "niveau_final_st": null,
-     "pente_finale_st": null,
-     "montee_finale_st": null,
-     "conforme": null
+     "niveau_final_st": -4.47,
+     "pente_finale_st": -0.43,
+     "montee_finale_st": -3.31,
+     "conforme": true
     }
    ],
-   "frontieres": [],
+   "frontieres": [
+    {
+     "apres": "café",
+     "ponct": ":",
+     "type": "deux_points",
+     "pause_s": 0.373,
+     "allongement": null,
+     "niveau_st": 3.4,
+     "pente_st": 9.11,
+     "montee_st": 7.7,
+     "marquee": true,
+     "continuation": true
+    }
+   ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "sb54c6a76": {
    "texte": "Regardez le film.",
@@ -1949,55 +1949,6 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s9aa1c2b6": {
-   "texte": "Sélectionnez l'image qui correspond : commander, finir la commande ou payer.",
-   "voix": "femme_base",
-   "prise": "s9aa1c2b6__femme_base__g11",
-   "texte_reconnu": "Sélectionnez l'image qui correspond. Commander, finir la commande ou payer.",
-   "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.46,
-   "ressemblance_timbre": 0.9873,
-   "f0_mediane_hz": 225.6,
-   "phrases": [
-    {
-     "texte": "Sélectionnez l'image qui correspond: commander, finir la commande ou payer.",
-     "type": "declarative",
-     "niveau_final_st": -5.6,
-     "pente_finale_st": -0.29,
-     "montee_finale_st": -2.04,
-     "conforme": true
-    }
-   ],
-   "frontieres": [
-    {
-     "apres": "correspond",
-     "ponct": ":",
-     "type": "deux_points",
-     "pause_s": 0.344,
-     "allongement": null,
-     "niveau_st": 5.97,
-     "pente_st": -1.91,
-     "montee_st": 8.42,
-     "marquee": true,
-     "continuation": true
-    },
-    {
-     "apres": "commander",
-     "ponct": ",",
-     "type": "virgule",
-     "pause_s": 0.395,
-     "allongement": null,
-     "niveau_st": -1.93,
-     "pente_st": 4.3,
-     "montee_st": -0.79,
-     "marquee": true,
-     "continuation": true
-    }
-   ],
-   "defauts_restants": [],
-   "prises_comparees": 6,
-   "prises_valides": 6
-  },
   "s69ada327": {
    "texte": "Exemple : « Un thé, s'il vous plaît. »",
    "voix": "femme_base",
@@ -2047,29 +1998,29 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s3209429b": {
-   "texte": "On commande.",
+  "sc8e5c61f": {
+   "texte": "C'est pour commander.",
    "voix": "femme_base",
-   "prise": "s3209429b__femme_base__g47",
-   "texte_reconnu": "On commande.",
+   "prise": "sc8e5c61f__femme_base__g29",
+   "texte_reconnu": "C'est pour commander.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.23,
-   "ressemblance_timbre": 0.9178,
-   "f0_mediane_hz": 209.6,
+   "debit_articulation_syl_s": 4.86,
+   "ressemblance_timbre": 0.9583,
+   "f0_mediane_hz": 253.8,
    "phrases": [
     {
-     "texte": "On commande.",
+     "texte": "C'est pour commander.",
      "type": "declarative",
-     "niveau_final_st": -2.69,
-     "pente_finale_st": -0.27,
-     "montee_finale_st": -3.98,
+     "niveau_final_st": -4.23,
+     "pente_finale_st": -0.05,
+     "montee_finale_st": -1.96,
      "conforme": true
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s978ab586": {
    "texte": "Écoutez la phrase.",
@@ -3761,53 +3712,29 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s053de312": {
-   "texte": "Le client a fini ?",
+  "s33f276e0": {
+   "texte": "Le client veut encore quelque chose ?",
    "voix": "femme_base",
-   "prise": "s053de312__femme_base__g29",
-   "texte_reconnu": "Le client a fini.",
+   "prise": "s33f276e0__femme_base__g83",
+   "texte_reconnu": "Le client veut encore quelque chose ?",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.0,
-   "ressemblance_timbre": 0.9594,
-   "f0_mediane_hz": 275.0,
+   "debit_articulation_syl_s": 4.91,
+   "ressemblance_timbre": 0.9787,
+   "f0_mediane_hz": 272.1,
    "phrases": [
     {
-     "texte": "Le client a fini?",
+     "texte": "Le client veut encore quelque chose?",
      "type": "q_totale",
-     "niveau_final_st": -2.35,
-     "pente_finale_st": 4.08,
-     "montee_finale_st": -2.35,
+     "niveau_final_st": 3.57,
+     "pente_finale_st": 3.19,
+     "montee_finale_st": 4.04,
      "conforme": true
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
-  },
-  "sda4e46dd": {
-   "texte": "Ou il veut encore quelque chose ?",
-   "voix": "femme_base",
-   "prise": "sda4e46dd__femme_base__g29",
-   "texte_reconnu": "ou il veut encore quelque chose.",
-   "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.96,
-   "ressemblance_timbre": 0.9756,
-   "f0_mediane_hz": 266.2,
-   "phrases": [
-    {
-     "texte": "Ou il veut encore quelque chose?",
-     "type": "q_alternative",
-     "niveau_final_st": 5.37,
-     "pente_finale_st": 4.9,
-     "montee_finale_st": 5.92,
-     "conforme": null
-    }
-   ],
-   "frontieres": [],
-   "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s49e5ed20": {
    "texte": "Sélectionnez la bonne réponse.",
@@ -5124,54 +5051,6 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "se8b70e47": {
-   "texte": "Vous verrez la bonne réponse à la fin du parcours.",
-   "voix": "femme_base",
-   "prise": "se8b70e47__femme_base__g11",
-   "texte_reconnu": "Vous verrez la bonne réponse à la fin du parcours.",
-   "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.91,
-   "ressemblance_timbre": 0.9866,
-   "f0_mediane_hz": 248.2,
-   "phrases": [
-    {
-     "texte": "Vous verrez la bonne réponse à la fin du parcours.",
-     "type": "declarative",
-     "niveau_final_st": -4.87,
-     "pente_finale_st": -1.08,
-     "montee_finale_st": -2.98,
-     "conforme": true
-    }
-   ],
-   "frontieres": [],
-   "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
-  },
-  "s71c47f1e": {
-   "texte": "Cliquez sur « Suite ».",
-   "voix": "femme_base",
-   "prise": "s71c47f1e__femme_base__g11",
-   "texte_reconnu": "Cliquez sur Suite.",
-   "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.23,
-   "ressemblance_timbre": 0.9245,
-   "f0_mediane_hz": 248.0,
-   "phrases": [
-    {
-     "texte": "Cliquez sur Suite.",
-     "type": "declarative",
-     "niveau_final_st": -2.14,
-     "pente_finale_st": -2.23,
-     "montee_finale_st": -0.32,
-     "conforme": true
-    }
-   ],
-   "frontieres": [],
-   "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
-  },
   "s130b4a45": {
    "texte": "Écoutez le modèle.",
    "voix": "femme_base",
@@ -5388,60 +5267,60 @@
    "prises_comparees": 7,
    "prises_valides": 7
   },
-  "s3223a2d9": {
-   "texte": "Les deux parlent au serveur.",
+  "s43c828de": {
+   "texte": "Les deux clients parlent au serveur.",
    "voix": "femme_base",
-   "prise": "s3223a2d9__femme_base__g29",
-   "texte_reconnu": "Les deux parlent au serveur.",
+   "prise": "s43c828de__femme_base__g101",
+   "texte_reconnu": "Les deux clients parlent au serveur.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.56,
-   "ressemblance_timbre": 0.9374,
-   "f0_mediane_hz": 238.8,
+   "debit_articulation_syl_s": 4.68,
+   "ressemblance_timbre": 0.9872,
+   "f0_mediane_hz": 229.6,
    "phrases": [
     {
-     "texte": "Les deux parlent au serveur.",
+     "texte": "Les deux clients parlent au serveur.",
      "type": "declarative",
-     "niveau_final_st": -6.15,
-     "pente_finale_st": -2.44,
-     "montee_finale_st": -3.23,
+     "niveau_final_st": -4.91,
+     "pente_finale_st": -0.75,
+     "montee_finale_st": -0.99,
      "conforme": true,
      "focus": {
       "mots": [
        "deux"
       ],
-      "relief_st": 2.07,
-      "pic_de_la_phrase": false
+      "relief_st": 7.4,
+      "pic_de_la_phrase": true
      }
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
-  "sb20645ed": {
-   "texte": "La femme et l'homme commandent.",
+  "s12a67b42": {
+   "texte": "Le client et la cliente commandent.",
    "voix": "femme_base",
-   "prise": "sb20645ed__femme_base__g47",
-   "texte_reconnu": "La femme et l'homme commandent.",
+   "prise": "s12a67b42__femme_base__g83",
+   "texte_reconnu": "Le client et la cliente commandent.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.3,
-   "ressemblance_timbre": 0.9569,
-   "f0_mediane_hz": 224.3,
+   "debit_articulation_syl_s": 5.14,
+   "ressemblance_timbre": 0.9618,
+   "f0_mediane_hz": 237.2,
    "phrases": [
     {
-     "texte": "La femme et l'homme commandent.",
+     "texte": "Le client et la cliente commandent.",
      "type": "declarative",
-     "niveau_final_st": -3.77,
-     "pente_finale_st": -1.42,
-     "montee_finale_st": -5.04,
+     "niveau_final_st": -5.2,
+     "pente_finale_st": -1.94,
+     "montee_finale_st": -3.19,
      "conforme": true
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s357b5f50": {
    "texte": "Dans le film : un café noir, un café long, un jus d'orange, un croissant.",
@@ -5633,29 +5512,38 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "sa4abd7ea": {
-   "texte": "Le jus d'orange est pour l'homme.",
+  "se9803b70": {
+   "texte": "Le jus d'orange est pour le client.",
    "voix": "femme_base",
-   "prise": "sa4abd7ea__femme_base__g11",
-   "texte_reconnu": "Le jus d'orange est pour l'homme.",
+   "prise": "se9803b70__femme_base__g47",
+   "texte_reconnu": "Le jus d'orange est pour le client.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.48,
-   "ressemblance_timbre": 0.9636,
-   "f0_mediane_hz": 213.3,
+   "debit_articulation_syl_s": 5.27,
+   "ressemblance_timbre": 0.9635,
+   "f0_mediane_hz": 233.0,
    "phrases": [
     {
-     "texte": "Le jus d'orange est pour l'homme.",
+     "texte": "Le jus d'orange est pour le client.",
      "type": "declarative",
-     "niveau_final_st": -1.64,
-     "pente_finale_st": -4.41,
-     "montee_finale_st": -1.25,
-     "conforme": true
+     "niveau_final_st": null,
+     "pente_finale_st": null,
+     "montee_finale_st": null,
+     "conforme": null,
+     "focus": {
+      "mots": [
+       "client"
+      ],
+      "relief_st": -1.81,
+      "pic_de_la_phrase": false
+     }
     }
    ],
    "frontieres": [],
-   "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "defauts_restants": [
+    "mot important sans relief : « client »"
+   ],
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s12bbad31": {
    "texte": "Qui prend le croissant ?",
@@ -5681,38 +5569,38 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s44e6994a": {
-   "texte": "Le croissant est pour la femme.",
+  "sc673265c": {
+   "texte": "Le croissant est pour la cliente.",
    "voix": "femme_base",
-   "prise": "s44e6994a__femme_base__g47",
-   "texte_reconnu": "Le croissant est pour la femme.",
+   "prise": "sc673265c__femme_base__g101",
+   "texte_reconnu": "Le croissant est pour la cliente.",
    "ecart_sons": 0.0,
    "debit_articulation_syl_s": 4.81,
-   "ressemblance_timbre": 0.9815,
-   "f0_mediane_hz": 234.8,
+   "ressemblance_timbre": 0.9846,
+   "f0_mediane_hz": 230.4,
    "phrases": [
     {
-     "texte": "Le croissant est pour la femme.",
+     "texte": "Le croissant est pour la cliente.",
      "type": "declarative",
-     "niveau_final_st": -5.42,
-     "pente_finale_st": -2.93,
-     "montee_finale_st": -4.44,
+     "niveau_final_st": -4.49,
+     "pente_finale_st": -1.94,
+     "montee_finale_st": -4.07,
      "conforme": true,
      "focus": {
       "mots": [
-       "femme"
+       "cliente"
       ],
-      "relief_st": -5.21,
+      "relief_st": -0.58,
       "pic_de_la_phrase": false
      }
     }
    ],
    "frontieres": [],
    "defauts_restants": [
-    "mot important sans relief : « femme »"
+    "mot important sans relief : « cliente »"
    ],
-   "prises_comparees": 7,
-   "prises_valides": 7
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s57f91090": {
    "texte": "À la fin, ils demandent l'addition : ils veulent payer.",
@@ -5763,22 +5651,22 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s6b71366e": {
-   "texte": "Ici, la femme commande.",
+  "sd73e2df8": {
+   "texte": "Ici, la cliente commande.",
    "voix": "femme_base",
-   "prise": "s6b71366e__femme_base__g47",
-   "texte_reconnu": "Ici, la femme commande.",
+   "prise": "sd73e2df8__femme_base__g47",
+   "texte_reconnu": "Ici, la cliente commande.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.27,
-   "ressemblance_timbre": 0.9737,
-   "f0_mediane_hz": 246.6,
+   "debit_articulation_syl_s": 4.73,
+   "ressemblance_timbre": 0.9782,
+   "f0_mediane_hz": 249.8,
    "phrases": [
     {
-     "texte": "Ici, la femme commande.",
+     "texte": "Ici, la cliente commande.",
      "type": "declarative",
-     "niveau_final_st": -6.2,
-     "pente_finale_st": 0.07,
-     "montee_finale_st": -3.55,
+     "niveau_final_st": -6.05,
+     "pente_finale_st": -0.38,
+     "montee_finale_st": -3.01,
      "conforme": true
     }
    ],
@@ -5787,18 +5675,18 @@
      "apres": "Ici",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.398,
+     "pause_s": 0.129,
      "allongement": null,
-     "niveau_st": 5.06,
-     "pente_st": 7.22,
-     "montee_st": 3.96,
+     "niveau_st": 4.97,
+     "pente_st": 5.27,
+     "montee_st": 3.55,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "sab50fb3d": {
    "texte": "Elle demande une boisson : un café noir.",
@@ -5900,42 +5788,127 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "sdf268210": {
-   "texte": "Le client répond oui : c'est fini.",
+  "sf71980b7": {
+   "texte": "Ça veut dire : vous voulez autre chose ?",
    "voix": "femme_base",
-   "prise": "sdf268210__femme_base__g47",
-   "texte_reconnu": "Le client répond « oui, c'est fini ».",
+   "prise": "sf71980b7__femme_base__g47",
+   "texte_reconnu": "Ça veut dire « Vous voulez autre chose ? »",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.31,
-   "ressemblance_timbre": 0.9769,
-   "f0_mediane_hz": 217.9,
+   "debit_articulation_syl_s": 4.69,
+   "ressemblance_timbre": 0.9601,
+   "f0_mediane_hz": 271.1,
    "phrases": [
     {
-     "texte": "Le client répond oui: c'est fini.",
-     "type": "declarative",
-     "niveau_final_st": -3.29,
-     "pente_finale_st": -0.73,
-     "montee_finale_st": -2.23,
+     "texte": "Ça veut dire: vous voulez autre chose?",
+     "type": "q_totale",
+     "niveau_final_st": 3.42,
+     "pente_finale_st": 3.62,
+     "montee_finale_st": 1.18,
      "conforme": true
     }
    ],
    "frontieres": [
     {
-     "apres": "oui",
+     "apres": "dire",
      "ponct": ":",
      "type": "deux_points",
-     "pause_s": 0.408,
+     "pause_s": 0.393,
      "allongement": null,
-     "niveau_st": 3.23,
-     "pente_st": 0.06,
-     "montee_st": -0.6,
+     "niveau_st": -1.98,
+     "pente_st": 5.0,
+     "montee_st": 2.69,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 5
+  },
+  "s172158cf": {
+   "texte": "Le client répond : « Oui, merci, c'est tout. »",
+   "voix": "femme_base",
+   "prise": "s172158cf__femme_base__g300",
+   "texte_reconnu": "Le client répond « Oui, merci, c'est tout ».",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 4.07,
+   "ressemblance_timbre": 0.9795,
+   "f0_mediane_hz": 216.8,
+   "phrases": [
+    {
+     "texte": "Le client répond: Oui, merci, c'est tout.",
+     "type": "declarative",
+     "niveau_final_st": -1.25,
+     "pente_finale_st": -3.91,
+     "montee_finale_st": -1.72,
+     "conforme": true
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "répond",
+     "ponct": ":",
+     "type": "deux_points",
+     "pause_s": 0.647,
+     "allongement": null,
+     "niveau_st": -0.29,
+     "pente_st": 4.64,
+     "montee_st": 0.99,
+     "marquee": true,
+     "continuation": true
+    },
+    {
+     "apres": "Oui",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.373,
+     "allongement": null,
+     "niveau_st": 3.12,
+     "pente_st": 5.71,
+     "montee_st": 3.41,
+     "marquee": true,
+     "continuation": true
+    },
+    {
+     "apres": "merci",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.461,
+     "allongement": null,
+     "niveau_st": 0.14,
+     "pente_st": 5.5,
+     "montee_st": -1.96,
+     "marquee": true,
+     "continuation": true
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 10,
+   "prises_valides": 10
+  },
+  "sc707316e": {
+   "texte": "C'est la fin de la commande.",
+   "voix": "femme_base",
+   "prise": "sc707316e__femme_base__g137",
+   "texte_reconnu": "C'est la fin de la commande.",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 5.56,
+   "ressemblance_timbre": 0.9703,
+   "f0_mediane_hz": 249.1,
+   "phrases": [
+    {
+     "texte": "C'est la fin de la commande.",
+     "type": "declarative",
+     "niveau_final_st": -5.33,
+     "pente_finale_st": -0.91,
+     "montee_finale_st": -5.99,
+     "conforme": true
+    }
+   ],
+   "frontieres": [],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s37476cdb": {
    "texte": "Ici, la personne veut payer.",
@@ -6491,59 +6464,22 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s8718d4bf": {
-   "texte": "Le serveur demande : vous avez fini ?",
+  "s0aa48570": {
+   "texte": "La cliente répond : « Oui, merci, c'est tout. »",
    "voix": "femme_base",
-   "prise": "s8718d4bf__femme_base__g11",
-   "texte_reconnu": "Le serveur demande, vous avez fini ?",
+   "prise": "s0aa48570__femme_base__g11",
+   "texte_reconnu": "La cliente répond « Oui, merci, c'est tout ».",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.15,
-   "ressemblance_timbre": 0.9725,
-   "f0_mediane_hz": 224.2,
+   "debit_articulation_syl_s": 4.1,
+   "ressemblance_timbre": 0.9842,
+   "f0_mediane_hz": 220.4,
    "phrases": [
     {
-     "texte": "Le serveur demande: vous avez fini?",
-     "type": "q_totale",
-     "niveau_final_st": 6.52,
-     "pente_finale_st": 6.84,
-     "montee_finale_st": 5.93,
-     "conforme": true
-    }
-   ],
-   "frontieres": [
-    {
-     "apres": "demande",
-     "ponct": ":",
-     "type": "deux_points",
-     "pause_s": 0.124,
-     "allongement": null,
-     "niveau_st": 1.81,
-     "pente_st": 5.07,
-     "montee_st": 3.05,
-     "marquee": true,
-     "continuation": true
-    }
-   ],
-   "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
-  },
-  "sf2077b7f": {
-   "texte": "La cliente répond : oui, c'est tout.",
-   "voix": "femme_base",
-   "prise": "sf2077b7f__femme_base__g47",
-   "texte_reconnu": "La cliente répond oui, c'est tout.",
-   "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.95,
-   "ressemblance_timbre": 0.9704,
-   "f0_mediane_hz": 241.5,
-   "phrases": [
-    {
-     "texte": "La cliente répond: oui, c'est tout.",
+     "texte": "La cliente répond: Oui, merci, c'est tout.",
      "type": "declarative",
-     "niveau_final_st": -1.05,
-     "pente_finale_st": -0.9,
-     "montee_finale_st": -2.02,
+     "niveau_final_st": -2.2,
+     "pente_finale_st": -2.06,
+     "montee_finale_st": -3.14,
      "conforme": true
     }
    ],
@@ -6552,55 +6488,67 @@
      "apres": "répond",
      "ponct": ":",
      "type": "deux_points",
-     "pause_s": 0.065,
-     "allongement": 1.38,
-     "niveau_st": 1.26,
-     "pente_st": -3.74,
-     "montee_st": 2.35,
+     "pause_s": 0.239,
+     "allongement": null,
+     "niveau_st": -0.02,
+     "pente_st": 6.69,
+     "montee_st": 0.4,
      "marquee": true,
      "continuation": true
     },
     {
-     "apres": "oui",
+     "apres": "Oui",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.497,
+     "pause_s": 0.104,
      "allongement": null,
-     "niveau_st": -0.97,
-     "pente_st": 0.31,
-     "montee_st": -2.23,
+     "niveau_st": 0.89,
+     "pente_st": 4.19,
+     "montee_st": 0.91,
      "marquee": true,
-     "continuation": false
+     "continuation": true
+    },
+    {
+     "apres": "merci",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.198,
+     "allongement": null,
+     "niveau_st": 0.54,
+     "pente_st": 4.31,
+     "montee_st": 0.84,
+     "marquee": true,
+     "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
-  "s902c597e": {
-   "texte": "« C'est tout ? » : on répond « oui ».",
+  "s757efd6b": {
+   "texte": "« C'est tout ? » : vous répondez « oui ».",
    "voix": "femme_base",
-   "prise": "s902c597e__femme_base__g11",
-   "texte_reconnu": "C'est tout ? On répond oui.",
+   "prise": "s757efd6b__femme_base__g11",
+   "texte_reconnu": "C'est tout ? Vous répondez oui.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.44,
-   "ressemblance_timbre": 0.9541,
-   "f0_mediane_hz": 234.0,
+   "debit_articulation_syl_s": 4.42,
+   "ressemblance_timbre": 0.9339,
+   "f0_mediane_hz": 238.8,
    "phrases": [
     {
      "texte": "C'est tout?:",
      "type": "q_totale",
-     "niveau_final_st": 5.58,
-     "pente_finale_st": 3.83,
-     "montee_finale_st": 5.31,
+     "niveau_final_st": 4.61,
+     "pente_finale_st": -5.71,
+     "montee_finale_st": 4.44,
      "conforme": true
     },
     {
-     "texte": "on répond oui.",
+     "texte": "vous répondez oui.",
      "type": "declarative",
-     "niveau_final_st": -3.39,
-     "pente_finale_st": -2.53,
-     "montee_finale_st": -3.88,
+     "niveau_final_st": -1.33,
+     "pente_finale_st": -2.13,
+     "montee_finale_st": -3.6,
      "conforme": true
     }
    ],
@@ -6609,43 +6557,43 @@
      "apres": "tout",
      "ponct": "?:",
      "type": "deux_points",
-     "pause_s": 0.629,
+     "pause_s": 0.933,
      "allongement": null,
-     "niveau_st": 5.58,
-     "pente_st": 3.83,
-     "montee_st": 5.31,
+     "niveau_st": 4.61,
+     "pente_st": -5.71,
+     "montee_st": 4.44,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
-  "safabc1a4": {
-   "texte": "« Autre chose ? » : on répond « non ».",
+  "s2e4a3b1e": {
+   "texte": "« Autre chose ? » : vous répondez « non ».",
    "voix": "femme_base",
-   "prise": "safabc1a4__femme_base__g29",
-   "texte_reconnu": "Autre chose, on répond non.",
+   "prise": "s2e4a3b1e__femme_base__g137",
+   "texte_reconnu": "Autre chose, vous répondez non.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 3.77,
-   "ressemblance_timbre": 0.9567,
-   "f0_mediane_hz": 267.6,
+   "debit_articulation_syl_s": 4.09,
+   "ressemblance_timbre": 0.9814,
+   "f0_mediane_hz": 235.9,
    "phrases": [
     {
      "texte": "Autre chose?:",
      "type": "q_totale",
-     "niveau_final_st": 5.47,
-     "pente_finale_st": 4.98,
-     "montee_finale_st": 2.93,
+     "niveau_final_st": 5.19,
+     "pente_finale_st": -2.57,
+     "montee_finale_st": 5.67,
      "conforme": true
     },
     {
-     "texte": "on répond non.",
+     "texte": "vous répondez non.",
      "type": "declarative",
-     "niveau_final_st": -5.86,
-     "pente_finale_st": -1.23,
-     "montee_finale_st": -4.74,
+     "niveau_final_st": -4.27,
+     "pente_finale_st": -5.15,
+     "montee_finale_st": -5.97,
      "conforme": true
     }
    ],
@@ -6654,35 +6602,35 @@
      "apres": "chose",
      "ponct": "?:",
      "type": "deux_points",
-     "pause_s": 0.652,
+     "pause_s": 0.395,
      "allongement": null,
-     "niveau_st": 5.47,
-     "pente_st": 4.98,
-     "montee_st": 2.93,
+     "niveau_st": 5.19,
+     "pente_st": -2.57,
+     "montee_st": 5.67,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
-  "s9cd67b13": {
-   "texte": "Les deux réponses veulent dire : j'ai fini.",
+  "sf1ac95df": {
+   "texte": "Les deux réponses veulent dire : je ne veux rien d'autre.",
    "voix": "femme_base",
-   "prise": "s9cd67b13__femme_base__g11",
-   "texte_reconnu": "Les deux réponses veulent dire « j'ai fini ».",
+   "prise": "sf1ac95df__femme_base__g29",
+   "texte_reconnu": "Les deux réponses veulent dire « je ne veux rien d'autre ».",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.62,
-   "ressemblance_timbre": 0.9391,
-   "f0_mediane_hz": 236.4,
+   "debit_articulation_syl_s": 4.65,
+   "ressemblance_timbre": 0.9787,
+   "f0_mediane_hz": 223.7,
    "phrases": [
     {
-     "texte": "Les deux réponses veulent dire: j'ai fini.",
+     "texte": "Les deux réponses veulent dire: je ne veux rien d'autre.",
      "type": "declarative",
-     "niveau_final_st": -3.48,
-     "pente_finale_st": -1.15,
-     "montee_finale_st": -3.42,
+     "niveau_final_st": -2.43,
+     "pente_finale_st": -0.98,
+     "montee_finale_st": -1.53,
      "conforme": true
     }
    ],
@@ -6691,18 +6639,18 @@
      "apres": "dire",
      "ponct": ":",
      "type": "deux_points",
-     "pause_s": 0.509,
+     "pause_s": 0.323,
      "allongement": null,
-     "niveau_st": -0.37,
-     "pente_st": 3.46,
-     "montee_st": 2.1,
+     "niveau_st": 4.1,
+     "pente_st": 3.49,
+     "montee_st": 4.78,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s20f3943b": {
    "texte": "Le serveur dit : « Carte ou espèces ? »",
@@ -6954,29 +6902,29 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "sf14e3521": {
-   "texte": "Vous avez fini ?",
+  "s69c9fa6a": {
+   "texte": "Vous ne voulez rien d'autre ?",
    "voix": "femme_base",
-   "prise": "sf14e3521__femme_base__g47",
-   "texte_reconnu": "Vous avez fini ?",
+   "prise": "s69c9fa6a__femme_base__g29",
+   "texte_reconnu": "Vous ne voulez rien d'autre ?",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 6.43,
-   "ressemblance_timbre": 0.9557,
-   "f0_mediane_hz": 248.7,
+   "debit_articulation_syl_s": 4.77,
+   "ressemblance_timbre": 0.9544,
+   "f0_mediane_hz": 243.4,
    "phrases": [
     {
-     "texte": "Vous avez fini?",
+     "texte": "Vous ne voulez rien d'autre?",
      "type": "q_totale",
-     "niveau_final_st": 7.32,
-     "pente_finale_st": 7.15,
-     "montee_finale_st": 6.18,
+     "niveau_final_st": 7.18,
+     "pente_finale_st": -6.38,
+     "montee_finale_st": 5.6,
      "conforme": true
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s27704566": {
    "texte": "Dites : « Non merci, c'est tout. »",
@@ -8547,6 +8495,94 @@
    "defauts_restants": [],
    "prises_comparees": 3,
    "prises_valides": 3
+  },
+  "s728ae2d4": {
+   "texte": "La cliente dit « non » : pas de café.",
+   "voix": "femme_base",
+   "prise": "s728ae2d4__femme_base__g11",
+   "texte_reconnu": "La cliente dit non, pas de café.",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 4.77,
+   "ressemblance_timbre": 0.9693,
+   "f0_mediane_hz": 229.9,
+   "phrases": [
+    {
+     "texte": "La cliente dit non: pas de café.",
+     "type": "declarative",
+     "niveau_final_st": -3.96,
+     "pente_finale_st": -1.44,
+     "montee_finale_st": -1.09,
+     "conforme": true,
+     "focus": {
+      "mots": [
+       "non"
+      ],
+      "relief_st": 1.33,
+      "pic_de_la_phrase": false
+     }
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "non",
+     "ponct": ":",
+     "type": "deux_points",
+     "pause_s": 0.415,
+     "allongement": null,
+     "niveau_st": 0.24,
+     "pente_st": -3.07,
+     "montee_st": -2.49,
+     "marquee": true,
+     "continuation": false
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 6
+  },
+  "s1e76a7ef": {
+   "texte": "À la fin, elle veut deux thés.",
+   "voix": "femme_base",
+   "prise": "s1e76a7ef__femme_base__g47",
+   "texte_reconnu": "À la fin, elle veut deux T.",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 4.57,
+   "ressemblance_timbre": 0.9586,
+   "f0_mediane_hz": 223.4,
+   "phrases": [
+    {
+     "texte": "À la fin, elle veut deux thés.",
+     "type": "declarative",
+     "niveau_final_st": -3.0,
+     "pente_finale_st": -2.47,
+     "montee_finale_st": -5.08,
+     "conforme": true,
+     "focus": {
+      "mots": [
+       "deux"
+      ],
+      "relief_st": 3.59,
+      "pic_de_la_phrase": true
+     }
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "fin",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.567,
+     "allongement": null,
+     "niveau_st": 1.3,
+     "pente_st": 5.64,
+     "montee_st": 3.32,
+     "marquee": true,
+     "continuation": true
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 2
   }
  }
 }
