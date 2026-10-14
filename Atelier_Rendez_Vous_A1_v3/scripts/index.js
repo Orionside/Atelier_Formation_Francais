@@ -22,7 +22,7 @@
 var C = window.CONTENU, S = window.Socle, J = window.JOURNAL, PICTOS = window.PICTOS || {};
 if(!C || !S || !J){ if(window.console) console.error("Atelier : contenu.js, socle.js ou journal.js manque."); return; }
 
-var VERSION = "20261013-v3-voix-a1b";                /* même valeur que le ?v= de index.html */
+var VERSION = "20261014-v3-refonte";                /* même valeur que le ?v= de index.html */
 var CLE_STOCKAGE = "rendez-vous-a1-v3";     /* clé de stockage de la v3 (la v2 garde la sienne) */
 var VUE_FORMATEUR = false;                 /* ce support est exclusivement destiné à l'apprenant */
 var MANQUES = [];                            /* libellés d'interface introuvables (contrôlé par les tests) */
@@ -886,12 +886,13 @@ function choixQuiParle(b, ctx, n){
   var restantes = ordre.length, ret = S.zoneRetour();
   ordre.forEach(function(k, rang){
     var s = b.sequence[k], bloc = el("div", "qui-phrase");
+    var lib = nu("phrase_" + (rang + 1));                /* numéro selon l'ordre affiché (l'ordre des phrases est tiré au sort) */
     var tete = el("div", "row");
-    tete.appendChild(el("strong", null, nu(s.libelle)));
-    tete.appendChild(S.boutonSon(s.son, nu(s.libelle), {texte: sonTexte(s.son), sansLent: true, etiquette: etiquette("cree"),
+    tete.appendChild(el("strong", null, lib));
+    tete.appendChild(S.boutonSon(s.son, lib, {texte: sonTexte(s.son), sansLent: true, etiquette: etiquette("cree"),
       surEntendu: function(){ ctx.note("ecoute", s.son); }, surEchec: function(){ ctx.note("son_absent"); }}));
     bloc.appendChild(tete);
-    var v = vignettes(b.choix, nu(s.libelle), false, {nsp: true});                /* I5 */
+    var v = vignettes(b.choix, lib, false, {nsp: true});                /* I5 */
     function repondu(){
       if(--restantes === 0){
         n.appendChild(noeudDialogue((b.texte_apres || []).map(function(r){ return Object.assign({}, r, {couleur: r.couleur || (/serveur/i.test(r.role) ? "personnel" : "client")}); })));
@@ -1823,8 +1824,8 @@ function ligneCours(item, ordre){
   function suffixe(juste, attendue){ return juste ? "C'est la bonne réponse." : "La bonne réponse : « " + attendue + " »."; }
   if(item === "S1-C1"){
     var r = derniere("S1", "S1-C1", "p1"); if(!r) return "Le film : " + ABS;
-    var mot = W[r.valeur === "addition" ? "payer" : "commander"], att = W.payer;
-    return "Le film : que font les deux personnes ? J'ai choisi « " + mot + " ». " + suffixe(r.juste, att);
+    var mot = r.valeur === "addition" ? "l'addition" : "un autre café";
+    return "Le film, à la fin : ils demandent quoi ? J'ai choisi « " + mot + " ». " + suffixe(r.juste, "l'addition");
   }
   var bE = trouverBloc("s2", item);
   if(item === "S2-C4"){
@@ -1838,9 +1839,9 @@ function ligneCours(item, ordre){
   }
   var r2 = derniere("S2", item, "p1") || derniere("S2", item, "apres_images") || derniere("S2", item, "apres_texte");
   var nph = ["S2-C1", "S2-C2", "S2-C3"].indexOf(item) + 1;
-  if(!r2) return "Phrase " + nph + " du film : " + ABS;
-  if(r2.valeur === "nsp") return "Phrase " + nph + " du film : j'ai choisi « je ne sais pas ». La bonne réponse : « " + W[bE.bonne.valeur] + " ».";
-  return "Phrase " + nph + " du film : j'ai choisi « " + W[r2.valeur] + " ». " + suffixe(r2.juste, W[bE.bonne.valeur]);
+  if(!r2) return "Moment " + nph + " du film : " + ABS;
+  if(r2.valeur === "nsp") return "Moment " + nph + " du film : j'ai choisi « je ne sais pas ». La bonne réponse : « " + W[bE.bonne.valeur] + " ».";
+  return "Moment " + nph + " du film : j'ai choisi « " + W[r2.valeur] + " ». " + suffixe(r2.juste, W[bE.bonne.valeur]);
 }
 function compter(ev){ return E().journal.filter(function(x){ return x.ev === ev; }).length; }
 function nbReponses(){

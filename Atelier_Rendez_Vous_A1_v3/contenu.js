@@ -1,12 +1,13 @@
 /*
  * Atelier « Au café : comprendre, commander et payer » (Rendez-vous A1 v3) — contenu.js
  * Données seulement : TOUT le texte de l'atelier, aucune logique. JSON strict après le signe égal.
+ * Refondu le 2026-10-14 (structure de S2, S3, S4, S5, bilan et rappels ; voix d'homme = voix « homme 2 » du formateur ; voir LISEZMOI.md).
  * Révisé le 2026-10-07 (v3, retour du formateur R1 à R21 : specs/C0_RETOUR_UTILISATEUR_V3.md) à partir de A1 (scénario) corrigé par B0, A2, A3, A4 (ordre de priorité de B0).
  * Statut : dialogues créés, voix de synthèse non validées à l'écoute ; aides ES/IT non relues par un locuteur natif ;
  * aucun résultat d'apprenant. Schéma des blocs : B1_schema_final.md. Contrôle : node B1_verifier_contenu.mjs
  */
 window.CONTENU = {
-  "version": "20261013-v3-voix-a1b",
+  "version": "20261014-v3-refonte",
   "meta": {
     "id": "rendez-vous-a1-v3",
     "titre": "Au café",
@@ -50,7 +51,7 @@ window.CONTENU = {
       "cle": "rendez-vous-a1-v3",
       "studio": "rendez-vous-a1-v3-studio"
     },
-    "statut": "v3 : dialogues créés (voix de synthèse non validées à l'écoute). Aucun résultat d'apprenant.",
+    "statut": "v3 refondue le 14/10/2026 : structure corrigée, voix d'homme = voix de référence « homme 2 » du formateur, voix féminine de base conservée avec une prosodie choisie selon la ponctuation et le sens. Voix de synthèse non validées à l'écoute ; aucun résultat d'apprenant.",
     "usage": "Pratique autonome sans présence du formateur."
   },
   "video": {
@@ -943,14 +944,6 @@ window.CONTENU = {
       "statut": "non_valide_a_l_ecoute",
       "ecran": "ACCUEIL"
     },
-    "c-accueil-choix": {
-      "type": "consigne",
-      "voix": "consigne",
-      "texte": "Je travaille comment ? Mon niveau aujourd'hui. Aide dans ma langue. Vous essayez d'abord en français. L'aide vient après.",
-      "source": "N",
-      "statut": "non_valide_a_l_ecoute",
-      "ecran": "ACCUEIL"
-    },
     "c-accueil-micro": {
       "type": "consigne",
       "voix": "consigne",
@@ -978,7 +971,7 @@ window.CONTENU = {
     "c-e-moment": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Qu'est-ce que la personne fait ? Sélectionnez l'image.",
+      "texte": "On commande, on finit ou on paie ? Sélectionnez l'image.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1026,7 +1019,7 @@ window.CONTENU = {
     "c-s2-debut": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Vous allez écouter quatre petits moments. Écoutez la phrase. Sélectionnez l'image qui correspond. La personne commande, finit la commande ou paie. Exemple : « Un thé, s'il vous plaît. » La personne commande.",
+      "texte": "Vous allez écouter quatre petits moments au café. Écoutez. Sélectionnez l'image qui correspond : commander, finir la commande ou payer. Exemple : « Un thé, s'il vous plaît. » On commande.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1082,7 +1075,7 @@ window.CONTENU = {
     "c-s3-lisez": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Lisez la phrase. Écoutez la phrase. Dites la réponse à voix haute.",
+      "texte": "Lisez les deux phrases. Écoutez-les. Dites la réponse à voix haute.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -1114,7 +1107,7 @@ window.CONTENU = {
     "c-s3-sans-texte": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Maintenant, sans le texte et sans image. Écoutez le serveur. Répondez à voix haute.",
+      "texte": "Maintenant, sans le texte et sans image. Le serveur peut changer ses mots. Écoutez le serveur. Répondez à voix haute.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -1151,14 +1144,6 @@ window.CONTENU = {
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S4"
     },
-    "c-s4-geste": {
-      "type": "consigne",
-      "voix": "consigne",
-      "texte": "Si vous voulez, redites votre commande à voix haute. Faites un geste de la main. Un seul geste pour toute la phrase.",
-      "source": "N",
-      "statut": "non_valide_a_l_ecoute",
-      "ecran": "S4"
-    },
     "c-s5-pardon": {
       "type": "consigne",
       "voix": "consigne",
@@ -1170,7 +1155,7 @@ window.CONTENU = {
     "c-s5-conv1": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Conversation 1. Vous voulez un café. Le serveur pose une question. Écoutez bien. Répondez à voix haute.",
+      "texte": "Conversation 1. Vous voulez un café. Le serveur vous parle. Écoutez bien. Répondez à voix haute.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S5"
@@ -1178,7 +1163,7 @@ window.CONTENU = {
     "c-s5-conv2": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Conversation 2. Regardez vos deux images. Ne les montrez pas au serveur. Commandez. Puis répondez à voix haute.",
+      "texte": "Conversation 2. Regardez vos deux images : votre boisson et votre paiement. Écoutez le serveur. Répondez à voix haute.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S5"
@@ -1218,7 +1203,7 @@ window.CONTENU = {
     "c-bilan": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Ce que j'ai fait aujourd'hui. Ce sont deux dialogues différents. Les voix changent. La boisson change. Ce n'est pas un examen. Il n'y a pas de note.",
+      "texte": "Ce que j'ai fait aujourd'hui. Ce n'est pas un examen. Il n'y a pas de note. Au début et à la fin, les dialogues sont différents : les voix et la boisson changent.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S6"
@@ -1266,7 +1251,7 @@ window.CONTENU = {
     "c-b-t3": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "À la fin, le client prend quoi ? Sélectionnez la bonne réponse.",
+      "texte": "À la fin, la cliente prend quoi ? Sélectionnez la bonne réponse.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "BANQUE"
@@ -1274,7 +1259,7 @@ window.CONTENU = {
     "c-b-t4": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Le client veut combien de thés ? Dites le nombre à voix haute. Puis sélectionnez le bon nombre.",
+      "texte": "La cliente veut combien de thés ? Dites le nombre à voix haute. Puis sélectionnez le bon nombre.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "BANQUE"
@@ -1509,8 +1494,8 @@ window.CONTENU = {
       "repliques": [
         {
           "id": "b-t3-t1",
-          "role": "client",
-          "voix": "client-4",
+          "role": "cliente",
+          "voix": "cliente-2",
           "texte": "Un café, s'il vous plaît."
         },
         {
@@ -1521,8 +1506,8 @@ window.CONTENU = {
         },
         {
           "id": "b-t3-t3",
-          "role": "client",
-          "voix": "client-4",
+          "role": "cliente",
+          "voix": "cliente-2",
           "texte": "Non merci, c'est tout."
         }
       ]
@@ -1536,8 +1521,8 @@ window.CONTENU = {
       "repliques": [
         {
           "id": "b-t4-t1",
-          "role": "client",
-          "voix": "client-4",
+          "role": "cliente",
+          "voix": "cliente-2",
           "texte": "Pour moi, un thé."
         },
         {
@@ -1548,8 +1533,8 @@ window.CONTENU = {
         },
         {
           "id": "b-t4-t3",
-          "role": "client",
-          "voix": "client-4",
+          "role": "cliente",
+          "voix": "cliente-2",
           "texte": "Non, un thé."
         }
       ]
@@ -1563,8 +1548,8 @@ window.CONTENU = {
       "repliques": [
         {
           "id": "b-t4-un-seul-t1",
-          "role": "client",
-          "voix": "client-4",
+          "role": "cliente",
+          "voix": "cliente-2",
           "texte": "Pour moi, un thé."
         },
         {
@@ -1575,8 +1560,8 @@ window.CONTENU = {
         },
         {
           "id": "b-t4-un-seul-t3",
-          "role": "client",
-          "voix": "client-4",
+          "role": "cliente",
+          "voix": "cliente-2",
           "texte": "Non, un seul, s'il vous plaît."
         }
       ]
@@ -1592,7 +1577,7 @@ window.CONTENU = {
     "r-s0-2": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Merci. Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Étape suivante ».",
+      "texte": "Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Étape suivante ».",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S0"
@@ -1640,7 +1625,7 @@ window.CONTENU = {
     "r-apres-1": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Deux dialogues nouveaux, avec des voix nouvelles.",
+      "texte": "Deux dialogues nouveaux, avec une nouvelle serveuse.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "APRES"
@@ -1969,7 +1954,7 @@ window.CONTENU = {
     "r-s3-7": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« C'est tout ? » → oui. « Autre chose ? » → non. Les deux réponses disent : j'ai fini.",
+      "texte": "« C'est tout ? » : on répond « oui ». « Autre chose ? » : on répond « non ». Les deux réponses veulent dire : j'ai fini.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -2009,7 +1994,7 @@ window.CONTENU = {
     "r-s3-9": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« Autre chose ? » Le serveur demande une autre boisson. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+      "texte": "« Autre chose ? » : le serveur propose encore quelque chose. Vous avez fini ? Dites : « Non merci, c'est tout. »",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -2025,7 +2010,7 @@ window.CONTENU = {
     "r-s3-11": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« Vous désirez ? » Le serveur demande : « Qu'est-ce que vous prenez ? » Vous commandez.",
+      "texte": "« Vous désirez ? », c'est comme « Qu'est-ce que vous prenez ? ». Vous commandez.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
@@ -2145,7 +2130,7 @@ window.CONTENU = {
     "c-apres-bloc-a": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Deux dialogues nouveaux, avec des voix nouvelles.",
+      "texte": "Deux dialogues nouveaux, avec une nouvelle serveuse.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "APRES"
@@ -2185,7 +2170,7 @@ window.CONTENU = {
     "c-apres-phrases-j7": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Un nouveau serveur vous parle. Vous voulez un café. Écoutez le serveur. Répondez à voix haute. Ne regardez pas vos phrases.",
+      "texte": "Le serveur vous parle. Vous voulez un café. Écoutez le serveur. Répondez à voix haute. Ne regardez pas vos phrases.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "APRES"
@@ -2241,7 +2226,7 @@ window.CONTENU = {
     "r-banque-5": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Le serveur propose un croissant. Le client dit non : il prend un café seulement.",
+      "texte": "Le serveur propose un croissant. La cliente dit non : elle prend un café seulement.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "BANQUE"
@@ -2249,7 +2234,7 @@ window.CONTENU = {
     "r-banque-6": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Le serveur demande : « Deux thés ? » Le client dit non : il veut un thé.",
+      "texte": "Le serveur demande : « Deux thés ? » La cliente dit non : elle veut un thé.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "BANQUE"
@@ -2305,7 +2290,7 @@ window.CONTENU = {
     "c-b-t4-images": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Le client veut combien de thés ? Sélectionnez la bonne réponse.",
+      "texte": "La cliente veut combien de thés ? Sélectionnez la bonne réponse.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "BANQUE"
@@ -2313,10 +2298,18 @@ window.CONTENU = {
     "r-s0-5": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "Merci. Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Je commence ».",
+      "texte": "Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Je commence ».",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S0"
+    },
+    "c-s2-ecoute-2": {
+      "type": "consigne",
+      "voix": "consigne",
+      "texte": "Écoutez le serveur et le client. Vous pouvez écouter plusieurs fois.",
+      "source": "N",
+      "statut": "non_valide_a_l_ecoute",
+      "ecran": "S2"
     }
   },
   "interface": {
@@ -2477,7 +2470,7 @@ window.CONTENU = {
       "bloc_2_jours": "Dans 2 jours",
       "bloc_7_jours": "Dans 7 jours",
       "plus_tard": "Plus tard",
-      "deux_dialogues_nouveaux": "Deux dialogues nouveaux, avec des voix nouvelles.",
+      "deux_dialogues_nouveaux": "Deux dialogues nouveaux, avec une nouvelle serveuse.",
       "pas_de_nouveau_dialogue": "Pas de nouveau dialogue aujourd'hui. Revenez dans 5 jours.",
       "merci_revenez_le": "Merci. Revenez le {date}. Vous pouvez fermer cette page.",
       "aller_plus_loin": "Si je veux aller plus loin",
@@ -2789,9 +2782,9 @@ window.CONTENU = {
               "Un café."
             ],
             "comparer": true,
-            "message_final": "Merci. Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Étape suivante ».",
+            "message_final": "Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Étape suivante ».",
             "reessayer": false,
-            "message_final_si_suite": "Merci. Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Je commence »."
+            "message_final_si_suite": "Vous allez apprendre ces phrases aujourd'hui. Cliquez sur « Je commence »."
           },
           "variantes": [
             {
@@ -3228,7 +3221,7 @@ window.CONTENU = {
       "titre": "J'écoute : on commande, on finit ou on paie ?",
       "duree_min": 9,
       "etape": "Étape 3 sur 7",
-      "objectif": "Vous écoutez des phrases courtes. Vous choisissez ce que la personne fait : commander, finir la commande ou payer.",
+      "objectif": "Vous écoutez des moments courts au café. Vous choisissez : on commande, on finit la commande ou on paie.",
       "note_ecran": "Quatre extraits : A, B, C (film, film_formatif) puis D (dialogue créé). Les trois images de moment sont toujours les mêmes, dans le même ordre ; v3 : elles apparaissent à la fenêtre « Je choisis l'image » ; l'écoute est libre (aucune fenêtre « Dites votre idée »).",
       "pas": [
         {
@@ -3236,11 +3229,10 @@ window.CONTENU = {
           "id": "2.0",
           "consigne": "c-s2-debut",
           "lignes": [
-            "Vous allez écouter quatre petits moments.",
-            "1. Écoutez la phrase.",
-            "2. Sélectionnez l'image qui correspond.",
-            "La personne commande, finit la commande ou paie.",
-            "Exemple : « Un thé, s'il vous plaît. » La personne commande."
+            "Vous allez écouter quatre petits moments au café.",
+            "1. Écoutez.",
+            "2. Sélectionnez l'image qui correspond : commander, finir la commande ou payer.",
+            "Exemple : « Un thé, s'il vous plaît. » On commande."
           ],
           "bouton": "suite"
         },
@@ -3272,7 +3264,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "Qu'est-ce que la personne fait ?",
+              "On commande, on finit ou on paie ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3365,10 +3357,10 @@ window.CONTENU = {
           "condition": "film_formatif",
           "support": "film_youtube",
           "texte_visible": "non_controle",
-          "consigne": "c-s2-ecoute",
+          "consigne": "c-s2-ecoute-2",
           "e1": {
             "lignes": [
-              "1. Écoutez la phrase.",
+              "1. Écoutez le serveur et le client.",
               "Vous pouvez écouter plusieurs fois."
             ],
             "bouton": "ecouter"
@@ -3383,7 +3375,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "Qu'est-ce que la personne fait ?",
+              "On commande, on finit ou on paie ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3556,7 +3548,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "Qu'est-ce que la personne fait ?",
+              "On commande, on finit ou on paie ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3674,7 +3666,7 @@ window.CONTENU = {
           "e3": {
             "consigne": "c-e-moment",
             "lignes": [
-              "Qu'est-ce que la personne fait ?",
+              "On commande, on finit ou on paie ?",
               "2. Sélectionnez l'image."
             ],
             "images": [
@@ -3938,7 +3930,7 @@ window.CONTENU = {
           "item": "S3-C1",
           "trace": "s3.c1.sens",
           "consigne": "c-e-moment",
-          "question": "Qu'est-ce que la personne fait ? Sélectionnez l'image.",
+          "question": "On commande, on finit ou on paie ? Sélectionnez l'image.",
           "choix": [
             {
               "image": "img-f-commander",
@@ -3982,8 +3974,8 @@ window.CONTENU = {
             "role": "la cliente"
           },
           "lignes": [
-            "1. Lisez la phrase.",
-            "2. Écoutez la phrase.",
+            "1. Lisez les deux phrases.",
+            "2. Écoutez-les.",
             "3. Dites la réponse à voix haute."
           ],
           "bouton": "je_l_ai_dit",
@@ -4101,7 +4093,7 @@ window.CONTENU = {
           "item": "S3-C2",
           "trace": "s3.c2.sens",
           "consigne": "c-e-moment",
-          "question": "Qu'est-ce que la personne fait ? Sélectionnez l'image.",
+          "question": "On commande, on finit ou on paie ? Sélectionnez l'image.",
           "choix": [
             {
               "image": "img-f-commander",
@@ -4145,8 +4137,8 @@ window.CONTENU = {
             "role": "la cliente"
           },
           "lignes": [
-            "1. Lisez la phrase.",
-            "2. Écoutez la phrase.",
+            "1. Lisez les deux phrases.",
+            "2. Écoutez-les.",
             "3. Dites la réponse à voix haute."
           ],
           "bouton": "je_l_ai_dit",
@@ -4198,7 +4190,7 @@ window.CONTENU = {
                 "texte": "Non merci, c'est tout."
               }
             ],
-            "note": "« C'est tout ? » → oui. « Autre chose ? » → non. Les deux réponses disent : j'ai fini."
+            "note": "« C'est tout ? » : on répond « oui ». « Autre chose ? » : on répond « non ». Les deux réponses veulent dire : j'ai fini."
           },
           "reponses_possibles": {
             "liste": [
@@ -4209,7 +4201,7 @@ window.CONTENU = {
             ],
             "comparer": true
           },
-          "sens_seul": "« Autre chose ? » Le serveur demande une autre boisson. Vous avez fini ? Dites : « Non merci, c'est tout. »",
+          "sens_seul": "« Autre chose ? » : le serveur propose encore quelque chose. Vous avez fini ? Dites : « Non merci, c'est tout. »",
           "retour": {
             "formateur": "celui du formateur : le sens d'abord"
           },
@@ -4256,7 +4248,7 @@ window.CONTENU = {
           "item": "S3-C3",
           "trace": "s3.c3.sens",
           "consigne": "c-e-moment",
-          "question": "Qu'est-ce que la personne fait ? Sélectionnez l'image.",
+          "question": "On commande, on finit ou on paie ? Sélectionnez l'image.",
           "choix": [
             {
               "image": "img-f-commander",
@@ -4306,8 +4298,8 @@ window.CONTENU = {
             "role": "la cliente"
           },
           "lignes": [
-            "1. Lisez la phrase.",
-            "2. Écoutez la phrase.",
+            "1. Lisez les deux phrases.",
+            "2. Écoutez-les.",
             "3. Dites la réponse à voix haute."
           ],
           "bouton": "je_l_ai_dit",
@@ -4421,6 +4413,7 @@ window.CONTENU = {
           "consigne": "c-s3-sans-texte",
           "lignes": [
             "Maintenant, sans le texte et sans image.",
+            "Le serveur peut changer ses mots.",
             "Écoutez le serveur.",
             "Répondez à voix haute."
           ],
@@ -4473,7 +4466,7 @@ window.CONTENU = {
               }
             ]
           },
-          "sens_seul": "« Vous désirez ? » Le serveur demande : « Qu'est-ce que vous prenez ? » Vous commandez.",
+          "sens_seul": "« Vous désirez ? », c'est comme « Qu'est-ce que vous prenez ? ». Vous commandez.",
           "revoir_le_texte": {
             "trace": "s3.ferme.texte_revu"
           },
@@ -4960,46 +4953,6 @@ window.CONTENU = {
               }
             }
           ]
-        },
-        {
-          "type": "dire",
-          "id": "4.5",
-          "trace": "s4.geste",
-          "facultatif": true,
-          "consigne": "c-s4-geste",
-          "lignes": [
-            "Si vous voulez, redites votre commande à voix haute.",
-            "Faites un geste de la main.",
-            "Un seul geste pour toute la phrase."
-          ],
-          "boutons": [
-            "c_est_fait",
-            "je_passe"
-          ],
-          "retour": null,
-          "note_interne": "Aucune promesse (« c'est mieux avec le geste » n'est écrit nulle part). v3 : réponse possible (modèle sonore) comme au pas 4.4.d, selon l'image choisie.",
-          "enregistrement": {
-            "cle": "s4-geste",
-            "secondes": 15,
-            "facultatif": true
-          },
-          "reponse_possible": {
-            "bouton": "voir_une_reponse_possible",
-            "selon_image": {
-              "img-un-the": {
-                "texte": "Un thé, s'il vous plaît.",
-                "son": "cli1-un-the-svp"
-              },
-              "img-un-cafe": {
-                "texte": "Un café, s'il vous plaît.",
-                "son": "cli1-un-cafe-svp"
-              },
-              "img-jus-orange": {
-                "texte": "Un jus d'orange, s'il vous plaît.",
-                "son": "cli1-un-jus-dorange-svp"
-              }
-            }
-          }
         }
       ],
       "carte_formateur": {
@@ -5059,7 +5012,7 @@ window.CONTENU = {
           "consigne": "c-s5-conv1",
           "lignes": [
             "Conversation 1. Vous voulez un café.",
-            "Le serveur pose une question.",
+            "Le serveur vous parle.",
             "Écoutez bien. Répondez à voix haute."
           ],
           "aide_visible": {
@@ -5200,9 +5153,9 @@ window.CONTENU = {
           "numero": 2,
           "consigne": "c-s5-conv2",
           "lignes": [
-            "Conversation 2. Regardez vos deux images.",
-            "Ne les montrez pas au serveur.",
-            "Commandez. Puis répondez à voix haute."
+            "Conversation 2. Regardez vos deux images : votre boisson et votre paiement.",
+            "Écoutez le serveur.",
+            "Répondez à voix haute."
           ],
           "aide_visible": {
             "type": "images_secretes",
@@ -6065,7 +6018,7 @@ window.CONTENU = {
           "duree_texte": "5 à 8 minutes",
           "facultatif": true,
           "lignes": [
-            "Deux dialogues nouveaux, avec des voix nouvelles."
+            "Deux dialogues nouveaux, avec une nouvelle serveuse."
           ],
           "boutons": [
             "je_commence",
@@ -6238,7 +6191,7 @@ window.CONTENU = {
               "consigne": "c-apres-phrases-j7",
               "trace": "j7.rappel",
               "lignes": [
-                "Un nouveau serveur vous parle.",
+                "Le serveur vous parle.",
                 "Vous voulez un café.",
                 "1. Écoutez le serveur.",
                 "2. Répondez à voix haute.",
@@ -7385,13 +7338,13 @@ window.CONTENU = {
         "forme": "T",
         "rang": 3,
         "consigne_question": "c-b-t3",
-        "question": "À la fin, le client prend quoi ?",
+        "question": "À la fin, la cliente prend quoi ?",
         "bonne": "img-un-cafe",
         "valeur_bonne": "un cafe",
         "texte_final": {
           "repliques": [
             {
-              "role": "Le client",
+              "role": "La cliente",
               "texte": "Un café, s'il vous plaît."
             },
             {
@@ -7399,11 +7352,11 @@ window.CONTENU = {
               "texte": "Et un croissant ?"
             },
             {
-              "role": "Le client",
+              "role": "La cliente",
               "texte": "Non merci, c'est tout."
             }
           ],
-          "retour": "Le serveur propose un croissant. Le client dit non : il prend un café seulement."
+          "retour": "Le serveur propose un croissant. La cliente dit non : elle prend un café seulement."
         },
         "calendrier": {
           "forme_A": "7 jours",
@@ -7431,13 +7384,13 @@ window.CONTENU = {
         "forme": "T",
         "rang": 4,
         "consigne_question": "c-b-t4",
-        "question": "Le client veut combien de thés ?",
+        "question": "La cliente veut combien de thés ?",
         "bonne": "img-un-the",
         "valeur_bonne": "un",
         "texte_final": {
           "repliques": [
             {
-              "role": "Le client",
+              "role": "La cliente",
               "texte": "Pour moi, un thé."
             },
             {
@@ -7445,11 +7398,11 @@ window.CONTENU = {
               "texte": "Deux thés ?"
             },
             {
-              "role": "Le client",
+              "role": "La cliente",
               "texte": "Non, un thé."
             }
           ],
-          "retour": "Le serveur demande : « Deux thés ? » Le client dit non : il veut un thé."
+          "retour": "Le serveur demande : « Deux thés ? » La cliente dit non : elle veut un thé."
         },
         "calendrier": {
           "forme_A": "7 jours",
@@ -7480,13 +7433,13 @@ window.CONTENU = {
         "variante_de": "b-t4",
         "condition_usage": "seulement si « un seul » a été vu avec le formateur (palier « Un peu plus »)",
         "consigne_question": "c-b-t4",
-        "question": "Le client veut combien de thés ?",
+        "question": "La cliente veut combien de thés ?",
         "bonne": "img-un-the",
         "valeur_bonne": "un",
         "texte_final": {
           "repliques": [
             {
-              "role": "Le client",
+              "role": "La cliente",
               "texte": "Pour moi, un thé."
             },
             {
@@ -7494,11 +7447,11 @@ window.CONTENU = {
               "texte": "Deux thés ?"
             },
             {
-              "role": "Le client",
+              "role": "La cliente",
               "texte": "Non, un seul, s'il vous plaît."
             }
           ],
-          "retour": "Le serveur demande : « Deux thés ? » Le client dit non : il veut un thé."
+          "retour": "Le serveur demande : « Deux thés ? » La cliente dit non : elle veut un thé."
         },
         "calendrier": {
           "forme_A": "7 jours",
@@ -8842,7 +8795,7 @@ window.CONTENU = {
   },
   "bilan": {
     "titre": "Ce que j'ai fait aujourd'hui",
-    "avertissement": "Ce sont deux dialogues différents. Les voix changent. La boisson change. Ce n'est pas un examen. Il n'y a pas de note.",
+    "avertissement": "Ce n'est pas un examen. Il n'y a pas de note. Au début et à la fin, les dialogues sont différents : les voix et la boisson changent.",
     "blocs": [
       {
         "id": "ecoute",
@@ -8850,7 +8803,7 @@ window.CONTENU = {
         "sections": [
           {
             "id": "debut",
-            "titre": "Au début du cours",
+            "titre": "Au début du parcours",
             "question": "Question : combien de thés ?",
             "item": "S0-C1",
             "dialogue": "s0-dialogue",
@@ -8858,7 +8811,7 @@ window.CONTENU = {
           },
           {
             "id": "fin",
-            "titre": "À la fin du cours",
+            "titre": "À la fin du parcours",
             "question": "Question : combien de cafés ?",
             "item": "S6-C1",
             "dialogue": "s6-dialogue",
@@ -8962,17 +8915,17 @@ window.CONTENU = {
       },
       {
         "id": "cours",
-        "titre": "J'écoute pendant le cours",
+        "titre": "J'écoute pendant le parcours",
         "note_interne": "Une ligne par question, première écoute seulement.",
         "lignes_modeles": [
-          "Le film : que font les deux personnes ? J'ai choisi « {valeur} ». {C'est la bonne réponse. | La bonne réponse : « {attendue} ».}",
-          "Phrase {1|2|3} du film : j'ai choisi « {valeur} ». {C'est la bonne réponse. | La bonne réponse : « {attendue} ».}",
+          "Le film, à la fin : ils demandent quoi ? J'ai choisi « {valeur} ». {C'est la bonne réponse. | La bonne réponse : « l'addition ».}",
+          "Moment {1|2|3} du film : j'ai choisi « {valeur} ». {C'est la bonne réponse. | La bonne réponse : « {attendue} ».}",
           "Carte ou espèces ? À la première écoute : {ligne}. Avec les images : {ligne}."
         ],
         "valeurs_en_mots": {
           "commander": "commander",
-          "finir": "demander si c'est tout",
-          "payer": "demander à payer",
+          "finir": "finir la commande",
+          "payer": "payer",
           "carte": "par carte",
           "especes": "en espèces"
         },
@@ -8995,7 +8948,7 @@ window.CONTENU = {
         ],
         "par_mode": {
           "formateur": "Mon formateur a écouté. Je peux lui poser des questions.",
-          "seul": "Écoutez le modèle. Comparez avec votre voix."
+          "seul": "Écoutez les phrases ci-dessous. Comparez avec votre voix."
         },
         "grille_visible": false
       },
@@ -9114,7 +9067,7 @@ window.CONTENU = {
       {
         "id": "avis",
         "titre": "Mon avis",
-        "question": "Ce cours, pour moi, c'était :",
+        "question": "Ce parcours, pour moi, c'était :",
         "reponses": [
           {
             "valeur": 1,
@@ -9229,7 +9182,7 @@ window.CONTENU = {
       "{mode seul : « Personne n'a écouté : ce n'est pas vérifié. »}",
       "",
       "MON AVIS",
-      "Ce cours, pour moi : {très facile | facile | ni facile, ni difficile | difficile | très difficile | pas de réponse}",
+      "Ce parcours, pour moi : {très facile | facile | ni facile, ni difficile | difficile | très difficile | pas de réponse}",
       "",
       "TEMPS (minutes)",
       "AVANT {m} · S0 {m} · S1 {m} · S2 {m} · S3 {m} · S4 {m} · S5 {m} · S6 {m} · APRES {m} · total {m}"
