@@ -1,0 +1,1754 @@
+{
+  "version": 1,
+  "status": "produit_controle",
+  "voices": {
+    "f": {
+      "label": "Voix féminine — prtap1_sbk_48.mp3",
+      "source": "prtap1_sbk_48.mp3",
+      "debut": 36.22,
+      "fin": 43.75,
+      "reference_sha256": "98491928904cecf35bb8dd644badd8a3d71a8677272ecc8fa6e851f073b41636",
+      "texte_reference": "Le samedi matin, je fais toujours les courses au supermarché. L'après-midi, on fait une promenade en famille.",
+      "source_sha256": "f80274444e05ec3d8a9917706c4212ddc588b67666d1c9f9a0c80569ed5ca9e2"
+    },
+    "m": {
+      "label": "Voix masculine — defi_act_2_sbk_80.mp3",
+      "source": "defi_act_2_sbk_80.mp3",
+      "debut": 32.51,
+      "fin": 39.56,
+      "reference_sha256": "c33026d3d1fc0b409bfd109fad4ebeed4d1e78fb6f674ac1b4e7844d02ed77a9",
+      "texte_reference": "J'avais une minute pour lire la question et deux minutes pour y répondre. C'était des questions sur l'équipe et le développement de mon entreprise.",
+      "source_sha256": "354346ab02205a185e33d9251b3d5bfe5a34bcf11e60ee43b29a7ed61668968f"
+    }
+  },
+  "clips": [
+    {
+      "id": "hotel-piscine-model-f",
+      "text": "Il y a une piscine.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-piscine-word-f",
+      "text": "la piscine",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-piscine-model-m",
+      "text": "Il y a une piscine.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-piscine-word-m",
+      "text": "la piscine",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chambre-model-f",
+      "text": "La chambre est confortable et moderne.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chambre-word-f",
+      "text": "la chambre",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chambre-model-m",
+      "text": "La chambre est confortable et moderne.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chambre-word-m",
+      "text": "la chambre",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-bains-model-f",
+      "text": "Il y a une salle de bains privée.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-bains-word-f",
+      "text": "la salle de bains",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-bains-model-m",
+      "text": "Il y a une salle de bains privée.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-bains-word-m",
+      "text": "la salle de bains",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-clim-model-f",
+      "text": "Il y a la climatisation.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-clim-word-f",
+      "text": "la climatisation",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-clim-model-m",
+      "text": "Il y a la climatisation.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-clim-word-m",
+      "text": "la climatisation",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-tele-model-f",
+      "text": "Il y a une télévision.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-tele-word-f",
+      "text": "la télévision",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-tele-model-m",
+      "text": "Il y a une télévision.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-tele-word-m",
+      "text": "la télévision",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-minibar-model-f",
+      "text": "Il y a un minibar.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-minibar-word-f",
+      "text": "le minibar",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-minibar-model-m",
+      "text": "Il y a un minibar.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-minibar-word-m",
+      "text": "le minibar",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-wifi-model-f",
+      "text": "Le WiFi est gratuit.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-wifi-word-f",
+      "text": "le WiFi",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-wifi-model-m",
+      "text": "Le WiFi est gratuit.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-wifi-word-m",
+      "text": "le WiFi",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-dejeuner-model-f",
+      "text": "Le petit déjeuner est compris.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-dejeuner-word-f",
+      "text": "le petit déjeuner",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-dejeuner-model-m",
+      "text": "Le petit déjeuner est compris.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-dejeuner-word-m",
+      "text": "le petit déjeuner",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-parking-model-f",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "hotel-parking-word-f",
+      "text": "le parking",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-parking-model-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "hotel-parking-word-m",
+      "text": "le parking",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-ascenseur-model-f",
+      "text": "Est-ce qu’il y a un ascenseur ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "hotel-ascenseur-word-f",
+      "text": "l’ascenseur",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-ascenseur-model-m",
+      "text": "Est-ce qu’il y a un ascenseur ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "hotel-ascenseur-word-m",
+      "text": "l’ascenseur",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-cle-model-f",
+      "text": "Voici la clé de la chambre.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-cle-word-f",
+      "text": "la clé",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-cle-model-m",
+      "text": "Voici la clé de la chambre.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-cle-word-m",
+      "text": "la clé",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chdouble-model-f",
+      "text": "J’ai une chambre double.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chdouble-word-f",
+      "text": "une chambre double",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chdouble-model-m",
+      "text": "J’ai une chambre double.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "hotel-chdouble-word-m",
+      "text": "une chambre double",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portable-model-f",
+      "text": "J’ai un portable.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portable-word-f",
+      "text": "un portable",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portable-negative-f",
+      "text": "Je n’ai pas de portable.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portable-model-m",
+      "text": "J’ai un portable.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portable-word-m",
+      "text": "un portable",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portable-negative-m",
+      "text": "Je n’ai pas de portable.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-chargeur-model-f",
+      "text": "J’ai un chargeur.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-chargeur-word-f",
+      "text": "un chargeur",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-chargeur-negative-f",
+      "text": "Je n’ai pas de chargeur.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-chargeur-model-m",
+      "text": "J’ai un chargeur.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-chargeur-word-m",
+      "text": "un chargeur",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-chargeur-negative-m",
+      "text": "Je n’ai pas de chargeur.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-lunettes-model-f",
+      "text": "J’ai des lunettes.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-lunettes-word-f",
+      "text": "des lunettes",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-lunettes-negative-f",
+      "text": "Je n’ai pas de lunettes.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-lunettes-model-m",
+      "text": "J’ai des lunettes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-lunettes-word-m",
+      "text": "des lunettes",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-lunettes-negative-m",
+      "text": "Je n’ai pas de lunettes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-cles-model-f",
+      "text": "J’ai des clés.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-cles-word-f",
+      "text": "des clés",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-cles-negative-f",
+      "text": "Je n’ai pas de clés.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-cles-model-m",
+      "text": "J’ai des clés.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-cles-word-m",
+      "text": "des clés",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-cles-negative-m",
+      "text": "Je n’ai pas de clés.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-mouchoirs-model-f",
+      "text": "J’ai des mouchoirs.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-mouchoirs-word-f",
+      "text": "des mouchoirs",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-mouchoirs-negative-f",
+      "text": "Je n’ai pas de mouchoirs.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-mouchoirs-model-m",
+      "text": "J’ai des mouchoirs.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-mouchoirs-word-m",
+      "text": "des mouchoirs",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-mouchoirs-negative-m",
+      "text": "Je n’ai pas de mouchoirs.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portefeuille-model-f",
+      "text": "J’ai un portefeuille.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portefeuille-word-f",
+      "text": "un portefeuille",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portefeuille-negative-f",
+      "text": "Je n’ai pas de portefeuille.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portefeuille-model-m",
+      "text": "J’ai un portefeuille.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portefeuille-word-m",
+      "text": "un portefeuille",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-portefeuille-negative-m",
+      "text": "Je n’ai pas de portefeuille.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-monnaie-model-f",
+      "text": "J’ai un porte-monnaie.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-monnaie-word-f",
+      "text": "un porte-monnaie",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-monnaie-negative-f",
+      "text": "Je n’ai pas de porte-monnaie.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-monnaie-model-m",
+      "text": "J’ai un porte-monnaie.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-monnaie-word-m",
+      "text": "un porte-monnaie",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-monnaie-negative-m",
+      "text": "Je n’ai pas de porte-monnaie.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-carte-model-f",
+      "text": "J’ai une carte de crédit.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-carte-word-f",
+      "text": "une carte de crédit",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-carte-negative-f",
+      "text": "Je n’ai pas de carte de crédit.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-carte-model-m",
+      "text": "J’ai une carte de crédit.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-carte-word-m",
+      "text": "une carte de crédit",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-carte-negative-m",
+      "text": "Je n’ai pas de carte de crédit.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-eau-model-f",
+      "text": "J’ai une bouteille d’eau.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-eau-word-f",
+      "text": "une bouteille d’eau",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-eau-negative-f",
+      "text": "Je n’ai pas de bouteille d’eau.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-eau-model-m",
+      "text": "J’ai une bouteille d’eau.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-eau-word-m",
+      "text": "une bouteille d’eau",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-eau-negative-m",
+      "text": "Je n’ai pas de bouteille d’eau.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-gum-model-f",
+      "text": "J’ai des chewing-gums.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-gum-word-f",
+      "text": "des chewing-gums",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-gum-negative-f",
+      "text": "Je n’ai pas de chewing-gums.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-gum-model-m",
+      "text": "J’ai des chewing-gums.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-gum-word-m",
+      "text": "des chewing-gums",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-gum-negative-m",
+      "text": "Je n’ai pas de chewing-gums.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-passeport-model-f",
+      "text": "J’ai un passeport.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-passeport-word-f",
+      "text": "un passeport",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-passeport-negative-f",
+      "text": "Je n’ai pas de passeport.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-passeport-model-m",
+      "text": "J’ai un passeport.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-passeport-word-m",
+      "text": "un passeport",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-passeport-negative-m",
+      "text": "Je n’ai pas de passeport.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-valise-model-f",
+      "text": "J’ai une valise.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-valise-word-f",
+      "text": "une valise",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-valise-negative-f",
+      "text": "Je n’ai pas de valise.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-valise-model-m",
+      "text": "J’ai une valise.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-valise-word-m",
+      "text": "une valise",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-valise-negative-m",
+      "text": "Je n’ai pas de valise.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-identite-model-f",
+      "text": "J’ai une carte d’identité.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-identite-word-f",
+      "text": "une carte d’identité",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-identite-negative-f",
+      "text": "Je n’ai pas de carte d’identité.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-identite-model-m",
+      "text": "J’ai une carte d’identité.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-identite-word-m",
+      "text": "une carte d’identité",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-identite-negative-m",
+      "text": "Je n’ai pas de carte d’identité.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-bagages-model-f",
+      "text": "J’ai des bagages.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-bagages-word-f",
+      "text": "des bagages",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-bagages-negative-f",
+      "text": "Je n’ai pas de bagages.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-bagages-model-m",
+      "text": "J’ai des bagages.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-bagages-word-m",
+      "text": "des bagages",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "objet-bagages-negative-m",
+      "text": "Je n’ai pas de bagages.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-je-model-f",
+      "text": "J’ai une réservation.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-je-model-m",
+      "text": "J’ai une réservation.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-tu-model-f",
+      "text": "Tu as des lunettes.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-tu-model-m",
+      "text": "Tu as des lunettes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-il-model-f",
+      "text": "Il a une valise.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-il-model-m",
+      "text": "Il a une valise.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-elle-model-f",
+      "text": "Elle a un passeport.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-elle-model-m",
+      "text": "Elle a un passeport.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-on-model-f",
+      "text": "On a une chambre double.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-on-model-m",
+      "text": "On a une chambre double.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-nous-model-f",
+      "text": "Nous avons une chambre double.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-nous-model-m",
+      "text": "Nous avons une chambre double.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-vous-model-f",
+      "text": "Vous avez la chambre quatorze.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-vous-model-m",
+      "text": "Vous avez la chambre quatorze.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-ils-model-f",
+      "text": "Ils ont des bagages.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-ils-model-m",
+      "text": "Ils ont des bagages.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-elles-model-f",
+      "text": "Elles ont des clés.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "avoir-elles-model-m",
+      "text": "Elles ont des clés.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-un-model-f",
+      "text": "Je n’ai pas de passeport.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-un-model-m",
+      "text": "Je n’ai pas de passeport.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-des-model-f",
+      "text": "Je n’ai pas de lunettes.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-des-model-m",
+      "text": "Je n’ai pas de lunettes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-une-model-f",
+      "text": "Je n’ai pas de réservation.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-une-model-m",
+      "text": "Je n’ai pas de réservation.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-d-model-f",
+      "text": "Je n’ai pas d’eau.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "neg-d-model-m",
+      "text": "Je n’ai pas d’eau.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "ilya-pos-model-f",
+      "text": "Il y a une piscine.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "ilya-pos-model-m",
+      "text": "Il y a une piscine.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "ilya-neg-model-f",
+      "text": "Il n’y a pas de parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "ilya-neg-model-m",
+      "text": "Il n’y a pas de parking.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "accord-grand-model-f",
+      "text": "La chambre est grande.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "accord-grand-model-m",
+      "text": "La chambre est grande.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "accord-petit-model-f",
+      "text": "Le minibar est petit.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "accord-petit-model-m",
+      "text": "Le minibar est petit.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "articles-model-f",
+      "text": "Il y a une piscine. La piscine est grande.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "articles-model-m",
+      "text": "Il y a une piscine. La piscine est grande.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "adjectifs-model-f",
+      "text": "La chambre est confortable et moderne.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "adjectifs-model-m",
+      "text": "La chambre est confortable et moderne.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "prix-model-f",
+      "text": "C’est cent cinquante-quatre euros par nuit.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "prix-model-m",
+      "text": "C’est cent cinquante-quatre euros par nuit.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-piscine-model-f",
+      "text": "Est-ce que l’hôtel a une piscine ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "q-piscine-model-m",
+      "text": "Est-ce que l’hôtel a une piscine ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "q-parking-model-f",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "q-parking-model-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "q-pdej-model-f",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "q-pdej-model-m",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "q-chambre-model-f",
+      "text": "Est-ce que la chambre est grande ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "q-chambre-model-m",
+      "text": "Est-ce que la chambre est grande ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "q-passeport-model-f",
+      "text": "Est-ce que vous avez un passeport ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "q-passeport-model-m",
+      "text": "Est-ce que vous avez un passeport ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "q-lunettes-model-f",
+      "text": "Est-ce que tu as des lunettes ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "q-lunettes-model-m",
+      "text": "Est-ce que tu as des lunettes ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "q-oui-model-f",
+      "text": "Oui, j’ai une réservation.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-oui-model-m",
+      "text": "Oui, j’ai une réservation.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-non-model-f",
+      "text": "Non, je n’ai pas de passeport.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-non-model-m",
+      "text": "Non, je n’ai pas de passeport.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-commun-model-f",
+      "text": "Nous avons des clés.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-commun-model-m",
+      "text": "Nous avons des clés.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-avis-model-f",
+      "text": "C’est cher. Je ne réserve pas.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "q-avis-model-m",
+      "text": "C’est cher. Je ne réserve pas.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-avez-model-f",
+      "text": "Vous avez une chambre double.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-avez-model-m",
+      "text": "Vous avez une chambre double.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-avons-model-f",
+      "text": "Nous avons un parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-avons-model-m",
+      "text": "Nous avons un parking.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-ils-model-f",
+      "text": "Ils ont une réservation.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-ils-model-m",
+      "text": "Ils ont une réservation.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-supp-model-f",
+      "text": "Le petit déjeuner est en supplément.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-supp-model-m",
+      "text": "Le petit déjeuner est en supplément.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-question-model-f",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "son-question-model-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "son-reponse-model-f",
+      "text": "Oui, il y a un parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "son-reponse-model-m",
+      "text": "Oui, il y a un parking.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-0-model-f",
+      "text": "zéro",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-0-model-m",
+      "text": "zéro",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-1-model-f",
+      "text": "un",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-1-model-m",
+      "text": "un",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-2-model-f",
+      "text": "deux",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-2-model-m",
+      "text": "deux",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-4-model-f",
+      "text": "quatre",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-4-model-m",
+      "text": "quatre",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-14-model-f",
+      "text": "quatorze",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-14-model-m",
+      "text": "quatorze",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-17-model-f",
+      "text": "dix-sept",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-17-model-m",
+      "text": "dix-sept",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-20-model-f",
+      "text": "vingt",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-20-model-m",
+      "text": "vingt",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-21-model-f",
+      "text": "vingt et un",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-21-model-m",
+      "text": "vingt et un",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-30-model-f",
+      "text": "trente",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-30-model-m",
+      "text": "trente",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-40-model-f",
+      "text": "quarante",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-40-model-m",
+      "text": "quarante",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-50-model-f",
+      "text": "cinquante",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-50-model-m",
+      "text": "cinquante",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-60-model-f",
+      "text": "soixante",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-60-model-m",
+      "text": "soixante",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-70-model-f",
+      "text": "soixante-dix",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-70-model-m",
+      "text": "soixante-dix",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-71-model-f",
+      "text": "soixante et onze",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-71-model-m",
+      "text": "soixante et onze",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-80-model-f",
+      "text": "quatre-vingts",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-80-model-m",
+      "text": "quatre-vingts",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-81-model-f",
+      "text": "quatre-vingt-un",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-81-model-m",
+      "text": "quatre-vingt-un",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-90-model-f",
+      "text": "quatre-vingt-dix",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-90-model-m",
+      "text": "quatre-vingt-dix",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-99-model-f",
+      "text": "quatre-vingt-dix-neuf",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "nombre-99-model-m",
+      "text": "quatre-vingt-dix-neuf",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d1-f",
+      "text": "Bonjour monsieur.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d2-m",
+      "text": "Bonjour. J’ai une réservation au nom de Martin.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d3-f",
+      "text": "Une chambre double pour deux nuits ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "d4-m",
+      "text": "Oui, pour deux personnes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d5-f",
+      "text": "Est-ce que vous avez un passeport ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "d6-m",
+      "text": "Non, je n’ai pas de passeport. J’ai une carte d’identité.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d7-f",
+      "text": "Merci. Vous avez la chambre quatorze. Voici la clé.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d8-m",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "d9-f",
+      "text": "Oui, il est compris.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d10-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "d11-f",
+      "text": "Non, il n’y a pas de parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "d12-m",
+      "text": "D’accord. Merci. Je paie par carte.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-0-f",
+      "text": "Bonjour.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-1-m",
+      "text": "Bonjour. J’ai une réservation au nom de Martin.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-2-f",
+      "text": "Une chambre double pour deux nuits ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "role-0-3-m",
+      "text": "Oui, pour deux personnes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-4-f",
+      "text": "Est-ce que vous avez un passeport ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "role-0-5-m",
+      "text": "Non, je n’ai pas de passeport. J’ai une carte d’identité.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-6-f",
+      "text": "Merci. Vous avez la chambre quatorze. Voici la clé.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-7-m",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "role-0-8-f",
+      "text": "Oui, il est compris.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-9-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "role-0-10-f",
+      "text": "Non, il n’y a pas de parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-0-11-m",
+      "text": "Merci. Je paie par carte.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-0-f",
+      "text": "Bonjour.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-1-m",
+      "text": "Bonjour. J’ai une réservation au nom de Lopez.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-2-f",
+      "text": "Une chambre simple pour une nuit ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "role-1-3-m",
+      "text": "Oui, pour une personne.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-4-f",
+      "text": "Est-ce que vous avez un passeport ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "role-1-5-m",
+      "text": "Oui, j’ai un passeport.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-6-f",
+      "text": "Merci. Vous avez la chambre vingt et un. Voici la clé.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-7-m",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "role-1-8-f",
+      "text": "Non, il est en supplément.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-9-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "role-1-10-f",
+      "text": "Oui, il y a un parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-1-11-m",
+      "text": "Merci. Je paie par carte.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-0-f",
+      "text": "Bonjour.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-1-m",
+      "text": "Bonjour. J’ai une réservation au nom de Diallo.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-2-f",
+      "text": "Une chambre double pour trois nuits ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "role-2-3-m",
+      "text": "Oui, pour deux personnes.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-4-f",
+      "text": "Est-ce que vous avez un passeport ?",
+      "voice": "f",
+      "prosody": "question"
+    },
+    {
+      "id": "role-2-5-m",
+      "text": "Non, je n’ai pas de passeport. J’ai une carte d’identité.",
+      "voice": "m",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-6-f",
+      "text": "Merci. Vous avez la chambre quatre-vingt-un. Voici la clé.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-7-m",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "role-2-8-f",
+      "text": "Oui, il est compris.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-9-m",
+      "text": "Est-ce qu’il y a un parking ?",
+      "voice": "m",
+      "prosody": "question"
+    },
+    {
+      "id": "role-2-10-f",
+      "text": "Oui, il y a un parking.",
+      "voice": "f",
+      "prosody": "énoncé"
+    },
+    {
+      "id": "role-2-11-m",
+      "text": "Merci. Je paie par carte.",
+      "voice": "m",
+      "prosody": "énoncé"
+    }
+  ]
+}

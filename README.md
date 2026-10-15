@@ -1,6 +1,6 @@
 # Atelier_Formation_Francais
 
-Supports interactifs de français professionnel (préparation autonome avant les séances).
+Supports interactifs de français : préparation autonome avant les séances et révision orale après la classe.
 Chaque atelier est une page autonome : `<dossier>/index.html`.
 
 ## Liens à envoyer aux apprenants (GitHub Pages)
@@ -41,6 +41,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 
 | GLP-1 — essais comparatifs UI/UX : Focus et Boucle orale, analyse et protocole | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_UIUX_Comparatifs_v1/ |
 | GLP-1 — comprendre et converser, présentation restructurée (3 séances de 45 min, une chose à la fois : sous-étapes, cartes de phrases, 454 lectures audio) | B2 · aides B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Oral_B2_v3/ |
+| Bon séjour ! — à l’hôtel, je prends la parole (révision après la classe, 8 étapes, deux voix Qwen3-TTS et 288 audios) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Bon_Sejour_A1/ |
 
 ## Notes
 
