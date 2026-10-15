@@ -9,7 +9,7 @@
  * aucun résultat d'apprenant. Schéma des blocs : B1_schema_final.md. Contrôle : node B1_verifier_contenu.mjs
  */
 window.CONTENU = {
-  "version": "20261014-v3-correction-2",
+  "version": "20261015-v3-correction-3",
   "meta": {
     "id": "rendez-vous-a1-v3",
     "titre": "Au café",
@@ -636,6 +636,14 @@ window.CONTENU = {
         "s2"
       ]
     },
+    "img-parle-serveur-clients": {
+      "pictos": "img-parle-serveur-clients",
+      "libelle": "le serveur",
+      "alt": "Au café. Le serveur parle aux clients.",
+      "ecrans": [
+        "s2"
+      ]
+    },
     "img-le-client": {
       "pictos": "img-le-client",
       "libelle": "le client",
@@ -969,6 +977,15 @@ window.CONTENU = {
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S3"
     },
+    "qui-commande-cliente": {
+      "type": "replique",
+      "role": "cliente",
+      "voix": "cliente-1",
+      "texte": "Deux cafés, s'il vous plaît.",
+      "source": "N",
+      "statut": "non_valide_a_l_ecoute",
+      "ecran": "S2"
+    },
     "qui-cest-tout-question": {
       "type": "replique",
       "role": "serveur",
@@ -980,9 +997,9 @@ window.CONTENU = {
     },
     "qui-cest-tout-reponse": {
       "type": "replique",
-      "role": "cliente",
-      "voix": "cliente-1",
-      "texte": "C'est tout, merci.",
+      "role": "client",
+      "voix": "client-3",
+      "texte": "Oui, c'est tout. Merci.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1086,7 +1103,7 @@ window.CONTENU = {
     "c-s2-qui": {
       "type": "consigne",
       "voix": "consigne",
-      "texte": "Écoutez chaque phrase. Qui parle : le serveur ou le client ? Sélectionnez l'image.",
+      "texte": "Écoutez chaque phrase. Qui parle : le serveur, le client ou la cliente ? Sélectionnez l'image.",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -1877,7 +1894,7 @@ window.CONTENU = {
     "r-s2-7": {
       "type": "retour",
       "voix": "consigne",
-      "texte": "« C'est tout ? » : le serveur pose une question. « C'est tout, merci. » : le client répond.",
+      "texte": "D'abord, la cliente commande : « Deux cafés, s'il vous plaît. » Puis le serveur demande : « C'est tout ? » Le client répond : « Oui, c'est tout. Merci. »",
       "source": "N",
       "statut": "non_valide_a_l_ecoute",
       "ecran": "S2"
@@ -2422,6 +2439,7 @@ window.CONTENU = {
       "le_debut": "▶ Le début",
       "phrase_1": "▶ Phrase 1",
       "phrase_2": "▶ Phrase 2",
+      "phrase_3": "▶ Phrase 3",
       "un_autre_morceau": "▶ Un autre morceau",
       "ecouter_la_consigne": "🔊 Écouter ce qu'il faut faire",
       "un_peu_plus_lent": "Un peu plus lent",
@@ -2993,15 +3011,18 @@ window.CONTENU = {
           "choix": [
             {
               "image": "img-parle-client",
-              "libelle": "le client"
+              "libelle": "le client",
+              "valeur": "client"
             },
             {
               "image": "img-parle-cliente",
-              "libelle": "la cliente"
+              "libelle": "la cliente",
+              "valeur": "cliente"
             },
             {
               "image": "img-parle-clients",
-              "libelle": "les clients"
+              "libelle": "les clients",
+              "valeur": "clients"
             }
           ],
           "bonne": [
@@ -3546,44 +3567,63 @@ window.CONTENU = {
           },
           "trace": "s2.qui_parle",
           "consigne": "c-s2-qui",
-          "question": "Écoutez chaque phrase. Qui parle : le serveur ou le client ? Sélectionnez l'image.",
+          "question": "Écoutez chaque phrase. Qui parle : le serveur, le client ou la cliente ? Sélectionnez l'image.",
           "sequence": [
             {
               "libelle": "phrase_1",
-              "son": "qui-cest-tout-question",
-              "bonne": "img-parle-serveur"
+              "son": "qui-commande-cliente",
+              "bonne": "img-parle-cliente",
+              "suffixe": "c"
             },
             {
               "libelle": "phrase_2",
+              "son": "qui-cest-tout-question",
+              "bonne": "img-parle-serveur-clients",
+              "suffixe": "q"
+            },
+            {
+              "libelle": "phrase_3",
               "son": "qui-cest-tout-reponse",
-              "bonne": "img-parle-client"
+              "bonne": "img-parle-client",
+              "suffixe": "r"
             }
           ],
-          "ordre_phrases": "alea",
+          "ordre_phrases": "dialogue",
           "choix": [
             {
-              "image": "img-parle-serveur",
-              "libelle": "le serveur"
+              "image": "img-parle-serveur-clients",
+              "libelle": "le serveur",
+              "valeur": "serveur"
             },
             {
               "image": "img-parle-client",
-              "libelle": "le client"
+              "libelle": "le client",
+              "valeur": "client"
+            },
+            {
+              "image": "img-parle-cliente",
+              "libelle": "la cliente",
+              "valeur": "cliente"
             }
           ],
           "texte_apres": [
+            {
+              "role": "La cliente commande :",
+              "texte": "Deux cafés, s'il vous plaît."
+            },
             {
               "role": "Le serveur demande :",
               "texte": "C'est tout ?"
             },
             {
               "role": "Le client répond :",
-              "texte": "C'est tout, merci."
+              "texte": "Oui, c'est tout. Merci."
             }
           ],
           "retour": {
-            "commun": "« C'est tout ? » : le serveur pose une question. « C'est tout, merci. » : le client répond."
+            "commun": "D'abord, la cliente commande : « Deux cafés, s'il vous plaît. » Puis le serveur demande : « C'est tout ? » Le client répond : « Oui, c'est tout. Merci. »"
           },
-          "note_interne": "Modes formateur et groupe : le formateur dit lui-même les deux phrases, avec la même voix."
+          "note_interne": "Ordre fixe : c'est un petit dialogue (commande, question du serveur, réponse du client). Le serveur et le client ont la même voix d'homme (une seule voix d'homme fournie) : on les reconnaît au sens (question / réponse)."
         },
         {
           "type": "ecoute_sans_texte",
@@ -3925,7 +3965,7 @@ window.CONTENU = {
         }
       ],
       "carte_formateur": {
-        "dit": "Laisse l'apprenant écouter chaque phrase autant de fois qu'il veut, sans rien ajouter. Après l'extrait B, peut dire avec la même voix « C'est tout ? » puis « C'est tout, merci. » (ordre libre) et demander du geste : qui parle ?",
+        "dit": "Laisse l'apprenant écouter chaque phrase autant de fois qu'il veut, sans rien ajouter. Après l'extrait B, peut jouer la petite scène (la cliente : « Deux cafés, s'il vous plaît. » ; le serveur : « C'est tout ? » ; le client : « Oui, c'est tout. Merci. ») et demander : qui parle ?",
         "note": "Pour chaque extrait, la réponse libre, puis la réponse au choix de l'image et le nombre d'écoutes (enregistrés par le support) ; critère local de 02 : au moins deux moments reconnus (commander / payer) au premier passage (seuil à ajuster après essai). Pour A, B, C, noter si l'apprenant regardait l'écran : le film peut afficher des sous-titres, ces trois résultats restent formatifs. Seul l'extrait D est une écoute sans texte.",
         "a_corriger": "Le sens. Si l'apprenant choisit « commander » pour D : « Vous avez entendu « carte ». Ici, le serveur demande comment payer. » Ne comparer « la carte » (menu) et « par carte » (paiement) que si l'apprenant fait lui-même la confusion ; pas de traduction unique de « carte ».",
         "si_temps_manque": "Supprimer d'abord le pas 2.B.6 et le pas 2.D.7, puis l'extrait C (« L'addition » reste une phrase à reconnaître, vue en S1). Garder l'extrait D si le paiement est au programme de S3 et S5.",
@@ -4559,11 +4599,7 @@ window.CONTENU = {
             }
           ],
           "relance": true,
-          "reponses_possibles": {
-            "aussi": [
-              "C'est tout, merci."
-            ]
-          },
+          "reponses_possibles": {},
           "note_interne": "« Oui, merci, c'est tout. » seulement après « C'est tout ? » ; « Non merci, c'est tout. » seulement après « Autre chose ? » (A2).",
           "enregistrement": {
             "cle": "s3-q2",
@@ -8433,7 +8469,7 @@ window.CONTENU = {
         "Débit d'origine ; le ralenti est de 0,9× au minimum, fait par le lecteur (pas de second fichier).",
         "Les répliques isolées s0-r2 et s6-r2 sont découpées dans la même prise que leur dialogue.",
         "La voix des consignes (consigne) est la même que celle de la cliente d'entraînement (cliente-1) : risque de confusion « qui parle » juste avant S0 et S6. Compte des voix = clips unitaires (114), hors les 12 dialogues entiers.",
-        "Dans « Qui parle ? » (S2), les deux phrases sont dites par deux voix différentes (personnel-1 : « C'est tout ? », cliente-1 : « C'est tout, merci. ») : à valider à l'écoute (la première doit s'entendre comme une question, la seconde comme une réponse) ; sinon retirer ce pas du mode seul.",
+        "Dans « Qui parle ? » (S2), trois phrases dans l'ordre (cliente-1 : « Deux cafés, s'il vous plaît. » ; personnel-1 : « C'est tout ? » ; client-3 : « Oui, c'est tout. Merci. ») ; le serveur et le client ont la même voix d'homme : à valider à l'écoute (« C'est tout ? » doit s'entendre comme une question, « Oui, c'est tout. Merci. » comme une réponse).",
         "L'espace formateur liste les sons avec leur statut, permet d'écouter, de marquer « validé / à refaire » et d'exporter cette validation en JSON (avis liés à l'empreinte du fichier).",
         "v3 : consignes et retours lus plus lentement (débit visé 3,3 à 4,2 syllabes par seconde, vraies pauses entre les phrases). À régénérer.",
         "v3 : chaque texte de retour fixe a son son (type « retour », identifiant r-<écran>-<n>), à la voix des consignes.",

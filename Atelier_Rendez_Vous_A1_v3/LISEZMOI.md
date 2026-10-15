@@ -11,6 +11,22 @@ Les versions précédentes restent en ligne, inchangées : `Atelier_Rendez_Vous_
 
 Les trois groupes de choix « Je travaille comment ? », « Mon niveau aujourd’hui » et « Aide dans ma langue » sont supprimés de l’accueil. Le parcours apprenant démarre directement en mode seul, au niveau normal, sans panneau de réglages ni bandeau de mode, niveau ou langue. Les anciennes préférences sont remplacées par ces valeurs lors de l’ouverture ; la progression est conservée. Les questions du serveur, les modèles à comparer, les réécoutes et l’enregistrement facultatif permettent de travailler sans formateur. Le bilan permet de reprendre les expressions ; les rappels à deux jours et à sept jours soutiennent la mémorisation. Aucune transmission au formateur n’est demandée.
 
+## Corrections du 15 octobre 2026 (deuxième essai du formateur)
+
+- **Étape 3, « Qui parle ? »** : la phrase 2 (« C'est tout, merci. ») était dite par une voix de femme, mais seules les images « le serveur » et « le client » (un homme) pouvaient être sélectionnées. L'activité devient une petite scène en trois phrases, dans l'ordre d'un vrai café :
+  1. la cliente commande : « Deux cafés, s'il vous plaît. » (voix féminine) ;
+  2. le serveur demande : « C'est tout ? » (voix d'homme) ;
+  3. le client répond : « Oui, c'est tout. Merci. » (voix d'homme).
+
+  Trois images à sélectionner pour chaque phrase : « le serveur », « le client », « la cliente ». Les phrases restent dans l'ordre du dialogue. Sur l'image du serveur, le serveur parle aux deux clients : elle ne se confond plus avec celle du client. Le serveur et le client ont la même voix d'homme, car c'est la seule fournie : on les reconnaît au sens (une question, puis une réponse).
+- **Message de correction** : il raconte la scène dans l'ordre : « D'abord, la cliente commande : « Deux cafés, s'il vous plaît. » Puis le serveur demande : « C'est tout ? » Le client répond : « Oui, c'est tout. Merci. » ». L'ancien message suivait la forme « « … » : le serveur pose une question. ».
+- **Étape 4** : après « C'est tout ? », la page ne propose plus « Vous pouvez aussi dire : « C'est tout, merci. » ». Les modèles restent : « Oui, merci, c'est tout. » après « C'est tout ? », et « Non merci, c'est tout. » après « Autre chose ? ».
+- **Fins de phrase coupées** : la voix de synthèse s'arrêtait parfois avant la fin du dernier son. Par exemple, le « -ci » de « merci » durait 0,04 s puis s'arrêtait net. Un nouveau contrôle mesure la fin de chaque prise : niveau au moment de l'arrêt et durée du dernier son reconnu (`production/controle_fins.py`). Le choix des prises écarte désormais les fins coupées. Conséquences :
+  - 15 sons ont été refaits avec une autre prise, sans changer de texte. Parmi eux : « Un café, s'il vous plaît. », « Oui, merci. », « Sélectionnez l'image qui correspond. », « Fin des conversations. » ;
+  - sur les 19 sons qui changent, la mesure du MP3 entier trouvait une fin coupée dans 9 sons en ligne, dont « C'est tout, merci. ». Les 19 nouvelles versions finissent normalement. (Pour les autres sons, la prise changée est au milieu du son.)
+- **Texte « Copier mes réponses »** : depuis la correction du 14 au soir, ce texte affichait des noms techniques (« parle_clients »). Il donnait aussi une bonne réponse fausse : « finir la commande » au lieu de « commander ». Il reprend maintenant les mots des images : « la cliente », « les clients », « commander », « payer », « rien d'autre ».
+- Sons : 86 prises nouvelles. Les 7 phrases nouvelles en ont 6 chacune. Pour les fins coupées, 13 phrases changent de prise : 8 avaient déjà une autre bonne prise, et 5 ont reçu de nouvelles prises. Le choix utilise les mêmes mesures qu'avant, plus le contrôle des fins. Au total, 258 phrases sur 276 n'ont aucun défaut mesuré, et aucune phrase retenue n'a de fin coupée. 19 MP3 changent, dont 1 nouveau (`qui-commande-cliente`) ; les 197 autres sont identiques.
+
 ## Corrections du 14 octobre 2026 au soir (après essai du formateur)
 
 - **S0** : le message « Merci. Vous verrez la bonne réponse à la fin du parcours. » est supprimé. Après sa réponse, l'apprenant voit tout de suite le dialogue écrit et la bonne réponse : « La cliente dit « non » : pas de café. À la fin, elle veut deux thés. » Il peut réécouter le dialogue et la phrase de la cliente. Sa première réponse reste enregistrée telle quelle pour le bilan.

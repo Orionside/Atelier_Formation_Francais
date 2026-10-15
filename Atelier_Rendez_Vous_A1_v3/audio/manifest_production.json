@@ -1,7 +1,7 @@
 {
  "projet": "Atelier Rendez-vous A1 v3",
- "version": "20261014-v3-correction-2",
- "mis_a_jour_le": "2026-10-14T22:35:13",
+ "version": "20261015-v3-correction-3",
+ "mis_a_jour_le": "2026-10-15T13:19:14",
  "voix_inventees": {
   "personnel-1": {
    "nom_invente": "Voix homme 2",
@@ -41,7 +41,7 @@
   },
   "client-3": {
    "nom_invente": "Voix homme 2",
-   "role": "client (banque)",
+   "role": "client (« Qui parle ? » de l'étape 3, banque)",
    "mention": "Voix d'homme de synthèse fournie par le formateur (« voix de référence synthétisé homme 2 », SHA-256 8207a22f296e…), clonée avec Qwen3-TTS 1.7B Base bf16 : extrait de 10,5 s et sa transcription ; la même voix pour tous les rôles d'homme. Prises choisies selon la ponctuation et le sens. Non validée à l'écoute.",
    "reference_sha256": "8207a22f296ed12163ff9be434c712b99bb61e0aaf0a188fe852667e0661fed0",
    "clonage": "icl"
@@ -119,7 +119,7 @@
     {
      "prise": "sb33880ba__h2_icl_A_bf16_r1.5__g101",
      "graine": 101,
-     "score": 0.1,
+     "score": 0.089,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -498,15 +498,15 @@
   },
   "cli1-un-cafe-svp": {
    "fichier": "audio/synthese/cli1-un-cafe-svp.mp3",
-   "sha256": "f893f0d8b7a768fb40dc2513d7c7bc12c72b27663aa298ca1ac5ce8842b9f78f",
-   "duree_s": 1.9,
-   "gain_db": 1.41,
+   "sha256": "81f2eb69f99d3955e7a54d1ffd191ae5c8d74927821426ddb58ac3f18f8ed309",
+   "duree_s": 2.082,
+   "gain_db": 1.69,
    "unite": "cli1-un-cafe-svp",
    "phrases": [
     {
-     "prise": "sbe3b1691__femme_base__g47",
-     "graine": 47,
-     "score": 0.094,
+     "prise": "sbe3b1691__femme_base__g334",
+     "graine": 334,
+     "score": 0.284,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
@@ -515,7 +515,7 @@
        "ponct": ",",
        "pause_avant_s": 0.0,
        "ajout_s": 0.1,
-       "a_s": 0.575
+       "a_s": 0.646
       }
      ],
      "texte": "Un café, s'il vous plaît."
@@ -550,7 +550,7 @@
     {
      "prise": "se1243026__femme_base__g47",
      "graine": 47,
-     "score": 0.136,
+     "score": 0.14,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
@@ -576,7 +576,7 @@
     {
      "prise": "s14dd20d1__femme_base__g11",
      "graine": 11,
-     "score": 0.028,
+     "score": 0.023,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -712,15 +712,15 @@
   },
   "cli1-oui-merci": {
    "fichier": "audio/synthese/cli1-oui-merci.mp3",
-   "sha256": "06d6773563f03673770a2a8ef5d58a6dd54dab536c6f196e49c1948df028088e",
-   "duree_s": 1.536,
-   "gain_db": 2.39,
+   "sha256": "3ca0045fac82b56db140379b2ac6421834ff654dd482711e61bfd61d2a612e1d",
+   "duree_s": 1.55,
+   "gain_db": 2.49,
    "unite": "cli1-oui-merci",
    "phrases": [
     {
-     "prise": "s1f61d400__femme_base__g11",
-     "graine": 11,
-     "score": 0.096,
+     "prise": "s1f61d400__femme_base__g368",
+     "graine": 368,
+     "score": 0.04,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -738,7 +738,7 @@
     {
      "prise": "seebf16cc__femme_base__g11",
      "graine": 11,
-     "score": 0.022,
+     "score": 0.018,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -790,6 +790,24 @@
     }
    ]
   },
+  "qui-commande-cliente": {
+   "fichier": "audio/synthese/qui-commande-cliente.mp3",
+   "sha256": "5d94592370b422868d728a33dff2f61fbb3f70d17f39da9a00cae997ca9f7c16",
+   "duree_s": 1.983,
+   "gain_db": 1.96,
+   "unite": "qui-commande-cliente",
+   "phrases": [
+    {
+     "prise": "s157fd284__femme_base__g137",
+     "graine": 137,
+     "score": 0.0,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Deux cafés, s'il vous plaît."
+    }
+   ]
+  },
   "qui-cest-tout-question": {
    "fichier": "audio/synthese/qui-cest-tout-question.mp3",
    "sha256": "598afb753ddaacff288068bb2319e8d84f54ac63572eea0aa06a546967473d02",
@@ -810,19 +828,28 @@
   },
   "qui-cest-tout-reponse": {
    "fichier": "audio/synthese/qui-cest-tout-reponse.mp3",
-   "sha256": "89859ca0969114e6cd6553140e2e5b968942cb8480a4b11fd3145de9cf758870",
-   "duree_s": 1.778,
-   "gain_db": 2.01,
+   "sha256": "d2b818e1234d4b05f43c0283bd0d1e7a93fab7bdd9bfa7aa15a605692f4c07b8",
+   "duree_s": 2.535,
+   "gain_db": -0.19,
    "unite": "qui-cest-tout-reponse",
    "phrases": [
     {
-     "prise": "s8d82aac2__femme_base__g29",
-     "graine": 29,
-     "score": 0.233,
+     "prise": "s08c5a8e9__h2_icl_A_bf16_r1.5__g47",
+     "graine": 47,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
-     "texte": "C'est tout, merci."
+     "texte": "Oui, c'est tout."
+    },
+    {
+     "prise": "s4595e343__h2_icl_A_bf16_r1.5__g29",
+     "graine": 29,
+     "score": 0.164,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [],
+     "texte": "Merci."
     }
    ]
   },
@@ -959,7 +986,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1115,9 +1142,9 @@
   },
   "c-s1-qui": {
    "fichier": "audio/synthese/c-s1-qui.mp3",
-   "sha256": "6ac2b37564c72fa90922d2b6c5741f963340a46ce92c0351f04acf0529b9e0d0",
-   "duree_s": 4.533,
-   "gain_db": 2.17,
+   "sha256": "c8ea0137386281cf1f063bdaca3df5e1e27cd177a090eca16501a55c0e55783c",
+   "duree_s": 4.284,
+   "gain_db": 1.76,
    "unite": "c-s1-qui",
    "phrases": [
     {
@@ -1130,9 +1157,9 @@
      "texte": "Qui parle au serveur ?"
     },
     {
-     "prise": "s2817da62__femme_base__g29",
-     "graine": 29,
-     "score": 0.059,
+     "prise": "s2817da62__femme_base__g47",
+     "graine": 47,
+     "score": 0.328,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1312,7 +1339,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1322,9 +1349,9 @@
   },
   "c-s2-qui": {
    "fichier": "audio/synthese/c-s2-qui.mp3",
-   "sha256": "88eca06770548f2898ea5e58cc68b6a410cb15f769271a51f1be6d53577a768e",
-   "duree_s": 7.331,
-   "gain_db": 1.5,
+   "sha256": "bef3cea9e4602203159ebbe733e58c8af6e975bf556669a6efe35c7413bdb677",
+   "duree_s": 8.789,
+   "gain_db": 0.8,
    "unite": "c-s2-qui",
    "phrases": [
     {
@@ -1337,21 +1364,13 @@
      "texte": "Écoutez chaque phrase."
     },
     {
-     "prise": "s726eeb4c__femme_base__g29",
-     "graine": 29,
-     "score": 0.0,
+     "prise": "s206756f0__femme_base__g101",
+     "graine": 101,
+     "score": 0.005,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [
-      {
-       "apres": "parle",
-       "ponct": ":",
-       "pause_avant_s": 0.142,
-       "ajout_s": 0.118,
-       "a_s": 0.941
-      }
-     ],
-     "texte": "Qui parle : le serveur ou le client ?"
+     "pauses_inserees": [],
+     "texte": "Qui parle : le serveur, le client ou la cliente ?"
     },
     {
      "prise": "sb5670679__femme_base__g29",
@@ -1366,9 +1385,9 @@
   },
   "c-s2-table-comptoir": {
    "fichier": "audio/synthese/c-s2-table-comptoir.mp3",
-   "sha256": "9e0215a91c3769210e56172a91bf50ac74aa42c5e3315a72b7d7e3c17b4a02f6",
-   "duree_s": 15.199,
-   "gain_db": 2.4,
+   "sha256": "a94d5d57cd084e8c12d5449f22befc7fe2d39c679c67fdcb03cde60da2692ad8",
+   "duree_s": 15.34,
+   "gain_db": 2.38,
    "unite": "c-s2-table-comptoir",
    "phrases": [
     {
@@ -1433,14 +1452,22 @@
      "texte": "Vous comprenez « L'addition, s'il vous plaît »."
     },
     {
-     "prise": "s06b6acb2__femme_base__g334",
-     "graine": 334,
-     "score": 0.976,
+     "prise": "s06b6acb2__femme_base__g47",
+     "graine": 47,
+     "score": 0.982,
      "penalite_prosodie": 0.7,
      "defauts_mesures": [
       "mot important sans relief : « pas »"
      ],
-     "pauses_inserees": [],
+     "pauses_inserees": [
+      {
+       "apres": "Aujourd'hui",
+       "ponct": ",",
+       "pause_avant_s": 0.0,
+       "ajout_s": 0.16,
+       "a_s": 0.708
+      }
+     ],
      "texte": "Aujourd'hui, vous ne la dites pas."
     }
    ]
@@ -1473,7 +1500,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1527,7 +1554,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1628,15 +1655,15 @@
   },
   "c-s3-change-2": {
    "fichier": "audio/synthese/c-s3-change-2.mp3",
-   "sha256": "2e9fb5c2090e13e08347cac2171ba6e3d99c606dceddfae48c54524fa239ffde",
-   "duree_s": 5.865,
-   "gain_db": 1.67,
+   "sha256": "869d3c7c4e12dd230c0b4fa03914a28eb3e81aac0f680d0b9b124a2ffdd27f23",
+   "duree_s": 6.097,
+   "gain_db": 1.71,
    "unite": "c-s3-change-2",
    "phrases": [
     {
-     "prise": "s4f936750__femme_base__g47",
-     "graine": 47,
-     "score": 0.0,
+     "prise": "s4f936750__femme_base__g29",
+     "graine": 29,
+     "score": 0.049,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1713,26 +1740,18 @@
   },
   "c-s3-sans-texte": {
    "fichier": "audio/synthese/c-s3-sans-texte.mp3",
-   "sha256": "552e4391f6349acfd73574420d444a709e62366b69fca4a360a4d7a6906be646",
-   "duree_s": 9.152,
-   "gain_db": 1.94,
+   "sha256": "ab6d3e0e549cae54668b3fdb09cc57afaccf2ccd4c74e3f167f200628e1cd186",
+   "duree_s": 9.168,
+   "gain_db": 2.01,
    "unite": "c-s3-sans-texte",
    "phrases": [
     {
-     "prise": "sb3a7ed54__femme_base__g11",
-     "graine": 11,
-     "score": 0.08,
+     "prise": "sb3a7ed54__femme_base__g29",
+     "graine": 29,
+     "score": 0.096,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [
-      {
-       "apres": "Maintenant",
-       "ponct": ",",
-       "pause_avant_s": 0.068,
-       "ajout_s": 0.092,
-       "a_s": 0.556
-      }
-     ],
+     "pauses_inserees": [],
      "texte": "Maintenant, sans le texte et sans image."
     },
     {
@@ -1774,7 +1793,7 @@
     {
      "prise": "se8a687cd__femme_base__g29",
      "graine": 29,
-     "score": 0.122,
+     "score": 0.127,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1831,26 +1850,18 @@
   },
   "c-s4-vous": {
    "fichier": "audio/synthese/c-s4-vous.mp3",
-   "sha256": "50997673a061a033be586961b778d8e47a39ee92bb3cc31230a298373ae850b9",
-   "duree_s": 5.171,
-   "gain_db": 2.27,
+   "sha256": "451c239f0671b28d65bae204a1e053d268ff89e5977bd8307f3a92fcf168eea3",
+   "duree_s": 5.422,
+   "gain_db": 2.43,
    "unite": "c-s4-vous",
    "phrases": [
     {
-     "prise": "s26c6e3ec__femme_base__g29",
-     "graine": 29,
-     "score": 0.365,
+     "prise": "s26c6e3ec__femme_base__g402",
+     "graine": 402,
+     "score": 0.369,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [
-      {
-       "apres": "Maintenant",
-       "ponct": ",",
-       "pause_avant_s": 0.099,
-       "ajout_s": 0.061,
-       "a_s": 0.577
-      }
-     ],
+     "pauses_inserees": [],
      "texte": "Maintenant, vous."
     },
     {
@@ -1920,15 +1931,15 @@
   },
   "c-s5-conv1": {
    "fichier": "audio/synthese/c-s5-conv1.mp3",
-   "sha256": "346fa879194bab63c739b77aa51b1b99f43219ed11c91c52cd49e13ff17d5779",
-   "duree_s": 8.514,
-   "gain_db": 2.39,
+   "sha256": "3b663d7dd024ec75fdd0fbf45d865a63616daaf9e43c09ae2d790232dacc3fb0",
+   "duree_s": 8.528,
+   "gain_db": 2.37,
    "unite": "c-s5-conv1",
    "phrases": [
     {
-     "prise": "s52e7a51e__femme_base__g47",
-     "graine": 47,
-     "score": 0.0,
+     "prise": "s52e7a51e__femme_base__g334",
+     "graine": 334,
+     "score": 0.137,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -1953,9 +1964,9 @@
      "texte": "Le serveur vous parle."
     },
     {
-     "prise": "s51451dcb__femme_base__g29",
-     "graine": 29,
-     "score": 0.63,
+     "prise": "s51451dcb__femme_base__g47",
+     "graine": 47,
+     "score": 0.71,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2151,7 +2162,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2169,7 +2180,7 @@
     {
      "prise": "s34d1fcff__femme_base__g11",
      "graine": 11,
-     "score": 0.205,
+     "score": 0.2,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2268,7 +2279,7 @@
     {
      "prise": "sc5e855b7__femme_base__g47",
      "graine": 47,
-     "score": 0.211,
+     "score": 0.207,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2295,7 +2306,7 @@
     {
      "prise": "s34d1fcff__femme_base__g11",
      "graine": 11,
-     "score": 0.205,
+     "score": 0.2,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2340,7 +2351,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2776,8 +2787,8 @@
   },
   "ech-prenez-cafe": {
    "fichier": "audio/synthese/ech-prenez-cafe.mp3",
-   "sha256": "7e79c613278fa708d0db564b7a4b0d332bc6f86b5caa6eac210ae7794499ab67",
-   "duree_s": 3.272,
+   "sha256": "073f3e2f93d1384d70b6ff86544bbb8fc316a357b0bc0b4134e8bb625bf539df",
+   "duree_s": 3.455,
    "gain_db": 1.03,
    "tours": [
     {
@@ -2791,7 +2802,7 @@
      "qui": "cliente",
      "voix": "cliente-1",
      "debut": 1.622,
-     "fin": 2.922,
+     "fin": 3.105,
      "texte": "Un café, s'il vous plaît."
     }
    ],
@@ -2820,15 +2831,15 @@
   },
   "ech-prenez-cafe-t2": {
    "fichier": "audio/synthese/ech-prenez-cafe-t2.mp3",
-   "sha256": "f893f0d8b7a768fb40dc2513d7c7bc12c72b27663aa298ca1ac5ce8842b9f78f",
-   "duree_s": 1.9,
-   "gain_db": 1.41,
+   "sha256": "81f2eb69f99d3955e7a54d1ffd191ae5c8d74927821426ddb58ac3f18f8ed309",
+   "duree_s": 2.082,
+   "gain_db": 1.69,
    "unite": "cli1-un-cafe-svp",
    "phrases": [
     {
-     "prise": "sbe3b1691__femme_base__g47",
-     "graine": 47,
-     "score": 0.094,
+     "prise": "sbe3b1691__femme_base__g334",
+     "graine": 334,
+     "score": 0.284,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
@@ -2837,7 +2848,7 @@
        "ponct": ",",
        "pause_avant_s": 0.0,
        "ajout_s": 0.1,
-       "a_s": 0.575
+       "a_s": 0.646
       }
      ],
      "texte": "Un café, s'il vous plaît."
@@ -2898,7 +2909,7 @@
     {
      "prise": "s14dd20d1__femme_base__g11",
      "graine": 11,
-     "score": 0.028,
+     "score": 0.023,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -2960,7 +2971,7 @@
     {
      "prise": "s40a78f4c__h2_icl_A_bf16_r1.5__g11",
      "graine": 11,
-     "score": 0.359,
+     "score": 0.369,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -3528,15 +3539,15 @@
   },
   "r-s5-1": {
    "fichier": "audio/synthese/r-s5-1.mp3",
-   "sha256": "92bc59e146ce9ef9262c64c0948cadcd4d47a222bf48bb8dd9d877b95906ff4c",
-   "duree_s": 7.045,
-   "gain_db": 2.21,
+   "sha256": "be293b9d5d9276a726ac0fe9be47632a39361372b4c3e829a81710574a5ca1f3",
+   "duree_s": 6.961,
+   "gain_db": 0.85,
    "unite": "r-s5-1",
    "phrases": [
     {
-     "prise": "s59a6503d__femme_base__g29",
-     "graine": 29,
-     "score": 0.083,
+     "prise": "s59a6503d__femme_base__g11",
+     "graine": 11,
+     "score": 0.444,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -3564,15 +3575,15 @@
   },
   "r-s5-2": {
    "fichier": "audio/synthese/r-s5-2.mp3",
-   "sha256": "773e9744611f3d582c37e16a7144e34edf3dd052a82c2767b0ec48bd3a8dc6fd",
-   "duree_s": 6.639,
-   "gain_db": 1.91,
+   "sha256": "96779cd8eea1120f7b599a9b9ea87aa5206fbbe33c7a70b9f4b014a9cef42ad7",
+   "duree_s": 6.556,
+   "gain_db": 0.85,
    "unite": "r-s5-2",
    "phrases": [
     {
-     "prise": "s59a6503d__femme_base__g29",
-     "graine": 29,
-     "score": 0.083,
+     "prise": "s59a6503d__femme_base__g11",
+     "graine": 11,
+     "score": 0.444,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -3680,15 +3691,15 @@
   },
   "r-apres-2": {
    "fichier": "audio/synthese/r-apres-2.mp3",
-   "sha256": "523eefe7123d7a4a7facfcf27f05e01173c2fbdee43596f463c16d88c0495389",
-   "duree_s": 4.206,
-   "gain_db": 1.89,
+   "sha256": "022cc7fa0cd7bcb3ff4ac17112db0a910e377b60e1ad77e2941262853044c97c",
+   "duree_s": 4.245,
+   "gain_db": 1.35,
    "unite": "r-apres-2",
    "phrases": [
     {
-     "prise": "s82077e06__femme_base__g47",
-     "graine": 47,
-     "score": 0.55,
+     "prise": "s82077e06__femme_base__g317",
+     "graine": 317,
+     "score": 0.625,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -3926,7 +3937,7 @@
     {
      "prise": "sdfa000e9__femme_base__g29",
      "graine": 29,
-     "score": 0.078,
+     "score": 0.074,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -4293,7 +4304,7 @@
     {
      "prise": "s37476cdb__femme_base__g47",
      "graine": 47,
-     "score": 0.014,
+     "score": 0.01,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -4331,7 +4342,7 @@
     {
      "prise": "s37476cdb__femme_base__g47",
      "graine": 47,
-     "score": 0.014,
+     "score": 0.01,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -4350,28 +4361,75 @@
   },
   "r-s2-7": {
    "fichier": "audio/synthese/r-s2-7.mp3",
-   "sha256": "3bc4eee7f15c528176a34170aa47151d9ca1ce185168a20083c39650367b7e71",
-   "duree_s": 6.487,
-   "gain_db": 1.26,
+   "sha256": "beddf60db4ea9cf1e339a784d77e075595241cf2f61e19e6b35ee12e2a83a752",
+   "duree_s": 9.864,
+   "gain_db": 2.69,
    "unite": "r-s2-7",
    "phrases": [
     {
-     "prise": "s293f2398__femme_base__g47",
-     "graine": 47,
+     "prise": "sd3c90933__femme_base__g137",
+     "graine": 137,
      "score": 0.0,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "« C'est tout ? » : le serveur pose une question."
+     "pauses_inserees": [
+      {
+       "apres": "cafés",
+       "ponct": ",",
+       "pause_avant_s": 0.115,
+       "ajout_s": 0.045,
+       "a_s": 2.58
+      },
+      {
+       "apres": "D'abord",
+       "ponct": ",",
+       "pause_avant_s": 0.087,
+       "ajout_s": 0.073,
+       "a_s": 0.492
+      }
+     ],
+     "texte": "D'abord, la cliente commande : « Deux cafés, s'il vous plaît. »"
     },
     {
-     "prise": "scadc1729__femme_base__g334",
-     "graine": 334,
-     "score": 0.383,
+     "prise": "s7498cd3f__femme_base__g47",
+     "graine": 47,
+     "score": 0.017,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
-     "pauses_inserees": [],
-     "texte": "« C'est tout, merci. » : le client répond."
+     "pauses_inserees": [
+      {
+       "apres": "demande",
+       "ponct": ":",
+       "pause_avant_s": 0.181,
+       "ajout_s": 0.079,
+       "a_s": 1.46
+      }
+     ],
+     "texte": "Puis le serveur demande : « C'est tout ? »"
+    },
+    {
+     "prise": "s6baf1a22__femme_base__g137",
+     "graine": 137,
+     "score": 0.034,
+     "penalite_prosodie": 0.0,
+     "defauts_mesures": [],
+     "pauses_inserees": [
+      {
+       "apres": "Oui",
+       "ponct": ",",
+       "pause_avant_s": 0.109,
+       "ajout_s": 0.051,
+       "a_s": 1.387
+      },
+      {
+       "apres": "répond",
+       "ponct": ":",
+       "pause_avant_s": 0.123,
+       "ajout_s": 0.137,
+       "a_s": 1.014
+      }
+     ],
+     "texte": "Le client répond : « Oui, c'est tout. Merci. »"
     }
    ]
   },
@@ -4507,15 +4565,15 @@
   },
   "c-s2-d7": {
    "fichier": "audio/synthese/c-s2-d7.mp3",
-   "sha256": "a801052be034fa97a9d92cc8944bf3945d5be2c3587e02c679fe1f1ee1e239da",
-   "duree_s": 5.416,
-   "gain_db": 2.04,
+   "sha256": "334cdd21bb7d11fb1724b3fe9062171b24f7aaf76972f3b2b1daeead917564e5",
+   "duree_s": 5.383,
+   "gain_db": 2.14,
    "unite": "c-s2-d7",
    "phrases": [
     {
-     "prise": "sa74d9b44__femme_base__g11",
-     "graine": 11,
-     "score": 0.0,
+     "prise": "sa74d9b44__femme_base__g47",
+     "graine": 47,
+     "score": 0.073,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -5001,7 +5059,7 @@
     {
      "prise": "s27704566__femme_base__g11",
      "graine": 11,
-     "score": 0.102,
+     "score": 0.097,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [
@@ -5237,15 +5295,15 @@
   },
   "c-s5-formateur": {
    "fichier": "audio/synthese/c-s5-formateur.mp3",
-   "sha256": "e4a2047002b8cc3da3da8bc617418b7d84bc387cd7f6a5b13a01c63a92a640de",
-   "duree_s": 3.594,
-   "gain_db": 1.71,
+   "sha256": "65a4505bcf8a8fa3041fe31017a090974c40aea3346b0d2f142877acfa35de9b",
+   "duree_s": 3.712,
+   "gain_db": 1.76,
    "unite": "c-s5-formateur",
    "phrases": [
     {
-     "prise": "sf435ea35__femme_base__g29",
-     "graine": 29,
-     "score": 0.003,
+     "prise": "sf435ea35__femme_base__g47",
+     "graine": 47,
+     "score": 0.051,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -5263,7 +5321,7 @@
     {
      "prise": "s1c426a42__femme_base__g47",
      "graine": 47,
-     "score": 0.028,
+     "score": 0.024,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -6171,7 +6229,7 @@
     {
      "prise": "s9a9c7f87__femme_base__g11",
      "graine": 11,
-     "score": 0.135,
+     "score": 0.131,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],
@@ -6198,7 +6256,7 @@
     {
      "prise": "s49d9c550__femme_base__g11",
      "graine": 11,
-     "score": 0.262,
+     "score": 0.257,
      "penalite_prosodie": 0.0,
      "defauts_mesures": [],
      "pauses_inserees": [],

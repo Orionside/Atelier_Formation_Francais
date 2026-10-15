@@ -1,5 +1,5 @@
 {
- "version": "20261014-v3-correction-2",
+ "version": "20261015-v3-correction-3",
  "note": "Contrôle automatique des prises retenues. Ne remplace pas l'écoute humaine.",
  "phrases": {
   "sb33880ba": {
@@ -474,19 +474,19 @@
   "sbe3b1691": {
    "texte": "Un café, s'il vous plaît.",
    "voix": "femme_base",
-   "prise": "sbe3b1691__femme_base__g47",
-   "texte_reconnu": "Un café s'il vous plaît.",
+   "prise": "sbe3b1691__femme_base__g334",
+   "texte_reconnu": "Un café, s'il vous plaît.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.3,
-   "ressemblance_timbre": 0.9595,
-   "f0_mediane_hz": 222.6,
+   "debit_articulation_syl_s": 4.86,
+   "ressemblance_timbre": 0.9055,
+   "f0_mediane_hz": 232.5,
    "phrases": [
     {
      "texte": "Un café, s'il vous plaît.",
      "type": "declarative",
-     "niveau_final_st": -4.68,
-     "pente_finale_st": -0.82,
-     "montee_finale_st": -2.41,
+     "niveau_final_st": -4.36,
+     "pente_finale_st": -0.29,
+     "montee_finale_st": -1.81,
      "conforme": true
     }
    ],
@@ -496,17 +496,17 @@
      "ponct": ",",
      "type": "virgule",
      "pause_s": 0.0,
-     "allongement": 1.3,
-     "niveau_st": 5.48,
-     "pente_st": 0.87,
-     "montee_st": 3.14,
+     "allongement": 1.45,
+     "niveau_st": 3.08,
+     "pente_st": 0.42,
+     "montee_st": 0.71,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 9,
+   "prises_valides": 8
   },
   "se9898256": {
    "texte": "Un thé, s'il vous plaît.",
@@ -876,19 +876,19 @@
   "s1f61d400": {
    "texte": "Oui, merci.",
    "voix": "femme_base",
-   "prise": "s1f61d400__femme_base__g11",
+   "prise": "s1f61d400__femme_base__g368",
    "texte_reconnu": "Oui, merci.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.41,
-   "ressemblance_timbre": 0.941,
-   "f0_mediane_hz": 270.0,
+   "debit_articulation_syl_s": 4.61,
+   "ressemblance_timbre": 0.9582,
+   "f0_mediane_hz": 227.4,
    "phrases": [
     {
      "texte": "Oui, merci.",
      "type": "declarative",
-     "niveau_final_st": -4.11,
-     "pente_finale_st": -1.59,
-     "montee_finale_st": -4.0,
+     "niveau_final_st": -2.94,
+     "pente_finale_st": -2.3,
+     "montee_finale_st": -2.85,
      "conforme": true
     }
    ],
@@ -897,18 +897,18 @@
      "apres": "Oui",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.186,
+     "pause_s": 0.201,
      "allongement": null,
-     "niveau_st": 1.68,
-     "pente_st": -1.65,
+     "niveau_st": 2.57,
+     "pente_st": 0.81,
      "montee_st": null,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 9,
+   "prises_valides": 9
   },
   "seebf16cc": {
    "texte": "Non merci.",
@@ -1020,18 +1020,92 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s8d82aac2": {
-   "texte": "C'est tout, merci.",
+  "s157fd284": {
+   "texte": "Deux cafés, s'il vous plaît.",
    "voix": "femme_base",
-   "prise": "s8d82aac2__femme_base__g29",
-   "texte_reconnu": "C'est tout, merci !",
+   "prise": "s157fd284__femme_base__g137",
+   "texte_reconnu": "Deux cafés, s'il vous plaît.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.54,
-   "ressemblance_timbre": 0.9369,
-   "f0_mediane_hz": 265.0,
+   "debit_articulation_syl_s": 4.63,
+   "ressemblance_timbre": 0.9576,
+   "f0_mediane_hz": 240.0,
    "phrases": [
     {
-     "texte": "C'est tout, merci.",
+     "texte": "Deux cafés, s'il vous plaît.",
+     "type": "declarative",
+     "niveau_final_st": -4.48,
+     "pente_finale_st": 0.93,
+     "montee_finale_st": -3.05,
+     "conforme": true
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "cafés",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.096,
+     "allongement": null,
+     "niveau_st": -0.6,
+     "pente_st": 2.72,
+     "montee_st": -4.34,
+     "marquee": true,
+     "continuation": true
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 5
+  },
+  "s08c5a8e9": {
+   "texte": "Oui, c'est tout.",
+   "voix": "homme2",
+   "prise": "s08c5a8e9__h2_icl_A_bf16_r1.5__g47",
+   "texte_reconnu": "Oui, c'est tout.",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 5.36,
+   "ressemblance_timbre": 0.8894,
+   "f0_mediane_hz": 128.2,
+   "phrases": [
+    {
+     "texte": "Oui, c'est tout.",
+     "type": "declarative",
+     "niveau_final_st": -1.87,
+     "pente_finale_st": -1.16,
+     "montee_finale_st": -0.98,
+     "conforme": true
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "Oui",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.237,
+     "allongement": null,
+     "niveau_st": 2.71,
+     "pente_st": 0.6,
+     "montee_st": null,
+     "marquee": true,
+     "continuation": true
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 5
+  },
+  "s4595e343": {
+   "texte": "Merci.",
+   "voix": "homme2",
+   "prise": "s4595e343__h2_icl_A_bf16_r1.5__g29",
+   "texte_reconnu": "Merci.",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 5.91,
+   "ressemblance_timbre": 0.8799,
+   "f0_mediane_hz": 107.9,
+   "phrases": [
+    {
+     "texte": "Merci.",
      "type": "declarative",
      "niveau_final_st": null,
      "pente_finale_st": null,
@@ -1039,23 +1113,10 @@
      "conforme": null
     }
    ],
-   "frontieres": [
-    {
-     "apres": "tout",
-     "ponct": ",",
-     "type": "virgule",
-     "pause_s": 0.223,
-     "allongement": null,
-     "niveau_st": -0.12,
-     "pente_st": 1.04,
-     "montee_st": -3.44,
-     "marquee": true,
-     "continuation": false
-    }
-   ],
+   "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 2
   },
   "s7c0a75b6": {
    "texte": "Vous êtes au café, au comptoir.",
@@ -1764,20 +1825,20 @@
   "s2817da62": {
    "texte": "Sélectionnez l'image qui correspond.",
    "voix": "femme_base",
-   "prise": "s2817da62__femme_base__g29",
+   "prise": "s2817da62__femme_base__g47",
    "texte_reconnu": "Sélectionnez l'image qui correspond.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.13,
-   "ressemblance_timbre": 0.9565,
-   "f0_mediane_hz": 227.2,
+   "debit_articulation_syl_s": 5.92,
+   "ressemblance_timbre": 0.9659,
+   "f0_mediane_hz": 248.7,
    "phrases": [
     {
      "texte": "Sélectionnez l'image qui correspond.",
      "type": "declarative",
-     "niveau_final_st": -4.41,
-     "pente_finale_st": -4.11,
-     "montee_finale_st": -3.35,
-     "conforme": true
+     "niveau_final_st": null,
+     "pente_finale_st": null,
+     "montee_finale_st": null,
+     "conforme": null
     }
    ],
    "frontieres": [],
@@ -2070,22 +2131,22 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s726eeb4c": {
-   "texte": "Qui parle : le serveur ou le client ?",
+  "s206756f0": {
+   "texte": "Qui parle : le serveur, le client ou la cliente ?",
    "voix": "femme_base",
-   "prise": "s726eeb4c__femme_base__g29",
-   "texte_reconnu": "qui parle le serveur ou le client.",
+   "prise": "s206756f0__femme_base__g101",
+   "texte_reconnu": "Qui parle ? Le serveur, le client ou la cliente ?",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.78,
-   "ressemblance_timbre": 0.9802,
-   "f0_mediane_hz": 243.6,
+   "debit_articulation_syl_s": 4.28,
+   "ressemblance_timbre": 0.9861,
+   "f0_mediane_hz": 208.6,
    "phrases": [
     {
-     "texte": "Qui parle: le serveur ou le client?",
+     "texte": "Qui parle: le serveur, le client ou la cliente?",
      "type": "q_alternative",
-     "niveau_final_st": -5.79,
-     "pente_finale_st": -1.47,
-     "montee_finale_st": -2.75,
+     "niveau_final_st": -3.99,
+     "pente_finale_st": 1.01,
+     "montee_finale_st": -1.7,
      "conforme": null
     }
    ],
@@ -2094,18 +2155,30 @@
      "apres": "parle",
      "ponct": ":",
      "type": "deux_points",
-     "pause_s": 0.141,
+     "pause_s": 0.657,
      "allongement": null,
-     "niveau_st": 2.59,
-     "pente_st": 4.71,
-     "montee_st": 3.77,
+     "niveau_st": 1.54,
+     "pente_st": 0.33,
+     "montee_st": -3.33,
+     "marquee": true,
+     "continuation": true
+    },
+    {
+     "apres": "serveur",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.346,
+     "allongement": null,
+     "niveau_st": -0.33,
+     "pente_st": 2.72,
+     "montee_st": 0.75,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s733e32dd": {
    "texte": "Dans le film : à table.",
@@ -2282,25 +2355,25 @@
   "s06b6acb2": {
    "texte": "Aujourd'hui, vous ne la dites pas.",
    "voix": "femme_base",
-   "prise": "s06b6acb2__femme_base__g334",
+   "prise": "s06b6acb2__femme_base__g47",
    "texte_reconnu": "Aujourd'hui, vous ne la dites pas.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.5,
-   "ressemblance_timbre": 0.9263,
-   "f0_mediane_hz": 226.3,
+   "debit_articulation_syl_s": 5.73,
+   "ressemblance_timbre": 0.9441,
+   "f0_mediane_hz": 222.6,
    "phrases": [
     {
      "texte": "Aujourd'hui, vous ne la dites pas.",
      "type": "declarative",
-     "niveau_final_st": -4.46,
-     "pente_finale_st": -1.18,
-     "montee_finale_st": -3.9,
+     "niveau_final_st": -4.08,
+     "pente_finale_st": -1.38,
+     "montee_finale_st": -7.55,
      "conforme": true,
      "focus": {
       "mots": [
        "pas"
       ],
-      "relief_st": -3.97,
+      "relief_st": -7.55,
       "pic_de_la_phrase": false
      }
     }
@@ -2310,11 +2383,11 @@
      "apres": "Aujourd'hui",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.14,
-     "allongement": null,
-     "niveau_st": 5.94,
-     "pente_st": 4.61,
-     "montee_st": 5.61,
+     "pause_s": 0.0,
+     "allongement": 2.47,
+     "niveau_st": 5.47,
+     "pente_st": -4.71,
+     "montee_st": 6.57,
      "marquee": true,
      "continuation": true
     }
@@ -2322,8 +2395,8 @@
    "defauts_restants": [
     "mot important sans relief : « pas »"
    ],
-   "prises_comparees": 7,
-   "prises_valides": 7
+   "prises_comparees": 13,
+   "prises_valides": 12
   },
   "sba01fc31": {
    "texte": "Deux autres personnes parlent au comptoir.",
@@ -2542,19 +2615,19 @@
   "s4f936750": {
    "texte": "Le serveur change sa question.",
    "voix": "femme_base",
-   "prise": "s4f936750__femme_base__g47",
+   "prise": "s4f936750__femme_base__g29",
    "texte_reconnu": "Le serveur change sa question.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.01,
-   "ressemblance_timbre": 0.9754,
-   "f0_mediane_hz": 230.5,
+   "debit_articulation_syl_s": 4.31,
+   "ressemblance_timbre": 0.9657,
+   "f0_mediane_hz": 250.6,
    "phrases": [
     {
      "texte": "Le serveur change sa question.",
      "type": "declarative",
-     "niveau_final_st": -5.7,
-     "pente_finale_st": -0.8,
-     "montee_finale_st": -3.63,
+     "niveau_final_st": -5.74,
+     "pente_finale_st": -1.38,
+     "montee_finale_st": -3.22,
      "conforme": true
     }
    ],
@@ -2645,19 +2718,19 @@
   "sb3a7ed54": {
    "texte": "Maintenant, sans le texte et sans image.",
    "voix": "femme_base",
-   "prise": "sb3a7ed54__femme_base__g11",
+   "prise": "sb3a7ed54__femme_base__g29",
    "texte_reconnu": "Maintenant, sans le texte et sans images.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.48,
-   "ressemblance_timbre": 0.9576,
-   "f0_mediane_hz": 228.8,
+   "debit_articulation_syl_s": 3.86,
+   "ressemblance_timbre": 0.9736,
+   "f0_mediane_hz": 233.2,
    "phrases": [
     {
      "texte": "Maintenant, sans le texte et sans image.",
      "type": "declarative",
-     "niveau_final_st": -5.93,
-     "pente_finale_st": -1.25,
-     "montee_finale_st": -2.65,
+     "niveau_final_st": -6.9,
+     "pente_finale_st": -2.87,
+     "montee_finale_st": -4.79,
      "conforme": true
     }
    ],
@@ -2666,11 +2739,11 @@
      "apres": "Maintenant",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.061,
-     "allongement": 1.41,
-     "niveau_st": 4.73,
-     "pente_st": 1.42,
-     "montee_st": 4.98,
+     "pause_s": 0.144,
+     "allongement": null,
+     "niveau_st": -0.19,
+     "pente_st": 7.58,
+     "montee_st": -0.87,
      "marquee": true,
      "continuation": true
     }
@@ -2818,19 +2891,19 @@
   "s26c6e3ec": {
    "texte": "Maintenant, vous.",
    "voix": "femme_base",
-   "prise": "s26c6e3ec__femme_base__g29",
-   "texte_reconnu": "Maintenant, vous.",
+   "prise": "s26c6e3ec__femme_base__g402",
+   "texte_reconnu": "Maintenant, vous !",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 3.7,
-   "ressemblance_timbre": 0.8962,
-   "f0_mediane_hz": 208.0,
+   "debit_articulation_syl_s": 3.59,
+   "ressemblance_timbre": 0.933,
+   "f0_mediane_hz": 198.8,
    "phrases": [
     {
      "texte": "Maintenant, vous.",
      "type": "declarative",
-     "niveau_final_st": -2.34,
+     "niveau_final_st": -1.34,
      "pente_finale_st": -1.06,
-     "montee_finale_st": -6.01,
+     "montee_finale_st": -1.42,
      "conforme": true
     }
    ],
@@ -2839,18 +2912,18 @@
      "apres": "Maintenant",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.094,
+     "pause_s": 0.244,
      "allongement": null,
-     "niveau_st": 4.32,
-     "pente_st": 6.11,
-     "montee_st": 3.96,
+     "niveau_st": 0.08,
+     "pente_st": 1.93,
+     "montee_st": -1.55,
      "marquee": true,
      "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
+   "prises_comparees": 17,
+   "prises_valides": 16
   },
   "sb1742cdf": {
    "texte": "Vous voulez quoi ?",
@@ -2975,26 +3048,26 @@
   "s52e7a51e": {
    "texte": "Conversation 1.",
    "voix": "femme_base",
-   "prise": "s52e7a51e__femme_base__g47",
+   "prise": "s52e7a51e__femme_base__g334",
    "texte_reconnu": "Conversation 1",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.8,
-   "ressemblance_timbre": 0.9635,
-   "f0_mediane_hz": 227.6,
+   "debit_articulation_syl_s": 5.39,
+   "ressemblance_timbre": 0.973,
+   "f0_mediane_hz": 229.2,
    "phrases": [
     {
      "texte": "Conversation un.",
      "type": "declarative",
-     "niveau_final_st": -1.21,
-     "pente_finale_st": -2.71,
-     "montee_finale_st": -4.08,
+     "niveau_final_st": -3.63,
+     "pente_finale_st": -1.27,
+     "montee_finale_st": -1.7,
      "conforme": true
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 2
+   "prises_comparees": 9,
+   "prises_valides": 8
   },
   "s5f60573b": {
    "texte": "Vous voulez un café.",
@@ -3047,19 +3120,19 @@
   "s51451dcb": {
    "texte": "Écoutez bien.",
    "voix": "femme_base",
-   "prise": "s51451dcb__femme_base__g29",
+   "prise": "s51451dcb__femme_base__g47",
    "texte_reconnu": "Écoutez bien !",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 6.2,
-   "ressemblance_timbre": 0.9155,
-   "f0_mediane_hz": 243.2,
+   "debit_articulation_syl_s": 6.79,
+   "ressemblance_timbre": 0.9468,
+   "f0_mediane_hz": 215.8,
    "phrases": [
     {
      "texte": "Écoutez bien.",
      "type": "declarative",
-     "niveau_final_st": -4.6,
-     "pente_finale_st": -0.93,
-     "montee_finale_st": -1.06,
+     "niveau_final_st": -2.56,
+     "pente_finale_st": -1.24,
+     "montee_finale_st": -0.87,
      "conforme": true
     }
    ],
@@ -4788,19 +4861,19 @@
   "s59a6503d": {
    "texte": "Fin des conversations.",
    "voix": "femme_base",
-   "prise": "s59a6503d__femme_base__g29",
+   "prise": "s59a6503d__femme_base__g11",
    "texte_reconnu": "Fin des conversations",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.17,
-   "ressemblance_timbre": 0.9707,
-   "f0_mediane_hz": 246.2,
+   "debit_articulation_syl_s": 6.21,
+   "ressemblance_timbre": 0.9816,
+   "f0_mediane_hz": 255.6,
    "phrases": [
     {
      "texte": "Fin des conversations.",
      "type": "declarative",
-     "niveau_final_st": -6.04,
-     "pente_finale_st": -0.86,
-     "montee_finale_st": -3.93,
+     "niveau_final_st": -4.28,
+     "pente_finale_st": -1.78,
+     "montee_finale_st": -2.63,
      "conforme": true
     }
    ],
@@ -5006,26 +5079,26 @@
   "s82077e06": {
    "texte": "Pas de nouveau dialogue aujourd'hui.",
    "voix": "femme_base",
-   "prise": "s82077e06__femme_base__g47",
-   "texte_reconnu": "Pas de nouveaux dialogues aujourd'hui.",
+   "prise": "s82077e06__femme_base__g317",
+   "texte_reconnu": "Pas de nouveau dialogue aujourd'hui.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 6.36,
-   "ressemblance_timbre": 0.9512,
-   "f0_mediane_hz": 204.1,
+   "debit_articulation_syl_s": 6.26,
+   "ressemblance_timbre": 0.9284,
+   "f0_mediane_hz": 248.6,
    "phrases": [
     {
      "texte": "Pas de nouveau dialogue aujourd'hui.",
      "type": "declarative",
-     "niveau_final_st": -1.27,
-     "pente_finale_st": -0.18,
-     "montee_finale_st": -0.04,
+     "niveau_final_st": -5.75,
+     "pente_finale_st": -0.87,
+     "montee_finale_st": -0.77,
      "conforme": true
     }
    ],
    "frontieres": [],
    "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 1
+   "prises_comparees": 9,
+   "prises_valides": 7
   },
   "sd94d30b5": {
    "texte": "Revenez dans 5 jours.",
@@ -5971,107 +6044,171 @@
    "prises_comparees": 3,
    "prises_valides": 3
   },
-  "s293f2398": {
-   "texte": "« C'est tout ? » : le serveur pose une question.",
+  "sd3c90933": {
+   "texte": "D'abord, la cliente commande : « Deux cafés, s'il vous plaît. »",
    "voix": "femme_base",
-   "prise": "s293f2398__femme_base__g47",
-   "texte_reconnu": "C'est tout. Le serveur pose une question.",
+   "prise": "sd3c90933__femme_base__g137",
+   "texte_reconnu": "D'abord, la cliente commande « Deux cafés, s'il vous plaît ».",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.94,
-   "ressemblance_timbre": 0.9401,
-   "f0_mediane_hz": 224.7,
+   "debit_articulation_syl_s": 4.62,
+   "ressemblance_timbre": 0.983,
+   "f0_mediane_hz": 229.9,
    "phrases": [
     {
-     "texte": "C'est tout?:",
-     "type": "q_totale",
-     "niveau_final_st": 3.95,
-     "pente_finale_st": 1.57,
-     "montee_finale_st": -0.16,
-     "conforme": true
-    },
-    {
-     "texte": "le serveur pose une question.",
+     "texte": "D'abord, la cliente commande: Deux cafés, s'il vous plaît.",
      "type": "declarative",
-     "niveau_final_st": -2.67,
-     "pente_finale_st": -2.35,
-     "montee_finale_st": -1.42,
+     "niveau_final_st": -5.18,
+     "pente_finale_st": -1.11,
+     "montee_finale_st": -4.33,
      "conforme": true
     }
    ],
    "frontieres": [
     {
-     "apres": "tout",
-     "ponct": "?:",
-     "type": "deux_points",
-     "pause_s": 0.789,
-     "allongement": null,
-     "niveau_st": 3.95,
-     "pente_st": 1.57,
-     "montee_st": -0.16,
-     "marquee": true,
-     "continuation": true
-    }
-   ],
-   "defauts_restants": [],
-   "prises_comparees": 3,
-   "prises_valides": 3
-  },
-  "scadc1729": {
-   "texte": "« C'est tout, merci. » : le client répond.",
-   "voix": "femme_base",
-   "prise": "scadc1729__femme_base__g334",
-   "texte_reconnu": "C'est tout, merci. Le client répond.",
-   "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 6.02,
-   "ressemblance_timbre": 0.9785,
-   "f0_mediane_hz": 214.4,
-   "phrases": [
-    {
-     "texte": "C'est tout, merci.:",
-     "type": "declarative",
-     "niveau_final_st": -2.35,
-     "pente_finale_st": -3.39,
-     "montee_finale_st": -7.6,
-     "conforme": true
-    },
-    {
-     "texte": "le client répond.",
-     "type": "declarative",
-     "niveau_final_st": -3.23,
-     "pente_finale_st": -0.34,
-     "montee_finale_st": -1.47,
-     "conforme": true
-    }
-   ],
-   "frontieres": [
-    {
-     "apres": "tout",
+     "apres": "D'abord",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.289,
+     "pause_s": 0.087,
      "allongement": null,
-     "niveau_st": 1.45,
-     "pente_st": -1.34,
-     "montee_st": -3.37,
+     "niveau_st": 3.99,
+     "pente_st": 6.61,
+     "montee_st": 5.37,
      "marquee": true,
      "continuation": true
     },
     {
-     "apres": "merci",
-     "ponct": ".:",
+     "apres": "commande",
+     "ponct": ":",
      "type": "deux_points",
-     "pause_s": 0.781,
+     "pause_s": 0.312,
      "allongement": null,
-     "niveau_st": -2.35,
-     "pente_st": -3.39,
-     "montee_st": -7.6,
+     "niveau_st": 3.15,
+     "pente_st": 6.35,
+     "montee_st": 5.7,
      "marquee": true,
-     "continuation": false
+     "continuation": true
+    },
+    {
+     "apres": "cafés",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.114,
+     "allongement": null,
+     "niveau_st": 0.29,
+     "pente_st": 1.56,
+     "montee_st": 0.85,
+     "marquee": true,
+     "continuation": true
     }
    ],
    "defauts_restants": [],
-   "prises_comparees": 7,
-   "prises_valides": 7
+   "prises_comparees": 6,
+   "prises_valides": 6
+  },
+  "s7498cd3f": {
+   "texte": "Puis le serveur demande : « C'est tout ? »",
+   "voix": "femme_base",
+   "prise": "s7498cd3f__femme_base__g47",
+   "texte_reconnu": "Puis le serveur demande « c'est tout ».",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 4.96,
+   "ressemblance_timbre": 0.9762,
+   "f0_mediane_hz": 250.3,
+   "phrases": [
+    {
+     "texte": "Puis le serveur demande: C'est tout?",
+     "type": "q_totale",
+     "niveau_final_st": 2.56,
+     "pente_finale_st": 2.74,
+     "montee_finale_st": 0.62,
+     "conforme": true
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "demande",
+     "ponct": ":",
+     "type": "deux_points",
+     "pause_s": 0.177,
+     "allongement": null,
+     "niveau_st": 0.81,
+     "pente_st": 0.73,
+     "montee_st": 3.52,
+     "marquee": true,
+     "continuation": true
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 6
+  },
+  "s6baf1a22": {
+   "texte": "Le client répond : « Oui, c'est tout. Merci. »",
+   "voix": "femme_base",
+   "prise": "s6baf1a22__femme_base__g137",
+   "texte_reconnu": "Le client répond « Oui, c'est tout. Merci. »",
+   "ecart_sons": 0.0,
+   "debit_articulation_syl_s": 4.44,
+   "ressemblance_timbre": 0.9802,
+   "f0_mediane_hz": 248.1,
+   "phrases": [
+    {
+     "texte": "Le client répond: Oui, c'est tout.",
+     "type": "declarative",
+     "niveau_final_st": -4.6,
+     "pente_finale_st": -2.04,
+     "montee_finale_st": -3.72,
+     "conforme": true
+    },
+    {
+     "texte": "Merci.",
+     "type": "declarative",
+     "niveau_final_st": -4.5,
+     "pente_finale_st": -2.0,
+     "montee_finale_st": -2.91,
+     "conforme": true
+    }
+   ],
+   "frontieres": [
+    {
+     "apres": "répond",
+     "ponct": ":",
+     "type": "deux_points",
+     "pause_s": 0.122,
+     "allongement": null,
+     "niveau_st": 1.75,
+     "pente_st": 2.24,
+     "montee_st": 3.23,
+     "marquee": true,
+     "continuation": true
+    },
+    {
+     "apres": "Oui",
+     "ponct": ",",
+     "type": "virgule",
+     "pause_s": 0.107,
+     "allongement": null,
+     "niveau_st": 2.36,
+     "pente_st": -5.44,
+     "montee_st": 0.61,
+     "marquee": true,
+     "continuation": true
+    },
+    {
+     "apres": "tout",
+     "ponct": ".",
+     "type": "phrase",
+     "pause_s": 0.137,
+     "allongement": null,
+     "niveau_st": -4.6,
+     "pente_st": -2.04,
+     "montee_st": -3.72,
+     "marquee": true
+    }
+   ],
+   "defauts_restants": [],
+   "prises_comparees": 6,
+   "prises_valides": 6
   },
   "s58d6b456": {
    "texte": "Dites-le à voix haute.",
@@ -6286,19 +6423,19 @@
   "sa74d9b44": {
    "texte": "Dans le film, le serveur pose la même question.",
    "voix": "femme_base",
-   "prise": "sa74d9b44__femme_base__g11",
+   "prise": "sa74d9b44__femme_base__g47",
    "texte_reconnu": "Dans le film, le serveur pose la même question.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 4.34,
-   "ressemblance_timbre": 0.9887,
-   "f0_mediane_hz": 220.5,
+   "debit_articulation_syl_s": 4.62,
+   "ressemblance_timbre": 0.9742,
+   "f0_mediane_hz": 235.7,
    "phrases": [
     {
      "texte": "Dans le film, le serveur pose la même question.",
      "type": "declarative",
-     "niveau_final_st": -3.06,
-     "pente_finale_st": -0.14,
-     "montee_finale_st": -0.27,
+     "niveau_final_st": -5.4,
+     "pente_finale_st": -3.46,
+     "montee_finale_st": -3.23,
      "conforme": true
     }
    ],
@@ -6307,11 +6444,11 @@
      "apres": "film",
      "ponct": ",",
      "type": "virgule",
-     "pause_s": 0.406,
+     "pause_s": 0.558,
      "allongement": null,
-     "niveau_st": 5.57,
-     "pente_st": 0.51,
-     "montee_st": 2.34,
+     "niveau_st": 8.16,
+     "pente_st": 4.95,
+     "montee_st": 10.66,
      "marquee": true,
      "continuation": true
     }
@@ -7346,19 +7483,19 @@
   "sf435ea35": {
    "texte": "Écoutez votre formateur : une seule chose à changer.",
    "voix": "femme_base",
-   "prise": "sf435ea35__femme_base__g29",
-   "texte_reconnu": "Écoutez votre formateur, une seule chose à changer.",
+   "prise": "sf435ea35__femme_base__g47",
+   "texte_reconnu": "Écoutez votre formateur. Une seule chose a changé.",
    "ecart_sons": 0.0,
-   "debit_articulation_syl_s": 5.07,
-   "ressemblance_timbre": 0.9847,
-   "f0_mediane_hz": 257.9,
+   "debit_articulation_syl_s": 5.16,
+   "ressemblance_timbre": 0.9798,
+   "f0_mediane_hz": 219.1,
    "phrases": [
     {
      "texte": "Écoutez votre formateur: une seule chose à changer.",
      "type": "declarative",
-     "niveau_final_st": -8.22,
-     "pente_finale_st": -2.17,
-     "montee_finale_st": -2.29,
+     "niveau_final_st": -3.3,
+     "pente_finale_st": 0.65,
+     "montee_finale_st": -0.48,
      "conforme": true
     }
    ],
@@ -7367,11 +7504,11 @@
      "apres": "formateur",
      "ponct": ":",
      "type": "deux_points",
-     "pause_s": 0.367,
+     "pause_s": 0.499,
      "allongement": null,
-     "niveau_st": -8.19,
-     "pente_st": -4.64,
-     "montee_st": -4.52,
+     "niveau_st": -3.23,
+     "pente_st": -1.4,
+     "montee_st": -1.18,
      "marquee": true,
      "continuation": false
     }

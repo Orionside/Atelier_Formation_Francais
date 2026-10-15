@@ -22,7 +22,7 @@
 var C = window.CONTENU, S = window.Socle, J = window.JOURNAL, PICTOS = window.PICTOS || {};
 if(!C || !S || !J){ if(window.console) console.error("Atelier : contenu.js, socle.js ou journal.js manque."); return; }
 
-var VERSION = "20261014-v3-correction-2";                /* même valeur que le ?v= de index.html */
+var VERSION = "20261015-v3-correction-3";                /* même valeur que le ?v= de index.html */
 var CLE_STOCKAGE = "rendez-vous-a1-v3";     /* clé de stockage de la v3 (la v2 garde la sienne) */
 var VUE_FORMATEUR = false;                 /* ce support est exclusivement destiné à l'apprenant */
 var MANQUES = [];                            /* libellés d'interface introuvables (contrôlé par les tests) */
@@ -878,7 +878,8 @@ R.choix_images = function(b, ctx){
   n.appendChild(v.box); n.appendChild(ret);
   return n;
 };
-/* « Qui parle ? » (S2.B.6) : deux phrases, dans un ordre tiré au sort ; un bouton d'écoute par phrase, dans tous les modes (R21). */
+/* « Qui parle ? » (S2.B.6) : les phrases d'une petite scène, dans l'ordre du dialogue (ou tirées au sort si ordre_phrases = « alea ») ;
+   un bouton d'écoute par phrase, dans tous les modes (R21). Chaque phrase porte son suffixe de suivi (c, q, r). */
 function choixQuiParle(b, ctx, n){
   var ordre = b.sequence.map(function(s, i){ return i; });
   if(b.ordre_phrases === "alea" && hasard(2)) ordre.reverse();
@@ -905,7 +906,7 @@ function choixQuiParle(b, ctx, n){
       bt.addEventListener("click", function(){
         bt.setAttribute("aria-pressed", "true");
         var juste = b.choix[i].image === s.bonne;
-        var suf = /reponse/.test(s.son) ? "r" : "q";
+        var suf = s.suffixe || (/reponse/.test(s.son) ? "r" : "q");
         ctx.rep("p1", valeurChoix(b.choix[i]), juste, "s2.qui_parle." + suf);
         v.finir([s.bonne]);
         repondu();
@@ -913,7 +914,7 @@ function choixQuiParle(b, ctx, n){
     });
     v.nsp.addEventListener("click", function(){
       v.nsp.setAttribute("aria-pressed", "true");
-      ctx.rep("p1", "nsp", null, "s2.qui_parle." + (/reponse/.test(s.son) ? "r" : "q"));
+      ctx.rep("p1", "nsp", null, "s2.qui_parle." + (s.suffixe || (/reponse/.test(s.son) ? "r" : "q")));
       v.finir([s.bonne]);
       repondu();
     });

@@ -33,23 +33,24 @@ function valeurImage(id){ return String(id || "").replace(/^img-/, "").replace(/
    choix  : réponses proposées en images ; attendue : réponses acceptées (valeurs) ; attendue_p1 : bonne réponse au clavier. */
 var ITEMS_C = {
   "s0":   {code:"S0-C1", sequence:"S0", suit:"s0", audio_id:"s0-dialogue", support:"audio_seul", information:"quantite_finale", p1:"clavier", choix:["un","deux"], attendue:["deux"], attendue_p1:["2"], question:"À la fin, la cliente veut combien de thés ?"},
-  "s1.qui": {code:"s1.qui", sequence:"S1", suit:"s1.qui", audio_id:"film-B", support:"film_youtube", information:"qui_commande", p1:null, choix:["homme","femme","homme_et_femme"], attendue:["homme_et_femme"], question:"Qui parle au serveur ?"},
+  "s1.qui": {code:"s1.qui", sequence:"S1", suit:"s1.qui", audio_id:"film-B", support:"film_youtube", information:"qui_commande", p1:null, choix:["client","cliente","clients"], attendue:["clients"], question:"Qui parle au serveur ?"},
   "s1.produits": {code:"S1-C2", sequence:"S1", suit:"s1.produits", audio_id:"film-B", support:"film_youtube", information:"produits", p1:null, multi:true, choix:["un_cafe","un_the","jus_orange","croissant","eau","sandwich"], attendue:["un_cafe","jus_orange","croissant"], question:"Ils commandent quoi ?"},
   "s1.fin": {code:"S1-C1", sequence:"S1", suit:"s1.fin", audio_id:"film-B", support:"film_youtube", information:"demande_finale", p1:null, choix:["addition","un_cafe_plus"], attendue:["addition"], question:"À la fin, ils demandent quoi ?"},
-  "s2a":  {code:"S2-C1", sequence:"S2", suit:"s2a", audio_id:"film-p4", support:"film_youtube", information:"moment", p1:"idee", choix:["commander","finir","payer"], attendue:["commander"], question:"C'est quel moment ? (phrase 1 du film)"},
-  "s2b":  {code:"S2-C2", sequence:"S2", suit:"s2b", audio_id:"film-p5", support:"film_youtube", information:"moment", p1:"idee", choix:["commander","finir","payer"], attendue:["finir"], question:"C'est quel moment ? (phrase 2 du film)"},
-  "s2c":  {code:"S2-C3", sequence:"S2", suit:"s2c", audio_id:"film-p6", support:"film_youtube", information:"moment", p1:"idee", choix:["commander","finir","payer"], attendue:["payer"], question:"C'est quel moment ? (phrase 3 du film)"},
-  "s2.qui_parle.q": {code:"s2.qui_parle.q", sequence:"S2", suit:"s2.qui_parle", audio_id:"qui-cest-tout-question", support:"audio_seul", information:"qui_parle", p1:null, choix:["serveur","client"], attendue:["serveur"], question:"« C'est tout ? » : qui parle ?"},
-  "s2.qui_parle.r": {code:"s2.qui_parle.r", sequence:"S2", suit:"s2.qui_parle", audio_id:"qui-cest-tout-reponse", support:"audio_seul", information:"qui_parle", p1:null, choix:["serveur","client"], attendue:["client"], question:"« C'est tout, merci. » : qui parle ?"},
-  "s2d":  {code:"S2-C4", sequence:"S2", suit:"s2d", audio_id:"ech-carte-especes", support:"audio_seul", information:"moment", p1:"idee", choix:["commander","finir","payer"], attendue:["payer"], question:"C'est quel moment ? (deux autres personnes)"},
+  "s2a":  {code:"S2-C1", sequence:"S2", suit:"s2a", audio_id:"film-p4", support:"film_youtube", information:"moment", p1:"idee", choix:["commander","payer"], attendue:["commander"], question:"C'est pour commander ou pour payer ? (phrase 1 du film)"},
+  "s2b":  {code:"S2-C2", sequence:"S2", suit:"s2b", audio_id:"film-p5", support:"film_youtube", information:"moment", p1:"idee", choix:["commander","payer"], attendue:["commander"], question:"C'est pour commander ou pour payer ? (phrase 2 du film : « C'est tout ? »)"},
+  "s2c":  {code:"S2-C3", sequence:"S2", suit:"s2c", audio_id:"film-p6", support:"film_youtube", information:"moment", p1:"idee", choix:["commander","payer"], attendue:["payer"], question:"C'est pour commander ou pour payer ? (phrase 3 du film)"},
+  "s2.qui_parle.c": {code:"s2.qui_parle.c", sequence:"S2", suit:"s2.qui_parle", audio_id:"qui-commande-cliente", support:"audio_seul", information:"qui_parle", p1:null, choix:["serveur","client","cliente"], attendue:["cliente"], question:"« Deux cafés, s'il vous plaît. » : qui parle ?"},
+  "s2.qui_parle.q": {code:"s2.qui_parle.q", sequence:"S2", suit:"s2.qui_parle", audio_id:"qui-cest-tout-question", support:"audio_seul", information:"qui_parle", p1:null, choix:["serveur","client","cliente"], attendue:["serveur"], question:"« C'est tout ? » : qui parle ?"},
+  "s2.qui_parle.r": {code:"s2.qui_parle.r", sequence:"S2", suit:"s2.qui_parle", audio_id:"qui-cest-tout-reponse", support:"audio_seul", information:"qui_parle", p1:null, choix:["serveur","client","cliente"], attendue:["client"], question:"« Oui, c'est tout. Merci. » : qui parle ?"},
+  "s2d":  {code:"S2-C4", sequence:"S2", suit:"s2d", audio_id:"ech-carte-especes", support:"audio_seul", information:"moment", p1:"idee", choix:["commander","payer"], attendue:["payer"], question:"C'est pour commander ou pour payer ? (deux autres personnes)"},
   "s2d.choix_final": {code:"s2d.choix_final", sequence:"S2", suit:"S2-C4", audio_id:"ech-carte-especes", support:"audio_seul", information:"moyen_paiement", p1:null, choix:["carte","especes"], attendue:["carte"], question:"La cliente paie comment ?"},
   "s2.film_paiement": {code:"s2.film_paiement", sequence:"S2", suit:"s2.film_paiement", audio_id:"film-Bdif", support:"film_youtube", information:"moyen_paiement", p1:null, choix:["carte","especes"], attendue:["especes"], question:"Dans le film, ils paient comment ?"},
   "s6":   {code:"S6-C1", sequence:"S6", suit:"s6", audio_id:"s6-dialogue", support:"audio_seul", information:"quantite_finale", p1:"clavier", choix:["un","deux"], attendue:["deux"], attendue_p1:["2"], question:"À la fin, la cliente veut combien de cafés ?"}
 };
 /* Moments (A4 §3.2) : choix de l'écran de départ pour les réponses de S3 */
-["s3.c1.sens:S3-C1:commander", "s3.c2.sens:S3-C2:finir", "s3.c3.sens:S3-C3:payer"].forEach(function(x){
+["s3.c1.sens:S3-C1:commander", "s3.c2.sens:S3-C2:commander", "s3.c3.sens:S3-C3:payer"].forEach(function(x){
   var p = x.split(":");
-  ITEMS_C[p[0]] = {code:p[1], sequence:"S3", suit:p[0], audio_id:"", support:"audio_seul", information:"moment", p1:null, choix:["commander","finir","payer"], attendue:[p[2]], question:"C'est quel moment ?"};
+  ITEMS_C[p[0]] = {code:p[1], sequence:"S3", suit:p[0], audio_id:"", support:"audio_seul", information:"moment", p1:null, choix:["commander","payer"], attendue:[p[2]], question:"C'est pour commander ou pour payer ?"};
 });
 /* Banque (lue dans CONTENU.banque) : information de chaque dialogue */
 var INFO_BANQUE = {"b-d1":"intention", "b-d2":"moyen_paiement", "b-t1":"intention", "b-t2":"moyen_paiement", "b-t3":"produit_final", "b-t4":"quantite_finale", "b-t4-un-seul":"quantite_finale"};
@@ -109,9 +110,9 @@ aliasItems();
 var LIB_VALEUR = {
   "1":"un", "2":"deux", "3":"trois", "4":"quatre", un:"un", deux:"deux", nsp:"je ne sais pas", dit:"idée dite à voix haute", rien:"—",
   commander:"commander", finir:"finir la commande", payer:"payer", carte:"par carte", especes:"en espèces",
-  homme:"l'homme", femme:"la femme", homme_et_femme:"l'homme et la femme", un_cafe:"un café", un_the:"un thé", jus_orange:"un jus d'orange",
+  homme:"l'homme", femme:"la femme", homme_et_femme:"l'homme et la femme", cliente:"la cliente", clients:"les clients", un_cafe:"un café", un_the:"un thé", jus_orange:"un jus d'orange",
   croissant:"un croissant", eau:"un verre d'eau", sandwich:"un sandwich", addition:"l'addition", un_cafe_plus:"un autre café",
-  serveur:"le serveur", client:"le client", fini:"il a fini", encore:"il veut encore quelque chose", cafe_et_croissant:"un café et un croissant"
+  serveur:"le serveur", client:"le client", fini:"rien d'autre", encore:"encore quelque chose", cafe_et_croissant:"un café et un croissant"
 };
 var LIB_COND = {p1:"Première réponse", apres_images:"Avec les images", apres_reecoute:"2e écoute (ancien modèle)", apres_texte:"Avec le texte"};
 var LIB_MODE = {formateur:"avec mon formateur", groupe:"en petit groupe", seul:"seul(e)"};

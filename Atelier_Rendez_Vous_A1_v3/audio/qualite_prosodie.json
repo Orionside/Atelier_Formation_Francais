@@ -1,8 +1,8 @@
 {
- "version": "20261014-v3-correction-2",
+ "version": "20261015-v3-correction-3",
  "resume": {
-  "phrases": 273,
-  "sans_defaut_mesure": 255,
+  "phrases": 276,
+  "sans_defaut_mesure": 258,
   "avec_defaut_restant": {
    "s4272645a": [
     "fin de phrase déclarative qui ne descend pas : « Non, un café, s'il vous plaît. »"
