@@ -42,7 +42,7 @@ Chaque atelier est une page autonome : `<dossier>/index.html`.
 | GLP-1 — essais comparatifs UI/UX : Focus et Boucle orale, analyse et protocole | B2 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_UIUX_Comparatifs_v1/ |
 | GLP-1 — comprendre et converser, présentation restructurée (3 séances de 45 min, une chose à la fois : sous-étapes, cartes de phrases, 454 lectures audio) | B2 · aides B1+ | https://orionside.github.io/Atelier_Formation_Francais/Atelier_GLP1_Oral_B2_v3/ |
 | Bon séjour ! — à l’hôtel, je prends la parole (révision après la classe, 8 étapes, deux voix Qwen3-TTS et 288 audios) | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Bon_Sejour_A1/ |
-| Suite 14 · Hôtel Caribeach — visite immersive en 3D (réception, chambre, salle de bains, balcon), dialogue à la réception, chasse aux objets, minibar, quiz il y a / j'ai, deux jeux de voix | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Suite_Hotel_3D_A1/ |
+| Suite 14 · Hôtel Caribeach — visite immersive en 3D (réception, chambre, salle de bains, balcon), dialogue à la réception, chasse aux objets, minibar, quiz il y a / j'ai, voix A1 Qwen3-TTS, objets détaillés et gros plans | A1 | https://orionside.github.io/Atelier_Formation_Francais/Atelier_Suite_Hotel_3D_A1/ |
 
 ## Notes
 

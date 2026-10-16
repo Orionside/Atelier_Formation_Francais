@@ -1,0 +1,1389 @@
+{
+  "clips": [
+    {
+      "id": "w_reception",
+      "voice": "f",
+      "text": "la réception"
+    },
+    {
+      "id": "e_reception",
+      "voice": "f",
+      "text": "La réception est ouverte jour et nuit."
+    },
+    {
+      "id": "w_receptionniste",
+      "voice": "f",
+      "text": "la réceptionniste"
+    },
+    {
+      "id": "e_receptionniste",
+      "voice": "f",
+      "text": "La réceptionniste s'appelle Louise."
+    },
+    {
+      "id": "w_comptoir",
+      "voice": "f",
+      "text": "le comptoir"
+    },
+    {
+      "id": "e_comptoir",
+      "voice": "f",
+      "text": "Le comptoir est en marbre."
+    },
+    {
+      "id": "w_sonnette",
+      "voice": "f",
+      "text": "la sonnette"
+    },
+    {
+      "id": "e_sonnette",
+      "voice": "f",
+      "text": "Il y a une sonnette sur le comptoir."
+    },
+    {
+      "id": "w_ordinateur",
+      "voice": "f",
+      "text": "l'ordinateur"
+    },
+    {
+      "id": "e_ordinateur",
+      "voice": "f",
+      "text": "Il y a un ordinateur à la réception."
+    },
+    {
+      "id": "w_formulaire",
+      "voice": "f",
+      "text": "le formulaire"
+    },
+    {
+      "id": "e_formulaire",
+      "voice": "f",
+      "text": "Je remplis le formulaire de réservation."
+    },
+    {
+      "id": "w_passeport",
+      "voice": "f",
+      "text": "le passeport"
+    },
+    {
+      "id": "e_passeport",
+      "voice": "f",
+      "text": "J'ai un passeport."
+    },
+    {
+      "id": "w_carte_identite",
+      "voice": "f",
+      "text": "la carte d'identité"
+    },
+    {
+      "id": "e_carte_identite",
+      "voice": "f",
+      "text": "Vous avez une carte d'identité ?"
+    },
+    {
+      "id": "w_cle",
+      "voice": "f",
+      "text": "la clé"
+    },
+    {
+      "id": "e_cle",
+      "voice": "f",
+      "text": "Voici la clé de la chambre quatorze."
+    },
+    {
+      "id": "w_ascenseur",
+      "voice": "f",
+      "text": "l'ascenseur"
+    },
+    {
+      "id": "e_ascenseur",
+      "voice": "f",
+      "text": "L'ascenseur est à droite."
+    },
+    {
+      "id": "w_canape_hall",
+      "voice": "f",
+      "text": "les canapés"
+    },
+    {
+      "id": "e_canape_hall",
+      "voice": "f",
+      "text": "Il y a des canapés dans le hall."
+    },
+    {
+      "id": "w_lustre",
+      "voice": "f",
+      "text": "le lustre"
+    },
+    {
+      "id": "e_lustre",
+      "voice": "f",
+      "text": "Le lustre est magnifique."
+    },
+    {
+      "id": "w_valise",
+      "voice": "f",
+      "text": "la valise"
+    },
+    {
+      "id": "e_valise",
+      "voice": "f",
+      "text": "J'ai une grande valise."
+    },
+    {
+      "id": "w_bagages",
+      "voice": "f",
+      "text": "les bagages"
+    },
+    {
+      "id": "e_bagages",
+      "voice": "f",
+      "text": "Il y a des bagages sur le chariot."
+    },
+    {
+      "id": "w_chariot",
+      "voice": "f",
+      "text": "le chariot à bagages"
+    },
+    {
+      "id": "e_chariot",
+      "voice": "f",
+      "text": "Le chariot à bagages est doré."
+    },
+    {
+      "id": "w_parking",
+      "voice": "f",
+      "text": "le parking"
+    },
+    {
+      "id": "e_parking",
+      "voice": "f",
+      "text": "Il y a un parking. Il est gratuit."
+    },
+    {
+      "id": "w_restaurant",
+      "voice": "f",
+      "text": "le restaurant"
+    },
+    {
+      "id": "e_restaurant",
+      "voice": "f",
+      "text": "Le petit déjeuner est au restaurant ou dans la chambre."
+    },
+    {
+      "id": "w_wifi",
+      "voice": "f",
+      "text": "le wifi"
+    },
+    {
+      "id": "e_wifi",
+      "voice": "f",
+      "text": "Le wifi est gratuit."
+    },
+    {
+      "id": "w_plante",
+      "voice": "f",
+      "text": "la plante"
+    },
+    {
+      "id": "e_plante",
+      "voice": "f",
+      "text": "Il y a des plantes vertes."
+    },
+    {
+      "id": "w_couloir",
+      "voice": "f",
+      "text": "le couloir"
+    },
+    {
+      "id": "e_couloir",
+      "voice": "f",
+      "text": "Le couloir est calme."
+    },
+    {
+      "id": "w_porte",
+      "voice": "f",
+      "text": "la porte"
+    },
+    {
+      "id": "e_porte",
+      "voice": "f",
+      "text": "C'est la porte de la chambre quatorze."
+    },
+    {
+      "id": "w_numero",
+      "voice": "f",
+      "text": "le numéro"
+    },
+    {
+      "id": "e_numero",
+      "voice": "f",
+      "text": "Le numéro de la chambre, c'est quatorze."
+    },
+    {
+      "id": "w_lit",
+      "voice": "f",
+      "text": "le lit double"
+    },
+    {
+      "id": "e_lit",
+      "voice": "f",
+      "text": "Il y a un grand lit double."
+    },
+    {
+      "id": "w_oreillers",
+      "voice": "f",
+      "text": "les oreillers"
+    },
+    {
+      "id": "e_oreillers",
+      "voice": "f",
+      "text": "Il y a quatre oreillers."
+    },
+    {
+      "id": "w_coussins",
+      "voice": "f",
+      "text": "les coussins"
+    },
+    {
+      "id": "e_coussins",
+      "voice": "f",
+      "text": "Les coussins sont jaunes."
+    },
+    {
+      "id": "w_couette",
+      "voice": "f",
+      "text": "la couette"
+    },
+    {
+      "id": "e_couette",
+      "voice": "f",
+      "text": "La couette est blanche et douce."
+    },
+    {
+      "id": "w_table_nuit",
+      "voice": "f",
+      "text": "la table de nuit"
+    },
+    {
+      "id": "e_table_nuit",
+      "voice": "f",
+      "text": "Il y a deux tables de nuit."
+    },
+    {
+      "id": "w_lampe_chevet",
+      "voice": "f",
+      "text": "la lampe de chevet"
+    },
+    {
+      "id": "e_lampe_chevet",
+      "voice": "f",
+      "text": "La lampe de chevet est allumée."
+    },
+    {
+      "id": "w_banc",
+      "voice": "f",
+      "text": "le banc"
+    },
+    {
+      "id": "e_banc",
+      "voice": "f",
+      "text": "Il y a un banc devant le lit."
+    },
+    {
+      "id": "w_television",
+      "voice": "f",
+      "text": "la télévision"
+    },
+    {
+      "id": "e_television",
+      "voice": "f",
+      "text": "La télévision est très grande."
+    },
+    {
+      "id": "w_telecommande",
+      "voice": "f",
+      "text": "la télécommande"
+    },
+    {
+      "id": "e_telecommande",
+      "voice": "f",
+      "text": "La télécommande est sur la table de nuit."
+    },
+    {
+      "id": "w_bureau",
+      "voice": "f",
+      "text": "le bureau"
+    },
+    {
+      "id": "e_bureau",
+      "voice": "f",
+      "text": "Il y a un bureau et une chaise."
+    },
+    {
+      "id": "w_chaise",
+      "voice": "f",
+      "text": "la chaise"
+    },
+    {
+      "id": "e_chaise",
+      "voice": "f",
+      "text": "La chaise est confortable."
+    },
+    {
+      "id": "w_lampe_bureau",
+      "voice": "f",
+      "text": "la lampe de bureau"
+    },
+    {
+      "id": "e_lampe_bureau",
+      "voice": "f",
+      "text": "La lampe de bureau est moderne."
+    },
+    {
+      "id": "w_telephone",
+      "voice": "f",
+      "text": "le téléphone"
+    },
+    {
+      "id": "e_telephone",
+      "voice": "f",
+      "text": "Il y a un téléphone sur le bureau."
+    },
+    {
+      "id": "w_minibar",
+      "voice": "f",
+      "text": "le minibar"
+    },
+    {
+      "id": "e_minibar",
+      "voice": "f",
+      "text": "Il y a un minibar dans la chambre."
+    },
+    {
+      "id": "w_machine_cafe",
+      "voice": "f",
+      "text": "la machine à café"
+    },
+    {
+      "id": "e_machine_cafe",
+      "voice": "f",
+      "text": "Il y a une machine à café."
+    },
+    {
+      "id": "w_tasses",
+      "voice": "f",
+      "text": "les tasses"
+    },
+    {
+      "id": "e_tasses",
+      "voice": "f",
+      "text": "Il y a deux tasses."
+    },
+    {
+      "id": "w_canape",
+      "voice": "f",
+      "text": "le canapé"
+    },
+    {
+      "id": "e_canape",
+      "voice": "f",
+      "text": "Le canapé est confortable."
+    },
+    {
+      "id": "w_fauteuil",
+      "voice": "f",
+      "text": "le fauteuil"
+    },
+    {
+      "id": "e_fauteuil",
+      "voice": "f",
+      "text": "Il y a un fauteuil près de la fenêtre."
+    },
+    {
+      "id": "w_table_basse",
+      "voice": "f",
+      "text": "la table basse"
+    },
+    {
+      "id": "e_table_basse",
+      "voice": "f",
+      "text": "Il y a des fruits sur la table basse."
+    },
+    {
+      "id": "w_fruits",
+      "voice": "f",
+      "text": "les fruits"
+    },
+    {
+      "id": "e_fruits",
+      "voice": "f",
+      "text": "Il y a des mangues, des bananes et un ananas."
+    },
+    {
+      "id": "w_fleurs",
+      "voice": "f",
+      "text": "les fleurs"
+    },
+    {
+      "id": "e_fleurs",
+      "voice": "f",
+      "text": "Les fleurs sont belles."
+    },
+    {
+      "id": "w_tapis",
+      "voice": "f",
+      "text": "le tapis"
+    },
+    {
+      "id": "e_tapis",
+      "voice": "f",
+      "text": "Le tapis est doux."
+    },
+    {
+      "id": "w_lampadaire",
+      "voice": "f",
+      "text": "le lampadaire"
+    },
+    {
+      "id": "e_lampadaire",
+      "voice": "f",
+      "text": "Il y a un lampadaire à côté du canapé."
+    },
+    {
+      "id": "w_climatisation",
+      "voice": "f",
+      "text": "la climatisation"
+    },
+    {
+      "id": "e_climatisation",
+      "voice": "f",
+      "text": "Il y a la climatisation."
+    },
+    {
+      "id": "w_rideaux",
+      "voice": "f",
+      "text": "les rideaux"
+    },
+    {
+      "id": "e_rideaux",
+      "voice": "f",
+      "text": "J'ouvre les rideaux."
+    },
+    {
+      "id": "w_fenetre",
+      "voice": "f",
+      "text": "la fenêtre"
+    },
+    {
+      "id": "e_fenetre",
+      "voice": "f",
+      "text": "La fenêtre est très grande."
+    },
+    {
+      "id": "w_porte_fenetre",
+      "voice": "f",
+      "text": "la porte-fenêtre"
+    },
+    {
+      "id": "e_porte_fenetre",
+      "voice": "f",
+      "text": "La porte-fenêtre donne sur le balcon."
+    },
+    {
+      "id": "w_placard",
+      "voice": "f",
+      "text": "le placard"
+    },
+    {
+      "id": "e_placard",
+      "voice": "f",
+      "text": "Il y a un grand placard."
+    },
+    {
+      "id": "w_cintres",
+      "voice": "f",
+      "text": "les cintres"
+    },
+    {
+      "id": "e_cintres",
+      "voice": "f",
+      "text": "Il y a des cintres dans le placard."
+    },
+    {
+      "id": "w_coffre",
+      "voice": "f",
+      "text": "le coffre-fort"
+    },
+    {
+      "id": "e_coffre",
+      "voice": "f",
+      "text": "Il y a un coffre-fort dans le placard."
+    },
+    {
+      "id": "w_porte_bagages",
+      "voice": "f",
+      "text": "le porte-bagages"
+    },
+    {
+      "id": "e_porte_bagages",
+      "voice": "f",
+      "text": "La valise est sur le porte-bagages."
+    },
+    {
+      "id": "w_tableau",
+      "voice": "f",
+      "text": "le tableau"
+    },
+    {
+      "id": "e_tableau",
+      "voice": "f",
+      "text": "Il y a un tableau au mur."
+    },
+    {
+      "id": "w_salle_bains",
+      "voice": "f",
+      "text": "la salle de bains"
+    },
+    {
+      "id": "e_salle_bains",
+      "voice": "f",
+      "text": "La salle de bains est très grande."
+    },
+    {
+      "id": "w_lavabo",
+      "voice": "f",
+      "text": "le lavabo"
+    },
+    {
+      "id": "e_lavabo",
+      "voice": "f",
+      "text": "Il y a deux lavabos."
+    },
+    {
+      "id": "w_miroir",
+      "voice": "f",
+      "text": "le miroir"
+    },
+    {
+      "id": "e_miroir",
+      "voice": "f",
+      "text": "Le miroir est grand."
+    },
+    {
+      "id": "w_robinet",
+      "voice": "f",
+      "text": "le robinet"
+    },
+    {
+      "id": "e_robinet",
+      "voice": "f",
+      "text": "J'ouvre le robinet."
+    },
+    {
+      "id": "w_douche",
+      "voice": "f",
+      "text": "la douche"
+    },
+    {
+      "id": "e_douche",
+      "voice": "f",
+      "text": "La douche est moderne."
+    },
+    {
+      "id": "w_baignoire",
+      "voice": "f",
+      "text": "la baignoire"
+    },
+    {
+      "id": "e_baignoire",
+      "voice": "f",
+      "text": "Il y a une baignoire."
+    },
+    {
+      "id": "w_toilettes",
+      "voice": "f",
+      "text": "les toilettes"
+    },
+    {
+      "id": "e_toilettes",
+      "voice": "f",
+      "text": "Les toilettes sont dans la salle de bains."
+    },
+    {
+      "id": "w_papier_toilette",
+      "voice": "f",
+      "text": "le papier toilette"
+    },
+    {
+      "id": "e_papier_toilette",
+      "voice": "f",
+      "text": "Il y a du papier toilette."
+    },
+    {
+      "id": "w_serviettes",
+      "voice": "f",
+      "text": "les serviettes"
+    },
+    {
+      "id": "e_serviettes",
+      "voice": "f",
+      "text": "Il y a des serviettes blanches."
+    },
+    {
+      "id": "w_peignoir",
+      "voice": "f",
+      "text": "le peignoir"
+    },
+    {
+      "id": "e_peignoir",
+      "voice": "f",
+      "text": "Il y a deux peignoirs."
+    },
+    {
+      "id": "w_chaussons",
+      "voice": "f",
+      "text": "les chaussons"
+    },
+    {
+      "id": "e_chaussons",
+      "voice": "f",
+      "text": "Il y a des chaussons."
+    },
+    {
+      "id": "w_seche_cheveux",
+      "voice": "f",
+      "text": "le sèche-cheveux"
+    },
+    {
+      "id": "e_seche_cheveux",
+      "voice": "f",
+      "text": "Il y a un sèche-cheveux."
+    },
+    {
+      "id": "w_savon",
+      "voice": "f",
+      "text": "le savon"
+    },
+    {
+      "id": "e_savon",
+      "voice": "f",
+      "text": "Voici le savon et le shampooing."
+    },
+    {
+      "id": "w_balcon",
+      "voice": "f",
+      "text": "le balcon"
+    },
+    {
+      "id": "e_balcon",
+      "voice": "f",
+      "text": "Il y a un balcon avec vue sur la piscine."
+    },
+    {
+      "id": "w_piscine",
+      "voice": "f",
+      "text": "la piscine"
+    },
+    {
+      "id": "e_piscine",
+      "voice": "f",
+      "text": "La piscine est grande et fantastique."
+    },
+    {
+      "id": "w_palmiers",
+      "voice": "f",
+      "text": "les palmiers"
+    },
+    {
+      "id": "e_palmiers",
+      "voice": "f",
+      "text": "Il y a des palmiers."
+    },
+    {
+      "id": "w_plage",
+      "voice": "f",
+      "text": "la plage"
+    },
+    {
+      "id": "e_plage",
+      "voice": "f",
+      "text": "La plage est belle."
+    },
+    {
+      "id": "w_mer",
+      "voice": "f",
+      "text": "la mer"
+    },
+    {
+      "id": "e_mer",
+      "voice": "f",
+      "text": "La mer est bleue."
+    },
+    {
+      "id": "w_montagne",
+      "voice": "f",
+      "text": "la montagne"
+    },
+    {
+      "id": "e_montagne",
+      "voice": "f",
+      "text": "Il y a une montagne en Martinique : la montagne Pelée."
+    },
+    {
+      "id": "w_transats",
+      "voice": "f",
+      "text": "les transats"
+    },
+    {
+      "id": "e_transats",
+      "voice": "f",
+      "text": "Il y a deux transats."
+    },
+    {
+      "id": "w_parasol",
+      "voice": "f",
+      "text": "le parasol"
+    },
+    {
+      "id": "e_parasol",
+      "voice": "f",
+      "text": "Il y a des parasols autour de la piscine."
+    },
+    {
+      "id": "w_petit_dejeuner",
+      "voice": "f",
+      "text": "le petit déjeuner"
+    },
+    {
+      "id": "e_petit_dejeuner",
+      "voice": "f",
+      "text": "Le petit déjeuner est compris."
+    },
+    {
+      "id": "w_croissants",
+      "voice": "f",
+      "text": "les croissants"
+    },
+    {
+      "id": "e_croissants",
+      "voice": "f",
+      "text": "Les croissants sont délicieux."
+    },
+    {
+      "id": "w_jus_orange",
+      "voice": "f",
+      "text": "le jus d'orange"
+    },
+    {
+      "id": "e_jus_orange",
+      "voice": "f",
+      "text": "J'aime le jus d'orange."
+    },
+    {
+      "id": "w_cafe",
+      "voice": "f",
+      "text": "le café"
+    },
+    {
+      "id": "e_cafe",
+      "voice": "f",
+      "text": "Le café est chaud."
+    },
+    {
+      "id": "w_mb_eau",
+      "voice": "f",
+      "text": "l'eau minérale"
+    },
+    {
+      "id": "e_mb_eau",
+      "voice": "f",
+      "text": "L'eau minérale coûte trois euros."
+    },
+    {
+      "id": "w_mb_soda",
+      "voice": "f",
+      "text": "le soda"
+    },
+    {
+      "id": "e_mb_soda",
+      "voice": "f",
+      "text": "Le soda coûte quatre euros."
+    },
+    {
+      "id": "w_mb_jus",
+      "voice": "f",
+      "text": "le jus de mangue"
+    },
+    {
+      "id": "e_mb_jus",
+      "voice": "f",
+      "text": "Le jus de mangue coûte cinq euros."
+    },
+    {
+      "id": "w_mb_biere",
+      "voice": "f",
+      "text": "la bière"
+    },
+    {
+      "id": "e_mb_biere",
+      "voice": "f",
+      "text": "La bière coûte six euros."
+    },
+    {
+      "id": "w_mb_chips",
+      "voice": "f",
+      "text": "les chips"
+    },
+    {
+      "id": "e_mb_chips",
+      "voice": "f",
+      "text": "Les chips coûtent sept euros."
+    },
+    {
+      "id": "w_mb_biscuits",
+      "voice": "f",
+      "text": "les biscuits"
+    },
+    {
+      "id": "e_mb_biscuits",
+      "voice": "f",
+      "text": "Les biscuits coûtent onze euros."
+    },
+    {
+      "id": "w_mb_chocolat",
+      "voice": "f",
+      "text": "le chocolat"
+    },
+    {
+      "id": "e_mb_chocolat",
+      "voice": "f",
+      "text": "Le chocolat coûte douze euros."
+    },
+    {
+      "id": "w_mb_rhum",
+      "voice": "f",
+      "text": "le rhum"
+    },
+    {
+      "id": "e_mb_rhum",
+      "voice": "f",
+      "text": "Le rhum de Martinique coûte vingt-quatre euros."
+    },
+    {
+      "id": "w_mb_vin",
+      "voice": "f",
+      "text": "le vin blanc"
+    },
+    {
+      "id": "e_mb_vin",
+      "voice": "f",
+      "text": "Le vin blanc coûte trente-huit euros."
+    },
+    {
+      "id": "w_mb_champagne",
+      "voice": "f",
+      "text": "le champagne"
+    },
+    {
+      "id": "e_mb_champagne",
+      "voice": "f",
+      "text": "Le champagne coûte soixante-dix-neuf euros."
+    },
+    {
+      "id": "ow_mouchoirs",
+      "voice": "f",
+      "text": "des mouchoirs"
+    },
+    {
+      "id": "o_mouchoirs",
+      "voice": "m",
+      "text": "J'ai des mouchoirs."
+    },
+    {
+      "id": "on_mouchoirs",
+      "voice": "m",
+      "text": "Je n'ai pas de mouchoirs."
+    },
+    {
+      "id": "oq_mouchoirs",
+      "voice": "f",
+      "text": "Est-ce que vous avez des mouchoirs ?"
+    },
+    {
+      "id": "ow_portefeuille",
+      "voice": "f",
+      "text": "un portefeuille"
+    },
+    {
+      "id": "o_portefeuille",
+      "voice": "m",
+      "text": "J'ai un portefeuille."
+    },
+    {
+      "id": "on_portefeuille",
+      "voice": "m",
+      "text": "Je n'ai pas de portefeuille."
+    },
+    {
+      "id": "oq_portefeuille",
+      "voice": "f",
+      "text": "Est-ce que vous avez un portefeuille ?"
+    },
+    {
+      "id": "ow_cles",
+      "voice": "f",
+      "text": "des clés"
+    },
+    {
+      "id": "o_cles",
+      "voice": "m",
+      "text": "J'ai des clés."
+    },
+    {
+      "id": "on_cles",
+      "voice": "m",
+      "text": "Je n'ai pas de clés."
+    },
+    {
+      "id": "oq_cles",
+      "voice": "f",
+      "text": "Est-ce que vous avez des clés ?"
+    },
+    {
+      "id": "ow_lunettes",
+      "voice": "f",
+      "text": "des lunettes"
+    },
+    {
+      "id": "o_lunettes",
+      "voice": "m",
+      "text": "J'ai des lunettes."
+    },
+    {
+      "id": "on_lunettes",
+      "voice": "m",
+      "text": "Je n'ai pas de lunettes."
+    },
+    {
+      "id": "oq_lunettes",
+      "voice": "f",
+      "text": "Est-ce que vous avez des lunettes ?"
+    },
+    {
+      "id": "ow_chargeur",
+      "voice": "f",
+      "text": "un chargeur"
+    },
+    {
+      "id": "o_chargeur",
+      "voice": "m",
+      "text": "J'ai un chargeur."
+    },
+    {
+      "id": "on_chargeur",
+      "voice": "m",
+      "text": "Je n'ai pas de chargeur."
+    },
+    {
+      "id": "oq_chargeur",
+      "voice": "f",
+      "text": "Est-ce que vous avez un chargeur ?"
+    },
+    {
+      "id": "ow_portable",
+      "voice": "f",
+      "text": "un portable"
+    },
+    {
+      "id": "o_portable",
+      "voice": "m",
+      "text": "J'ai un portable."
+    },
+    {
+      "id": "on_portable",
+      "voice": "m",
+      "text": "Je n'ai pas de portable."
+    },
+    {
+      "id": "oq_portable",
+      "voice": "f",
+      "text": "Est-ce que vous avez un portable ?"
+    },
+    {
+      "id": "ow_bouteille",
+      "voice": "f",
+      "text": "une bouteille d'eau"
+    },
+    {
+      "id": "o_bouteille",
+      "voice": "m",
+      "text": "J'ai une bouteille d'eau."
+    },
+    {
+      "id": "on_bouteille",
+      "voice": "m",
+      "text": "Je n'ai pas de bouteille d'eau."
+    },
+    {
+      "id": "oq_bouteille",
+      "voice": "f",
+      "text": "Est-ce que vous avez une bouteille d'eau ?"
+    },
+    {
+      "id": "ow_chewing_gums",
+      "voice": "f",
+      "text": "des chewing-gums"
+    },
+    {
+      "id": "o_chewing_gums",
+      "voice": "m",
+      "text": "J'ai des chewing-gums."
+    },
+    {
+      "id": "on_chewing_gums",
+      "voice": "m",
+      "text": "Je n'ai pas de chewing-gums."
+    },
+    {
+      "id": "oq_chewing_gums",
+      "voice": "f",
+      "text": "Est-ce que vous avez des chewing-gums ?"
+    },
+    {
+      "id": "ow_carte_credit",
+      "voice": "f",
+      "text": "une carte de crédit"
+    },
+    {
+      "id": "o_carte_credit",
+      "voice": "m",
+      "text": "J'ai une carte de crédit."
+    },
+    {
+      "id": "on_carte_credit",
+      "voice": "m",
+      "text": "Je n'ai pas de carte de crédit."
+    },
+    {
+      "id": "oq_carte_credit",
+      "voice": "f",
+      "text": "Est-ce que vous avez une carte de crédit ?"
+    },
+    {
+      "id": "ow_porte_monnaie",
+      "voice": "f",
+      "text": "un porte-monnaie"
+    },
+    {
+      "id": "o_porte_monnaie",
+      "voice": "m",
+      "text": "J'ai un porte-monnaie."
+    },
+    {
+      "id": "on_porte_monnaie",
+      "voice": "m",
+      "text": "Je n'ai pas de porte-monnaie."
+    },
+    {
+      "id": "oq_porte_monnaie",
+      "voice": "f",
+      "text": "Est-ce que vous avez un porte-monnaie ?"
+    },
+    {
+      "id": "q_0",
+      "voice": "f",
+      "text": "Est-ce qu'il y a un minibar ?"
+    },
+    {
+      "id": "qo_0",
+      "voice": "m",
+      "text": "Oui, il y a un minibar."
+    },
+    {
+      "id": "qn_0",
+      "voice": "m",
+      "text": "Non, il n'y a pas de minibar."
+    },
+    {
+      "id": "q_1",
+      "voice": "f",
+      "text": "Est-ce qu'il y a une salle de sport ?"
+    },
+    {
+      "id": "qo_1",
+      "voice": "m",
+      "text": "Oui, il y a une salle de sport."
+    },
+    {
+      "id": "qn_1",
+      "voice": "m",
+      "text": "Non, il n'y a pas de salle de sport."
+    },
+    {
+      "id": "q_2",
+      "voice": "f",
+      "text": "Est-ce qu'il y a une baignoire ?"
+    },
+    {
+      "id": "qo_2",
+      "voice": "m",
+      "text": "Oui, il y a une baignoire."
+    },
+    {
+      "id": "qn_2",
+      "voice": "m",
+      "text": "Non, il n'y a pas de baignoire."
+    },
+    {
+      "id": "q_3",
+      "voice": "f",
+      "text": "Est-ce qu'il y a la climatisation ?"
+    },
+    {
+      "id": "qo_3",
+      "voice": "m",
+      "text": "Oui, il y a la climatisation."
+    },
+    {
+      "id": "qn_3",
+      "voice": "m",
+      "text": "Non, il n'y a pas de climatisation."
+    },
+    {
+      "id": "q_4",
+      "voice": "f",
+      "text": "Est-ce qu'il y a une cuisine dans la chambre ?"
+    },
+    {
+      "id": "qo_4",
+      "voice": "m",
+      "text": "Oui, il y a une cuisine."
+    },
+    {
+      "id": "qn_4",
+      "voice": "m",
+      "text": "Non, il n'y a pas de cuisine."
+    },
+    {
+      "id": "q_5",
+      "voice": "f",
+      "text": "Est-ce qu'il y a un balcon ?"
+    },
+    {
+      "id": "qo_5",
+      "voice": "m",
+      "text": "Oui, il y a un balcon."
+    },
+    {
+      "id": "qn_5",
+      "voice": "m",
+      "text": "Non, il n'y a pas de balcon."
+    },
+    {
+      "id": "q_6",
+      "voice": "f",
+      "text": "Est-ce qu'il y a un ordinateur dans la chambre ?"
+    },
+    {
+      "id": "qo_6",
+      "voice": "m",
+      "text": "Oui, il y a un ordinateur."
+    },
+    {
+      "id": "qn_6",
+      "voice": "m",
+      "text": "Non, il n'y a pas d'ordinateur."
+    },
+    {
+      "id": "q_7",
+      "voice": "f",
+      "text": "Est-ce qu'il y a des serviettes ?"
+    },
+    {
+      "id": "qo_7",
+      "voice": "m",
+      "text": "Oui, il y a des serviettes."
+    },
+    {
+      "id": "qn_7",
+      "voice": "m",
+      "text": "Non, il n'y a pas de serviettes."
+    },
+    {
+      "id": "q_8",
+      "voice": "f",
+      "text": "Est-ce qu'il y a des lits simples ?"
+    },
+    {
+      "id": "qo_8",
+      "voice": "m",
+      "text": "Oui, il y a des lits simples."
+    },
+    {
+      "id": "qn_8",
+      "voice": "m",
+      "text": "Non, il n'y a pas de lits simples. Il y a un lit double."
+    },
+    {
+      "id": "q_9",
+      "voice": "f",
+      "text": "Est-ce que le petit déjeuner est compris ?"
+    },
+    {
+      "id": "qo_9",
+      "voice": "m",
+      "text": "Oui, le petit déjeuner est compris."
+    },
+    {
+      "id": "qn_9",
+      "voice": "m",
+      "text": "Non, le petit déjeuner est en supplément."
+    },
+    {
+      "id": "d_d1",
+      "voice": "f",
+      "text": "Bonjour ! Bienvenue à l'hôtel Caribeach."
+    },
+    {
+      "id": "dc_d1",
+      "voice": "m",
+      "text": "Bonjour, j'ai une réservation."
+    },
+    {
+      "id": "d_d2",
+      "voice": "f",
+      "text": "Très bien. Vous avez une pièce d'identité ?"
+    },
+    {
+      "id": "dc_d2",
+      "voice": "m",
+      "text": "Oui, j'ai un passeport."
+    },
+    {
+      "id": "d_d3",
+      "voice": "f",
+      "text": "Merci. Remplissez le formulaire, s'il vous plaît."
+    },
+    {
+      "id": "d_d4",
+      "voice": "f",
+      "text": "Merci beaucoup ! Est-ce que vous avez des bagages ?"
+    },
+    {
+      "id": "dc_d4",
+      "voice": "m",
+      "text": "Oui, j'ai une valise et un sac."
+    },
+    {
+      "id": "d_d5",
+      "voice": "f",
+      "text": "Et vous avez une voiture ?"
+    },
+    {
+      "id": "dc_d5",
+      "voice": "m",
+      "text": "Oui. Est-ce qu'il y a un parking ?"
+    },
+    {
+      "id": "d_d6",
+      "voice": "f",
+      "text": "Oui, il y a un parking. Il est gratuit. Et le petit déjeuner est compris. Vous payez comment ?"
+    },
+    {
+      "id": "dc_d6",
+      "voice": "m",
+      "text": "Je paye par carte."
+    },
+    {
+      "id": "d_d7",
+      "voice": "f",
+      "text": "Parfait. Voici votre clé. Vous avez la chambre quatorze, au premier étage. L'ascenseur est à droite. Bon séjour !"
+    },
+    {
+      "id": "num_7",
+      "voice": "m",
+      "text": "7"
+    },
+    {
+      "id": "num_11",
+      "voice": "m",
+      "text": "11"
+    },
+    {
+      "id": "num_14",
+      "voice": "m",
+      "text": "14"
+    },
+    {
+      "id": "num_16",
+      "voice": "m",
+      "text": "16"
+    },
+    {
+      "id": "num_21",
+      "voice": "m",
+      "text": "21"
+    },
+    {
+      "id": "num_33",
+      "voice": "m",
+      "text": "33"
+    },
+    {
+      "id": "num_45",
+      "voice": "m",
+      "text": "45"
+    },
+    {
+      "id": "num_58",
+      "voice": "m",
+      "text": "58"
+    },
+    {
+      "id": "num_61",
+      "voice": "m",
+      "text": "61"
+    },
+    {
+      "id": "num_72",
+      "voice": "m",
+      "text": "72"
+    },
+    {
+      "id": "num_80",
+      "voice": "m",
+      "text": "80"
+    },
+    {
+      "id": "num_96",
+      "voice": "m",
+      "text": "96"
+    },
+    {
+      "id": "ui_bienvenue",
+      "voice": "f",
+      "text": "Bienvenue à l'hôtel Caribeach ! Parlez avec la réceptionniste."
+    },
+    {
+      "id": "ui_pas_cle",
+      "voice": "f",
+      "text": "Vous n'avez pas de clé. Allez à la réception."
+    },
+    {
+      "id": "ui_ascenseur",
+      "voice": "f",
+      "text": "Vous prenez l'ascenseur."
+    },
+    {
+      "id": "ui_bravo",
+      "voice": "f",
+      "text": "Bravo !"
+    },
+    {
+      "id": "ui_loto",
+      "voice": "f",
+      "text": "C'est l'heure du loto !"
+    }
+  ]
+}

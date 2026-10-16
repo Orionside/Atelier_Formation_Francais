@@ -1,0 +1,1963 @@
+{
+  "ready": true,
+  "version": "20261016-qwen-a1",
+  "voices": {
+    "f": {
+      "start": 31.95,
+      "end": 39.18,
+      "text": "Le samedi matin, je fais toujours les courses au supermarché. L'après-midi, on fait une promenade en famille.",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "source_file": "voix de référence A1 femme.mp4",
+      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1"
+    },
+    "m": {
+      "start": 29.12,
+      "end": 36.36,
+      "text": "J'avais une minute pour lire la question et deux minutes pour y répondre. C'était des questions sur l'équipe et le développement de mon entreprise.",
+      "reference_sha256": "c199ba179b96ba7b8df293265a2337be357669f439c23b5576cb484be33276b5",
+      "source_file": "voix de référence homme A1.mp4",
+      "source_sha256": "ebfee1f29cb1b2ebcbbb5975bb7ec796def79539b3fda8597db2dc7dacf70146"
+    }
+  },
+  "clips": {
+    "w_reception": {
+      "file": "audio/sons/w_reception.mp3",
+      "text": "la réception",
+      "voice": "f",
+      "duration": 1.1805,
+      "sha256": "7eecb8989b67ff2958f5b9a293543ea46e246bb01c77b7597978919603af33ec"
+    },
+    "e_reception": {
+      "file": "audio/sons/e_reception.mp3",
+      "text": "La réception est ouverte jour et nuit.",
+      "voice": "f",
+      "duration": 2.821583,
+      "sha256": "605be34b75eafefb241563e037f949fae36cb6210c637220d2b4b8b416e06ab3"
+    },
+    "w_receptionniste": {
+      "file": "audio/sons/w_receptionniste.mp3",
+      "text": "la réceptionniste",
+      "voice": "f",
+      "duration": 1.551125,
+      "sha256": "2b471c809807955ca6c213df358f3686379ac209877eea37391e92de74774060"
+    },
+    "e_receptionniste": {
+      "file": "audio/sons/e_receptionniste.mp3",
+      "text": "La réceptionniste s'appelle Louise.",
+      "voice": "f",
+      "duration": 2.337125,
+      "sha256": "ef07c9871595ddc6d44d7e7071265c543e597bc7c646ff2c8edc7faa9c5f9f0c"
+    },
+    "w_comptoir": {
+      "file": "audio/sons/w_comptoir.mp3",
+      "text": "le comptoir",
+      "voice": "f",
+      "duration": 1.279875,
+      "sha256": "359fe5761642a5c1be7ea87cb802b36b4d3c702e1b232fb39c91699eadbf0569"
+    },
+    "e_comptoir": {
+      "file": "audio/sons/e_comptoir.mp3",
+      "text": "Le comptoir est en marbre.",
+      "voice": "f",
+      "duration": 1.785333,
+      "sha256": "cb1bad77523b4b28008d659de0c220a747f08f40bdd0a49f74adf6c79e7cbbd4"
+    },
+    "w_sonnette": {
+      "file": "audio/sons/w_sonnette.mp3",
+      "text": "la sonnette",
+      "voice": "f",
+      "duration": 1.147083,
+      "sha256": "f4d99cbaa17b3bf348a6ef87927e9ec292cf5e4e7341d5a130c5159eeb581483"
+    },
+    "e_sonnette": {
+      "file": "audio/sons/e_sonnette.mp3",
+      "text": "Il y a une sonnette sur le comptoir.",
+      "voice": "f",
+      "duration": 2.080083,
+      "sha256": "b0c10b394a7cdf950319a2b7ff9006d548f79f1ccc9aeeb3e9d4fad9f1f90ab7"
+    },
+    "w_ordinateur": {
+      "file": "audio/sons/w_ordinateur.mp3",
+      "text": "l'ordinateur",
+      "voice": "f",
+      "duration": 1.321958,
+      "sha256": "66fd57af5d02d567a445d5185fd16eed405793c2ea3907085820398b672c2d3c"
+    },
+    "e_ordinateur": {
+      "file": "audio/sons/e_ordinateur.mp3",
+      "text": "Il y a un ordinateur à la réception.",
+      "voice": "f",
+      "duration": 2.126667,
+      "sha256": "e1f43826e2b775dcf54b8ef694e9fe621bdfeefc311f8511a07f959ae8da9431"
+    },
+    "w_formulaire": {
+      "file": "audio/sons/w_formulaire.mp3",
+      "text": "le formulaire",
+      "voice": "f",
+      "duration": 1.327958,
+      "sha256": "d96681859ce6a93fec49a3a4c4db26136128dcafcadb07e55df0fd480f7ae1e3"
+    },
+    "e_formulaire": {
+      "file": "audio/sons/e_formulaire.mp3",
+      "text": "Je remplis le formulaire de réservation.",
+      "voice": "f",
+      "duration": 2.575875,
+      "sha256": "53a604c2762661c0404d327d712fc46cbb63725e58c58c99d9c143b4ece512f9"
+    },
+    "w_passeport": {
+      "file": "audio/sons/w_passeport.mp3",
+      "text": "le passeport",
+      "voice": "f",
+      "duration": 1.170583,
+      "sha256": "1328e4d68fd563260573e82ac193b6113906361744a8045cf08204c012fdbd62"
+    },
+    "e_passeport": {
+      "file": "audio/sons/e_passeport.mp3",
+      "text": "J'ai un passeport.",
+      "voice": "f",
+      "duration": 1.326958,
+      "sha256": "1f251b0e8697d5c71d7083527cdc1351df32530996d58410aa242cc461f0f6f6"
+    },
+    "w_carte_identite": {
+      "file": "audio/sons/w_carte_identite.mp3",
+      "text": "la carte d'identité",
+      "voice": "f",
+      "duration": 1.640417,
+      "sha256": "3cd22bd52a9bdc3ccd04caed302e4857062af86e55c983ebc08fca482452ad4b"
+    },
+    "e_carte_identite": {
+      "file": "audio/sons/e_carte_identite.mp3",
+      "text": "Vous avez une carte d'identité ?",
+      "voice": "f",
+      "duration": 2.035375,
+      "sha256": "7c2543c9be12f9d9f9187006d8a617dde83211e4a92ef3e4b0b3aeb96f0a550a"
+    },
+    "w_cle": {
+      "file": "audio/sons/w_cle.mp3",
+      "text": "la clé",
+      "voice": "f",
+      "duration": 0.902042,
+      "sha256": "7abeff5541fe6ac2c14809b14bdfd7f7c323361b2b60b07b43097f16987648ce"
+    },
+    "e_cle": {
+      "file": "audio/sons/e_cle.mp3",
+      "text": "Voici la clé de la chambre quatorze.",
+      "voice": "f",
+      "duration": 2.346,
+      "sha256": "3c05233a154fa2a15121ac015b5b5cc05a23df9dcdcf205da318586c868aef04"
+    },
+    "w_ascenseur": {
+      "file": "audio/sons/w_ascenseur.mp3",
+      "text": "l'ascenseur",
+      "voice": "f",
+      "duration": 1.082375,
+      "sha256": "3a0755f8afb24883eba61e0559af70e75a08522ae0f3e3d9dd8e05f2ac1f91ee"
+    },
+    "e_ascenseur": {
+      "file": "audio/sons/e_ascenseur.mp3",
+      "text": "L'ascenseur est à droite.",
+      "voice": "f",
+      "duration": 1.965083,
+      "sha256": "d8b098f7d443273ff6a5b478723caf843d967eb917cd62023ca1819ea95286b6"
+    },
+    "w_canape_hall": {
+      "file": "audio/sons/w_canape_hall.mp3",
+      "text": "les canapés",
+      "voice": "f",
+      "duration": 1.146292,
+      "sha256": "05f979bf5eb98778c34f394f93bc9a787ed1e14a5e59af7d2e36439287d08695"
+    },
+    "e_canape_hall": {
+      "file": "audio/sons/e_canape_hall.mp3",
+      "text": "Il y a des canapés dans le hall.",
+      "voice": "f",
+      "duration": 2.008708,
+      "sha256": "17135a6079df4b4a2da19f551512fc41e1e3b504059c9bae7d6d7c7b67815293"
+    },
+    "w_lustre": {
+      "file": "audio/sons/w_lustre.mp3",
+      "text": "le lustre",
+      "voice": "f",
+      "duration": 1.173167,
+      "sha256": "0758ea250aa0854a90415713407e62b147f6198334b8a81e8b2872ed425af5cc"
+    },
+    "e_lustre": {
+      "file": "audio/sons/e_lustre.mp3",
+      "text": "Le lustre est magnifique.",
+      "voice": "f",
+      "duration": 2.041958,
+      "sha256": "9ec21ea39e3a526af2be550a3637728745a3cf0c9c50ecc2dd80f26c7b63caef"
+    },
+    "w_valise": {
+      "file": "audio/sons/w_valise.mp3",
+      "text": "la valise",
+      "voice": "f",
+      "duration": 1.150167,
+      "sha256": "c262e0a1e3e84cbf31c54739870d25cbee1d761748ac0d32fc8b3212055ae87d"
+    },
+    "e_valise": {
+      "file": "audio/sons/e_valise.mp3",
+      "text": "J'ai une grande valise.",
+      "voice": "f",
+      "duration": 1.538583,
+      "sha256": "897c21c9659aa628ff0480c8f9b49d127868335242b5633f18d158606106e92f"
+    },
+    "w_bagages": {
+      "file": "audio/sons/w_bagages.mp3",
+      "text": "les bagages",
+      "voice": "f",
+      "duration": 1.156917,
+      "sha256": "4f48021f397580f51462abc6dd69fc00e19ed0e892de1bb25cfffec7842b99dd"
+    },
+    "e_bagages": {
+      "file": "audio/sons/e_bagages.mp3",
+      "text": "Il y a des bagages sur le chariot.",
+      "voice": "f",
+      "duration": 2.247542,
+      "sha256": "c25225a28935a29f484c661560272f92b9426d517ac80fa9f3685bc475d6fa70"
+    },
+    "w_chariot": {
+      "file": "audio/sons/w_chariot.mp3",
+      "text": "le chariot à bagages",
+      "voice": "f",
+      "duration": 2.014083,
+      "sha256": "66e1fdfbc92c7e662d779558851fe4004238fcbdcf495beae96a3e1c9dac0ccd"
+    },
+    "e_chariot": {
+      "file": "audio/sons/e_chariot.mp3",
+      "text": "Le chariot à bagages est doré.",
+      "voice": "f",
+      "duration": 2.174042,
+      "sha256": "cee76b9b28b0a4a9e64201962675038bdcf1751c7fafef411f16ee3cd36ec7f5"
+    },
+    "w_parking": {
+      "file": "audio/sons/w_parking.mp3",
+      "text": "le parking",
+      "voice": "f",
+      "duration": 1.225958,
+      "sha256": "d9f1f6d80f7338e8504300d6450fdcf8d647827b120744aba3560b1eb0129c9c"
+    },
+    "e_parking": {
+      "file": "audio/sons/e_parking.mp3",
+      "text": "Il y a un parking. Il est gratuit.",
+      "voice": "f",
+      "duration": 2.651042,
+      "sha256": "8c6169b6add3bb339004eb5e7b9cddb6cefbb0590ed502f7bcbb5316a9c0e8ea"
+    },
+    "w_restaurant": {
+      "file": "audio/sons/w_restaurant.mp3",
+      "text": "le restaurant",
+      "voice": "f",
+      "duration": 1.235958,
+      "sha256": "25323ba50876587a74e0bccc59e8275bd6a454c06a7c7393d3c5bd15f50d33ae"
+    },
+    "e_restaurant": {
+      "file": "audio/sons/e_restaurant.mp3",
+      "text": "Le petit déjeuner est au restaurant ou dans la chambre.",
+      "voice": "f",
+      "duration": 3.041125,
+      "sha256": "e3af4ae0baf259baed2bb587f132df0a169668019aaa905eeb680698478f2397"
+    },
+    "w_wifi": {
+      "file": "audio/sons/w_wifi.mp3",
+      "text": "le wifi",
+      "voice": "f",
+      "duration": 1.017208,
+      "sha256": "71c6ac5fc16a3321ae7cdc01c1400f9836e5db5d5a5b122f507bfcb8fff39ffd"
+    },
+    "e_wifi": {
+      "file": "audio/sons/e_wifi.mp3",
+      "text": "Le wifi est gratuit.",
+      "voice": "f",
+      "duration": 1.784042,
+      "sha256": "9ceaa65347fe4c4f492761b28a7dba21aa0a16835b9dbd4b2ef37c9a0329a829"
+    },
+    "w_plante": {
+      "file": "audio/sons/w_plante.mp3",
+      "text": "la plante",
+      "voice": "f",
+      "duration": 1.095208,
+      "sha256": "c580e7be9d897029c612a4673672295d091cc4c9f7dd5dec9d6755172f658b25"
+    },
+    "e_plante": {
+      "file": "audio/sons/e_plante.mp3",
+      "text": "Il y a des plantes vertes.",
+      "voice": "f",
+      "duration": 1.517,
+      "sha256": "2de1811c92bf425d53171df60b1266af7068ee2489c3831de2bb6ffad29075f9"
+    },
+    "w_couloir": {
+      "file": "audio/sons/w_couloir.mp3",
+      "text": "le couloir",
+      "voice": "f",
+      "duration": 1.139542,
+      "sha256": "5f7be958095c8668847d7697ac5923727bb77c43275638526c462d0b268ec460"
+    },
+    "e_couloir": {
+      "file": "audio/sons/e_couloir.mp3",
+      "text": "Le couloir est calme.",
+      "voice": "f",
+      "duration": 1.568708,
+      "sha256": "2dd36bee3192dbd6792a2f4dc59b4c81ba2327a30c5222df14a0e70316b42bcb"
+    },
+    "w_porte": {
+      "file": "audio/sons/w_porte.mp3",
+      "text": "la porte",
+      "voice": "f",
+      "duration": 1.073792,
+      "sha256": "eeb298f768f19b80811cb505e1e3fba4cdccd3f98881d2a35817b8908dc40484"
+    },
+    "e_porte": {
+      "file": "audio/sons/e_porte.mp3",
+      "text": "C'est la porte de la chambre quatorze.",
+      "voice": "f",
+      "duration": 2.366292,
+      "sha256": "cdcf35531160b15c7987d67c5b1ad8d41fdb5ac155f6c82168b55f073b6d4f1d"
+    },
+    "w_numero": {
+      "file": "audio/sons/w_numero.mp3",
+      "text": "le numéro",
+      "voice": "f",
+      "duration": 1.168792,
+      "sha256": "dd33c8af8a1e51dc3b2d577c6dfc4fa0288a487fb90492366f86203bf52e2699"
+    },
+    "e_numero": {
+      "file": "audio/sons/e_numero.mp3",
+      "text": "Le numéro de la chambre, c'est quatorze.",
+      "voice": "f",
+      "duration": 2.812083,
+      "sha256": "cfee9888081fadcd21056eca18a39f0cf125da37550b14995c0d59ae611722b9"
+    },
+    "w_lit": {
+      "file": "audio/sons/w_lit.mp3",
+      "text": "le lit double",
+      "voice": "f",
+      "duration": 1.254917,
+      "sha256": "1713e132ee8275e12c019d70e357aae575591e5e2ed94a9e32bd699637a79e4a"
+    },
+    "e_lit": {
+      "file": "audio/sons/e_lit.mp3",
+      "text": "Il y a un grand lit double.",
+      "voice": "f",
+      "duration": 1.579125,
+      "sha256": "b7c60e4c69c68d79b08c7827a10a4af91b7ce1f6ffdbf26e8790d407cf9b1d93"
+    },
+    "w_oreillers": {
+      "file": "audio/sons/w_oreillers.mp3",
+      "text": "les oreillers",
+      "voice": "f",
+      "duration": 1.129958,
+      "sha256": "f1b44fec7e574a6faa1cc38939035b286b9992f1c12a124ce17e830ca30f22e8"
+    },
+    "e_oreillers": {
+      "file": "audio/sons/e_oreillers.mp3",
+      "text": "Il y a quatre oreillers.",
+      "voice": "f",
+      "duration": 1.716958,
+      "sha256": "c5017ddad59f8c08a35921cb7795da922316075466d6473cbac8a74ba4d3307e"
+    },
+    "w_coussins": {
+      "file": "audio/sons/w_coussins.mp3",
+      "text": "les coussins",
+      "voice": "f",
+      "duration": 1.074792,
+      "sha256": "8914ec136018c33f7edde67f2c1d4a4b56b938026944a9ddd44f4f124912ec97"
+    },
+    "e_coussins": {
+      "file": "audio/sons/e_coussins.mp3",
+      "text": "Les coussins sont jaunes.",
+      "voice": "f",
+      "duration": 1.624375,
+      "sha256": "0167f6b21dce19ae7f00644b01c016debaa657663385697dc98b102ddd06f91d"
+    },
+    "w_couette": {
+      "file": "audio/sons/w_couette.mp3",
+      "text": "la couette",
+      "voice": "f",
+      "duration": 1.155042,
+      "sha256": "31521f37dd8413921ef629f971aab722ab683dfd439b7bc59ca505a80b5d33d3"
+    },
+    "e_couette": {
+      "file": "audio/sons/e_couette.mp3",
+      "text": "La couette est blanche et douce.",
+      "voice": "f",
+      "duration": 2.19325,
+      "sha256": "a84b521a2a17016e668fc8f4ce760cc4ed57722f7974d664db36896ddaaa86d2"
+    },
+    "w_table_nuit": {
+      "file": "audio/sons/w_table_nuit.mp3",
+      "text": "la table de nuit",
+      "voice": "f",
+      "duration": 1.318542,
+      "sha256": "f512bc5cc9208e6487cd5cf161f4c2ff376588b9e1d43413ea68a5e548509c8d"
+    },
+    "e_table_nuit": {
+      "file": "audio/sons/e_table_nuit.mp3",
+      "text": "Il y a deux tables de nuit.",
+      "voice": "f",
+      "duration": 2.0595,
+      "sha256": "cd0cd6d1b6a88793336586f980b5c8472fc989fb67da81aaaa76fc68433f07d6"
+    },
+    "w_lampe_chevet": {
+      "file": "audio/sons/w_lampe_chevet.mp3",
+      "text": "la lampe de chevet",
+      "voice": "f",
+      "duration": 1.473167,
+      "sha256": "cdc6327d30562861b42e3caea9cd9646fd68483c827ab2394f9589f13f3802d7"
+    },
+    "e_lampe_chevet": {
+      "file": "audio/sons/e_lampe_chevet.mp3",
+      "text": "La lampe de chevet est allumée.",
+      "voice": "f",
+      "duration": 2.1965,
+      "sha256": "0d998bf72808d3edc639b24757a509f3a0c50d0ea20c56693caf857515943150"
+    },
+    "w_banc": {
+      "file": "audio/sons/w_banc.mp3",
+      "text": "le banc",
+      "voice": "f",
+      "duration": 0.920042,
+      "sha256": "c254130963b83079be4bde135c4530af18068e5b659f31f977d73bb56cf5519c"
+    },
+    "e_banc": {
+      "file": "audio/sons/e_banc.mp3",
+      "text": "Il y a un banc devant le lit.",
+      "voice": "f",
+      "duration": 1.663333,
+      "sha256": "aa21a01f0e79a4e8f9052a3d10d8f8db02f824ab9767b9feebe1f401e0bf8e39"
+    },
+    "w_television": {
+      "file": "audio/sons/w_television.mp3",
+      "text": "la télévision",
+      "voice": "f",
+      "duration": 1.465958,
+      "sha256": "5a839d392f92b776309d3f474bc1328782b68e5786f917db6c8b5de26356b446"
+    },
+    "e_television": {
+      "file": "audio/sons/e_television.mp3",
+      "text": "La télévision est très grande.",
+      "voice": "f",
+      "duration": 1.941542,
+      "sha256": "87fc08ea1cd57cf58c47f36c2d90ca1b50c51dad0b0e04b0fcedbace93fbe09f"
+    },
+    "w_telecommande": {
+      "file": "audio/sons/w_telecommande.mp3",
+      "text": "la télécommande",
+      "voice": "f",
+      "duration": 1.399333,
+      "sha256": "8651d920ee0ded1b383b016e9d1ff6e114219504d85f9d643883f261709c8af9"
+    },
+    "e_telecommande": {
+      "file": "audio/sons/e_telecommande.mp3",
+      "text": "La télécommande est sur la table de nuit.",
+      "voice": "f",
+      "duration": 2.3245,
+      "sha256": "1e2cd9026a294ed49c9e76e1935011261f3702eaa2e94b5049c7968492773f6f"
+    },
+    "w_bureau": {
+      "file": "audio/sons/w_bureau.mp3",
+      "text": "le bureau",
+      "voice": "f",
+      "duration": 1.07625,
+      "sha256": "17e01cec66165f147c7cc0679da71d824e65ba297a859f482f465c1d6989ac72"
+    },
+    "e_bureau": {
+      "file": "audio/sons/e_bureau.mp3",
+      "text": "Il y a un bureau et une chaise.",
+      "voice": "f",
+      "duration": 1.970083,
+      "sha256": "f5fd20f1fa36d42979e5fb1a19d349d2ddc0d9a2e176a9a3ac5d7c4b9a759622"
+    },
+    "w_chaise": {
+      "file": "audio/sons/w_chaise.mp3",
+      "text": "la chaise",
+      "voice": "f",
+      "duration": 1.07875,
+      "sha256": "0c6e85704b460ffd8cb3381a5b43092b7c85b92e42c87ae44c2e969ee59dee69"
+    },
+    "e_chaise": {
+      "file": "audio/sons/e_chaise.mp3",
+      "text": "La chaise est confortable.",
+      "voice": "f",
+      "duration": 1.873958,
+      "sha256": "e4c1a2853ee9714fbc09c8a3164d5330c06dce13901bfeb48a95b81b144244cd"
+    },
+    "w_lampe_bureau": {
+      "file": "audio/sons/w_lampe_bureau.mp3",
+      "text": "la lampe de bureau",
+      "voice": "f",
+      "duration": 1.4115,
+      "sha256": "62f330e5a6033480bdb1d64d371f1a2458d26ee231a9c29c8b5122abea7e4a17"
+    },
+    "e_lampe_bureau": {
+      "file": "audio/sons/e_lampe_bureau.mp3",
+      "text": "La lampe de bureau est moderne.",
+      "voice": "f",
+      "duration": 2.521958,
+      "sha256": "f0b88fe4423145c0f6cbf3d9e08961134e6cb25333e92e5f6e69ad2fe0ac9b05"
+    },
+    "w_telephone": {
+      "file": "audio/sons/w_telephone.mp3",
+      "text": "le téléphone",
+      "voice": "f",
+      "duration": 1.338292,
+      "sha256": "e4a24de8b525f0da8f0ccbc4e46df3643efc52e820d93d29122d9c33c25c46b8"
+    },
+    "e_telephone": {
+      "file": "audio/sons/e_telephone.mp3",
+      "text": "Il y a un téléphone sur le bureau.",
+      "voice": "f",
+      "duration": 2.350083,
+      "sha256": "ebcd475de56ec91d75c6c05881653623658986ffd9f4240967f3cb302cb350ab"
+    },
+    "w_minibar": {
+      "file": "audio/sons/w_minibar.mp3",
+      "text": "le minibar",
+      "voice": "f",
+      "duration": 1.261083,
+      "sha256": "090d3bee4aaff61709ec8d69f4c2c200219d0e53f06b7fdba8c486009ae576b7"
+    },
+    "e_minibar": {
+      "file": "audio/sons/e_minibar.mp3",
+      "text": "Il y a un minibar dans la chambre.",
+      "voice": "f",
+      "duration": 2.009875,
+      "sha256": "c6a1d914385cf6544df028d66968d5ebeed7dbd387c24cc63a549479d4a83180"
+    },
+    "w_machine_cafe": {
+      "file": "audio/sons/w_machine_cafe.mp3",
+      "text": "la machine à café",
+      "voice": "f",
+      "duration": 1.404,
+      "sha256": "942779d885155f8f946d9668256e8cd5efb1e61662398a2eeb15d93871811d7c"
+    },
+    "e_machine_cafe": {
+      "file": "audio/sons/e_machine_cafe.mp3",
+      "text": "Il y a une machine à café.",
+      "voice": "f",
+      "duration": 1.885958,
+      "sha256": "464efd1f8213ef39272c85b8e88ba55c4539005aebca903fb5961beca5c27463"
+    },
+    "w_tasses": {
+      "file": "audio/sons/w_tasses.mp3",
+      "text": "les tasses",
+      "voice": "f",
+      "duration": 1.172708,
+      "sha256": "edcf36b25ddd8d91ec55333ed7ae583a3e94a5f5c7fd2842023d764aa5d2eb25"
+    },
+    "e_tasses": {
+      "file": "audio/sons/e_tasses.mp3",
+      "text": "Il y a deux tasses.",
+      "voice": "f",
+      "duration": 1.651208,
+      "sha256": "82ee5d5685f84110d58c559ecebccaea008e81d58bc4daab853f2944934cb735"
+    },
+    "w_canape": {
+      "file": "audio/sons/w_canape.mp3",
+      "text": "le canapé",
+      "voice": "f",
+      "duration": 1.311875,
+      "sha256": "4489b4c3c5b11d544000767fc6fa7e6c90b8b87ea623795d3e4cac942294c40c"
+    },
+    "e_canape": {
+      "file": "audio/sons/e_canape.mp3",
+      "text": "Le canapé est confortable.",
+      "voice": "f",
+      "duration": 2.193083,
+      "sha256": "1a62f5ab8e1c35bf660e4eb145c6da66d4abee4136761cd1fc6ebab20f02bf3e"
+    },
+    "w_fauteuil": {
+      "file": "audio/sons/w_fauteuil.mp3",
+      "text": "le fauteuil",
+      "voice": "f",
+      "duration": 1.153958,
+      "sha256": "625f69b1e80f338c93619e8810718539dabba9a6faaec612f84fe583d1daf37e"
+    },
+    "e_fauteuil": {
+      "file": "audio/sons/e_fauteuil.mp3",
+      "text": "Il y a un fauteuil près de la fenêtre.",
+      "voice": "f",
+      "duration": 2.010667,
+      "sha256": "30f82fdace884a5146d368a2136cc846fd6029c8c29a17adcdd9e35bf349e4a3"
+    },
+    "w_table_basse": {
+      "file": "audio/sons/w_table_basse.mp3",
+      "text": "la table basse",
+      "voice": "f",
+      "duration": 1.322833,
+      "sha256": "49f049c74fa01d5a7e5334d96bdcd4185364ec7491e40c093268f30ade3d1014"
+    },
+    "e_table_basse": {
+      "file": "audio/sons/e_table_basse.mp3",
+      "text": "Il y a des fruits sur la table basse.",
+      "voice": "f",
+      "duration": 2.371417,
+      "sha256": "be8db24f442bd1c2567b209f03189326fb2fdf9be6f0d2fcbb93fb8336792fad"
+    },
+    "w_fruits": {
+      "file": "audio/sons/w_fruits.mp3",
+      "text": "les fruits",
+      "voice": "f",
+      "duration": 0.917292,
+      "sha256": "4acdd6d5a531938c36e56c694c5186a1bd71a2cb8c26098e86bba0f990a574eb"
+    },
+    "e_fruits": {
+      "file": "audio/sons/e_fruits.mp3",
+      "text": "Il y a des mangues, des bananes et un ananas.",
+      "voice": "f",
+      "duration": 3.6865,
+      "sha256": "e9c58595437ff93125a550a8976896bbbdb893eb9b1a8a66e20378eb789e3781"
+    },
+    "w_fleurs": {
+      "file": "audio/sons/w_fleurs.mp3",
+      "text": "les fleurs",
+      "voice": "f",
+      "duration": 1.155458,
+      "sha256": "19545aaaad67f445184cf3148736b972e44ae2675517b7211eb0739416e090c5"
+    },
+    "e_fleurs": {
+      "file": "audio/sons/e_fleurs.mp3",
+      "text": "Les fleurs sont belles.",
+      "voice": "f",
+      "duration": 1.41075,
+      "sha256": "4faf8c7131fa0a93d154db1233a910fbaea181ad8d2a33454ecf2966eea4f0b7"
+    },
+    "w_tapis": {
+      "file": "audio/sons/w_tapis.mp3",
+      "text": "le tapis",
+      "voice": "f",
+      "duration": 1.086958,
+      "sha256": "1bd77e63b90161be4375b6f74ffb646ef9025130e50365ed4b7b04b1279b8e43"
+    },
+    "e_tapis": {
+      "file": "audio/sons/e_tapis.mp3",
+      "text": "Le tapis est doux.",
+      "voice": "f",
+      "duration": 1.334125,
+      "sha256": "d1a41328a85aadd03b22b63817bb9f9151fce91c9dfedb368e14a229ffd0b91b"
+    },
+    "w_lampadaire": {
+      "file": "audio/sons/w_lampadaire.mp3",
+      "text": "le lampadaire",
+      "voice": "f",
+      "duration": 1.340333,
+      "sha256": "c6ba8196b6c181fd3fb8118b709212aae136e28a36aff552cd829d3cb4761eec"
+    },
+    "e_lampadaire": {
+      "file": "audio/sons/e_lampadaire.mp3",
+      "text": "Il y a un lampadaire à côté du canapé.",
+      "voice": "f",
+      "duration": 2.408875,
+      "sha256": "30c73ff824a3773050a4f6b9d09da9d8239eaae4bb68fcf48d273053a2f28d39"
+    },
+    "w_climatisation": {
+      "file": "audio/sons/w_climatisation.mp3",
+      "text": "la climatisation",
+      "voice": "f",
+      "duration": 1.484042,
+      "sha256": "983f941d651ea7284d32da146d50734c280ce4c3beccfd512e5cdbd30ac0ba8a"
+    },
+    "e_climatisation": {
+      "file": "audio/sons/e_climatisation.mp3",
+      "text": "Il y a la climatisation.",
+      "voice": "f",
+      "duration": 1.878292,
+      "sha256": "7fe796991d649d219db9444bc366d61df3fea763bea6154cb4caacdce3729869"
+    },
+    "w_rideaux": {
+      "file": "audio/sons/w_rideaux.mp3",
+      "text": "les rideaux",
+      "voice": "f",
+      "duration": 0.99975,
+      "sha256": "ca78f9fc263b244d9dcb32f8b043c4d0955154b5c4f0ef3a68cd515538284430"
+    },
+    "e_rideaux": {
+      "file": "audio/sons/e_rideaux.mp3",
+      "text": "J'ouvre les rideaux.",
+      "voice": "f",
+      "duration": 1.381792,
+      "sha256": "84fd16ee720bd381913d9f3f9c035f51ede89f9184196ecfe6363dff56e90f10"
+    },
+    "w_fenetre": {
+      "file": "audio/sons/w_fenetre.mp3",
+      "text": "la fenêtre",
+      "voice": "f",
+      "duration": 1.158625,
+      "sha256": "1d3c9251bae29495f7eabe8cc6429f55e2206e8d252a81383c0c04689a018d6a"
+    },
+    "e_fenetre": {
+      "file": "audio/sons/e_fenetre.mp3",
+      "text": "La fenêtre est très grande.",
+      "voice": "f",
+      "duration": 1.630583,
+      "sha256": "edcb726481c0ec50715e589d3d9b44864e1af8f45cdeff1a5d78e0651e6ecc6e"
+    },
+    "w_porte_fenetre": {
+      "file": "audio/sons/w_porte_fenetre.mp3",
+      "text": "la porte-fenêtre",
+      "voice": "f",
+      "duration": 1.472083,
+      "sha256": "98121df26c50e2fd4596be96073e957ff201bbc8970a3fd09615b55d9d9f7866"
+    },
+    "e_porte_fenetre": {
+      "file": "audio/sons/e_porte_fenetre.mp3",
+      "text": "La porte-fenêtre donne sur le balcon.",
+      "voice": "f",
+      "duration": 2.673792,
+      "sha256": "f060c826fb7793924cbb1abc73285d9b337f0e41e32825586ff4082ec8398cc8"
+    },
+    "w_placard": {
+      "file": "audio/sons/w_placard.mp3",
+      "text": "le placard",
+      "voice": "f",
+      "duration": 1.330125,
+      "sha256": "ec9f9b4df3662706ae8ad53dbf7f931488619231bfa2814955524f90a7512df3"
+    },
+    "e_placard": {
+      "file": "audio/sons/e_placard.mp3",
+      "text": "Il y a un grand placard.",
+      "voice": "f",
+      "duration": 1.811292,
+      "sha256": "0427f1eeb9f5816e371e06b0596e6a034c5a648251f043ccab8778c47d6d1a9d"
+    },
+    "w_cintres": {
+      "file": "audio/sons/w_cintres.mp3",
+      "text": "les cintres",
+      "voice": "f",
+      "duration": 1.12725,
+      "sha256": "3f0f46d01588ad71ddf26465b3ad00c3794856487519d1756f4207b3b8803244"
+    },
+    "e_cintres": {
+      "file": "audio/sons/e_cintres.mp3",
+      "text": "Il y a des cintres dans le placard.",
+      "voice": "f",
+      "duration": 2.157042,
+      "sha256": "014b2dfd2e414a0c0dc449af154964d5a14a888f8f96c251818dcc9d0e0ac0cf"
+    },
+    "w_coffre": {
+      "file": "audio/sons/w_coffre.mp3",
+      "text": "le coffre-fort",
+      "voice": "f",
+      "duration": 1.381708,
+      "sha256": "156f7bae5f5656b9f44434cb9059e6b2fcfdc0aac325fd31c9cb25ad32010d18"
+    },
+    "e_coffre": {
+      "file": "audio/sons/e_coffre.mp3",
+      "text": "Il y a un coffre-fort dans le placard.",
+      "voice": "f",
+      "duration": 2.69925,
+      "sha256": "f6f8b616b884cdc3b8159bb1a7e9b0ae4893f682dcbf6fe0f1eb8260b8c35b21"
+    },
+    "w_porte_bagages": {
+      "file": "audio/sons/w_porte_bagages.mp3",
+      "text": "le porte-bagages",
+      "voice": "f",
+      "duration": 1.62575,
+      "sha256": "2ff108e35b36f0d99b934963eba1f19a7d85ead08a09099dd4ac9ba1f2fd2548"
+    },
+    "e_porte_bagages": {
+      "file": "audio/sons/e_porte_bagages.mp3",
+      "text": "La valise est sur le porte-bagages.",
+      "voice": "f",
+      "duration": 2.330375,
+      "sha256": "713d5b937cb70a2a3d20c58daae3482cd3a7af0661547ed854924254aa8ea2a5"
+    },
+    "w_tableau": {
+      "file": "audio/sons/w_tableau.mp3",
+      "text": "le tableau",
+      "voice": "f",
+      "duration": 1.036542,
+      "sha256": "48dc6956dccf04d0ef27db0ea1ee1115c0b961f818d1f51b7f2a57012e1b4c35"
+    },
+    "e_tableau": {
+      "file": "audio/sons/e_tableau.mp3",
+      "text": "Il y a un tableau au mur.",
+      "voice": "f",
+      "duration": 1.651708,
+      "sha256": "71d47597b5286594776003b463fedc38307e253335afd18de9ae8be1f808d3fb"
+    },
+    "w_salle_bains": {
+      "file": "audio/sons/w_salle_bains.mp3",
+      "text": "la salle de bains",
+      "voice": "f",
+      "duration": 1.395333,
+      "sha256": "b3a445d965b9394d111a536f1156de1849ca7e2350a50990fc6df4c23b21bb4f"
+    },
+    "e_salle_bains": {
+      "file": "audio/sons/e_salle_bains.mp3",
+      "text": "La salle de bains est très grande.",
+      "voice": "f",
+      "duration": 2.0275,
+      "sha256": "0fdca67778a21e034c0741203f38b8a45eae61f1b3fb9682ab4855ba4868ad94"
+    },
+    "w_lavabo": {
+      "file": "audio/sons/w_lavabo.mp3",
+      "text": "le lavabo",
+      "voice": "f",
+      "duration": 1.155167,
+      "sha256": "78aa2c3ff98ec7cf9297a1c00403fcbd2e837ba7f93c12e9c9aed074c4aadbbb"
+    },
+    "e_lavabo": {
+      "file": "audio/sons/e_lavabo.mp3",
+      "text": "Il y a deux lavabos.",
+      "voice": "f",
+      "duration": 1.769167,
+      "sha256": "4df937f4b84865778b2f19eeb207d0f7c1b15775f6e8a609dcc3f81f6e88f9da"
+    },
+    "w_miroir": {
+      "file": "audio/sons/w_miroir.mp3",
+      "text": "le miroir",
+      "voice": "f",
+      "duration": 1.179667,
+      "sha256": "34e5da03a5c2f5374272a887309deb5ba77645e16ddd547e763e0a0c649e7c1d"
+    },
+    "e_miroir": {
+      "file": "audio/sons/e_miroir.mp3",
+      "text": "Le miroir est grand.",
+      "voice": "f",
+      "duration": 1.594042,
+      "sha256": "4ba1fae69ba873c890948bcc51dd6d9b5c2648a994ea571de8d651e56f3e3328"
+    },
+    "w_robinet": {
+      "file": "audio/sons/w_robinet.mp3",
+      "text": "le robinet",
+      "voice": "f",
+      "duration": 1.051542,
+      "sha256": "e855f89ad455cb4a4556ae45319d2c9030db8622c7e00e99ce8298c5a74a9569"
+    },
+    "e_robinet": {
+      "file": "audio/sons/e_robinet.mp3",
+      "text": "J'ouvre le robinet.",
+      "voice": "f",
+      "duration": 1.538292,
+      "sha256": "1ef0606a9d61b2f161d716fdbd60089b868b6ecf07122081d218b4cd521a5049"
+    },
+    "w_douche": {
+      "file": "audio/sons/w_douche.mp3",
+      "text": "la douche",
+      "voice": "f",
+      "duration": 1.0755,
+      "sha256": "458d529b2e0cb050e5643ec02320d388eb8617b44b359f81c83c6b2927aa947d"
+    },
+    "e_douche": {
+      "file": "audio/sons/e_douche.mp3",
+      "text": "La douche est moderne.",
+      "voice": "f",
+      "duration": 1.532083,
+      "sha256": "b93ba5875fe53526216f18f843bce9f95851a573e9ba26a6a0313e0fdc00387c"
+    },
+    "w_baignoire": {
+      "file": "audio/sons/w_baignoire.mp3",
+      "text": "la baignoire",
+      "voice": "f",
+      "duration": 1.16125,
+      "sha256": "53aed15a360bcb55d8001dedeabb287ee3a6869b62929e790ae70ea4c5535ae9"
+    },
+    "e_baignoire": {
+      "file": "audio/sons/e_baignoire.mp3",
+      "text": "Il y a une baignoire.",
+      "voice": "f",
+      "duration": 1.64875,
+      "sha256": "ec57ea67a358ab2d8f38236f997dd9c45b4acd30532712dcbc30bd366c72f861"
+    },
+    "w_toilettes": {
+      "file": "audio/sons/w_toilettes.mp3",
+      "text": "les toilettes",
+      "voice": "f",
+      "duration": 1.165375,
+      "sha256": "10c168746765188b75de8ce152d7688decc3e7b03b8883f5c5ce2249eade15df"
+    },
+    "e_toilettes": {
+      "file": "audio/sons/e_toilettes.mp3",
+      "text": "Les toilettes sont dans la salle de bains.",
+      "voice": "f",
+      "duration": 2.035708,
+      "sha256": "e878c40b1a9a96c1d362b2751cb50b2b0540abde4f21c23d34f97b246ad1b582"
+    },
+    "w_papier_toilette": {
+      "file": "audio/sons/w_papier_toilette.mp3",
+      "text": "le papier toilette",
+      "voice": "f",
+      "duration": 1.465958,
+      "sha256": "d7c5fd8f66a43bc21bd86599729e8a410f791460700d7f0d2186b3c0c862d45f"
+    },
+    "e_papier_toilette": {
+      "file": "audio/sons/e_papier_toilette.mp3",
+      "text": "Il y a du papier toilette.",
+      "voice": "f",
+      "duration": 1.729958,
+      "sha256": "4a4377dda4573e1b9826b030fb7d86581118abaea02ca7d4fb1dc800caef857f"
+    },
+    "w_serviettes": {
+      "file": "audio/sons/w_serviettes.mp3",
+      "text": "les serviettes",
+      "voice": "f",
+      "duration": 1.245667,
+      "sha256": "c6788f12c618dc9eedcfce8aa6e6e5795409520ea4bc4c80888abf1e8051947d"
+    },
+    "e_serviettes": {
+      "file": "audio/sons/e_serviettes.mp3",
+      "text": "Il y a des serviettes blanches.",
+      "voice": "f",
+      "duration": 1.9975,
+      "sha256": "12018ae411573c68f439f5500ec16169b402b8f26bc4c6186e120bfab146b96e"
+    },
+    "w_peignoir": {
+      "file": "audio/sons/w_peignoir.mp3",
+      "text": "le peignoir",
+      "voice": "f",
+      "duration": 1.302292,
+      "sha256": "af79fee7d21e0c5017d862e14ecf555c8c169ad4a608e550d7e542add96e1231"
+    },
+    "e_peignoir": {
+      "file": "audio/sons/e_peignoir.mp3",
+      "text": "Il y a deux peignoirs.",
+      "voice": "f",
+      "duration": 1.673375,
+      "sha256": "739c84b5040edd4c1607500fec86fb6b2f2fb8f25ba561084a845ec08e51ce5d"
+    },
+    "w_chaussons": {
+      "file": "audio/sons/w_chaussons.mp3",
+      "text": "les chaussons",
+      "voice": "f",
+      "duration": 1.154,
+      "sha256": "e4d1f53f25d9216cc0748863c5ac47c68fb57e141a9aaae529b6341f6dcf57c4"
+    },
+    "e_chaussons": {
+      "file": "audio/sons/e_chaussons.mp3",
+      "text": "Il y a des chaussons.",
+      "voice": "f",
+      "duration": 1.442417,
+      "sha256": "d349eb2cc6c6d15f412e1ad8d2c57339db0e711bed876bab3d0bec9996bee154"
+    },
+    "w_seche_cheveux": {
+      "file": "audio/sons/w_seche_cheveux.mp3",
+      "text": "le sèche-cheveux",
+      "voice": "f",
+      "duration": 1.340083,
+      "sha256": "0478b665bf754957d6511b2eb78a727e3116465dc827fce3e004bfacd3413700"
+    },
+    "e_seche_cheveux": {
+      "file": "audio/sons/e_seche_cheveux.mp3",
+      "text": "Il y a un sèche-cheveux.",
+      "voice": "f",
+      "duration": 1.6105,
+      "sha256": "5854038f4630cdb8b64e7b8eabe7f90d6dea8ca601b72cc5c0b9e59a12f8f60c"
+    },
+    "w_savon": {
+      "file": "audio/sons/w_savon.mp3",
+      "text": "le savon",
+      "voice": "f",
+      "duration": 1.061417,
+      "sha256": "47cc68c32a2f2e4f9aedca7bd4dd747ecfbd6942e9e8de5a326a094e8487d5c7"
+    },
+    "e_savon": {
+      "file": "audio/sons/e_savon.mp3",
+      "text": "Voici le savon et le shampooing.",
+      "voice": "f",
+      "duration": 2.397583,
+      "sha256": "13b18f47d90b43eb80cb9f4674d9bc9c499253c01e1061e67e57eb48386aee85"
+    },
+    "w_balcon": {
+      "file": "audio/sons/w_balcon.mp3",
+      "text": "le balcon",
+      "voice": "f",
+      "duration": 1.178125,
+      "sha256": "d80acee8149bd26bfb7c328a4e45084582dbd0bb36132d493fa1a12203c21592"
+    },
+    "e_balcon": {
+      "file": "audio/sons/e_balcon.mp3",
+      "text": "Il y a un balcon avec vue sur la piscine.",
+      "voice": "f",
+      "duration": 2.622417,
+      "sha256": "bf41e075f131adc285dc4bdf508cedeb38577ca7e1aa8750c84a744ce3e93d6d"
+    },
+    "w_piscine": {
+      "file": "audio/sons/w_piscine.mp3",
+      "text": "la piscine",
+      "voice": "f",
+      "duration": 1.153958,
+      "sha256": "2e7df0a6daeb138242849d5f2f00fb140b3394fd92c1bec0656a9d7bd68dac80"
+    },
+    "e_piscine": {
+      "file": "audio/sons/e_piscine.mp3",
+      "text": "La piscine est grande et fantastique.",
+      "voice": "f",
+      "duration": 2.164083,
+      "sha256": "70f515534a0cf5104e0a375f560b0e4ea42e98c2d3dd2ad348619752960189d6"
+    },
+    "w_palmiers": {
+      "file": "audio/sons/w_palmiers.mp3",
+      "text": "les palmiers",
+      "voice": "f",
+      "duration": 1.126958,
+      "sha256": "5302b3746bb27e31aa65748953727d3ca5caca79f4f8baa3e9995cfcf56c2c24"
+    },
+    "e_palmiers": {
+      "file": "audio/sons/e_palmiers.mp3",
+      "text": "Il y a des palmiers.",
+      "voice": "f",
+      "duration": 1.408917,
+      "sha256": "6c9b7a0ff174dd7cadce4a35c94046e466a0e667a24e5f00d412b16850d2a617"
+    },
+    "w_plage": {
+      "file": "audio/sons/w_plage.mp3",
+      "text": "la plage",
+      "voice": "f",
+      "duration": 1.15625,
+      "sha256": "1fa78e69ddc7d279a26eba85ede232a05ed9c8f6e167ae397e88a03bfed65ca9"
+    },
+    "e_plage": {
+      "file": "audio/sons/e_plage.mp3",
+      "text": "La plage est belle.",
+      "voice": "f",
+      "duration": 1.873958,
+      "sha256": "bcbd3a8dfa382469938bcacdb9a33f6ef4de33bf8efaf72bec2682f2b5c537ae"
+    },
+    "w_mer": {
+      "file": "audio/sons/w_mer.mp3",
+      "text": "la mer",
+      "voice": "f",
+      "duration": 1.058542,
+      "sha256": "be60eabe862a45acdb7063b50a0cd6e3e2466c7c246c586d4fc214b629018c85"
+    },
+    "e_mer": {
+      "file": "audio/sons/e_mer.mp3",
+      "text": "La mer est bleue.",
+      "voice": "f",
+      "duration": 1.386958,
+      "sha256": "dd7b32c6ef415c7cb912ee0f35a6d9277516a06beea723e1ac5232991954fc07"
+    },
+    "w_montagne": {
+      "file": "audio/sons/w_montagne.mp3",
+      "text": "la montagne",
+      "voice": "f",
+      "duration": 1.109042,
+      "sha256": "858b1e4476ec1a6e375b18901198e1499b81bda0d44c8c044ee5f80acf6450d2"
+    },
+    "e_montagne": {
+      "file": "audio/sons/e_montagne.mp3",
+      "text": "Il y a une montagne en Martinique : la montagne Pelée.",
+      "voice": "f",
+      "duration": 3.535542,
+      "sha256": "84a7efd2d2f26b930fc72fc509b231af795f196f3fc90844e4b4026f406e528d"
+    },
+    "w_transats": {
+      "file": "audio/sons/w_transats.mp3",
+      "text": "les transats",
+      "voice": "f",
+      "duration": 1.204375,
+      "sha256": "3f9f5feb06424d3d877ef07fef5a75ec3eb5b5c2bb5d56ccd5c6e3a09335cc01"
+    },
+    "e_transats": {
+      "file": "audio/sons/e_transats.mp3",
+      "text": "Il y a deux transats.",
+      "voice": "f",
+      "duration": 1.6675,
+      "sha256": "de37ec33663686e0284faae658356bf0ea81078e222f9b8e1a895f59db823846"
+    },
+    "w_parasol": {
+      "file": "audio/sons/w_parasol.mp3",
+      "text": "le parasol",
+      "voice": "f",
+      "duration": 1.303708,
+      "sha256": "959c5aab8ef557de9291f920ebf944160eb8215c7f5e85c0508b2f99436a4df2"
+    },
+    "e_parasol": {
+      "file": "audio/sons/e_parasol.mp3",
+      "text": "Il y a des parasols autour de la piscine.",
+      "voice": "f",
+      "duration": 2.817917,
+      "sha256": "230cade091008069dae8bfb5532810941a804b82e5a0399e8d873b2b396f4141"
+    },
+    "w_petit_dejeuner": {
+      "file": "audio/sons/w_petit_dejeuner.mp3",
+      "text": "le petit déjeuner",
+      "voice": "f",
+      "duration": 1.37825,
+      "sha256": "e1367511a9faf8e54cc9a1cd17567e4f6e481f6ac147a142994396da6144e19c"
+    },
+    "e_petit_dejeuner": {
+      "file": "audio/sons/e_petit_dejeuner.mp3",
+      "text": "Le petit déjeuner est compris.",
+      "voice": "f",
+      "duration": 1.845125,
+      "sha256": "d9ba29492b61580620c81fa7942d7fe0d3066ac0134b32440c3c6fad4d2dc26b"
+    },
+    "w_croissants": {
+      "file": "audio/sons/w_croissants.mp3",
+      "text": "les croissants",
+      "voice": "f",
+      "duration": 1.165375,
+      "sha256": "67139ea07c190dbc7f0b1da3960c1ac1ef0a4e4e2a98e6947b35bae7a4e0b6a9"
+    },
+    "e_croissants": {
+      "file": "audio/sons/e_croissants.mp3",
+      "text": "Les croissants sont délicieux.",
+      "voice": "f",
+      "duration": 2.017958,
+      "sha256": "3b7d2b1fb9dcad2037bc28ecfc920c120ef75ff1a8b7b11dd010076b1a957653"
+    },
+    "w_jus_orange": {
+      "file": "audio/sons/w_jus_orange.mp3",
+      "text": "le jus d'orange",
+      "voice": "f",
+      "duration": 1.474875,
+      "sha256": "0b1278e015b9f478e5940f46eeb91078c98d54230d5f9e9913c4b4e5b5f076c5"
+    },
+    "e_jus_orange": {
+      "file": "audio/sons/e_jus_orange.mp3",
+      "text": "J'aime le jus d'orange.",
+      "voice": "f",
+      "duration": 1.566542,
+      "sha256": "d3129b4c1dcf4571d6e5bfc4b86f69277e455bc17880cc500267916009d57b78"
+    },
+    "w_cafe": {
+      "file": "audio/sons/w_cafe.mp3",
+      "text": "le café",
+      "voice": "f",
+      "duration": 1.034875,
+      "sha256": "2e933f6443759c1b14ad6c7015fc6368f1b92748cae792bb5c74e87ff952696a"
+    },
+    "e_cafe": {
+      "file": "audio/sons/e_cafe.mp3",
+      "text": "Le café est chaud.",
+      "voice": "f",
+      "duration": 1.382917,
+      "sha256": "c7aeee8111e597b079718b659e88c94fcc6adce203ba5e6228024b6a0bca4de9"
+    },
+    "w_mb_eau": {
+      "file": "audio/sons/w_mb_eau.mp3",
+      "text": "l'eau minérale",
+      "voice": "f",
+      "duration": 1.315833,
+      "sha256": "4459e2277496076ba699ace450ceed5c6fa86d59bf74660909a53b961efd473d"
+    },
+    "e_mb_eau": {
+      "file": "audio/sons/e_mb_eau.mp3",
+      "text": "L'eau minérale coûte trois euros.",
+      "voice": "f",
+      "duration": 2.665958,
+      "sha256": "74fc1e1ef8ab4d97262e0f319f89f065caea34b82800b52fc2e82609464eb054"
+    },
+    "w_mb_soda": {
+      "file": "audio/sons/w_mb_soda.mp3",
+      "text": "le soda",
+      "voice": "f",
+      "duration": 1.098375,
+      "sha256": "a0049216e86a4268bfbd09e83053cb3b72bfd95921d853be26b9c19816029979"
+    },
+    "e_mb_soda": {
+      "file": "audio/sons/e_mb_soda.mp3",
+      "text": "Le soda coûte quatre euros.",
+      "voice": "f",
+      "duration": 1.808083,
+      "sha256": "d1866d27d01d345c9f452914c14c92a6283053e439766ec58b3447eeff75a96e"
+    },
+    "w_mb_jus": {
+      "file": "audio/sons/w_mb_jus.mp3",
+      "text": "le jus de mangue",
+      "voice": "f",
+      "duration": 1.397292,
+      "sha256": "6e922048b04f1eae396ffb423ac0337556800bcf86e8c7090c204dd9c4b2b2bf"
+    },
+    "e_mb_jus": {
+      "file": "audio/sons/e_mb_jus.mp3",
+      "text": "Le jus de mangue coûte cinq euros.",
+      "voice": "f",
+      "duration": 2.511833,
+      "sha256": "35e0ae14714ed46d30ff134ff8fdeafe1191f3041084d7dd4bd79b4adf40b485"
+    },
+    "w_mb_biere": {
+      "file": "audio/sons/w_mb_biere.mp3",
+      "text": "la bière",
+      "voice": "f",
+      "duration": 0.998458,
+      "sha256": "1f5e93a39ff70b594a87874ac7778d37d1c43d63fbd2aca5419fcb9bceebb9df"
+    },
+    "e_mb_biere": {
+      "file": "audio/sons/e_mb_biere.mp3",
+      "text": "La bière coûte six euros.",
+      "voice": "f",
+      "duration": 1.711958,
+      "sha256": "e47bce47021e3e30974cff2698e5c32d74b7399c3c9c18d294598d264657edc8"
+    },
+    "w_mb_chips": {
+      "file": "audio/sons/w_mb_chips.mp3",
+      "text": "les chips",
+      "voice": "f",
+      "duration": 1.125833,
+      "sha256": "c35e5288a762b353b5de2f87e2d81328207d75f8b5bdc71f36492b856a17f999"
+    },
+    "e_mb_chips": {
+      "file": "audio/sons/e_mb_chips.mp3",
+      "text": "Les chips coûtent sept euros.",
+      "voice": "f",
+      "duration": 2.037792,
+      "sha256": "d6f130d5f72416149d11d6dfa285858920f4c75e7112e0f8d440b2ad549c6799"
+    },
+    "w_mb_biscuits": {
+      "file": "audio/sons/w_mb_biscuits.mp3",
+      "text": "les biscuits",
+      "voice": "f",
+      "duration": 1.149917,
+      "sha256": "cc4141cee999793fa7cf67d503664a7b7c3cd3ac7254970d87cf4d495d662745"
+    },
+    "e_mb_biscuits": {
+      "file": "audio/sons/e_mb_biscuits.mp3",
+      "text": "Les biscuits coûtent onze euros.",
+      "voice": "f",
+      "duration": 2.191417,
+      "sha256": "2f5b1ab265d2448854f6254929b9ae26eb32c44f2fb43b08dcab84dbe8b0be8b"
+    },
+    "w_mb_chocolat": {
+      "file": "audio/sons/w_mb_chocolat.mp3",
+      "text": "le chocolat",
+      "voice": "f",
+      "duration": 1.14525,
+      "sha256": "0532d061499fcd1d9a14182455ca43dccb471fb5e1ea7ded049da647e24fea9c"
+    },
+    "e_mb_chocolat": {
+      "file": "audio/sons/e_mb_chocolat.mp3",
+      "text": "Le chocolat coûte douze euros.",
+      "voice": "f",
+      "duration": 2.035083,
+      "sha256": "7267ddb4236e8cfd943ddd7999d06f0697135e09eda21165a0be93dddbfcf21a"
+    },
+    "w_mb_rhum": {
+      "file": "audio/sons/w_mb_rhum.mp3",
+      "text": "le rhum",
+      "voice": "f",
+      "duration": 1.022792,
+      "sha256": "34f7955965a756f4c6bf2ad2121f8e5237e2ff49a651a9692b17dbdc6e408b54"
+    },
+    "e_mb_rhum": {
+      "file": "audio/sons/e_mb_rhum.mp3",
+      "text": "Le rhum de Martinique coûte vingt-quatre euros.",
+      "voice": "f",
+      "duration": 3.060417,
+      "sha256": "85bcafeb375235299458ee5954f8bd9d7f7a0dc6419d47f26fe1f65b86013822"
+    },
+    "w_mb_vin": {
+      "file": "audio/sons/w_mb_vin.mp3",
+      "text": "le vin blanc",
+      "voice": "f",
+      "duration": 1.091458,
+      "sha256": "40ea08fb5f1901dba29f64a6118545a228c50c1f5d833b01a93311a1718d0ae3"
+    },
+    "e_mb_vin": {
+      "file": "audio/sons/e_mb_vin.mp3",
+      "text": "Le vin blanc coûte trente-huit euros.",
+      "voice": "f",
+      "duration": 2.12875,
+      "sha256": "4f114e7e457bbdb8862e2bd5a6ac02596ab7e9fb205472032c80dbf404ef0221"
+    },
+    "w_mb_champagne": {
+      "file": "audio/sons/w_mb_champagne.mp3",
+      "text": "le champagne",
+      "voice": "f",
+      "duration": 1.244583,
+      "sha256": "730045dbefb29a7fa6d54dc03bf3bd762c15701e07b32e3541f70b75b188be42"
+    },
+    "e_mb_champagne": {
+      "file": "audio/sons/e_mb_champagne.mp3",
+      "text": "Le champagne coûte soixante-dix-neuf euros.",
+      "voice": "f",
+      "duration": 2.641958,
+      "sha256": "f7a52d03707cbeebe1c01bc746bfeef01540ab0e092270234ec4b86d1eb9a9c1"
+    },
+    "ow_mouchoirs": {
+      "file": "audio/sons/ow_mouchoirs.mp3",
+      "text": "des mouchoirs",
+      "voice": "f",
+      "duration": 1.175917,
+      "sha256": "a9b2073413959df5b8fb97474013291b3bac95b30630b10a35d0725479ecc0d0"
+    },
+    "o_mouchoirs": {
+      "file": "audio/sons/o_mouchoirs.mp3",
+      "text": "J'ai des mouchoirs.",
+      "voice": "m",
+      "duration": 1.3535,
+      "sha256": "92ee128dfd904aa9014a617fb402af5c1d9de278d52ba6e8b7ab70adcff22b9f"
+    },
+    "on_mouchoirs": {
+      "file": "audio/sons/on_mouchoirs.mp3",
+      "text": "Je n'ai pas de mouchoirs.",
+      "voice": "m",
+      "duration": 1.760708,
+      "sha256": "97a2f00d95460a7499c752f31c51ae7a52a379e479e4569fcc21dca4cca41369"
+    },
+    "oq_mouchoirs": {
+      "file": "audio/sons/oq_mouchoirs.mp3",
+      "text": "Est-ce que vous avez des mouchoirs ?",
+      "voice": "f",
+      "duration": 1.805167,
+      "sha256": "55e95ac0c9e0f566d25b093751bbb1467ec063f4b1b59bf041331bae8266119b"
+    },
+    "ow_portefeuille": {
+      "file": "audio/sons/ow_portefeuille.mp3",
+      "text": "un portefeuille",
+      "voice": "f",
+      "duration": 1.724083,
+      "sha256": "8fb424b928fd4172f6abe0248e3537d391596a59f8b3f38aaeda1ed329a8e00b"
+    },
+    "o_portefeuille": {
+      "file": "audio/sons/o_portefeuille.mp3",
+      "text": "J'ai un portefeuille.",
+      "voice": "m",
+      "duration": 1.593125,
+      "sha256": "3d9821514f2d553c0e6b10c4bcdab67ce5a85bae57fc6c0696b0fbbf19169945"
+    },
+    "on_portefeuille": {
+      "file": "audio/sons/on_portefeuille.mp3",
+      "text": "Je n'ai pas de portefeuille.",
+      "voice": "m",
+      "duration": 2.002625,
+      "sha256": "65068abea6eecafa66b06e9534bf0a86f8d9748013ae0bdb3a6df896bd9f8e40"
+    },
+    "oq_portefeuille": {
+      "file": "audio/sons/oq_portefeuille.mp3",
+      "text": "Est-ce que vous avez un portefeuille ?",
+      "voice": "f",
+      "duration": 1.887792,
+      "sha256": "8552a0734bddc32667dce7466e7e39beef81ba0c05725b38e84d3e99c6019e90"
+    },
+    "ow_cles": {
+      "file": "audio/sons/ow_cles.mp3",
+      "text": "des clés",
+      "voice": "f",
+      "duration": 1.016042,
+      "sha256": "f176f60bf62b04d630a0b115392c55d378dc4c8289fdbb0c5ab7a35dce1eb8fd"
+    },
+    "o_cles": {
+      "file": "audio/sons/o_cles.mp3",
+      "text": "J'ai des clés.",
+      "voice": "m",
+      "duration": 1.020167,
+      "sha256": "0f4c6b53558569504785c549cde0b2ec0c93e99edf369a684c136e20b73b6424"
+    },
+    "on_cles": {
+      "file": "audio/sons/on_cles.mp3",
+      "text": "Je n'ai pas de clés.",
+      "voice": "m",
+      "duration": 1.52325,
+      "sha256": "ddd02759280b86edff11f087df2ef85ee002f6205ca316030b1bdae8ac15a8c0"
+    },
+    "oq_cles": {
+      "file": "audio/sons/oq_cles.mp3",
+      "text": "Est-ce que vous avez des clés ?",
+      "voice": "f",
+      "duration": 1.566792,
+      "sha256": "0d274591f480eb2627b60b960d4c00d4de10b3d90c7d8f2da413305027f74f8d"
+    },
+    "ow_lunettes": {
+      "file": "audio/sons/ow_lunettes.mp3",
+      "text": "des lunettes",
+      "voice": "f",
+      "duration": 1.126125,
+      "sha256": "a2d891f69001d2c6b2087515e127dc825459e4043dcb91cf0c4dad98db9b07a2"
+    },
+    "o_lunettes": {
+      "file": "audio/sons/o_lunettes.mp3",
+      "text": "J'ai des lunettes.",
+      "voice": "m",
+      "duration": 1.185583,
+      "sha256": "58f3e5e81c1a26893ca80f3a255d6b7f63c6bd29ac07440b4841502386446861"
+    },
+    "on_lunettes": {
+      "file": "audio/sons/on_lunettes.mp3",
+      "text": "Je n'ai pas de lunettes.",
+      "voice": "m",
+      "duration": 1.759542,
+      "sha256": "51a9db5f1fdf04dd2d21a74a2f4890d0ee493620153b07f9b6d459f3e3a7e77f"
+    },
+    "oq_lunettes": {
+      "file": "audio/sons/oq_lunettes.mp3",
+      "text": "Est-ce que vous avez des lunettes ?",
+      "voice": "f",
+      "duration": 1.88625,
+      "sha256": "3439708106115eefded9736da556ab4df3f08601a99bc9afd5d3a57a7fb823ee"
+    },
+    "ow_chargeur": {
+      "file": "audio/sons/ow_chargeur.mp3",
+      "text": "un chargeur",
+      "voice": "f",
+      "duration": 1.167417,
+      "sha256": "c0e76c6ada8db81a8a14b2d39a9189d263b1fd1aa094aab42cc99f39d8e7660c"
+    },
+    "o_chargeur": {
+      "file": "audio/sons/o_chargeur.mp3",
+      "text": "J'ai un chargeur.",
+      "voice": "m",
+      "duration": 1.346917,
+      "sha256": "0bdbac457a27d178186d6184b7ebb7b12c5a5e201717cbfd6d781f20dd3c3eb8"
+    },
+    "on_chargeur": {
+      "file": "audio/sons/on_chargeur.mp3",
+      "text": "Je n'ai pas de chargeur.",
+      "voice": "m",
+      "duration": 1.757125,
+      "sha256": "7e4d1027f06c4ffdbfd22b725e9598eabfa145232dcc36d99bb8016afe867b6e"
+    },
+    "oq_chargeur": {
+      "file": "audio/sons/oq_chargeur.mp3",
+      "text": "Est-ce que vous avez un chargeur ?",
+      "voice": "f",
+      "duration": 1.886792,
+      "sha256": "466fc0ea7eb942d908e7dce30076b35c9b3a5165c1da18b58d340a44aed5e154"
+    },
+    "ow_portable": {
+      "file": "audio/sons/ow_portable.mp3",
+      "text": "un portable",
+      "voice": "f",
+      "duration": 1.240167,
+      "sha256": "e50273f7e47bc0d06a587e4e40a90079f1fbe878e104d41ea19847f6931e9479"
+    },
+    "o_portable": {
+      "file": "audio/sons/o_portable.mp3",
+      "text": "J'ai un portable.",
+      "voice": "m",
+      "duration": 1.537958,
+      "sha256": "c541c69e8f5383205a618fde8622ad38b347aa1005b8a17bee7b4beae4e249d8"
+    },
+    "on_portable": {
+      "file": "audio/sons/on_portable.mp3",
+      "text": "Je n'ai pas de portable.",
+      "voice": "m",
+      "duration": 1.759125,
+      "sha256": "695b382b3cce5ef982539fb3b4aa18e192fd3913aa068464d48c8197666bed47"
+    },
+    "oq_portable": {
+      "file": "audio/sons/oq_portable.mp3",
+      "text": "Est-ce que vous avez un portable ?",
+      "voice": "f",
+      "duration": 1.883833,
+      "sha256": "aaf5a3cedb13b29654790593f4a9a98331911db204ec3a799bebb050a5739f28"
+    },
+    "ow_bouteille": {
+      "file": "audio/sons/ow_bouteille.mp3",
+      "text": "une bouteille d'eau",
+      "voice": "f",
+      "duration": 1.249958,
+      "sha256": "284eca8ebc48c9f2a1af71e5f4da5b4d95cdbc50870766e5fa3fa8c9e7813e8f"
+    },
+    "o_bouteille": {
+      "file": "audio/sons/o_bouteille.mp3",
+      "text": "J'ai une bouteille d'eau.",
+      "voice": "m",
+      "duration": 1.451542,
+      "sha256": "462ec9fa803ced74a11e0b832b1a2a2789c4d09f8a8e4977d47265ef16c45987"
+    },
+    "on_bouteille": {
+      "file": "audio/sons/on_bouteille.mp3",
+      "text": "Je n'ai pas de bouteille d'eau.",
+      "voice": "m",
+      "duration": 1.756958,
+      "sha256": "094a2b901e185fb118a64cd508f30ae8f62aa716072e1e108eaad19cea7cd1c6"
+    },
+    "oq_bouteille": {
+      "file": "audio/sons/oq_bouteille.mp3",
+      "text": "Est-ce que vous avez une bouteille d'eau ?",
+      "voice": "f",
+      "duration": 1.71975,
+      "sha256": "4b186ce0ace447bea3fed14858f48f7abd4231e43c5210242073e5de544d6abc"
+    },
+    "ow_chewing_gums": {
+      "file": "audio/sons/ow_chewing_gums.mp3",
+      "text": "des chewing-gums",
+      "voice": "f",
+      "duration": 1.393958,
+      "sha256": "ee37b20e174b7dc26f9c2eeb6fa19efc4e280fe3200279d9870fbc93be6132af"
+    },
+    "o_chewing_gums": {
+      "file": "audio/sons/o_chewing_gums.mp3",
+      "text": "J'ai des chewing-gums.",
+      "voice": "m",
+      "duration": 1.429833,
+      "sha256": "6f0b3c507a1e088273019ec320c9cfb293e67433f8073e93545d19ff46b0c5b5"
+    },
+    "on_chewing_gums": {
+      "file": "audio/sons/on_chewing_gums.mp3",
+      "text": "Je n'ai pas de chewing-gums.",
+      "voice": "m",
+      "duration": 1.999792,
+      "sha256": "a52d1c8d3552ffe3f46ad14210c79d874e9e6d6edb43058985aa4780d880ad07"
+    },
+    "oq_chewing_gums": {
+      "file": "audio/sons/oq_chewing_gums.mp3",
+      "text": "Est-ce que vous avez des chewing-gums ?",
+      "voice": "f",
+      "duration": 2.021792,
+      "sha256": "e2eb0997bf33192a93dcfdf098cedd10a28b34c321622bf68747ed931f6f2bd8"
+    },
+    "ow_carte_credit": {
+      "file": "audio/sons/ow_carte_credit.mp3",
+      "text": "une carte de crédit",
+      "voice": "f",
+      "duration": 1.568875,
+      "sha256": "6bd5dedc626b00d293a1dc058ad4cc4cbc944d923226e3eeaa2e507e37c73888"
+    },
+    "o_carte_credit": {
+      "file": "audio/sons/o_carte_credit.mp3",
+      "text": "J'ai une carte de crédit.",
+      "voice": "m",
+      "duration": 1.740625,
+      "sha256": "81118d336f1790b0145abf286f688347c3216fc73f7516330ae3e62d0ab92cb6"
+    },
+    "on_carte_credit": {
+      "file": "audio/sons/on_carte_credit.mp3",
+      "text": "Je n'ai pas de carte de crédit.",
+      "voice": "m",
+      "duration": 2.15275,
+      "sha256": "f0df4399bed99892ef059b2073236aafc0c26d48e76dcb540e1240b87b5e81f6"
+    },
+    "oq_carte_credit": {
+      "file": "audio/sons/oq_carte_credit.mp3",
+      "text": "Est-ce que vous avez une carte de crédit ?",
+      "voice": "f",
+      "duration": 2.204208,
+      "sha256": "27d6a582cc3340c3af62a1381ce5272d045af545160703f8a23bee5b1cdae98c"
+    },
+    "ow_porte_monnaie": {
+      "file": "audio/sons/ow_porte_monnaie.mp3",
+      "text": "un porte-monnaie",
+      "voice": "f",
+      "duration": 1.298875,
+      "sha256": "ebeb3e8cb0cc43dbbdeec946765794486ea3754dcc7287b0a516f17a5837bf60"
+    },
+    "o_porte_monnaie": {
+      "file": "audio/sons/o_porte_monnaie.mp3",
+      "text": "J'ai un porte-monnaie.",
+      "voice": "m",
+      "duration": 1.345958,
+      "sha256": "5dd2298efffbd003cb8004fad59125a5f2b55f57aedce581cbb244b7831360f4"
+    },
+    "on_porte_monnaie": {
+      "file": "audio/sons/on_porte_monnaie.mp3",
+      "text": "Je n'ai pas de porte-monnaie.",
+      "voice": "m",
+      "duration": 1.844,
+      "sha256": "14706ba3e8814ccbc5ed688eb00f77d65680364cab19d77d613576346786797e"
+    },
+    "oq_porte_monnaie": {
+      "file": "audio/sons/oq_porte_monnaie.mp3",
+      "text": "Est-ce que vous avez un porte-monnaie ?",
+      "voice": "f",
+      "duration": 1.806167,
+      "sha256": "efef417e8dc6682e6a454a6c60964ab5c25d37d71c84a30a86fae1b034c8450d"
+    },
+    "q_0": {
+      "file": "audio/sons/q_0.mp3",
+      "text": "Est-ce qu'il y a un minibar ?",
+      "voice": "f",
+      "duration": 1.547667,
+      "sha256": "7ce344a74e368fc06a42be06e01a7c26b4256f57621d660abdcf06ff13377130"
+    },
+    "qo_0": {
+      "file": "audio/sons/qo_0.mp3",
+      "text": "Oui, il y a un minibar.",
+      "voice": "m",
+      "duration": 2.05,
+      "sha256": "8e5512cdb6491cf2d2ad34fdafd71f1b04ab492568b73f5282cdc7044e8e40b5"
+    },
+    "qn_0": {
+      "file": "audio/sons/qn_0.mp3",
+      "text": "Non, il n'y a pas de minibar.",
+      "voice": "m",
+      "duration": 2.2635,
+      "sha256": "e16868bc244e178692c9c97974a0873f14a518280a383d37bb19a04459bfaeba"
+    },
+    "q_1": {
+      "file": "audio/sons/q_1.mp3",
+      "text": "Est-ce qu'il y a une salle de sport ?",
+      "voice": "f",
+      "duration": 1.866583,
+      "sha256": "e96a60bedf87ee24adf49645fc56b656398a23769857e0c5f3b089cbedeeb4c6"
+    },
+    "qo_1": {
+      "file": "audio/sons/qo_1.mp3",
+      "text": "Oui, il y a une salle de sport.",
+      "voice": "m",
+      "duration": 2.291,
+      "sha256": "32338d47c2e44f70f862d5e2759086c2764b8830050361e795009914cad54dcd"
+    },
+    "qn_1": {
+      "file": "audio/sons/qn_1.mp3",
+      "text": "Non, il n'y a pas de salle de sport.",
+      "voice": "m",
+      "duration": 2.587042,
+      "sha256": "279519b2d3486511edcf6f1c9c38ff9a4fed64d97e8b174efad115aebfc43d1e"
+    },
+    "q_2": {
+      "file": "audio/sons/q_2.mp3",
+      "text": "Est-ce qu'il y a une baignoire ?",
+      "voice": "f",
+      "duration": 1.626625,
+      "sha256": "c755e9019e9cb16e8abba68facc6a50a3d94e0209b15962cd906d0dc0e10a0b9"
+    },
+    "qo_2": {
+      "file": "audio/sons/qo_2.mp3",
+      "text": "Oui, il y a une baignoire.",
+      "voice": "m",
+      "duration": 2.130417,
+      "sha256": "d39f1f27795bc376f0b145d8a59c3147dc48c84f6fa1686110419beff68a0d0e"
+    },
+    "qn_2": {
+      "file": "audio/sons/qn_2.mp3",
+      "text": "Non, il n'y a pas de baignoire.",
+      "voice": "m",
+      "duration": 2.397208,
+      "sha256": "5e30db2499005864083c95c395824169b1426464efb1da3094771421bf90d495"
+    },
+    "q_3": {
+      "file": "audio/sons/q_3.mp3",
+      "text": "Est-ce qu'il y a la climatisation ?",
+      "voice": "f",
+      "duration": 1.8645,
+      "sha256": "10fa6ddbb1779844d0f83b931de736168ac24bc5a4843571939aaa1990d7e42b"
+    },
+    "qo_3": {
+      "file": "audio/sons/qo_3.mp3",
+      "text": "Oui, il y a la climatisation.",
+      "voice": "m",
+      "duration": 2.289583,
+      "sha256": "47a0b83dc5c0c47b2510aad6f44958668c0ddc6900cd914092cbbbd39756116c"
+    },
+    "qn_3": {
+      "file": "audio/sons/qn_3.mp3",
+      "text": "Non, il n'y a pas de climatisation.",
+      "voice": "m",
+      "duration": 2.615333,
+      "sha256": "8f3c5414ae99f0396514e5234af2da0dd0f39f30e24174b74c461f7912a704b8"
+    },
+    "q_4": {
+      "file": "audio/sons/q_4.mp3",
+      "text": "Est-ce qu'il y a une cuisine dans la chambre ?",
+      "voice": "f",
+      "duration": 2.186292,
+      "sha256": "4165d6f3d78ee53329d565ef1a12a2411c8ebc4ca6d54fcbba86824bd5a98716"
+    },
+    "qo_4": {
+      "file": "audio/sons/qo_4.mp3",
+      "text": "Oui, il y a une cuisine.",
+      "voice": "m",
+      "duration": 2.049958,
+      "sha256": "217167739885584346e90d3aeedee00f111c0b070c381f4298c6f5fad7df96b8"
+    },
+    "qn_4": {
+      "file": "audio/sons/qn_4.mp3",
+      "text": "Non, il n'y a pas de cuisine.",
+      "voice": "m",
+      "duration": 2.105333,
+      "sha256": "01b004e6d4132256b7b71ba3f062586d2a5553e8df87860ed98f32bc657be03b"
+    },
+    "q_5": {
+      "file": "audio/sons/q_5.mp3",
+      "text": "Est-ce qu'il y a un balcon ?",
+      "voice": "f",
+      "duration": 1.467917,
+      "sha256": "0f70a2e76559b20217e6988ba858e7cf3575e1da604d039435b6fe5ad1e42b8b"
+    },
+    "qo_5": {
+      "file": "audio/sons/qo_5.mp3",
+      "text": "Oui, il y a un balcon.",
+      "voice": "m",
+      "duration": 1.727083,
+      "sha256": "3602c9867d1f1b33cb0c15d517fc48a97f9aae6903890fc72bda0ea1bd491c70"
+    },
+    "qn_5": {
+      "file": "audio/sons/qn_5.mp3",
+      "text": "Non, il n'y a pas de balcon.",
+      "voice": "m",
+      "duration": 2.3445,
+      "sha256": "490740a1b2369f923e8897275b17b74208ecaee2efed101a00a7adf6e26258a9"
+    },
+    "q_6": {
+      "file": "audio/sons/q_6.mp3",
+      "text": "Est-ce qu'il y a un ordinateur dans la chambre ?",
+      "voice": "f",
+      "duration": 2.189292,
+      "sha256": "107dabcc6bdcb6b08e48816f514e4c4b9a86331d90141fd50f9ddba423b6c320"
+    },
+    "qo_6": {
+      "file": "audio/sons/qo_6.mp3",
+      "text": "Oui, il y a un ordinateur.",
+      "voice": "m",
+      "duration": 1.969958,
+      "sha256": "e94474d3aee296380d23b3c531eb4b3493fcb30183c2ef9372b21e49802787b4"
+    },
+    "qn_6": {
+      "file": "audio/sons/qn_6.mp3",
+      "text": "Non, il n'y a pas d'ordinateur.",
+      "voice": "m",
+      "duration": 2.185958,
+      "sha256": "bb77fee15802aaa4d8fcc8a97ba275001304198e11c7e584b731b5ed96a55ab7"
+    },
+    "q_7": {
+      "file": "audio/sons/q_7.mp3",
+      "text": "Est-ce qu'il y a des serviettes ?",
+      "voice": "f",
+      "duration": 1.708125,
+      "sha256": "09f160f81c38117dc005245f3bdc4af038aeca655d0a0d2aed354d97b3960e12"
+    },
+    "qo_7": {
+      "file": "audio/sons/qo_7.mp3",
+      "text": "Oui, il y a des serviettes.",
+      "voice": "m",
+      "duration": 2.113958,
+      "sha256": "495af5e3bdb6fd3025052a9bf52e079ebc46138cddba743ba30ffffdaf5e80a9"
+    },
+    "qn_7": {
+      "file": "audio/sons/qn_7.mp3",
+      "text": "Non, il n'y a pas de serviettes.",
+      "voice": "m",
+      "duration": 2.348125,
+      "sha256": "4f98a244645e149727bc42ef10e7b46bd3cbe28570dca0e24f78de4d79d06477"
+    },
+    "q_8": {
+      "file": "audio/sons/q_8.mp3",
+      "text": "Est-ce qu'il y a des lits simples ?",
+      "voice": "f",
+      "duration": 1.787542,
+      "sha256": "271ae22eb70e70be98c379376449141e685878387973bbaf80fbc20ececd570a"
+    },
+    "qo_8": {
+      "file": "audio/sons/qo_8.mp3",
+      "text": "Oui, il y a des lits simples.",
+      "voice": "m",
+      "duration": 2.289833,
+      "sha256": "47e50df68962b0abd4d9bd2a371273116dd67e4a63366589265fa90f57c40dc3"
+    },
+    "qn_8": {
+      "file": "audio/sons/qn_8.mp3",
+      "text": "Non, il n'y a pas de lits simples. Il y a un lit double.",
+      "voice": "m",
+      "duration": 3.944542,
+      "sha256": "95872a30f32a19144667a6346212c618acd0c320aeb9f5aa6a49f3f6efe6d415"
+    },
+    "q_9": {
+      "file": "audio/sons/q_9.mp3",
+      "text": "Est-ce que le petit déjeuner est compris ?",
+      "voice": "f",
+      "duration": 2.356042,
+      "sha256": "652a7b038d72f155d19afc54c9ca47986e1df87008edd5bf8548658971bd1258"
+    },
+    "qo_9": {
+      "file": "audio/sons/qo_9.mp3",
+      "text": "Oui, le petit déjeuner est compris.",
+      "voice": "m",
+      "duration": 2.127667,
+      "sha256": "2b5adc6cdb4ef64e1a30957351b2819834979305c63fd8b0325834db75ea76b2"
+    },
+    "qn_9": {
+      "file": "audio/sons/qn_9.mp3",
+      "text": "Non, le petit déjeuner est en supplément.",
+      "voice": "m",
+      "duration": 2.750375,
+      "sha256": "1d7a63c25349a4fa037b67640866d4784a5ca3bdb696fa491dfe2ca74c4a52d3"
+    },
+    "d_d1": {
+      "file": "audio/sons/d_d1.mp3",
+      "text": "Bonjour ! Bienvenue à l'hôtel Caribeach.",
+      "voice": "f",
+      "duration": 2.848792,
+      "sha256": "85da5f99ed7244362f7a6d22f17f4cdc5f0cb273aff0399903ff526e09c435db"
+    },
+    "dc_d1": {
+      "file": "audio/sons/dc_d1.mp3",
+      "text": "Bonjour, j'ai une réservation.",
+      "voice": "m",
+      "duration": 2.049458,
+      "sha256": "9e2744cce37ae5e2b7c7d663a849907bade0d0eea97b257a6164123683d123af"
+    },
+    "d_d2": {
+      "file": "audio/sons/d_d2.mp3",
+      "text": "Très bien. Vous avez une pièce d'identité ?",
+      "voice": "f",
+      "duration": 2.895917,
+      "sha256": "443e2e5ae97acb2a3831a97fbcc39be5856454f7fa4ae2e4e6302503f98f2aae"
+    },
+    "dc_d2": {
+      "file": "audio/sons/dc_d2.mp3",
+      "text": "Oui, j'ai un passeport.",
+      "voice": "m",
+      "duration": 1.721042,
+      "sha256": "0bf1bd536dc2c3453814158ab207ee5be36a16730d56f5505219f112c92b537d"
+    },
+    "d_d3": {
+      "file": "audio/sons/d_d3.mp3",
+      "text": "Merci. Remplissez le formulaire, s'il vous plaît.",
+      "voice": "f",
+      "duration": 3.073958,
+      "sha256": "7a7fb39ca7fb11f4a9022cd478de7a9f05f4a1087baaf3805e5d7d8f2c41d495"
+    },
+    "d_d4": {
+      "file": "audio/sons/d_d4.mp3",
+      "text": "Merci beaucoup ! Est-ce que vous avez des bagages ?",
+      "voice": "f",
+      "duration": 3.231958,
+      "sha256": "fab54d5cbdc0a41a3f4f4da61ab4a4eb6e80e582b0b259834eebec272f5bd4ae"
+    },
+    "dc_d4": {
+      "file": "audio/sons/dc_d4.mp3",
+      "text": "Oui, j'ai une valise et un sac.",
+      "voice": "m",
+      "duration": 2.364375,
+      "sha256": "19f0a2ffdbf75a04946213da27c95c7688a33c823aca721f81835faa0af6af10"
+    },
+    "d_d5": {
+      "file": "audio/sons/d_d5.mp3",
+      "text": "Et vous avez une voiture ?",
+      "voice": "f",
+      "duration": 1.408625,
+      "sha256": "2007ca1da2254368242364ab605e97ccbc75de73e9a744b88efcb00097a6268a"
+    },
+    "dc_d5": {
+      "file": "audio/sons/dc_d5.mp3",
+      "text": "Oui. Est-ce qu'il y a un parking ?",
+      "voice": "m",
+      "duration": 2.289667,
+      "sha256": "0c252eecc05666ed06d0e46d17567b614dda067dca570359ec2de7ff855a5910"
+    },
+    "d_d6": {
+      "file": "audio/sons/d_d6.mp3",
+      "text": "Oui, il y a un parking. Il est gratuit. Et le petit déjeuner est compris. Vous payez comment ?",
+      "voice": "f",
+      "duration": 6.892167,
+      "sha256": "9f1ecac515bb8549b0fa40649dafcc6cce29246990f8ce7983755c8ccd7f0a5b"
+    },
+    "dc_d6": {
+      "file": "audio/sons/dc_d6.mp3",
+      "text": "Je paye par carte.",
+      "voice": "m",
+      "duration": 1.532833,
+      "sha256": "ec677e5662c079d263e913ac3f0e562b3c694afb7087b27423cb632b801aa4d6"
+    },
+    "d_d7": {
+      "file": "audio/sons/d_d7.mp3",
+      "text": "Parfait. Voici votre clé. Vous avez la chambre quatorze, au premier étage. L'ascenseur est à droite. Bon séjour !",
+      "voice": "f",
+      "duration": 9.3055,
+      "sha256": "20eab58efb6438a4dd06a945830f76d0c30fb2a596841dbb7de7b9574a06b4bc"
+    },
+    "num_7": {
+      "file": "audio/sons/num_7.mp3",
+      "text": "7",
+      "voice": "m",
+      "duration": 0.849583,
+      "sha256": "c1ba126fecae966f8436fd5a1ebebbe7fc9949dcbf700b31fa2014947f666615"
+    },
+    "num_11": {
+      "file": "audio/sons/num_11.mp3",
+      "text": "11",
+      "voice": "m",
+      "duration": 0.951417,
+      "sha256": "acce7ffbfeb81792c4d36000cfda1cdcbf597c0d2c97d0aa2ba7c40a864453af"
+    },
+    "num_14": {
+      "file": "audio/sons/num_14.mp3",
+      "text": "14",
+      "voice": "m",
+      "duration": 1.114667,
+      "sha256": "1445e4454d9a15eed1189095555addb108f17e1526ca7eb29fe5c3186e2b6d45"
+    },
+    "num_16": {
+      "file": "audio/sons/num_16.mp3",
+      "text": "16",
+      "voice": "m",
+      "duration": 1.01125,
+      "sha256": "698ddbd46f803e30f1eea588304680c8fb942b946a608581bc1d2350c1f9a025"
+    },
+    "num_21": {
+      "file": "audio/sons/num_21.mp3",
+      "text": "21",
+      "voice": "m",
+      "duration": 1.03025,
+      "sha256": "e102ac13d7a0ac042424a33d3c3d8b650712fcfdfb2b149ae8f1313418eb7ff9"
+    },
+    "num_33": {
+      "file": "audio/sons/num_33.mp3",
+      "text": "33",
+      "voice": "m",
+      "duration": 0.975,
+      "sha256": "6b8b39121a8261c117b3b9d1f0c144d26c6655c1b1c08cf313d15d3498ecbbce"
+    },
+    "num_45": {
+      "file": "audio/sons/num_45.mp3",
+      "text": "45",
+      "voice": "m",
+      "duration": 1.175875,
+      "sha256": "78fa46501deafe9793246cca39d2b6896f9d8f30587431ebd47f37b89c59696e"
+    },
+    "num_58": {
+      "file": "audio/sons/num_58.mp3",
+      "text": "58",
+      "voice": "m",
+      "duration": 1.247375,
+      "sha256": "a833e60b1f9ec5b5ac5b37b1a8be6a53f1d5e5c7ccfef622e2d157464a009f0c"
+    },
+    "num_61": {
+      "file": "audio/sons/num_61.mp3",
+      "text": "61",
+      "voice": "m",
+      "duration": 1.121083,
+      "sha256": "e1d5b7820493c66341230dba96985dd17f8975aea84d22d761a004774ec1d317"
+    },
+    "num_72": {
+      "file": "audio/sons/num_72.mp3",
+      "text": "72",
+      "voice": "m",
+      "duration": 1.340333,
+      "sha256": "5fbf47e6ed695b3e3a7caca2aca871f91422a2222785a2a98455b754556c99d7"
+    },
+    "num_80": {
+      "file": "audio/sons/num_80.mp3",
+      "text": "80",
+      "voice": "m",
+      "duration": 0.98375,
+      "sha256": "74ab0198e15f3909de5a6f22bc2f5c1dcb0c0e6dd191cd57641d6b59c05a9b41"
+    },
+    "num_96": {
+      "file": "audio/sons/num_96.mp3",
+      "text": "96",
+      "voice": "m",
+      "duration": 1.37475,
+      "sha256": "93b3468797dcf1d6c0bd55fd34944756eff08c4a11092b74c018a50a3403d2df"
+    },
+    "ui_bienvenue": {
+      "file": "audio/sons/ui_bienvenue.mp3",
+      "text": "Bienvenue à l'hôtel Caribeach ! Parlez avec la réceptionniste.",
+      "voice": "f",
+      "duration": 4.06275,
+      "sha256": "7cc93ad8c4a44f081cf213914f53c456bda4c32bd03db3d2afec79f6c3154e3a"
+    },
+    "ui_pas_cle": {
+      "file": "audio/sons/ui_pas_cle.mp3",
+      "text": "Vous n'avez pas de clé. Allez à la réception.",
+      "voice": "f",
+      "duration": 2.9825,
+      "sha256": "e6abe5f6f4120b06828cb476e16f077b049e70bef77ffcce761983d072675207"
+    },
+    "ui_ascenseur": {
+      "file": "audio/sons/ui_ascenseur.mp3",
+      "text": "Vous prenez l'ascenseur.",
+      "voice": "f",
+      "duration": 1.621042,
+      "sha256": "2a603a76095cb0b4b3b968b564f1fe9512a9733c689ca4e80de28aa0cda54c3d"
+    },
+    "ui_bravo": {
+      "file": "audio/sons/ui_bravo.mp3",
+      "text": "Bravo !",
+      "voice": "f",
+      "duration": 1.048083,
+      "sha256": "2dc04d4d11a5109f16be04db3b3328db09251592ade04d6564b6ae30135aa09c"
+    },
+    "ui_loto": {
+      "file": "audio/sons/ui_loto.mp3",
+      "text": "C'est l'heure du loto !",
+      "voice": "f",
+      "duration": 1.480083,
+      "sha256": "ef730628bfc81c93a5dde79069be3b5a9c3aca61a027f0170c370323358cc39d"
+    }
+  }
+}
