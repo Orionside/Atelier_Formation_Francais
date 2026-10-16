@@ -1,10 +1,16 @@
 
 import * as THREE from 'three';
-import { realism } from './realism.js?v=20261016-1';
-import { createInspector } from './inspection.js?v=20261016-1';
+import { realism } from './realism.js?v=20261016-palace-3';
+import { createInspector } from './inspection.js?v=20261016-palace-3';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261016-palace-3';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { createDiscovery } from './discovery.js?v=20261016-palace-3';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -30,7 +36,7 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, LOW ? 1.5 : 2));
 renderer.setSize(innerWidth, innerHeight, false);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.05;
+renderer.toneMappingExposure = .92;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
@@ -86,7 +92,7 @@ skyScene.add(skyClone);
 const SKY_ENV = pmrem.fromScene(skyScene, 0).texture;
 
 /* ---------- lumières ---------- */
-const hemi = new THREE.HemisphereLight(0xcfe8ff, 0xe8d6b8, 1.15);
+const hemi = new THREE.HemisphereLight(0xcfe8ff, 0xe8d6b8, .72);
 scene.add(hemi);
 const sun = new THREE.DirectionalLight(0xfff1dc, 3.4);
 sun.castShadow = true;
@@ -95,6 +101,11 @@ const SC = sun.shadow.camera;
 SC.left = -16; SC.right = 16; SC.top = 16; SC.bottom = -16; SC.near = 1; SC.far = 160;
 sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.03;
 scene.add(sun, sun.target);
+
+const composer=new EffectComposer(renderer);composer.setPixelRatio(LOW?1:Math.min(devicePixelRatio,1.5));
+composer.addPass(new RenderPass(scene,camera));
+const contactShadows=new SSAOPass(scene,camera,innerWidth,innerHeight);contactShadows.kernelRadius=.20;contactShadows.minDistance=.001;contactShadows.maxDistance=.07;contactShadows.enabled=!LOW;composer.addPass(contactShadows);
+composer.addPass(new OutputPass());
 
 /* ---------- textures procédurales ---------- */
 function tileNoise(size, period, sd) {
@@ -420,6 +431,7 @@ function floor(x1, z1, x2, z2, y, mat, tile, parent = STATIC, walk = true) {
   m.rotation.x = -PI / 2; m.position.set((x1 + x2) / 2, y, (z1 + z2) / 2);
   parent.add(m);
   if (walk) WALK_MESHES.push(m);
+  if(mat===MAT.ceiling)reg(m,'plafond');else if(walk)reg(m,'sol');
   return m;
 }
 /** mur entre deux points, avec ouvertures [{a,b,y0,y1}] le long du mur */
@@ -443,6 +455,7 @@ function wall(x1, z1, x2, z2, h, mat, openings = [], o = {}) {
   }
   piece(cur, len, 0, h);
   (o.parent || STATIC).add(g);
+  reg(g,'mur');
   return g;
 }
 
@@ -477,8 +490,8 @@ const INTER = [];
 function reg(obj, vid, o = {}) {
   obj.userData.vid = vid;
   Object.assign(obj.userData, o);
-  obj.traverse(m => { if (m.isMesh) m.userData.root = obj; });
-  INTER.push(obj);
+  obj.traverse(m => { if (m.isMesh && (!m.userData.root || m.userData.root===obj)) m.userData.root = obj; });
+  if(!INTER.includes(obj))INTER.push(obj);
   return obj;
 }
 function G(parent = STATIC, x = 0, y = 0, z = 0, ry = 0) {
@@ -528,7 +541,7 @@ function pottedPlant(parent,x,z,s=1,y=0){
   const leaf=G(g,...end,angle);const mat=MAT.leaf.clone();mat.color.setHSL(.28+(i%3)*.014,.38,.21+(i%3)*.025);
   REAL.cloth(leaf,.30*s,.50*s,[0,0,0],(u,v)=>[(u-.5)*.33*s*Math.sin(v*PI),Math.sin(v*PI)*.045*s-v*.09*s,-v*.54*s],mat,24,30);
   REAL.tube(leaf,[[0,0,0],[0,.02*s,-.2*s],[0,-.09*s,-.54*s]],.0013*s,MAT.leaf,20);
- }return g;
+ }g.userData.plantScale=s;reg(g,'plante');return g;
 }
 function lampShade(parent, x, y, z, r1, r2, h, name) {
   const mat = MAT.lampOn.clone();
@@ -548,7 +561,11 @@ function bookStack(parent, x, y, z, ry = 0) {
   const cols = [0x1f5f63, 0xc9962e, 0xe9e2d6];
   let yy = 0;
   cols.forEach((c, i) => { B(0.3 - i * 0.03, 0.035, 0.22 - i * 0.02, std({ color: c, roughness: 0.7 }), 0, yy, 0, g); yy += 0.035; });
+  reg(g,'livres');
   return g;
+}
+function ceilingSpot(parent,x,y,z,r=.065){
+ const g=G(parent,x,y,z);C(r,r,.008,MAT.chrome,0,0,0,g,{seg:40,cast:false});C(r*.81,r*.81,.014,MAT.blackMetal,0,-.005,0,g,{seg:40,cast:false});C(r*.65,r*.65,.003,MAT.spot,0,-.008,0,g,{seg:40,cast:false});g.userData.inspectionRotationX=PI;g.userData.inspectionPitch=.7;reg(g,'spot');return g;
 }
 function anthurium(parent, x, y, z, s = 1) {
   const g = G(parent, x, y, z);
@@ -593,7 +610,7 @@ function buildLobby() {
     ctx.clearRect(0, 0, w, h);
     ctx.fillStyle = '#d8b56a'; ctx.textAlign = 'center';
     ctx.font = `${h * 0.18}px ${FONT_D}`; ctx.fillText('★ ★ ★ ★', w / 2, h * 0.24);
-    ctx.font = `${h * 0.42}px ${FONT_D}`; ctx.fillText('CARIBEACH', w / 2, h * 0.68);
+    ctx.font = `${h * 0.42}px ${FONT_D}`; ctx.fillText('PALACE HÔTEL', w / 2, h * 0.68);
     ctx.font = `${h * 0.14}px ${FONT_D}`; ctx.fillText('HÔTEL · FORT-DE-FRANCE', w / 2, h * 0.92);
   }, g, 0, 2.95, 43.8, PI, 0.35);
   logo.material.transparent = true;
@@ -639,7 +656,7 @@ function buildLobby() {
   // carte-clé (apparaît à la fin du dialogue)
   const key = G(g, 0.15, 1.11, 40.62, 0.4);
   B(0.12, 0.006, 0.075, std({ color: 0x0e7c86, roughness: 0.35 }), 0, 0, 0, key);
-  signMesh(0.1, 0.06, (ctx, w, h) => { ctx.fillStyle = '#0e7c86'; ctx.fillRect(0, 0, w, h); ctx.fillStyle = '#f4dfa8'; ctx.font = `${h * 0.42}px ${FONT_D}`; ctx.fillText('14', w * 0.08, h * 0.6); ctx.font = `${h * 0.16}px ${FONT_D}`; ctx.fillText('CARIBEACH', w * 0.08, h * 0.88); }, key, 0, 0.0035, 0).rotation.x = -PI / 2;
+  signMesh(0.1, 0.06, (ctx, w, h) => { ctx.fillStyle = '#0e7c86'; ctx.fillRect(0, 0, w, h); ctx.fillStyle = '#f4dfa8'; ctx.font = `${h * 0.42}px ${FONT_D}`; ctx.fillText('14', w * 0.08, h * 0.6); ctx.font = `${h * 0.16}px ${FONT_D}`; ctx.fillText('PALACE HÔTEL', w * 0.08, h * 0.88); }, key, 0, 0.0035, 0).rotation.x = -PI / 2;
   key.visible = false;
   reg(key, 'cle', { act: 'takeKey' });
   DYN.keyCard = key;
@@ -651,7 +668,7 @@ function buildLobby() {
     ctx.fillStyle = '#f2d48a'; ctx.textAlign = 'center';
     ctx.font = `${h * 0.22}px ${FONT_D}`; ctx.fillText('WIFI', w / 2, h * 0.38);
     ctx.font = `${h * 0.15}px ${FONT_B}`; ctx.fillText('gratuit', w / 2, h * 0.62);
-    ctx.font = `${h * 0.11}px ${FONT_B}`; ctx.fillText('code : CARIBEACH', w / 2, h * 0.84);
+    ctx.font = `${h * 0.11}px ${FONT_B}`; ctx.fillText('code : PALACE HÔTEL', w / 2, h * 0.84);
   }, wifiT, 0, 0.11, 0, PI);
   reg(wifiT, 'wifi');
 
@@ -731,7 +748,7 @@ function buildLobby() {
   }, g, -7.9, 1.9, 40.2, PI / 2);
   reg(rest, 'restaurant');
   // spots au plafond
-  for (let x = -6; x <= 6; x += 3) for (let z = 32; z <= 42; z += 3.3) C(0.07, 0.07, 0.01, MAT.spot, x, H - 0.012, z, g, { cast: false });
+  for (let x = -6; x <= 6; x += 3) for (let z = 32; z <= 42; z += 3.3) ceilingSpot(g,x,H-.015,z,.075);
   const fill = new THREE.PointLight(0xfff0dc, 8, 14, 2); fill.position.set(1, 3.6, 39); g.add(fill);
 
   // jardin devant la façade
@@ -803,6 +820,7 @@ function buildCorridor() {
     B(1.0, 2.25, 0.05, MAT.walnut, 0, 0, 0, d, { tile: 1 });
     B(0.14, 0.02, 0.03, MAT.brass, 0.38, 1.0, -0.04, d);
     signMesh(0.16, 0.1, (ctx, w, h) => { ctx.fillStyle = '#c9a25a'; ctx.fillRect(0, 0, w, h); ctx.fillStyle = '#12343b'; ctx.font = `${h * 0.7}px ${FONT_D}`; ctx.textAlign = 'center'; ctx.fillText(n, w / 2, h * 0.78); }, d, 0, 1.6, -0.03, PI);
+    reg(d,'porte');
   });
   // ascenseur (étage 1) au mur sud
   const e = G(g, 8.2, 0, 5.38, 0);
@@ -816,8 +834,9 @@ function buildCorridor() {
     const a = G(g, x, 1.75, 5.4);
     B(0.06, 0.25, 0.04, MAT.brass, 0, 0, 0, a);
     C(0.07, 0.07, 0.22, std({ color: 0xfff6e8, emissive: 0xffdcae, emissiveIntensity: 1.3 }), 0, 0.02, -0.07, a, { cast: false });
+    reg(a,'applique');
   }
-  for (let x = -2; x <= 9; x += 2.2) C(0.06, 0.06, 0.01, MAT.spot, x, H - 0.012, 4.5, g, { cast: false });
+  for (let x = -2; x <= 9; x += 2.2) ceilingSpot(g,x,H-.015,4.5);
   const l1 = new THREE.PointLight(0xffe2b8, 3, 8, 2); l1.position.set(1, 2.5, 4.5); g.add(l1);
   const l2 = new THREE.PointLight(0xffe2b8, 3, 8, 2); l2.position.set(7, 2.5, 4.5); g.add(l2);
   // console + miroir au fond
@@ -851,6 +870,11 @@ function paintingMesh(parent, x, y, z, ry, w, h, sd) {
   });
   const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), std({ map: t, roughness: 0.8 }));
   m.position.set(0, 0, -0.02); m.rotation.y = PI; g.add(m);
+  // Caisse, baguettes, passe-partout et vitrage : un tableau matériel, distinct du mur.
+  for(const dx of [-w/2-.022,w/2+.022])B(.035,h+.09,.055,MAT.walnut,dx,-h/2-.045,-.012,g,{r:.003});
+  for(const dy of [-h/2-.025,h/2+.025])B(w+.075,.035,.055,MAT.walnut,0,dy,-.012,g,{r:.003});
+  m.material.bumpMap=TEX.linen;m.material.bumpScale=.001;m.material.roughness=.87;
+  const cover=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshPhysicalMaterial({color:0xffffff,transparent:true,opacity:.035,roughness:.06,metalness:.12,envMapIntensity:.4,depthWrite:false}));cover.position.z=-.025;cover.rotation.y=PI;cover.userData.pass=true;g.add(cover);reg(g,'tableau');
   return g;
 }
 
@@ -919,6 +943,7 @@ function buildSuite() {
   // --- lit
   const bedG = G(g, -3.3, 0, -0.3);
   B(0.05, 2.5, 3.8, MAT.walnut, -1.095, 0, 0, bedG, { tile: 1.2 });
+  reg(bedG.children[bedG.children.length-1],'tete_lit');
   for (let i = 0; i < 6; i++) B(0.12, 1.3, 0.42, MAT.boucle, -1.01, 0.38, -1.05 + i * 0.42, bedG, { r: 0.05 });
   const base = G(bedG);
   B(2.1, 0.34, 2.0, MAT.boucle, 0, 0.08, 0, base, { r: 0.05 });
@@ -1009,6 +1034,7 @@ function buildSuite() {
   C(0.015, 0.015, 0.05, MAT.chrome, -0.1, 0.22, 0, cm, { seg: 8 });
   reg(cm, 'machine_cafe');
   const kettle = L([[0, 0], [0.07, 0], [0.08, 0.06], [0.075, 0.16], [0.05, 0.2], [0, 0.21]], MAT.chrome, 4.25, 0.585, 0.05, g);
+  reg(kettle,'bouilloire');
   const cups = G(g, 4.22, 0.585, -0.3);
   B(0.28, 0.015, 0.2, MAT.walnut, 0, 0, 0, cups, { r: 0.006 });
   [-0.07, 0.07].forEach(dz => { L([[0, 0], [0.025, 0], [0.04, 0.06], [0.037, 0.06], [0.022, 0.006], [0, 0.006]], MAT.ceramic, 0, 0.015, dz, cups); });
@@ -1092,7 +1118,7 @@ function buildSuite() {
   for (let i = 0; i < 9; i++) B(0.018, 0.006, 0.018, MAT.chrome, 0.02 + (i % 3) * 0.028, 0.05, -0.04 + Math.floor(i / 3) * 0.028, ph);
   reg(ph, 'telephone');
   const wifiCard = G(g, 0.25, 0.76, 3.32, PI);
-  const tc1 = signMesh(0.14, 0.09, (ctx, w, h) => { ctx.fillStyle = '#fbfaf6'; ctx.fillRect(0, 0, w, h); ctx.fillStyle = '#12343b'; ctx.textAlign = 'center'; ctx.font = `${h * 0.25}px ${FONT_D}`; ctx.fillText('WIFI gratuit', w / 2, h * 0.42); ctx.font = `${h * 0.17}px ${FONT_B}`; ctx.fillText('CARIBEACH', w / 2, h * 0.75); }, wifiCard, 0, 0.04, 0.02);
+  const tc1 = signMesh(0.14, 0.09, (ctx, w, h) => { ctx.fillStyle = '#fbfaf6'; ctx.fillRect(0, 0, w, h); ctx.fillStyle = '#12343b'; ctx.textAlign = 'center'; ctx.font = `${h * 0.25}px ${FONT_D}`; ctx.fillText('WIFI gratuit', w / 2, h * 0.42); ctx.font = `${h * 0.17}px ${FONT_B}`; ctx.fillText('PALACE HÔTEL', w / 2, h * 0.75); }, wifiCard, 0, 0.04, 0.02);
   tc1.rotation.x = -0.35;
   reg(wifiCard, 'wifi');
   // climatisation murale au-dessus du bureau
@@ -1172,10 +1198,11 @@ function buildSuite() {
   reg(plate, 'numero');
   obst(2.6, 3.42, 3.6, 3.58, () => !STATE_REF.doorOpen);
   // spots + suspension
-  for (let x = -3.5; x <= 3.5; x += 1.75) for (let z = -2; z <= 2.5; z += 2.25) C(0.06, 0.06, 0.01, MAT.spot, x, H - 0.012, z, g, { cast: false });
+  for (let x = -3.5; x <= 3.5; x += 1.75) for (let z = -2; z <= 2.5; z += 2.25) ceilingSpot(g,x,H-.015,z);
   const pend = G(g, 2.1, H, -1.25);
   C(0.004, 0.004, 0.9, MAT.blackMetal, 0, -0.9, 0, pend, { seg: 4 });
   L([[0, 0], [0.32, 0], [0.3, 0.06], [0.08, 0.2], [0, 0.22]], MAT.brass, 0, -1.12, 0, pend, { seg: 40 });
+  reg(pend,'suspension');
   const fillR = new THREE.PointLight(0xfff1dc, 5, 10, 2); fillR.position.set(0, 2.6, 0.5); g.add(fillR);
 
   // --- salle de bains
@@ -1237,6 +1264,7 @@ function buildBathroom(parent) {
   B(0.55, 0.45, 2.2, MAT.walnut, 0, 0.38, 0, van, { tile: 1 });
   B(0.58, 0.04, 2.3, MAT.marble, 0, 0.83, 0, van);
   B(0.5, 0.02, 2.1, MAT.walnut, 0, 0.12, 0, van);
+  reg(van,'meuble_vasque');
   const basins = G(van);
   [-0.55, 0.55].forEach(z => {
     L([[0, 0], [0.11, 0], [0.2, 0.06], [0.22, 0.14], [0.205, 0.14], [0.17, 0.06], [0.03, 0.02], [0, 0.02]], MAT.ceramic, -0.05, 0.87, z, basins, { seg: 40 });
@@ -1308,7 +1336,7 @@ function buildBathroom(parent) {
   reg(tp, 'papier_toilette');
   // orchidée sur la vasque
   pottedPlant(g, 8.25, 1.25, 0.32, 0.87);
-  for (let x = 5.2; x <= 8; x += 1.4) for (let z = -2.2; z <= 2.6; z += 1.6) C(0.05, 0.05, 0.01, MAT.spot, x, 2.988, z, g, { cast: false });
+  for (let x = 5.2; x <= 8; x += 1.4) for (let z = -2.2; z <= 2.6; z += 1.6) ceilingSpot(g,x,2.982,z,.055);
   const doorLabel = signMesh(0.6, 0.08, (ctx, w, h) => { ctx.fillStyle = '#c9a25a'; ctx.fillRect(0, 0, w, h); ctx.fillStyle = '#12343b'; ctx.font = `${h * 0.6}px ${FONT_D}`; ctx.textAlign = 'center'; ctx.fillText('SALLE DE BAINS', w / 2, h * 0.72); }, g, 4.42, 2.42, 2.15, -PI / 2);
   reg(doorLabel, 'salle_bains');
   reg(sdbFloor, 'salle_bains');
@@ -1316,7 +1344,7 @@ function buildBathroom(parent) {
 
 function buildBalcony(parent) {
   const g = G(parent);
-  const teak = std({ map: TEX.oak, color: 0xa87c56, roughness: 0.7 });
+  const teak = MAT.oak.clone();teak.color.set(0xa87c56);teak.roughness=.72;
   floor(-4.5, -5.3, 4.5, -3, 0.0, teak, 1.6, g);
   // garde-corps vitré
   const rail = G(g);
@@ -1349,6 +1377,7 @@ function buildBalcony(parent) {
     B(0.46, 0.05, 0.44, MAT.rattan, 0, 0.44, 0, ch, { r: 0.02 });
     B(0.46, 0.5, 0.05, MAT.rattan, 0, 0.47, 0.2, ch, { r: 0.02 });
     [[-0.2, -0.18], [0.2, -0.18], [-0.2, 0.18], [0.2, 0.18]].forEach(([xx, zz]) => C(0.012, 0.012, 0.44, MAT.blackMetal, xx, 0, zz, ch, { seg: 6 }));
+    reg(ch,'chaise');ch.userData.outdoor=true;
     obst(x - 0.28, z - 0.28, x + 0.28, z + 0.28);
   });
   obst(2.3, -4.7, 3.3, -3.7);
@@ -1453,7 +1482,7 @@ function buildExterior() {
   spots.forEach((p, i) => (i % 2 ? pB : pT).push(p));
   [[palmA, pT], [palmB, pB]].forEach(([geo, ps]) => {
     const tr = new THREE.InstancedMesh(geo.trunk, MAT.bark, ps.length);
-    const cr = new THREE.InstancedMesh(geo.crown, MAT.frond, ps.length);
+    const cr = new THREE.InstancedMesh(geo.crown, MAT.leaf, ps.length);
     ps.forEach(([x, z], i) => {
       const s = 0.85 + srand() * 0.35;
       m4.compose(new V3(x, z < -40 ? -4.3 : -4.02, z), new THREE.Quaternion().setFromEuler(new THREE.Euler(0, srand() * PI * 2, 0)), new V3(s, s, s));
@@ -1465,9 +1494,10 @@ function buildExterior() {
   });
   // palmiers du jardin (côté hall)
   const gp = [[-6, 24], [6, 23], [-12, 18], [13, 17], [-20, 25], [20, 26]];
-  const tr2 = new THREE.InstancedMesh(palmA.trunk, MAT.bark, gp.length), cr2 = new THREE.InstancedMesh(palmA.crown, MAT.frond, gp.length);
+  const tr2 = new THREE.InstancedMesh(palmA.trunk, MAT.bark, gp.length), cr2 = new THREE.InstancedMesh(palmA.crown, MAT.leaf, gp.length);
   gp.forEach(([x, z], i) => { m4.compose(new V3(x, 0, z), new THREE.Quaternion().setFromEuler(new THREE.Euler(0, i * 1.7, 0)), new V3(1, 1, 1)); tr2.setMatrixAt(i, m4); cr2.setMatrixAt(i, m4); });
   tr2.castShadow = cr2.castShadow = true; g.add(tr2, cr2);
+  reg(tr2,'palmiers');reg(cr2,'palmiers');
   // plage (pente douce), lagon, mer
   const sandGeo = new THREE.PlaneGeometry(640, 60, 1, 1);
   const sandM = mesh(sandGeo, MAT.sand, { cast: false });
@@ -1529,15 +1559,10 @@ function palmGeometry(variant) {
   const top = curve.getPointAt(1);
   for (let k = 0; k < 13; k++) {
     const len = 3.6 + (k % 3) * 0.4;
-    const fg = new THREE.PlaneGeometry(len, 1.0, 14, 2);
-    fg.rotateX(-PI / 2);
-    const fp = fg.attributes.position;
-    for (let i = 0; i < fp.count; i++) {
-      const x = fp.getX(i) + len / 2, z = fp.getZ(i);
-      fp.setX(i, x);
-      fp.setY(i, -Math.pow(x / len, 2) * (1.4 + (k % 4) * 0.3) - Math.abs(z) * 0.35);
-    }
-    fg.computeVertexNormals();
+    const parts=[],sag=1.4+(k%4)*.22;const mid=t=>new V3(t*len,Math.sin(t*PI)*.32-t*t*sag,0);
+    parts.push(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(Array.from({length:17},(_,i)=>mid(i/16))),24,.017,5,false));
+    for(let j=2;j<(LOW?22:31);j++)for(const side of [-1,1]){const t=j/(LOW?23:32),c=mid(t),span=Math.sin(t*PI)*(.60+(k%3)*.05),blade=new THREE.PlaneGeometry(1,1,LOW?3:5,2),p=blade.attributes.position;for(let i=0;i<p.count;i++){const v=p.getX(i)+.5,u=p.getY(i)*2;p.setXYZ(i,c.x+v*.25+u*.035*Math.sin(v*PI),c.y-v*v*.22+Math.sin(v*PI)*.05-Math.abs(u)*.012,c.z+side*v*span+u*.035*Math.sin(v*PI));}blade.computeVertexNormals();parts.push(blade);}
+    const fg=mergeGeometries(parts.map(p=>p.toNonIndexed()));
     fg.rotateZ(0.45 - (k % 3) * 0.28);
     fg.rotateY(k / 13 * PI * 2 + (k % 2) * 0.2);
     fg.translate(top.x, top.y, top.z);
@@ -1579,7 +1604,7 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261016-1').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261016-palace-3').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}
@@ -1587,7 +1612,7 @@ async function playOne(id,tok){
  if(ST.mute||tok!==playTok)return;const manifest=await manifestPromise;if(tok!==playTok)return;
  const c=manifest?.clips?.[id];if(!c){toast('Ce son ne se charge pas. Réessayez.');return;}
  speaking=true;await new Promise(resolve=>{const finish=ok=>{if(pendingAudio!==finish)return;pendingAudio=null;PLAYER.onended=PLAYER.onerror=null;resolve(ok);};pendingAudio=finish;
- PLAYER.onended=()=>finish(true);PLAYER.onerror=()=>{if(tok===playTok)toast('Ce son ne se charge pas. Réessayez.');finish(false);};PLAYER.src=c.file;PLAYER.playbackRate=ST.slow?.9:1;PLAYER.preservesPitch=true;
+ PLAYER.onended=()=>finish(true);PLAYER.onerror=()=>{if(tok===playTok)toast('Ce son ne se charge pas. Réessayez.');finish(false);};PLAYER.src=c.file+'?v='+encodeURIComponent(manifest.version);PLAYER.playbackRate=ST.slow?.9:1;PLAYER.preservesPitch=true;
  PLAYER.play().catch(()=>{if(tok===playTok)toast('Appuyez sur Écouter pour lancer le son.');finish(false);});});if(tok===playTok)speaking=false;
 }
 async function say(...ids){stopAudio();const tok=playTok;for(const id of ids){if(tok!==playTok)return;await playOne(id,tok);if(tok!==playTok)return;await wait(200);}}
@@ -1623,7 +1648,7 @@ function noiseLoop(name, on, kind) {
 }
 
 /* ---------- joueur et contrôles ---------- */
-const P = { x: 0, z: 35.4, yaw: PI, pitch: -0.04, eye: 1.62, target: null, bob: 0 };
+const P = { x: 0, z: 35.4, yaw: PI, pitch: -0.04, eye: 1.62, target: null, route:[], bob: 0 };
 const SPOTS = {
   reception: { x: 0, z: 35.4, yaw: PI, pitch: -0.04 },
   couloir: { x: 6.2, z: 4.6, yaw: 1.23, pitch: -0.02 },
@@ -1712,15 +1737,16 @@ function updateMove(dt) {
   const sp = (keys.ShiftLeft || keys.ShiftRight) ? 3.4 : 2.1;
   let moving = false;
   if (Math.abs(f) > 0.05 || Math.abs(s) > 0.05) {
-    P.target = null; marker.visible = false;
+    P.target = null; P.route=[]; marker.visible = false;
     const fx = -Math.sin(P.yaw), fz = -Math.cos(P.yaw), rx = Math.cos(P.yaw), rz = -Math.sin(P.yaw);
     const n = Math.max(1, Math.hypot(f, s));
     moving = tryMove((fx * f + rx * s) / n * sp * dt, (fz * f + rz * s) / n * sp * dt);
   } else if (P.target) {
     const dx = P.target.x - P.x, dz = P.target.z - P.z, d = Math.hypot(dx, dz);
-    if (d < 0.08) { P.target = null; marker.visible = false; }
+    if (d < 0.08) { P.target = P.route.shift() || null; if(!P.target)marker.visible = false; }
     else {
       const st = Math.min(d, sp * dt);
+      if(P.route.length || P.target.guided){const desired=Math.atan2(-dx,-dz);P.yaw+=Math.atan2(Math.sin(desired-P.yaw),Math.cos(desired-P.yaw))*Math.min(1,dt*5);P.pitch*=.94;}
       moving = tryMove(dx / d * st, dz / d * st);
       if (!moving) { P.target = null; marker.visible = false; }
     }
@@ -1731,7 +1757,7 @@ function teleport(name, instant) {
   stopAudio();
   const s = SPOTS[name]; if (!s) return;
   if (['balcon'].includes(name) && !STATE_REF.slideOpen) doAct('slide', true);
-  const go = () => { P.x = s.x; P.z = s.z; P.yaw = s.yaw; P.pitch = s.pitch; P.target = null; marker.visible = false; };
+  const go = () => { P.x = s.x; P.z = s.z; P.yaw = s.yaw; P.pitch = s.pitch; P.target = null; P.route=[]; marker.visible = false; };
   if (instant) return go();
   const f = $('#fade'); f.classList.add('on');
   setTimeout(() => { go(); f.classList.remove('on'); }, 420);
@@ -1761,13 +1787,17 @@ function pickAt(cx, cy) {
   return pass;
 }
 function rootOf(h) { return h && h.object.userData.root ? h.object.userData.root : null; }
+function easyPick(x,y){
+ const direct=pickAt(x,y),r=rootOf(direct),background=new Set(['mur','sol','plafond','couloir']);if(r&&!background.has(r.userData.vid))return direct;
+ const radius=IS_TOUCH?20:12;for(const [dx,dy] of [[-1,0],[1,0],[0,-1],[0,1],[-.7,-.7],[.7,-.7],[-.7,.7],[.7,.7]]){const h=pickAt(x+dx*radius,y+dy*radius),root=rootOf(h);if(root&&!background.has(root.userData.vid))return h;}return direct;
+}
 function labelOf(root) {
   if (!root) return null;
   if (root.userData.obj) return ST.found[root.userData.obj] ? null : "Qu'est-ce que c'est ?";
   const v = VOC[root.userData.vid]; return v ? v.w : null;
 }
 const HL = new Map();
-const NO_HL = new Set(['mer', 'montagne', 'plage', 'piscine', 'couloir', 'salle_bains', 'palmiers', 'transats', 'parasol', 'balcon', 'fenetre', 'rideaux']);
+const NO_HL = new Set(['mur','sol','plafond','mer', 'montagne', 'plage', 'piscine', 'couloir', 'salle_bains', 'palmiers', 'transats', 'parasol', 'balcon', 'fenetre', 'rideaux']);
 function hlMat(m) {
   if (Array.isArray(m)) return m;
   let h = HL.get(m);
@@ -1783,7 +1813,7 @@ function setHover(root) {
 }
 function hoverAt(x, y) {
   if (!started) return;
-  const h = pickAt(x, y), r = rootOf(h), lab = labelOf(r);
+  const h = easyPick(x, y), r = rootOf(h), lab = labelOf(r);
   if (r && lab) { setHover(r); showTip(x, y, lab); }
   else { setHover(null); hideTip(); canvas.classList.toggle('hover', !!(h && WALK_MESHES.includes(h.object))); }
 }
@@ -1792,12 +1822,12 @@ function showTip(x, y, t) { tip.textContent = t; tip.hidden = false; tip.style.l
 function hideTip() { tip.hidden = true; }
 function clickAt(x, y) {
   if (!started) return;
-  const h = pickAt(x, y); if (!h) return;
+  const h = easyPick(x, y); if (!h) return;
   const r = rootOf(h);
   const isFloor = WALK_MESHES.includes(h.object);
   if (isFloor) {
     const p = h.point;
-    if (Math.hypot(p.x - P.x, p.z - P.z) < 14) { P.target = { x: p.x, z: p.z }; marker.position.set(p.x, p.y + 0.01, p.z); marker.visible = true; }
+    if (Math.hypot(p.x - P.x, p.z - P.z) < 14) { P.route=[];P.target = { x: p.x, z: p.z }; marker.position.set(p.x, p.y + 0.01, p.z); marker.visible = true; }
     if (r && r.userData.vid && !ST.seen[r.userData.vid]) select(r);
     return;
   }
@@ -1981,7 +2011,7 @@ function drawTV() {
   const g = c.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#0b4a78'); g.addColorStop(1, '#06203a');
   c.fillStyle = g; c.fillRect(0, 0, W, H);
   c.fillStyle = '#f2d48a'; c.font = `44px ${FONT_D}`; c.textAlign = 'left'; c.fillText('LE LOTO', 40, 70);
-  c.font = `20px ${FONT_B}`; c.fillStyle = '#cfe3f1'; c.fillText('Caribeach TV · tirage du jour', 40, 102);
+  c.font = `20px ${FONT_B}`; c.fillStyle = '#cfe3f1'; c.fillText('Palace Hôtel TV · tirage du jour', 40, 102);
   if (t.n != null) {
     c.fillStyle = '#fff'; c.beginPath(); c.arc(W * 0.72, H * 0.46, 105, 0, PI * 2); c.fill();
     c.strokeStyle = '#d9604a'; c.lineWidth = 14; c.beginPath(); c.arc(W * 0.72, H * 0.46, 82, 0, PI * 2); c.stroke();
@@ -2103,7 +2133,7 @@ function openForm() {
     <p class="lead">Remplissez le formulaire pour la réceptionniste. Utilisez un nom et des coordonnées imaginaires.</p>
     <form id="resaForm" novalidate>
       <div class="resa-wrap"><table class="resa">
-        <tr><th colspan="4">Réservation · Hôtel Caribeach</th></tr>
+        <tr><th colspan="4">Réservation · Palace Hôtel</th></tr>
         <tr><td class="lab"><label for="f-nom">Nom</label></td><td><input id="f-nom" name="nom" autocomplete="off" value="${v('nom')}"></td>
             <td class="lab"><label for="f-email">E-mail</label></td><td><input id="f-email" name="email" type="email" autocomplete="off" value="${v('email')}"></td></tr>
         <tr><td class="lab"><label for="f-prenom">Prénom</label></td><td><input id="f-prenom" name="prenom" autocomplete="off" value="${v('prenom')}"></td>
@@ -2139,6 +2169,7 @@ let onModalClose = null;
 function openModal(html, onClose) {
   if(!$('#modalWrap').hidden)closeModal();
   $('#modalBody').innerHTML = html; $('#modalWrap').hidden = false; onModalClose = onClose || null;
+  if($('#objectLabels'))$('#objectLabels').hidden=true;
   hideTip(); setHover(null);
   const first = $('#modal').querySelector('input,button.btn,button.choice'); if (first && !IS_TOUCH) first.focus({ preventScroll: true });
 }
@@ -2256,7 +2287,7 @@ function summaryText() {
   const words = Object.keys(ST.seen).filter(k => VOCAB_IDS.includes(k)).length;
   const objs = DATA.objets.filter(o => o.cache && ST.found[o.id]).map(o => o.w);
   return [
-    'Atelier « Suite 14 » · Hôtel Caribeach · français A1',
+    'Atelier « Suite 14 » · Palace Hôtel · français A1',
     'Apprenant·e : ' + (((f.prenom || '') + ' ' + (f.nom || '')).trim() || '—'),
     'Date : ' + new Date().toLocaleDateString('fr-FR'),
     '',
@@ -2371,11 +2402,11 @@ function renderFiche() {
       <h3>Objectifs (A1)</h3>
       <ul><li>Se présenter à la réception, donner ses coordonnées.</li><li>Nommer les pièces, le mobilier et les services d'un hôtel, avec l'article.</li><li>Dire ce qu'il y a / ce qu'il n'y a pas : <i>il y a / il n'y a pas de</i>.</li><li>Dire ce qu'on a / ce qu'on n'a pas : <i>j'ai / je n'ai pas de</i>.</li><li>Poser une question avec <i>est-ce que</i>. Comprendre des prix (nombres 0 à 99).</li></ul>
       <h3>Lien avec le manuel</h3>
-      <p>Cette suite est une situation fictive enrichie ; ses équipements ne décrivent pas tous le document d’origine. Unité 2 « Bon séjour ! » : act. 2 (prestations de l'hôtel Caribeach), act. 3 (arrivée à la réception, chambre 14), act. 6 (objets personnels, j'ai / je n'ai pas de), act. 7 (formulaire de réservation). Le minibar et le loto reprennent les nombres.</p>
-      <h3>Choisir une petite séance</h3><p>La banque de 79 mots ne s’apprend pas en une fois. Choisissez cinq objets dans une pièce ; nommez-les, écoutez et dites une phrase. Reprenez cinq autres mots lors de la séance suivante.</p><h3>Parcours complet (à répartir sur plusieurs jours)</h3>
+      <p>Cette suite est une situation fictive enrichie ; ses équipements ne décrivent pas tous le document d’origine. Unité 2 « Bon séjour ! » : act. 2 (prestations de l’hôtel du manuel), act. 3 (arrivée à la réception, chambre 14), act. 6 (objets personnels, j'ai / je n'ai pas de), act. 7 (formulaire de réservation). Le minibar et le loto reprennent les nombres.</p>
+      <h3>Choisir une petite séance</h3><p>La banque de 93 mots ne s’apprend pas en une fois. Choisissez cinq objets dans une pièce ; nommez-les, écoutez et dites une phrase. Reprenez cinq autres mots lors de la séance suivante.</p><h3>Parcours complet (à répartir sur plusieurs jours)</h3>
       <ul><li>Missions 1 à 3 : réception, découverte libre, chasse aux objets (25 min).</li><li>Missions 4 à 6 : minibar, quiz <i>il y a</i>, bilan <i>j'ai</i> (15 min).</li><li>L'apprenant copie « Mon bilan » et vous l'envoie.</li></ul>
       <h3>Prolongement en séance</h3>
-      <ul><li>Oral : décrire la suite (« Dans la chambre, il y a… »). Comparer avec l'hôtel Caribeach du manuel.</li><li>Jeu de rôle réception à deux, sans le support.</li><li>Écrit : un avis client de 3 phrases, comme celui de Louane.</li></ul>
+      <ul><li>Oral : décrire la suite (« Dans la chambre, il y a… »). Comparer avec l’hôtel du manuel.</li><li>Jeu de rôle réception à deux, sans le support.</li><li>Écrit : un avis client de 3 phrases, comme celui de Louane.</li></ul>
       <h3>Corrigés</h3>
       <p><b>Dialogue :</b> ${DATA.dialogue.filter(s => s.choix).map(s => esc(s.choix.find(c => c.ok).t)).join(' / ')}</p>
       <p><b>Il y a :</b> ${DATA.quiz.map((q, i) => `${i + 1}. ${q.r}`).join(' · ')}</p>
@@ -2422,6 +2453,7 @@ $('#btnSound').onclick = () => {
 let toastT = null;
 function toast(t) { const el = $('#toast'); el.textContent = t; el.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => el.hidden = true, 3800); }
 document.querySelectorAll('#dock button').forEach(b => b.onclick = () => teleport(b.dataset.go));
+$('#enterRoom').onclick=()=>{if(!STATE_REF.doorOpen)return;closeCard();setFiche(false);P.route=[{x:3.1,z:3.95,guided:true},{x:3.1,z:3.2,guided:true},{x:3.1,z:2.75,guided:true}];P.target={x:3.1,z:P.z,guided:true};marker.visible=false;};
 let lastZone = null;
 function updateZone() {
   const z = zoneAt(P.x, P.z);
@@ -2435,6 +2467,7 @@ function updateZone() {
 const clock = new THREE.Clock();
 const camDir = new V3();
 let lastRender=0;
+let updateDiscovery=()=>{};
 function loop() {
   const now=performance.now();if(now-lastRender<(LOW?50:33)){requestAnimationFrame(loop);return;}lastRender=now;
   if(document.hidden || document.querySelector('#objectView')){clock.getDelta();requestAnimationFrame(loop);return;}
@@ -2461,13 +2494,16 @@ function loop() {
   if (DYN.shower.on) { const p = DYN.shower.drops.geometry.attributes.position; for (let i = 0; i < p.count; i += 2) { let y = p.getY(i) - dt * 5; if (y < 0.12) y = 2.5; p.setY(i, y); p.setY(i + 1, y - 0.12); } p.needsUpdate = true; }
   stepTV(dt); stepAC(dt);
   updateZone();
+  $('#doorInvitation').hidden=!(started&&STATE_REF.doorOpen&&P.z>3.62&&P.z<5.5);
+  updateDiscovery(now);
   if (marker.visible) marker.material.opacity = 0.55 + Math.sin(t * 6) * 0.3;
-  renderer.render(scene, camera);
+  composer.render();
   requestAnimationFrame(loop);
 }
 addEventListener('resize', () => {
   camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight, false);
+  composer.setSize(innerWidth,innerHeight);
 });
 
 /* ---------- démarrage ---------- */
@@ -2480,8 +2516,14 @@ async function init() {
   try { await Promise.race([Promise.all([document.fonts.load('40px Marcellus'), document.fonts.load('20px "Atkinson Hyperlegible"')]), wait(2500)]); } catch (e) { }
   await wait(30);
   buildTextures();REAL.prepareTextures();buildMaterials();
+  btn.textContent='Préparer les matières…';
+  await photographicMaterials(MAT,renderer);
+  const assetResult=await loadPalaceAssets((n,total)=>btn.textContent=`Préparer le mobilier… ${n}/${total}`);
+  if(assetResult.failures.length)throw new Error('Le mobilier ne se charge pas : '+assetResult.failures.join(', '));
   buildLobby(); buildCorridor(); buildSuite(); buildExterior();
   buildHunt();REAL.details(INTER,STATIC);buildACParticles();drawTV();drawAC();
+  installPalace({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW});
+  updateDiscovery=createDiscovery({scene:STATIC,camera,roots:INTER,vocab:VOC,select,visible:visibleChain,blocked:()=>!started||!$('#modalWrap').hidden||!$('#dlg').hidden});
   if (ST.key || ST.dlg >= DATA.dialogue.length) DYN.keyCard.visible = !ST.key;
   uiReady = true;
   updateChips(); renderFiche();

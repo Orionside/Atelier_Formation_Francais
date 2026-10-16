@@ -1,3 +1,9 @@
+# Version Palace Hôtel · 16 octobre 2026
+
+305 identifiants audio, dont 34 lectures créées ou remplacées pour la nouvelle version ; 93 mots de vocabulaire. Même paire de références MP4 A1. Les 34 nouvelles prises ont été transcrites ; six lectures ont aussi été vérifiées par décodeur phonétique indépendant, notamment /la kle maɲetik/, /lə spɔt lyminø/ et /palas otɛl/. Le manifeste, les textes et les empreintes de chaque MP3 sont contrôlés par `scripts/verifier.py`. Les premières mesures ci-dessous documentent la banque précédente de 277 lectures ; les remplacements sont identifiés dans `audio/provenance.json`.
+
+Les onze modèles GLB et les cinq jeux de matières PBR sont présents localement. Les géométries ont été optimisées par Meshopt et les textures par WebP. Les références vocales brutes et les modèles originaux non optimisés restent hors publication.
+
 # Contrôles de la version du 16 octobre 2026
 
 ## Audio
@@ -28,3 +34,10 @@ L'écoute humaine du naturel et du timbre reste une appréciation distincte des 
 ## Diffusion
 
 Même adresse GitHub Pages, dossier `Atelier_Suite_Hotel_3D_A1`. Les deux anciennes banques base64 ont été remplacées par les MP3 et leur manifeste. Les sources MP4, extraits de référence et prises WAV de travail restent en local. Le contrôle après déploiement compare les fichiers publics à la livraison locale ; les traces de publication sont conservées dans le dossier de production.
+
+## Essais de la version Palace Hôtel
+
+- Chrome : chargement sans erreur des onze modèles Meshopt/WebP, visite, repères d’objets, gros plans de la carte et de la plante, rotation et lecture de leurs dénominations.
+- Parcours complet avec coordonnées fictives : dialogue, formulaire, remise de la clé, sélection de la porte depuis le couloir, ouverture, bouton « Entrer dans la chambre », marche jusqu’à l’intérieur ; la zone affichée devient « La chambre ».
+- Contrôle à 390 × 844 : document de 390 pixels, gros plan de 366 pixels de largeur, entièrement contenu entre x=12 et x=378 ; contrôles et son accessibles, aucune erreur console observée. Ce test de dimensions ne remplace pas un essai sur téléphone physique.
+- Les textures générales et les modèles partagés restent en cache ; les audios utilisent un identifiant de version dans leur URL pour renouveler les lectures remplacées.

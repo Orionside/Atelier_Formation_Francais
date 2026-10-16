@@ -1,6 +1,6 @@
 {
   "ready": true,
-  "version": "20261016-qwen-a1",
+  "version": "20261016-palace-3",
   "voices": {
     "f": {
       "start": 31.95,
@@ -134,10 +134,10 @@
     },
     "w_cle": {
       "file": "audio/sons/w_cle.mp3",
-      "text": "la clé",
       "voice": "f",
-      "duration": 0.902042,
-      "sha256": "7abeff5541fe6ac2c14809b14bdfd7f7c323361b2b60b07b43097f16987648ce"
+      "text": "la clé magnétique",
+      "duration": 1.697458,
+      "sha256": "50a804c0cd2f10b8653cca89d4a50929f5bef7f83be4b1717ca9e5eec2eb5fb6"
     },
     "e_cle": {
       "file": "audio/sons/e_cle.mp3",
@@ -274,10 +274,10 @@
     },
     "w_plante": {
       "file": "audio/sons/w_plante.mp3",
-      "text": "la plante",
       "voice": "f",
-      "duration": 1.095208,
-      "sha256": "c580e7be9d897029c612a4673672295d091cc4c9f7dd5dec9d6755172f658b25"
+      "text": "la plante d'intérieur",
+      "duration": 2.048083,
+      "sha256": "283bcde24431755e2096b203fb2b5c980e5dde05538b8418300e1ffb5c4fe05d"
     },
     "e_plante": {
       "file": "audio/sons/e_plante.mp3",
@@ -302,17 +302,17 @@
     },
     "w_porte": {
       "file": "audio/sons/w_porte.mp3",
-      "text": "la porte",
       "voice": "f",
-      "duration": 1.073792,
-      "sha256": "eeb298f768f19b80811cb505e1e3fba4cdccd3f98881d2a35817b8908dc40484"
+      "text": "la porte de la chambre",
+      "duration": 1.62575,
+      "sha256": "f74a8d4cd79c0059d313afe9739931e8839189b8e83901ed3cbab444a838b991"
     },
     "e_porte": {
       "file": "audio/sons/e_porte.mp3",
-      "text": "C'est la porte de la chambre quatorze.",
       "voice": "f",
-      "duration": 2.366292,
-      "sha256": "cdcf35531160b15c7987d67c5b1ad8d41fdb5ac155f6c82168b55f073b6d4f1d"
+      "text": "C'est la porte de la chambre.",
+      "duration": 1.867167,
+      "sha256": "43a7ad1cb96b4883587d5a4e74538b571373787e817119937043ca70a15ce266"
     },
     "w_numero": {
       "file": "audio/sons/w_numero.mp3",
@@ -1758,10 +1758,10 @@
     },
     "d_d1": {
       "file": "audio/sons/d_d1.mp3",
-      "text": "Bonjour ! Bienvenue à l'hôtel Caribeach.",
       "voice": "f",
-      "duration": 2.848792,
-      "sha256": "85da5f99ed7244362f7a6d22f17f4cdc5f0cb273aff0399903ff526e09c435db"
+      "text": "Bonjour ! Bienvenue à Palace Hôtel.",
+      "duration": 3.025958,
+      "sha256": "6a95126cfc63e72b7769edcf852bad162ac996a64988470fb37a137f8cd28473"
     },
     "dc_d1": {
       "file": "audio/sons/dc_d1.mp3",
@@ -1926,10 +1926,10 @@
     },
     "ui_bienvenue": {
       "file": "audio/sons/ui_bienvenue.mp3",
-      "text": "Bienvenue à l'hôtel Caribeach ! Parlez avec la réceptionniste.",
       "voice": "f",
-      "duration": 4.06275,
-      "sha256": "7cc93ad8c4a44f081cf213914f53c456bda4c32bd03db3d2afec79f6c3154e3a"
+      "text": "Bienvenue à Palace Hôtel ! Parlez avec la réceptionniste.",
+      "duration": 4.081958,
+      "sha256": "7146a23f12638046c083e414b94d608ddb4e5ce4ec66060baac334013e92e79c"
     },
     "ui_pas_cle": {
       "file": "audio/sons/ui_pas_cle.mp3",
@@ -1958,6 +1958,202 @@
       "voice": "f",
       "duration": 1.480083,
       "sha256": "ef730628bfc81c93a5dde79069be3b5a9c3aca61a027f0170c370323358cc39d"
+    },
+    "w_spot": {
+      "file": "audio/sons/w_spot.mp3",
+      "voice": "f",
+      "text": "le spot lumineux",
+      "duration": 1.761583,
+      "sha256": "f331287b4e550f6956d7951dab5584670855bc42248729a0d2840c65f0b2dc7e"
+    },
+    "e_spot": {
+      "file": "audio/sons/e_spot.mp3",
+      "voice": "f",
+      "text": "Il y a des spots au plafond.",
+      "duration": 1.879708,
+      "sha256": "53d5de7c3a0acd1242957fe0029fc3f76e44db1ace334fafd3ed0e5f01e1e5a1"
+    },
+    "w_applique": {
+      "file": "audio/sons/w_applique.mp3",
+      "voice": "f",
+      "text": "l'applique murale",
+      "duration": 1.426042,
+      "sha256": "4d7e908a272898e22121ea794337475cbd64e1827ac178a4dcd1ef6293f8f3ec"
+    },
+    "e_applique": {
+      "file": "audio/sons/e_applique.mp3",
+      "voice": "f",
+      "text": "L'applique est sur le mur.",
+      "duration": 1.759625,
+      "sha256": "ce07dab7a43165c79e1faf33d9800481bc32e59bc501c56b5b4be03127a6fc24"
+    },
+    "w_poignee": {
+      "file": "audio/sons/w_poignee.mp3",
+      "voice": "f",
+      "text": "la poignée",
+      "duration": 1.14175,
+      "sha256": "54be25f0d3495489ffc283742619f4d8452f5411fb91e548628ad7f8599c6718"
+    },
+    "e_poignee": {
+      "file": "audio/sons/e_poignee.mp3",
+      "voice": "f",
+      "text": "J'ouvre la porte avec la poignée.",
+      "duration": 2.104667,
+      "sha256": "fe2d5dda3c1b4c45db794b77794dccb2cb0332d960835a857fcb1b9f3d3f25cc"
+    },
+    "w_serrure": {
+      "file": "audio/sons/w_serrure.mp3",
+      "voice": "f",
+      "text": "la serrure électronique",
+      "duration": 1.654625,
+      "sha256": "4ef40756c573803712321bde7c99bb4031f501cf8f8b2561d3c40249e0a06e0f"
+    },
+    "e_serrure": {
+      "file": "audio/sons/e_serrure.mp3",
+      "voice": "f",
+      "text": "Je pose la carte sur la serrure.",
+      "duration": 2.238625,
+      "sha256": "0efab08ca9b9d7fbf4a5c7df827f3c37955ce6a83767d708ec785c391dfd1c8d"
+    },
+    "w_interrupteur": {
+      "file": "audio/sons/w_interrupteur.mp3",
+      "voice": "f",
+      "text": "l'interrupteur",
+      "duration": 1.337083,
+      "sha256": "8cc46685ca98d03a39cb8209862cbb7c80fc6e2033e96acfc2d538bbdbaeb557"
+    },
+    "e_interrupteur": {
+      "file": "audio/sons/e_interrupteur.mp3",
+      "voice": "f",
+      "text": "J'allume la lumière.",
+      "duration": 1.516167,
+      "sha256": "a15288862a546da6b0e90cc7842ab0f8cf8848921aaafc5359590d189287ddc7"
+    },
+    "w_prise": {
+      "file": "audio/sons/w_prise.mp3",
+      "voice": "f",
+      "text": "la prise électrique",
+      "duration": 1.382417,
+      "sha256": "bb3f4985512fa8e39c2c8c7d6d7ccccad79082e2168387110b4ef62a3db7d28c"
+    },
+    "e_prise": {
+      "file": "audio/sons/e_prise.mp3",
+      "voice": "f",
+      "text": "Je branche mon chargeur dans la prise.",
+      "duration": 2.575417,
+      "sha256": "0efd4e25a75f2e03ea08780a52e509f7ee689cbf18342d70cf13e2ed06d2ed63"
+    },
+    "w_bouilloire": {
+      "file": "audio/sons/w_bouilloire.mp3",
+      "voice": "f",
+      "text": "la bouilloire",
+      "duration": 1.190042,
+      "sha256": "cb0ed24235da0205f15612e043ee5d8d25e99306417981f4c81a073deb3bc60b"
+    },
+    "e_bouilloire": {
+      "file": "audio/sons/e_bouilloire.mp3",
+      "voice": "f",
+      "text": "Il y a une bouilloire dans la chambre.",
+      "duration": 2.118417,
+      "sha256": "4b870d596355e70d9a1188cfc3d60551bd926e0c9d0390cf3ddcd3922fb47e04"
+    },
+    "w_livres": {
+      "file": "audio/sons/w_livres.mp3",
+      "voice": "f",
+      "text": "les livres",
+      "duration": 1.051042,
+      "sha256": "1ca48e0a84507381befb560bd3919ff097bebf078f142b66797d2331a6cf3372"
+    },
+    "e_livres": {
+      "file": "audio/sons/e_livres.mp3",
+      "voice": "f",
+      "text": "Les livres sont sur la table.",
+      "duration": 1.834125,
+      "sha256": "d9dd7b2fb467b89af37a7a4de89617e10f6d02b0a08a067e7c692017fb56a389"
+    },
+    "w_mur": {
+      "file": "audio/sons/w_mur.mp3",
+      "voice": "f",
+      "text": "le mur",
+      "duration": 1.066375,
+      "sha256": "725ed1fba69448298fad5a8b635ba62969ff852c302578199726787c47973a07"
+    },
+    "e_mur": {
+      "file": "audio/sons/e_mur.mp3",
+      "voice": "f",
+      "text": "Le tableau est sur le mur.",
+      "duration": 1.891083,
+      "sha256": "c51ccb47f083571a36d2465e501cef94183164405c5477eb474b6b912fab9428"
+    },
+    "w_plafond": {
+      "file": "audio/sons/w_plafond.mp3",
+      "voice": "f",
+      "text": "le plafond",
+      "duration": 1.183083,
+      "sha256": "852a17fce880664ce07a3d176296b990f2b46b482caf09a6012fb5642c3461d2"
+    },
+    "e_plafond": {
+      "file": "audio/sons/e_plafond.mp3",
+      "voice": "f",
+      "text": "Les spots sont au plafond.",
+      "duration": 1.999792,
+      "sha256": "669bab04ef43dd1d440d2e5eacf5c0bcfc1651861e2ccefda4345384c1f71ceb"
+    },
+    "w_sol": {
+      "file": "audio/sons/w_sol.mp3",
+      "voice": "f",
+      "text": "le sol",
+      "duration": 1.067625,
+      "sha256": "fdd780a209a67a1114344681d11b6631cb2a15e1ded79bfc383345ba846d8c91"
+    },
+    "e_sol": {
+      "file": "audio/sons/e_sol.mp3",
+      "voice": "f",
+      "text": "Le sol de la chambre est en bois.",
+      "duration": 2.458375,
+      "sha256": "dd5e022d2d7132962e9a594e902e3acc65b827badacaf34370a5fd8a36e7e88f"
+    },
+    "w_suspension": {
+      "file": "audio/sons/w_suspension.mp3",
+      "voice": "f",
+      "text": "la suspension",
+      "duration": 1.338375,
+      "sha256": "c17af73ced0cf376538d8e82b7f1d2bdae17be465e99741634e97122e1f0b2fe"
+    },
+    "e_suspension": {
+      "file": "audio/sons/e_suspension.mp3",
+      "voice": "f",
+      "text": "Il y a une suspension au-dessus de la table.",
+      "duration": 2.919042,
+      "sha256": "60d49d31eb5dcd2ed19681e3ecc81af15bebccc1e69484afbcf9cb4a44012e14"
+    },
+    "w_tete_lit": {
+      "file": "audio/sons/w_tete_lit.mp3",
+      "voice": "f",
+      "text": "la tête de lit",
+      "duration": 1.295625,
+      "sha256": "c5a8357c5941ef713c0e7de594c42aa53f7ece40f47b83050bc805892743bb4e"
+    },
+    "e_tete_lit": {
+      "file": "audio/sons/e_tete_lit.mp3",
+      "voice": "f",
+      "text": "La tête de lit est derrière les oreillers.",
+      "duration": 2.196792,
+      "sha256": "afd94867282cfe8a3f65df328643016bbc9f64af5da3988443dce38888dc53a8"
+    },
+    "w_meuble_vasque": {
+      "file": "audio/sons/w_meuble_vasque.mp3",
+      "voice": "f",
+      "text": "le meuble de salle de bains",
+      "duration": 1.705958,
+      "sha256": "630b11713838fe23003815f96aa5de14976ffab2ff8c98f6de23ecedb0a3521d"
+    },
+    "e_meuble_vasque": {
+      "file": "audio/sons/e_meuble_vasque.mp3",
+      "voice": "f",
+      "text": "Les lavabos sont sur le meuble de salle de bains.",
+      "duration": 2.881958,
+      "sha256": "04d9761ce49470a0fccbee27e04115bf8865457a0dd345208af9f903a98f0c02"
     }
   }
 }

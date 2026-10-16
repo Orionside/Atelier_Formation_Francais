@@ -29,3 +29,11 @@ Le choix confirmé par le formateur est de conserver la 3D navigable et d'ajoute
 Une banque unique de 277 lectures Qwen3-TTS remplace les deux anciennes banques et les substitutions de voix. Les références sont les deux MP4 expressément demandés dans cette correction. Le signal n'a pas été étiré pour rendre la diction plus lente : le bouton 0,9× agit seulement sur le lecteur et préserve la hauteur. Les contrôles de transcription, de signal et de timbre ont conduit à écarter une prononciation du nom de l'hôtel et deux lectures erronées de nombres. Les limites de ces contrôles sont documentées dans VERIFICATION.md ; la voix finale peut être écoutée dans guide-audio.html.
 
 Les compteurs de découverte restent distincts de la maîtrise orale. Une recommandation de petites séances de cinq objets et une consigne de réemploi oral après les choix du quiz ont été ajoutées. Les données du formulaire doivent être imaginaires ; aucune vraie réservation n'est effectuée.
+
+## Refonte Palace Hôtel demandée après la première publication
+
+Le premier passage conservait encore trop de formes génériques et de textures procédurales. La seconde refonte introduit du mobilier et des plantes détaillés issus de ressources CC0, des normales et rugosités photographiques, l’occlusion ambiante sur ordinateur et un éclairage de surface. La clé est une vraie carte d’accès à deux faces ; porte, serrure, poignées, prises, cadres et spots possèdent des volumes et détails fonctionnels distincts.
+
+Quatorze dénominations supplémentaires rendent cliquables des éléments auparavant décoratifs. Les repères HTML ont une hauteur d’au moins 44 pixels, sont accessibles au clavier et ne désignent pas les objets derrière les murs. Ils évitent les doublons de dénomination simultanés. Les cibles du raycasting disposent d’une marge de sélection pour les petits objets. La traversée de la porte ouverte suit une trajectoire de marche depuis le couloir.
+
+Palace Hôtel remplace le nom de l’établissement dans la simulation et ses messages audio. La simulation ne prétend pas reproduire un hôtel existant ; le document source garde sa propre identité.

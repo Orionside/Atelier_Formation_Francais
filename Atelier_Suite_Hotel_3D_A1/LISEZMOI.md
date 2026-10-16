@@ -1,11 +1,11 @@
-# Suite 14 · Hôtel Caribeach — A1
+# Suite 14 · Palace Hôtel — A1
 
 Visite 3D pour adultes débutants, avec vocabulaire, phrases, dialogue à la réception et petites activités. La suite et ses équipements sont une situation fictive enrichie à partir de l'unité « Bon séjour ! » ; ils ne constituent pas une reproduction du document d'origine.
 
 ## Version du 16 octobre 2026
 
 - Génération directe Qwen3-TTS avec les références exactes `voix de référence A1 femme.mp4` et `voix de référence homme A1.mp4`. La femme lit la réception, le vocabulaire et les questions ; l'homme lit le client, les réponses et les nombres.
-- Une seule banque de 277 sons, chargés individuellement. Aucun recours automatique aux voix du navigateur. Vitesse normale, ou 0,9× dans **Fiche → Aide**, avec conservation de la hauteur.
+- Une seule banque de 305 sons, chargés individuellement. Aucun recours automatique aux voix du navigateur. Vitesse normale, ou 0,9× dans **Fiche → Aide**, avec conservation de la hauteur.
 - Serviettes à couches distinctes, plis, bordures et tissage bouclé ; peignoirs à manches, col châle, poches, ceinture et nœud ; chaussons ouverts, sèche-cheveux avec grille et câble, tasses creuses avec anse. Reprise des matériaux, des documents, des plantes et des finitions des autres objets.
 - Bouton **Voir de près** sur la carte d'objet ; inspection disponible aussi depuis **Fiche → Lexique**, sans devoir deviner ou retrouver chaque objet. Les petits objets utilisent le même modèle 3D dans la pièce et dans la visionneuse. Rotation et zoom au doigt, à la souris ou avec les boutons et le clavier.
 
@@ -30,3 +30,11 @@ La scène utilise Three.js 0.160.0 via jsDelivr et deux polices via Google Fonts
 Pour un essai local, lancer depuis ce dossier `python3 -m http.server 8778 --bind 127.0.0.1`, puis ouvrir `http://127.0.0.1:8778/`.
 
 La progression et le formulaire d'exercice sont conservés dans le navigateur. Utiliser des coordonnées imaginaires. Le bilan est copié à la demande de l'apprenant. Aucun enregistrement de microphone n'est proposé par cet atelier.
+
+## Palace Hôtel — seconde refonte visuelle
+
+93 mots, 305 audios. Le mobilier et les plantes utilisent onze modèles 3D texturés optimisés, avec matières photographiques de parquet, pierre, cuir et tissu. Voir [les sources et bibliothèques](SOURCES_VISUELLES.md). La carte magnétique possède ses deux faces, un format bancaire et des angles arrondis.
+
+Les repères cliquables se masquent avec « Masquer les repères ». Tous les objets restent sélectionnables directement ou depuis Fiche → Lexique. Les petites cibles bénéficient d’une marge de sélection ; les repères tiennent compte des murs. Après la remise de la carte à la réception, ouvrez la porte 14 dans le couloir puis choisissez « Entrer dans la chambre » : le déplacement suit physiquement le passage de la porte.
+
+Le nom Palace Hôtel est une adaptation de cette simulation pédagogique ; il ne renomme pas l’établissement du manuel source. Le lieu reste fictif, même si ses modèles et matières visent un rendu crédible.

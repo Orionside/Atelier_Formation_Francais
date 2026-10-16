@@ -1,8 +1,8 @@
 {
   "summary": {
-    "identifiers": 277,
-    "distinct_readings": 277,
-    "total_distinct_seconds": 484.2,
+    "identifiers": 305,
+    "distinct_readings": 305,
+    "total_distinct_seconds": 535.2,
     "model": "Qwen3-TTS 1.7B Base MLX",
     "references": {
       "f": {
@@ -22,7 +22,8 @@
         "source_sha256": "ebfee1f29cb1b2ebcbbb5975bb7ec796def79539b3fda8597db2dc7dacf70146"
       }
     },
-    "checks": "Transcription Whisper, contenu critique, signal et comparaison acoustique. Pas de certification à l’écoute humaine."
+    "checks": "Transcription Whisper, contenu critique, signal et comparaison acoustique. Pas de certification à l’écoute humaine.",
+    "revision": "Palace Hôtel : 34 nouvelles lectures, mêmes références A1. Contrôle de transcription et signal, contrôle phonétique ciblé."
   },
   "units": {
     "u000": {
@@ -661,46 +662,6 @@
         "semantic_alert": null,
         "reference_similarity": 0.955,
         "other_voice_similarity": 0.442,
-        "text_alert": false,
-        "signal_alert": false
-      }
-    },
-    "u016": {
-      "take": "u016-xvec-8bit-g421",
-      "score": 0.07,
-      "text": "la clé",
-      "voice": "f",
-      "aliases": [
-        "w_cle"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "la clé",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 0.96,
-      "export_duration": 0.902,
-      "gain_db": -5.62,
-      "mp3_sha256": "7abeff5541fe6ac2c14809b14bdfd7f7c323361b2b60b07b43097f16987648ce",
-      "verification": {
-        "sha256": "b1a06b0ca9d26e7ca1a564bd271b52c5d2be97c076f3ab75334f07a36b2f23ef",
-        "duration": 0.96,
-        "speech_duration": 0.454,
-        "syllables_per_second": 4.4,
-        "peak": 0.7084,
-        "rms": 0.139,
-        "f0": 214.3,
-        "final_pitch_change_semitones": 5.8,
-        "cap_hit": false,
-        "recognized": "La clé.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null,
-        "reference_similarity": 0.905,
-        "other_voice_similarity": 0.429,
         "text_alert": false,
         "signal_alert": false
       }
@@ -1465,46 +1426,6 @@
         "signal_alert": false
       }
     },
-    "u036": {
-      "take": "u036-xvec-8bit-g421",
-      "score": 0.058,
-      "text": "la plante",
-      "voice": "f",
-      "aliases": [
-        "w_plante"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "la plante",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 1.12,
-      "export_duration": 1.095,
-      "gain_db": -7.79,
-      "mp3_sha256": "c580e7be9d897029c612a4673672295d091cc4c9f7dd5dec9d6755172f658b25",
-      "verification": {
-        "sha256": "02895448f148263cee40661cf0e46be6acb3082e91d0a38f2e954e69578a8903",
-        "duration": 1.12,
-        "speech_duration": 0.588,
-        "syllables_per_second": 3.4,
-        "peak": 1.0,
-        "rms": 0.1919,
-        "f0": 233.2,
-        "final_pitch_change_semitones": 4.79,
-        "cap_hit": false,
-        "recognized": "La plante",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null,
-        "reference_similarity": 0.911,
-        "other_voice_similarity": 0.36,
-        "text_alert": false,
-        "signal_alert": false
-      }
-    },
     "u037": {
       "take": "u037-xvec-8bit-g421",
       "score": 0.094,
@@ -1623,86 +1544,6 @@
         "other_voice_similarity": 0.346,
         "text_alert": false,
         "signal_alert": false
-      }
-    },
-    "u040": {
-      "take": "u040-xvec-8bit-g421",
-      "score": 0.196,
-      "text": "la porte",
-      "voice": "f",
-      "aliases": [
-        "w_porte"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "la porte",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 1.12,
-      "export_duration": 1.074,
-      "gain_db": -5.11,
-      "mp3_sha256": "eeb298f768f19b80811cb505e1e3fba4cdccd3f98881d2a35817b8908dc40484",
-      "verification": {
-        "sha256": "4c8ad3512a8571bee24752276190dc1ff379ece5092a231cbb20df3305dc31d0",
-        "duration": 1.12,
-        "speech_duration": 0.604,
-        "syllables_per_second": 3.31,
-        "peak": 0.8348,
-        "rms": 0.1414,
-        "f0": 212.0,
-        "final_pitch_change_semitones": 3.24,
-        "cap_hit": false,
-        "recognized": "La porte.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null,
-        "reference_similarity": 0.842,
-        "other_voice_similarity": 0.293,
-        "text_alert": false,
-        "signal_alert": false
-      }
-    },
-    "u041": {
-      "take": "u041-xvec-8bit-g421",
-      "score": 0.0,
-      "text": "C'est la porte de la chambre quatorze.",
-      "voice": "f",
-      "aliases": [
-        "e_porte"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "C'est la porte de la chambre quatorze.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 2.4,
-      "export_duration": 2.366,
-      "gain_db": -5.65,
-      "mp3_sha256": "cdcf35531160b15c7987d67c5b1ad8d41fdb5ac155f6c82168b55f073b6d4f1d",
-      "verification": {
-        "sha256": "b2cdc53b05401627a339f9398383c9f439ade2c63892a78937c09ee521bcd426",
-        "duration": 2.4,
-        "speech_duration": 1.926,
-        "syllables_per_second": 4.15,
-        "peak": 0.9169,
-        "rms": 0.1742,
-        "f0": 190.9,
-        "final_pitch_change_semitones": -1.73,
-        "cap_hit": false,
-        "reference_similarity": 0.94,
-        "other_voice_similarity": 0.415,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "C'est la porte de la chambre 14.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
       }
     },
     "u042": {
@@ -9950,46 +9791,6 @@
         "semantic_alert": null
       }
     },
-    "u248": {
-      "take": "u248-icl-8bit-g421",
-      "score": 0.15,
-      "text": "Bonjour ! Bienvenue à l'hôtel Caribeach.",
-      "voice": "f",
-      "aliases": [
-        "d_d1"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "icl",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "Bonjour ! Bienvenue à l'hôtel Caribeach.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 3.12,
-      "export_duration": 2.849,
-      "gain_db": -8.6,
-      "mp3_sha256": "85da5f99ed7244362f7a6d22f17f4cdc5f0cb273aff0399903ff526e09c435db",
-      "verification": {
-        "sha256": "d33ad991114f54b7d641e4f65a227fba724ec10ccbc6218bd010404c8884a12a",
-        "duration": 3.12,
-        "speech_duration": 2.383,
-        "syllables_per_second": 5.04,
-        "peak": 0.9754,
-        "rms": 0.2437,
-        "f0": 256.8,
-        "final_pitch_change_semitones": 1.03,
-        "cap_hit": false,
-        "recognized": "Bonjour, bienvenue à l'hôtel Caribèche.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null,
-        "reference_similarity": 0.963,
-        "other_voice_similarity": 0.437,
-        "text_alert": false,
-        "signal_alert": false
-      }
-    },
     "u249": {
       "take": "u249-xvec-8bit-g421",
       "score": 0.088,
@@ -10910,46 +10711,6 @@
         "signal_alert": false
       }
     },
-    "u272": {
-      "take": "u272-xvec-8bit-g421",
-      "score": 0.012,
-      "text": "Bienvenue à l'hôtel Caribeach ! Parlez avec la réceptionniste.",
-      "voice": "f",
-      "aliases": [
-        "ui_bienvenue"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "Bienvenue à l'hôtel Caribeach ! Parlez avec la réceptionniste.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 4.0,
-      "export_duration": 4.063,
-      "gain_db": -7.76,
-      "mp3_sha256": "7cc93ad8c4a44f081cf213914f53c456bda4c32bd03db3d2afec79f6c3154e3a",
-      "verification": {
-        "sha256": "0dd7e78ca10265fdd91f4ed7fc2481bc0e7c5502ae21ed0c52fe0082f393b612",
-        "duration": 4.0,
-        "speech_duration": 3.552,
-        "syllables_per_second": 5.35,
-        "peak": 1.0,
-        "rms": 0.2271,
-        "f0": 223.0,
-        "final_pitch_change_semitones": -4.03,
-        "cap_hit": false,
-        "reference_similarity": 0.934,
-        "other_voice_similarity": 0.418,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "Bienvenue à l'hôtel Caribèche. Parlez avec la réceptionniste.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
     "u273": {
       "take": "u273-xvec-8bit-g421",
       "score": 0.032,
@@ -11109,6 +10870,924 @@
         "word_difference": 0.0,
         "semantic_alert": null
       }
+    },
+    "palace_w_cle": {
+      "id": "w_cle",
+      "voice": "f",
+      "text": "la clé magnétique",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.6,
+      "sha256": "d5112702fef4c94e3e71745bd4ee44f3f2342f2945ac2ce3d2ea8c30eccdcfae",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.74,
+      "aliases": [
+        "w_cle"
+      ],
+      "verification": {
+        "expected": "la clé magnétique",
+        "recognized": "la clé magnétique.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.236,
+        "peak": 0.6769,
+        "rms": 0.1706
+      },
+      "phonetic_check": "la klemaɲetik",
+      "mp3_sha256": "50a804c0cd2f10b8653cca89d4a50929f5bef7f83be4b1717ca9e5eec2eb5fb6",
+      "export_duration": 1.697,
+      "gain_db": -5.24
+    },
+    "palace_w_plante": {
+      "id": "w_plante",
+      "voice": "f",
+      "text": "la plante d'intérieur",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.92,
+      "sha256": "eda2cebad30e4ecbb0b447eab2922e43190ee565e2409bcc24ef713fafc469ec",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.6,
+      "aliases": [
+        "w_plante"
+      ],
+      "verification": {
+        "expected": "la plante d'intérieur",
+        "recognized": "La plante d'intérieur",
+        "sound_difference": 0.0,
+        "speech_duration": 1.581,
+        "peak": 1.0,
+        "rms": 0.2091
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "283bcde24431755e2096b203fb2b5c980e5dde05538b8418300e1ffb5c4fe05d",
+      "export_duration": 2.048,
+      "gain_db": -6.92
+    },
+    "palace_w_porte": {
+      "id": "w_porte",
+      "voice": "f",
+      "text": "la porte de la chambre",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.68,
+      "sha256": "18d654ceaa152226e3a8f72f18a930d00ad057c44ee8427a4b4762f47a6db86c",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.29,
+      "aliases": [
+        "w_porte"
+      ],
+      "verification": {
+        "expected": "la porte de la chambre",
+        "recognized": "la porte de la chambre",
+        "sound_difference": 0.0,
+        "speech_duration": 1.186,
+        "peak": 0.9211,
+        "rms": 0.1961
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "f74a8d4cd79c0059d313afe9739931e8839189b8e83901ed3cbab444a838b991",
+      "export_duration": 1.626,
+      "gain_db": -7.03
+    },
+    "palace_d_d1": {
+      "id": "d_d1",
+      "voice": "f",
+      "text": "Bonjour ! Bienvenue à Palace Hôtel.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 3.04,
+      "sha256": "68e7bd3ee7fe3ecac24f9e497f40f1114ed90f7aa89f749cca7f249f9c7b8155",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.22,
+      "aliases": [
+        "d_d1"
+      ],
+      "verification": {
+        "expected": "Bonjour ! Bienvenue à Palace Hôtel.",
+        "recognized": "Bonjour, bienvenue à Palace Hôtel.",
+        "sound_difference": 0.0,
+        "speech_duration": 2.573,
+        "peak": 0.9469,
+        "rms": 0.2333
+      },
+      "phonetic_check": "bɔ̃ʒuʁ bjɛ̃vny a palas otɛl",
+      "mp3_sha256": "6a95126cfc63e72b7769edcf852bad162ac996a64988470fb37a137f8cd28473",
+      "export_duration": 3.025,
+      "gain_db": -7.77
+    },
+    "palace_ui_bienvenue": {
+      "id": "ui_bienvenue",
+      "voice": "f",
+      "text": "Bienvenue à Palace Hôtel ! Parlez avec la réceptionniste.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 4.56,
+      "sha256": "6596a085245e8c24c0feeb4b1573eec617760e0ce76267704ad272663d7bbfdc",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.33,
+      "aliases": [
+        "ui_bienvenue"
+      ],
+      "verification": {
+        "expected": "Bienvenue à Palace Hôtel ! Parlez avec la réceptionniste.",
+        "recognized": "Bienvenue à Palace Hôtel, parlez avec la réceptionniste.",
+        "sound_difference": 0.0,
+        "speech_duration": 3.521,
+        "peak": 1.0,
+        "rms": 0.2012
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "7146a23f12638046c083e414b94d608ddb4e5ce4ec66060baac334013e92e79c",
+      "export_duration": 4.081,
+      "gain_db": -7.36
+    },
+    "palace_w_spot": {
+      "id": "w_spot",
+      "voice": "f",
+      "text": "le spot lumineux",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.84,
+      "sha256": "a1143ad64fb4c148323148f2dd49506e511c20fdff4928f91b19102280597145",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.45,
+      "aliases": [
+        "w_spot"
+      ],
+      "verification": {
+        "expected": "le spot lumineux",
+        "recognized": "le spot lumineux.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.243,
+        "peak": 0.9759,
+        "rms": 0.2657
+      },
+      "phonetic_check": "lə spɔt lyminø",
+      "mp3_sha256": "f331287b4e550f6956d7951dab5584670855bc42248729a0d2840c65f0b2dc7e",
+      "export_duration": 1.762,
+      "gain_db": -9.63
+    },
+    "palace_e_spot": {
+      "id": "e_spot",
+      "voice": "f",
+      "text": "Il y a des spots au plafond.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.92,
+      "sha256": "0f049d788239b72fc242d610ebc55b23e9aa9da2a8f5cef4054468f89ac3a4a9",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.45,
+      "aliases": [
+        "e_spot"
+      ],
+      "verification": {
+        "expected": "Il y a des spots au plafond.",
+        "recognized": "Il y a des spots au plafond.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.397,
+        "peak": 0.9034,
+        "rms": 0.2221
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "53d5de7c3a0acd1242957fe0029fc3f76e44db1ace334fafd3ed0e5f01e1e5a1",
+      "export_duration": 1.88,
+      "gain_db": -7.74
+    },
+    "palace_w_applique": {
+      "id": "w_applique",
+      "voice": "f",
+      "text": "l'applique murale",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.36,
+      "sha256": "198ca2a0f83dce6d5aca1fad8166b9f88e720fdf27ac9294415a1131b62f919e",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.06,
+      "aliases": [
+        "w_applique"
+      ],
+      "verification": {
+        "expected": "l'applique murale",
+        "recognized": "La plique murale.",
+        "sound_difference": 0.0,
+        "speech_duration": 0.955,
+        "peak": 1.0,
+        "rms": 0.1829
+      },
+      "phonetic_check": "la plik myʁal",
+      "mp3_sha256": "4d7e908a272898e22121ea794337475cbd64e1827ac178a4dcd1ef6293f8f3ec",
+      "export_duration": 1.426,
+      "gain_db": -6.29
+    },
+    "palace_e_applique": {
+      "id": "e_applique",
+      "voice": "f",
+      "text": "L'applique est sur le mur.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.76,
+      "sha256": "989521232bafc10ef8f063ed534ab93272bdad47816587213a154a7c404d2709",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.33,
+      "aliases": [
+        "e_applique"
+      ],
+      "verification": {
+        "expected": "L'applique est sur le mur.",
+        "recognized": "L'applic est sur le mur.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.302,
+        "peak": 1.0,
+        "rms": 0.2218
+      },
+      "phonetic_check": "la plik ɛ syʁ lə myʁ",
+      "mp3_sha256": "ce07dab7a43165c79e1faf33d9800481bc32e59bc501c56b5b4be03127a6fc24",
+      "export_duration": 1.76,
+      "gain_db": -7.83
+    },
+    "palace_w_poignee": {
+      "id": "w_poignee",
+      "voice": "f",
+      "text": "la poignée",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.2,
+      "sha256": "2ca79115574826bc8b07ecea83995b9873e2b2f52726dc73c319f533f1b3415f",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.95,
+      "aliases": [
+        "w_poignee"
+      ],
+      "verification": {
+        "expected": "la poignée",
+        "recognized": "la poignée",
+        "sound_difference": 0.0,
+        "speech_duration": 0.638,
+        "peak": 0.8584,
+        "rms": 0.2255
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "54be25f0d3495489ffc283742619f4d8452f5411fb91e548628ad7f8599c6718",
+      "export_duration": 1.142,
+      "gain_db": -9.11
+    },
+    "palace_e_poignee": {
+      "id": "e_poignee",
+      "voice": "f",
+      "text": "J'ouvre la porte avec la poignée.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.16,
+      "sha256": "636eb3095e80b0514d0185f75feeebd3bd2d89b1d9672ec95dd2a5f881141a9e",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.62,
+      "aliases": [
+        "e_poignee"
+      ],
+      "verification": {
+        "expected": "J'ouvre la porte avec la poignée.",
+        "recognized": "J'ouvre la porte avec la poignée.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.617,
+        "peak": 0.9075,
+        "rms": 0.1972
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "fe2d5dda3c1b4c45db794b77794dccb2cb0332d960835a857fcb1b9f3d3f25cc",
+      "export_duration": 2.105,
+      "gain_db": -6.57
+    },
+    "palace_w_serrure": {
+      "id": "w_serrure",
+      "voice": "f",
+      "text": "la serrure électronique",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.68,
+      "sha256": "ddb961448848a692cba32a6843dcbc82aa6eb9451c7b733b255f38d52f4ee9d2",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.29,
+      "aliases": [
+        "w_serrure"
+      ],
+      "verification": {
+        "expected": "la serrure électronique",
+        "recognized": "la serrure électronique,",
+        "sound_difference": 0.0,
+        "speech_duration": 1.215,
+        "peak": 1.0,
+        "rms": 0.2322
+      },
+      "phonetic_check": "la sɛʁyʁ elɛktʁonik",
+      "mp3_sha256": "4ef40756c573803712321bde7c99bb4031f501cf8f8b2561d3c40249e0a06e0f",
+      "export_duration": 1.655,
+      "gain_db": -8.45
+    },
+    "palace_e_serrure": {
+      "id": "e_serrure",
+      "voice": "f",
+      "text": "Je pose la carte sur la serrure.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.32,
+      "sha256": "fa33b2f0fa668051f16efd78392ad4abf520dd27d72ad09d5e3ed8c63fdd15a3",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.73,
+      "aliases": [
+        "e_serrure"
+      ],
+      "verification": {
+        "expected": "Je pose la carte sur la serrure.",
+        "recognized": "Je pose la carte sur la serrure.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.692,
+        "peak": 1.0,
+        "rms": 0.1812
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "0efab08ca9b9d7fbf4a5c7df827f3c37955ce6a83767d708ec785c391dfd1c8d",
+      "export_duration": 2.239,
+      "gain_db": -6.55
+    },
+    "palace_w_interrupteur": {
+      "id": "w_interrupteur",
+      "voice": "f",
+      "text": "l'interrupteur",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.36,
+      "sha256": "d8959833bfec425a48d03ee68bb69ae75a3f6084a24beba00c42b3188f932320",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.06,
+      "aliases": [
+        "w_interrupteur"
+      ],
+      "verification": {
+        "expected": "l'interrupteur",
+        "recognized": "L'interrupteur.",
+        "sound_difference": 0.0,
+        "speech_duration": 0.827,
+        "peak": 0.935,
+        "rms": 0.2016
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "8cc46685ca98d03a39cb8209862cbb7c80fc6e2033e96acfc2d538bbdbaeb557",
+      "export_duration": 1.337,
+      "gain_db": -7.59
+    },
+    "palace_e_interrupteur": {
+      "id": "e_interrupteur",
+      "voice": "f",
+      "text": "J'allume la lumière.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.6,
+      "sha256": "f543b3b771dbabe55c75c0ef151e7a7fc145b1c0760fc9a8ff5d91702dfd46e1",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.23,
+      "aliases": [
+        "e_interrupteur"
+      ],
+      "verification": {
+        "expected": "J'allume la lumière.",
+        "recognized": "J'allume la lumière.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.058,
+        "peak": 0.9987,
+        "rms": 0.2355
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "a15288862a546da6b0e90cc7842ab0f8cf8848921aaafc5359590d189287ddc7",
+      "export_duration": 1.516,
+      "gain_db": -8.82
+    },
+    "palace_w_prise": {
+      "id": "w_prise",
+      "voice": "f",
+      "text": "la prise électrique",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.44,
+      "sha256": "b140e4ff6949272ece51fdfff153eae14fd6ed48019fadad62e6a411f6a48c5c",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.12,
+      "aliases": [
+        "w_prise"
+      ],
+      "verification": {
+        "expected": "la prise électrique",
+        "recognized": "la prise électrique",
+        "sound_difference": 0.0,
+        "speech_duration": 0.885,
+        "peak": 0.9301,
+        "rms": 0.2051
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "bb3f4985512fa8e39c2c8c7d6d7ccccad79082e2168387110b4ef62a3db7d28c",
+      "export_duration": 1.382,
+      "gain_db": -8.32
+    },
+    "palace_e_prise": {
+      "id": "e_prise",
+      "voice": "f",
+      "text": "Je branche mon chargeur dans la prise.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.48,
+      "sha256": "d5397832941f2b2d4dd56534936b04bfc12838b77465b5d2a66f77ac197886e2",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.83,
+      "aliases": [
+        "e_prise"
+      ],
+      "verification": {
+        "expected": "Je branche mon chargeur dans la prise.",
+        "recognized": "Je branche mon chargeur dans la prise.",
+        "sound_difference": 0.0,
+        "speech_duration": 2.12,
+        "peak": 0.8969,
+        "rms": 0.1919
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "0efd4e25a75f2e03ea08780a52e509f7ee689cbf18342d70cf13e2ed06d2ed63",
+      "export_duration": 2.575,
+      "gain_db": -6.15
+    },
+    "palace_w_bouilloire": {
+      "id": "w_bouilloire",
+      "voice": "f",
+      "text": "la bouilloire",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.2,
+      "sha256": "62f101fb757ca2b56f919eb78f02bc2da1dc8a4f414543a1d6c26643ad42cc9a",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.95,
+      "aliases": [
+        "w_bouilloire"
+      ],
+      "verification": {
+        "expected": "la bouilloire",
+        "recognized": "la bouilloire,",
+        "sound_difference": 0.0,
+        "speech_duration": 0.716,
+        "peak": 0.8924,
+        "rms": 0.2164
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "cb0ed24235da0205f15612e043ee5d8d25e99306417981f4c81a073deb3bc60b",
+      "export_duration": 1.19,
+      "gain_db": -8.35
+    },
+    "palace_e_bouilloire": {
+      "id": "e_bouilloire",
+      "voice": "f",
+      "text": "Il y a une bouilloire dans la chambre.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.16,
+      "sha256": "5e29129b06917bb8843fc4d8f0d7d8e40475d48d8fbb467528940ee3f9a7f0fa",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.61,
+      "aliases": [
+        "e_bouilloire"
+      ],
+      "verification": {
+        "expected": "Il y a une bouilloire dans la chambre.",
+        "recognized": "Il y a une bouilloire dans la chambre.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.605,
+        "peak": 0.9567,
+        "rms": 0.1992
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "4b870d596355e70d9a1188cfc3d60551bd926e0c9d0390cf3ddcd3922fb47e04",
+      "export_duration": 2.118,
+      "gain_db": -6.93
+    },
+    "palace_w_livres": {
+      "id": "w_livres",
+      "voice": "f",
+      "text": "les livres",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.12,
+      "sha256": "ee2fe62fefb3770da8a85cd7de50b01a266dbb28dfa84b151a82f1aa5fb409ce",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.9,
+      "aliases": [
+        "w_livres"
+      ],
+      "verification": {
+        "expected": "les livres",
+        "recognized": "les livres",
+        "sound_difference": 0.0,
+        "speech_duration": 0.585,
+        "peak": 0.8899,
+        "rms": 0.2246
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "1ca48e0a84507381befb560bd3919ff097bebf078f142b66797d2331a6cf3372",
+      "export_duration": 1.051,
+      "gain_db": -9.16
+    },
+    "palace_e_livres": {
+      "id": "e_livres",
+      "voice": "f",
+      "text": "Les livres sont sur la table.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.92,
+      "sha256": "6ce59eb7da860341627883151ae40c509e22675bec7201946d69668e14758186",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.44,
+      "aliases": [
+        "e_livres"
+      ],
+      "verification": {
+        "expected": "Les livres sont sur la table.",
+        "recognized": "Les livres sont sur la table.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.392,
+        "peak": 0.9231,
+        "rms": 0.2133
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "d9dd7b2fb467b89af37a7a4de89617e10f6d02b0a08a067e7c692017fb56a389",
+      "export_duration": 1.834,
+      "gain_db": -7.54
+    },
+    "palace_w_mur": {
+      "id": "w_mur",
+      "voice": "f",
+      "text": "le mur",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.04,
+      "sha256": "0d54740485aaae6c59ded8d76c31a8e8d465160bd1fb2fa257b21410a69e9819",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.83,
+      "aliases": [
+        "w_mur"
+      ],
+      "verification": {
+        "expected": "le mur",
+        "recognized": "le mur",
+        "sound_difference": 0.0,
+        "speech_duration": 0.592,
+        "peak": 0.9919,
+        "rms": 0.3231
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "725ed1fba69448298fad5a8b635ba62969ff852c302578199726787c47973a07",
+      "export_duration": 1.066,
+      "gain_db": -11.85
+    },
+    "palace_e_mur": {
+      "id": "e_mur",
+      "voice": "f",
+      "text": "Le tableau est sur le mur.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.0,
+      "sha256": "2789687e5e9f19495d52fd89d2d512e1a167e2562ed2415d82ca7f8e3a0c4ecd",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.49,
+      "aliases": [
+        "e_mur"
+      ],
+      "verification": {
+        "expected": "Le tableau est sur le mur.",
+        "recognized": "Le tableau est sur le mur.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.379,
+        "peak": 0.9307,
+        "rms": 0.2549
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "c51ccb47f083571a36d2465e501cef94183164405c5477eb474b6b912fab9428",
+      "export_duration": 1.891,
+      "gain_db": -9.17
+    },
+    "palace_w_plafond": {
+      "id": "w_plafond",
+      "voice": "f",
+      "text": "le plafond",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.2,
+      "sha256": "f794487ca400d00b7e868a7e88ef56b50180d38b896ad46967a599b8c8e76cbd",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.95,
+      "aliases": [
+        "w_plafond"
+      ],
+      "verification": {
+        "expected": "le plafond",
+        "recognized": "le plafond.",
+        "sound_difference": 0.0,
+        "speech_duration": 0.739,
+        "peak": 0.9365,
+        "rms": 0.2111
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "852a17fce880664ce07a3d176296b990f2b46b482caf09a6012fb5642c3461d2",
+      "export_duration": 1.183,
+      "gain_db": -7.91
+    },
+    "palace_e_plafond": {
+      "id": "e_plafond",
+      "voice": "f",
+      "text": "Les spots sont au plafond.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.08,
+      "sha256": "d449dd391bb78de4effa08864f6fa28bc86aceb7aedc0de1de9b4f2d401e731a",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.56,
+      "aliases": [
+        "e_plafond"
+      ],
+      "verification": {
+        "expected": "Les spots sont au plafond.",
+        "recognized": "Les spots sont au plafond.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.512,
+        "peak": 0.7632,
+        "rms": 0.1654
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "669bab04ef43dd1d440d2e5eacf5c0bcfc1651861e2ccefda4345384c1f71ceb",
+      "export_duration": 2.0,
+      "gain_db": -5.65
+    },
+    "palace_w_sol": {
+      "id": "w_sol",
+      "voice": "f",
+      "text": "le sol",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.04,
+      "sha256": "7798f652f2dc175c4410420b01ddc6187af7ea07c85b78a93fc028f12e23a00d",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.84,
+      "aliases": [
+        "w_sol"
+      ],
+      "verification": {
+        "expected": "le sol",
+        "recognized": "le sol.",
+        "sound_difference": 0.0,
+        "speech_duration": 0.575,
+        "peak": 0.8614,
+        "rms": 0.1802
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "fdd780a209a67a1114344681d11b6631cb2a15e1ded79bfc383345ba846d8c91",
+      "export_duration": 1.068,
+      "gain_db": -7.43
+    },
+    "palace_e_sol": {
+      "id": "e_sol",
+      "voice": "f",
+      "text": "Le sol de la chambre est en bois.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.48,
+      "sha256": "b32926453a576bef38ed83326bb9e294a110d8de5582e30a4215a6bc5899ffb3",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.83,
+      "aliases": [
+        "e_sol"
+      ],
+      "verification": {
+        "expected": "Le sol de la chambre est en bois.",
+        "recognized": "Le sol de la chambre est en bois.",
+        "sound_difference": 0.0,
+        "speech_duration": 2.001,
+        "peak": 0.9577,
+        "rms": 0.2344
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "dd5e022d2d7132962e9a594e902e3acc65b827badacaf34370a5fd8a36e7e88f",
+      "export_duration": 2.458,
+      "gain_db": -7.94
+    },
+    "palace_w_suspension": {
+      "id": "w_suspension",
+      "voice": "f",
+      "text": "la suspension",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.36,
+      "sha256": "18286cbc2b49e350e983673ef3b9218529ecb055fc373a59a335bf923acac8e7",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.06,
+      "aliases": [
+        "w_suspension"
+      ],
+      "verification": {
+        "expected": "la suspension",
+        "recognized": "la suspension.",
+        "sound_difference": 0.0,
+        "speech_duration": 0.886,
+        "peak": 1.0,
+        "rms": 0.1633
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "c17af73ced0cf376538d8e82b7f1d2bdae17be465e99741634e97122e1f0b2fe",
+      "export_duration": 1.338,
+      "gain_db": -6.34
+    },
+    "palace_e_suspension": {
+      "id": "e_suspension",
+      "voice": "f",
+      "text": "Il y a une suspension au-dessus de la table.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.96,
+      "sha256": "1146a27cad0d88b454b3e4bae131088c2921d43bbac8acbc16cd428ed5ed36a0",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.18,
+      "aliases": [
+        "e_suspension"
+      ],
+      "verification": {
+        "expected": "Il y a une suspension au-dessus de la table.",
+        "recognized": "Il y a une suspension au-dessus de la table.",
+        "sound_difference": 0.0,
+        "speech_duration": 2.479,
+        "peak": 0.865,
+        "rms": 0.1978
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "60d49d31eb5dcd2ed19681e3ecc81af15bebccc1e69484afbcf9cb4a44012e14",
+      "export_duration": 2.919,
+      "gain_db": -6.54
+    },
+    "palace_w_tete_lit": {
+      "id": "w_tete_lit",
+      "voice": "f",
+      "text": "la tête de lit",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.28,
+      "sha256": "de679313298f4711b848f6621ac507797b505dff466a574bb33c4764d4ee259d",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.01,
+      "aliases": [
+        "w_tete_lit"
+      ],
+      "verification": {
+        "expected": "la tête de lit",
+        "recognized": "la tête de lit",
+        "sound_difference": 0.0,
+        "speech_duration": 0.789,
+        "peak": 0.9061,
+        "rms": 0.2239
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "c5a8357c5941ef713c0e7de594c42aa53f7ece40f47b83050bc805892743bb4e",
+      "export_duration": 1.296,
+      "gain_db": -8.4
+    },
+    "palace_e_tete_lit": {
+      "id": "e_tete_lit",
+      "voice": "f",
+      "text": "La tête de lit est derrière les oreillers.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.24,
+      "sha256": "189764012e0071b98ef8d18b45ed4f01972238f4e0e69a14cf4139058c196c34",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.66,
+      "aliases": [
+        "e_tete_lit"
+      ],
+      "verification": {
+        "expected": "La tête de lit est derrière les oreillers.",
+        "recognized": "La tête de lit est derrière les oreillers.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.716,
+        "peak": 0.9641,
+        "rms": 0.2111
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "afd94867282cfe8a3f65df328643016bbc9f64af5da3988443dce38888dc53a8",
+      "export_duration": 2.197,
+      "gain_db": -7.04
+    },
+    "palace_w_meuble_vasque": {
+      "id": "w_meuble_vasque",
+      "voice": "f",
+      "text": "le meuble de salle de bains",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.68,
+      "sha256": "19aa351e02deacbf5d4254ba3c83ddafa5d36076537c331de1512fe2e76108e8",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.3,
+      "aliases": [
+        "w_meuble_vasque"
+      ],
+      "verification": {
+        "expected": "le meuble de salle de bains",
+        "recognized": "le meuble de salle de bain.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.236,
+        "peak": 0.8964,
+        "rms": 0.2469
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "630b11713838fe23003815f96aa5de14976ffab2ff8c98f6de23ecedb0a3521d",
+      "export_duration": 1.706,
+      "gain_db": -8.47
+    },
+    "palace_e_meuble_vasque": {
+      "id": "e_meuble_vasque",
+      "voice": "f",
+      "text": "Les lavabos sont sur le meuble de salle de bains.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.96,
+      "sha256": "dbe39082947422ce04a16b3164cdca25fe51bcf77fbb2e7bf6e851efca771d53",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.16,
+      "aliases": [
+        "e_meuble_vasque"
+      ],
+      "verification": {
+        "expected": "Les lavabos sont sur le meuble de salle de bains.",
+        "recognized": "Les lavabos sont sur le meuble de salle de bain.",
+        "sound_difference": 0.0,
+        "speech_duration": 2.405,
+        "peak": 0.9971,
+        "rms": 0.2377
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "04d9761ce49470a0fccbee27e04115bf8865457a0dd345208af9f903a98f0c02",
+      "export_duration": 2.881,
+      "gain_db": -8.05
+    },
+    "palace_e_porte": {
+      "id": "e_porte",
+      "voice": "f",
+      "text": "C'est la porte de la chambre.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.84,
+      "sha256": "ce48b5b4902b8044adcca3131ad12497cf89bd662f7e2b27568c464f3caedb73",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.68,
+      "aliases": [
+        "e_porte"
+      ],
+      "verification": {
+        "expected": "C'est la porte de la chambre.",
+        "recognized": "C'est la porte de la chambre.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.334,
+        "peak": 0.9958,
+        "rms": 0.1857
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "43a7ad1cb96b4883587d5a4e74538b571373787e817119937043ca70a15ce266",
+      "export_duration": 1.867,
+      "gain_db": -6.76
     }
   }
 }

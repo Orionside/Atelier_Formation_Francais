@@ -83,7 +83,7 @@
     {
       "id": "w_cle",
       "voice": "f",
-      "text": "la clé"
+      "text": "la clé magnétique"
     },
     {
       "id": "e_cle",
@@ -183,7 +183,7 @@
     {
       "id": "w_plante",
       "voice": "f",
-      "text": "la plante"
+      "text": "la plante d'intérieur"
     },
     {
       "id": "e_plante",
@@ -203,12 +203,12 @@
     {
       "id": "w_porte",
       "voice": "f",
-      "text": "la porte"
+      "text": "la porte de la chambre"
     },
     {
       "id": "e_porte",
       "voice": "f",
-      "text": "C'est la porte de la chambre quatorze."
+      "text": "C'est la porte de la chambre."
     },
     {
       "id": "w_numero",
@@ -1243,7 +1243,7 @@
     {
       "id": "d_d1",
       "voice": "f",
-      "text": "Bonjour ! Bienvenue à l'hôtel Caribeach."
+      "text": "Bonjour ! Bienvenue à Palace Hôtel."
     },
     {
       "id": "dc_d1",
@@ -1363,7 +1363,7 @@
     {
       "id": "ui_bienvenue",
       "voice": "f",
-      "text": "Bienvenue à l'hôtel Caribeach ! Parlez avec la réceptionniste."
+      "text": "Bienvenue à Palace Hôtel ! Parlez avec la réceptionniste."
     },
     {
       "id": "ui_pas_cle",
@@ -1384,6 +1384,146 @@
       "id": "ui_loto",
       "voice": "f",
       "text": "C'est l'heure du loto !"
+    },
+    {
+      "id": "w_spot",
+      "voice": "f",
+      "text": "le spot lumineux"
+    },
+    {
+      "id": "e_spot",
+      "voice": "f",
+      "text": "Il y a des spots au plafond."
+    },
+    {
+      "id": "w_applique",
+      "voice": "f",
+      "text": "l'applique murale"
+    },
+    {
+      "id": "e_applique",
+      "voice": "f",
+      "text": "L'applique est sur le mur."
+    },
+    {
+      "id": "w_poignee",
+      "voice": "f",
+      "text": "la poignée"
+    },
+    {
+      "id": "e_poignee",
+      "voice": "f",
+      "text": "J'ouvre la porte avec la poignée."
+    },
+    {
+      "id": "w_serrure",
+      "voice": "f",
+      "text": "la serrure électronique"
+    },
+    {
+      "id": "e_serrure",
+      "voice": "f",
+      "text": "Je pose la carte sur la serrure."
+    },
+    {
+      "id": "w_interrupteur",
+      "voice": "f",
+      "text": "l'interrupteur"
+    },
+    {
+      "id": "e_interrupteur",
+      "voice": "f",
+      "text": "J'allume la lumière."
+    },
+    {
+      "id": "w_prise",
+      "voice": "f",
+      "text": "la prise électrique"
+    },
+    {
+      "id": "e_prise",
+      "voice": "f",
+      "text": "Je branche mon chargeur dans la prise."
+    },
+    {
+      "id": "w_bouilloire",
+      "voice": "f",
+      "text": "la bouilloire"
+    },
+    {
+      "id": "e_bouilloire",
+      "voice": "f",
+      "text": "Il y a une bouilloire dans la chambre."
+    },
+    {
+      "id": "w_livres",
+      "voice": "f",
+      "text": "les livres"
+    },
+    {
+      "id": "e_livres",
+      "voice": "f",
+      "text": "Les livres sont sur la table."
+    },
+    {
+      "id": "w_mur",
+      "voice": "f",
+      "text": "le mur"
+    },
+    {
+      "id": "e_mur",
+      "voice": "f",
+      "text": "Le tableau est sur le mur."
+    },
+    {
+      "id": "w_plafond",
+      "voice": "f",
+      "text": "le plafond"
+    },
+    {
+      "id": "e_plafond",
+      "voice": "f",
+      "text": "Les spots sont au plafond."
+    },
+    {
+      "id": "w_sol",
+      "voice": "f",
+      "text": "le sol"
+    },
+    {
+      "id": "e_sol",
+      "voice": "f",
+      "text": "Le sol de la chambre est en bois."
+    },
+    {
+      "id": "w_suspension",
+      "voice": "f",
+      "text": "la suspension"
+    },
+    {
+      "id": "e_suspension",
+      "voice": "f",
+      "text": "Il y a une suspension au-dessus de la table."
+    },
+    {
+      "id": "w_tete_lit",
+      "voice": "f",
+      "text": "la tête de lit"
+    },
+    {
+      "id": "e_tete_lit",
+      "voice": "f",
+      "text": "La tête de lit est derrière les oreillers."
+    },
+    {
+      "id": "w_meuble_vasque",
+      "voice": "f",
+      "text": "le meuble de salle de bains"
+    },
+    {
+      "id": "e_meuble_vasque",
+      "voice": "f",
+      "text": "Les lavabos sont sur le meuble de salle de bains."
     }
   ]
 }
