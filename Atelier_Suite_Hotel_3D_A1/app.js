@@ -1,16 +1,18 @@
 
 import * as THREE from 'three';
-import { realism } from './realism.js?v=20261016-palace-3';
-import { createInspector } from './inspection.js?v=20261016-palace-3';
+import { realism } from './realism.js?v=20261017-photo-6';
+import { createInspector } from './inspection.js?v=20261017-photo-6';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261016-palace-3';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261017-photo-6';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261016-palace-3';
+import { createDiscovery } from './discovery.js?v=20261017-photo-6';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261017-photo-6';
+import {exteriorLearning} from './exteriors.js?v=20261017-photo-6';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -36,14 +38,14 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, LOW ? 1.5 : 2));
 renderer.setSize(innerWidth, innerHeight, false);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = .92;
+renderer.toneMappingExposure = .82;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xcfe7f3);
 scene.fog = new THREE.Fog(0xcfe5ef, 300, 4200);
-const camera = new THREE.PerspectiveCamera(LOW ? 72 : 68, innerWidth / innerHeight, 0.05, 3000);
+const camera = new THREE.PerspectiveCamera(LOW ? 68 : 60, innerWidth / innerHeight, 0.05, 3000);
 camera.rotation.order = 'YXZ';
 
 const pmrem = new THREE.PMREMGenerator(renderer);
@@ -84,6 +86,7 @@ const skyMat = new THREE.ShaderMaterial({
 const sky = new THREE.Mesh(new THREE.SphereGeometry(2600, 32, 16), skyMat);
 sky.renderOrder = -1;
 scene.add(sky);
+sky.visible=false;
 
 /* environnement extérieur pour l'eau */
 const skyScene = new THREE.Scene();
@@ -1604,7 +1607,7 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261016-palace-3').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261017-photo-6').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}
@@ -1797,11 +1800,11 @@ function labelOf(root) {
   const v = VOC[root.userData.vid]; return v ? v.w : null;
 }
 const HL = new Map();
-const NO_HL = new Set(['mur','sol','plafond','mer', 'montagne', 'plage', 'piscine', 'couloir', 'salle_bains', 'palmiers', 'transats', 'parasol', 'balcon', 'fenetre', 'rideaux']);
+const NO_HL = new Set(['miroir','mur','sol','plafond','mer', 'montagne', 'plage', 'piscine', 'couloir', 'salle_bains', 'palmiers', 'transats', 'parasol', 'balcon', 'fenetre', 'rideaux']);
 function hlMat(m) {
   if (Array.isArray(m)) return m;
   let h = HL.get(m);
-  if (!h) { h = m.clone(); if (h.emissive) { h.emissive = new THREE.Color(0x3fb6bd); h.emissiveIntensity = 0.32; h.emissiveMap = null; } HL.set(m, h); }
+  if (!h) { h = m.clone();h.onBeforeCompile=m.onBeforeCompile;h.customProgramCacheKey=m.customProgramCacheKey;h.unbakedMaterial=m.unbakedMaterial;if (h.emissive) { h.emissive = new THREE.Color(0x3fb6bd); h.emissiveIntensity = 0.32; h.emissiveMap = null; } HL.set(m, h); }
   return h;
 }
 function setHover(root) {
@@ -2455,8 +2458,10 @@ function toast(t) { const el = $('#toast'); el.textContent = t; el.hidden = fals
 document.querySelectorAll('#dock button').forEach(b => b.onclick = () => teleport(b.dataset.go));
 $('#enterRoom').onclick=()=>{if(!STATE_REF.doorOpen)return;closeCard();setFiche(false);P.route=[{x:3.1,z:3.95,guided:true},{x:3.1,z:3.2,guided:true},{x:3.1,z:2.75,guided:true}];P.target={x:3.1,z:P.z,guided:true};marker.visible=false;};
 let lastZone = null;
+let updateExterior=()=>{};
 function updateZone() {
   const z = zoneAt(P.x, P.z);
+  updateExterior(z);
   if (z && z !== lastZone) {
     lastZone = z; $('#place').textContent = ZONE_NAME[z];
     document.querySelectorAll('#dock button').forEach(b => b.classList.toggle('here', b.dataset.go === z));
@@ -2518,11 +2523,20 @@ async function init() {
   buildTextures();REAL.prepareTextures();buildMaterials();
   btn.textContent='Préparer les matières…';
   await photographicMaterials(MAT,renderer);
+  const preparedPhoto=await preparePhotoreal(MAT,renderer,scene,pmrem,LOW);
   const assetResult=await loadPalaceAssets((n,total)=>btn.textContent=`Préparer le mobilier… ${n}/${total}`);
   if(assetResult.failures.length)throw new Error('Le mobilier ne se charge pas : '+assetResult.failures.join(', '));
-  buildLobby(); buildCorridor(); buildSuite(); buildExterior();
+  buildLobby(); buildCorridor(); buildSuite();
   buildHunt();REAL.details(INTER,STATIC);buildACParticles();drawTV();drawAC();
   installPalace({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW});
+  installPhotoreal({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW},preparedPhoto);
+  indexLightingMeshes(STATIC);
+  updateExterior=exteriorLearning({STATIC,INTER,MAT,G,B,C,REAL,reg,openModal,closeModal,inspectObject,VOC,say,stopAudio});
+  hemi.intensity=.20;
+  STATIC.traverse(o=>{if(o.isRectAreaLight)o.intensity=1.8;if(o.isPointLight&&o.intensity>0)o.intensity*=.12;});
+  await applyBakedLighting(STATIC,LOW);
+  finishTextiles(INTER,MAT);
+  installMirror(DYN,MAT,LOW);
   updateDiscovery=createDiscovery({scene:STATIC,camera,roots:INTER,vocab:VOC,select,visible:visibleChain,blocked:()=>!started||!$('#modalWrap').hidden||!$('#dlg').hidden});
   if (ST.key || ST.dlg >= DATA.dialogue.length) DYN.keyCard.visible = !ST.key;
   uiReady = true;
@@ -2530,13 +2544,6 @@ async function init() {
   if (ST.mute) { ST.mute = false; $('#btnSound').click(); }
   setFiche(ST.fiche != null ? ST.fiche : innerWidth > 900);
   try { renderer.compile(scene, camera); } catch (e) { }
-  // reflet du miroir de la salle de bains (capture unique)
-  try {
-    const rt = new THREE.WebGLCubeRenderTarget(LOW ? 128 : 256);
-    const cc = new THREE.CubeCamera(0.05, 60, rt);
-    cc.position.set(7.0, 1.6, 0.35); DYN.mirror.visible = false; scene.add(cc); cc.update(renderer, scene); DYN.mirror.visible = true;
-    MAT.mirror.envMap = rt.texture; MAT.mirror.envMapIntensity = 1; MAT.mirror.needsUpdate = true;
-  } catch (e) { }
   requestAnimationFrame(loop);
   btn.disabled = false;
   btn.textContent = hadSave ? 'Continuer la visite' : "Entrer dans l'hôtel";

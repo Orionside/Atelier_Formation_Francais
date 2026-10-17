@@ -1,0 +1,12 @@
+{
+  "suite": {
+    "gain": 4.0,
+    "file": "suite.webp",
+    "mobile": "suite-mobile.webp"
+  },
+  "lobby": {
+    "gain": 2,
+    "file": "lobby.webp",
+    "mobile": "lobby-mobile.webp"
+  }
+}

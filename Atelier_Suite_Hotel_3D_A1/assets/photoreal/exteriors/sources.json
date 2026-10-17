@@ -1,0 +1,34 @@
+[
+  {
+    "file": "assets/photoreal/exteriors/piscine.webp",
+    "source": "https://polyhaven.com/a/pool",
+    "license": "CC0-1.0",
+    "transformation": "projection rectilinéaire depuis le panorama photographique"
+  },
+  {
+    "file": "assets/photoreal/exteriors/palmiers.webp",
+    "source": "https://polyhaven.com/a/pool",
+    "license": "CC0-1.0",
+    "transformation": "projection rectilinéaire depuis le panorama photographique"
+  },
+  {
+    "file": "assets/photoreal/exteriors/plage.webp",
+    "source": "https://polyhaven.com/a/secluded_beach",
+    "license": "CC0-1.0",
+    "transformation": "projection rectilinéaire depuis le panorama photographique"
+  },
+  {
+    "file": "assets/photoreal/exteriors/mer.webp",
+    "source": "https://polyhaven.com/a/illovo_beach_balcony",
+    "license": "CC0-1.0",
+    "transformation": "projection rectilinéaire depuis le panorama photographique"
+  },
+  {
+    "file": "assets/photoreal/exteriors/montagne.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Montagne_Pel%C3%A9e.JPG",
+    "author": "Eugénie Peigné",
+    "license": "CC-BY-SA-3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "transformation": "redimensionnement et conversion WebP ; image dérivée sous CC BY-SA 3.0"
+  }
+]

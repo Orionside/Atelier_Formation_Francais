@@ -1,0 +1,165 @@
+{
+  "version": "20261017-photo-6",
+  "files": [
+    {
+      "file": "assets/photoreal/Fabric061/diff.webp",
+      "bytes": 1683908,
+      "sha256": "488589c0df5d397fb9c6147ee21b0e7862ecbed7f1a11c7e4349deb9d1cccc5b"
+    },
+    {
+      "file": "assets/photoreal/Fabric061/nor_gl.webp",
+      "bytes": 2043090,
+      "sha256": "bab5ea8787b7d02280b191c531edd713cd3dfcb13f0a44684d2e838c0da2dc7d"
+    },
+    {
+      "file": "assets/photoreal/Fabric061/rough.webp",
+      "bytes": 751766,
+      "sha256": "f239ae5d02e321826d3a2178152152963ac21e3fcc71a071ffd23e182bcc241a"
+    },
+    {
+      "file": "assets/photoreal/Fabric061/white.webp",
+      "bytes": 735070,
+      "sha256": "818d2ada819069b3bd19ef39deb7f16d5959f162a017b63b439c4b6a93450405"
+    },
+    {
+      "file": "assets/photoreal/art-sea.webp",
+      "bytes": 15728,
+      "sha256": "54ef79a2a81b31d65ca821ddb54edd024d5fe68e77e3c3a90cde55f06cbd48d1"
+    },
+    {
+      "file": "assets/photoreal/catalogue.json",
+      "bytes": 1303,
+      "sha256": "9dde5d8431368c0eb5b8a5eecbbdccf7efa09ebe34bc89ea5c59fe6e62cf61fc"
+    },
+    {
+      "file": "assets/photoreal/exteriors/mer.webp",
+      "bytes": 200336,
+      "sha256": "2c2dd973085464dcb3c2dac5b2d9a8518416af5bf5cf586b6d56a27c8d799767"
+    },
+    {
+      "file": "assets/photoreal/exteriors/montagne.webp",
+      "bytes": 401214,
+      "sha256": "67245192b0aef043f8fb0f4386725cc6fb398a7a38c7fc18c8b01bf9b4aa31bb"
+    },
+    {
+      "file": "assets/photoreal/exteriors/palmiers.webp",
+      "bytes": 314352,
+      "sha256": "68663d0fa2e8dfd0d0fe22cc8dea42395f27193ecfb9c0602535aa8d9776922c"
+    },
+    {
+      "file": "assets/photoreal/exteriors/piscine.webp",
+      "bytes": 172404,
+      "sha256": "926440db832c4fc5694a7a274b7ec7a1e194f14f268d999c55547f1a73c886d3"
+    },
+    {
+      "file": "assets/photoreal/exteriors/plage.webp",
+      "bytes": 302818,
+      "sha256": "c4b4d5a98c796fef8fa93272bf601b4a5de06b75acd61d86b1926f0efaeb21e6"
+    },
+    {
+      "file": "assets/photoreal/exteriors/sources.json",
+      "bytes": 1281,
+      "sha256": "373aa4b76533a07718181af2482aaade15123bacdb35dc119e8a73f34feb3c4a"
+    },
+    {
+      "file": "assets/photoreal/lighting/geometry.glb",
+      "bytes": 13064572,
+      "sha256": "e188fa1d5e6cdd8a541b37481343d438962f6788a1d126af217c8f20b66aa43d"
+    },
+    {
+      "file": "assets/photoreal/lighting/lobby-mobile.webp",
+      "bytes": 244668,
+      "sha256": "4bc430c7b5c1ffa13f3c533c9dc401a1931438c8ac51bfaeb10a2dc779270d5c"
+    },
+    {
+      "file": "assets/photoreal/lighting/lobby.webp",
+      "bytes": 647738,
+      "sha256": "ba948690b55b3db6a7047f55c3f23875379d943a419453ca981d3e71c7549fd0"
+    },
+    {
+      "file": "assets/photoreal/lighting/settings.json",
+      "bytes": 191,
+      "sha256": "be05e364b1e8077a5612ce5e44262533c6a167c6db8d735aea5752e0dd929a43"
+    },
+    {
+      "file": "assets/photoreal/lighting/suite-mobile.webp",
+      "bytes": 695012,
+      "sha256": "a7df4f0d43bd8067e4dd336f193f111617c4da27cdc4091a468cb2d405be605a"
+    },
+    {
+      "file": "assets/photoreal/lighting/suite.webp",
+      "bytes": 1775338,
+      "sha256": "6bc59e0561091fe0e1409c333cdb0fd4c40816999e124bb4f8f168bf436eb47d"
+    },
+    {
+      "file": "assets/photoreal/models/cushion.glb",
+      "bytes": 163296,
+      "sha256": "d5db3598dc708e856cab47ba2e4d48f9b3f8c7943b13cbc2a1f32822c8de3116"
+    },
+    {
+      "file": "assets/photoreal/models/duvet.glb",
+      "bytes": 624836,
+      "sha256": "1ebf61f55fda91a9f4e5418b9648f8c98843f9969a70261a24e4bcf328669c3d"
+    },
+    {
+      "file": "assets/photoreal/models/lounger.glb",
+      "bytes": 321688,
+      "sha256": "4c6b08ca72157d996d2cf5db8f4ad9fa74c01ef562a2b6e73edb84779e16cb24"
+    },
+    {
+      "file": "assets/photoreal/models/pillow.glb",
+      "bytes": 157428,
+      "sha256": "b14791820b6f4fc8933cff5c0ff46416b0106dcf5b6e175daeda5ca8a5605973"
+    },
+    {
+      "file": "assets/photoreal/models/sofa.glb",
+      "bytes": 311736,
+      "sha256": "827e146a0e991fbf6fbd8f45ebb8024436b9e8780e538c405dfa1474c4fe6dc0"
+    },
+    {
+      "file": "assets/photoreal/oak_veneer_01/diff.webp",
+      "bytes": 1102472,
+      "sha256": "d2ab42a17658cd45b856f68b69361a6a16803dfd52ce40986e4af33c3ce277a9"
+    },
+    {
+      "file": "assets/photoreal/oak_veneer_01/nor_gl.webp",
+      "bytes": 514792,
+      "sha256": "726dd110dff86cd46a26efe475487fe3973c5fcd3b57ae61da08dd29078475b6"
+    },
+    {
+      "file": "assets/photoreal/oak_veneer_01/rough.webp",
+      "bytes": 1936586,
+      "sha256": "c6a6b60904bcc4a51a215a2f81bce5980cc8878417df99680ab4b832b413eb65"
+    },
+    {
+      "file": "assets/photoreal/seaview-mobile.webp",
+      "bytes": 1263624,
+      "sha256": "c2703add0107030f285c77d9dfba10f03c4810cdb558f585a9c6bdceab9e4fd3"
+    },
+    {
+      "file": "assets/photoreal/seaview.hdr",
+      "bytes": 1479791,
+      "sha256": "4b133d212945df987306212a7a054cc197e9da5147d1aec8fd86d03d88ef339b"
+    },
+    {
+      "file": "assets/photoreal/seaview.webp",
+      "bytes": 5749502,
+      "sha256": "cec8fbeba4bebc6db446abe67b269b67c77a449704674b03c8cd8da72c5a2187"
+    },
+    {
+      "file": "assets/photoreal/teak_veneer/diff.webp",
+      "bytes": 750380,
+      "sha256": "47ddd22ca657e28ba9fe80926b36eb0444b3f6f52a1b8c32f6e1351ef7120c6c"
+    },
+    {
+      "file": "assets/photoreal/teak_veneer/nor_gl.webp",
+      "bytes": 260684,
+      "sha256": "33d40b9f365e8630237108ba5180fa5c121668432df079fcd5c34aedf4e7aea0"
+    },
+    {
+      "file": "assets/photoreal/teak_veneer/rough.webp",
+      "bytes": 1519774,
+      "sha256": "1b3b87a75e0c359a262c3dfc3443241948170f4db16295a8e077769e800bb13c"
+    }
+  ]
+}

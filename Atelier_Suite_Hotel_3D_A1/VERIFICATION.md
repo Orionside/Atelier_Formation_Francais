@@ -1,3 +1,18 @@
+# Refonte visuelle Palace Hôtel · 17 octobre 2026
+
+Version des modules : `20261017-photo-6`. La banque audio de référence reste inchangée : 305 fichiers, 248 lectures féminines et 57 masculines, 93 mots. Le contrôle intégral des textes, des voix, des empreintes SHA-256 et du décodage ffmpeg réussit.
+
+- Nouveaux modèles originaux Blender de couette drapée, oreillers, coussins, canapé et transats. Contrôle visuel de la continuité du chemin de lit sur la couette, du mobilier, des tissus et du miroir dans Chrome.
+- Éclairage Cycles appliqué à 270 surfaces ; 92 maillages utilisent un éclairage aux sommets pour éviter les coutures sur les formes courbes. Les empreintes des 32 nouvelles ressources visuelles sont consignées dans `assets/photoreal/integrite.json`.
+- Parcours local complet avec coordonnées fictives : dialogue, formulaire, carte magnétique, porte du couloir, « Entrer dans la chambre ». La zone affichée devient bien « La chambre ».
+- Lampe de bureau : allumage et extinction essayés ; le changement de lumière reste visible sur le mur et le bureau après intégration de l'éclairage précalculé.
+- Gros plan des serviettes : choix de présentation, rotation, zoom et lecture du mot essayés. Le lecteur natif charge le MP3 de référence sans erreur ; le miroir montre une réflexion de la salle de bains.
+- Affichage à 390 × 844 pixels : largeur du document de 390 pixels ; gros plan de 366 pixels entre x=12 et x=378 ; contrôles audio et de manipulation accessibles. Cet essai de dimensions ne remplace pas un test sur téléphone physique.
+- Galerie des extérieurs : photos réelles de piscine, palmiers, plage, mer et montagne Pelée ; dénomination, phrase et crédit de la photo de la montagne vérifiés. Les autres zones restent navigables en 3D.
+- Syntaxe des modules vérifiée avec Node ; aucun message d'erreur JavaScript observé pendant ces parcours Chrome.
+
+Les matériaux photographiques et PBR, les modèles 3D et les photos d'extérieur sont détaillés dans `SOURCES_VISUELLES.md`. Le rendu reste une scène pédagogique 3D fictive ; il ne s'agit pas de la numérisation photographique intégrale d'un hôtel existant.
+
 # Version Palace Hôtel · 16 octobre 2026
 
 305 identifiants audio, dont 34 lectures créées ou remplacées pour la nouvelle version ; 93 mots de vocabulaire. Même paire de références MP4 A1. Les 34 nouvelles prises ont été transcrites ; six lectures ont aussi été vérifiées par décodeur phonétique indépendant, notamment /la kle maɲetik/, /lə spɔt lyminø/ et /palas otɛl/. Le manifeste, les textes et les empreintes de chaque MP3 sont contrôlés par `scripts/verifier.py`. Les premières mesures ci-dessous documentent la banque précédente de 277 lectures ; les remplacements sont identifiés dans `audio/provenance.json`.

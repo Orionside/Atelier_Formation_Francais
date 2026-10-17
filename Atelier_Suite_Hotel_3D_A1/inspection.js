@@ -2,7 +2,13 @@
 export function createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env,teleport,setFiche,getExamples}){
  return function inspectObject(source,v){
   if(!source||!v)return;stopAudio();markSeen(v.id);
-  const clone=o=>{if(o.isLight)return null;const n=o.isMesh?new THREE.Mesh(o.geometry,o.material):new THREE.Group();n.position.copy(o.position);n.rotation.copy(o.rotation);n.scale.copy(o.scale);n.visible=o.visible;for(const c of o.children){const child=clone(c);if(child)n.add(child);}if(n.isMesh){n.castShadow=true;n.receiveShadow=true;}return n;};
+  if(source.userData.photo){
+   openModal(`<h2>${v.w.replace(/[<>]/g,'')}</h2><img class="exterior-photo" src="${source.userData.photo}" alt="${v.w.replace(/[<>]/g,'')}"><p class="inspect-phrase"></p><div class="card-actions"><button class="btn" id="viewWord">Écouter le mot</button><button class="btn" id="viewSentence">Écouter la phrase</button><button class="btn" id="viewStop">Arrêter le son</button></div>`,stopAudio);
+   if(v.id==='montagne'){const c=document.createElement('p');c.className='photo-credit';c.innerHTML='Photo : Eugénie Peigné · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · redimensionnée, format WebP.';document.querySelector('.exterior-photo').after(c);}
+   document.querySelector('.inspect-phrase').textContent=v.ex;document.querySelector('#viewWord').onclick=()=>say('w_'+v.id);document.querySelector('#viewSentence').onclick=()=>say('e_'+v.id);document.querySelector('#viewStop').onclick=stopAudio;return;
+  }
+  function studioMaterial(m){if(Array.isArray(m))return m.map(studioMaterial);return m.unbakedMaterial||m;}
+  const clone=o=>{if(o.isLight)return null;const n=o.isMesh?new THREE.Mesh(o.geometry,studioMaterial(o.material)):new THREE.Group();n.position.copy(o.position);n.rotation.copy(o.rotation);n.scale.copy(o.scale);n.visible=o.visible;for(const c of o.children){const child=clone(c);if(child)n.add(child);}if(n.isMesh){n.castShadow=true;n.receiveShadow=true;}return n;};
   const examples=getExamples?.(v.id)||[];
   const model=clone(source.userData.inspectionSource || source);model.position.set(0,0,0);model.rotation.set(source.userData.inspectionRotationX??0,0,0);model.visible=true;model.updateMatrixWorld(true);let box=new THREE.Box3().setFromObject(model),size=box.getSize(new THREE.Vector3()),diagonal=size.length();
   if(diagonal>12){closeModal();setFiche(false);teleport(v.z==='reception'?'reception':v.z==='balcon'?'balcon':v.z==='sdb'?'sdb':'chambre');return;}

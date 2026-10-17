@@ -1,0 +1,45 @@
+[
+  {
+    "id": "oak_veneer_01",
+    "type": "texture",
+    "source": "https://polyhaven.com/a/oak_veneer_01",
+    "license": "CC0-1.0",
+    "maps": {
+      "diff": "assets/photoreal/oak_veneer_01/diff.webp",
+      "nor_gl": "assets/photoreal/oak_veneer_01/nor_gl.webp",
+      "rough": "assets/photoreal/oak_veneer_01/rough.webp"
+    }
+  },
+  {
+    "id": "teak_veneer",
+    "type": "texture",
+    "source": "https://polyhaven.com/a/teak_veneer",
+    "license": "CC0-1.0",
+    "maps": {
+      "diff": "assets/photoreal/teak_veneer/diff.webp",
+      "nor_gl": "assets/photoreal/teak_veneer/nor_gl.webp",
+      "rough": "assets/photoreal/teak_veneer/rough.webp"
+    }
+  },
+  {
+    "id": "Fabric061",
+    "type": "texture",
+    "source": "https://ambientcg.com/a/Fabric061",
+    "creationMethod": "PBRProcedural",
+    "license": "CC0-1.0",
+    "maps": {
+      "diff": "assets/photoreal/Fabric061/diff.webp",
+      "nor_gl": "assets/photoreal/Fabric061/nor_gl.webp",
+      "rough": "assets/photoreal/Fabric061/rough.webp"
+    }
+  },
+  {
+    "id": "illovo_beach_balcony",
+    "type": "hdri",
+    "source": "https://polyhaven.com/a/illovo_beach_balcony",
+    "author": "Greg Zaal",
+    "license": "CC0-1.0",
+    "panorama": "assets/photoreal/seaview.webp",
+    "lighting": "assets/photoreal/seaview.hdr"
+  }
+]
