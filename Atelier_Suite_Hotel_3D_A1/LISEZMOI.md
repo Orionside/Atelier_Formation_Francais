@@ -11,13 +11,13 @@ Visite 3D pour adultes débutants, avec vocabulaire, phrases, dialogue à la ré
 
 ## Une petite séance A1
 
-Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 79 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
+Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 93 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
 
 Les compteurs comptabilisent les découvertes et les choix aux activités ; ils ne mesurent pas la maîtrise orale et ne donnent pas une note de prononciation. Les modèles restent accessibles après un essai.
 
 ## Organisation
 
-`index.html` contient la structure et les données pédagogiques ; `style.css` l'interface ; `app.js` les interactions et la scène ; `realism.js` les modèles détaillés ; `inspection.js` la visionneuse. `audio/manifest.json` associe chaque identifiant à son fichier MP3 et à son texte. `audio/provenance.json` documente les sources par empreinte, les prises retenues et les contrôles.
+`index.html` contient la structure et les données pédagogiques ; `style.css` l'interface ; `app.js` les interactions et la scène ; `realism.js` les modèles détaillés ; `palace.js` et `photoreal.js` le mobilier, les matières et l'éclairage ; `exteriors.js` la galerie des extérieurs ; `inspection.js` la visionneuse. `audio/manifest.json` associe chaque identifiant à son fichier MP3 et à son texte. `audio/provenance.json` documente les sources par empreinte, les prises retenues et les contrôles.
 
 Les vidéos de référence, les extraits de voix et les prises WAV de travail restent hors du dépôt. Les sons diffusés sont des lectures générées pour cet atelier, pas les enregistrements originaux du manuel.
 
@@ -25,7 +25,7 @@ Les vidéos de référence, les extraits de voix et les prises WAV de travail re
 
 Page apprenant : https://orionside.github.io/Atelier_Formation_Francais/Atelier_Suite_Hotel_3D_A1/
 
-La scène utilise Three.js 0.160.0 via jsDelivr et deux polices via Google Fonts. Les modèles, matières et visuels ont été réalisés dans le code de cet atelier ; aucune photothèque n'est chargée. Les audios sont hébergés avec la page, sans service de synthèse à l'exécution.
+La scène utilise Three.js 0.160.0 via jsDelivr et deux polices via Google Fonts. Elle réunit des modèles originaux réalisés dans le code ou Blender et des ressources 3D, matières PBR et photographies créditées dans [SOURCES_VISUELLES.md](SOURCES_VISUELLES.md). Les fichiers visuels sont hébergés avec l'atelier ; aucune API de photothèque n'est appelée durant la visite. Les audios sont hébergés avec la page, sans service de synthèse à l'exécution.
 
 Pour un essai local, lancer depuis ce dossier `python3 -m http.server 8778 --bind 127.0.0.1`, puis ouvrir `http://127.0.0.1:8778/`.
 

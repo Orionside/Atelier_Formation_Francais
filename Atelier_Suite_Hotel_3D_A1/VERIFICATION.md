@@ -13,6 +13,8 @@ Version des modules : `20261017-photo-6`. La banque audio de référence reste i
 
 Les matériaux photographiques et PBR, les modèles 3D et les photos d'extérieur sont détaillés dans `SOURCES_VISUELLES.md`. Le rendu reste une scène pédagogique 3D fictive ; il ne s'agit pas de la numérisation photographique intégrale d'un hôtel existant.
 
+Après le déploiement du 17 octobre, les 382 ressources publiques contrôlées correspondent par empreinte SHA-256 aux fichiers locaux, y compris les 305 MP3 et l'environnement HDR. Les anciennes banques base64 répondent bien 404. Chargement de la chambre, gros plan des serviettes et lecture du mot également vérifiés dans Chrome à l'adresse publique, sans erreur JavaScript observée.
+
 # Version Palace Hôtel · 16 octobre 2026
 
 305 identifiants audio, dont 34 lectures créées ou remplacées pour la nouvelle version ; 93 mots de vocabulaire. Même paire de références MP4 A1. Les 34 nouvelles prises ont été transcrites ; six lectures ont aussi été vérifiées par décodeur phonétique indépendant, notamment /la kle maɲetik/, /lə spɔt lyminø/ et /palas otɛl/. Le manifeste, les textes et les empreintes de chaque MP3 sont contrôlés par `scripts/verifier.py`. Les premières mesures ci-dessous documentent la banque précédente de 277 lectures ; les remplacements sont identifiés dans `audio/provenance.json`.
