@@ -84,8 +84,8 @@ export function installPhotoreal({INTER,STATIC,MAT,REAL,reg,B,C,G,DYN},prepared)
 // Index stable de géométries : utilisé par les UV d'éclairage préparés dans Cycles.
 export function indexLightingMeshes(STATIC){let i=0;STATIC.traverse(o=>{if(o.isMesh)o.userData.pmId='pm_'+String(i++).padStart(5,'0');});}
 export async function applyBakedLighting(STATIC,LOW){
- const settings=await fetch(base+'lighting/settings.json?v=final5').then(r=>{if(!r.ok)throw new Error('Cartes d’éclairage indisponibles');return r.json();});
- const [data,...maps]=await Promise.all([loader.loadAsync(base+'lighting/geometry.glb?v=final5'),...['suite','lobby'].map(id=>textures.loadAsync(base+'lighting/'+settings[id][LOW?'mobile':'file']+'?v=final5'))]);
+ const settings=await fetch(base+'lighting/settings.json?v=atelier18-final1').then(r=>{if(!r.ok)throw new Error('Cartes d’éclairage indisponibles');return r.json();});
+ const [data,...maps]=await Promise.all([loader.loadAsync(base+'lighting/geometry.glb?v=atelier18-final1'),...['suite','lobby'].map(id=>textures.loadAsync(base+'lighting/'+settings[id][LOW?'mobile':'file']+'?v=atelier18-final1'))]);
  const lightTextures={suite:maps[0],lobby:maps[1]};for(const t of maps){t.channel=1;t.flipY=false;t.colorSpace=THREE.SRGBColorSpace;}
  const byId=new Map();data.scene.updateMatrixWorld(true);STATIC.updateMatrixWorld(true);data.scene.traverse(o=>{if(o.isMesh&&o.userData.pmId)byId.set(o.userData.pmId,{object:o,region:o.userData.lightRegion});});
  let n=0;
@@ -101,19 +101,20 @@ export async function applyBakedLighting(STATIC,LOW){
   geometry.applyMatrix4(new THREE.Matrix4().copy(o.matrixWorld).invert().multiply(b.object.matrixWorld));
   geometry.computeBoundingBox();o.geometry.computeBoundingBox();
   const before=o.geometry.boundingBox,after=geometry.boundingBox;
-  if(before.getCenter(new THREE.Vector3()).distanceTo(after.getCenter(new THREE.Vector3()))>.05)throw new Error('La géométrie d’éclairage ne correspond pas à '+o.userData.pmId);
+  if(before.getCenter(new THREE.Vector3()).distanceTo(after.getCenter(new THREE.Vector3()))>.05)throw new Error('La géométrie d’éclairage ne correspond pas à '+o.userData.pmId+' ('+(o.userData.root?.userData.vid||o.name||o.parent?.userData.vid)+') : '+before.getCenter(new THREE.Vector3()).toArray().join(',')+' / '+after.getCenter(new THREE.Vector3()).toArray().join(','));
   o.geometry=geometry;
   const ms=Array.isArray(o.material)?o.material:[o.material];
   o.material=ms.map(original=>{
-   const material=original.clone();material.lightMap=lightTextures[b.region];material.lightMapIntensity=Math.PI*settings[b.region].gain;material.envMapIntensity=.08;material.unbakedMaterial=original;
+   const gain=settings[b.region].gain,material=original.clone();material.lightMap=lightTextures[b.region];material.lightMapIntensity=Math.PI*gain*.90;material.envMapIntensity=.12;material.unbakedMaterial=original;
    const vertexLighting=geometry.hasAttribute('_irradiance');if(vertexLighting)material.lightMap=null;
    material.onBeforeCompile=shader=>{
-    if(vertexLighting){shader.vertexShader='attribute vec3 _irradiance;\nvarying vec3 vBakedIrradiance;\n'+shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvBakedIrradiance=_irradiance*4.0;');shader.fragmentShader='varying vec3 vBakedIrradiance;\n'+shader.fragmentShader;}
-    // Le soleil et la baie sont précalculés ; les lampes ponctuelles restent actives.
-    const direct=THREE.ShaderChunk.lights_fragment_begin.replace('getDirectionalLightInfo( directionalLight, directLight );','getDirectionalLightInfo( directionalLight, directLight );\ndirectLight.color=vec3(0.0);').replace('RE_Direct_RectArea( rectAreaLight,','rectAreaLight.color=vec3(0.0);\nRE_Direct_RectArea( rectAreaLight,');
-    shader.fragmentShader=shader.fragmentShader.replace('#include <lights_fragment_begin>',direct).replace('#include <lights_fragment_end>','#include <lights_fragment_end>'+(vertexLighting?'\nreflectedLight.indirectDiffuse+=vBakedIrradiance*diffuseColor.rgb;':''));
+    if(vertexLighting){shader.vertexShader='attribute vec3 _irradiance;\nvarying vec3 vBakedIrradiance;\n'+shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvBakedIrradiance=_irradiance*'+gain.toFixed(1)+';');shader.fragmentShader='varying vec3 vBakedIrradiance;\n'+shader.fragmentShader;}
+    // 90 % de la lumière vient de Cycles ; 10 % du soleil révèle les normales fines.
+    // Les lampes ponctuelles restent actives.
+    const direct=THREE.ShaderChunk.lights_fragment_begin.replace('getDirectionalLightInfo( directionalLight, directLight );','getDirectionalLightInfo( directionalLight, directLight );\ndirectLight.color*=0.10;').replace('RE_Direct_RectArea( rectAreaLight,','rectAreaLight.color=vec3(0.0);\nRE_Direct_RectArea( rectAreaLight,');
+    shader.fragmentShader=shader.fragmentShader.replace('#include <lights_fragment_begin>',direct).replace('#include <lights_fragment_end>','#include <lights_fragment_end>'+(vertexLighting?'\nreflectedLight.indirectDiffuse+=vBakedIrradiance*diffuseColor.rgb*0.90;':''));
    };
-   material.customProgramCacheKey=()=>vertexLighting?'palace-cycles-vertex-v2':'palace-cycles-map-v2';material.needsUpdate=true;return material;
+   material.customProgramCacheKey=()=>(vertexLighting?'palace-cycles-vertex-v3-':'palace-cycles-map-v3-')+gain;material.needsUpdate=true;return material;
   });
   if(o.material.length===1)o.material=o.material[0];n++;
  });

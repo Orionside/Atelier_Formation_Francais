@@ -1,18 +1,19 @@
 
 import * as THREE from 'three';
-import { realism } from './realism.js?v=20261017-photo-6';
-import { createInspector } from './inspection.js?v=20261017-photo-6';
+import { realism } from './realism.js?v=20261018-11';
+import { createInspector } from './inspection.js?v=20261018-11';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261017-photo-6';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261018-11';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261017-photo-6';
-import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261017-photo-6';
-import {exteriorLearning} from './exteriors.js?v=20261017-photo-6';
+import { createDiscovery } from './discovery.js?v=20261018-11';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261018-11';
+import {exteriorLearning} from './exteriors.js?v=20261018-11';
+import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261018-11';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -1607,7 +1608,7 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261017-photo-6').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261018-11').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}
@@ -2524,19 +2525,22 @@ async function init() {
   btn.textContent='Préparer les matières…';
   await photographicMaterials(MAT,renderer);
   const preparedPhoto=await preparePhotoreal(MAT,renderer,scene,pmrem,LOW);
+  const atelierMaterials=await prepareAtelier(MAT,renderer,LOW);
   const assetResult=await loadPalaceAssets((n,total)=>btn.textContent=`Préparer le mobilier… ${n}/${total}`);
   if(assetResult.failures.length)throw new Error('Le mobilier ne se charge pas : '+assetResult.failures.join(', '));
   buildLobby(); buildCorridor(); buildSuite();
   buildHunt();REAL.details(INTER,STATIC);buildACParticles();drawTV();drawAC();
   installPalace({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW});
   installPhotoreal({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW},preparedPhoto);
+  installAtelier({INTER,STATIC,MAT,B,C,L,S,G,REAL,reg,DYN,LIGHTS,LOW},atelierMaterials);
   indexLightingMeshes(STATIC);
   updateExterior=exteriorLearning({STATIC,INTER,MAT,G,B,C,REAL,reg,openModal,closeModal,inspectObject,VOC,say,stopAudio});
   hemi.intensity=.20;
   STATIC.traverse(o=>{if(o.isRectAreaLight)o.intensity=1.8;if(o.isPointLight&&o.intensity>0)o.intensity*=.12;});
-  await applyBakedLighting(STATIC,LOW);
   finishTextiles(INTER,MAT);
+  await applyBakedLighting(STATIC,LOW);
   installMirror(DYN,MAT,LOW);
+  finishAtelier({INTER,MAT,LOW},atelierMaterials);
   updateDiscovery=createDiscovery({scene:STATIC,camera,roots:INTER,vocab:VOC,select,visible:visibleChain,blocked:()=>!started||!$('#modalWrap').hidden||!$('#dlg').hidden});
   if (ST.key || ST.dlg >= DATA.dialogue.length) DYN.keyCard.visible = !ST.key;
   uiReady = true;

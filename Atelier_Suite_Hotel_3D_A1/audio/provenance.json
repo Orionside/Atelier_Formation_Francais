@@ -1,8 +1,8 @@
 {
   "summary": {
-    "identifiers": 305,
-    "distinct_readings": 305,
-    "total_distinct_seconds": 535.2,
+    "identifiers": 311,
+    "distinct_readings": 311,
+    "total_distinct_seconds": 545.4,
     "model": "Qwen3-TTS 1.7B Base MLX",
     "references": {
       "f": {
@@ -23,7 +23,7 @@
       }
     },
     "checks": "Transcription Whisper, contenu critique, signal et comparaison acoustique. Pas de certification à l’écoute humaine.",
-    "revision": "Palace Hôtel : 34 nouvelles lectures, mêmes références A1. Contrôle de transcription et signal, contrôle phonétique ciblé."
+    "revision": "Palace Hôtel : 6 nouvelles lectures, mêmes références A1. Contrôle de transcription et signal, contrôle phonétique ciblé."
   },
   "units": {
     "u000": {
@@ -11788,6 +11788,168 @@
       "mp3_sha256": "43a7ad1cb96b4883587d5a4e74538b571373787e817119937043ca70a15ce266",
       "export_duration": 1.867,
       "gain_db": -6.76
+    },
+    "atelier18_w_console": {
+      "id": "w_console",
+      "voice": "f",
+      "text": "la console d'entrée",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.68,
+      "sha256": "ff0687a79bad7f84c3580953d6dd7bf808c57c73ca57b0940f3cf5a73c75a5ae",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.09,
+      "aliases": [
+        "w_console"
+      ],
+      "verification": {
+        "expected": "la console d'entrée",
+        "recognized": "la console d'entrée.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.146,
+        "peak": 0.9074,
+        "rms": 0.1871
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "4ab419c7097cd63cb440fbc92692d4c1309c4346806e799e1d0ab74cfaca5a2f",
+      "export_duration": 1.632,
+      "gain_db": -7.06
+    },
+    "atelier18_e_console": {
+      "id": "e_console",
+      "voice": "f",
+      "text": "La console est près de la porte.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.0,
+      "sha256": "b70b6fd42711a496ad022d26d866accf0df7fe19dc9c7d98bd908d615d82aad9",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.08,
+      "aliases": [
+        "e_console"
+      ],
+      "verification": {
+        "expected": "La console est près de la porte.",
+        "recognized": "La console est près de la porte.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.48,
+        "peak": 0.9972,
+        "rms": 0.1975
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "9c755cbcc0c34638d334fa3a51f692c4335c8bfb0175cfa118343cd458c6e8ef",
+      "export_duration": 1.946,
+      "gain_db": -6.88
+    },
+    "atelier18_w_vide_poche": {
+      "id": "w_vide_poche",
+      "voice": "f",
+      "text": "le vide-poche",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.36,
+      "sha256": "0973ed937bd5f60585a6e6684918006e3c060072f2fcaf61dad360b8af1c0a7d",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.25,
+      "aliases": [
+        "w_vide_poche"
+      ],
+      "verification": {
+        "expected": "le vide-poche",
+        "recognized": "le vide poche,",
+        "sound_difference": 0.0,
+        "speech_duration": 0.845,
+        "peak": 0.775,
+        "rms": 0.1715
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "7a39e51ccb1c7232ba132d59e46de2f6fd21074f486aa78395f20ce7d9a2ff70",
+      "export_duration": 1.35,
+      "gain_db": -6.14
+    },
+    "atelier18_e_vide_poche": {
+      "id": "e_vide_poche",
+      "voice": "f",
+      "text": "Je pose mes clés dans le vide-poche.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.88,
+      "sha256": "7aefaea0f4dd4368df0256294acad43e13a2aeab54c271d83e160e3196cc2650",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.18,
+      "aliases": [
+        "e_vide_poche"
+      ],
+      "verification": {
+        "expected": "Je pose mes clés dans le vide-poche.",
+        "recognized": "Je pose mes clés dans le vide poche.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.78,
+        "peak": 0.945,
+        "rms": 0.1981
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "af0d941d3e16390d717b4cdb170155a2e0b875a54e24180ffbab2aaaccef7fc1",
+      "export_duration": 2.341,
+      "gain_db": -7.87
+    },
+    "atelier18_w_vase": {
+      "id": "w_vase",
+      "voice": "f",
+      "text": "le vase",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.12,
+      "sha256": "cfa960d975bf5f6fc46a5d94c90012f4c86b3a7ab8b64fbf0a0ee9b52c1dde60",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.01,
+      "aliases": [
+        "w_vase"
+      ],
+      "verification": {
+        "expected": "le vase",
+        "recognized": "le vase.",
+        "sound_difference": 0.0,
+        "speech_duration": 0.674,
+        "peak": 0.9259,
+        "rms": 0.2039
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "e6d07d0538854d12644d44b194817378af71ea78d12e2429f90c6a3cdba10cc2",
+      "export_duration": 1.15,
+      "gain_db": -7.8
+    },
+    "atelier18_e_vase": {
+      "id": "e_vase",
+      "voice": "f",
+      "text": "Les fleurs sont dans le vase.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.84,
+      "sha256": "c95fb42f3871e26292c92074e25c6094f00cf834462d559396ace88f63aaf1f1",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.42,
+      "aliases": [
+        "e_vase"
+      ],
+      "verification": {
+        "expected": "Les fleurs sont dans le vase.",
+        "recognized": "Les fleurs sont dans le vase.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.314,
+        "peak": 0.8336,
+        "rms": 0.2085
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "c7e9b4779e45c8ced8c6d2284eda516d12cbde5cd4d343e0772d9e1228d60801",
+      "export_duration": 1.757,
+      "gain_db": -7.39
     }
   }
 }

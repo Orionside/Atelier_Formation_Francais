@@ -1,3 +1,20 @@
+# Refonte selon les références · 18 octobre 2026
+
+Version des modules : `20261018-11`. 96 mots et 311 MP3 (254 lectures féminines, 57 masculines). Les empreintes des 305 lectures précédentes sont strictement conservées ; les six nouvelles lectures utilisent la même référence féminine A1 et ont été contrôlées par transcription Whisper, volume, empreinte et décodage. `scripts/verifier.py` vérifie la couverture complète des 311 textes, voix, MP3 et 96 entrées de vocabulaire.
+
+- Quinze familles reprises selon les références : literie, linge de bain, tapis, bouquet/vase, lampes, armoire, valises, climatiseur, bureau, murs et meubles d’entrée. Les choix précis figurent dans [DIRECTION_ARTISTIQUE.md](DIRECTION_ARTISTIQUE.md).
+- Cinq jeux PBR photographiques CC0, quinze cartes 1536 px et quinze variantes 768 px ; feuillage d’anthurium scanné à alpha corrigé, WebP 1024 et Meshopt. Les 64 ressources des deux dossiers visuels sont contrôlées par SHA-256.
+- Cycles : 294 surfaces (172 suite, 122 hall), 256 échantillons, débruitage RTLightmap ; 107 maillages courbes éclairés aux sommets. Dynamique distincte pour le hall et la suite pour éviter l’écrêtage. GLB d’éclairage comprimé de 76,43 à 12,52 Mo.
+- Contrôle visuel Chrome de la chambre et des gros plans : quatre oreillers, peignoir de face, serviette pliée avec boucles instanciées, bouquet, bureau, console, armoire, lampe et climatiseur. Rotation, agrandissement et retour à la vue de départ accessibles. Les gros plans utilisent les mêmes géométries et matières que la scène.
+- Le chemin de lit est drapé avant l’application de l’éclairage ; le contrôle de correspondance des géométries réussit au chargement.
+- Parcours complet avec coordonnées fictives : dialogue d’accueil, formulaire, prise de la clé, porte depuis le couloir, bouton « Entrer dans la chambre ». La zone devient « La chambre » après le passage du seuil.
+- Lampe de bureau : extinction puis allumage contrôlés depuis la carte de l’objet.
+- Affichage Chrome à 390 × 844 : document de 390 px, boîte de dialogue de 366 px entre x=12 et x=378, sans débordement horizontal. Rotation, zoom, retour initial, serviette pliée/suspendue et phrase audio contrôlés ; aucune erreur JavaScript observée. Cet essai de dimensions ne remplace pas un test sur téléphone physique.
+- Lecture native de `w_console.mp3` : durée 1,632 s, lecteur actif sans erreur au contrôle.
+- Syntaxe des quatre modules modifiés et absence d’erreur JavaScript contrôlées dans Chrome pendant le parcours. Les fichiers de préparation Blender, WAV, références vocales et photographies commerciales restent hors distribution.
+
+Le résultat est une reconstitution 3D avec matériaux photographiques, inspirée des références. Les recherches Google désignent plusieurs modèles ; la scène ne constitue pas une copie photographique exacte de chacun de leurs résultats.
+
 # Refonte visuelle Palace Hôtel · 17 octobre 2026
 
 Version des modules : `20261017-photo-6`. La banque audio de référence reste inchangée : 305 fichiers, 248 lectures féminines et 57 masculines, 93 mots. Le contrôle intégral des textes, des voix, des empreintes SHA-256 et du décodage ffmpeg réussit.

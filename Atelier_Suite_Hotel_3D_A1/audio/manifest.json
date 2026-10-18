@@ -1,6 +1,6 @@
 {
   "ready": true,
-  "version": "20261016-palace-3",
+  "version": "20261018-1",
   "voices": {
     "f": {
       "start": 31.95,
@@ -2154,6 +2154,48 @@
       "text": "Les lavabos sont sur le meuble de salle de bains.",
       "duration": 2.881958,
       "sha256": "04d9761ce49470a0fccbee27e04115bf8865457a0dd345208af9f903a98f0c02"
+    },
+    "w_console": {
+      "file": "audio/sons/w_console.mp3",
+      "voice": "f",
+      "text": "la console d'entrée",
+      "duration": 1.632,
+      "sha256": "4ab419c7097cd63cb440fbc92692d4c1309c4346806e799e1d0ab74cfaca5a2f"
+    },
+    "e_console": {
+      "file": "audio/sons/e_console.mp3",
+      "voice": "f",
+      "text": "La console est près de la porte.",
+      "duration": 1.946,
+      "sha256": "9c755cbcc0c34638d334fa3a51f692c4335c8bfb0175cfa118343cd458c6e8ef"
+    },
+    "w_vide_poche": {
+      "file": "audio/sons/w_vide_poche.mp3",
+      "voice": "f",
+      "text": "le vide-poche",
+      "duration": 1.350083,
+      "sha256": "7a39e51ccb1c7232ba132d59e46de2f6fd21074f486aa78395f20ce7d9a2ff70"
+    },
+    "e_vide_poche": {
+      "file": "audio/sons/e_vide_poche.mp3",
+      "voice": "f",
+      "text": "Je pose mes clés dans le vide-poche.",
+      "duration": 2.3405,
+      "sha256": "af0d941d3e16390d717b4cdb170155a2e0b875a54e24180ffbab2aaaccef7fc1"
+    },
+    "w_vase": {
+      "file": "audio/sons/w_vase.mp3",
+      "voice": "f",
+      "text": "le vase",
+      "duration": 1.149708,
+      "sha256": "e6d07d0538854d12644d44b194817378af71ea78d12e2429f90c6a3cdba10cc2"
+    },
+    "e_vase": {
+      "file": "audio/sons/e_vase.mp3",
+      "voice": "f",
+      "text": "Les fleurs sont dans le vase.",
+      "duration": 1.756917,
+      "sha256": "c7e9b4779e45c8ced8c6d2284eda516d12cbde5cd4d343e0772d9e1228d60801"
     }
   }
 }

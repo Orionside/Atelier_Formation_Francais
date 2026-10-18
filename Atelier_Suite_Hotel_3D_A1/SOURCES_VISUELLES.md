@@ -2,6 +2,18 @@
 
 La suite reste un lieu pédagogique fictif. Les meubles sont des modèles 3D détaillés, redimensionnés à l'échelle de la pièce ; la scène n'est pas une photographie d'un établissement existant.
 
+## Refonte du 18 octobre 2026
+
+Les références et leurs traductions en géométries sont détaillées dans [DIRECTION_ARTISTIQUE.md](DIRECTION_ARTISTIQUE.md). Les résultats Google regroupent plusieurs objets ; ils ont servi à étudier les formes et matériaux, sans incorporer les photographies commerciales au site. Le bureau original est redessiné selon les dimensions et détails du [Charme Collinet](https://www.collinet-sieges.com/fr/chambre-bureau/p/bureau-charme-1), sans prétendre être un fichier CAO du fabricant.
+
+Cinq matières de Poly Haven sont ajoutées sous CC0 : [Terry Cloth](https://polyhaven.com/a/terry_cloth), [Cotton Jersey](https://polyhaven.com/a/cotton_jersey), [Wool Boucle](https://polyhaven.com/a/wool_boucle), [Rough Linen](https://polyhaven.com/a/rough_linen), [Velour Velvet](https://polyhaven.com/a/velour_velvet). Photographie : colormass ; traitement : Rico Cilliers. Les cartes de couleur sont neutralisées pour correspondre aux couleurs du lexique ; relief normal et rugosité proviennent des matières photographiques. Quinze cartes WebP 1536 px et quinze variantes 768 px sont auto-hébergées.
+
+Le bouquet ajoute un spécimen de [Anthurium Botany 01](https://polyhaven.com/a/anthurium_botany_01), CC0, scan Rob Tuytel / modèle Rico Cilliers ; alpha intégré, textures WebP 1024 et géométrie Meshopt. Les pétales rouges et orange restent des créations originales. Les micro-boucles des serviettes sont de petites géométries réutilisées par instanciation, présentes également en gros plan.
+
+Cycles recalcule l’éclairage de 294 surfaces : 172 dans la suite (atlas 4096) et 122 dans le hall (2048), avec 256 échantillons et cinq rebonds diffus. Après débruitage RTLightmap, 107 maillages courbes utilisent un éclairage aux sommets. Le conditionnement encode séparément la dynamique du hall et de la suite, sans écrêtage ; un faible complément solaire conserve le relief des normales. Le GLB d’éclairage passe de 76,43 à 12,52 Mo après optimisation.
+
+`assets/atelier18/sources.json` consigne les auteurs et transformations ; les fichiers d’intégrité des deux dossiers visuels donnent les empreintes SHA-256. Les modèles de table de nuit et de lampe Poly Haven des versions précédentes restent dans les ressources historiques, mais la scène actuelle utilise les nouvelles formes originales décrites ci-dessus.
+
 ## Refonte du 17 octobre 2026
 
 La navigation et la manipulation des objets restent en 3D. Le paysage simplifié est remplacé par le panorama photographique [Illovo Beach Balcony, Greg Zaal](https://polyhaven.com/a/illovo_beach_balcony), sous CC0. Il s'agit d'une référence visuelle maritime réelle ; ce panorama sud-africain ne constitue pas une prise de vue de Fort-de-France.

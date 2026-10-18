@@ -5,19 +5,19 @@ Visite 3D pour adultes débutants, avec vocabulaire, phrases, dialogue à la ré
 ## Version du 16 octobre 2026
 
 - Génération directe Qwen3-TTS avec les références exactes `voix de référence A1 femme.mp4` et `voix de référence homme A1.mp4`. La femme lit la réception, le vocabulaire et les questions ; l'homme lit le client, les réponses et les nombres.
-- Une seule banque de 305 sons, chargés individuellement. Aucun recours automatique aux voix du navigateur. Vitesse normale, ou 0,9× dans **Fiche → Aide**, avec conservation de la hauteur.
+- Une seule banque de 311 sons, chargés individuellement. Aucun recours automatique aux voix du navigateur. Vitesse normale, ou 0,9× dans **Fiche → Aide**, avec conservation de la hauteur.
 - Serviettes à couches distinctes, plis, bordures et tissage bouclé ; peignoirs à manches, col châle, poches, ceinture et nœud ; chaussons ouverts, sèche-cheveux avec grille et câble, tasses creuses avec anse. Reprise des matériaux, des documents, des plantes et des finitions des autres objets.
 - Bouton **Voir de près** sur la carte d'objet ; inspection disponible aussi depuis **Fiche → Lexique**, sans devoir deviner ou retrouver chaque objet. Les petits objets utilisent le même modèle 3D dans la pièce et dans la visionneuse. Rotation et zoom au doigt, à la souris ou avec les boutons et le clavier.
 
 ## Une petite séance A1
 
-Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 93 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
+Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 96 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
 
 Les compteurs comptabilisent les découvertes et les choix aux activités ; ils ne mesurent pas la maîtrise orale et ne donnent pas une note de prononciation. Les modèles restent accessibles après un essai.
 
 ## Organisation
 
-`index.html` contient la structure et les données pédagogiques ; `style.css` l'interface ; `app.js` les interactions et la scène ; `realism.js` les modèles détaillés ; `palace.js` et `photoreal.js` le mobilier, les matières et l'éclairage ; `exteriors.js` la galerie des extérieurs ; `inspection.js` la visionneuse. `audio/manifest.json` associe chaque identifiant à son fichier MP3 et à son texte. `audio/provenance.json` documente les sources par empreinte, les prises retenues et les contrôles.
+`index.html` contient la structure et les données pédagogiques ; `style.css` l'interface ; `app.js` les interactions et la scène ; `realism.js` les modèles détaillés ; `palace.js` et `photoreal.js` le mobilier, les matières et l'éclairage ; `atelier18.js` les nouveaux objets et textiles ; `exteriors.js` la galerie des extérieurs ; `inspection.js` la visionneuse. `audio/manifest.json` associe chaque identifiant à son fichier MP3 et à son texte. `audio/provenance.json` documente les sources par empreinte, les prises retenues et les contrôles.
 
 Les vidéos de référence, les extraits de voix et les prises WAV de travail restent hors du dépôt. Les sons diffusés sont des lectures générées pour cet atelier, pas les enregistrements originaux du manuel.
 
@@ -33,9 +33,15 @@ La progression et le formulaire d'exercice sont conservés dans le navigateur. U
 
 ## Palace Hôtel — seconde refonte visuelle
 
-93 mots, 305 audios. Le mobilier et les plantes utilisent onze modèles 3D texturés optimisés, avec matières photographiques de parquet, pierre, cuir et tissu. Voir [les sources et bibliothèques](SOURCES_VISUELLES.md). La carte magnétique possède ses deux faces, un format bancaire et des angles arrondis.
+96 mots, 311 audios. Le mobilier et les plantes utilisent onze modèles 3D texturés optimisés, avec matières photographiques de parquet, pierre, cuir et tissu. Voir [les sources et bibliothèques](SOURCES_VISUELLES.md). La carte magnétique possède ses deux faces, un format bancaire et des angles arrondis.
 
 Les repères cliquables se masquent avec « Masquer les repères ». Tous les objets restent sélectionnables directement ou depuis Fiche → Lexique. Les petites cibles bénéficient d’une marge de sélection ; les repères tiennent compte des murs. Après la remise de la carte à la réception, ouvrez la porte 14 dans le couloir puis choisissez « Entrer dans la chambre » : le déplacement suit physiquement le passage de la porte.
 
 Le nom Palace Hôtel est une adaptation de cette simulation pédagogique ; il ne renomme pas l’établissement du manuel source. Le lieu reste fictif, même si ses modèles et matières visent un rendu crédible.
 La refonte du 17 octobre 2026 ajoute un éclairage préparé dans Cycles, un panorama maritime photographique, de nouveaux modèles de literie et de mobilier, une réflexion plane du miroir et des photographies pour le vocabulaire des extérieurs. Les détails et licences figurent dans [SOURCES_VISUELLES.md](SOURCES_VISUELLES.md). Les 305 fichiers audio et leurs voix de référence sont conservés.
+
+## Références du 18 octobre 2026
+
+Quinze familles d’objets ont été reprises : literie gonflante à taies bordées, couette, tête de lit capitonnée, tapis bouclé, serviettes en coton éponge, peignoir à col châle, bureau aux proportions du Charme Collinet, lampe articulée, armoire vitrée avec LED, valise à roulettes et accessoires d’entrée. [La direction artistique](DIRECTION_ARTISTIQUE.md) explique chaque correspondance aux références.
+
+Cinq matières photographiques PBR et un feuillage d’anthurium scanné sont ajoutés sous CC0, avec variantes de textures pour petits écrans. L’éclairage est recalculé sur 294 surfaces ; 107 formes courbes reçoivent un éclairage aux sommets. La console d’entrée, le vide-poche et le vase ajoutent trois mots et six lectures Qwen avec la référence féminine A1 existante. Les 305 MP3 précédents conservent exactement leurs empreintes.

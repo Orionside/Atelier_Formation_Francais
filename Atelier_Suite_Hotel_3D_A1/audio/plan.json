@@ -1524,6 +1524,36 @@
       "id": "e_meuble_vasque",
       "voice": "f",
       "text": "Les lavabos sont sur le meuble de salle de bains."
+    },
+    {
+      "id": "w_console",
+      "voice": "f",
+      "text": "la console d'entrée"
+    },
+    {
+      "id": "e_console",
+      "voice": "f",
+      "text": "La console est près de la porte."
+    },
+    {
+      "id": "w_vide_poche",
+      "voice": "f",
+      "text": "le vide-poche"
+    },
+    {
+      "id": "e_vide_poche",
+      "voice": "f",
+      "text": "Je pose mes clés dans le vide-poche."
+    },
+    {
+      "id": "w_vase",
+      "voice": "f",
+      "text": "le vase"
+    },
+    {
+      "id": "e_vase",
+      "voice": "f",
+      "text": "Les fleurs sont dans le vase."
     }
   ]
 }

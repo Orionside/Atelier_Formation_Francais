@@ -1,0 +1,165 @@
+{
+  "version": "20261018-11",
+  "files": [
+    {
+      "file": "assets/atelier18/cotton_jersey/neutral-mobile.webp",
+      "bytes": 3610,
+      "sha256": "31cacdf5a6dfc0233ee64bc75932153d5503b3cf145903b74f03836e70de4e6a"
+    },
+    {
+      "file": "assets/atelier18/cotton_jersey/neutral.webp",
+      "bytes": 295946,
+      "sha256": "48208ef86de9c41a0c9076f0b48d9305166916f957c8b36675d2a35763317ef5"
+    },
+    {
+      "file": "assets/atelier18/cotton_jersey/nor_gl-mobile.webp",
+      "bytes": 27656,
+      "sha256": "a471891229818cd0a0d53e2f285f3853698a56cc7b196e6d33661ec5c4a08c08"
+    },
+    {
+      "file": "assets/atelier18/cotton_jersey/nor_gl.webp",
+      "bytes": 509676,
+      "sha256": "69d1e37e9f19c30460fee702b562f9d4209b7bc2a90149f3dee436a21960f943"
+    },
+    {
+      "file": "assets/atelier18/cotton_jersey/rough-mobile.webp",
+      "bytes": 182728,
+      "sha256": "a2adce2709c211fe0799574e6f518e4a9539376b2bfec6578a1d60eb1f3b61b7"
+    },
+    {
+      "file": "assets/atelier18/cotton_jersey/rough.webp",
+      "bytes": 1047880,
+      "sha256": "21174068bcb656e0d3f16ab40cdb6242f1f6661844f77b4688c40597e9e6ccdc"
+    },
+    {
+      "file": "assets/atelier18/foliage.glb",
+      "bytes": 674948,
+      "sha256": "b486aa666db1d624809fa549010d2e312e495c9d9b179d767deceae51911b71c"
+    },
+    {
+      "file": "assets/atelier18/rough_linen/neutral-mobile.webp",
+      "bytes": 81944,
+      "sha256": "4fc48fcb23a094547fbd9b86a338303046d2e1d0bcfc6467545ee756629cd8b7"
+    },
+    {
+      "file": "assets/atelier18/rough_linen/neutral.webp",
+      "bytes": 625348,
+      "sha256": "528828c93e980c189a405246285395e840a944269db42a94b8030d2accdb7ce4"
+    },
+    {
+      "file": "assets/atelier18/rough_linen/nor_gl-mobile.webp",
+      "bytes": 170284,
+      "sha256": "b92ecdce0329bb5e70f6199a43790c69e2919c365d8aa9d003bfe1057188cb4e"
+    },
+    {
+      "file": "assets/atelier18/rough_linen/nor_gl.webp",
+      "bytes": 898388,
+      "sha256": "852031b83a6b9259460143f4af5287862ad027a10f5102686d25aac952393dcc"
+    },
+    {
+      "file": "assets/atelier18/rough_linen/rough-mobile.webp",
+      "bytes": 260536,
+      "sha256": "cc1d68b3c1190e84cd8dd61092316d096a9da0466880a88fc0a92fa8bb452a36"
+    },
+    {
+      "file": "assets/atelier18/rough_linen/rough.webp",
+      "bytes": 1259252,
+      "sha256": "b23629219754566be083e8cc14f599dbafe4aaf70ed8a1256f677d3067a62406"
+    },
+    {
+      "file": "assets/atelier18/sources.json",
+      "bytes": 1844,
+      "sha256": "7824a233152854a60ae8021e5a1c679f9bfc0724b9bec091d2d537efefd88215"
+    },
+    {
+      "file": "assets/atelier18/terry_cloth/neutral-mobile.webp",
+      "bytes": 69688,
+      "sha256": "4ff7c9a04bc9eff657545d3d00a552dba756a9c69afffd5d5052de838e5585d6"
+    },
+    {
+      "file": "assets/atelier18/terry_cloth/neutral.webp",
+      "bytes": 448310,
+      "sha256": "d45186850e8bf490f56dae56a37dddb10ba3c3483bdcc3aea0a769f65d14b06d"
+    },
+    {
+      "file": "assets/atelier18/terry_cloth/nor_gl-mobile.webp",
+      "bytes": 236924,
+      "sha256": "5c852122a48d4e433e97c026607601b40331083996ea7441c0ec68d783d56aec"
+    },
+    {
+      "file": "assets/atelier18/terry_cloth/nor_gl.webp",
+      "bytes": 894184,
+      "sha256": "ef6d8bede978ce709b6acc5230a332abe3b44f15e4cdc25eddd50cae0b55bad5"
+    },
+    {
+      "file": "assets/atelier18/terry_cloth/rough-mobile.webp",
+      "bytes": 229190,
+      "sha256": "cf81b30d810d3f5b25a27ebd6ef055e8d494006ec6eabe11f901c54b66cad547"
+    },
+    {
+      "file": "assets/atelier18/terry_cloth/rough.webp",
+      "bytes": 971992,
+      "sha256": "92af23738ed3d73b771509d4b1623b0be11f03c9a14d857692577e2bde35f253"
+    },
+    {
+      "file": "assets/atelier18/velour_velvet/neutral-mobile.webp",
+      "bytes": 46544,
+      "sha256": "2fbe31a00177cc59940693179a9e9e2f27ffeb046938f4edd3144abd3810e9ff"
+    },
+    {
+      "file": "assets/atelier18/velour_velvet/neutral.webp",
+      "bytes": 428748,
+      "sha256": "825adc1ec85f5d17a3b13b40dbabb8951712cb5eeda9683f19f7ca82f695bff6"
+    },
+    {
+      "file": "assets/atelier18/velour_velvet/nor_gl-mobile.webp",
+      "bytes": 76062,
+      "sha256": "970d7c144f7cb7722feeb82046ddad1864195d674e902553e7c3b87e5cd22fdb"
+    },
+    {
+      "file": "assets/atelier18/velour_velvet/nor_gl.webp",
+      "bytes": 444614,
+      "sha256": "a73b39bc5ed03c1b1473f38c03a1b2cf3995fc8fa2546b43108b9475036ea296"
+    },
+    {
+      "file": "assets/atelier18/velour_velvet/rough-mobile.webp",
+      "bytes": 231360,
+      "sha256": "0e08a822757dd5af9dfb3c1b5cc3910c3b1c5bea773940d3d01c253e92f52c7f"
+    },
+    {
+      "file": "assets/atelier18/velour_velvet/rough.webp",
+      "bytes": 1048684,
+      "sha256": "acad2ba932266e139e083041363292639a412ddadfa379702a1edf54bb58ac57"
+    },
+    {
+      "file": "assets/atelier18/wool_boucle/neutral-mobile.webp",
+      "bytes": 98048,
+      "sha256": "3ef93e6f1ce74d93184c49054f451278e459949cc0b53a4e5c5ec087cc0b51ad"
+    },
+    {
+      "file": "assets/atelier18/wool_boucle/neutral.webp",
+      "bytes": 357464,
+      "sha256": "c951826c52f24b853b504ed8c5d6c5c2e922e87c421ba1169d6d9528c23a02ba"
+    },
+    {
+      "file": "assets/atelier18/wool_boucle/nor_gl-mobile.webp",
+      "bytes": 173186,
+      "sha256": "9146ff6329b2db20bb0c5419da99ab6aac4ec21bcb44fd6a56eeb990a715c0e3"
+    },
+    {
+      "file": "assets/atelier18/wool_boucle/nor_gl.webp",
+      "bytes": 678854,
+      "sha256": "50b93d516793e5fcc1fabe8734eb0bc5557b51365f9c016babbbe01a36c56078"
+    },
+    {
+      "file": "assets/atelier18/wool_boucle/rough-mobile.webp",
+      "bytes": 209906,
+      "sha256": "b8b8c4a8e3d688b46ed365bc16eea6733b4c472f7f128a819f07574be2d7244a"
+    },
+    {
+      "file": "assets/atelier18/wool_boucle/rough.webp",
+      "bytes": 899314,
+      "sha256": "1b55cb8223e7b1ccea351bf9cfa5cf623da68319e6cb471fcdcfd734ff80792f"
+    }
+  ]
+}

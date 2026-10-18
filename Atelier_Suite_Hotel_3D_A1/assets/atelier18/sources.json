@@ -1,0 +1,45 @@
+[
+  {
+    "id": "terry_cloth",
+    "source": "https://polyhaven.com/a/terry_cloth",
+    "license": "CC0-1.0",
+    "author": "colormass (photography), Rico Cilliers (processing)",
+    "derivatives": "WebP 1536px et variante 768px, albédo neutre dérivé ; normal OpenGL et rugosité conservés"
+  },
+  {
+    "id": "cotton_jersey",
+    "source": "https://polyhaven.com/a/cotton_jersey",
+    "license": "CC0-1.0",
+    "author": "colormass (photography), Rico Cilliers (processing)",
+    "derivatives": "WebP 1536px et variante 768px, albédo neutre dérivé ; normal OpenGL et rugosité conservés"
+  },
+  {
+    "id": "wool_boucle",
+    "source": "https://polyhaven.com/a/wool_boucle",
+    "license": "CC0-1.0",
+    "author": "colormass (photography), Rico Cilliers (processing)",
+    "derivatives": "WebP 1536px et variante 768px, albédo neutre dérivé ; normal OpenGL et rugosité conservés"
+  },
+  {
+    "id": "rough_linen",
+    "source": "https://polyhaven.com/a/rough_linen",
+    "license": "CC0-1.0",
+    "author": "colormass (photography), Rico Cilliers (processing)",
+    "derivatives": "WebP 1536px et variante 768px, albédo neutre dérivé ; normal OpenGL et rugosité conservés"
+  },
+  {
+    "id": "velour_velvet",
+    "source": "https://polyhaven.com/a/velour_velvet",
+    "license": "CC0-1.0",
+    "author": "colormass (photography), Rico Cilliers (processing)",
+    "derivatives": "WebP 1536px et variante 768px, albédo neutre dérivé ; normal OpenGL et rugosité conservés"
+  },
+  {
+    "id": "anthurium_botany_01",
+    "type": "model",
+    "source": "https://polyhaven.com/a/anthurium_botany_01",
+    "license": "CC0-1.0",
+    "author": "Rob Tuytel (scan), Rico Cilliers (model)",
+    "derivatives": "alpha intégré, textures WebP1024, Meshopt ; un spécimen normalisé et réutilisé pour le feuillage du bouquet"
+  }
+]
