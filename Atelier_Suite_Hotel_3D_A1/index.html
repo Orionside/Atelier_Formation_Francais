@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Marcellus&display=swap">
-<link rel="stylesheet" href="style.css?v=20261018-11">
+<link rel="stylesheet" href="style.css?v=20261018-12">
 
 </head>
 <body>
@@ -81,7 +81,7 @@
 
 <!-- dialogue à la réception -->
 <section class="dlg" id="dlg" hidden aria-live="polite">
-  <div class="dlg-who"><span class="avatar">L</span><span><b>Louise</b><small>réceptionniste</small></span>
+  <div class="dlg-who"><span class="avatar avatar-louise" role="img" aria-label="Louise, réceptionniste"></span><span><b>Louise</b><small>réceptionniste</small></span>
     <button class="btn btn-ghost" id="dlgReplay"><svg class="ic"><use href="#i-sound"/></svg>Réécouter</button>
     <button class="x" id="dlgX" title="Fermer"><svg class="ic"><use href="#i-x"/></svg></button></div>
   <p class="dlg-line" id="dlgLine"></p>
@@ -160,7 +160,7 @@
     if (el && /three|import|module|WebGL/i.test(String(e.message))) { el.hidden = false; el.textContent = "La 3D ne peut pas démarrer sur cet appareil ou ce navigateur. Essayez avec Chrome, Safari ou Firefox à jour."; }
   });
 </script>
-<script type="module" src="app.js?v=20261018-11"></script>
+<script type="module" src="app.js?v=20261018-12"></script>
 
 </body>
 </html>

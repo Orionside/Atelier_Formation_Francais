@@ -1,5 +1,5 @@
 {
-  "version": "20261018-11",
+  "version": "20261018-12",
   "files": [
     {
       "file": "assets/photoreal/Fabric061/diff.webp",
@@ -63,33 +63,33 @@
     },
     {
       "file": "assets/photoreal/lighting/geometry.glb",
-      "bytes": 12516424,
-      "sha256": "7899c4b2a4eaca5e552b189c2a3ff8c282a49f5427304ed068269a360da9f0fe"
+      "bytes": 12979808,
+      "sha256": "0f348695aa0486a9a9fce146f035408aa1840eac06c9c927052c5bdce144989c"
     },
     {
       "file": "assets/photoreal/lighting/lobby-mobile.webp",
-      "bytes": 239278,
-      "sha256": "5685a02d45649c76bb9821dfb9baba21c47a10dd1f5a88ded61bd852b2280d9f"
+      "bytes": 217534,
+      "sha256": "34ab7a6adc3fe5ff40db05ee0f2d211f37b484b121b3dd2b41477b58f8033665"
     },
     {
       "file": "assets/photoreal/lighting/lobby.webp",
-      "bytes": 635076,
-      "sha256": "903b40d95ad9016aa45b240fd6df59979e2940406ec2c9bac750504b1dc718cb"
+      "bytes": 559058,
+      "sha256": "86ed4372efaac39de2ab5c459f5700b177bd2e170e02c73fde221587f4b948c3"
     },
     {
       "file": "assets/photoreal/lighting/settings.json",
       "bytes": 191,
-      "sha256": "16cbc9c223d574a7fa76b56c07a34a9ced6e97d890851122bf5eea2f72805a50"
+      "sha256": "be05e364b1e8077a5612ce5e44262533c6a167c6db8d735aea5752e0dd929a43"
     },
     {
       "file": "assets/photoreal/lighting/suite-mobile.webp",
-      "bytes": 666298,
-      "sha256": "cf46c277b610a9e5dd4abb55920f2c5eddb129028b647e7e35a49175e83e49d8"
+      "bytes": 705918,
+      "sha256": "60f2af8ae4f31f77a46681d17aae1e6ecf80a9d633f11d55dbd31ac91a51dd18"
     },
     {
       "file": "assets/photoreal/lighting/suite.webp",
-      "bytes": 1704778,
-      "sha256": "e9e8ee90b51956bd45ee936b15dc1c231491371f832125286327ae26e2cd488d"
+      "bytes": 1796364,
+      "sha256": "123b54a3f2aadd1e3e995b2e7b86c26576dd83348a44cc59116fab1da02b8bb3"
     },
     {
       "file": "assets/photoreal/models/cushion.glb",

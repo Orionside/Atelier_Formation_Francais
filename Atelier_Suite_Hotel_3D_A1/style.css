@@ -194,6 +194,7 @@ kbd { font-family: var(--font-b); font-size: 12px; font-weight: 700; padding: 2p
 
 /* ---------- dialogue ---------- */
 .dlg {
+  box-sizing: border-box;
   position: fixed; z-index: 25; left: 50%; transform: translateX(-50%); bottom: calc(92px + var(--sb)); width: min(620px, calc(100vw - 24px));
   background: var(--glass-strong); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px 16px 16px;
 }
@@ -202,6 +203,7 @@ kbd { font-family: var(--font-b); font-size: 12px; font-weight: 700; padding: 2p
 .dlg-who small { color: var(--ink-soft); }
 .dlg-who .btn { margin-left: auto; padding: 6px 11px; font-size: 13px; }
 .avatar { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--gold-soft); font-family: var(--font-d); font-size: 18px; }
+.avatar-louise { flex-shrink: 0; background: #e9e3d8 url('assets/characters/louise-receptionniste-v1.webp') center -2px / 190px auto no-repeat; }
 .dlg-line { font-size: 19px; margin: 10px 0 12px; }
 .dlg-choices { display: grid; gap: 6px; }
 .choice { text-align: left; border: 1.5px solid var(--line); background: #fff; border-radius: 12px; padding: 10px 14px; font-size: 16px; }

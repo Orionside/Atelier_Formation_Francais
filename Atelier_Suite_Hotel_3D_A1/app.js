@@ -1,19 +1,20 @@
 
 import * as THREE from 'three';
-import { realism } from './realism.js?v=20261018-11';
-import { createInspector } from './inspection.js?v=20261018-11';
+import { realism } from './realism.js?v=20261018-12';
+import { createInspector } from './inspection.js?v=20261018-12';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261018-11';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261018-12';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261018-11';
-import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261018-11';
-import {exteriorLearning} from './exteriors.js?v=20261018-11';
-import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261018-11';
+import { createDiscovery } from './discovery.js?v=20261018-12';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261018-12';
+import {exteriorLearning} from './exteriors.js?v=20261018-12';
+import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261018-12';
+import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261018-12';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -608,15 +609,19 @@ function buildLobby() {
     gl.userData.pass = true;
   }
   B(16, 0.08, 0.12, MAT.blackMetal, 0, 2.9, 30, g);
-  // mur du logo : lattes de noyer
-  for (let x = -5.9; x <= 5.9; x += 0.18) B(0.09, H - 0.2, 0.06, MAT.walnut, x, 0.1, 43.88, g, { cast: false });
+  // Pierre claire mate : un fond continu et calme pour lire le nom de l'hôtel.
+  const backdrop=std({color:0xe6ded0,roughness:.94,normalMap:MAT.plasterWarm.normalMap,normalScale:new THREE.Vector2(.025,.025)});
+  B(12, H-.2, .12, backdrop, 0, .1, 43.88, g, {cast:false});
+  for(const x of [-6,6])B(.016,H-.2,.014,MAT.brass,x,.1,43.809,g,{cast:false});
   const logo = signMesh(5.2, 1.3, (ctx, w, h) => {
     ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = '#d8b56a'; ctx.textAlign = 'center';
+    ctx.fillStyle = '#94703d'; ctx.textAlign = 'center';
     ctx.font = `${h * 0.18}px ${FONT_D}`; ctx.fillText('★ ★ ★ ★', w / 2, h * 0.24);
+    ctx.fillStyle = '#263b39';
     ctx.font = `${h * 0.42}px ${FONT_D}`; ctx.fillText('PALACE HÔTEL', w / 2, h * 0.68);
+    ctx.fillStyle = '#465650';
     ctx.font = `${h * 0.14}px ${FONT_D}`; ctx.fillText('HÔTEL · FORT-DE-FRANCE', w / 2, h * 0.92);
-  }, g, 0, 2.95, 43.8, PI, 0.35);
+  }, g, 0, 2.95, 43.8, PI);
   logo.material.transparent = true;
   reg(logo, 'reception');
 
@@ -1608,7 +1613,7 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261018-11').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261018-12').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}
@@ -2493,9 +2498,9 @@ function loop() {
   MAT.lagoon.normalMap.offset.set(-t * 0.003, t * 0.005);
   if (DYN.recep) {
     const r = DYN.recep, h = r.userData.head;
-    r.position.y = Math.sin(t * 1.4) * 0.004;
     const a = Math.atan2(P.x - r.position.x, -(P.z - r.position.z));
-    h.rotation.y += (clamp(-a, -0.7, 0.7) - h.rotation.y) * 0.05;
+    if(r.userData.photographic)r.rotation.y=PI-clamp(a,-.65,.65);
+    else if(h){r.position.y = Math.sin(t * 1.4) * 0.004;h.rotation.y += (clamp(-a, -0.7, 0.7) - h.rotation.y) * 0.05;}
   }
   if (DYN.shower.on) { const p = DYN.shower.drops.geometry.attributes.position; for (let i = 0; i < p.count; i += 2) { let y = p.getY(i) - dt * 5; if (y < 0.12) y = 2.5; p.setY(i, y); p.setY(i + 1, y - 0.12); } p.needsUpdate = true; }
   stepTV(dt); stepAC(dt);
@@ -2526,6 +2531,7 @@ async function init() {
   await photographicMaterials(MAT,renderer);
   const preparedPhoto=await preparePhotoreal(MAT,renderer,scene,pmrem,LOW);
   const atelierMaterials=await prepareAtelier(MAT,renderer,LOW);
+  const receptionist=await prepareReceptionist(renderer);
   const assetResult=await loadPalaceAssets((n,total)=>btn.textContent=`Préparer le mobilier… ${n}/${total}`);
   if(assetResult.failures.length)throw new Error('Le mobilier ne se charge pas : '+assetResult.failures.join(', '));
   buildLobby(); buildCorridor(); buildSuite();
@@ -2533,6 +2539,7 @@ async function init() {
   installPalace({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW});
   installPhotoreal({INTER,STATIC,MAT,B,C,L,G,REAL,reg,DYN,LOW},preparedPhoto);
   installAtelier({INTER,STATIC,MAT,B,C,L,S,G,REAL,reg,DYN,LIGHTS,LOW},atelierMaterials);
+  installReceptionist(DYN.recep,receptionist);
   indexLightingMeshes(STATIC);
   updateExterior=exteriorLearning({STATIC,INTER,MAT,G,B,C,REAL,reg,openModal,closeModal,inspectObject,VOC,say,stopAudio});
   hemi.intensity=.20;

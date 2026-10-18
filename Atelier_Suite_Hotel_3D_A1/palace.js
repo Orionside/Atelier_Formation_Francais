@@ -38,8 +38,10 @@ export function installPalace(api){
  function replace(r,id,size,offset=[0,0,0],ry=0){const n=model(id,size,offset,ry);if(!n)return;for(const c of [...r.children])r.remove(c);r.add(n);delete r.userData.inspectionSource;r.userData.asset=id;r.userData.inspectionYaw=.35;bind(r);}
  for(const r of roots('canape'))replace(r,'sofa_02',[2.3,.93,.87]);
  for(const r of roots('canape_hall')){const groups=r.children.filter(c=>c.isGroup&&Math.abs(c.position.z)>1);for(const so of groups)replace(so,'sofa_02',[2.4,.95,.9]);bind(r);}
- for(const [i,r] of roots('fauteuil').entries())replace(r,i%2?'modern_arm_chair_01':'ArmChair_01',[.79,1.02,.78]);
- for(const r of roots('chaise'))replace(r,r.userData.outdoor?'modern_arm_chair_01':'dining_chair_02',r.userData.outdoor?[.57,.93,.58]:[.49,1.03,.52]);
+ // Ces scans regardent vers +Z ; la scène place ses assises face à -Z.
+ // Corriger le modèle local conserve les ancrages, les obstacles et les cibles.
+ for(const [i,r] of roots('fauteuil').entries())replace(r,i%2?'modern_arm_chair_01':'ArmChair_01',[.79,1.02,.78],[0,0,0],PI);
+ for(const r of roots('chaise'))replace(r,r.userData.outdoor?'modern_arm_chair_01':'dining_chair_02',r.userData.outdoor?[.57,.93,.58]:[.49,1.03,.52],[0,0,0],PI);
  for(const r of roots('table_basse'))replace(r,'modern_coffee_table_01',[1.06,.435,.78]);
  for(const r of roots('lampe_bureau')){const lights=r.children.filter(c=>c.isLight);replace(r,'desk_lamp_arm_01',[.28,.47,.32]);for(const l of lights)r.add(l);}
  for(const r of roots('suspension'))replace(r,'modern_ceiling_lamp_01',[.45,1.05,.45],[0,-1.10,0]);

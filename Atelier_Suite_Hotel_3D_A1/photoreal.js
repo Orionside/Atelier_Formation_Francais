@@ -46,7 +46,12 @@ function clone(o,MAT){
 }
 export function installPhotoreal({INTER,STATIC,MAT,REAL,reg,B,C,G,DYN},prepared){
  const roots=id=>INTER.filter(r=>r.userData.vid===id);
- const model=id=>clone(library.get(id),MAT);
+ const model=id=>{
+  const n=clone(library.get(id),MAT);
+  // Le canapé photographique regarde vers +Z, inverse de la convention du décor.
+  if(id==='sofa'){const g=new THREE.Group();g.rotation.y=Math.PI;g.add(n);return g;}
+  return n;
+ };
  function bind(r){r.traverse(m=>{if(m.isMesh)m.userData.root=r;});}
  function replace(r,n){r.clear();r.add(n);delete r.userData.inspectionSource;bind(r);}
  for(const r of roots('canape')){replace(r,model('sofa'));r.userData.inspectionYaw=.3;}
@@ -84,8 +89,8 @@ export function installPhotoreal({INTER,STATIC,MAT,REAL,reg,B,C,G,DYN},prepared)
 // Index stable de géométries : utilisé par les UV d'éclairage préparés dans Cycles.
 export function indexLightingMeshes(STATIC){let i=0;STATIC.traverse(o=>{if(o.isMesh)o.userData.pmId='pm_'+String(i++).padStart(5,'0');});}
 export async function applyBakedLighting(STATIC,LOW){
- const settings=await fetch(base+'lighting/settings.json?v=atelier18-final1').then(r=>{if(!r.ok)throw new Error('Cartes d’éclairage indisponibles');return r.json();});
- const [data,...maps]=await Promise.all([loader.loadAsync(base+'lighting/geometry.glb?v=atelier18-final1'),...['suite','lobby'].map(id=>textures.loadAsync(base+'lighting/'+settings[id][LOW?'mobile':'file']+'?v=atelier18-final1'))]);
+ const settings=await fetch(base+'lighting/settings.json?v=reception12').then(r=>{if(!r.ok)throw new Error('Cartes d’éclairage indisponibles');return r.json();});
+ const [data,...maps]=await Promise.all([loader.loadAsync(base+'lighting/geometry.glb?v=reception12'),...['suite','lobby'].map(id=>textures.loadAsync(base+'lighting/'+settings[id][LOW?'mobile':'file']+'?v=reception12'))]);
  const lightTextures={suite:maps[0],lobby:maps[1]};for(const t of maps){t.channel=1;t.flipY=false;t.colorSpace=THREE.SRGBColorSpace;}
  const byId=new Map();data.scene.updateMatrixWorld(true);STATIC.updateMatrixWorld(true);data.scene.traverse(o=>{if(o.isMesh&&o.userData.pmId)byId.set(o.userData.pmId,{object:o,region:o.userData.lightRegion});});
  let n=0;
