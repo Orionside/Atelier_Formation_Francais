@@ -1,6 +1,6 @@
 # Armoire et objets d’entrée — 20 octobre 2026
 
-Version des modules et de la banque audio : `20261020-2`.
+Version des modules et de la banque audio : `20261020-3`.
 
 - Vocabulaire : « l’armoire », féminin, remplace « le placard » ; phrases des cintres et du coffre-fort corrigées. « Le porte-valise » remplace le libellé du porte-bagages. Ajout des tiroirs, des sous-vêtements et des chaussettes : 99 mots.
 - Audio : 317 lectures au manifeste. Douze lectures nouvelles ou remplacées, avec la référence féminine Qwen A1 existante. Transcription Whisper conforme ; écart phonétique calculé nul pour les douze lectures. Contrôle des 317 textes, voix, empreintes et décodages MP3. Il ne s’agit pas d’une certification par écoute humaine.

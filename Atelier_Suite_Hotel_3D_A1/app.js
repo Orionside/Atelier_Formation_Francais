@@ -1,22 +1,22 @@
 
 import * as THREE from 'three';
-import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261020-2';
-import {createWardrobeController} from './wardrobe-state.js?v=20261020-2';
-import { realism } from './realism.js?v=20261020-2';
-import { createInspector } from './inspection.js?v=20261020-2';
+import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261020-3';
+import {createWardrobeController} from './wardrobe-state.js?v=20261020-3';
+import { realism } from './realism.js?v=20261020-3';
+import { createInspector } from './inspection.js?v=20261020-3';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261020-2';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261020-3';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261020-2';
-import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261020-2';
-import {exteriorLearning} from './exteriors.js?v=20261020-2';
-import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261020-2';
-import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261020-2';
+import { createDiscovery } from './discovery.js?v=20261020-3';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261020-3';
+import {exteriorLearning} from './exteriors.js?v=20261020-3';
+import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261020-3';
+import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261020-3';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -1625,7 +1625,7 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261020-2',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261020-3',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}

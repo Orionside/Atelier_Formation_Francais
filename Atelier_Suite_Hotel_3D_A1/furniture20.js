@@ -1,6 +1,22 @@
 import * as THREE from 'three';
 
 const BASE='assets/references20/';
+// Le masque de clic suit le même détourage que le matériau, pour laisser les clés accessibles.
+function photographRaycast(object,texture,kind){
+ const canvas=document.createElement('canvas');canvas.width=texture.image.width;canvas.height=texture.image.height;
+ const context=canvas.getContext('2d',{willReadFrequently:true});context.drawImage(texture.image,0,0);
+ const pixels=context.getImageData(0,0,canvas.width,canvas.height).data,raycast=object.raycast;
+ const linear=v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;};
+ const smooth=(a,b,x)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t);};
+ object.raycast=function(ray,hits){
+  const candidates=[];raycast.call(this,ray,candidates);
+  for(const hit of candidates){
+   const x=Math.min(canvas.width-1,Math.max(0,Math.floor(hit.uv.x*canvas.width))),y=Math.min(canvas.height-1,Math.max(0,Math.floor((1-hit.uv.y)*canvas.height))),index=(y*canvas.width+x)*4;
+   const r=linear(pixels[index]),g=linear(pixels[index+1]),b=linear(pixels[index+2]),hi=Math.max(r,g,b),lo=Math.min(r,g,b);
+   if(kind==='vase'?Math.max(smooth(.045,.10,hi-lo),1-smooth(.28,.42,hi))>=.05:lo<=.97)hits.push(hit);
+  }
+ };
+}
 export async function prepareFurniture20(){
  const loader=new THREE.TextureLoader(),textures={};
  await Promise.all(Object.entries({wardrobe:'armoire-madox.jpg',rack:'porte-valise.webp',vase:'vase-tulipes.jpg',keys:'cles.jpg'}).map(async([id,file])=>{
@@ -116,7 +132,7 @@ export function installFurniture20({INTER,MAT,B,C,L,G,REAL,reg,DYN,ST},textures)
    diffuseColor.a*=max(smoothstep(.045,.10,hi-lo),1.-smoothstep(.28,.42,hi));
    if(diffuseColor.a<.05)discard;`);};
   mat.customProgramCacheKey=()=> 'tulips-neutral-background-v1';
-  const bouquet=new THREE.Sprite(mat);bouquet.scale.set(.57,.57,1);bouquet.center.set(.5,0);flowers.add(bouquet);reg(flowers,'fleurs');reference(flowers,'vase-tulipes.jpg');
+  const bouquet=new THREE.Sprite(mat);bouquet.scale.set(.57,.57,1);bouquet.center.set(.5,0);photographRaycast(bouquet,textures.vase,'vase');flowers.add(bouquet);reg(flowers,'fleurs');reference(flowers,'vase-tulipes.jpg');
   const vase=G(flowers);B(.19,.25,.15,new THREE.MeshBasicMaterial({visible:false}),0,0,0,vase);reg(vase,'vase');vase.userData.photo=BASE+'vase-tulipes.jpg';
   flowers.userData.photo=BASE+'vase-tulipes.jpg';bind(flowers);bind(vase);
  }
@@ -125,7 +141,7 @@ export function installFurniture20({INTER,MAT,B,C,L,G,REAL,reg,DYN,ST},textures)
   const mat=new THREE.MeshBasicMaterial({map:textures.keys,transparent:true,side:THREE.DoubleSide,toneMapped:false});
   mat.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
    if(min(diffuseColor.r,min(diffuseColor.g,diffuseColor.b))>.97)discard;`);};mat.customProgramCacheKey=()=> 'keys-white-background-v1';
-  const photo=new THREE.Mesh(new THREE.PlaneGeometry(.15,.17),mat);photo.rotation.x=-Math.PI/2;keys.add(photo);reference(keys,'cles.jpg');keys.userData.photo=BASE+'cles.jpg';bind(keys);
+  const photo=new THREE.Mesh(new THREE.PlaneGeometry(.15,.17),mat);photo.rotation.x=-Math.PI/2;photographRaycast(photo,textures.keys,'keys');keys.add(photo);reference(keys,'cles.jpg');keys.userData.photo=BASE+'cles.jpg';bind(keys);
   keys.visible=!ST.found.cles;
  }
 }
