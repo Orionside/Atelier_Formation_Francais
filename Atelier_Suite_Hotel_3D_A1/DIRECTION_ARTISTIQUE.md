@@ -33,3 +33,8 @@ Les modèles précédents sont enrichis ou remplacés par `atelier18.js`. Blende
 Les 93 mots précédents restent accessibles. Trois entrées ajoutées rendent les nouveaux éléments cliquables : « la console d'entrée », « le vide-poche » et « le vase ». Chaque entrée possède un mot et une phrase, générés avec la même référence féminine Qwen3-TTS A1. Les 305 lectures précédentes sont conservées ; la banque comprend désormais 311 fichiers et 96 mots.
 
 Le décor reste une reconstitution 3D pédagogique avec matières photographiques ; ce n'est pas une captation photographique intégrale d'un hôtel existant.
+# Révision du 20 octobre 2026 — armoire et accessoires d’entrée
+
+La référence Madox remplace l’armoire précédente : bois clair, trois travées, penderies, linge plié et bloc de trois tiroirs à droite. Le cadrage de la photographie est conservé dans les textures de l’intérieur et des façades ; les tiroirs et les portes vitrées possèdent leur volume et leur mouvement. Les deux tiroirs supérieurs contiennent des sous-vêtements ; le tiroir inférieur contient six chaussettes. La dépendance portes → tiroirs, puis tiroirs → portes, s’applique aussi pendant les animations.
+
+Le porte-valise reprend le plateau brun, les côtés pleins et les bandes inox du modèle demandé. À l’entrée, le bouquet tropical cède la place à la photographie exacte des tulipes roses et du vase vert ; les clés sont celles de la nouvelle image, avec anneau argenté et étiquette brune. Leurs fichiers photographiques restent intacts, et leur fond est masqué par les matériaux d’affichage. Ces deux objets sont des surfaces photographiques, et non des volumes reconstruits.

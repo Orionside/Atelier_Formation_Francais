@@ -1,5 +1,15 @@
 # Suite 14 · Palace Hôtel — A1
 
+## Révision du 20 octobre 2026
+
+L’armoire remplace le terme « placard » dans le lexique, les phrases et les lectures. Le support compte maintenant 99 mots et 317 lectures : trois entrées ajoutent les tiroirs, les sous-vêtements et les chaussettes. Douze lectures ont été produites ou remplacées avec la référence féminine A1 existante.
+
+L’armoire reprend la disposition et les surfaces photographiques de la référence Madox transmise. Deux portes vitrées s’ouvrent ; chacun des trois tiroirs peut ensuite coulisser, avec des sous-vêtements dans les deux premiers et des chaussettes dans le dernier. Les commandes attendent la fin des animations : il faut ouvrir les portes avant les tiroirs et refermer tous les tiroirs avant les portes. Ces commandes existent dans la carte de l’objet et dans **Fiche → Lexique → l’armoire**.
+
+Le porte-valise est reconstruit avec les panneaux bruns et les bandes inox du modèle fourni. Le bouquet et les clés utilisent directement leurs photographies, avec transparence calculée à l’affichage. Les quatre fichiers originaux sont conservés dans `assets/references20/` ; leur origine et leur empreinte figurent dans `sources.json`. Le gros plan permet aussi d’afficher la photo du modèle de l’armoire et du porte-valise.
+
+`furniture20.js` installe ces objets après l’application de l’éclairage existant ; `wardrobe-state.js` gère les contraintes de mouvement. Contrôles : `python3 scripts/verifier.py` et `node scripts/verifier_armoire.mjs`.
+
 Visite 3D pour adultes débutants, avec vocabulaire, phrases, dialogue à la réception et petites activités. La suite et ses équipements sont une situation fictive enrichie à partir de l'unité « Bon séjour ! » ; ils ne constituent pas une reproduction du document d'origine.
 
 ## Version du 16 octobre 2026

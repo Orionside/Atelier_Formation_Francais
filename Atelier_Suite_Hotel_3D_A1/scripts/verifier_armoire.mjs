@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {createWardrobeController} from '../wardrobe-state.js';
+
+const state={wardrobeOpen:false},pending=[];
+const dynamic={wardDoors:[1,-1].map(s=>({s,hinge:{rotation:{y:0}}})),
+ wardDrawers:Array.from({length:3},()=>({group:{position:{z:-.263}},closedZ:-.263,open:false,moving:false}))};
+const controller=createWardrobeController(state,dynamic,(from,to,duration,set,done)=>pending.push(()=>{set(to);done();}));
+const finish=()=>{while(pending.length)pending.shift()();};
+assert.match(controller.act('drawer:0'),/Ouvrez d’abord/);
+assert.equal(dynamic.wardDrawers[0].open,false);
+controller.act('wardrobe');
+assert.equal(state.wardrobeMoving,true);
+assert.match(controller.act('drawer:1'),/complètement/);
+assert.match(controller.act('wardrobe'),/mouvement/);
+finish();
+assert.equal(controller.controls().filter(c=>c.disabled).length,0);
+for(let i=0;i<3;i++)controller.act('drawer:'+i);
+assert.match(controller.act('wardrobe'),/trois tiroirs/);
+assert.match(controller.act('drawer:0'),/mouvement/);
+finish();
+assert(dynamic.wardDrawers.every(d=>d.group.position.z===d.closedZ-.39));
+for(let i=0;i<3;i++)controller.act('drawer:'+i);
+assert.match(controller.act('wardrobe'),/trois tiroirs/);
+finish();
+assert(dynamic.wardDrawers.every(d=>d.group.position.z===d.closedZ));
+controller.act('wardrobe');
+assert.match(controller.act('drawer:2'),/Ouvrez d’abord/);
+finish();
+assert.equal(state.wardrobeOpen,false);
+assert(dynamic.wardDoors.every(d=>d.hinge.rotation.y===0));
+console.log('Contraintes portes/tiroirs, animations et clics répétés : valides.');

@@ -491,14 +491,14 @@
       "text": "La porte-fenêtre donne sur le balcon."
     },
     {
-      "id": "w_placard",
+      "id": "w_armoire",
       "voice": "f",
-      "text": "le placard"
+      "text": "l’armoire"
     },
     {
-      "id": "e_placard",
+      "id": "e_armoire",
       "voice": "f",
-      "text": "Il y a un grand placard."
+      "text": "Il y a une grande armoire."
     },
     {
       "id": "w_cintres",
@@ -508,7 +508,7 @@
     {
       "id": "e_cintres",
       "voice": "f",
-      "text": "Il y a des cintres dans le placard."
+      "text": "Il y a des cintres dans l’armoire."
     },
     {
       "id": "w_coffre",
@@ -518,17 +518,17 @@
     {
       "id": "e_coffre",
       "voice": "f",
-      "text": "Il y a un coffre-fort dans le placard."
+      "text": "Il y a un coffre-fort dans l’armoire."
     },
     {
       "id": "w_porte_bagages",
       "voice": "f",
-      "text": "le porte-bagages"
+      "text": "le porte-valise"
     },
     {
       "id": "e_porte_bagages",
       "voice": "f",
-      "text": "La valise est sur le porte-bagages."
+      "text": "La valise est sur le porte-valise."
     },
     {
       "id": "w_tableau",
@@ -1554,6 +1554,36 @@
       "id": "e_vase",
       "voice": "f",
       "text": "Les fleurs sont dans le vase."
+    },
+    {
+      "id": "w_tiroirs",
+      "voice": "f",
+      "text": "les tiroirs"
+    },
+    {
+      "id": "e_tiroirs",
+      "voice": "f",
+      "text": "J’ouvre les tiroirs de l’armoire."
+    },
+    {
+      "id": "w_sous_vetements",
+      "voice": "f",
+      "text": "les sous-vêtements"
+    },
+    {
+      "id": "e_sous_vetements",
+      "voice": "f",
+      "text": "Les sous-vêtements sont dans les tiroirs."
+    },
+    {
+      "id": "w_chaussettes",
+      "voice": "f",
+      "text": "les chaussettes"
+    },
+    {
+      "id": "e_chaussettes",
+      "voice": "f",
+      "text": "Les chaussettes sont dans le tiroir du bas."
     }
   ]
 }

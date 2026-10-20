@@ -1,20 +1,22 @@
 
 import * as THREE from 'three';
-import { realism } from './realism.js?v=20261018-12';
-import { createInspector } from './inspection.js?v=20261018-12';
+import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261020-2';
+import {createWardrobeController} from './wardrobe-state.js?v=20261020-2';
+import { realism } from './realism.js?v=20261020-2';
+import { createInspector } from './inspection.js?v=20261020-2';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261018-12';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261020-2';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261018-12';
-import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261018-12';
-import {exteriorLearning} from './exteriors.js?v=20261018-12';
-import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261018-12';
-import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261018-12';
+import { createDiscovery } from './discovery.js?v=20261020-2';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261020-2';
+import {exteriorLearning} from './exteriors.js?v=20261020-2';
+import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261020-2';
+import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261020-2';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -525,6 +527,14 @@ const UPDATERS = [];
 const STATE_REF = { doorOpen: false, slideOpen: false, wardrobeOpen: false };
 const LIGHTS = {};      // lampes commutables
 const DYN = {};         // références dynamiques (TV, clim, portes…)
+const wardrobeController=createWardrobeController(STATE_REF,DYN,tween,refreshWardrobeControls);
+function refreshWardrobeControls(){
+ const controls=wardrobeController.controls();
+ document.querySelectorAll('[data-ward-action]').forEach(b=>{const c=controls.find(c=>c.action===b.dataset.wardAction);if(c){b.textContent=c.label;b.disabled=c.disabled;}});
+ const status=document.querySelector('#wardrobeStatus');if(status)status.textContent=STATE_REF.wardrobeMoving?'Les portes sont en mouvement…':STATE_REF.wardrobeOpen?'Fermez les trois tiroirs avant de fermer les portes.':'Ouvrez les portes pour accéder aux tiroirs.';
+}
+function wardrobeButtons(){return '<div class="wardrobe-actions">'+wardrobeController.controls().map(c=>'<button class="btn" data-ward-action="'+c.action+'" '+(c.disabled?'disabled':'')+'>'+c.label+'</button>').join('')+'</div>';}
+function bindWardrobeButtons(parent){parent.querySelectorAll('[data-ward-action]').forEach(b=>b.onclick=()=>doAct(b.dataset.wardAction));refreshWardrobeControls();}
 
 /* ---------- petits objets réutilisables ---------- */
 function canvasPanel(w, h, draw, pw = 512) {
@@ -1146,7 +1156,7 @@ function buildSuite() {
   B(0.09, 0.09, 0.015, std({ color: 0xf7f7f5 }), 0, 0, 0, th);
   reg(th, 'climatisation', { act: 'clim' });
 
-  // --- placard (portes battantes), cintres, coffre-fort
+  // --- armoire (portes battantes), cintres, coffre-fort
   const ward = G(g, -3.2, 0, 3.15);
   B(2.4, 2.6, 0.03, MAT.lacquer, 0, 0, 0.285, ward);
   B(0.03, 2.6, 0.6, MAT.lacquer, -1.185, 0, 0, ward); B(0.03, 2.6, 0.6, MAT.lacquer, 1.185, 0, 0, ward);
@@ -1178,16 +1188,18 @@ function buildSuite() {
     B(0.015, 0.5, 0.025, MAT.brass, s * 1.1, 0.95, -0.03, hinge).position.x = s * 1.1;
     DYN.wardDoors.push({ hinge, s });
   });
-  reg(ward, 'placard', { act: 'wardrobe' });
-  obst(-4.4, 2.83, -2.0, 3.48);
-  obst(-4.4, 1.55, -2.0, 2.83, () => STATE_REF.wardrobeOpen);
+  reg(ward, 'armoire', { act: 'wardrobe' });
+  obst(-4.4, 2.83, -1.5, 3.48);
+  obst(-4.48, 1.35, -4.28, 2.88, () => STATE_REF.wardrobeOpen);
+  obst(-1.62, 1.35, -1.42, 2.88, () => STATE_REF.wardrobeOpen);
+  obst(-4.34, 2.43, -3.62, 2.90, () => DYN.wardDrawers?.some(d=>d.open||d.moving));
   // porte-bagages + valise
   const rack = G(g, -1.4, 0, 3.08);
   [[-0.32, -0.2], [0.32, -0.2], [-0.32, 0.2], [0.32, 0.2]].forEach(([x, z]) => C(0.015, 0.015, 0.5, MAT.walnut, x, 0, z, rack, { seg: 8 }));
   [-0.12, 0.12].forEach(z => B(0.7, 0.02, 0.05, MAT.leather, 0, 0.5, z, rack));
   reg(rack, 'porte_bagages');
   reg(suitcase(g, -1.4, 0.52, 3.08, std({ color: 0xd9604a, metalness: 0.2, roughness: 0.4 }), PI / 2 + 0.05), 'valise');
-  obst(-1.8, 2.82, -1.0, 3.35);
+  obst(-1.46, 2.82, -.65, 3.35);
   // console d'entrée + fleurs
   const ec = G(g, 1.95, 0, 3.3);
   B(0.9, 0.82, 0.3, MAT.walnut, 0, 0, 0, ec);
@@ -1613,7 +1625,7 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261018-12').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261020-2',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}
@@ -1847,13 +1859,13 @@ function clickAt(x, y) {
 const ZONE_NAME = DATA.zones;
 const GENDER = { m: 'masculin', f: 'féminin', pl: 'pluriel' };
 function artHTML(w, g) {
-  const m = w.match(/^(le |la |les |un |une |des |l')(.*)$/);
+  const m = w.match(/^(le |la |les |un |une |des |l['’])(.*)$/);
   if (!m) return esc(w);
-  const a = m[1].trim(), sep = m[1].endsWith("'") ? '' : ' ';
+  const a = m[1].trim(), sep = /['’]$/.test(m[1]) ? '' : ' ';
   return `<span class="art g-${g}">${esc(a)}</span>${sep}${esc(m[2])}`;
 }
 function genderLine(w, g) {
-  const elided = /^l'/.test(w);
+  const elided = /^l['’]/.test(w);
   return `<span class="dot bg-${g}"></span>${GENDER[g]}${elided ? " · l' devant une voyelle" : ''}`;
 }
 let cardVid = null, cardRoot = null;
@@ -1886,6 +1898,9 @@ function showCard(vid, act, root) {
   $('#cardSayE').hidden = !v.ex;
   const b = $('#cardAct');
   if (act && actLabel(act)) { b.hidden = false; b.textContent = actLabel(act); b.dataset.act = act; } else b.hidden = true;
+  let controls=$('#cardWardrobe');if(!controls){controls=document.createElement('div');controls.id='cardWardrobe';c.append(controls);}
+  controls.hidden=vid!=='armoire'&&vid!=='tiroirs';
+  if(!controls.hidden){controls.innerHTML='<p id="wardrobeStatus" class="wardrobe-status"></p>'+wardrobeButtons();b.hidden=true;bindWardrobeButtons(controls);}
   c.hidden = false;
   $('#cardCloseup').onclick=()=>inspectObject(root || INTER.find(r=>r.userData.vid===vid),v);
 }
@@ -1938,6 +1953,8 @@ function collect(root) {
   const o = OBJ[id];
   cardVid = 'obj:' + id;
   const c = $('#card'); c.classList.add('found');
+  if($('#cardWardrobe'))$('#cardWardrobe').hidden=true;
+  $('#cardCloseup').onclick=()=>inspectObject(root,{id,w:OBJ[id].w,ex:"J’ai "+OBJ[id].w+' !'});
   $('#cardZone').textContent = 'Objet trouvé';
   $('#cardWord').innerHTML = artHTML(o.w, o.g);
   $('#cardGender').innerHTML = genderLine(o.w, o.g);
@@ -1953,12 +1970,13 @@ function collect(root) {
 /* ---------- actions ---------- */
 const ON = { chevet: false, lampadaire: false, bureau: false };
 function actLabel(act) {
+  if(act.startsWith('drawer:')){const d=DYN.wardDrawers?.[Number(act.split(':')[1])];return (d?.open?'Fermer':'Ouvrir')+' le tiroir';}
   if (act.startsWith('lamp:')) return ON[act.slice(5)] ? 'Éteindre' : 'Allumer';
   return ({
     tv: DYN.tv.on ? 'Éteindre la télé' : 'Allumer la télé',
     clim: DYN.ac.on ? 'Arrêter la clim' : 'Allumer la clim',
     curtains: curtainsClosed ? 'Ouvrir les rideaux' : 'Fermer les rideaux',
-    wardrobe: STATE_REF.wardrobeOpen ? 'Fermer le placard' : 'Ouvrir le placard',
+    wardrobe: STATE_REF.wardrobeOpen ? 'Fermer l’armoire' : 'Ouvrir l’armoire',
     slide: STATE_REF.slideOpen ? 'Fermer la porte-fenêtre' : 'Ouvrir la porte-fenêtre',
     door: STATE_REF.doorOpen ? 'Fermer la porte' : 'Ouvrir la porte',
     shower: DYN.shower.on ? "Fermer l'eau" : "Ouvrir l'eau",
@@ -1968,6 +1986,7 @@ function actLabel(act) {
 }
 let curtainsClosed = false;
 function doAct(act, silent) {
+  if(act==='wardrobe'||act.startsWith('drawer:')){const message=wardrobeController.act(act);if(message)toast(message);return;}
   if (act.startsWith('lamp:')) { const n = act.slice(5); ON[n] = !ON[n]; setLamp(n, ON[n]); fx.click(); return; }
   switch (act) {
     case 'tv': DYN.tv.on = !DYN.tv.on; DYN.tv.t = 99; DYN.tv.mat.emissiveIntensity = DYN.tv.on ? 1 : 0; drawTV(); if (DYN.tv.on) setTimeout(() => say('ui_loto'), 900); break;
@@ -1979,8 +1998,6 @@ function doAct(act, silent) {
     }
     case 'curtains': curtainsClosed = !curtainsClosed;
       DYN.curtains.forEach(c => tween(c.m.scale.x, curtainsClosed ? 1 : c.open, 1.4, v => c.m.scale.x = v)); break;
-    case 'wardrobe': STATE_REF.wardrobeOpen = !STATE_REF.wardrobeOpen;
-      DYN.wardDoors.forEach(d => tween(d.hinge.rotation.y, STATE_REF.wardrobeOpen ? d.s * 1.75 : 0, 0.9, v => d.hinge.rotation.y = v)); break;
     case 'slide': {
       if (STATE_REF.slideOpen && Math.abs(P.z + 3) < 0.6 && Math.abs(P.x) < 1) return;
       STATE_REF.slideOpen = !STATE_REF.slideOpen;
@@ -2481,10 +2498,11 @@ let lastRender=0;
 let updateDiscovery=()=>{};
 function loop() {
   const now=performance.now();if(now-lastRender<(LOW?50:33)){requestAnimationFrame(loop);return;}lastRender=now;
-  if(document.hidden || document.querySelector('#objectView')){clock.getDelta();requestAnimationFrame(loop);return;}
   const dt = Math.min(0.05, clock.getDelta()), t = clock.elapsedTime;
-  if (started) updateMove(dt);
+  if(document.hidden){requestAnimationFrame(loop);return;}
   stepTweens(dt);
+  if(document.querySelector('#objectView')){requestAnimationFrame(loop);return;}
+  if (started) updateMove(dt);
   camera.position.set(P.x, P.eye + Math.sin(P.bob) * 0.018, P.z);
   camera.rotation.set(P.pitch, P.yaw, 0);
   // ombre du soleil centrée sur le joueur
@@ -2523,6 +2541,7 @@ async function init() {
   if (IS_TOUCH) { document.querySelectorAll('.how[data-dev=desktop]').forEach(e => e.hidden = true); document.querySelectorAll('.how .verb').forEach(e => e.textContent = 'Toucher'); }
   else document.querySelectorAll('.how[data-dev=touch]').forEach(e => e.hidden = true);
   load();
+  if(ST.seen.placard)ST.seen.armoire=1;
   ST.voice='reference-a1';loadPack();
   try { await Promise.race([Promise.all([document.fonts.load('40px Marcellus'), document.fonts.load('20px "Atkinson Hyperlegible"')]), wait(2500)]); } catch (e) { }
   await wait(30);
@@ -2531,6 +2550,7 @@ async function init() {
   await photographicMaterials(MAT,renderer);
   const preparedPhoto=await preparePhotoreal(MAT,renderer,scene,pmrem,LOW);
   const atelierMaterials=await prepareAtelier(MAT,renderer,LOW);
+  const furniture20=await prepareFurniture20();
   const receptionist=await prepareReceptionist(renderer);
   const assetResult=await loadPalaceAssets((n,total)=>btn.textContent=`Préparer le mobilier… ${n}/${total}`);
   if(assetResult.failures.length)throw new Error('Le mobilier ne se charge pas : '+assetResult.failures.join(', '));
@@ -2548,6 +2568,7 @@ async function init() {
   await applyBakedLighting(STATIC,LOW);
   installMirror(DYN,MAT,LOW);
   finishAtelier({INTER,MAT,LOW},atelierMaterials);
+  installFurniture20({INTER,MAT,B,C,L,G,REAL,reg,DYN,ST},furniture20);
   updateDiscovery=createDiscovery({scene:STATIC,camera,roots:INTER,vocab:VOC,select,visible:visibleChain,blocked:()=>!started||!$('#modalWrap').hidden||!$('#dlg').hidden});
   if (ST.key || ST.dlg >= DATA.dialogue.length) DYN.keyCard.visible = !ST.key;
   uiReady = true;
@@ -2567,7 +2588,7 @@ $('#btnStart').onclick = () => {
   if (!ST.key) { setTimeout(() => say('ui_bienvenue'), 400); setTimeout(() => toast('Cliquez sur la réceptionniste pour commencer.'), 600); }
 };
 $('#btnReset').onclick = resetAll;
-const inspectObject=createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env:ROOM_ENV,teleport,setFiche,getExamples:id=>INTER.filter(r=>r.userData.vid===id)});
+const inspectObject=createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env:ROOM_ENV,teleport,setFiche,wardrobeButtons,bindWardrobeButtons,getExamples:id=>INTER.filter(r=>r.userData.vid===id)});
 const REAL=realism(THREE,{B,C,L,S,G,mesh,MAT,TEX,LOW});
 init().catch(e => { console.error(e); const el = $('#introErr'); el.hidden = false; el.textContent = 'Erreur au chargement de la 3D : ' + e.message; });
 

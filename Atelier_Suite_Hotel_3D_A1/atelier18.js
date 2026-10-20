@@ -127,7 +127,7 @@ export function installAtelier({STATIC,INTER,MAT,REAL,B,C,L,S,G,reg,DYN,LIGHTS,L
   const lock=G(r,.207,.37,0);B(.008,.095,.052,metal,0,0,0,lock,{r:.004});for(let i=0;i<3;i++)B(.010,.014,.013,brushed,.006,.019+i*.020,0,lock,{r:.003});for(const y of [.30,.33])B(.026,.045,.003,brushed,.205,y,-.031,r,{r:.005});r.userData.inspectionYaw=.35;bind(r);
  }
  // Armoire : placage chaud, verres fumés, deux vantaux fonctionnels, étagères et LED intégrées.
- for(const r of roots('placard')){const keep=r.children.filter(c=>c.userData.vid||DYN.wardDoors.some(d=>d.hinge===c));for(const c of [...r.children])if(!keep.includes(c))r.remove(c);
+ for(const r of roots('armoire')){const keep=r.children.filter(c=>c.userData.vid||DYN.wardDoors.some(d=>d.hinge===c));for(const c of [...r.children])if(!keep.includes(c))r.remove(c);
   for(const x of [-1.18,1.18])B(.04,2.60,.60,MAT.walnut,x,0,0,r,{r:.004});for(const y of [.035,2.56])B(2.32,.035,.60,MAT.walnut,0,y,0,r,{r:.003});B(2.32,2.50,.024,MAT.oakFurn,0,.07,.278,r);B(.025,2.45,.55,MAT.walnut,.48,.10,0,r);
   rod(r,[-1.12,2.16,0],[.43,2.16,0],.012,brushed);
   for(const c of keep)if(c.userData.vid==='cintres'){c.position.x=-.29;c.scale.x=.74;}
@@ -164,7 +164,7 @@ export function installAtelier({STATIC,INTER,MAT,REAL,B,C,L,S,G,reg,DYN,LIGHTS,L
  }
  // Éponge : panneaux d'un même vêtement, col plat et ceinture ruban plutôt que cordes.
  function robe(r){
-  clear(r);const inWardrobe=r.parent.userData.vid==='placard';if(inWardrobe){r.rotation.y=0;r.position.y=.72;}const g=G(r,inWardrobe?0:.13,0,0,inWardrobe?0:-P/2);const terry=MAT.towel;
+  clear(r);const inWardrobe=r.parent.userData.vid==='armoire';if(inWardrobe){r.rotation.y=0;r.position.y=.72;}const g=G(r,inWardrobe?0:.13,0,0,inWardrobe?0:-P/2);const terry=MAT.towel;
   const front=(u,v,side)=>{const y=1.77-v*1.13,waist=1-.10*Math.exp(-Math.pow((v-.43)/.17,2)),outer=side*(.255+.042*v)*waist,inner=side*(.085*Math.max(0,1-v*2.4)-.035*v);return[inner+(outer-inner)*u,y,-.105-(.005+v*.007)*Math.sin(u*P*4+v*1.3)-.005*Math.sin(u*14+v*18)*Math.exp(-Math.pow((v-.48)/.12,2))];};
   surface(g,40,72,(u,v)=>[(u-.5)*(.51+.09*v),1.77-v*1.13,.085+.016*Math.sin(u*P*9+v)],terry);
   for(const side of [-1,1]){surface(g,40,72,(u,v)=>front(u,v,side),terry);surface(g,18,56,(u,v)=>[side*(.255+.042*v),1.77-v*1.13,-.105+u*.19+.003*Math.sin(v*17)],terry);surface(g,24,24,(u,v)=>[side*(.085+u*.18),1.79-u*.06+.006*Math.sin(v*P),-.105+v*.19],terry);

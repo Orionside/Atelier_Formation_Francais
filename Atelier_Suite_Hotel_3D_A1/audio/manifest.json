@@ -1,6 +1,6 @@
 {
   "ready": true,
-  "version": "20261018-1",
+  "version": "20261020-2",
   "voices": {
     "f": {
       "start": 31.95,
@@ -706,20 +706,6 @@
       "duration": 2.673792,
       "sha256": "f060c826fb7793924cbb1abc73285d9b337f0e41e32825586ff4082ec8398cc8"
     },
-    "w_placard": {
-      "file": "audio/sons/w_placard.mp3",
-      "text": "le placard",
-      "voice": "f",
-      "duration": 1.330125,
-      "sha256": "ec9f9b4df3662706ae8ad53dbf7f931488619231bfa2814955524f90a7512df3"
-    },
-    "e_placard": {
-      "file": "audio/sons/e_placard.mp3",
-      "text": "Il y a un grand placard.",
-      "voice": "f",
-      "duration": 1.811292,
-      "sha256": "0427f1eeb9f5816e371e06b0596e6a034c5a648251f043ccab8778c47d6d1a9d"
-    },
     "w_cintres": {
       "file": "audio/sons/w_cintres.mp3",
       "text": "les cintres",
@@ -729,10 +715,10 @@
     },
     "e_cintres": {
       "file": "audio/sons/e_cintres.mp3",
-      "text": "Il y a des cintres dans le placard.",
       "voice": "f",
-      "duration": 2.157042,
-      "sha256": "014b2dfd2e414a0c0dc449af154964d5a14a888f8f96c251818dcc9d0e0ac0cf"
+      "text": "Il y a des cintres dans l’armoire.",
+      "duration": 2.340083,
+      "sha256": "9cf6fd2f2c6ba41b0cb889e6b063f20f8582aaf8905ccda722947225f74a6aab"
     },
     "w_coffre": {
       "file": "audio/sons/w_coffre.mp3",
@@ -743,24 +729,24 @@
     },
     "e_coffre": {
       "file": "audio/sons/e_coffre.mp3",
-      "text": "Il y a un coffre-fort dans le placard.",
       "voice": "f",
-      "duration": 2.69925,
-      "sha256": "f6f8b616b884cdc3b8159bb1a7e9b0ae4893f682dcbf6fe0f1eb8260b8c35b21"
+      "text": "Il y a un coffre-fort dans l’armoire.",
+      "duration": 2.441667,
+      "sha256": "f228a0d3883c0037cdad0b38b8ae6a1a7b4ba1ed007d84a6c94693bab8127344"
     },
     "w_porte_bagages": {
       "file": "audio/sons/w_porte_bagages.mp3",
-      "text": "le porte-bagages",
       "voice": "f",
-      "duration": 1.62575,
-      "sha256": "2ff108e35b36f0d99b934963eba1f19a7d85ead08a09099dd4ac9ba1f2fd2548"
+      "text": "le porte-valise",
+      "duration": 1.430125,
+      "sha256": "de03190fa9ed0cb86dbc1cb83920a98fabd442d37d95e896f5af4fbff56f2483"
     },
     "e_porte_bagages": {
       "file": "audio/sons/e_porte_bagages.mp3",
-      "text": "La valise est sur le porte-bagages.",
       "voice": "f",
-      "duration": 2.330375,
-      "sha256": "713d5b937cb70a2a3d20c58daae3482cd3a7af0661547ed854924254aa8ea2a5"
+      "text": "La valise est sur le porte-valise.",
+      "duration": 2.38875,
+      "sha256": "a820043b8aa335731c631827658950ef1df59e6c06998f1bd93bc0c06fe5a330"
     },
     "w_tableau": {
       "file": "audio/sons/w_tableau.mp3",
@@ -2196,6 +2182,62 @@
       "text": "Les fleurs sont dans le vase.",
       "duration": 1.756917,
       "sha256": "c7e9b4779e45c8ced8c6d2284eda516d12cbde5cd4d343e0772d9e1228d60801"
+    },
+    "w_armoire": {
+      "file": "audio/sons/w_armoire.mp3",
+      "voice": "f",
+      "text": "l’armoire",
+      "duration": 1.01175,
+      "sha256": "971d59a46fd23c83db7e2b26ff7efafc0e8870c542cb3d76e24ac86c8bcfd005"
+    },
+    "e_armoire": {
+      "file": "audio/sons/e_armoire.mp3",
+      "voice": "f",
+      "text": "Il y a une grande armoire.",
+      "duration": 1.960167,
+      "sha256": "c71bc7f1b754d15e6225cc33b23ca75a13fbc6048b1459f3919d4410c151eb37"
+    },
+    "w_tiroirs": {
+      "file": "audio/sons/w_tiroirs.mp3",
+      "voice": "f",
+      "text": "les tiroirs",
+      "duration": 1.136792,
+      "sha256": "10cf55127058de39c05295afc1e2619a0fe6b4dd552c37cc3578843380818666"
+    },
+    "e_tiroirs": {
+      "file": "audio/sons/e_tiroirs.mp3",
+      "voice": "f",
+      "text": "J’ouvre les tiroirs de l’armoire.",
+      "duration": 2.108917,
+      "sha256": "54257d490880e57f3664a8a73832030871409aaa30f1899e969e51fd58672eab"
+    },
+    "w_sous_vetements": {
+      "file": "audio/sons/w_sous_vetements.mp3",
+      "voice": "f",
+      "text": "les sous-vêtements",
+      "duration": 1.310333,
+      "sha256": "532670873473ecd6031c71969babe256928393b4a4215d46fd6234c96bba8a71"
+    },
+    "e_sous_vetements": {
+      "file": "audio/sons/e_sous_vetements.mp3",
+      "voice": "f",
+      "text": "Les sous-vêtements sont dans les tiroirs.",
+      "duration": 2.077625,
+      "sha256": "4010959d91c0027e536e8b36bfe7edc0820c6c1ee2686f75d4b60dd3c2089160"
+    },
+    "w_chaussettes": {
+      "file": "audio/sons/w_chaussettes.mp3",
+      "voice": "f",
+      "text": "les chaussettes",
+      "duration": 1.235917,
+      "sha256": "a77b3aed893db161505fc02e79290acc010dddaef31dc76207d4fa6bf4a12e1b"
+    },
+    "e_chaussettes": {
+      "file": "audio/sons/e_chaussettes.mp3",
+      "voice": "f",
+      "text": "Les chaussettes sont dans le tiroir du bas.",
+      "duration": 2.240208,
+      "sha256": "0277c46e39a20b5050a07dd5cae42f4d820cda778ca76ccb81912d18de760d9d"
     }
   }
 }

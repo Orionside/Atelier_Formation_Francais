@@ -1,8 +1,8 @@
 {
   "summary": {
-    "identifiers": 311,
-    "distinct_readings": 311,
-    "total_distinct_seconds": 545.4,
+    "identifiers": 317,
+    "distinct_readings": 317,
+    "total_distinct_seconds": 555.1,
     "model": "Qwen3-TTS 1.7B Base MLX",
     "references": {
       "f": {
@@ -23,7 +23,7 @@
       }
     },
     "checks": "Transcription Whisper, contenu critique, signal et comparaison acoustique. Pas de certification à l’écoute humaine.",
-    "revision": "Palace Hôtel : 6 nouvelles lectures, mêmes références A1. Contrôle de transcription et signal, contrôle phonétique ciblé."
+    "revision": "Palace Hôtel : 12 nouvelles lectures, mêmes références A1. Contrôle de transcription et signal, contrôle phonétique ciblé."
   },
   "units": {
     "u000": {
@@ -3786,86 +3786,6 @@
         "semantic_alert": null
       }
     },
-    "u098": {
-      "take": "u098-xvec-8bit-g421",
-      "score": 0.11,
-      "text": "le placard",
-      "voice": "f",
-      "aliases": [
-        "w_placard"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "le placard",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 1.36,
-      "export_duration": 1.33,
-      "gain_db": -4.84,
-      "mp3_sha256": "ec9f9b4df3662706ae8ad53dbf7f931488619231bfa2814955524f90a7512df3",
-      "verification": {
-        "sha256": "5def44b574b4df0f26b445c09eab0565767121f5fd5cfa84853bcb1c4d2bdb16",
-        "duration": 1.36,
-        "speech_duration": 0.872,
-        "syllables_per_second": 3.44,
-        "peak": 0.8655,
-        "rms": 0.1539,
-        "f0": 204.3,
-        "final_pitch_change_semitones": -3.95,
-        "cap_hit": false,
-        "reference_similarity": 0.885,
-        "other_voice_similarity": 0.338,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "Le placard",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
-    "u099": {
-      "take": "u099-xvec-8bit-g421",
-      "score": 0.116,
-      "text": "Il y a un grand placard.",
-      "voice": "f",
-      "aliases": [
-        "e_placard"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "Il y a un grand placard.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 1.92,
-      "export_duration": 1.811,
-      "gain_db": -8.05,
-      "mp3_sha256": "0427f1eeb9f5816e371e06b0596e6a034c5a648251f043ccab8778c47d6d1a9d",
-      "verification": {
-        "sha256": "aa3001197b85d81aecd2df078af8b1e1916e2b81edb550296d866e23f2cec868",
-        "duration": 1.92,
-        "speech_duration": 1.261,
-        "syllables_per_second": 5.55,
-        "peak": 0.8914,
-        "rms": 0.2183,
-        "f0": 224.6,
-        "final_pitch_change_semitones": -4.12,
-        "cap_hit": false,
-        "reference_similarity": 0.882,
-        "other_voice_similarity": 0.33,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "Il y a un grand placard.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
     "u100": {
       "take": "u100-xvec-8bit-g421",
       "score": 0.208,
@@ -3906,46 +3826,6 @@
         "semantic_alert": null
       }
     },
-    "u101": {
-      "take": "u101-xvec-8bit-g421",
-      "score": 0.042,
-      "text": "Il y a des cintres dans le placard.",
-      "voice": "f",
-      "aliases": [
-        "e_cintres"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "Il y a des cintres dans le placard.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 2.16,
-      "export_duration": 2.157,
-      "gain_db": -6.41,
-      "mp3_sha256": "014b2dfd2e414a0c0dc449af154964d5a14a888f8f96c251818dcc9d0e0ac0cf",
-      "verification": {
-        "sha256": "a4363829a4fc5ecd5e8e9e273a486e3da41ca1a7a0cc28a70672384828ff9482",
-        "duration": 2.16,
-        "speech_duration": 1.656,
-        "syllables_per_second": 5.44,
-        "peak": 0.9274,
-        "rms": 0.1916,
-        "f0": 206.2,
-        "final_pitch_change_semitones": -3.35,
-        "cap_hit": false,
-        "reference_similarity": 0.919,
-        "other_voice_similarity": 0.361,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "Il y a des cintres dans le placard.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
     "u102": {
       "take": "u102-xvec-8bit-g421",
       "score": 0.0,
@@ -3981,126 +3861,6 @@
         "text_alert": false,
         "signal_alert": false,
         "recognized": "Le coffre-fort.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
-    "u103": {
-      "take": "u103-xvec-8bit-g421",
-      "score": 0.098,
-      "text": "Il y a un coffre-fort dans le placard.",
-      "voice": "f",
-      "aliases": [
-        "e_coffre"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "Il y a un coffre-fort dans le placard.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 2.8,
-      "export_duration": 2.699,
-      "gain_db": -7.64,
-      "mp3_sha256": "f6f8b616b884cdc3b8159bb1a7e9b0ae4893f682dcbf6fe0f1eb8260b8c35b21",
-      "verification": {
-        "sha256": "fd3a00588140794f59acc44e758ea84180e5cc2025a01f8cd3e8a307be2b6b2b",
-        "duration": 2.8,
-        "speech_duration": 2.224,
-        "syllables_per_second": 4.5,
-        "peak": 1.0,
-        "rms": 0.226,
-        "f0": 229.7,
-        "final_pitch_change_semitones": -6.71,
-        "cap_hit": false,
-        "reference_similarity": 0.891,
-        "other_voice_similarity": 0.362,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "Il y a un coffre-fort dans le placard.",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
-    "u104": {
-      "take": "u104-xvec-8bit-g421",
-      "score": 0.032,
-      "text": "le porte-bagages",
-      "voice": "f",
-      "aliases": [
-        "w_porte_bagages"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "le porte-bagages",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 1.68,
-      "export_duration": 1.626,
-      "gain_db": -6.54,
-      "mp3_sha256": "2ff108e35b36f0d99b934963eba1f19a7d85ead08a09099dd4ac9ba1f2fd2548",
-      "verification": {
-        "sha256": "ac52e45c894f221d48a57c0c6dabd4f731c75c7de51092b683284c943228b6f6",
-        "duration": 1.68,
-        "speech_duration": 1.122,
-        "syllables_per_second": 3.56,
-        "peak": 0.901,
-        "rms": 0.1864,
-        "f0": 196.2,
-        "final_pitch_change_semitones": 2.44,
-        "cap_hit": false,
-        "reference_similarity": 0.924,
-        "other_voice_similarity": 0.375,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "Le porte-bagages",
-        "text_difference": 0.0,
-        "word_difference": 0.0,
-        "semantic_alert": null
-      }
-    },
-    "u105": {
-      "take": "u105-xvec-8bit-g421",
-      "score": 0.008,
-      "text": "La valise est sur le porte-bagages.",
-      "voice": "f",
-      "aliases": [
-        "e_porte_bagages"
-      ],
-      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
-      "source_sha256": "35f11c7b609aa832d76b069d1a7a23c4392d49640b69b42b89c8e41b0c0988a1",
-      "mode": "xvec",
-      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
-      "seed": 421,
-      "spoken_input": "La valise est sur le porte-bagages.",
-      "source_take": null,
-      "segment": null,
-      "raw_duration": 2.4,
-      "export_duration": 2.33,
-      "gain_db": -7.24,
-      "mp3_sha256": "713d5b937cb70a2a3d20c58daae3482cd3a7af0661547ed854924254aa8ea2a5",
-      "verification": {
-        "sha256": "f1fc9101dac628cad83b55762dee6f42b2efebe850ffbcda867b507f1cee556c",
-        "duration": 2.4,
-        "speech_duration": 1.89,
-        "syllables_per_second": 4.76,
-        "peak": 0.8903,
-        "rms": 0.2119,
-        "f0": 217.3,
-        "final_pitch_change_semitones": -2.1,
-        "cap_hit": false,
-        "reference_similarity": 0.936,
-        "other_voice_similarity": 0.395,
-        "text_alert": false,
-        "signal_alert": false,
-        "recognized": "La valise est sur le porte-bagages.",
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
@@ -11950,6 +11710,330 @@
       "mp3_sha256": "c7e9b4779e45c8ced8c6d2284eda516d12cbde5cd4d343e0772d9e1228d60801",
       "export_duration": 1.757,
       "gain_db": -7.39
+    },
+    "armoire20_w_armoire": {
+      "id": "w_armoire",
+      "voice": "f",
+      "text": "l’armoire",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.04,
+      "sha256": "bbf76a0366a666ddc87c113eb94cd801094301ac40218bab3ad7f6a1771c4f2e",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.86,
+      "aliases": [
+        "w_armoire"
+      ],
+      "verification": {
+        "expected": "l’armoire",
+        "recognized": "L'armoire",
+        "sound_difference": 0.0,
+        "speech_duration": 0.54,
+        "peak": 0.9427,
+        "rms": 0.1526
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "971d59a46fd23c83db7e2b26ff7efafc0e8870c542cb3d76e24ac86c8bcfd005",
+      "export_duration": 1.012,
+      "gain_db": -5.89
+    },
+    "armoire20_e_armoire": {
+      "id": "e_armoire",
+      "voice": "f",
+      "text": "Il y a une grande armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.0,
+      "sha256": "8f5ac15253359349c68d3b6dce274e978fb340dd034da4b171bf2ab3b6ef2eac",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.2,
+      "aliases": [
+        "e_armoire"
+      ],
+      "verification": {
+        "expected": "Il y a une grande armoire.",
+        "recognized": "Il y a une grande armoire.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.446,
+        "peak": 0.9302,
+        "rms": 0.2579
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "c71bc7f1b754d15e6225cc33b23ca75a13fbc6048b1459f3919d4410c151eb37",
+      "export_duration": 1.96,
+      "gain_db": -9.02
+    },
+    "armoire20_e_cintres": {
+      "id": "e_cintres",
+      "voice": "f",
+      "text": "Il y a des cintres dans l’armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.4,
+      "sha256": "80414aecde988a580748eb02ec67557a83c7761830231507defa3935a0500afa",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.08,
+      "aliases": [
+        "e_cintres"
+      ],
+      "verification": {
+        "expected": "Il y a des cintres dans l’armoire.",
+        "recognized": "Il y a des cintres dans l'armoire.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.894,
+        "peak": 0.9451,
+        "rms": 0.2353
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "9cf6fd2f2c6ba41b0cb889e6b063f20f8582aaf8905ccda722947225f74a6aab",
+      "export_duration": 2.34,
+      "gain_db": -8.08
+    },
+    "armoire20_e_coffre": {
+      "id": "e_coffre",
+      "voice": "f",
+      "text": "Il y a un coffre-fort dans l’armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.48,
+      "sha256": "fc765c2a7b4e02616c98ff3b6321389e12b71dae6a93a4c81b512428798bf4f8",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.82,
+      "aliases": [
+        "e_coffre"
+      ],
+      "verification": {
+        "expected": "Il y a un coffre-fort dans l’armoire.",
+        "recognized": "Il y a un coffre-fort dans l'armoire.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.986,
+        "peak": 0.9608,
+        "rms": 0.2557
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "f228a0d3883c0037cdad0b38b8ae6a1a7b4ba1ed007d84a6c94693bab8127344",
+      "export_duration": 2.442,
+      "gain_db": -8.65
+    },
+    "armoire20_w_porte_bagages": {
+      "id": "w_porte_bagages",
+      "voice": "f",
+      "text": "le porte-valise",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.44,
+      "sha256": "d0590aa2d26fc5ad783151710a93c40e5dfdf2bdc44efa0594b269aac2ff0ee9",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.22,
+      "aliases": [
+        "w_porte_bagages"
+      ],
+      "verification": {
+        "expected": "le porte-valise",
+        "recognized": "le porte-valise",
+        "sound_difference": 0.0,
+        "speech_duration": 0.974,
+        "peak": 0.9959,
+        "rms": 0.2048
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "de03190fa9ed0cb86dbc1cb83920a98fabd442d37d95e896f5af4fbff56f2483",
+      "export_duration": 1.43,
+      "gain_db": -7.24
+    },
+    "armoire20_e_porte_bagages": {
+      "id": "e_porte_bagages",
+      "voice": "f",
+      "text": "La valise est sur le porte-valise.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.4,
+      "sha256": "9d922db5fde89fb1608f0e7c64ea111cf04f36c80e7af89e0a342e9ea27b9436",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.57,
+      "aliases": [
+        "e_porte_bagages"
+      ],
+      "verification": {
+        "expected": "La valise est sur le porte-valise.",
+        "recognized": "La valise est sur le porte-valise.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.936,
+        "peak": 1.0,
+        "rms": 0.2167
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "a820043b8aa335731c631827658950ef1df59e6c06998f1bd93bc0c06fe5a330",
+      "export_duration": 2.389,
+      "gain_db": -7.26
+    },
+    "armoire20_w_tiroirs": {
+      "id": "w_tiroirs",
+      "voice": "f",
+      "text": "les tiroirs",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.2,
+      "sha256": "35916fe97a51f85f025913e76ab0655f134649a7343f61af39b4579735002dda",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.61,
+      "aliases": [
+        "w_tiroirs"
+      ],
+      "verification": {
+        "expected": "les tiroirs",
+        "recognized": "les tiroirs,",
+        "sound_difference": 0.0,
+        "speech_duration": 0.63,
+        "peak": 0.8698,
+        "rms": 0.1336
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "10cf55127058de39c05295afc1e2619a0fe6b4dd552c37cc3578843380818666",
+      "export_duration": 1.137,
+      "gain_db": -4.84
+    },
+    "armoire20_e_tiroirs": {
+      "id": "e_tiroirs",
+      "voice": "f",
+      "text": "J’ouvre les tiroirs de l’armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.16,
+      "sha256": "31236ca4fcb9dbffff86171ba8494df4837675455ac16e843e046155d4e44c68",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.76,
+      "aliases": [
+        "e_tiroirs"
+      ],
+      "verification": {
+        "expected": "J’ouvre les tiroirs de l’armoire.",
+        "recognized": "J'ouvre les tiroirs de l'armoire.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.639,
+        "peak": 0.9104,
+        "rms": 0.2166
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "54257d490880e57f3664a8a73832030871409aaa30f1899e969e51fd58672eab",
+      "export_duration": 2.109,
+      "gain_db": -7.53
+    },
+    "armoire20_w_sous_vetements": {
+      "id": "w_sous_vetements",
+      "voice": "f",
+      "text": "les sous-vêtements",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.36,
+      "sha256": "3aa613e3c7d6c93a124ccb5a3b818fa0b72be130749b88bab7f41aa437b2923e",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 4.06,
+      "aliases": [
+        "w_sous_vetements"
+      ],
+      "verification": {
+        "expected": "les sous-vêtements",
+        "recognized": "Les sous-vêtements",
+        "sound_difference": 0.0,
+        "speech_duration": 0.817,
+        "peak": 0.9741,
+        "rms": 0.2154
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "532670873473ecd6031c71969babe256928393b4a4215d46fd6234c96bba8a71",
+      "export_duration": 1.31,
+      "gain_db": -8.41
+    },
+    "armoire20_e_sous_vetements": {
+      "id": "e_sous_vetements",
+      "voice": "f",
+      "text": "Les sous-vêtements sont dans les tiroirs.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.16,
+      "sha256": "abbfbfc11cf9b31599e3b241df84b3f1786ffa01b49ecd5dad55e623e6afe976",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.63,
+      "aliases": [
+        "e_sous_vetements"
+      ],
+      "verification": {
+        "expected": "Les sous-vêtements sont dans les tiroirs.",
+        "recognized": "Les sous-vêtements sont dans les tiroirs.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.613,
+        "peak": 0.9395,
+        "rms": 0.2259
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "4010959d91c0027e536e8b36bfe7edc0820c6c1ee2686f75d4b60dd3c2089160",
+      "export_duration": 2.078,
+      "gain_db": -7.93
+    },
+    "armoire20_w_chaussettes": {
+      "id": "w_chaussettes",
+      "voice": "f",
+      "text": "les chaussettes",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 1.28,
+      "sha256": "0493677f23cefc8589f417ce04a9caccde3c797fecb1c3e7ff72878fa17b862f",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 7.65,
+      "aliases": [
+        "w_chaussettes"
+      ],
+      "verification": {
+        "expected": "les chaussettes",
+        "recognized": "Les chaussettes",
+        "sound_difference": 0.0,
+        "speech_duration": 0.741,
+        "peak": 0.759,
+        "rms": 0.1387
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "a77b3aed893db161505fc02e79290acc010dddaef31dc76207d4fa6bf4a12e1b",
+      "export_duration": 1.236,
+      "gain_db": -5.47
+    },
+    "armoire20_e_chaussettes": {
+      "id": "e_chaussettes",
+      "voice": "f",
+      "text": "Les chaussettes sont dans le tiroir du bas.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 859,
+      "duration": 2.32,
+      "sha256": "86ed48bd29e3bc367a65d3b2411821cf59f792cb0a0aa18e5b2cb50de9a37301",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 5.36,
+      "aliases": [
+        "e_chaussettes"
+      ],
+      "verification": {
+        "expected": "Les chaussettes sont dans le tiroir du bas.",
+        "recognized": "Les chaussettes sont dans le tiroir du bas.",
+        "sound_difference": 0.0,
+        "speech_duration": 1.773,
+        "peak": 0.9107,
+        "rms": 0.2098
+      },
+      "phonetic_check": null,
+      "mp3_sha256": "0277c46e39a20b5050a07dd5cae42f4d820cda778ca76ccb81912d18de760d9d",
+      "export_duration": 2.24,
+      "gain_db": -7.34
     }
   }
 }
