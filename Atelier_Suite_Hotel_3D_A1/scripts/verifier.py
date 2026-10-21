@@ -4,7 +4,8 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 manifest=json.loads((root/'audio/manifest.json').read_text())
 plan=json.loads((root/'audio/plan.json').read_text())
-assert manifest['ready'] and len(manifest['clips'])==len(plan['clips'])==317
+assert manifest['ready'] and len(manifest['clips'])==len(plan['clips'])
+assert len({c['id'] for c in plan['clips']})==len(plan['clips'])
 assert set(manifest['clips'])=={c['id'] for c in plan['clips']}
 for c in plan['clips']:
  m=manifest['clips'][c['id']];path=(root/m['file']).resolve()
@@ -17,7 +18,7 @@ for p in root.glob('*.html'):
 code=(root/'app.js').read_text()
 assert not any(t in code for t in ['SpeechSynthesisUtterance','speechSynthesis.speak','voix-standard','voix-fournies'])
 data=json.loads(re.search(r'<script[^>]+id="data"[^>]*>(.*?)</script>',(root/'index.html').read_text(),re.S)[1])
-assert len(data['vocab'])==99
+assert len({v['id'] for v in data['vocab']})==len(data['vocab'])
 for v in data['vocab']:
  assert manifest['clips']['w_'+v['id']]['text']==v['w']
  assert manifest['clips']['e_'+v['id']]['text']==v['ex']
@@ -29,4 +30,4 @@ for asset in assets:
  for file in ([asset['file']] if asset['type']=='model' else asset['maps'].values()):
   path=root/file;assert path.exists() and path.stat().st_size>100
  if asset['type']=='model':assert (root/asset['file']).read_bytes()[:4]==b'glTF'
-print('317 textes, voix, empreintes et décodages valides ; 99 mots ; ressources PBR présentes ; aucun secours de voix système.')
+print(f"{len(manifest['clips'])} textes, voix, empreintes et décodages valides ; {len(data['vocab'])} mots ; ressources PBR présentes ; aucun secours de voix système.")

@@ -1,8 +1,8 @@
 {
   "summary": {
-    "identifiers": 317,
-    "distinct_readings": 317,
-    "total_distinct_seconds": 555.1,
+    "identifiers": 333,
+    "distinct_readings": 333,
+    "total_distinct_seconds": 596.8,
     "model": "Qwen3-TTS 1.7B Base MLX",
     "references": {
       "f": {
@@ -23,7 +23,7 @@
       }
     },
     "checks": "Transcription Whisper, contenu critique, signal et comparaison acoustique. Pas de certification à l’écoute humaine.",
-    "revision": "Palace Hôtel : 12 nouvelles lectures, mêmes références A1. Contrôle de transcription et signal, contrôle phonétique ciblé."
+    "revision": "21 octobre : 16 nouvelles lectures, 11 reprises ; audit phonétique des 317 lectures précédentes ; 400 ms de silence final ajouté sans recouper la parole. Anciennes prises conservées dans la provenance et dans une sauvegarde locale."
   },
   "units": {
     "u000": {
@@ -224,7 +224,8 @@
         "other_voice_similarity": 0.428,
         "text_alert": false,
         "signal_alert": false
-      }
+      },
+      "superseded_by": "armoire21_w_comptoir"
     },
     "u005": {
       "take": "u005-xvec-8bit-g421",
@@ -4104,7 +4105,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_e_lavabo"
     },
     "u112": {
       "take": "u112-xvec-8bit-g421",
@@ -4909,7 +4911,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_e_seche_cheveux"
     },
     "u132": {
       "take": "u132-xvec-8bit-g421",
@@ -5829,7 +5832,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_w_jus_orange"
     },
     "u155": {
       "take": "u155-xvec-8bit-g421",
@@ -5869,7 +5873,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_e_jus_orange"
     },
     "u156": {
       "take": "u156-xvec-8bit-g421",
@@ -5909,7 +5914,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_w_cafe"
     },
     "u157": {
       "take": "u157-xvec-8bit-g421",
@@ -6149,7 +6155,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_w_mb_jus"
     },
     "u163": {
       "take": "u163-xvec-8bit-g421",
@@ -6789,7 +6796,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_ow_mouchoirs"
     },
     "u179": {
       "take": "u179-xvec-8bit-g421",
@@ -7789,7 +7797,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_o_bouteille"
     },
     "u204": {
       "take": "u204-xvec-8bit-g421",
@@ -7909,7 +7918,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_ow_chewing_gums"
     },
     "u207": {
       "take": "u207-xvec-8bit-g421",
@@ -10309,7 +10319,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "armoire21_num_58"
     },
     "u268": {
       "take": "u268-xvec-8bit-g421",
@@ -12034,6 +12045,810 @@
       "mp3_sha256": "0277c46e39a20b5050a07dd5cae42f4d820cda778ca76ccb81912d18de760d9d",
       "export_duration": 2.24,
       "gain_db": -7.34
+    },
+    "armoire21_w_vetements": {
+      "id": "w_vetements",
+      "voice": "f",
+      "text": "les vêtements",
+      "synthesis_text": "les vêtements.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.2,
+      "sha256": "d594166fa0c341c45f2be55da1257396e810cf4b22065fbc556e46f143e8b5ab",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.78,
+      "aliases": [
+        "w_vetements"
+      ],
+      "verification": {
+        "take": "w_vetements-s937",
+        "recognized_text": "Les vêtements.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "levɛtmɑ̃",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "d594166fa0c341c45f2be55da1257396e810cf4b22065fbc556e46f143e8b5ab",
+        "mp3_sha256": "7de1903e86bd3492c8c4acce868668e3002114ca6b9cf204be2195e01b88535f",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.55
+      },
+      "active": true,
+      "mp3_sha256": "7de1903e86bd3492c8c4acce868668e3002114ca6b9cf204be2195e01b88535f"
+    },
+    "armoire21_e_vetements": {
+      "id": "e_vetements",
+      "voice": "f",
+      "text": "Les vêtements sont dans la penderie.",
+      "synthesis_text": "Les vêtements sont dans la penderie.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.0,
+      "sha256": "064dd6250278a9f2f11d8387a5f425c82880b508f448adf5703bb8906a6c61d4",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.9,
+      "aliases": [
+        "e_vetements"
+      ],
+      "verification": {
+        "take": "e_vetements-s937",
+        "recognized_text": "Les vêtements sont dans la penderie.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "levɛtmɑ̃sɔ̃dɑ̃lapɑ̃dʁi",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "064dd6250278a9f2f11d8387a5f425c82880b508f448adf5703bb8906a6c61d4",
+        "mp3_sha256": "a05e8d023206d0b20dbed2d2c636195719a4150e2f6c3796830f82e78d4e795e",
+        "final_padding_seconds": 0.4,
+        "gain_db": -8.54
+      },
+      "active": true,
+      "mp3_sha256": "a05e8d023206d0b20dbed2d2c636195719a4150e2f6c3796830f82e78d4e795e"
+    },
+    "armoire21_w_penderie": {
+      "id": "w_penderie",
+      "voice": "f",
+      "text": "la penderie",
+      "synthesis_text": "la penderie.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.12,
+      "sha256": "e6959df8c463e7c7e8ed30cecc9cbea7051afba892630d410550c5d5a9df7015",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.76,
+      "aliases": [
+        "w_penderie"
+      ],
+      "verification": {
+        "take": "w_penderie-s937",
+        "recognized_text": "La penderie",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lapɑ̃dʁi",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "e6959df8c463e7c7e8ed30cecc9cbea7051afba892630d410550c5d5a9df7015",
+        "mp3_sha256": "ea281d598b1c44286efc2f33d1249d6f0aaec0c207bc1320b986729031e46a27",
+        "final_padding_seconds": 0.4,
+        "gain_db": -8.78
+      },
+      "active": true,
+      "mp3_sha256": "ea281d598b1c44286efc2f33d1249d6f0aaec0c207bc1320b986729031e46a27"
+    },
+    "armoire21_e_penderie": {
+      "id": "e_penderie",
+      "voice": "f",
+      "text": "Je range mes vêtements dans la penderie.",
+      "synthesis_text": "Je range mes vêtements dans la penderie.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.32,
+      "sha256": "4aaf99cc636836988096476fdbb2d9af5ea3ee7598cafa0506dcdf823e753ca4",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.21,
+      "aliases": [
+        "e_penderie"
+      ],
+      "verification": {
+        "take": "e_penderie-s937",
+        "recognized_text": "Je range mes vêtements dans la penderie.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ʒəʁɑ̃ʒmevɛtmɑ̃dɑ̃lapɑ̃dʁi",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "4aaf99cc636836988096476fdbb2d9af5ea3ee7598cafa0506dcdf823e753ca4",
+        "mp3_sha256": "e5dc2639fe32ce867674cb9dd87d7a7f4cab095b1c4a9e98ab45ef830edf1a0d",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.28
+      },
+      "active": true,
+      "mp3_sha256": "e5dc2639fe32ce867674cb9dd87d7a7f4cab095b1c4a9e98ab45ef830edf1a0d"
+    },
+    "armoire21_w_pantalon": {
+      "id": "w_pantalon",
+      "voice": "f",
+      "text": "le pantalon",
+      "synthesis_text": "le pantalon.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.2,
+      "sha256": "2742e99ef945b8a636c4dcc10cd03e608abc7a4b35d28bb53f21cdcc817875c4",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.82,
+      "aliases": [
+        "w_pantalon"
+      ],
+      "verification": {
+        "take": "w_pantalon-s937",
+        "recognized_text": "Le pantalon.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ləpɑ̃talɔ̃",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "2742e99ef945b8a636c4dcc10cd03e608abc7a4b35d28bb53f21cdcc817875c4",
+        "mp3_sha256": "84551c0e2ff9b241b14a8bca4c648a4b5dd0f9512adfd1b7d039ee16caefe40b",
+        "final_padding_seconds": 0.4,
+        "gain_db": -8.81
+      },
+      "active": true,
+      "mp3_sha256": "84551c0e2ff9b241b14a8bca4c648a4b5dd0f9512adfd1b7d039ee16caefe40b"
+    },
+    "armoire21_e_pantalon": {
+      "id": "e_pantalon",
+      "voice": "f",
+      "text": "Le pantalon est dans l’armoire.",
+      "synthesis_text": "Le pantalon est dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.0,
+      "sha256": "d946cbca89d601f89f4ff64529fd82cade499b1894ad8e29fc6190f0b9efa90a",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.82,
+      "aliases": [
+        "e_pantalon"
+      ],
+      "verification": {
+        "take": "e_pantalon-s937",
+        "recognized_text": "Le pantalon est dans l'armoire.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ləpɑ̃talɔ̃ɛdɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "d946cbca89d601f89f4ff64529fd82cade499b1894ad8e29fc6190f0b9efa90a",
+        "mp3_sha256": "c2d4106efdfe1708b2b2e0541f08c61adb5a13d96d961cb5a1a43035d0328e69",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.26
+      },
+      "active": true,
+      "mp3_sha256": "c2d4106efdfe1708b2b2e0541f08c61adb5a13d96d961cb5a1a43035d0328e69"
+    },
+    "armoire21_w_cravates": {
+      "id": "w_cravates",
+      "voice": "f",
+      "text": "les cravates",
+      "synthesis_text": "les cravates.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.2,
+      "sha256": "c7080b19fae48deb89da00726bf357a07328b90cbe63c08eaf1a222602ce30b9",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.78,
+      "aliases": [
+        "w_cravates"
+      ],
+      "verification": {
+        "take": "w_cravates-s937",
+        "recognized_text": "les cravates,",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lekʁavat",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "c7080b19fae48deb89da00726bf357a07328b90cbe63c08eaf1a222602ce30b9",
+        "mp3_sha256": "abf9f45c464be9e261e7fdd20750f4f194ed067fce68bd62cf129bb2888a8872",
+        "final_padding_seconds": 0.4,
+        "gain_db": -6.11
+      },
+      "active": true,
+      "mp3_sha256": "abf9f45c464be9e261e7fdd20750f4f194ed067fce68bd62cf129bb2888a8872"
+    },
+    "armoire21_e_cravates": {
+      "id": "e_cravates",
+      "voice": "f",
+      "text": "Les cravates sont à côté des vêtements.",
+      "synthesis_text": "Les cravates sont à côté des vêtements.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.24,
+      "sha256": "c19b706582089bbe06ccfd0b6ca3d78d52170ec24046843ac738f9aa23250d4c",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.13,
+      "aliases": [
+        "e_cravates"
+      ],
+      "verification": {
+        "take": "e_cravates-s937",
+        "recognized_text": "Les cravates sont à côté des vêtements.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lekʁavatsɔ̃takotedevɛtmɑ̃",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "c19b706582089bbe06ccfd0b6ca3d78d52170ec24046843ac738f9aa23250d4c",
+        "mp3_sha256": "3c4a9447dd64c213ba5e38f8422f5d2d5c0e35355bc4f8cf13f389539d586e69",
+        "final_padding_seconds": 0.4,
+        "gain_db": -6.24
+      },
+      "active": true,
+      "mp3_sha256": "3c4a9447dd64c213ba5e38f8422f5d2d5c0e35355bc4f8cf13f389539d586e69"
+    },
+    "armoire21_w_boites_rangement": {
+      "id": "w_boites_rangement",
+      "voice": "f",
+      "text": "les boîtes de rangement",
+      "synthesis_text": "les boîtes de rangement.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.6,
+      "sha256": "547e70abe987cf01cd33b7cab2866be8b9c245a5f64b7ad9ac0de5a8849e0178",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.33,
+      "aliases": [
+        "w_boites_rangement"
+      ],
+      "verification": {
+        "take": "w_boites_rangement-s937",
+        "recognized_text": "les boîtes de rangement,",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lebwatdəʁɑ̃ʒmɑ̃",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "547e70abe987cf01cd33b7cab2866be8b9c245a5f64b7ad9ac0de5a8849e0178",
+        "mp3_sha256": "07f17a7a6532a5b0ee8bf5eced8c268d4b95663851733c1b7bcd647ca8a0de0a",
+        "final_padding_seconds": 0.4,
+        "gain_db": -6.74
+      },
+      "active": true,
+      "mp3_sha256": "07f17a7a6532a5b0ee8bf5eced8c268d4b95663851733c1b7bcd647ca8a0de0a"
+    },
+    "armoire21_e_boites_rangement": {
+      "id": "e_boites_rangement",
+      "voice": "f",
+      "text": "Les boîtes sont sur les étagères.",
+      "synthesis_text": "Les boîtes sont sur les étagères.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.24,
+      "sha256": "b244f853a0db03eb89a04d8691f6ba38f8409e2c8e6191c8136b7df5bfa37981",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.06,
+      "aliases": [
+        "e_boites_rangement"
+      ],
+      "verification": {
+        "take": "e_boites_rangement-s937",
+        "recognized_text": "Les boîtes sont sur les étagères.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lebwatsɔ̃syʁlezetaʒɛʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "b244f853a0db03eb89a04d8691f6ba38f8409e2c8e6191c8136b7df5bfa37981",
+        "mp3_sha256": "f2736459ed9b7f060b59eeeb7fbf1cbc0d3e1d6f2fecd5e298efb7ce368d0956",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.34
+      },
+      "active": true,
+      "mp3_sha256": "f2736459ed9b7f060b59eeeb7fbf1cbc0d3e1d6f2fecd5e298efb7ce368d0956"
+    },
+    "armoire21_w_etageres": {
+      "id": "w_etageres",
+      "voice": "f",
+      "text": "les étagères",
+      "synthesis_text": "les étagères.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.36,
+      "sha256": "15c88dde705f538372d7f7d0bf56b6a934c63e884dbc30bd7e4bebc8e6385af1",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.98,
+      "aliases": [
+        "w_etageres"
+      ],
+      "verification": {
+        "take": "w_etageres-s937",
+        "recognized_text": "les étagères,",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lezetaʒɛʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "15c88dde705f538372d7f7d0bf56b6a934c63e884dbc30bd7e4bebc8e6385af1",
+        "mp3_sha256": "b4a42656fd7688c89e46cc5d53b6aeb30c09ac4d2eb51a9a905a2bda125157d2",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.82
+      },
+      "active": true,
+      "mp3_sha256": "b4a42656fd7688c89e46cc5d53b6aeb30c09ac4d2eb51a9a905a2bda125157d2"
+    },
+    "armoire21_e_etageres": {
+      "id": "e_etageres",
+      "voice": "f",
+      "text": "Les serviettes sont sur les étagères.",
+      "synthesis_text": "Les serviettes sont sur les étagères.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.32,
+      "sha256": "a3b8676e0a43886d3a1c678d5f3c9c30191e2389177cdcbc8abb6bb372adacdb",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.98,
+      "aliases": [
+        "e_etageres"
+      ],
+      "verification": {
+        "take": "e_etageres-s937",
+        "recognized_text": "Les serviettes sont sur les étagères.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lesɛʁvjɛtsɔ̃syʁlezetaʒɛʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "a3b8676e0a43886d3a1c678d5f3c9c30191e2389177cdcbc8abb6bb372adacdb",
+        "mp3_sha256": "e21d2d12a49f56bed8bd31f412fd2e71a18289d51d4a4498d53c21771ae5bebc",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.34
+      },
+      "active": true,
+      "mp3_sha256": "e21d2d12a49f56bed8bd31f412fd2e71a18289d51d4a4498d53c21771ae5bebc"
+    },
+    "armoire21_w_mallette": {
+      "id": "w_mallette",
+      "voice": "f",
+      "text": "la mallette",
+      "synthesis_text": "la mallette.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.28,
+      "sha256": "2470a59e1a762b50d2332b291a2b3696d56024ace080e114b4c8a30603bc7dc5",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.85,
+      "aliases": [
+        "w_mallette"
+      ],
+      "verification": {
+        "take": "w_mallette-s937",
+        "recognized_text": "La mallette.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lamalɛt",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "2470a59e1a762b50d2332b291a2b3696d56024ace080e114b4c8a30603bc7dc5",
+        "mp3_sha256": "3614eb958477545031b02907e20501d09d76e481a33a800c55a0e63cbd860bdb",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.25
+      },
+      "active": true,
+      "mp3_sha256": "3614eb958477545031b02907e20501d09d76e481a33a800c55a0e63cbd860bdb"
+    },
+    "armoire21_e_mallette": {
+      "id": "e_mallette",
+      "voice": "f",
+      "text": "La mallette est dans l’armoire.",
+      "synthesis_text": "La mallette est dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.08,
+      "sha256": "432f0fdb1ea6a5a069c3b7ae084ed11366437eaaf5b17d791faf610819dba742",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.76,
+      "aliases": [
+        "e_mallette"
+      ],
+      "verification": {
+        "take": "e_mallette-s937",
+        "recognized_text": "La mallette est dans l'armoire.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "lamalɛtɛdɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "432f0fdb1ea6a5a069c3b7ae084ed11366437eaaf5b17d791faf610819dba742",
+        "mp3_sha256": "8138dcf95ca46cedff2ba8cf6b4da5b733bf1ff0231987ba3b3be4801632d341",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.46
+      },
+      "active": true,
+      "mp3_sha256": "8138dcf95ca46cedff2ba8cf6b4da5b733bf1ff0231987ba3b3be4801632d341"
+    },
+    "armoire21_w_draps": {
+      "id": "w_draps",
+      "voice": "f",
+      "text": "les draps",
+      "synthesis_text": "les draps.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 421,
+      "duration": 1.04,
+      "sha256": "6c608a6b1e444f99f423383d916e4ae2fd34105159f22212828f9ee8e9303ec0",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 7.27,
+      "aliases": [
+        "w_draps"
+      ],
+      "verification": {
+        "take": "w_draps-s421",
+        "recognized_text": "Les draps",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ledʁa",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "6c608a6b1e444f99f423383d916e4ae2fd34105159f22212828f9ee8e9303ec0",
+        "mp3_sha256": "d16a871e6396293a2233217cb659bb3c1aafb05eeff92b3098a33585f367d46f",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.67
+      },
+      "active": true,
+      "mp3_sha256": "d16a871e6396293a2233217cb659bb3c1aafb05eeff92b3098a33585f367d46f"
+    },
+    "armoire21_e_draps": {
+      "id": "e_draps",
+      "voice": "f",
+      "text": "Les draps sont pliés dans l’armoire.",
+      "synthesis_text": "Les draps sont pliés dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 421,
+      "duration": 1.92,
+      "sha256": "2d5349edeaefa028d956c9fb2b5a7de9d4712af87982e42f4331082276397ab2",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.87,
+      "aliases": [
+        "e_draps"
+      ],
+      "verification": {
+        "take": "e_draps-s421",
+        "recognized_text": "Les draps sont pliés dans l'armoire.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ledʁasɔ̃pliedɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "2d5349edeaefa028d956c9fb2b5a7de9d4712af87982e42f4331082276397ab2",
+        "mp3_sha256": "23ad5f3dc0ecc82ac6c684e99a05c777ec6fe896cd4579a0b6405a9204fb03be",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.78
+      },
+      "active": true,
+      "mp3_sha256": "23ad5f3dc0ecc82ac6c684e99a05c777ec6fe896cd4579a0b6405a9204fb03be"
+    },
+    "armoire21_w_comptoir": {
+      "id": "w_comptoir",
+      "voice": "f",
+      "text": "le comptoir",
+      "synthesis_text": "le comptoir.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.44,
+      "sha256": "0c262cdaef74149212e47b51568ad819fff82bc5075da91f1b8cc2837596dfc8",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.96,
+      "aliases": [
+        "w_comptoir"
+      ],
+      "verification": {
+        "take": "w_comptoir-s937",
+        "recognized_text": "Le comptoir",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ləkɔ̃twaʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "0c262cdaef74149212e47b51568ad819fff82bc5075da91f1b8cc2837596dfc8",
+        "mp3_sha256": "f89af86755fc9faee09d728efe3c2d6918d0bb3f9dbc5fc70edf7598c8e3f4a6",
+        "final_padding_seconds": 0.4,
+        "gain_db": -6.83
+      },
+      "active": true,
+      "mp3_sha256": "f89af86755fc9faee09d728efe3c2d6918d0bb3f9dbc5fc70edf7598c8e3f4a6"
+    },
+    "armoire21_e_lavabo": {
+      "id": "e_lavabo",
+      "voice": "f",
+      "text": "Il y a deux lavabos.",
+      "synthesis_text": "Il y a deux lavabos.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.92,
+      "sha256": "6dbfa4c262aeb4ea0aea0f41b38fdb1d28d0aea3398813d3e5b53fa4c1ad0dd8",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.64,
+      "aliases": [
+        "e_lavabo"
+      ],
+      "verification": {
+        "take": "e_lavabo-s937",
+        "recognized_text": "Il y a deux lavabos.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "iliadølavabo",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "6dbfa4c262aeb4ea0aea0f41b38fdb1d28d0aea3398813d3e5b53fa4c1ad0dd8",
+        "mp3_sha256": "2ec177fb532a3439072fe749fcc5c8a597b02063be23ce87ec6b95f23da9bf2f",
+        "final_padding_seconds": 0.4,
+        "gain_db": -8.23
+      },
+      "active": true,
+      "mp3_sha256": "2ec177fb532a3439072fe749fcc5c8a597b02063be23ce87ec6b95f23da9bf2f"
+    },
+    "armoire21_w_cafe": {
+      "id": "w_cafe",
+      "voice": "f",
+      "text": "le café",
+      "synthesis_text": "Le café. C'est une boisson chaude.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 1229,
+      "duration": 1.12779,
+      "sha256": "2d186dd9c1d22253bb9cca1653b58ee8d9fa5dee563aef4f20d370bf4e09554a",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.69,
+      "source_take": "ctx_w_cafe-s1229",
+      "source_sha256": "096c3786d81e03b2c57ae8bbb53b44ef0c984f6e6202d89e72be041a770bd31f",
+      "retained_interval_seconds": [
+        0,
+        1.1278
+      ],
+      "context_phones": "ləkafesɛtynbwasɔ̃ʃod",
+      "aliases": [
+        "w_cafe"
+      ],
+      "verification": {
+        "take": "w_cafe-context",
+        "recognized_text": "Le café",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ləkase",
+        "phone_error_rate": 0.167,
+        "raw_sha256": "2d186dd9c1d22253bb9cca1653b58ee8d9fa5dee563aef4f20d370bf4e09554a",
+        "mp3_sha256": "14ac6530a71cd50a2562be9c94a5f52f2e7cb1d17537cf405704647b0ec5b443",
+        "final_padding_seconds": 0.4,
+        "gain_db": -6.01
+      },
+      "active": true,
+      "mp3_sha256": "14ac6530a71cd50a2562be9c94a5f52f2e7cb1d17537cf405704647b0ec5b443"
+    },
+    "armoire21_w_jus_orange": {
+      "id": "w_jus_orange",
+      "voice": "f",
+      "text": "le jus d'orange",
+      "synthesis_text": "le jus d'orange.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.36,
+      "sha256": "8e9bc88e97fed836ac3c27ca3bb15ddb7c9507de7405517fef39e517555509d1",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.02,
+      "aliases": [
+        "w_jus_orange"
+      ],
+      "verification": {
+        "take": "w_jus_orange-s937",
+        "recognized_text": "Le jus d'orange",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ləʒydoʁɑ̃ʒ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "8e9bc88e97fed836ac3c27ca3bb15ddb7c9507de7405517fef39e517555509d1",
+        "mp3_sha256": "63ceb6c32e75b80b068abf60ccae60e93b1254c29369d198ed3f2194aef34392",
+        "final_padding_seconds": 0.4,
+        "gain_db": -8.16
+      },
+      "active": true,
+      "mp3_sha256": "63ceb6c32e75b80b068abf60ccae60e93b1254c29369d198ed3f2194aef34392"
+    },
+    "armoire21_e_jus_orange": {
+      "id": "e_jus_orange",
+      "voice": "f",
+      "text": "J'aime le jus d'orange.",
+      "synthesis_text": "J'aime le jus d'orange.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.84,
+      "sha256": "0c4769972a44a3936aa4ac458936aa6a4cb0a5c2449f83b0a2b0b1933bd70109",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.47,
+      "aliases": [
+        "e_jus_orange"
+      ],
+      "verification": {
+        "take": "e_jus_orange-s937",
+        "recognized_text": "J'aime le jus d'orange.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ʒɛmləʒydoʁɑ̃ʒ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "0c4769972a44a3936aa4ac458936aa6a4cb0a5c2449f83b0a2b0b1933bd70109",
+        "mp3_sha256": "0fd929b3f0bfa9bd2e74ce13454d2d3a9eb134618e30c71668f071249bb5e887",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.36
+      },
+      "active": true,
+      "mp3_sha256": "0fd929b3f0bfa9bd2e74ce13454d2d3a9eb134618e30c71668f071249bb5e887"
+    },
+    "armoire21_w_mb_jus": {
+      "id": "w_mb_jus",
+      "voice": "f",
+      "text": "le jus de mangue",
+      "synthesis_text": "Le jus de mangue. C'est une boisson.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 1229,
+      "duration": 1.46992,
+      "sha256": "a3161a4c6d4ce3399af8e4cb64bd103cd9a491150dcb1289c6608b151639a1d7",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.4,
+      "source_take": "ctx_w_mb_jus-s1229",
+      "source_sha256": "4c198bfd98d3e42bf5d95985c22e950bcf63feecda947a02c68dc5d3de27b9bb",
+      "retained_interval_seconds": [
+        0,
+        1.46992
+      ],
+      "context_phones": "ləʒydəmɑ̃gsɛtynbwasɔ̃",
+      "aliases": [
+        "w_mb_jus"
+      ],
+      "verification": {
+        "take": "w_mb_jus-context",
+        "recognized_text": "le jus de mangue.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ləʒydəmɑ̃g",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "a3161a4c6d4ce3399af8e4cb64bd103cd9a491150dcb1289c6608b151639a1d7",
+        "mp3_sha256": "e214c1049e15590b26d03654b9c66ed977757fef0be342c199db6a0e7cc7c1d7",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.44
+      },
+      "active": true,
+      "mp3_sha256": "e214c1049e15590b26d03654b9c66ed977757fef0be342c199db6a0e7cc7c1d7"
+    },
+    "armoire21_ow_mouchoirs": {
+      "id": "ow_mouchoirs",
+      "voice": "f",
+      "text": "des mouchoirs",
+      "synthesis_text": "des mouchoirs.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.04,
+      "sha256": "6bdaa7087ca8909bd63a7785f4b4e38767796b63f8d3c0cb6d8d51fb48c52b6f",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.51,
+      "aliases": [
+        "ow_mouchoirs"
+      ],
+      "verification": {
+        "take": "ow_mouchoirs-s937",
+        "recognized_text": "Des mouchoirs.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "demuʃwaʁ",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "6bdaa7087ca8909bd63a7785f4b4e38767796b63f8d3c0cb6d8d51fb48c52b6f",
+        "mp3_sha256": "59cc328164c00a853e1f74e7b40291f1309819070000c79be837c7cc50f89d17",
+        "final_padding_seconds": 0.4,
+        "gain_db": -7.94
+      },
+      "active": true,
+      "mp3_sha256": "59cc328164c00a853e1f74e7b40291f1309819070000c79be837c7cc50f89d17"
+    },
+    "armoire21_o_bouteille": {
+      "id": "o_bouteille",
+      "voice": "m",
+      "text": "J'ai une bouteille d'eau.",
+      "synthesis_text": "J'ai une bouteille d'eau.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 421,
+      "duration": 1.28,
+      "sha256": "2bdfa5316f9fb04833bb4c54efad557810bd0a290c2903fde06ea2f44dd162ea",
+      "reference_sha256": "c199ba179b96ba7b8df293265a2337be357669f439c23b5576cb484be33276b5",
+      "seconds": 1.16,
+      "aliases": [
+        "o_bouteille"
+      ],
+      "verification": {
+        "take": "o_bouteille-s421",
+        "recognized_text": "J'ai une bouteille d'eau.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "ʒeynbutɛjdɒ",
+        "phone_error_rate": 0.091,
+        "raw_sha256": "2bdfa5316f9fb04833bb4c54efad557810bd0a290c2903fde06ea2f44dd162ea",
+        "mp3_sha256": "e9ad2a75368356db662e4ab3642c3ee168c82b2732b51e741326e779151c9854",
+        "final_padding_seconds": 0.4,
+        "gain_db": -5.21
+      },
+      "active": true,
+      "mp3_sha256": "e9ad2a75368356db662e4ab3642c3ee168c82b2732b51e741326e779151c9854"
+    },
+    "armoire21_e_seche_cheveux": {
+      "id": "e_seche_cheveux",
+      "voice": "f",
+      "text": "Il y a un sèche-cheveux.",
+      "synthesis_text": "Il y a un sèche-cheveux.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.92,
+      "sha256": "d1fceb4b0f303a48d605d1ce6cfa246b4a8144d19ed03776055721a6882eef37",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.6,
+      "aliases": [
+        "e_seche_cheveux"
+      ],
+      "verification": {
+        "take": "e_seche_cheveux-s937",
+        "recognized_text": "Il y a un sèche-cheveux.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "iliaœ̃sɛʃʃəvø",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "d1fceb4b0f303a48d605d1ce6cfa246b4a8144d19ed03776055721a6882eef37",
+        "mp3_sha256": "8a23530bc80428ac32a1e11310e10fa801887f92ddbac6de7e4d1e406b9d4c1e",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.31
+      },
+      "active": true,
+      "mp3_sha256": "8a23530bc80428ac32a1e11310e10fa801887f92ddbac6de7e4d1e406b9d4c1e"
+    },
+    "armoire21_num_58": {
+      "id": "num_58",
+      "voice": "m",
+      "text": "58",
+      "synthesis_text": "58.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.12,
+      "sha256": "2293b6f6641da9d5ac4f9f8f2c5ada07e218de04f0613a950f4ca66d9e0332ca",
+      "reference_sha256": "c199ba179b96ba7b8df293265a2337be357669f439c23b5576cb484be33276b5",
+      "seconds": 1.81,
+      "aliases": [
+        "num_58"
+      ],
+      "verification": {
+        "take": "num_58-s937",
+        "recognized_text": "58.",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "sɛ̃kɑ̃tyit",
+        "phone_error_rate": 0.0,
+        "raw_sha256": "2293b6f6641da9d5ac4f9f8f2c5ada07e218de04f0613a950f4ca66d9e0332ca",
+        "mp3_sha256": "26826e8cb1b7998d98b7423fdeac7b32ad9a8046dcf84806b46892bb1bfda51a",
+        "final_padding_seconds": 0.4,
+        "gain_db": -0.83
+      },
+      "active": true,
+      "mp3_sha256": "26826e8cb1b7998d98b7423fdeac7b32ad9a8046dcf84806b46892bb1bfda51a"
+    },
+    "armoire21_ow_chewing_gums": {
+      "id": "ow_chewing_gums",
+      "voice": "f",
+      "text": "des chewing-gums",
+      "synthesis_text": "Des chewing-gums. Je les mets dans mon sac.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 1229,
+      "duration": 1.40842,
+      "sha256": "d6ee4e2a6888177d00f9f0d9da5bbefd5293a62c7aad568ef3168365f28b05a4",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 2.49,
+      "source_take": "ctx_ow_chewing_gums-s1229",
+      "source_sha256": "8cfb4097233d48267a12b97b9baa9fd115f3c5423a3a9dfe4f125d1821acb803",
+      "retained_interval_seconds": [
+        0,
+        1.40844
+      ],
+      "context_phones": "deʃwɛ̃gɔmʒəlemɛdɑ̃mɔsak",
+      "aliases": [
+        "ow_chewing_gums"
+      ],
+      "verification": {
+        "take": "ow_chewing_gums-context",
+        "recognized_text": "des chewing-gums,",
+        "sound_difference_text": 0.0,
+        "recognized_phones": "deʃwɛ̃gɔm",
+        "phone_error_rate": 0.571,
+        "raw_sha256": "d6ee4e2a6888177d00f9f0d9da5bbefd5293a62c7aad568ef3168365f28b05a4",
+        "mp3_sha256": "70e2e2711b73550c7cd399d7e3b237604da9e26b9f1cb601d101660a230fb6f5",
+        "final_padding_seconds": 0.4,
+        "gain_db": -9.87
+      },
+      "active": true,
+      "mp3_sha256": "70e2e2711b73550c7cd399d7e3b237604da9e26b9f1cb601d101660a230fb6f5"
     }
   }
 }

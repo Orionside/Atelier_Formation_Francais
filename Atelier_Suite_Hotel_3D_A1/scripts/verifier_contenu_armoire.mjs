@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {canLearnWardrobeItem} from '../wardrobe-learning.js';
+import {WARDROBE_REGIONS} from '../wardrobe-interior.js';
+const base=new URL('../',import.meta.url);
+const html=fs.readFileSync(new URL('index.html',base),'utf8');
+const data=JSON.parse(html.match(/<script[^>]+id="data"[^>]*>(.*?)<\/script>/s)[1]);
+const words=new Map(data.vocab.map(v=>[v.id,v]));
+const clips=JSON.parse(fs.readFileSync(new URL('audio/manifest.json',base),'utf8')).clips;
+for(const [id,x,y,w,h] of WARDROBE_REGIONS){
+ assert(words.has(id),`Élément sans lexique : ${id}`);
+ assert.equal(clips['w_'+id]?.text,words.get(id).w);
+ assert.equal(clips['e_'+id]?.text,words.get(id).ex);
+ assert(x>=119&&x+w<=1398&&y>=85&&y+h<=1022,`Zone hors photographie : ${id}`);
+}
+for(const id of ['tiroirs','coffre','sous_vetements','chaussettes'])assert(clips['w_'+id]&&clips['e_'+id]);
+const state={wardrobeOpen:false,wardrobeMoving:false};
+const dynamic={wardDrawers:[{open:false,moving:false}]};
+const shelf={userData:{wardrobeItem:true,vid:'serviettes'}};
+const drawer={userData:{wardrobeItem:true,vid:'tiroirs',drawerIndex:0}};
+const clothes={userData:{wardrobeItem:true,vid:'sous_vetements',drawerIndex:0}};
+for(const root of [shelf,drawer,clothes])assert.equal(canLearnWardrobeItem(root,state,dynamic),false);
+state.wardrobeOpen=true;state.wardrobeMoving=true;
+assert.equal(canLearnWardrobeItem(shelf,state,dynamic),false);
+state.wardrobeMoving=false;
+assert.equal(canLearnWardrobeItem(shelf,state,dynamic),true);
+assert.equal(canLearnWardrobeItem(drawer,state,dynamic),true);
+assert.equal(canLearnWardrobeItem(clothes,state,dynamic),false);
+dynamic.wardDrawers[0].open=true;dynamic.wardDrawers[0].moving=true;
+assert.equal(canLearnWardrobeItem(clothes,state,dynamic),false);
+dynamic.wardDrawers[0].moving=false;
+assert.equal(canLearnWardrobeItem(clothes,state,dynamic),true);
+assert.equal(canLearnWardrobeItem(undefined,state,dynamic),false);
+assert.equal(canLearnWardrobeItem({userData:{}},state,dynamic),false);
+console.log('Couverture des objets et audios de l’armoire, zones photographiques et accès pendant les mouvements : valides.');

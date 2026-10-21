@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {addWardrobePhotoItems,addOrganizedClothes} from './wardrobe-interior.js?v=20261021-2';
 
 const BASE='assets/references20/';
 // Le masque de clic suit le même détourage que le matériau, pour laisser les clés accessibles.
@@ -47,10 +48,11 @@ export function installFurniture20({INTER,MAT,B,C,L,G,REAL,reg,DYN,ST},textures)
   const W=2.9,H=W*956/1293,bottom=.07;
   // La photographie fournie est conservée comme intérieur : disposition et bois exacts.
   photograph(ward,W-.055,H-.045,crop(textures.wardrobe,119,85,1279,937),0,bottom+H/2,.251);
+  addWardrobePhotoItems({ward,texture:textures.wardrobe,reg,G,photograph,crop,W,H,bottom});
   for(const x of [-W/2+.012,W/2-.012])B(.025,H,.59,lightWood,x,bottom,0,ward);
   for(const y of [bottom,bottom+H-.025])B(W,.025,.59,lightWood,0,y,0,ward);
   for(const x of [.414,-.612])B(.018,H-.055,.54,lightWood,x,bottom+.025,.015,ward);
-  for(const y of [1.54,1.84])B(W-.07,.018,.52,lightWood,0,y,.025,ward);
+  for(const y of [1.54,1.84]){const shelf=G(ward);B(W-.07,.018,.52,lightWood,0,y,.025,shelf);reg(shelf,'etageres');shelf.userData.wardrobeItem=true;}
   // Niches des tiroirs : le fond photographique est masqué lorsqu'un tiroir sort.
   B(.697,.52,.016,dark,-1.032,.145,-.223,ward);
   DYN.wardDrawers=[];
@@ -67,37 +69,21 @@ export function installFurniture20({INTER,MAT,B,C,L,G,REAL,reg,DYN,ST},textures)
    for(const x of [-w/2-.012,w/2+.012]){B(.007,.015,d,chrome,x,.04,d/2,drawer);B(.007,.011,.30,chrome,x,.065,.12,drawer);}
    DYN.wardDrawers.push({group:drawer,closedZ:drawer.position.z,open:false,moving:false});
    reg(drawer,'tiroirs',{act:'drawer:'+i});reference(drawer,'armoire-madox.jpg');
-   const clothes=G(drawer,0,.10,.20);
-   if(i<2){
-    for(let k=0;k<3;k++){
-     const cloth=G(clothes,(k-1)*.185,0,.025),mat=MAT.linen.clone();mat.color.set([0xf0e6d5,0x8799a8,0xbb9294][(k+i)%3]);
-     // Culottes pliées : taille élastiquée, entrejambe et ouvertures des jambes.
-     REAL.cloth(cloth,1,1,[0,0,0],(u,v)=>{const width=.15*(1-.53*Math.sin(v*Math.PI/2));return[(u-.5)*width,.014+Math.sin(u*Math.PI)*.009,-.067+v*.13];},mat,22,20);
-     B(.15,.016,.027,mat,0,.006,-.058,cloth,{r:.007});
-     for(const side of [-1,1])REAL.tube(cloth,[[side*.069,.019,-.047],[side*.061,.02,0],[side*.034,.018,.055]],.002,mat,18);
-     reg(cloth,'sous_vetements');
-    }
-   }else{
-    for(let k=0;k<6;k++){
-     const sock=G(clothes,(k%3-1)*.18,.008,Math.floor(k/3)*.16-.08,k%2?.10:-.10),mat=MAT.linen.clone();mat.color.set([0xe8e1d2,0x657b8a,0x383a42][k%3]);
-     REAL.tube(sock,[[0,.015,-.064],[0,.016,-.012],[.004,.016,.028],[.030,.016,.050],[.067,.015,.052]],.014,mat,32);
-     const toe=new THREE.Mesh(new THREE.SphereGeometry(.014,16,10),mat);toe.position.set(.067,.015,.052);sock.add(toe);
-     B(.033,.024,.025,mat,0,.003,-.065,sock,{r:.006});
-     for(let rib=0;rib<5;rib++)B(.001,.001,.022,MAT.linen,-.012+rib*.006,.028,-.065,sock);
-     reg(sock,'chaussettes');
-    }
-   }
-   bind(drawer); // Rebind the clothing individually after its parent.
-   for(const c of clothes.children){bind(c);c.userData.inspectionSource=clothes;c.userData.inspectionPitch=1.10;c.userData.inspectionYaw=0;}
+   const items=addOrganizedClothes({drawer,index:i,MAT,B,G,REAL,reg});
+   Object.assign(drawer.userData,{wardrobeItem:true,drawerIndex:i,inspectionPitch:1.05,inspectionYaw:Math.PI});
+   bind(drawer);for(const item of items)bind(item);
   }
-  // Repères du lexique sur la penderie et sur le coffre, derrière les vitres.
-  const hanger=G(ward,.05,1.36,-.12);
-  REAL.tube(hanger,[[-.60,.11,.04],[.60,.11,.04]],.009,chrome,16);
-  for(const x of [-.45,-.15,.15,.45]){
-   REAL.tube(hanger,[[x-.13,-.11,0],[x,.015,0],[x+.13,-.11,0],[x-.13,-.11,0]],.006,lightWood,28);
-   REAL.tube(hanger,[[x,.015,0],[x,.075,0],[x+.018,.105,0],[x+.034,.093,0],[x+.025,.07,0]],.0025,chrome,20);
-  }reg(hanger,'cintres');hanger.userData.inspectionYaw=Math.PI;
-  const safe=G(ward,1.14,.39,-.04);B(.27,.23,.27,MAT.blackMetal,0,0,0,safe,{r:.009});B(.075,.07,.008,MAT.chrome,-.065,.09,-.14,safe);B(.035,.055,.008,MAT.blackMetal,.065,.10,-.145,safe);reg(safe,'coffre');
+  // Le coffre occupe une niche au-dessus des tiroirs, posé sur une étagère pleine.
+  // Son panneau de fond masque les serviettes de la photographie dans cette seule niche.
+  B(.70,.326,.018,innerWood,-1.032,.646,.222,ward);
+  const safeShelf=G(ward);B(.70,.025,.54,lightWood,-1.032,.646,.012,safeShelf);reg(safeShelf,'etageres');safeShelf.userData.wardrobeItem=true;
+  const safe=G(ward,-1.032,.674,-.012);
+  B(.49,.245,.36,MAT.blackMetal,0,0,0,safe,{r:.012});
+  B(.447,.207,.012,MAT.blackMetal,0,.019,-.185,safe,{r:.008});
+  B(.116,.076,.008,MAT.chrome,-.091,.092,-.195,safe,{r:.005});
+  for(let row=0;row<3;row++)for(let col=0;col<3;col++)B(.019,.014,.004,MAT.blackMetal,-.125+col*.034,.101+row*.018,-.201,safe,{r:.002});
+  B(.023,.078,.018,MAT.chrome,.112,.085,-.202,safe,{r:.006});
+  reg(safe,'coffre');safe.userData.wardrobeItem=true;safe.userData.inspectionYaw=Math.PI;
   DYN.wardDoors=[];
   for(const [hx,s]of [[-W/2,1],[W/2,-1]]){
    const hinge=G(ward,hx,bottom,-.32),width=W/2;hinge.userData.dynamicVisual=true;

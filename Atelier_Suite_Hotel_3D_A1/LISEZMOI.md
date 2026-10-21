@@ -1,5 +1,15 @@
 # Suite 14 · Palace Hôtel — A1
 
+## Révision du 21 octobre 2026
+
+Le support compte **107 mots et 333 lectures**. Les objets visibles dans l’armoire sont sélectionnables dans le gros plan et dans l’inventaire « Les objets de l’armoire » : coussins, oreillers, boîtes, draps, serviettes, cintres, vêtements, cravates, valise, pantalon, mallette, penderie, étagères, tiroirs, sous-vêtements, chaussettes et coffre-fort. Le mot choisi, sa phrase et les commandes d’écoute apparaissent avant la liste et sont amenés à l’écran après la sélection. Un bouton permet de revenir du gros plan d’un objet à l’armoire.
+
+Chaque tiroir comporte six compartiments : sous-vêtements unisexes pliés dans les deux premiers, six paires de chaussettes dans le dernier. Le coffre repose sur une étagère dans sa niche. Les quatre cintres 3D ajoutés au premier plan ont été écartés de la scène ; les cintres de la photographie restent sélectionnables.
+
+Seize lectures complètent les huit nouveaux mots ; onze lectures existantes ont été reprises, dont « le comptoir » et « Il y a deux lavabos. ». Un indicateur signale le chargement et la lecture du son. Les exports repris conservent la parole entière et ajoutent 400 ms de silence final. Les contrôles phonétiques sont automatiques : ils ne certifient pas l’absence de défaut sur toute la banque. Voir [la validation détaillée](VALIDATION_20261021.md).
+
+`wardrobe-interior.js` décrit les 24 zones photographiques et les vêtements en volume ; `wardrobe-learning.js` relie les objets, les choix au clavier et les lectures. Les trois contrôles reproductibles sont `python3 scripts/verifier.py`, `node scripts/verifier_armoire.mjs` et `node scripts/verifier_contenu_armoire.mjs`.
+
 ## Révision du 20 octobre 2026
 
 L’armoire remplace le terme « placard » dans le lexique, les phrases et les lectures. Le support compte maintenant 99 mots et 317 lectures : trois entrées ajoutent les tiroirs, les sous-vêtements et les chaussettes. Douze lectures ont été produites ou remplacées avec la référence féminine A1 existante.
@@ -21,7 +31,7 @@ Visite 3D pour adultes débutants, avec vocabulaire, phrases, dialogue à la ré
 
 ## Une petite séance A1
 
-Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 96 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
+Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 107 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
 
 Les compteurs comptabilisent les découvertes et les choix aux activités ; ils ne mesurent pas la maîtrise orale et ne donnent pas une note de prononciation. Les modèles restent accessibles après un essai.
 

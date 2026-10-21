@@ -1,6 +1,6 @@
 {
   "ready": true,
-  "version": "20261020-3",
+  "version": "20261021-2",
   "voices": {
     "f": {
       "start": 31.95,
@@ -50,10 +50,10 @@
     },
     "w_comptoir": {
       "file": "audio/sons/w_comptoir.mp3",
-      "text": "le comptoir",
       "voice": "f",
-      "duration": 1.279875,
-      "sha256": "359fe5761642a5c1be7ea87cb802b36b4d3c702e1b232fb39c91699eadbf0569"
+      "text": "le comptoir",
+      "duration": 1.96,
+      "sha256": "f89af86755fc9faee09d728efe3c2d6918d0bb3f9dbc5fc70edf7598c8e3f4a6"
     },
     "e_comptoir": {
       "file": "audio/sons/e_comptoir.mp3",
@@ -785,10 +785,10 @@
     },
     "e_lavabo": {
       "file": "audio/sons/e_lavabo.mp3",
-      "text": "Il y a deux lavabos.",
       "voice": "f",
-      "duration": 1.769167,
-      "sha256": "4df937f4b84865778b2f19eeb207d0f7c1b15775f6e8a609dcc3f81f6e88f9da"
+      "text": "Il y a deux lavabos.",
+      "duration": 2.44,
+      "sha256": "2ec177fb532a3439072fe749fcc5c8a597b02063be23ce87ec6b95f23da9bf2f"
     },
     "w_miroir": {
       "file": "audio/sons/w_miroir.mp3",
@@ -925,10 +925,10 @@
     },
     "e_seche_cheveux": {
       "file": "audio/sons/e_seche_cheveux.mp3",
-      "text": "Il y a un sèche-cheveux.",
       "voice": "f",
-      "duration": 1.6105,
-      "sha256": "5854038f4630cdb8b64e7b8eabe7f90d6dea8ca601b72cc5c0b9e59a12f8f60c"
+      "text": "Il y a un sèche-cheveux.",
+      "duration": 2.44,
+      "sha256": "8a23530bc80428ac32a1e11310e10fa801887f92ddbac6de7e4d1e406b9d4c1e"
     },
     "w_savon": {
       "file": "audio/sons/w_savon.mp3",
@@ -1086,24 +1086,24 @@
     },
     "w_jus_orange": {
       "file": "audio/sons/w_jus_orange.mp3",
-      "text": "le jus d'orange",
       "voice": "f",
-      "duration": 1.474875,
-      "sha256": "0b1278e015b9f478e5940f46eeb91078c98d54230d5f9e9913c4b4e5b5f076c5"
+      "text": "le jus d'orange",
+      "duration": 1.88,
+      "sha256": "63ceb6c32e75b80b068abf60ccae60e93b1254c29369d198ed3f2194aef34392"
     },
     "e_jus_orange": {
       "file": "audio/sons/e_jus_orange.mp3",
-      "text": "J'aime le jus d'orange.",
       "voice": "f",
-      "duration": 1.566542,
-      "sha256": "d3129b4c1dcf4571d6e5bfc4b86f69277e455bc17880cc500267916009d57b78"
+      "text": "J'aime le jus d'orange.",
+      "duration": 2.36,
+      "sha256": "0fd929b3f0bfa9bd2e74ce13454d2d3a9eb134618e30c71668f071249bb5e887"
     },
     "w_cafe": {
       "file": "audio/sons/w_cafe.mp3",
-      "text": "le café",
       "voice": "f",
-      "duration": 1.034875,
-      "sha256": "2e933f6443759c1b14ad6c7015fc6368f1b92748cae792bb5c74e87ff952696a"
+      "text": "le café",
+      "duration": 1.647792,
+      "sha256": "14ac6530a71cd50a2562be9c94a5f52f2e7cb1d17537cf405704647b0ec5b443"
     },
     "e_cafe": {
       "file": "audio/sons/e_cafe.mp3",
@@ -1142,10 +1142,10 @@
     },
     "w_mb_jus": {
       "file": "audio/sons/w_mb_jus.mp3",
-      "text": "le jus de mangue",
       "voice": "f",
-      "duration": 1.397292,
-      "sha256": "6e922048b04f1eae396ffb423ac0337556800bcf86e8c7090c204dd9c4b2b2bf"
+      "text": "le jus de mangue",
+      "duration": 1.989917,
+      "sha256": "e214c1049e15590b26d03654b9c66ed977757fef0be342c199db6a0e7cc7c1d7"
     },
     "e_mb_jus": {
       "file": "audio/sons/e_mb_jus.mp3",
@@ -1254,10 +1254,10 @@
     },
     "ow_mouchoirs": {
       "file": "audio/sons/ow_mouchoirs.mp3",
-      "text": "des mouchoirs",
       "voice": "f",
-      "duration": 1.175917,
-      "sha256": "a9b2073413959df5b8fb97474013291b3bac95b30630b10a35d0725479ecc0d0"
+      "text": "des mouchoirs",
+      "duration": 1.56,
+      "sha256": "59cc328164c00a853e1f74e7b40291f1309819070000c79be837c7cc50f89d17"
     },
     "o_mouchoirs": {
       "file": "audio/sons/o_mouchoirs.mp3",
@@ -1429,10 +1429,10 @@
     },
     "o_bouteille": {
       "file": "audio/sons/o_bouteille.mp3",
-      "text": "J'ai une bouteille d'eau.",
       "voice": "m",
-      "duration": 1.451542,
-      "sha256": "462ec9fa803ced74a11e0b832b1a2a2789c4d09f8a8e4977d47265ef16c45987"
+      "text": "J'ai une bouteille d'eau.",
+      "duration": 1.8,
+      "sha256": "e9ad2a75368356db662e4ab3642c3ee168c82b2732b51e741326e779151c9854"
     },
     "on_bouteille": {
       "file": "audio/sons/on_bouteille.mp3",
@@ -1450,10 +1450,10 @@
     },
     "ow_chewing_gums": {
       "file": "audio/sons/ow_chewing_gums.mp3",
-      "text": "des chewing-gums",
       "voice": "f",
-      "duration": 1.393958,
-      "sha256": "ee37b20e174b7dc26f9c2eeb6fa19efc4e280fe3200279d9870fbc93be6132af"
+      "text": "des chewing-gums",
+      "duration": 1.928417,
+      "sha256": "70e2e2711b73550c7cd399d7e3b237604da9e26b9f1cb601d101660a230fb6f5"
     },
     "o_chewing_gums": {
       "file": "audio/sons/o_chewing_gums.mp3",
@@ -1877,10 +1877,10 @@
     },
     "num_58": {
       "file": "audio/sons/num_58.mp3",
-      "text": "58",
       "voice": "m",
-      "duration": 1.247375,
-      "sha256": "a833e60b1f9ec5b5ac5b37b1a8be6a53f1d5e5c7ccfef622e2d157464a009f0c"
+      "text": "58",
+      "duration": 1.64,
+      "sha256": "26826e8cb1b7998d98b7423fdeac7b32ad9a8046dcf84806b46892bb1bfda51a"
     },
     "num_61": {
       "file": "audio/sons/num_61.mp3",
@@ -2238,6 +2238,118 @@
       "text": "Les chaussettes sont dans le tiroir du bas.",
       "duration": 2.240208,
       "sha256": "0277c46e39a20b5050a07dd5cae42f4d820cda778ca76ccb81912d18de760d9d"
+    },
+    "w_vetements": {
+      "file": "audio/sons/w_vetements.mp3",
+      "voice": "f",
+      "text": "les vêtements",
+      "duration": 1.72,
+      "sha256": "7de1903e86bd3492c8c4acce868668e3002114ca6b9cf204be2195e01b88535f"
+    },
+    "e_vetements": {
+      "file": "audio/sons/e_vetements.mp3",
+      "voice": "f",
+      "text": "Les vêtements sont dans la penderie.",
+      "duration": 2.52,
+      "sha256": "a05e8d023206d0b20dbed2d2c636195719a4150e2f6c3796830f82e78d4e795e"
+    },
+    "w_penderie": {
+      "file": "audio/sons/w_penderie.mp3",
+      "voice": "f",
+      "text": "la penderie",
+      "duration": 1.64,
+      "sha256": "ea281d598b1c44286efc2f33d1249d6f0aaec0c207bc1320b986729031e46a27"
+    },
+    "e_penderie": {
+      "file": "audio/sons/e_penderie.mp3",
+      "voice": "f",
+      "text": "Je range mes vêtements dans la penderie.",
+      "duration": 2.84,
+      "sha256": "e5dc2639fe32ce867674cb9dd87d7a7f4cab095b1c4a9e98ab45ef830edf1a0d"
+    },
+    "w_pantalon": {
+      "file": "audio/sons/w_pantalon.mp3",
+      "voice": "f",
+      "text": "le pantalon",
+      "duration": 1.72,
+      "sha256": "84551c0e2ff9b241b14a8bca4c648a4b5dd0f9512adfd1b7d039ee16caefe40b"
+    },
+    "e_pantalon": {
+      "file": "audio/sons/e_pantalon.mp3",
+      "voice": "f",
+      "text": "Le pantalon est dans l’armoire.",
+      "duration": 2.52,
+      "sha256": "c2d4106efdfe1708b2b2e0541f08c61adb5a13d96d961cb5a1a43035d0328e69"
+    },
+    "w_cravates": {
+      "file": "audio/sons/w_cravates.mp3",
+      "voice": "f",
+      "text": "les cravates",
+      "duration": 1.72,
+      "sha256": "abf9f45c464be9e261e7fdd20750f4f194ed067fce68bd62cf129bb2888a8872"
+    },
+    "e_cravates": {
+      "file": "audio/sons/e_cravates.mp3",
+      "voice": "f",
+      "text": "Les cravates sont à côté des vêtements.",
+      "duration": 2.76,
+      "sha256": "3c4a9447dd64c213ba5e38f8422f5d2d5c0e35355bc4f8cf13f389539d586e69"
+    },
+    "w_boites_rangement": {
+      "file": "audio/sons/w_boites_rangement.mp3",
+      "voice": "f",
+      "text": "les boîtes de rangement",
+      "duration": 2.12,
+      "sha256": "07f17a7a6532a5b0ee8bf5eced8c268d4b95663851733c1b7bcd647ca8a0de0a"
+    },
+    "e_boites_rangement": {
+      "file": "audio/sons/e_boites_rangement.mp3",
+      "voice": "f",
+      "text": "Les boîtes sont sur les étagères.",
+      "duration": 2.76,
+      "sha256": "f2736459ed9b7f060b59eeeb7fbf1cbc0d3e1d6f2fecd5e298efb7ce368d0956"
+    },
+    "w_etageres": {
+      "file": "audio/sons/w_etageres.mp3",
+      "voice": "f",
+      "text": "les étagères",
+      "duration": 1.88,
+      "sha256": "b4a42656fd7688c89e46cc5d53b6aeb30c09ac4d2eb51a9a905a2bda125157d2"
+    },
+    "e_etageres": {
+      "file": "audio/sons/e_etageres.mp3",
+      "voice": "f",
+      "text": "Les serviettes sont sur les étagères.",
+      "duration": 2.84,
+      "sha256": "e21d2d12a49f56bed8bd31f412fd2e71a18289d51d4a4498d53c21771ae5bebc"
+    },
+    "w_mallette": {
+      "file": "audio/sons/w_mallette.mp3",
+      "voice": "f",
+      "text": "la mallette",
+      "duration": 1.8,
+      "sha256": "3614eb958477545031b02907e20501d09d76e481a33a800c55a0e63cbd860bdb"
+    },
+    "e_mallette": {
+      "file": "audio/sons/e_mallette.mp3",
+      "voice": "f",
+      "text": "La mallette est dans l’armoire.",
+      "duration": 2.6,
+      "sha256": "8138dcf95ca46cedff2ba8cf6b4da5b733bf1ff0231987ba3b3be4801632d341"
+    },
+    "w_draps": {
+      "file": "audio/sons/w_draps.mp3",
+      "voice": "f",
+      "text": "les draps",
+      "duration": 1.56,
+      "sha256": "d16a871e6396293a2233217cb659bb3c1aafb05eeff92b3098a33585f367d46f"
+    },
+    "e_draps": {
+      "file": "audio/sons/e_draps.mp3",
+      "voice": "f",
+      "text": "Les draps sont pliés dans l’armoire.",
+      "duration": 2.44,
+      "sha256": "23ad5f3dc0ecc82ac6c684e99a05c777ec6fe896cd4579a0b6405a9204fb03be"
     }
   }
 }

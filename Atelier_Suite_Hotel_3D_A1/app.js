@@ -1,22 +1,23 @@
 
 import * as THREE from 'three';
-import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261020-3';
-import {createWardrobeController} from './wardrobe-state.js?v=20261020-3';
-import { realism } from './realism.js?v=20261020-3';
-import { createInspector } from './inspection.js?v=20261020-3';
+import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261021-2';
+import {createWardrobeController} from './wardrobe-state.js?v=20261021-2';
+import {createWardrobeLearning} from './wardrobe-learning.js?v=20261021-2';
+import { realism } from './realism.js?v=20261021-2';
+import { createInspector } from './inspection.js?v=20261021-2';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261020-3';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261021-2';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261020-3';
-import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261020-3';
-import {exteriorLearning} from './exteriors.js?v=20261020-3';
-import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261020-3';
-import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261020-3';
+import { createDiscovery } from './discovery.js?v=20261021-2';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261021-2';
+import {exteriorLearning} from './exteriors.js?v=20261021-2';
+import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261021-2';
+import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261021-2';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -528,10 +529,12 @@ const STATE_REF = { doorOpen: false, slideOpen: false, wardrobeOpen: false };
 const LIGHTS = {};      // lampes commutables
 const DYN = {};         // références dynamiques (TV, clim, portes…)
 const wardrobeController=createWardrobeController(STATE_REF,DYN,tween,refreshWardrobeControls);
+const wardrobeLearning=createWardrobeLearning({roots:INTER,vocab:VOC,state:STATE_REF,dynamic:DYN,say,markSeen});
 function refreshWardrobeControls(){
  const controls=wardrobeController.controls();
  document.querySelectorAll('[data-ward-action]').forEach(b=>{const c=controls.find(c=>c.action===b.dataset.wardAction);if(c){b.textContent=c.label;b.disabled=c.disabled;}});
  const status=document.querySelector('#wardrobeStatus');if(status)status.textContent=STATE_REF.wardrobeMoving?'Les portes sont en mouvement…':STATE_REF.wardrobeOpen?'Fermez les trois tiroirs avant de fermer les portes.':'Ouvrez les portes pour accéder aux tiroirs.';
+ wardrobeLearning.refresh();
 }
 function wardrobeButtons(){return '<div class="wardrobe-actions">'+wardrobeController.controls().map(c=>'<button class="btn" data-ward-action="'+c.action+'" '+(c.disabled?'disabled':'')+'>'+c.label+'</button>').join('')+'</div>';}
 function bindWardrobeButtons(parent){parent.querySelectorAll('[data-ward-action]').forEach(b=>b.onclick=()=>doAct(b.dataset.wardAction));refreshWardrobeControls();}
@@ -1625,18 +1628,21 @@ const CLIPS = {};
 
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261020-3',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+const AUDIO_STATUS=document.createElement('p');AUDIO_STATUS.id='audioStatus';AUDIO_STATUS.className='audio-status';AUDIO_STATUS.setAttribute('role','status');AUDIO_STATUS.hidden=true;document.body.append(AUDIO_STATUS);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261021-2',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
-function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;}
+function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=PLAYER.onplaying=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;AUDIO_STATUS.hidden=true;}
 async function playOne(id,tok){
- if(ST.mute||tok!==playTok)return;const manifest=await manifestPromise;if(tok!==playTok)return;
- const c=manifest?.clips?.[id];if(!c){toast('Ce son ne se charge pas. Réessayez.');return;}
- speaking=true;await new Promise(resolve=>{const finish=ok=>{if(pendingAudio!==finish)return;pendingAudio=null;PLAYER.onended=PLAYER.onerror=null;resolve(ok);};pendingAudio=finish;
+ if(ST.mute||tok!==playTok)return false;const manifest=await manifestPromise;if(tok!==playTok)return false;
+ const c=manifest?.clips?.[id];if(!c){toast('Ce son ne se charge pas. Réessayez.');return false;}
+ speaking=true;AUDIO_STATUS.textContent='Chargement du son…';AUDIO_STATUS.hidden=false;
+ const ok=await new Promise(resolve=>{const finish=ok=>{if(pendingAudio!==finish)return;pendingAudio=null;PLAYER.onended=PLAYER.onerror=PLAYER.onplaying=null;resolve(ok);};pendingAudio=finish;
+ PLAYER.onplaying=()=>{if(tok===playTok){AUDIO_STATUS.textContent='Écoute en cours';AUDIO_STATUS.title=c.text;}};
  PLAYER.onended=()=>finish(true);PLAYER.onerror=()=>{if(tok===playTok)toast('Ce son ne se charge pas. Réessayez.');finish(false);};PLAYER.src=c.file+'?v='+encodeURIComponent(manifest.version);PLAYER.playbackRate=ST.slow?.9:1;PLAYER.preservesPitch=true;
- PLAYER.play().catch(()=>{if(tok===playTok)toast('Appuyez sur Écouter pour lancer le son.');finish(false);});});if(tok===playTok)speaking=false;
+ PLAYER.play().catch(()=>{if(tok===playTok)toast('Appuyez sur Écouter pour lancer le son.');finish(false);});});if(tok===playTok){speaking=false;AUDIO_STATUS.hidden=true;}return ok;
 }
-async function say(...ids){stopAudio();const tok=playTok;for(const id of ids){if(tok!==playTok)return;await playOne(id,tok);if(tok!==playTok)return;await wait(200);}}
+async function say(...ids){stopAudio();if(ST.mute){toast('Le son est coupé. Activez-le en haut de l’écran.');return;}const tok=playTok;for(const id of ids){if(tok!==playTok)return;const ok=await playOne(id,tok);if(!ok||tok!==playTok)return;await wait(200);}}
 
 /* petits effets sonores synthétisés */
 let AC = null;
@@ -1684,6 +1690,7 @@ const JOY = { active: false, x: 0, y: 0 };
 let drag = null, lastHover = 0, hovered = null, uiReady = false, started = false;
 
 addEventListener('keydown', e => {
+  if(!$('#modalWrap').hidden){if(e.code==='Escape'){e.preventDefault();closeModal();}return;}
   if (e.target.closest && e.target.closest('input,textarea,select')) return;
   keys[e.code] = true;
   if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space'].includes(e.code)) e.preventDefault();
@@ -1900,7 +1907,7 @@ function showCard(vid, act, root) {
   if (act && actLabel(act)) { b.hidden = false; b.textContent = actLabel(act); b.dataset.act = act; } else b.hidden = true;
   let controls=$('#cardWardrobe');if(!controls){controls=document.createElement('div');controls.id='cardWardrobe';c.append(controls);}
   controls.hidden=vid!=='armoire'&&vid!=='tiroirs';
-  if(!controls.hidden){controls.innerHTML='<p id="wardrobeStatus" class="wardrobe-status"></p>'+wardrobeButtons();b.hidden=true;bindWardrobeButtons(controls);}
+  if(!controls.hidden){controls.innerHTML='<p id="wardrobeStatus" class="wardrobe-status" role="status"></p>'+wardrobeButtons()+wardrobeLearning.html(wardrobeLearning.wardrobe());b.hidden=true;bindWardrobeButtons(controls);wardrobeLearning.bind(controls,wardrobeLearning.wardrobe(),inspectObject);}
   c.hidden = false;
   $('#cardCloseup').onclick=()=>inspectObject(root || INTER.find(r=>r.userData.vid===vid),v);
 }
@@ -2191,15 +2198,19 @@ function openForm() {
 }
 
 /* ---------- fenêtre modale ---------- */
-let onModalClose = null;
+let onModalClose = null,modalReturnFocus=null;
 function openModal(html, onClose) {
+  const returnFocus=$('#modalWrap').hidden?document.activeElement:modalReturnFocus;
   if(!$('#modalWrap').hidden)closeModal();
+  modalReturnFocus=returnFocus;
   $('#modalBody').innerHTML = html; $('#modalWrap').hidden = false; onModalClose = onClose || null;
+  const heading=$('#modalBody').querySelector('h2');if(heading){heading.id='modalTitle';$('#modal').setAttribute('aria-labelledby','modalTitle');}else $('#modal').setAttribute('aria-label','Activité');
   if($('#objectLabels'))$('#objectLabels').hidden=true;
   hideTip(); setHover(null);
   const first = $('#modal').querySelector('input,button.btn,button.choice'); if (first && !IS_TOUCH) first.focus({ preventScroll: true });
 }
-function closeModal() { if ($('#modalWrap').hidden) return;stopAudio(); $('#modalWrap').hidden = true; $('#modalBody').innerHTML = ''; const f = onModalClose; onModalClose = null; f && f(); }
+function closeModal() { if ($('#modalWrap').hidden) return;stopAudio(); $('#modalWrap').hidden = true; $('#modalBody').innerHTML = ''; const f = onModalClose; onModalClose = null; f && f();if(modalReturnFocus&&document.contains(modalReturnFocus))modalReturnFocus.focus({preventScroll:true});modalReturnFocus=null; }
+$('#modal').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const targets=[...$('#modal').querySelectorAll('button:not(:disabled),[href],input:not(:disabled),select:not(:disabled),textarea:not(:disabled),summary,[tabindex="0"]')].filter(el=>el.getClientRects().length);if(!targets.length)return;const first=targets[0],last=targets[targets.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
 $('#modalX').onclick = closeModal;
 $('#modalWrap').addEventListener('pointerdown', e => { if (e.target.id === 'modalWrap') closeModal(); });
 
@@ -2588,7 +2599,7 @@ $('#btnStart').onclick = () => {
   if (!ST.key) { setTimeout(() => say('ui_bienvenue'), 400); setTimeout(() => toast('Cliquez sur la réceptionniste pour commencer.'), 600); }
 };
 $('#btnReset').onclick = resetAll;
-const inspectObject=createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env:ROOM_ENV,teleport,setFiche,wardrobeButtons,bindWardrobeButtons,getExamples:id=>INTER.filter(r=>r.userData.vid===id)});
+const inspectObject=createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env:ROOM_ENV,teleport,setFiche,wardrobeButtons,bindWardrobeButtons,wardrobeLearning,getExamples:id=>INTER.filter(r=>r.userData.vid===id)});
 const REAL=realism(THREE,{B,C,L,S,G,mesh,MAT,TEX,LOW});
 init().catch(e => { console.error(e); const el = $('#introErr'); el.hidden = false; el.textContent = 'Erreur au chargement de la 3D : ' + e.message; });
 

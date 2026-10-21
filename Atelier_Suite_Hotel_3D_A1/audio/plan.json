@@ -1584,6 +1584,86 @@
       "id": "e_chaussettes",
       "voice": "f",
       "text": "Les chaussettes sont dans le tiroir du bas."
+    },
+    {
+      "id": "w_vetements",
+      "voice": "f",
+      "text": "les vêtements"
+    },
+    {
+      "id": "e_vetements",
+      "voice": "f",
+      "text": "Les vêtements sont dans la penderie."
+    },
+    {
+      "id": "w_penderie",
+      "voice": "f",
+      "text": "la penderie"
+    },
+    {
+      "id": "e_penderie",
+      "voice": "f",
+      "text": "Je range mes vêtements dans la penderie."
+    },
+    {
+      "id": "w_pantalon",
+      "voice": "f",
+      "text": "le pantalon"
+    },
+    {
+      "id": "e_pantalon",
+      "voice": "f",
+      "text": "Le pantalon est dans l’armoire."
+    },
+    {
+      "id": "w_cravates",
+      "voice": "f",
+      "text": "les cravates"
+    },
+    {
+      "id": "e_cravates",
+      "voice": "f",
+      "text": "Les cravates sont à côté des vêtements."
+    },
+    {
+      "id": "w_boites_rangement",
+      "voice": "f",
+      "text": "les boîtes de rangement"
+    },
+    {
+      "id": "e_boites_rangement",
+      "voice": "f",
+      "text": "Les boîtes sont sur les étagères."
+    },
+    {
+      "id": "w_etageres",
+      "voice": "f",
+      "text": "les étagères"
+    },
+    {
+      "id": "e_etageres",
+      "voice": "f",
+      "text": "Les serviettes sont sur les étagères."
+    },
+    {
+      "id": "w_mallette",
+      "voice": "f",
+      "text": "la mallette"
+    },
+    {
+      "id": "e_mallette",
+      "voice": "f",
+      "text": "La mallette est dans l’armoire."
+    },
+    {
+      "id": "w_draps",
+      "voice": "f",
+      "text": "les draps"
+    },
+    {
+      "id": "e_draps",
+      "voice": "f",
+      "text": "Les draps sont pliés dans l’armoire."
     }
   ]
 }
