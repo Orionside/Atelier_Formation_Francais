@@ -418,7 +418,7 @@
     {
       "id": "e_fruits",
       "voice": "f",
-      "text": "Il y a des mangues, des bananes et un ananas."
+      "text": "Il y a des pommes, des bananes et un ananas."
     },
     {
       "id": "w_fleurs",
@@ -498,7 +498,7 @@
     {
       "id": "e_armoire",
       "voice": "f",
-      "text": "Il y a une grande armoire."
+      "text": "L’armoire est grande. Les vêtements sont dans l’armoire."
     },
     {
       "id": "w_cintres",
@@ -1473,7 +1473,7 @@
     {
       "id": "e_mur",
       "voice": "f",
-      "text": "Le tableau est sur le mur."
+      "text": "Voici un mur."
     },
     {
       "id": "w_plafond",
@@ -1664,6 +1664,131 @@
       "id": "e_draps",
       "voice": "f",
       "text": "Les draps sont pliés dans l’armoire."
+    },
+    {
+      "id": "w_chemises",
+      "voice": "f",
+      "text": "les chemises"
+    },
+    {
+      "id": "e_chemises",
+      "voice": "f",
+      "text": "Il y a des chemises dans l’armoire."
+    },
+    {
+      "id": "w_vestes",
+      "voice": "f",
+      "text": "les vestes"
+    },
+    {
+      "id": "e_vestes",
+      "voice": "f",
+      "text": "Les vestes sont dans l’armoire."
+    },
+    {
+      "id": "w_robes",
+      "voice": "f",
+      "text": "les robes"
+    },
+    {
+      "id": "e_robes",
+      "voice": "f",
+      "text": "Les robes sont dans l’armoire."
+    },
+    {
+      "id": "w_pulls",
+      "voice": "f",
+      "text": "les pulls"
+    },
+    {
+      "id": "e_pulls",
+      "voice": "f",
+      "text": "Les pulls sont pliés dans l’armoire."
+    },
+    {
+      "id": "ev_coussins_gris",
+      "voice": "f",
+      "text": "Les coussins sont gris."
+    },
+    {
+      "id": "ev_coussins_noirs_blancs",
+      "voice": "f",
+      "text": "Les coussins sont noirs et blancs."
+    },
+    {
+      "id": "wv_chemise",
+      "voice": "f",
+      "text": "la chemise"
+    },
+    {
+      "id": "ev_chemise_bleue",
+      "voice": "f",
+      "text": "La chemise est bleue."
+    },
+    {
+      "id": "ev_chemise_blanche",
+      "voice": "f",
+      "text": "La chemise est blanche."
+    },
+    {
+      "id": "ev_chemise_rouge",
+      "voice": "f",
+      "text": "La chemise est rouge."
+    },
+    {
+      "id": "ev_pantalon_noir",
+      "voice": "f",
+      "text": "Le pantalon est noir."
+    },
+    {
+      "id": "ev_pantalon_gris",
+      "voice": "f",
+      "text": "Le pantalon est gris."
+    },
+    {
+      "id": "ev_pantalon_marron",
+      "voice": "f",
+      "text": "Le pantalon est marron."
+    },
+    {
+      "id": "wv_veste",
+      "voice": "f",
+      "text": "la veste"
+    },
+    {
+      "id": "ev_veste_verte",
+      "voice": "f",
+      "text": "La veste est verte."
+    },
+    {
+      "id": "ev_veste_beige",
+      "voice": "f",
+      "text": "La veste est beige."
+    },
+    {
+      "id": "ev_veste_orange",
+      "voice": "f",
+      "text": "La veste est orange."
+    },
+    {
+      "id": "wv_robe",
+      "voice": "f",
+      "text": "la robe"
+    },
+    {
+      "id": "ev_robe_rose",
+      "voice": "f",
+      "text": "La robe est rose."
+    },
+    {
+      "id": "ev_robe_violette",
+      "voice": "f",
+      "text": "La robe est violette."
+    },
+    {
+      "id": "ev_robe_jaune",
+      "voice": "f",
+      "text": "La robe est jaune."
     }
   ]
 }

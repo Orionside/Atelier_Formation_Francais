@@ -5,11 +5,11 @@ export const WARDROBE_REGIONS = [
  ['serviettes',180,320,386,46],['coussins',599,310,229,51],
  ['serviettes',850,333,167,33],['oreillers',1060,267,322,98],
  ['cintres',341,402,232,38],['cintres',600,401,294,38],
- ['vetements',317,441,255,503],['vetements',604,441,306,329],
+ ['vetements',317,441,255,503],['chemises',604,441,306,329],
  ['cravates',913,442,115,292],['valise',1053,436,136,223],
  ['pantalon',1198,408,169,216],['boites_rangement',1216,628,140,30],
  ['serviettes',152,435,147,50],['serviettes',157,575,145,85],
- ['mallette',160,738,147,112],['vetements',151,895,153,107],
+ ['mallette',160,738,147,112],['pulls',151,895,153,107],
  ['boites_rangement',333,852,133,150],['oreillers',614,794,406,55],
  ['boites_rangement',600,892,420,117],['penderie',334,384,690,18]
 ];
@@ -19,7 +19,8 @@ export function addWardrobePhotoItems({ward,texture,reg,G,photograph,crop,W,H,bo
  for(const [id,x,y,w,h] of WARDROBE_REGIONS){
   const group=G(ward,(.5-(x+w/2-119)/1279)*width,bottom+H/2+(.5-(y+h/2-85)/937)*height,.248);
   photograph(group,w/1279*width,h/937*height,crop(texture,x,y,w,h),0,0,0);
-  reg(group,id);group.userData.wardrobeItem=true;group.userData.inspectionYaw=Math.PI;
+  reg(group,id);group.userData.wardrobeItem=true;group.userData.inspectionYaw=Math.PI;group.userData.photoRegion=[id,x,y,w,h];
+  if(id==='coussins')group.userData.variantId=y<200?'coussins_noirs_blancs':'coussins_gris';
  }
 }
 

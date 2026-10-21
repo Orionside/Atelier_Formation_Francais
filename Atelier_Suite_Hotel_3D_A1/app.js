@@ -1,23 +1,25 @@
 
 import * as THREE from 'three';
-import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261021-2';
-import {createWardrobeController} from './wardrobe-state.js?v=20261021-2';
-import {createWardrobeLearning} from './wardrobe-learning.js?v=20261021-2';
-import { realism } from './realism.js?v=20261021-2';
-import { createInspector } from './inspection.js?v=20261021-2';
+import {prepareFurniture20,installFurniture20} from './furniture20.js?v=20261021-3';
+import {createWardrobeController} from './wardrobe-state.js?v=20261021-3';
+import {createWardrobeLearning} from './wardrobe-learning.js?v=20261021-3';
+import {createLearningContext} from './learning-context.js?v=20261021-3';
+import {prepareCoherence21,installCoherence21} from './coherence21.js?v=20261021-3';
+import { realism } from './realism.js?v=20261021-3';
+import { createInspector } from './inspection.js?v=20261021-3';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261021-2';
+import { loadPalaceAssets, photographicMaterials, installPalace } from './palace.js?v=20261021-3';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
-import { createDiscovery } from './discovery.js?v=20261021-2';
-import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261021-2';
-import {exteriorLearning} from './exteriors.js?v=20261021-2';
-import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261021-2';
-import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261021-2';
+import { createDiscovery } from './discovery.js?v=20261021-3';
+import {preparePhotoreal,installPhotoreal,indexLightingMeshes,applyBakedLighting,finishTextiles,installMirror} from './photoreal.js?v=20261021-3';
+import {exteriorLearning} from './exteriors.js?v=20261021-3';
+import {prepareAtelier,installAtelier,finishAtelier} from './atelier18.js?v=20261021-3';
+import {prepareReceptionist,installReceptionist} from './welcome.js?v=20261021-3';
 
 /* ---------- données ---------- */
 const DATA = JSON.parse(document.getElementById('data').textContent);
@@ -27,6 +29,7 @@ DATA.minibar.forEach(v => VOC[v.id] = { ...v, z: 'minibar' });
 const OBJ = {};
 DATA.objets.forEach(o => OBJ[o.id] = o);
 const VOCAB_IDS = DATA.vocab.map(v => v.id);
+const learningEntry=createLearningContext(DATA);
 
 const IS_TOUCH = matchMedia('(pointer: coarse)').matches;
 const LOW = IS_TOUCH || Math.min(innerWidth, innerHeight) < 600;
@@ -529,7 +532,7 @@ const STATE_REF = { doorOpen: false, slideOpen: false, wardrobeOpen: false };
 const LIGHTS = {};      // lampes commutables
 const DYN = {};         // références dynamiques (TV, clim, portes…)
 const wardrobeController=createWardrobeController(STATE_REF,DYN,tween,refreshWardrobeControls);
-const wardrobeLearning=createWardrobeLearning({roots:INTER,vocab:VOC,state:STATE_REF,dynamic:DYN,say,markSeen});
+const wardrobeLearning=createWardrobeLearning({roots:INTER,vocab:VOC,state:STATE_REF,dynamic:DYN,say,markSeen,learningEntry});
 function refreshWardrobeControls(){
  const controls=wardrobeController.controls();
  document.querySelectorAll('[data-ward-action]').forEach(b=>{const c=controls.find(c=>c.action===b.dataset.wardAction);if(c){b.textContent=c.label;b.disabled=c.disabled;}});
@@ -1629,7 +1632,7 @@ const CLIPS = {};
 let playTok=0,speaking=false,pendingAudio=null;
 const PLAYER=document.createElement('audio');PLAYER.id='modele-audio';PLAYER.preload='none';PLAYER.hidden=true;document.body.append(PLAYER);
 const AUDIO_STATUS=document.createElement('p');AUDIO_STATUS.id='audioStatus';AUDIO_STATUS.className='audio-status';AUDIO_STATUS.setAttribute('role','status');AUDIO_STATUS.hidden=true;document.body.append(AUDIO_STATUS);
-let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261021-2',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
+let audioManifest=null;const manifestPromise=fetch('audio/manifest.json?v=20261021-3',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(m=>audioManifest=m).catch(()=>null);
 function loadPack(){return manifestPromise;}
 function unlockAudio(){} // La première parole est déclenchée par le clic explicite de l'apprenant.
 function stopAudio(){playTok++;PLAYER.pause();PLAYER.onended=PLAYER.onerror=PLAYER.onplaying=null;if(pendingAudio){pendingAudio(false);pendingAudio=null;}speaking=false;AUDIO_STATUS.hidden=true;}
@@ -1822,7 +1825,7 @@ function easyPick(x,y){
 function labelOf(root) {
   if (!root) return null;
   if (root.userData.obj) return ST.found[root.userData.obj] ? null : "Qu'est-ce que c'est ?";
-  const v = VOC[root.userData.vid]; return v ? v.w : null;
+  const v = learningEntry(root); return v ? v.label||v.w : null;
 }
 const HL = new Map();
 const NO_HL = new Set(['miroir','mur','sol','plafond','mer', 'montagne', 'plage', 'piscine', 'couloir', 'salle_bains', 'palmiers', 'transats', 'parasol', 'balcon', 'fenetre', 'rideaux']);
@@ -1856,7 +1859,7 @@ function clickAt(x, y) {
   if (isFloor) {
     const p = h.point;
     if (Math.hypot(p.x - P.x, p.z - P.z) < 14) { P.route=[];P.target = { x: p.x, z: p.z }; marker.position.set(p.x, p.y + 0.01, p.z); marker.visible = true; }
-    if (r && r.userData.vid && !ST.seen[r.userData.vid]) select(r);
+    if (r && r.userData.vid && (r.userData.vid==='tapis'||!ST.seen[r.userData.vid])) select(r);
     return;
   }
   if (r) select(r);
@@ -1884,6 +1887,7 @@ function markSeen(vid) {
 }
 function select(root) {
   if (root.userData.obj) return collect(root);
+  if(root.userData.wardrobeItem&&!wardrobeLearning.accessible(root)){toast('Ouvrez les portes et, si nécessaire, le tiroir.');return;}
   const vid = root.userData.vid, act = root.userData.act;
   if (!vid) return;
   fx.click();
@@ -1892,10 +1896,10 @@ function select(root) {
   if (act === 'takeKey') { takeKey(); return; }
   if (act) doAct(act);
   showCard(vid, act, root);
-  if (ST.auto) say('w_' + vid, 'e_' + vid);
+  if (ST.auto){const v=learningEntry(root);say(...(vid==='armoire'?[v.sentenceAudio]:[v.wordAudio,v.sentenceAudio]));}
 }
 function showCard(vid, act, root) {
-  const v = VOC[vid]; if (!v) return;
+  const v = learningEntry(root)||VOC[vid]; if (!v) return;
   cardVid = vid; cardRoot = root || null;
   const c = $('#card'); c.classList.remove('found');
   $('#cardZone').textContent = ZONE_NAME[v.z] || '';
@@ -1913,8 +1917,8 @@ function showCard(vid, act, root) {
 }
 function closeCard() { $('#card').hidden = true; cardVid = null; }
 $('#cardX').onclick = closeCard;
-$('#cardSayW').onclick = () => { if (cardVid) say((cardVid.startsWith('obj:') ? 'ow_' + cardVid.slice(4) : 'w_' + cardVid)); };
-$('#cardSayE').onclick = () => { if (cardVid) say(cardVid.startsWith('obj:') ? 'o_' + cardVid.slice(4) : 'e_' + cardVid); };
+$('#cardSayW').onclick = () => { if (cardVid) say(cardVid.startsWith('obj:')?'ow_'+cardVid.slice(4):learningEntry(cardRoot)?.wordAudio||'w_'+cardVid); };
+$('#cardSayE').onclick = () => { if (cardVid) say(cardVid.startsWith('obj:')?'o_'+cardVid.slice(4):learningEntry(cardRoot)?.sentenceAudio||'e_'+cardVid); };
 $('#cardAct').onclick = () => { const a = $('#cardAct').dataset.act; doAct(a); if (cardVid && !cardVid.startsWith('obj:')) showCard(cardVid, a, cardRoot); };
 
 /* ---------- objets personnels (chasse) ---------- */
@@ -2427,7 +2431,7 @@ function renderFiche() {
       <p>Voix féminine pour la réception et les mots ; voix masculine pour le client et les nombres.</p>
       <label class="voice-pick"><span><input type="checkbox" id="optSlow" ${ST.slow?'checked':''}> Un peu plus lent (0,9×)</span></label>
       <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="optAuto" ${ST.auto ? 'checked' : ''}> Lire le mot et la phrase automatiquement</label>
-      <h3>Progression</h3>
+      <p><a href="SOURCES_VISUELLES.md" target="_blank" rel="noopener">Sources des photographies et des textures</a></p><h3>Progression</h3>
       <p>Votre progression reste dans ce navigateur. Un mot découvert au clic n’est pas encore un mot maîtrisé à l’oral.</p>
       <button class="btn" id="resetBtn">Recommencer à zéro</button>`;
     $('#optSlow').onchange=e=>{stopAudio();ST.slow=e.target.checked;save();};
@@ -2440,7 +2444,7 @@ function renderFiche() {
       <ul><li>Se présenter à la réception, donner ses coordonnées.</li><li>Nommer les pièces, le mobilier et les services d'un hôtel, avec l'article.</li><li>Dire ce qu'il y a / ce qu'il n'y a pas : <i>il y a / il n'y a pas de</i>.</li><li>Dire ce qu'on a / ce qu'on n'a pas : <i>j'ai / je n'ai pas de</i>.</li><li>Poser une question avec <i>est-ce que</i>. Comprendre des prix (nombres 0 à 99).</li></ul>
       <h3>Lien avec le manuel</h3>
       <p>Cette suite est une situation fictive enrichie ; ses équipements ne décrivent pas tous le document d’origine. Unité 2 « Bon séjour ! » : act. 2 (prestations de l’hôtel du manuel), act. 3 (arrivée à la réception, chambre 14), act. 6 (objets personnels, j'ai / je n'ai pas de), act. 7 (formulaire de réservation). Le minibar et le loto reprennent les nombres.</p>
-      <h3>Choisir une petite séance</h3><p>La banque de 93 mots ne s’apprend pas en une fois. Choisissez cinq objets dans une pièce ; nommez-les, écoutez et dites une phrase. Reprenez cinq autres mots lors de la séance suivante.</p><h3>Parcours complet (à répartir sur plusieurs jours)</h3>
+      <h3>Choisir une petite séance</h3><p>La banque de ${VOCAB_IDS.length} mots ne s’apprend pas en une fois. Choisissez cinq objets dans une pièce ; nommez-les, écoutez et dites une phrase. Reprenez cinq autres mots lors de la séance suivante.</p><h3>Parcours complet (à répartir sur plusieurs jours)</h3>
       <ul><li>Missions 1 à 3 : réception, découverte libre, chasse aux objets (25 min).</li><li>Missions 4 à 6 : minibar, quiz <i>il y a</i>, bilan <i>j'ai</i> (15 min).</li><li>L'apprenant copie « Mon bilan » et vous l'envoie.</li></ul>
       <h3>Prolongement en séance</h3>
       <ul><li>Oral : décrire la suite (« Dans la chambre, il y a… »). Comparer avec l’hôtel du manuel.</li><li>Jeu de rôle réception à deux, sans le support.</li><li>Écrit : un avis client de 3 phrases, comme celui de Louane.</li></ul>
@@ -2452,7 +2456,7 @@ function renderFiche() {
       <h3>Note sur les voix</h3><p><a href="guide-audio.html" target="_blank" rel="noopener">Écouter les deux voix et quelques modèles</a></p>
       <p>Tous les modèles parlés sont générés directement avec Qwen3-TTS à partir de « voix de référence A1 femme.mp4 » et « voix de référence homme A1.mp4 ». Aucune voix du navigateur ne les remplace. La liste des textes et les empreintes des références figurent dans audio/provenance.json. Le ralentissement facultatif à 0,9× préserve la hauteur de la voix.</p>`;
   }
-  body.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{const id=b.dataset.view;inspectObject(INTER.find(r=>r.userData.vid===id),VOC[id]);});
+  body.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{const id=b.dataset.view;inspectObject(INTER.find(r=>r.userData.vid===id&&r.visible),VOC[id]);});
   body.querySelectorAll('[data-go]').forEach(b => b.onclick = () => teleport(b.dataset.go));
   body.querySelectorAll('[data-say]').forEach(b => b.onclick = () => say('w_' + b.dataset.say, 'e_' + b.dataset.say));
   body.querySelectorAll('[data-run]').forEach(b => b.onclick = () => {
@@ -2561,6 +2565,7 @@ async function init() {
   await photographicMaterials(MAT,renderer);
   const preparedPhoto=await preparePhotoreal(MAT,renderer,scene,pmrem,LOW);
   const atelierMaterials=await prepareAtelier(MAT,renderer,LOW);
+  const coherence=await prepareCoherence21(MAT,renderer);
   const furniture20=await prepareFurniture20();
   const receptionist=await prepareReceptionist(renderer);
   const assetResult=await loadPalaceAssets((n,total)=>btn.textContent=`Préparer le mobilier… ${n}/${total}`);
@@ -2580,7 +2585,8 @@ async function init() {
   installMirror(DYN,MAT,LOW);
   finishAtelier({INTER,MAT,LOW},atelierMaterials);
   installFurniture20({INTER,MAT,B,C,L,G,REAL,reg,DYN,ST},furniture20);
-  updateDiscovery=createDiscovery({scene:STATIC,camera,roots:INTER,vocab:VOC,select,visible:visibleChain,blocked:()=>!started||!$('#modalWrap').hidden||!$('#dlg').hidden});
+  installCoherence21({INTER,MAT,B,C,G,REAL,reg,OBST,variants:DATA.variants},coherence);
+  updateDiscovery=createDiscovery({scene:STATIC,camera,roots:INTER,vocab:VOC,learningEntry,select,visible:visibleChain,blocked:()=>!started||!$('#modalWrap').hidden||!$('#dlg').hidden});
   if (ST.key || ST.dlg >= DATA.dialogue.length) DYN.keyCard.visible = !ST.key;
   uiReady = true;
   updateChips(); renderFiche();
@@ -2599,7 +2605,7 @@ $('#btnStart').onclick = () => {
   if (!ST.key) { setTimeout(() => say('ui_bienvenue'), 400); setTimeout(() => toast('Cliquez sur la réceptionniste pour commencer.'), 600); }
 };
 $('#btnReset').onclick = resetAll;
-const inspectObject=createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env:ROOM_ENV,teleport,setFiche,wardrobeButtons,bindWardrobeButtons,wardrobeLearning,getExamples:id=>INTER.filter(r=>r.userData.vid===id)});
+const inspectObject=createInspector(THREE,{openModal,closeModal,say,stopAudio,markSeen,env:ROOM_ENV,teleport,setFiche,wardrobeButtons,bindWardrobeButtons,wardrobeLearning,learningEntry,autoRead:()=>ST.auto,getExamples:id=>INTER.filter(r=>r.userData.vid===id&&r.visible)});
 const REAL=realism(THREE,{B,C,L,S,G,mesh,MAT,TEX,LOW});
 init().catch(e => { console.error(e); const el = $('#introErr'); el.hidden = false; el.textContent = 'Erreur au chargement de la 3D : ' + e.message; });
 

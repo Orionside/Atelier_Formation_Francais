@@ -1,8 +1,8 @@
 {
   "summary": {
-    "identifiers": 333,
-    "distinct_readings": 333,
-    "total_distinct_seconds": 596.8,
+    "identifiers": 358,
+    "distinct_readings": 358,
+    "total_distinct_seconds": 653.1,
     "model": "Qwen3-TTS 1.7B Base MLX",
     "references": {
       "f": {
@@ -23,7 +23,7 @@
       }
     },
     "checks": "Transcription Whisper, contenu critique, signal et comparaison acoustique. Pas de certification à l’écoute humaine.",
-    "revision": "21 octobre : 16 nouvelles lectures, 11 reprises ; audit phonétique des 317 lectures précédentes ; 400 ms de silence final ajouté sans recouper la parole. Anciennes prises conservées dans la provenance et dans une sauvegarde locale."
+    "revision": "21 octobre : phrases cohérentes selon les objets, vêtements et douze couleurs ; 28 prises installées, dont trois phrases remplacées. Contrôles automatiques, sans certification par écoute humaine."
   },
   "units": {
     "u000": {
@@ -3225,7 +3225,8 @@
         "text_difference": 0.0,
         "word_difference": 0.0,
         "semantic_alert": null
-      }
+      },
+      "superseded_by": "coherence21_e_fruits"
     },
     "u084": {
       "take": "u084-xvec-8bit-g421",
@@ -11261,7 +11262,8 @@
       "phonetic_check": null,
       "mp3_sha256": "c51ccb47f083571a36d2465e501cef94183164405c5477eb474b6b912fab9428",
       "export_duration": 1.891,
-      "gain_db": -9.17
+      "gain_db": -9.17,
+      "superseded_by": "coherence21_e_mur"
     },
     "palace_w_plafond": {
       "id": "w_plafond",
@@ -11774,7 +11776,8 @@
       "phonetic_check": null,
       "mp3_sha256": "c71bc7f1b754d15e6225cc33b23ca75a13fbc6048b1459f3919d4410c151eb37",
       "export_duration": 1.96,
-      "gain_db": -9.02
+      "gain_db": -9.02,
+      "superseded_by": "coherence21_e_armoire"
     },
     "armoire20_e_cintres": {
       "id": "e_cintres",
@@ -12849,6 +12852,790 @@
       },
       "active": true,
       "mp3_sha256": "70e2e2711b73550c7cd399d7e3b237604da9e26b9f1cb601d101660a230fb6f5"
+    },
+    "coherence21_e_armoire": {
+      "id": "e_armoire",
+      "voice": "f",
+      "text": "L’armoire est grande. Les vêtements sont dans l’armoire.",
+      "synthesis_text": "L'armoire est grande. Les vêtements sont dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 421,
+      "duration": 3.76,
+      "sha256": "a2c8c72552e0271d50cba34d8a95a64346ac6482a490a380db2aea52a343dea4",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 3.37,
+      "aliases": [
+        "e_armoire"
+      ],
+      "verification": {
+        "take": "e_armoire-s421",
+        "raw_sha256": "a2c8c72552e0271d50cba34d8a95a64346ac6482a490a380db2aea52a343dea4",
+        "mp3_sha256": "3703bb05183fbacab2173a9d7af313a018e719ef5750f7b398db39430c6463fd",
+        "recognized_text": "L'armoire est grande. Les vêtements sont dans l'armoire.",
+        "recognized_phones": "laʁmwaʁɛgʁɑ̃dlevɛtmɑ̃sɔ̃dɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "3703bb05183fbacab2173a9d7af313a018e719ef5750f7b398db39430c6463fd"
+    },
+    "coherence21_e_mur": {
+      "id": "e_mur",
+      "voice": "f",
+      "text": "Voici un mur.",
+      "synthesis_text": "Voici un mur.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.44,
+      "sha256": "83ec6357381cdd8146505fe68f0b16734962a12b6acc7b78b69e63bfc6058e97",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.27,
+      "aliases": [
+        "e_mur"
+      ],
+      "verification": {
+        "take": "e_mur-s937",
+        "raw_sha256": "83ec6357381cdd8146505fe68f0b16734962a12b6acc7b78b69e63bfc6058e97",
+        "mp3_sha256": "ed077ae3a3913cb8fb8744bce6324622786a779b3053d14db2c23a393a6aac86",
+        "recognized_text": "Voici un mur.",
+        "recognized_phones": "vwasiœ̃myʁ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "ed077ae3a3913cb8fb8744bce6324622786a779b3053d14db2c23a393a6aac86"
+    },
+    "coherence21_w_chemises": {
+      "id": "w_chemises",
+      "voice": "f",
+      "text": "les chemises",
+      "synthesis_text": "les chemises.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.2,
+      "sha256": "2d40c977e0ec72422f31daa9183a295f0f8f6f3081344a408d7c872a57470d1b",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.91,
+      "aliases": [
+        "w_chemises"
+      ],
+      "verification": {
+        "take": "w_chemises-s937",
+        "raw_sha256": "2d40c977e0ec72422f31daa9183a295f0f8f6f3081344a408d7c872a57470d1b",
+        "mp3_sha256": "d18a7b875c0e691ff5fe1b5424fa895d93e653d315c1fd64f88f41e8c568e8d8",
+        "recognized_text": "Les chemises.",
+        "recognized_phones": "leʃəmiz",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "d18a7b875c0e691ff5fe1b5424fa895d93e653d315c1fd64f88f41e8c568e8d8"
+    },
+    "coherence21_e_chemises": {
+      "id": "e_chemises",
+      "voice": "f",
+      "text": "Il y a des chemises dans l’armoire.",
+      "synthesis_text": "Il y a des chemises dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 421,
+      "duration": 2.08,
+      "sha256": "5e7e52582d8cf5600ca32ad1d7a22a04eca242ea807e61b6309c9ae03f17b3ab",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.77,
+      "aliases": [
+        "e_chemises"
+      ],
+      "verification": {
+        "take": "e_chemises-s421",
+        "raw_sha256": "5e7e52582d8cf5600ca32ad1d7a22a04eca242ea807e61b6309c9ae03f17b3ab",
+        "mp3_sha256": "eaef952e049d81425c000128e813231b2b35a756c8bf9097256c29000f0b9254",
+        "recognized_text": "Il y a des chemises dans l'armoire.",
+        "recognized_phones": "iliadeʃəmizdɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "eaef952e049d81425c000128e813231b2b35a756c8bf9097256c29000f0b9254"
+    },
+    "coherence21_w_vestes": {
+      "id": "w_vestes",
+      "voice": "f",
+      "text": "les vestes",
+      "synthesis_text": "les vestes.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.12,
+      "sha256": "c569d1f5b912dea1c7eca0937b182c0ce99ee0239ab5489d6cd413928bba723a",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.92,
+      "aliases": [
+        "w_vestes"
+      ],
+      "verification": {
+        "take": "w_vestes-s937",
+        "raw_sha256": "c569d1f5b912dea1c7eca0937b182c0ce99ee0239ab5489d6cd413928bba723a",
+        "mp3_sha256": "326a9fb25aaf4f6d5bc26f112d922b0728a18fef1233d4de97a05afa54281424",
+        "recognized_text": "Les vestes",
+        "recognized_phones": "levɛst",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "326a9fb25aaf4f6d5bc26f112d922b0728a18fef1233d4de97a05afa54281424"
+    },
+    "coherence21_e_vestes": {
+      "id": "e_vestes",
+      "voice": "f",
+      "text": "Les vestes sont dans l’armoire.",
+      "synthesis_text": "Les vestes sont dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.0,
+      "sha256": "80e7d3a3f1816dd481e8997ca7dca15395460827c6e4c3654ce612e284b2f7fa",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.55,
+      "aliases": [
+        "e_vestes"
+      ],
+      "verification": {
+        "take": "e_vestes-s937",
+        "raw_sha256": "80e7d3a3f1816dd481e8997ca7dca15395460827c6e4c3654ce612e284b2f7fa",
+        "mp3_sha256": "4b7c11e773d9804d0c7803b031370da843746f623cb59c71a3422f806a40fde8",
+        "recognized_text": "Les vestes sont dans l'armoire.",
+        "recognized_phones": "levɛstsɔ̃dɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "4b7c11e773d9804d0c7803b031370da843746f623cb59c71a3422f806a40fde8"
+    },
+    "coherence21_w_robes": {
+      "id": "w_robes",
+      "voice": "f",
+      "text": "les robes",
+      "synthesis_text": "les robes.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.04,
+      "sha256": "f97c27c150b62bd80ea6eb7c9e21799b83c4d3c7e87302c79cf0b29c3cfe8fbc",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.86,
+      "aliases": [
+        "w_robes"
+      ],
+      "verification": {
+        "take": "w_robes-s937",
+        "raw_sha256": "f97c27c150b62bd80ea6eb7c9e21799b83c4d3c7e87302c79cf0b29c3cfe8fbc",
+        "mp3_sha256": "1376db660aec4b9f7617d95602cc65bddbb6d2ae09a0b3fc437104577bab24a5",
+        "recognized_text": "Les robes.",
+        "recognized_phones": "leʁob",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "1376db660aec4b9f7617d95602cc65bddbb6d2ae09a0b3fc437104577bab24a5"
+    },
+    "coherence21_e_robes": {
+      "id": "e_robes",
+      "voice": "f",
+      "text": "Les robes sont dans l’armoire.",
+      "synthesis_text": "Les robes sont dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.84,
+      "sha256": "480848168bf476c7aff9569e459e0448630fc24a04498b00e247e5a8088070a4",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.43,
+      "aliases": [
+        "e_robes"
+      ],
+      "verification": {
+        "take": "e_robes-s937",
+        "raw_sha256": "480848168bf476c7aff9569e459e0448630fc24a04498b00e247e5a8088070a4",
+        "mp3_sha256": "4c9b5fa094e6a5791e0859e71dd349b929c56c05e4c2d479963cc991dd33239a",
+        "recognized_text": "Les robes sont dans l'armoire.",
+        "recognized_phones": "leʁɔbsɔ̃dɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.056,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "4c9b5fa094e6a5791e0859e71dd349b929c56c05e4c2d479963cc991dd33239a"
+    },
+    "coherence21_w_pulls": {
+      "id": "w_pulls",
+      "voice": "f",
+      "text": "les pulls",
+      "synthesis_text": "les pulls.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.12,
+      "sha256": "68be3ba7a4cdad7ee32f70c7e7d01b77e2cc10c9ae80191f7f99c1b05836eb55",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.92,
+      "aliases": [
+        "w_pulls"
+      ],
+      "verification": {
+        "take": "w_pulls-s937",
+        "raw_sha256": "68be3ba7a4cdad7ee32f70c7e7d01b77e2cc10c9ae80191f7f99c1b05836eb55",
+        "mp3_sha256": "e0f3f66fc1ab56739776671006eda5013281e7e6f9e49f51b1b68e20ed308bc1",
+        "recognized_text": "les pulls,",
+        "recognized_phones": "lepyl",
+        "phone_error_rate": 0.0,
+        "phonetic_note": "Référence phonétique française explicite /pyl/ ; eSpeak avait interprété le mot en anglais.",
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "e0f3f66fc1ab56739776671006eda5013281e7e6f9e49f51b1b68e20ed308bc1"
+    },
+    "coherence21_e_pulls": {
+      "id": "e_pulls",
+      "voice": "f",
+      "text": "Les pulls sont pliés dans l’armoire.",
+      "synthesis_text": "Les pulls sont pliés dans l'armoire.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.32,
+      "sha256": "c577161939b8238d35b3719ea069b00590c6db78f657af1820ce9f88f72c9bb8",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.82,
+      "aliases": [
+        "e_pulls"
+      ],
+      "verification": {
+        "take": "e_pulls-s937",
+        "raw_sha256": "c577161939b8238d35b3719ea069b00590c6db78f657af1820ce9f88f72c9bb8",
+        "mp3_sha256": "af0f1681ef295b02c32da103183eed58ba5e9b6064adba1d101442771a5ce6cc",
+        "recognized_text": "Les pulls sont pliés dans l'armoire.",
+        "recognized_phones": "lepylsɔ̃pliedɑ̃laʁmwaʁ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": "Référence phonétique française explicite /pyl/ ; eSpeak avait interprété le mot en anglais.",
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "af0f1681ef295b02c32da103183eed58ba5e9b6064adba1d101442771a5ce6cc"
+    },
+    "coherence21_ev_coussins_gris": {
+      "id": "ev_coussins_gris",
+      "voice": "f",
+      "text": "Les coussins sont gris.",
+      "synthesis_text": "Les coussins sont gris.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.6,
+      "sha256": "20e941028878616ed13685aeba4dbb27fdfd3cd2a128651c5a0c6726d28d62ef",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.31,
+      "aliases": [
+        "ev_coussins_gris"
+      ],
+      "verification": {
+        "take": "ev_coussins_gris-s937",
+        "raw_sha256": "20e941028878616ed13685aeba4dbb27fdfd3cd2a128651c5a0c6726d28d62ef",
+        "mp3_sha256": "2e3d20befe2d960ee6562a41bc0c7dff57a505f2515e5a7fd5bfaa6280a4d2d7",
+        "recognized_text": "Les coussins sont gris.",
+        "recognized_phones": "lekusɛ̃sɔ̃gʁi",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "2e3d20befe2d960ee6562a41bc0c7dff57a505f2515e5a7fd5bfaa6280a4d2d7"
+    },
+    "coherence21_ev_coussins_noirs_blancs": {
+      "id": "ev_coussins_noirs_blancs",
+      "voice": "f",
+      "text": "Les coussins sont noirs et blancs.",
+      "synthesis_text": "Les coussins sont noirs et blancs.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.32,
+      "sha256": "067a772cdc00ff75dc2cffa2c81352d673249cc941c61139c2dd374e2acd5053",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.8,
+      "aliases": [
+        "ev_coussins_noirs_blancs"
+      ],
+      "verification": {
+        "take": "ev_coussins_noirs_blancs-s937",
+        "raw_sha256": "067a772cdc00ff75dc2cffa2c81352d673249cc941c61139c2dd374e2acd5053",
+        "mp3_sha256": "66555529eb35a0cdd2766f4aeade563af451d4f74e28a45b1a7a39d252d94c49",
+        "recognized_text": "Les coussins sont noirs et blancs.",
+        "recognized_phones": "lekusɛ̃sɔ̃nwaʁzeblɑ̃",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "66555529eb35a0cdd2766f4aeade563af451d4f74e28a45b1a7a39d252d94c49"
+    },
+    "coherence21_wv_chemise": {
+      "id": "wv_chemise",
+      "voice": "f",
+      "text": "la chemise",
+      "synthesis_text": "la chemise.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.28,
+      "sha256": "57e2a718dc52870521e3bc0cc5564f000b950383848ef8e4b7b36341102a902c",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.05,
+      "aliases": [
+        "wv_chemise"
+      ],
+      "verification": {
+        "take": "wv_chemise-s937",
+        "raw_sha256": "57e2a718dc52870521e3bc0cc5564f000b950383848ef8e4b7b36341102a902c",
+        "mp3_sha256": "fc8fd1def126685968beb6de0dabd78acc8e582fca832810f85c74e07e98d450",
+        "recognized_text": "La chemise",
+        "recognized_phones": "laʃəmiz",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "fc8fd1def126685968beb6de0dabd78acc8e582fca832810f85c74e07e98d450"
+    },
+    "coherence21_ev_chemise_bleue": {
+      "id": "ev_chemise_bleue",
+      "voice": "f",
+      "text": "La chemise est bleue.",
+      "synthesis_text": "La chemise est bleue.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.52,
+      "sha256": "8b9405e7b6e262a54979c0182676191bf61bbad565f162fd3cae580d4c340883",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.19,
+      "aliases": [
+        "ev_chemise_bleue"
+      ],
+      "verification": {
+        "take": "ev_chemise_bleue-s937",
+        "raw_sha256": "8b9405e7b6e262a54979c0182676191bf61bbad565f162fd3cae580d4c340883",
+        "mp3_sha256": "120215386d20d854880720809034aee226be76120526622f3fdb61a34b5de744",
+        "recognized_text": "La chemise est bleue.",
+        "recognized_phones": "laʃəmizɛblø",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "120215386d20d854880720809034aee226be76120526622f3fdb61a34b5de744"
+    },
+    "coherence21_ev_chemise_blanche": {
+      "id": "ev_chemise_blanche",
+      "voice": "f",
+      "text": "La chemise est blanche.",
+      "synthesis_text": "La chemise est blanche.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.76,
+      "sha256": "2b43d132501bd8cc9f65c63107147ecda71ec25d1e7f13686c020d848f308401",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.38,
+      "aliases": [
+        "ev_chemise_blanche"
+      ],
+      "verification": {
+        "take": "ev_chemise_blanche-s937",
+        "raw_sha256": "2b43d132501bd8cc9f65c63107147ecda71ec25d1e7f13686c020d848f308401",
+        "mp3_sha256": "2530ffc1c028af0000eed40590716e9fbc7c4d21661e38e219cd5a9031776b8a",
+        "recognized_text": "La chemise est blanche.",
+        "recognized_phones": "laʃəmizɛblɑ̃ʃ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "2530ffc1c028af0000eed40590716e9fbc7c4d21661e38e219cd5a9031776b8a"
+    },
+    "coherence21_ev_chemise_rouge": {
+      "id": "ev_chemise_rouge",
+      "voice": "f",
+      "text": "La chemise est rouge.",
+      "synthesis_text": "La chemise est rouge.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.52,
+      "sha256": "e57c29732399e07a1f108794d1cb934b1a0dc07a6819c5a3d1ac927e9da7960f",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.21,
+      "aliases": [
+        "ev_chemise_rouge"
+      ],
+      "verification": {
+        "take": "ev_chemise_rouge-s937",
+        "raw_sha256": "e57c29732399e07a1f108794d1cb934b1a0dc07a6819c5a3d1ac927e9da7960f",
+        "mp3_sha256": "4bb662f449bf5fdb0fafc71b5be361ae66205060769eb832e84d6b777b6c17c4",
+        "recognized_text": "La chemise est rouge.",
+        "recognized_phones": "laʃəmizɛʁuʒ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "4bb662f449bf5fdb0fafc71b5be361ae66205060769eb832e84d6b777b6c17c4"
+    },
+    "coherence21_ev_pantalon_noir": {
+      "id": "ev_pantalon_noir",
+      "voice": "f",
+      "text": "Le pantalon est noir.",
+      "synthesis_text": "Le pantalon est noir.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.84,
+      "sha256": "439d7a3e1a340900ade5fc1c4647883aebad3b47b3986f8890794181962a8b6a",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.43,
+      "aliases": [
+        "ev_pantalon_noir"
+      ],
+      "verification": {
+        "take": "ev_pantalon_noir-s937",
+        "raw_sha256": "439d7a3e1a340900ade5fc1c4647883aebad3b47b3986f8890794181962a8b6a",
+        "mp3_sha256": "439e23665fbf6b839e4a2e70ba09b41c7e7bfd0297e6de72bf386003a64190ed",
+        "recognized_text": "Le pantalon est noir.",
+        "recognized_phones": "ləpɑ̃talɔ̃ɛnwaʁ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "439e23665fbf6b839e4a2e70ba09b41c7e7bfd0297e6de72bf386003a64190ed"
+    },
+    "coherence21_ev_pantalon_gris": {
+      "id": "ev_pantalon_gris",
+      "voice": "f",
+      "text": "Le pantalon est gris.",
+      "synthesis_text": "Le pantalon est gris.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.6,
+      "sha256": "17ca4624d6329cb4c431813553108f0ec141e5897baed903e3790622b797965f",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.26,
+      "aliases": [
+        "ev_pantalon_gris"
+      ],
+      "verification": {
+        "take": "ev_pantalon_gris-s937",
+        "raw_sha256": "17ca4624d6329cb4c431813553108f0ec141e5897baed903e3790622b797965f",
+        "mp3_sha256": "7d0de14b34127855aa3a7689b317313ebe4328865bd0a69bea38bfca60443a8d",
+        "recognized_text": "Le pantalon est gris.",
+        "recognized_phones": "ləpɑ̃talɔ̃ɛgʁi",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "7d0de14b34127855aa3a7689b317313ebe4328865bd0a69bea38bfca60443a8d"
+    },
+    "coherence21_ev_pantalon_marron": {
+      "id": "ev_pantalon_marron",
+      "voice": "f",
+      "text": "Le pantalon est marron.",
+      "synthesis_text": "Le pantalon est marron.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.6,
+      "sha256": "d31ca5b58e48cfcab7552cbc3b4c0976be58858ad0e7f92e633996e58cb450a0",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.26,
+      "aliases": [
+        "ev_pantalon_marron"
+      ],
+      "verification": {
+        "take": "ev_pantalon_marron-s937",
+        "raw_sha256": "d31ca5b58e48cfcab7552cbc3b4c0976be58858ad0e7f92e633996e58cb450a0",
+        "mp3_sha256": "42828f1781c6eb92cfbd4184b3864c2d4a3127a0199d5967847bfb361fa4eb52",
+        "recognized_text": "Le pantalon est marron.",
+        "recognized_phones": "ləpɑ̃talɔ̃ɛmaʁɔ̃",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "42828f1781c6eb92cfbd4184b3864c2d4a3127a0199d5967847bfb361fa4eb52"
+    },
+    "coherence21_wv_veste": {
+      "id": "wv_veste",
+      "voice": "f",
+      "text": "la veste",
+      "synthesis_text": "la veste.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.12,
+      "sha256": "fbe3893cc4f3562b7d124dca66c37ffdd68da28587babfe30b614f79cab874b2",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.91,
+      "aliases": [
+        "wv_veste"
+      ],
+      "verification": {
+        "take": "wv_veste-s937",
+        "raw_sha256": "fbe3893cc4f3562b7d124dca66c37ffdd68da28587babfe30b614f79cab874b2",
+        "mp3_sha256": "f287f5c0c33bb49dcd5d286dc0b93ca5b7946891ebaac3293cf037381e0ef8c2",
+        "recognized_text": "La veste.",
+        "recognized_phones": "lavɛst",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "f287f5c0c33bb49dcd5d286dc0b93ca5b7946891ebaac3293cf037381e0ef8c2"
+    },
+    "coherence21_ev_veste_verte": {
+      "id": "ev_veste_verte",
+      "voice": "f",
+      "text": "La veste est verte.",
+      "synthesis_text": "La veste est verte.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 2.0,
+      "sha256": "1dd4c8db8f6a7d59ca4e3d3ac7eae179b63ce661f704bbbd2b9cb8ca154000b8",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.54,
+      "aliases": [
+        "ev_veste_verte"
+      ],
+      "verification": {
+        "take": "ev_veste_verte-s937",
+        "raw_sha256": "1dd4c8db8f6a7d59ca4e3d3ac7eae179b63ce661f704bbbd2b9cb8ca154000b8",
+        "mp3_sha256": "f64038550b0520898219f0af4e4dccba79427ed123f1ae5bc5952e8fbe54443e",
+        "recognized_text": "La veste est verte.",
+        "recognized_phones": "lavɛstɛvɛʁt",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "f64038550b0520898219f0af4e4dccba79427ed123f1ae5bc5952e8fbe54443e"
+    },
+    "coherence21_ev_veste_beige": {
+      "id": "ev_veste_beige",
+      "voice": "f",
+      "text": "La veste est beige.",
+      "synthesis_text": "La veste est beige.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.84,
+      "sha256": "3f378de83a56591cccca3cca05f0f7b3fdd90e46edf9f0291db5e746c2d9274d",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.45,
+      "aliases": [
+        "ev_veste_beige"
+      ],
+      "verification": {
+        "take": "ev_veste_beige-s937",
+        "raw_sha256": "3f378de83a56591cccca3cca05f0f7b3fdd90e46edf9f0291db5e746c2d9274d",
+        "mp3_sha256": "bbf53910d1b7fa234d8403e0aea7a3db5c87713ad6c16826bd4a5f0c9421a1d6",
+        "recognized_text": "La veste est beige.",
+        "recognized_phones": "lavɛstɛbɛʒ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "bbf53910d1b7fa234d8403e0aea7a3db5c87713ad6c16826bd4a5f0c9421a1d6"
+    },
+    "coherence21_ev_veste_orange": {
+      "id": "ev_veste_orange",
+      "voice": "f",
+      "text": "La veste est orange.",
+      "synthesis_text": "La veste est orange.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.84,
+      "sha256": "2e7d18f383fef29500b8e4b5e24585fd160548583bd5f43b6b503af06d46892e",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.43,
+      "aliases": [
+        "ev_veste_orange"
+      ],
+      "verification": {
+        "take": "ev_veste_orange-s937",
+        "raw_sha256": "2e7d18f383fef29500b8e4b5e24585fd160548583bd5f43b6b503af06d46892e",
+        "mp3_sha256": "9c76259932b9bd16082f5efb6b6d3443ef4ed74e62f260e607d97ca245282568",
+        "recognized_text": "La veste est orange.",
+        "recognized_phones": "lavɛstɛtoʁɑ̃ʒ",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "9c76259932b9bd16082f5efb6b6d3443ef4ed74e62f260e607d97ca245282568"
+    },
+    "coherence21_wv_robe": {
+      "id": "wv_robe",
+      "voice": "f",
+      "text": "la robe",
+      "synthesis_text": "la robe.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.04,
+      "sha256": "d033053dec7e6168070a7f08d14aa3221d0ba84cad4906cd86f886b7a245ccf0",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 0.86,
+      "aliases": [
+        "wv_robe"
+      ],
+      "verification": {
+        "take": "wv_robe-s937",
+        "raw_sha256": "d033053dec7e6168070a7f08d14aa3221d0ba84cad4906cd86f886b7a245ccf0",
+        "mp3_sha256": "04a93858bf59afe1a206d871efa75e9ba4851e678d46ab462b77ae1c7c9574ba",
+        "recognized_text": "La robe",
+        "recognized_phones": "laʁɔb",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "04a93858bf59afe1a206d871efa75e9ba4851e678d46ab462b77ae1c7c9574ba"
+    },
+    "coherence21_ev_robe_rose": {
+      "id": "ev_robe_rose",
+      "voice": "f",
+      "text": "La robe est rose.",
+      "synthesis_text": "La robe est rose.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.44,
+      "sha256": "40de3df2adb560a48959b5ebf6f466523e4d4176a7c93c88eee3519a494ded48",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.14,
+      "aliases": [
+        "ev_robe_rose"
+      ],
+      "verification": {
+        "take": "ev_robe_rose-s937",
+        "raw_sha256": "40de3df2adb560a48959b5ebf6f466523e4d4176a7c93c88eee3519a494ded48",
+        "mp3_sha256": "3587b32c25b9caccd76bd4c4189603b8eafe3449d499fb9f4548adf29a0fb000",
+        "recognized_text": "La robe est rose.",
+        "recognized_phones": "laʁɔbɛʁɔz",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "3587b32c25b9caccd76bd4c4189603b8eafe3449d499fb9f4548adf29a0fb000"
+    },
+    "coherence21_ev_robe_violette": {
+      "id": "ev_robe_violette",
+      "voice": "f",
+      "text": "La robe est violette.",
+      "synthesis_text": "La robe est violette.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.76,
+      "sha256": "a93431ecaf8269bde1891e3fa58720cb39ec95b53c60ca4044ff3dba87c54c7d",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.37,
+      "aliases": [
+        "ev_robe_violette"
+      ],
+      "verification": {
+        "take": "ev_robe_violette-s937",
+        "raw_sha256": "a93431ecaf8269bde1891e3fa58720cb39ec95b53c60ca4044ff3dba87c54c7d",
+        "mp3_sha256": "f68538e81b69454fd475c14a730c59b2fde020195f257e351b5e718c7e70c27b",
+        "recognized_text": "La robe est violette.",
+        "recognized_phones": "laʁɔbɛvjolɛt",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "f68538e81b69454fd475c14a730c59b2fde020195f257e351b5e718c7e70c27b"
+    },
+    "coherence21_ev_robe_jaune": {
+      "id": "ev_robe_jaune",
+      "voice": "f",
+      "text": "La robe est jaune.",
+      "synthesis_text": "La robe est jaune.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 1.52,
+      "sha256": "f4dcd3d9f01553cc3e45106baae3b65cecf3b3f7e56365ed273aaf7694ec3030",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 1.21,
+      "aliases": [
+        "ev_robe_jaune"
+      ],
+      "verification": {
+        "take": "ev_robe_jaune-s937",
+        "raw_sha256": "f4dcd3d9f01553cc3e45106baae3b65cecf3b3f7e56365ed273aaf7694ec3030",
+        "mp3_sha256": "ac2197acf10ae9f1d742021f9232d2428997647a2ecdfcb972608652e3e79247",
+        "recognized_text": "La robe est jaune.",
+        "recognized_phones": "laʁɔbɛʒon",
+        "phone_error_rate": 0.0,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "ac2197acf10ae9f1d742021f9232d2428997647a2ecdfcb972608652e3e79247"
+    },
+    "coherence21_e_fruits": {
+      "id": "e_fruits",
+      "voice": "f",
+      "text": "Il y a des pommes, des bananes et un ananas.",
+      "synthesis_text": "Il y a des pommes, des bananes et un ananas.",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit",
+      "mode": "xvec",
+      "seed": 937,
+      "duration": 3.76,
+      "sha256": "fa8220c1591600871c33373c3660ac89f343e6d064d0a50d4d7da1f4ba8d8c51",
+      "reference_sha256": "7a1f5d88aca63fb334918bb1290c4584eb822ccf83e3faede12f77a9b36e9dbd",
+      "seconds": 5.62,
+      "aliases": [
+        "e_fruits"
+      ],
+      "verification": {
+        "take": "e_fruits-s937",
+        "raw_sha256": "fa8220c1591600871c33373c3660ac89f343e6d064d0a50d4d7da1f4ba8d8c51",
+        "mp3_sha256": "5de5075d41ebe30171b85375171133e11bb1e6037275549f5dd26897027cd0a9",
+        "recognized_text": "Il y a des pommes, des bananes et un ananas.",
+        "recognized_phones": "iliadepɔmdebananzeœ̃nananas",
+        "phone_error_rate": 0.038,
+        "phonetic_note": null,
+        "final_padding_seconds": 0.4
+      },
+      "active": true,
+      "mp3_sha256": "5de5075d41ebe30171b85375171133e11bb1e6037275549f5dd26897027cd0a9"
     }
   }
 }

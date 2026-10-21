@@ -16,12 +16,17 @@ for p in root.glob('*.html'):
  for link in re.findall(r'(?:src|href)="([^"#]+)"',p.read_text()):
   if not re.match('https?://',link):assert (root/link.split('?')[0]).exists(),link
 code=(root/'app.js').read_text()
+for module in root.glob('*.js'):
+ subprocess.run(['node','--input-type=module','--check'],input=module.read_text(),text=True,check=True,capture_output=True)
 assert not any(t in code for t in ['SpeechSynthesisUtterance','speechSynthesis.speak','voix-standard','voix-fournies'])
 data=json.loads(re.search(r'<script[^>]+id="data"[^>]*>(.*?)</script>',(root/'index.html').read_text(),re.S)[1])
 assert len({v['id'] for v in data['vocab']})==len(data['vocab'])
 for v in data['vocab']:
  assert manifest['clips']['w_'+v['id']]['text']==v['w']
  assert manifest['clips']['e_'+v['id']]['text']==v['ex']
+for v in data.get('variants',[]):
+ assert manifest['clips'][v['wordAudio']]['text']==v['w'],v['id']
+ assert manifest['clips'][v['sentenceAudio']]['text']==v['ex'],v['id']
 for p in [root/'index.html',root/'app.js',root/'audio/plan.json',root/'audio/manifest.json']:
  assert 'Caribeach' not in p.read_text() and 'CARIBEACH' not in p.read_text(),p
 assets=json.loads((root/'assets/catalogue.json').read_text())
@@ -30,4 +35,6 @@ for asset in assets:
  for file in ([asset['file']] if asset['type']=='model' else asset['maps'].values()):
   path=root/file;assert path.exists() and path.stat().st_size>100
  if asset['type']=='model':assert (root/asset['file']).read_bytes()[:4]==b'glTF'
-print(f"{len(manifest['clips'])} textes, voix, empreintes et décodages valides ; {len(data['vocab'])} mots ; ressources PBR présentes ; aucun secours de voix système.")
+for asset in json.loads((root/'assets/coherence21/sources.json').read_text())['files']:
+ assert hashlib.sha256((root/'assets/coherence21'/asset['file']).read_bytes()).hexdigest()==asset['sha256'],asset['file']
+print(f"{len(manifest['clips'])} textes, voix, empreintes et décodages valides ; {len(data['vocab'])} mots et {len(data.get('variants',[]))} variantes ; syntaxe des modules et empreintes visuelles valides ; aucun secours de voix système.")

@@ -1,0 +1,95 @@
+{
+  "sources": [
+    {
+      "title": "File:Croissant-Petr Kratochvil.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
+      "license": "CC0",
+      "artist": "Petr Kratochvil"
+    },
+    {
+      "title": "File:Evian Bottle.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Evian_Bottle.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Evian_Bottle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Evian_Bottle.jpg",
+      "license": "CC BY-SA 4.0",
+      "artist": "James Tamim"
+    },
+    {
+      "title": "File:Socken transparent.png",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Socken_transparent.png/1280px-Socken_transparent.png",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Socken_transparent.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Socken_transparent.png",
+      "license": "Public domain",
+      "artist": "Socken_farbig.jpeg: Scott Bauer\nderivative work: Socky (talk)"
+    },
+    {
+      "title": "File:Vincent van Gogh - Almond blossom - Google Art Project.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "artist": "Vincent van Gogh"
+    },
+    {
+      "title": "Corbeille de fruits photographique",
+      "author": "garten-gg",
+      "source": "https://pixabay.com/photos/fruit-basket-fruit-isolated-meal-1688041/",
+      "url": "https://cdn.pixabay.com/photo/2016/09/22/18/59/fruit-basket-1688041_1280.png",
+      "license": "Pixabay Content License",
+      "license_url": "https://pixabay.com/service/license-summary/"
+    },
+    {
+      "title": "Chevron Natural",
+      "source": "https://cdn11.bigcommerce.com/s-7psb023nit/images/stencil/original/products/2058/41542/104748_TILE_CHEVRON%2520NATURAL_01__92364.1769764335.jpg",
+      "usage": "Texture intérieure fournie par l’utilisateur ; réduction au format WebP."
+    },
+    {
+      "title": "Parement de terrasse Orsol",
+      "source": "https://www.orsol.fr/wp-content/uploads/2023/09/e3e307d9328e1e58e062472e776da7ac.jpg",
+      "usage": "Référence fournie par l’utilisateur ; cadrage sur la pierre sans répétition miroir pour conserver son irrégularité naturelle."
+    },
+    {
+      "title": "Anantara New York Palace Budapest",
+      "source": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-new-york-palace-budapest/rooms/deluxe-room/anantara_new_york_palace_budapest_hotel_deluxe_new_wing_bed_hero_944x510.jpg",
+      "usage": "Référence d’ambiance fournie : palette beige, taupe et matières mates ; photo conservée hors du site."
+    },
+    {
+      "title": "Hemea / Travauxlib",
+      "source": "https://images.prismic.io/travauxlib/aHo8wkMqNJQqIGXY_hemea_59171_intrieur_dun_htel_moderne_minimaliste_avec_des_co_a7687fa3-abfc-4cd3-ae90-8a3297a514b5_3.png?auto=format,compress",
+      "usage": "Référence d’ambiance fournie : murs calmes, bois et tableaux encadrés ; photo conservée hors du site."
+    }
+  ],
+  "files": [
+    {
+      "file": "corbeille.webp",
+      "sha256": "1daf98d504280f66941a1e35e1bab7fea71e6c7186c55abf8531474e53ca7bcc"
+    },
+    {
+      "file": "croissant.webp",
+      "sha256": "a26afb00f304ecc49d36b55d48733390078cdaca14c52a668c96fd50096e62a7"
+    },
+    {
+      "file": "amandier.webp",
+      "sha256": "a88cf0b09649eda09877f1bb4d7b0bd57ab45108a980ee82e588fa365066039e"
+    },
+    {
+      "file": "pierre-terrasse.webp",
+      "sha256": "df6a030842c2c4524f4449aa8aaaf089acccf95b05cb12c2a20821fa9fd99474"
+    },
+    {
+      "file": "bouteille.webp",
+      "sha256": "73d86ec98fb78d52ec866747726a087663a8fbc4598fd519b39ec2765125be3a"
+    },
+    {
+      "file": "chevron.webp",
+      "sha256": "8a05ab77d46167308b8ac1c41e9f5f92aa8f5c3655029253d1a8d849506abbbf"
+    },
+    {
+      "file": "chaussettes.webp",
+      "sha256": "8b9d6e9354899370dee5dc2ff3449a09598c46cbc8d6fbc25abe55253d5e5221"
+    }
+  ],
+  "processing": "Photographies réelles, sans image de synthèse. Réduction et conversion WebP ; cadrage de la pierre ; détourage des croissants et de la bouteille au rendu ; chaussettes et corbeille déjà transparentes."
+}

@@ -73,3 +73,24 @@ Les fichiers originaux suivants sont intégrés à la demande explicite de l’u
 - [Porte-valise — HuangDian / Made-in-China](https://image.made-in-china.com/202f0j00SgORriNhlvcs/Hot-Selling-Slip-Resistance-Stainless-Steel-Strip-Plywood-Luggage-Rack.webp) : fichier original conservé et consultable dans le gros plan ; reconstruction 3D du plateau brun, des panneaux latéraux et des bandes métalliques.
 - [Tulipes et vase vert — image Amazon](https://m.media-amazon.com/images/I/81I18VhlXcL.jpg) : photographie exacte dans la scène, sur une surface qui s’oriente vers le visiteur. Le fond neutre est masqué par le matériau au rendu ; le fichier original reste inchangé. Le gros plan affiche la photo originale.
 - [Clés et porte-clés brun — référence Google Images](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd34mhCMVZQ4m-2pEfWh-oGgxwNy8dYskv-lq0p7fsdg&s=10) : photographie exacte placée horizontalement dans le vide-poche ; fond blanc masqué au rendu. Le fichier d’origine reste inchangé et le gros plan est accessible après la découverte.
+
+
+# Photographies et matières du 21 octobre 2026
+
+Les originaux téléchargés sont conservés dans le dossier local `production/coherence20261021/originaux/`. Les fichiers distribués sont optimisés en WebP ; le manifeste [assets/coherence21/sources.json](assets/coherence21/sources.json) contient leurs sources et leurs empreintes. Aucune image de synthèse n’a été utilisée pour ces cinq remplacements.
+
+| Élément | Photographie / auteur | Droits et adaptations |
+| --- | --- | --- |
+| Chaussettes | [Scott Bauer, détourage Socky](https://commons.wikimedia.org/wiki/File:Socken_transparent.png) | Domaine public. Conversion WebP ; extraction au rendu de la chaussette bleue et duplication en paires dans les six cases. |
+| Croissants | [Petr Kratochvil](https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg) | CC0. Conversion WebP, fond blanc masqué au rendu, deux exemplaires sur l’assiette ; photographie originale en gros plan. |
+| Bouteille d’eau | [James Tamim](https://commons.wikimedia.org/wiki/File:Evian_Bottle.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Conversion WebP et fond blanc masqué au rendu ; cette adaptation reste sous CC BY-SA 4.0. La marque visible appartient à son titulaire. |
+| Tableau | [Vincent van Gogh, Amandier en fleurs, Google Art Project](https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg) | Reproduction d’une œuvre du domaine public. Réduction WebP ; image entière centrée dans un passe-partout pour respecter ses proportions dans les cadres existants. |
+| Corbeille de fruits | [garten-gg, Pixabay](https://pixabay.com/photos/fruit-basket-fruit-isolated-meal-1688041/) | [Licence Pixabay](https://pixabay.com/service/license-summary/). Photographie déjà détourée, conversion WebP et application dans la scène ; aucun appel à Pixabay à l’exécution. |
+
+Les chemises, pantalons, vestes et robes en couleurs sont des modèles originaux réalisés dans le code, avec col, revers, boutons, poches et coutures. Leur matériau reprend le tissu photographique déjà crédité dans ce document. Les noms de couleurs correspondent aux matériaux de chaque exemplaire et à sa phrase propre.
+
+Les quatre références suivantes ont été fournies par l’utilisateur et conservent leurs droits d’origine :
+
+- [Anantara New York Palace Budapest](https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-new-york-palace-budapest/rooms/deluxe-room/anantara_new_york_palace_budapest_hotel_deluxe_new_wing_bed_hero_944x510.jpg) et [Hemea / Travauxlib](https://images.prismic.io/travauxlib/aHo8wkMqNJQqIGXY_hemea_59171_intrieur_dun_htel_moderne_minimaliste_avec_des_co_a7687fa3-abfc-4cd3-ae90-8a3297a514b5_3.png?auto=format,compress) : références d’ambiance et d’accord entre murs, bois, beige et taupe ; photographies conservées hors du site.
+- [Chevron Natural](https://cdn11.bigcommerce.com/s-7psb023nit/images/stencil/original/products/2058/41542/104748_TILE_CHEVRON%2520NATURAL_01__92364.1769764335.jpg) : texture photographique des murs enduits intérieurs, convertie en WebP, avec relief très faible et finition mate.
+- [Orsol, parement de pierre](https://www.orsol.fr/wp-content/uploads/2023/09/e3e307d9328e1e58e062472e776da7ac.jpg) : cadrage sur la partie droite ne montrant que la pierre, conversion WebP sans répétition miroir pour les murs extérieurs et les séparations de la terrasse.

@@ -1,5 +1,17 @@
 # Suite 14 · Palace Hôtel — A1
 
+## Révision du 21 octobre — objets, vêtements et cohérence
+
+**Version `20261021-3` : 111 mots, 358 lectures et 14 variantes selon l’objet.** Dans les phrases qui décrivaient déjà une couleur, le texte et le son correspondent à l’exemplaire : coussins jaunes du lit, coussins gris et coussins noirs et blancs de l’armoire. Les autres objets ne reçoivent pas systématiquement une nouvelle phrase de couleur.
+
+L’armoire fait entendre « L’armoire est grande. Les vêtements sont dans l’armoire. ». Les chemises portent leur nom précis ; les pulls pliés sont également identifiés. Après ouverture des portes, **Pratiquer les vêtements et les couleurs** donne accès à douze vêtements : chemises bleue, blanche et rouge ; pantalons noir, gris et marron ; vestes verte, beige et orange ; robes rose, violette et jaune. Chaque choix a son nom, sa phrase et ses boutons de réécoute. Le gros plan permet de changer d’exemplaire et de revenir à l’armoire.
+
+Les chaussettes, croissants, bouteille d’eau, corbeille de fruits et tableaux utilisent désormais des photographies réelles téléchargées et créditées dans [les sources](SOURCES_VISUELLES.md). Leurs proportions sont préservées ; le tableau conserve un cadre et un passe-partout. Les murs enduits intérieurs utilisent la référence Chevron Natural ; les murs extérieurs et latéraux de terrasse reprennent le parement Orsol. Les références Anantara et Hemea guident l’accord des matières et des tons.
+
+Le pied du lampadaire est recentré entièrement sur le tapis et placé au-dessus de son épaisseur. Un tapis déjà découvert relance sa lecture au clic ; le gros plan peut également faire entendre son nom. Un mur sans tableau dit simplement « Voici un mur. ». La phrase des fruits nomme les pommes, les bananes et l’ananas visibles dans la nouvelle corbeille.
+
+Les voix de référence A1 sont conservées. Vingt-huit lectures ont été produites ou reprises ; les fichiers et prises précédents sont sauvegardés hors du site. Les vérifications phonétiques et transcriptions sont automatiques. Voir [la validation de cette révision](VALIDATION_20261021-3.md).
+
 ## Révision du 21 octobre 2026
 
 Le support compte **107 mots et 333 lectures**. Les objets visibles dans l’armoire sont sélectionnables dans le gros plan et dans l’inventaire « Les objets de l’armoire » : coussins, oreillers, boîtes, draps, serviettes, cintres, vêtements, cravates, valise, pantalon, mallette, penderie, étagères, tiroirs, sous-vêtements, chaussettes et coffre-fort. Le mot choisi, sa phrase et les commandes d’écoute apparaissent avant la liste et sont amenés à l’écran après la sélection. Un bouton permet de revenir du gros plan d’un objet à l’armoire.
@@ -31,7 +43,7 @@ Visite 3D pour adultes débutants, avec vocabulaire, phrases, dialogue à la ré
 
 ## Une petite séance A1
 
-Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 107 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
+Choisir une pièce et environ cinq objets. Regarder, dire le nom avec l'article, écouter, puis dire une phrase entière avec une autre information. Revenir le lendemain. Les 111 entrées de vocabulaire forment une banque à répartir sur plusieurs séances.
 
 Les compteurs comptabilisent les découvertes et les choix aux activités ; ils ne mesurent pas la maîtrise orale et ne donnent pas une note de prononciation. Les modèles restent accessibles après un essai.
 

@@ -1,6 +1,6 @@
 {
   "ready": true,
-  "version": "20261021-2",
+  "version": "20261021-3",
   "voices": {
     "f": {
       "start": 31.95,
@@ -603,10 +603,10 @@
     },
     "e_fruits": {
       "file": "audio/sons/e_fruits.mp3",
-      "text": "Il y a des mangues, des bananes et un ananas.",
       "voice": "f",
-      "duration": 3.6865,
-      "sha256": "e9c58595437ff93125a550a8976896bbbdb893eb9b1a8a66e20378eb789e3781"
+      "text": "Il y a des pommes, des bananes et un ananas.",
+      "duration": 4.28,
+      "sha256": "5de5075d41ebe30171b85375171133e11bb1e6037275549f5dd26897027cd0a9"
     },
     "w_fleurs": {
       "file": "audio/sons/w_fleurs.mp3",
@@ -2067,9 +2067,9 @@
     "e_mur": {
       "file": "audio/sons/e_mur.mp3",
       "voice": "f",
-      "text": "Le tableau est sur le mur.",
-      "duration": 1.891083,
-      "sha256": "c51ccb47f083571a36d2465e501cef94183164405c5477eb474b6b912fab9428"
+      "text": "Voici un mur.",
+      "duration": 1.96,
+      "sha256": "ed077ae3a3913cb8fb8744bce6324622786a779b3053d14db2c23a393a6aac86"
     },
     "w_plafond": {
       "file": "audio/sons/w_plafond.mp3",
@@ -2193,9 +2193,9 @@
     "e_armoire": {
       "file": "audio/sons/e_armoire.mp3",
       "voice": "f",
-      "text": "Il y a une grande armoire.",
-      "duration": 1.960167,
-      "sha256": "c71bc7f1b754d15e6225cc33b23ca75a13fbc6048b1459f3919d4410c151eb37"
+      "text": "L’armoire est grande. Les vêtements sont dans l’armoire.",
+      "duration": 4.28,
+      "sha256": "3703bb05183fbacab2173a9d7af313a018e719ef5750f7b398db39430c6463fd"
     },
     "w_tiroirs": {
       "file": "audio/sons/w_tiroirs.mp3",
@@ -2350,6 +2350,181 @@
       "text": "Les draps sont pliés dans l’armoire.",
       "duration": 2.44,
       "sha256": "23ad5f3dc0ecc82ac6c684e99a05c777ec6fe896cd4579a0b6405a9204fb03be"
+    },
+    "w_chemises": {
+      "file": "audio/sons/w_chemises.mp3",
+      "voice": "f",
+      "text": "les chemises",
+      "duration": 1.72,
+      "sha256": "d18a7b875c0e691ff5fe1b5424fa895d93e653d315c1fd64f88f41e8c568e8d8"
+    },
+    "e_chemises": {
+      "file": "audio/sons/e_chemises.mp3",
+      "voice": "f",
+      "text": "Il y a des chemises dans l’armoire.",
+      "duration": 2.6,
+      "sha256": "eaef952e049d81425c000128e813231b2b35a756c8bf9097256c29000f0b9254"
+    },
+    "w_vestes": {
+      "file": "audio/sons/w_vestes.mp3",
+      "voice": "f",
+      "text": "les vestes",
+      "duration": 1.64,
+      "sha256": "326a9fb25aaf4f6d5bc26f112d922b0728a18fef1233d4de97a05afa54281424"
+    },
+    "e_vestes": {
+      "file": "audio/sons/e_vestes.mp3",
+      "voice": "f",
+      "text": "Les vestes sont dans l’armoire.",
+      "duration": 2.52,
+      "sha256": "4b7c11e773d9804d0c7803b031370da843746f623cb59c71a3422f806a40fde8"
+    },
+    "w_robes": {
+      "file": "audio/sons/w_robes.mp3",
+      "voice": "f",
+      "text": "les robes",
+      "duration": 1.56,
+      "sha256": "1376db660aec4b9f7617d95602cc65bddbb6d2ae09a0b3fc437104577bab24a5"
+    },
+    "e_robes": {
+      "file": "audio/sons/e_robes.mp3",
+      "voice": "f",
+      "text": "Les robes sont dans l’armoire.",
+      "duration": 2.36,
+      "sha256": "4c9b5fa094e6a5791e0859e71dd349b929c56c05e4c2d479963cc991dd33239a"
+    },
+    "w_pulls": {
+      "file": "audio/sons/w_pulls.mp3",
+      "voice": "f",
+      "text": "les pulls",
+      "duration": 1.64,
+      "sha256": "e0f3f66fc1ab56739776671006eda5013281e7e6f9e49f51b1b68e20ed308bc1"
+    },
+    "e_pulls": {
+      "file": "audio/sons/e_pulls.mp3",
+      "voice": "f",
+      "text": "Les pulls sont pliés dans l’armoire.",
+      "duration": 2.84,
+      "sha256": "af0f1681ef295b02c32da103183eed58ba5e9b6064adba1d101442771a5ce6cc"
+    },
+    "ev_coussins_gris": {
+      "file": "audio/sons/ev_coussins_gris.mp3",
+      "voice": "f",
+      "text": "Les coussins sont gris.",
+      "duration": 2.12,
+      "sha256": "2e3d20befe2d960ee6562a41bc0c7dff57a505f2515e5a7fd5bfaa6280a4d2d7"
+    },
+    "ev_coussins_noirs_blancs": {
+      "file": "audio/sons/ev_coussins_noirs_blancs.mp3",
+      "voice": "f",
+      "text": "Les coussins sont noirs et blancs.",
+      "duration": 2.84,
+      "sha256": "66555529eb35a0cdd2766f4aeade563af451d4f74e28a45b1a7a39d252d94c49"
+    },
+    "wv_chemise": {
+      "file": "audio/sons/wv_chemise.mp3",
+      "voice": "f",
+      "text": "la chemise",
+      "duration": 1.8,
+      "sha256": "fc8fd1def126685968beb6de0dabd78acc8e582fca832810f85c74e07e98d450"
+    },
+    "ev_chemise_bleue": {
+      "file": "audio/sons/ev_chemise_bleue.mp3",
+      "voice": "f",
+      "text": "La chemise est bleue.",
+      "duration": 2.04,
+      "sha256": "120215386d20d854880720809034aee226be76120526622f3fdb61a34b5de744"
+    },
+    "ev_chemise_blanche": {
+      "file": "audio/sons/ev_chemise_blanche.mp3",
+      "voice": "f",
+      "text": "La chemise est blanche.",
+      "duration": 2.28,
+      "sha256": "2530ffc1c028af0000eed40590716e9fbc7c4d21661e38e219cd5a9031776b8a"
+    },
+    "ev_chemise_rouge": {
+      "file": "audio/sons/ev_chemise_rouge.mp3",
+      "voice": "f",
+      "text": "La chemise est rouge.",
+      "duration": 2.04,
+      "sha256": "4bb662f449bf5fdb0fafc71b5be361ae66205060769eb832e84d6b777b6c17c4"
+    },
+    "ev_pantalon_noir": {
+      "file": "audio/sons/ev_pantalon_noir.mp3",
+      "voice": "f",
+      "text": "Le pantalon est noir.",
+      "duration": 2.36,
+      "sha256": "439e23665fbf6b839e4a2e70ba09b41c7e7bfd0297e6de72bf386003a64190ed"
+    },
+    "ev_pantalon_gris": {
+      "file": "audio/sons/ev_pantalon_gris.mp3",
+      "voice": "f",
+      "text": "Le pantalon est gris.",
+      "duration": 2.12,
+      "sha256": "7d0de14b34127855aa3a7689b317313ebe4328865bd0a69bea38bfca60443a8d"
+    },
+    "ev_pantalon_marron": {
+      "file": "audio/sons/ev_pantalon_marron.mp3",
+      "voice": "f",
+      "text": "Le pantalon est marron.",
+      "duration": 2.12,
+      "sha256": "42828f1781c6eb92cfbd4184b3864c2d4a3127a0199d5967847bfb361fa4eb52"
+    },
+    "wv_veste": {
+      "file": "audio/sons/wv_veste.mp3",
+      "voice": "f",
+      "text": "la veste",
+      "duration": 1.64,
+      "sha256": "f287f5c0c33bb49dcd5d286dc0b93ca5b7946891ebaac3293cf037381e0ef8c2"
+    },
+    "ev_veste_verte": {
+      "file": "audio/sons/ev_veste_verte.mp3",
+      "voice": "f",
+      "text": "La veste est verte.",
+      "duration": 2.52,
+      "sha256": "f64038550b0520898219f0af4e4dccba79427ed123f1ae5bc5952e8fbe54443e"
+    },
+    "ev_veste_beige": {
+      "file": "audio/sons/ev_veste_beige.mp3",
+      "voice": "f",
+      "text": "La veste est beige.",
+      "duration": 2.36,
+      "sha256": "bbf53910d1b7fa234d8403e0aea7a3db5c87713ad6c16826bd4a5f0c9421a1d6"
+    },
+    "ev_veste_orange": {
+      "file": "audio/sons/ev_veste_orange.mp3",
+      "voice": "f",
+      "text": "La veste est orange.",
+      "duration": 2.36,
+      "sha256": "9c76259932b9bd16082f5efb6b6d3443ef4ed74e62f260e607d97ca245282568"
+    },
+    "wv_robe": {
+      "file": "audio/sons/wv_robe.mp3",
+      "voice": "f",
+      "text": "la robe",
+      "duration": 1.56,
+      "sha256": "04a93858bf59afe1a206d871efa75e9ba4851e678d46ab462b77ae1c7c9574ba"
+    },
+    "ev_robe_rose": {
+      "file": "audio/sons/ev_robe_rose.mp3",
+      "voice": "f",
+      "text": "La robe est rose.",
+      "duration": 1.96,
+      "sha256": "3587b32c25b9caccd76bd4c4189603b8eafe3449d499fb9f4548adf29a0fb000"
+    },
+    "ev_robe_violette": {
+      "file": "audio/sons/ev_robe_violette.mp3",
+      "voice": "f",
+      "text": "La robe est violette.",
+      "duration": 2.28,
+      "sha256": "f68538e81b69454fd475c14a730c59b2fde020195f257e351b5e718c7e70c27b"
+    },
+    "ev_robe_jaune": {
+      "file": "audio/sons/ev_robe_jaune.mp3",
+      "voice": "f",
+      "text": "La robe est jaune.",
+      "duration": 2.04,
+      "sha256": "ac2197acf10ae9f1d742021f9232d2428997647a2ecdfcb972608652e3e79247"
     }
   }
 }

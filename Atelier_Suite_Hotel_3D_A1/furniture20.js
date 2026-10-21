@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {addWardrobePhotoItems,addOrganizedClothes} from './wardrobe-interior.js?v=20261021-2';
+import {addWardrobePhotoItems,addOrganizedClothes} from './wardrobe-interior.js?v=20261021-3';
 
 const BASE='assets/references20/';
 // Le masque de clic suit le même détourage que le matériau, pour laisser les clés accessibles.
